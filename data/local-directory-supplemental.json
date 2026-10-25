@@ -12229,5 +12229,65 @@
     "affiliate": false,
     "reviewBasis": "FIRST_PARTY_OPERATOR_OR_OFFICIAL_TOURISM_PAGE_REVIEW",
     "reviewSourceUrl": "https://www.lacote-tourisme.ch/en/"
+  },
+  {
+    "id": "local-himatangi-holiday-park",
+    "placeId": "nz-himatangi-beach",
+    "place": "Hīmatangi Beach",
+    "name": "Hīmatangi Beach TOP 10 Holiday Park",
+    "type": "holiday park",
+    "url": "https://himatangibeachholidaypark.co.nz/accommodation/",
+    "summary": "Review cabins, self-contained units and camping options at Hīmatangi Beach. Confirm dates, facilities and arrival arrangements directly with the park; the coastal camera does not establish availability or safe water conditions.",
+    "country": "New Zealand",
+    "tags": [
+      "Hīmatangi Beach",
+      "visitor planning"
+    ],
+    "verifiedAt": "2026-10-25T21:53:10Z",
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_OPERATOR_COUNCIL_OR_LOCAL_COMMUNITY_PAGE_REVIEW",
+    "reviewSourceUrl": "https://himatangibeachholidaypark.co.nz/accommodation/"
+  },
+  {
+    "id": "local-himatangi-community-guide",
+    "placeId": "nz-himatangi-beach",
+    "place": "Hīmatangi Beach",
+    "name": "Hīmatangi Beach — community visitor information",
+    "type": "visitor information",
+    "url": "https://www.himatangibeach.co.nz/",
+    "summary": "Read community information about local facilities and beach or creek precautions. Check current conditions and official advice before swimming or driving; a clear camera scene does not establish a patrol, safe access or a safe crossing.",
+    "country": "New Zealand",
+    "tags": [
+      "Hīmatangi Beach",
+      "visitor planning"
+    ],
+    "verifiedAt": "2026-10-25T21:53:10Z",
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_OPERATOR_COUNCIL_OR_LOCAL_COMMUNITY_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.himatangibeach.co.nz/"
+  },
+  {
+    "id": "local-akitio-council-guide",
+    "placeId": "nz-akitio-beach",
+    "place": "Ākitio Beach",
+    "name": "Ākitio — council coastal guide",
+    "type": "visitor information",
+    "url": "https://www.tararuadc.govt.nz/living-community/our-towns/coast",
+    "summary": "Read the district council’s coastal guide for Ākitio’s local context and public facilities. Confirm current routes, campground arrangements and beach or river conditions separately; historical descriptions are not current safety or access clearance.",
+    "country": "New Zealand",
+    "tags": [
+      "Ākitio Beach",
+      "visitor planning"
+    ],
+    "verifiedAt": "2026-10-25T21:53:10Z",
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_OPERATOR_COUNCIL_OR_LOCAL_COMMUNITY_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.tararuadc.govt.nz/living-community/our-towns/coast"
   }
 ]

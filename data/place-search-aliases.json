@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-25T13:29:00Z",
+  "updatedAt": "2026-10-25T21:53:10Z",
   "purpose": "Lazy, non-ranking search and crawlable destination aliases. These aliases improve visitor/AI retrieval without changing source truth or commercial ranking.",
   "places": {
     "bangkok-sukhumvit-road": [
@@ -1290,6 +1290,16 @@
       "Nyon Rive",
       "Nyon Lake Geneva",
       "Nyon Lac Léman"
+    ],
+    "nz-akitio-beach": [
+      "Ākitio",
+      "Ākitio Beach",
+      "Akitio Coast"
+    ],
+    "nz-himatangi-beach": [
+      "Hīmatangi Beach",
+      "Himatangi Coast",
+      "Hīmatangi"
     ]
   }
 }

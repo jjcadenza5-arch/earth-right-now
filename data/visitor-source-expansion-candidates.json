@@ -2174,7 +2174,7 @@
       "priority": "P1_CAMERA_COVERAGE",
       "country": "New Zealand",
       "placeGroup": "Rangitīkei River Mouth / Ākitio Beach / Hīmatangi Beach",
-      "state": "HOLD_INSUFFICIENT_USABLE_CURRENT_SCENE",
+      "state": "TWO_DISTINCT_PLACES_ADMITTED_RANGITIKEI_REMAINS_HELD",
       "reviewedAt": "2026-10-25T11:54:00Z",
       "evidenceUrls": [
         "https://www.horizons.govt.nz/webcams",
@@ -2198,7 +2198,28 @@
         }
       ],
       "why": "Three actual published public image files visually inspected locally. No camera admitted, freshness renewed or global provider outage inferred. Terms allow personal/business site use but restrict substantial copying; no media reused or embedding permission inferred.",
-      "next": "Revisit only with usable daylight imagery and inspect the capture time then. No repeated night-image retry loop; use this queue rather than duplicate candidates."
+      "next": "Revisit only with usable daylight imagery and inspect the capture time then. No repeated night-image retry loop; use this queue rather than duplicate candidates.",
+      "latestReviewedAt": "2026-10-25T21:53:10Z",
+      "resolvedCatalogIds": [
+        "nz-akitio-beach-current",
+        "nz-himatangi-beach-current"
+      ],
+      "followUpReviews": [
+        {
+          "reviewedAt": "2026-10-25T21:53:10Z",
+          "state": "TWO_DISTINCT_PLACES_ADMITTED_RANGITIKEI_REMAINS_HELD",
+          "resolvedCatalogIds": [
+            "nz-akitio-beach-current",
+            "nz-himatangi-beach-current"
+          ],
+          "evidenceUrls": [
+            "https://www.horizons.govt.nz/media/webcam/Akitio_latest_photo.jpg?v=2",
+            "https://www.horizons.govt.nz/media/webcam/Himatangi_latest_photo.jpg"
+          ],
+          "why": "Materially new daylight evidence after earlier night hold. Ākitio3840x2160 and Hīmatangi2560x960 actual scenes inspected locally, dated26Oct. Rangitīkei1920x1080 capture26-10-2026 09:40:51 NZST (25Oct21:40:51Z) has severe out-of-focus/hazy scene, only broad colour bands; remains held despite current clock. No global outage inferred.",
+          "next": "Maintain new sources using actual dated scenes, no media reuse. Rangitīkei needs materially improved identifiable view; do not retry routine blur or add from clock alone."
+        }
+      ]
     },
     {
       "id": "swiss-heiden-troistorrents-batch5-oct25",

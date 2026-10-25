@@ -1,3 +1,10 @@
+## 2026-10-26 Bangkok — Daylight recovery/expansion batch 10 prepared
+
+Baseline main76c3a631 / production2aaf025c. Read-only actual-clock check: WatchEarth FULL5 across4 providers, affiliate research44 valid/0 invalid. Existing owner25Oct11:00Bangkok evidence/expiry windows untouched; LIVE HERE horizon26Oct11:00Bangkok remains upcoming, WatchEarth horizon1Nov11:00 subject to failures. These reports are not fresh human playback. No automatic video renewal.
+
+Existing Horizons three-camera research record followed up on materially new daylight. Admit exactly two distinct places: Ākitio3840x2160 capture26Oct10:52 (timezone inferred/clock precision caveat) and Hīmatangi2560x960 capture26Oct09:50:01 GMT+12 (explicit fixed offset). Actual public full-size files visually inspected locally; no browser-playback claim. Hīmatangi split angles count once. Rangitīkei fresh clock but severely blurred scene remains held. Original night review preserved in same queue.
+
+One unpaid holiday-park business and two council/community visitor guides. Safety/access/availability separate from camera health; no new public affiliate offer or income claim. Expected839 sources/831 catalog places/830 camera-backed places toward1,000 (170 remaining),569 directory rows. All837 old sources,232 offers,five-camera ledger,design/publicOFF gates unchanged. Evidence docs/ERN_EXPANSION_BATCH10_2026-10-26.md. Scoped supplemental/aliases/directory/commercial/performance validations PASS; all122 required release smoke tests PASS. Normal deployment acceptance pending.
 ## 2026-10-25 Bangkok — Romanshorn/Nyon batch 9 deployed and accepted
 
 Production2aaf025c6efaa94366496efef94fc16fd1df2182. Pages40198036719 SUCCESS/all122 current release tests; Operations40198036692 SUCCESS/valid packet/zero issues. Exact served manifest and12 SHA256 checks PASS including home/app/styles/core/both lazy source parts/renewal ledger/offers/aliases/directory/two destinations. Actual browser verified both current-image source links, four businesses and Nyon regional guide.
