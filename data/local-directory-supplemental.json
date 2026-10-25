@@ -11949,5 +11949,105 @@
     "affiliate": false,
     "reviewBasis": "FIRST_PARTY_OPERATOR_PAGE_REVIEW",
     "reviewSourceUrl": "https://www.region-wasserfallen.ch/"
+  },
+  {
+    "id": "local-vevey-camera-museum",
+    "placeId": "swiss-vevey-market",
+    "place": "Vevey",
+    "name": "Swiss Camera Museum",
+    "type": "museum",
+    "url": "https://www.cameramuseum.ch/en/visit/practical-information/",
+    "summary": "Explore photography history at the museum at Vevey’s Place du Marché. Check opening and laboratory arrangements with the operator, and consult the city’s square-construction information for current pedestrian access.",
+    "country": "Switzerland",
+    "tags": [
+      "Vevey",
+      "visitor planning"
+    ],
+    "verifiedAt": "2026-10-25T13:08:00Z",
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_OPERATOR_OR_MUNICIPAL_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.cameramuseum.ch/en/visit/practical-information/"
+  },
+  {
+    "id": "local-vevey-astra-hotel",
+    "placeId": "swiss-vevey-market",
+    "place": "Vevey",
+    "name": "Astra Hotel Vevey",
+    "type": "hotel",
+    "url": "https://astra-hotel.ch/en/hotel-spa-en/",
+    "summary": "A central Vevey accommodation option with room and spa information from the operator. Confirm availability and room facilities; the municipal camera does not guarantee a hotel-room view.",
+    "country": "Switzerland",
+    "tags": [
+      "Vevey",
+      "visitor planning"
+    ],
+    "verifiedAt": "2026-10-25T13:08:00Z",
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_OPERATOR_OR_MUNICIPAL_PAGE_REVIEW",
+    "reviewSourceUrl": "https://astra-hotel.ch/en/hotel-spa-en/"
+  },
+  {
+    "id": "local-aigle-castle-museum",
+    "placeId": "swiss-aigle-castle",
+    "place": "Aigle",
+    "name": "Château d’Aigle — castle and museum",
+    "type": "museum",
+    "url": "https://chateauaigle.ch/en/information/",
+    "summary": "Read the castle operator’s seasonal opening and visitor information before a visit. Monday and holiday exceptions apply; verify your chosen date and access directly. No wine purchase or tasting is implied.",
+    "country": "Switzerland",
+    "tags": [
+      "Aigle",
+      "visitor planning"
+    ],
+    "verifiedAt": "2026-10-25T13:08:00Z",
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_OPERATOR_OR_MUNICIPAL_PAGE_REVIEW",
+    "reviewSourceUrl": "https://chateauaigle.ch/en/information/"
+  },
+  {
+    "id": "local-aigle-hotel-du-nord",
+    "placeId": "swiss-aigle-castle",
+    "place": "Aigle",
+    "name": "Hôtel du Nord — Aigle town base",
+    "type": "hotel",
+    "url": "https://hoteldunord.ch/fr/",
+    "summary": "A town-centre accommodation option in Aigle, separate from the castle camera position. The operator describes a breakfast hotel without its own restaurant; confirm reception arrangements and availability directly.",
+    "country": "Switzerland",
+    "tags": [
+      "Aigle",
+      "visitor planning"
+    ],
+    "verifiedAt": "2026-10-25T13:08:00Z",
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_OPERATOR_OR_MUNICIPAL_PAGE_REVIEW",
+    "reviewSourceUrl": "https://hoteldunord.ch/fr/"
+  },
+  {
+    "id": "local-vevey-market-works-advisory",
+    "placeId": "swiss-vevey-market",
+    "place": "Vevey",
+    "name": "Place du Marché — works and market relocation",
+    "type": "visitor information",
+    "url": "https://www.vevey.ch/placedumarche",
+    "summary": "The city page reviewed on 25 October 2026 lists works at Place du Marché and relocation of the twice-weekly market to Quai Perdonnet from 21 September through 3 November 2026. Pedestrian routes may change; read current city notices rather than infer access from the panorama.",
+    "country": "Switzerland",
+    "tags": [
+      "Vevey",
+      "visitor planning"
+    ],
+    "verifiedAt": "2026-10-25T13:08:00Z",
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_OPERATOR_OR_MUNICIPAL_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.vevey.ch/placedumarche"
   }
 ]

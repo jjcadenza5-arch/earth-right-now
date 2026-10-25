@@ -1,3 +1,10 @@
+## 2026-10-25 Bangkok — Vevey/Aigle batch 7 prepared
+
+Baseline mainc7f15848 / production5798072d. Two genuinely distinct municipal current-image panoramas: Vevey Place du Marché/lakefront and Aigle castle/vineyards. Actual rendered25Oct14:00 scenes inspected; Europe/Zurich inferred and today’s DST change accounted for. LINK_ONLY/LIVE_IMAGE/EXTERNAL, held from Watch/featured, no copied media or video claim. Rights scope limited to ordinary attributed links; public provenance/copyright notices checked, exact viewer legal text not available in this browser, no full panel/media licence claimed.
+
+Four unpaid public businesses: Swiss Camera Museum, Astra Hotel Vevey, Château d’Aigle museum and Hôtel du Nord Aigle. One municipal works/market-relocation advisory for Vevey (21Sep–3Nov2026), current access checked separately from camera health. No new public affiliate offer/account action/revenue claim.
+
+Expected834 sources/826 catalog places/825 distinct camera-backed places toward1,000 (175 remaining),557 directory rows. All832 prior sources,232 affiliate offers,five-camera ledger,design/publicOFF gates preserved. Evidence docs/ERN_EXPANSION_BATCH7_2026-10-25.md. Initial release check caught ambiguous Grande Place wording in Vevey museum summary entering Brussels local results; changed to explicit Vevey Place du Marché wording. No runtime change. Scoped supplemental/aliases/directory/commercial/performance validations PASS; all122 required release smoke tests PASS after explicit Vevey wording correction. Normal deployment acceptance pending.
 ## 2026-10-25 Bangkok — Wasserfallen batch 6 deployed and accepted
 
 Production5798072d7617414ed3107d4046313786d0562e62. Pages40195763393 SUCCESS/all122 current release tests; Operations40195763438 SUCCESS/valid packet/zero issues. Exact served manifest and11 SHA256 checks PASS including home/app/styles/core/both lazy source parts/renewal ledger/offers/aliases/directory/new destination. Actual browser verified current-image source link, Before you go storm notice and both local business resources.

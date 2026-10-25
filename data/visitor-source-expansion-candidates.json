@@ -2236,6 +2236,25 @@
       ],
       "why": "Actual dated rendered upper-station panorama, one distinct place regardless of rotation/angles. Camera health/currentness separate from cable-car storm closure. Provider publishes current-image page and attributed viewer, original metadata/external link only.",
       "next": "Maintain exact dated link-only evidence without copying media. Service notice remains explicitly dated; check new official information before asserting reopening or activity access."
+    },
+    {
+      "id": "swiss-vevey-aigle-batch7-oct25",
+      "country": "Switzerland",
+      "priority": "P1_CAMERA_COVERAGE",
+      "state": "TWO_DISTINCT_CAMERA_PLACES_ADMITTED_LINK_ONLY",
+      "reviewedAt": "2026-10-25T13:08:00Z",
+      "resolvedCatalogIds": [
+        "swiss-vevey-market-current",
+        "swiss-aigle-castle-current"
+      ],
+      "evidenceUrls": [
+        "https://vevey.roundshot.com/",
+        "https://www.vevey.ch/placedumarche",
+        "https://aigle.roundshot.com/",
+        "https://www.aigle.ch/N6027/webcam.html"
+      ],
+      "why": "Two distinct municipal destinations, actual rendered dated scenes14:00 25Oct. Rotation/angles count once per town. Vevey construction context retained; Aigle distant mountains mist-obscured. Original text/external links only, no copied media or inference of attractions open.",
+      "next": "Maintain exact capture-time evidence and link-only rights scope. Date construction/market notices and confirm future access from official updates. No automatic renewal, archive-frame substitution or angle count inflation."
     }
   ],
   "guardrails": {
