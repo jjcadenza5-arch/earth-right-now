@@ -2272,6 +2272,27 @@
       ],
       "why": "Actual rendered dated Aare harbour scene, one distinct destination. City/harbour angles would not create extra places. Original descriptions/external links only; provider privacy blur respected, no media copied.",
       "next": "Maintain dated link-only evidence; review current restaurant/transport operations independently. No automatic source renewal or claimed measured visitor demand."
+    },
+    {
+      "id": "swiss-romanshorn-nyon-batch9-oct25",
+      "country": "Switzerland",
+      "priority": "P1_CAMERA_COVERAGE",
+      "state": "TWO_DISTINCT_CAMERA_PLACES_ADMITTED_LINK_ONLY",
+      "reviewedAt": "2026-10-25T13:29:00Z",
+      "resolvedCatalogIds": [
+        "swiss-romanshorn-harbour-current",
+        "swiss-nyon-lakefront-current"
+      ],
+      "evidenceUrls": [
+        "https://romanshorn.roundshot.com/",
+        "https://www.romanshorn.ch/service/aktuell.html/203/news/2654",
+        "https://www.romanshorn.ch/services/impressum.html/211",
+        "https://nyon-tourisme.roundshot.com/",
+        "https://www.lacote-tourisme.ch/en/Z14918/webcams",
+        "https://www.lacote-tourisme.ch/en/Z14943/legal-information"
+      ],
+      "why": "Two distinct dated rendered destinations, not angles. Romanshorn scene rendered after one reload. Nyon mid-distance blur/limited mountains recorded; no cause assigned. No camera media or provider copy reused; original metadata and external links.",
+      "next": "Maintain dated link-only evidence; opening/boat-service/access states remain separate. No automatic renewal, unverified optional-video admission or angle inflation."
     }
   ],
   "guardrails": {

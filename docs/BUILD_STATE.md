@@ -1,3 +1,10 @@
+## 2026-10-25 Bangkok — Romanshorn/Nyon batch 9 prepared
+
+Baseline mainebf1cd45 / production5edcaab8. Two distinct dated rendered panoramas,25Oct14:20: Romanshorn harbour and Nyon lakefront. Europe/Zurich inferred, DST change accounted for. Romanshorn rendered after one reload; optional video thumbnail not played/admitted. Nyon broad mid-distance blur recorded without cause inference; foreground roofs/lakeside identifiable. LINK_ONLY/LIVE_IMAGE/EXTERNAL and Watch/featured held, no copied media. Municipal/tourism copyright limits reviewed; no media/embedding licence inferred.
+
+Four unpaid businesses: Park-Hotel Inseli, autobau erlebniswelt, Hôtel Le Rive and Musée du Léman. One official La Côte visitor guide. Seasonal/daily attraction schedules kept separate from office hours, camera health and transport availability. Original summaries, no prices/media/operator prose copied or affiliate activation/revenue claim.
+
+Expected837 sources/829 catalog places/828 distinct camera-backed places toward1,000 (172 remaining);566 directory rows. All835 prior sources,232 public affiliate offers,five-camera ledger,design/publicOFF gates unchanged. Evidence docs/ERN_EXPANSION_BATCH9_2026-10-25.md. Scoped supplemental/aliases/directory/commercial/performance validations PASS; all122 required release smoke tests PASS. Normal deployment acceptance pending.
 ## 2026-10-25 Bangkok — Solothurn batch 8 deployed and accepted
 
 Production5edcaab8d011679e964d742ad401c4b83ed8a927. Pages40197270367 SUCCESS/all122 current release tests; Operations40197270409 SUCCESS/valid packet/zero issues. Exact served manifest and11 SHA256 checks PASS including home/app/styles/core/both lazy source parts/renewal ledger/offers/aliases/directory/new destination. Actual browser verified Solothurn current-image page/provider link, three businesses and official visitor guide.

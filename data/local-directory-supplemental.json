@@ -12129,5 +12129,105 @@
     "affiliate": false,
     "reviewBasis": "FIRST_PARTY_OPERATOR_OR_OFFICIAL_TOURISM_PAGE_REVIEW",
     "reviewSourceUrl": "https://www.solothurn-city.ch/en/information"
+  },
+  {
+    "id": "local-romanshorn-inseli",
+    "placeId": "swiss-romanshorn-harbour",
+    "place": "Romanshorn",
+    "name": "Park-Hotel Inseli",
+    "type": "hotel",
+    "url": "https://en.hotelinseli.ch/hotel.html",
+    "summary": "Review accommodation and facilities at this Romanshorn hotel. Confirm availability, accessibility needs and arrival arrangements directly; the municipal harbour view does not guarantee a particular room outlook.",
+    "country": "Switzerland",
+    "tags": [
+      "Romanshorn",
+      "visitor planning"
+    ],
+    "verifiedAt": "2026-10-25T13:29:00Z",
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_OPERATOR_OR_OFFICIAL_TOURISM_PAGE_REVIEW",
+    "reviewSourceUrl": "https://en.hotelinseli.ch/hotel.html"
+  },
+  {
+    "id": "local-romanshorn-autobau",
+    "placeId": "swiss-romanshorn-harbour",
+    "place": "Romanshorn",
+    "name": "autobau erlebniswelt",
+    "type": "museum",
+    "url": "https://www.autobau.ch/de/oeffnungszeiten-und-tickets-buchen/",
+    "summary": "Plan a visit to the vehicle exhibition using the operator’s current opening and ticket page. Regular Sunday visits and additional dated openings are distinct from administration office hours; confirm your chosen date and any guided tour.",
+    "country": "Switzerland",
+    "tags": [
+      "Romanshorn",
+      "visitor planning"
+    ],
+    "verifiedAt": "2026-10-25T13:29:00Z",
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_OPERATOR_OR_OFFICIAL_TOURISM_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.autobau.ch/de/oeffnungszeiten-und-tickets-buchen/"
+  },
+  {
+    "id": "local-nyon-le-rive",
+    "placeId": "swiss-nyon-lakefront",
+    "place": "Nyon",
+    "name": "Hôtel Le Rive — Nyon",
+    "type": "hotel",
+    "url": "https://hotel-le-rive.ch/en/",
+    "summary": "A lakeside Nyon hotel and dining option in the Rive district. Confirm room facilities, availability and restaurant arrangements directly; a camera view does not guarantee a room view or visible distant mountains.",
+    "country": "Switzerland",
+    "tags": [
+      "Nyon",
+      "visitor planning"
+    ],
+    "verifiedAt": "2026-10-25T13:29:00Z",
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_OPERATOR_OR_OFFICIAL_TOURISM_PAGE_REVIEW",
+    "reviewSourceUrl": "https://hotel-le-rive.ch/en/"
+  },
+  {
+    "id": "local-nyon-leman-museum",
+    "placeId": "swiss-nyon-lakefront",
+    "place": "Nyon",
+    "name": "Musée du Léman",
+    "type": "museum",
+    "url": "https://museeduleman.ch/welcome-to-the-museum/?lang=en",
+    "summary": "Explore Lake Geneva’s natural and cultural history. The operator lists Thursday-to-Sunday and public-holiday visits with seasonal hours; check the current schedule and accessibility arrangements before travelling.",
+    "country": "Switzerland",
+    "tags": [
+      "Nyon",
+      "visitor planning"
+    ],
+    "verifiedAt": "2026-10-25T13:29:00Z",
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_OPERATOR_OR_OFFICIAL_TOURISM_PAGE_REVIEW",
+    "reviewSourceUrl": "https://museeduleman.ch/welcome-to-the-museum/?lang=en"
+  },
+  {
+    "id": "local-nyon-region-guide",
+    "placeId": "swiss-nyon-lakefront",
+    "place": "Nyon",
+    "name": "La Côte — official regional visitor guide",
+    "type": "visitor information",
+    "url": "https://www.lacote-tourisme.ch/en/",
+    "summary": "Use the official regional guide for Nyon and nearby places. Confirm transport, museum schedules and attraction access with the relevant operators; the panorama does not establish boat departures or open services.",
+    "country": "Switzerland",
+    "tags": [
+      "Nyon",
+      "visitor planning"
+    ],
+    "verifiedAt": "2026-10-25T13:29:00Z",
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_OPERATOR_OR_OFFICIAL_TOURISM_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.lacote-tourisme.ch/en/"
   }
 ]
