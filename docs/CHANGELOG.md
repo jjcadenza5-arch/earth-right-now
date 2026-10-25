@@ -1,3 +1,11 @@
+## 2026-10-25 Bangkok — Solothurn batch 8 deployed and accepted
+
+Production5edcaab8d011679e964d742ad401c4b83ed8a927. Pages40197270367 SUCCESS/all122 current release tests; Operations40197270409 SUCCESS/valid packet/zero issues. Exact served manifest and11 SHA256 checks PASS including home/app/styles/core/both lazy source parts/renewal ledger/offers/aliases/directory/new destination. Actual browser verified Solothurn current-image page/provider link, three businesses and official visitor guide.
+
+Coverage826/1,000 distinct camera-backed places (174 remaining);835 sources/827 catalog places,561 valid directory rows. One Solothurn destination regardless of harbour/city angles. Pier11 cached search extract said closed/Wednesday; fresh interactive operator page showed Restaurant geöffnet. Stale closure excluded from public summary; current provider confirmation required, no table guarantee. Three unpaid businesses/one guide, no affiliate activation or earnings claim.
+
+All834 old source records, five-camera evidence/ledger,232 public affiliate offers,design/publicOFF gates unchanged. Ordinary link-only/no copied media; reviewed copyright restrictions retained, no embedding/media licence claimed. Evidence docs/ERN_EXPANSION_BATCH8_2026-10-25.md. Continue focused usage-aware expansion from this accepted checkpoint; no owner action required.
+
 ## 2026-10-25 Bangkok — Solothurn batch 8 prepared
 
 Baseline main92b33b1d / productionce0154fa. One new Solothurn Aare harbour panorama, actual rendered25Oct14:10 scene inspected; Europe/Zurich inferred and DST change accounted for. LIVE_IMAGE/LINK_ONLY/EXTERNAL, Watch/featured held. Harbour/city angles count one destination, no video/media reuse or safe navigation claim. Official tourism legal notice reviewed; image/text reuse restricted, ordinary attributed external link only.
