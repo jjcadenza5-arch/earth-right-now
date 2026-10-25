@@ -1,3 +1,12 @@
+## 2026-10-25 Bangkok — Swiss batch 5 prepared
+
+Baseline main8b86884f / production3368e5fe. Added one distinct Heiden municipal current-image panorama, latest25Oct13:00 Europe/Zurich (timezone inferred, daylight-saving change accounted for), green hills/houses/autumn woodland. One rendered still panorama, not live video; external link only, held from Watch/featured, no copied media or lake-visibility promise. Municipal livecam redirects to viewer; copyright/reproduction restrictions reviewed, no special link prohibition observed. Exact viewer legal controls did not yield readable text; limitation recorded, not claimed verified.
+
+Troistorrents actual dated scene is visually valid but operator policy requires prior written authorisation for hyperlinking. Remains permission-held with no public source or business link added, no alternate-domain workaround. Existing cameras and dates unchanged.
+
+Two unpaid/nonaffiliate Heiden businesses: Hotel Heiden and Museum Henry Dunant. Museum operator lists21Dec2026–31Jan2027 closure; current first-party evidence takes precedence over older renovation snippets. No new public affiliate offer/account action/revenue claim.
+
+Expected831 sources/823 catalog places/822 camera-backed places toward1,000 (178 remaining),549 valid directory rows. All830 old sources,232 affiliate offers,five-camera ledger,design/publicOFF gates unchanged. Evidence docs/ERN_EXPANSION_BATCH5_2026-10-25.md. Scoped supplemental/aliases/directory/commercial/performance validations PASS; all122 required release smoke tests PASS. Normal main/Pages/Operations acceptance pending.
 ## 2026-10-25 Bangkok — Batch 4 deployed and accepted
 
 Production3368e5fe7cabc2869031612b605ea2a5a530ad14. Pages40190930825 SUCCESS, all122 current release smoke tests. Operations40190930877 SUCCESS, valid packet/zero issues. Served release manifest matches exact production commit;11 SHA256 checks passed including homepage, app/styles, core/supplementals, renewal ledger, public offers, local directory and both affected destination pages. Actual served HTML contains new businesses, guide and Waimarie refit warning with index/follow.

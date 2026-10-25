@@ -11849,5 +11849,45 @@
     "affiliate": false,
     "reviewBasis": "FIRST_PARTY_OR_OFFICIAL_REGIONAL_TOURISM_PAGE_REVIEW",
     "reviewSourceUrl": "https://www.waimarie.co.nz/experiences"
+  },
+  {
+    "id": "local-heiden-hotel",
+    "name": "Hotel Heiden",
+    "type": "hotel",
+    "url": "https://www.hotelheiden.ch/en/hotel",
+    "summary": "Review room options at Hotel Heiden in the village, with dining information available from the operator. Confirm availability, accessibility needs and arrangements directly; no particular room view is guaranteed by the municipal camera.",
+    "placeId": "swiss-heiden-village",
+    "place": "Heiden",
+    "country": "Switzerland",
+    "tags": [
+      "Heiden",
+      "visitor planning"
+    ],
+    "verifiedAt": "2026-10-25T12:50:00Z",
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_OPERATOR_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.hotelheiden.ch/en/hotel"
+  },
+  {
+    "id": "local-heiden-dunant-museum",
+    "name": "Museum Henry Dunant",
+    "type": "museum",
+    "url": "https://dunant-museum.ch/en/visit",
+    "summary": "Plan a visit to the Heiden museum about Henry Dunant. The operator lists a planned closure from 21 December 2026 through 31 January 2027. Check current opening and accessibility details before travelling; older third-party renovation notices are not treated as current.",
+    "placeId": "swiss-heiden-village",
+    "place": "Heiden",
+    "country": "Switzerland",
+    "tags": [
+      "Heiden",
+      "visitor planning"
+    ],
+    "verifiedAt": "2026-10-25T12:50:00Z",
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_OPERATOR_PAGE_REVIEW",
+    "reviewSourceUrl": "https://dunant-museum.ch/en/visit"
   }
 ]

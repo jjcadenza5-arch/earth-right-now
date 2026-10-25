@@ -1583,5 +1583,46 @@
     "officialUrl": "https://www.hbrc.govt.nz/webcams/esk-north-webcam/",
     "story": "See the Esk river mouth and neighbouring Bay View coastline in a dated daylight image. North and south camera angles represent one estuary place. Check official access and environmental notices before a visit; the image does not certify swimming, vehicle access or safe navigation.",
     "freshnessEvidence": "Review completed 2026-10-25T07:05:45Z. Capture label 25/10/2026 19:00:05. Officially linked full-size image retrieved for read-only local inspection and decoded1920x1440. Actual curved river channel, shingle beach, driftwood, ocean and distant coastal buildings inspected. Strong low sun/glare limits the right side. A browser image tab loaded by title but no successful screenshot was obtained; local decoded-file inspection supplies the scene proof. Pacific/Auckland inferred from council location, not printed in image clock. Provider page inline image metadata failed or remained Loading in this browser; its explicitly published View larger image link supplied the usable external target. No capture date inferred from HTTP retrieval, measured hourly cadence, continuous video or global outage claimed. Council describes daylight-dependent operation; retained image may precede review by hours."
+  },
+  {
+    "id": "swiss-heiden-village-current",
+    "placeId": "swiss-heiden-village",
+    "title": "Heiden — Appenzell Hills Panorama",
+    "seoName": "Heiden — Appenzell Hills Panorama",
+    "provider": "Gemeinde Heiden — Roundshot",
+    "country": "Switzerland",
+    "region": "Heiden / Appenzell Ausserrhoden",
+    "timeZone": "Europe/Zurich",
+    "categories": [
+      "Cities & Streets",
+      "Nature",
+      "Useful Earth"
+    ],
+    "aliases": [
+      "Heiden",
+      "Heiden AR",
+      "Appenzell Ausserrhoden",
+      "Heiden Panorama"
+    ],
+    "truth": "LIVE_IMAGE",
+    "permission": "LINK_ONLY",
+    "health": "HEALTHY",
+    "playback": "EXTERNAL",
+    "sourceUrl": "https://heiden.roundshot.com/",
+    "officialUrl": "https://www.heiden.ch/livecam",
+    "attribution": "Gemeinde Heiden — Roundshot panorama",
+    "checkedAt": "2026-10-25T12:50:00Z",
+    "lastSuccessfulCheck": "2026-10-25T12:50:00Z",
+    "quality": 80,
+    "freshness": 90,
+    "moment": 75,
+    "story": "Explore Heiden’s green hills, village houses and autumn woodland through the municipal panorama. Rotation moves around a captured still, not continuous video. Distant lake visibility varies; the inspected angle shows countryside rather than a clear lake view. Check transport, opening hours and route conditions separately.",
+    "featuredHold": true,
+    "watchHold": true,
+    "searchSupplemental": true,
+    "externalWindowRequired": true,
+    "rightsSourceUrl": "https://www.heiden.ch/impressum",
+    "rightsBasis": "Municipal livecam URL redirects to this public viewer and viewer logo links to Gemeinde Heiden. Municipal Impressum reviewed through public search retrieval: copyright remains with rights holders and reproduction requires written permission. Ordinary attributed external hyperlink and original ERN description only; no media, logo, tile, thumbnail, text or iframe copied/embedded. No special hyperlink prohibition observed in municipal notice; no media-reuse licence inferred. Viewer legal controls did not open readable legal text in this review; no claim that panel contents were verified.",
+    "freshnessEvidence": "Browser review completed 2026-10-25T12:50:00Z. Actual rendered municipal panorama visually inspected: green sloping pastures, scattered houses, dark evergreen and autumn woodland under overcast sky, with provider privacy blurring on foreground buildings. Visible capture25.10.2026 13:00, latest/next disabled, no archive navigation. Europe/Zurich inferred from location; DST ends today, so13:00 corresponds to12:00Z, around50 minutes before review. One reload was needed after initial blank/loading view. No decoded original image dimensions, measured refresh cadence, clear lake visibility or continuous video claimed."
   }
 ]

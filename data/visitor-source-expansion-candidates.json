@@ -2199,6 +2199,25 @@
       ],
       "why": "Three actual published public image files visually inspected locally. No camera admitted, freshness renewed or global provider outage inferred. Terms allow personal/business site use but restrict substantial copying; no media reused or embedding permission inferred.",
       "next": "Revisit only with usable daylight imagery and inspect the capture time then. No repeated night-image retry loop; use this queue rather than duplicate candidates."
+    },
+    {
+      "id": "swiss-heiden-troistorrents-batch5-oct25",
+      "country": "Switzerland",
+      "priority": "P1_CAMERA_COVERAGE",
+      "state": "ONE_DISTINCT_PLACE_ADMITTED_ONE_PERMISSION_HOLD",
+      "reviewedAt": "2026-10-25T12:50:00Z",
+      "resolvedCatalogIds": [
+        "swiss-heiden-village-current"
+      ],
+      "evidenceUrls": [
+        "https://heiden.roundshot.com/",
+        "https://www.heiden.ch/livecam",
+        "https://www.heiden.ch/impressum",
+        "https://troistorrents.roundshot.com/",
+        "https://www.regiondentsdumidi.ch/en/privacy-policy-24343/"
+      ],
+      "why": "Heiden rendered actual dated pasture/village panorama, admitted as one link-only place. Troistorrents rendered13:40 25.10.2026, misty valley houses, forest slope and low clouds, but published operator policy explicitly requires written authorisation for hyperlinking/public-commercial use. No Troistorrents camera/business link admitted and no alternate-domain workaround. The viewer share-camera control does not override that restriction.",
+      "next": "Maintain exact dated Heiden link-only evidence without media reuse. Troistorrents remains permission-held until explicit written permission or a material policy change; do not retry for a prettier scene or bypass through another URL."
     }
   ],
   "guardrails": {
