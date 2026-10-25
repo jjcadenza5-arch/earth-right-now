@@ -2218,6 +2218,24 @@
       ],
       "why": "Heiden rendered actual dated pasture/village panorama, admitted as one link-only place. Troistorrents rendered13:40 25.10.2026, misty valley houses, forest slope and low clouds, but published operator policy explicitly requires written authorisation for hyperlinking/public-commercial use. No Troistorrents camera/business link admitted and no alternate-domain workaround. The viewer share-camera control does not override that restriction.",
       "next": "Maintain exact dated Heiden link-only evidence without media reuse. Troistorrents remains permission-held until explicit written permission or a material policy change; do not retry for a prettier scene or bypass through another URL."
+    },
+    {
+      "id": "swiss-wasserfallen-batch6-oct25",
+      "country": "Switzerland",
+      "priority": "P1_CAMERA_COVERAGE",
+      "state": "ONE_DISTINCT_CAMERA_PLACE_ADMITTED_LINK_ONLY",
+      "reviewedAt": "2026-10-25T13:00:00Z",
+      "resolvedCatalogIds": [
+        "swiss-wasserfallen-mountain-current"
+      ],
+      "evidenceUrls": [
+        "https://wasserfallenbahn.roundshot.com/",
+        "https://www.region-wasserfallen.ch/livecam/",
+        "https://www.region-wasserfallen.ch/impressum/",
+        "https://www.region-wasserfallen.ch/"
+      ],
+      "why": "Actual dated rendered upper-station panorama, one distinct place regardless of rotation/angles. Camera health/currentness separate from cable-car storm closure. Provider publishes current-image page and attributed viewer, original metadata/external link only.",
+      "next": "Maintain exact dated link-only evidence without copying media. Service notice remains explicitly dated; check new official information before asserting reopening or activity access."
     }
   ],
   "guardrails": {

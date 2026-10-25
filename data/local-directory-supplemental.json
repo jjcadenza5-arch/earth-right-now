@@ -11889,5 +11889,65 @@
     "affiliate": false,
     "reviewBasis": "FIRST_PARTY_OPERATOR_PAGE_REVIEW",
     "reviewSourceUrl": "https://dunant-museum.ch/en/visit"
+  },
+  {
+    "id": "local-wasserfallen-cable-car",
+    "name": "Reigoldswil–Wasserfallen cable car — service information",
+    "type": "cable car",
+    "url": "https://www.region-wasserfallen.ch/infos/oeffnungszeiten/",
+    "summary": "Check the operator’s current opening and service notices before planning mountain access. A 25 October 2026 homepage notice reports storm closure that day; published seasonal hours do not override a temporary closure.",
+    "placeId": "swiss-wasserfallen-mountain",
+    "place": "Wasserfallen",
+    "country": "Switzerland",
+    "tags": [
+      "Wasserfallen",
+      "visitor planning"
+    ],
+    "verifiedAt": "2026-10-25T13:00:00Z",
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_OPERATOR_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.region-wasserfallen.ch/infos/oeffnungszeiten/"
+  },
+  {
+    "id": "local-wasserfallen-hintere-inn",
+    "name": "Berggasthaus Hintere Wasserfallen",
+    "type": "mountain inn",
+    "url": "https://www.region-wasserfallen.ch/geniessen/berggasthaus-hintere-wasserfallen/",
+    "summary": "Mountain dining and simple overnight accommodation near the upper station. Confirm meals, rooms and practical access with the operator; a listed opening schedule does not establish transport availability during storm closures.",
+    "placeId": "swiss-wasserfallen-mountain",
+    "place": "Wasserfallen",
+    "country": "Switzerland",
+    "tags": [
+      "Wasserfallen",
+      "visitor planning"
+    ],
+    "verifiedAt": "2026-10-25T13:00:00Z",
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_OPERATOR_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.region-wasserfallen.ch/geniessen/berggasthaus-hintere-wasserfallen/"
+  },
+  {
+    "id": "local-wasserfallen-service-advisory",
+    "name": "Wasserfallen — check current operating notices",
+    "type": "visitor information",
+    "url": "https://www.region-wasserfallen.ch/",
+    "summary": "The operator homepage reviewed on 25 October 2026 reports that the cable car is closed that day because of storm conditions. This is a dated notice, not a permanent closure or reopening guarantee. Read the latest notice before travelling and check activity access separately.",
+    "placeId": "swiss-wasserfallen-mountain",
+    "place": "Wasserfallen",
+    "country": "Switzerland",
+    "tags": [
+      "Wasserfallen",
+      "visitor planning"
+    ],
+    "verifiedAt": "2026-10-25T13:00:00Z",
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_OPERATOR_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.region-wasserfallen.ch/"
   }
 ]

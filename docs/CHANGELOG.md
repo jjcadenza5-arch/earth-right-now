@@ -1,3 +1,10 @@
+## 2026-10-25 Bangkok — Wasserfallen batch 6 prepared
+
+Baseline main41c0953a / production3f16c408. One new distinct camera-backed place: Wasserfallen upper station, actual rendered25Oct13:50 Europe/Zurich panorama showing green hills/path/inn/woodland under cloud. Zone inferred; today’s DST change accounted for. LINK_ONLY/LIVE_IMAGE/EXTERNAL, held from Watch/featured; rotation is a captured still, no media reused or measured cadence claimed.
+
+Two unpaid businesses (cable-car service information and Hintere Wasserfallen inn) plus one explicitly dated visitor advisory. Official homepage25Oct says cable car closed due to storm. No schedule/restaurant listing/camera scene overrides closure; current access and camera health kept separate. Other pages have differently dated activity notices, not combined into one blanket current closure claim.
+
+Expected832 source records/824 catalog places/823 distinct camera-backed places toward1,000 (177 remaining);552 directory rows. All831 prior sources,232 affiliate offers,five-camera ledger,design/publicOFF gates unchanged. No affiliate activation, bookings or income inferred. Evidence docs/ERN_EXPANSION_BATCH6_2026-10-25.md. Scoped supplemental/aliases/directory/commercial/performance validations PASS; all122 required release smoke tests PASS. Normal deployment acceptance pending. Continue focused usage-aware batches.
 ## 2026-10-25 Bangkok — Heiden batch 5 deployed and accepted
 
 Production3f16c408530ec2dd816cce255474fa31dbff1a9a. Pages40195038734 SUCCESS/all122 required release smoke tests. Operations40195038731 SUCCESS/packet valid/zero issues. Exact served manifest matched;11 deployed-file SHA256 checks PASS including homepage/app/styles/core/both lazy source parts/renewal ledger/offers/aliases/directory/new Heiden page. Actual browser verified new current-image destination, external provider link, Hotel Heiden and Museum Henry Dunant with21Dec2026–31Jan2027 planned closure.

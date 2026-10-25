@@ -1624,5 +1624,46 @@
     "rightsSourceUrl": "https://www.heiden.ch/impressum",
     "rightsBasis": "Municipal livecam URL redirects to this public viewer and viewer logo links to Gemeinde Heiden. Municipal Impressum reviewed through public search retrieval: copyright remains with rights holders and reproduction requires written permission. Ordinary attributed external hyperlink and original ERN description only; no media, logo, tile, thumbnail, text or iframe copied/embedded. No special hyperlink prohibition observed in municipal notice; no media-reuse licence inferred. Viewer legal controls did not open readable legal text in this review; no claim that panel contents were verified.",
     "freshnessEvidence": "Browser review completed 2026-10-25T12:50:00Z. Actual rendered municipal panorama visually inspected: green sloping pastures, scattered houses, dark evergreen and autumn woodland under overcast sky, with provider privacy blurring on foreground buildings. Visible capture25.10.2026 13:00, latest/next disabled, no archive navigation. Europe/Zurich inferred from location; DST ends today, so13:00 corresponds to12:00Z, around50 minutes before review. One reload was needed after initial blank/loading view. No decoded original image dimensions, measured refresh cadence, clear lake visibility or continuous video claimed."
+  },
+  {
+    "id": "swiss-wasserfallen-mountain-current",
+    "placeId": "swiss-wasserfallen-mountain",
+    "title": "Wasserfallen — Jura Mountain Panorama",
+    "seoName": "Wasserfallen — Jura Mountain Panorama",
+    "provider": "Region Wasserfallen — Roundshot",
+    "country": "Switzerland",
+    "region": "Reigoldswil / Basel-Landschaft",
+    "timeZone": "Europe/Zurich",
+    "categories": [
+      "Mountains",
+      "Nature",
+      "Useful Earth"
+    ],
+    "aliases": [
+      "Wasserfallen",
+      "Wasserfallenbahn",
+      "Reigoldswil Wasserfallen",
+      "Wasserfallen Bergstation"
+    ],
+    "truth": "LIVE_IMAGE",
+    "permission": "LINK_ONLY",
+    "health": "HEALTHY",
+    "playback": "EXTERNAL",
+    "sourceUrl": "https://wasserfallenbahn.roundshot.com/",
+    "officialUrl": "https://www.region-wasserfallen.ch/livecam/",
+    "attribution": "Stiftung Luftseilbahn Reigoldswil-Wasserfallen — Roundshot panorama",
+    "checkedAt": "2026-10-25T13:00:00Z",
+    "lastSuccessfulCheck": "2026-10-25T13:00:00Z",
+    "quality": 80,
+    "freshness": 90,
+    "moment": 75,
+    "story": "See green Jura pastures, woodland and mountain-inn surroundings in the Wasserfallen upper-station panorama. Rotation navigates a captured still, not continuous video. Check the operator’s current service notices before travelling; a visible camera scene does not establish that the cable car, trails or activities are open.",
+    "featuredHold": true,
+    "watchHold": true,
+    "searchSupplemental": true,
+    "externalWindowRequired": true,
+    "rightsSourceUrl": "https://www.region-wasserfallen.ch/impressum/",
+    "rightsBasis": "Public first-party current-image page and operator-attributed viewer with camera-link sharing. Operator Impressum reviewed: identifies responsible foundation and separately credits photographers/media owners; no special hyperlink prohibition observed. Attributed ordinary external hyperlink and original ERN summary only; no panorama, tile, thumbnail, footage, logo, prose or iframe copied or embedded. No media-use or embedding licence inferred.",
+    "freshnessEvidence": "Interactive browser review completed 2026-10-25T13:00:00Z. Actual rendered panorama shows green rolling pastures, a paved path, mountain-inn building and autumn/evergreen woodland under grey cloud. Capture25.10.2026 13:50; latest/next disabled and no archive navigation. Europe/Zurich inferred from location, not printed beside clock. Following today’s DST change,13:50 corresponds to12:50Z, ten minutes before review. Rotation is movement within a captured still, not genuine continuous video. No original decoded image dimensions, measured refresh cadence or safe-access claim. Independent operator homepage notice on25Oct says cable car closed due to storm; this does not make the camera unhealthy."
   }
 ]
