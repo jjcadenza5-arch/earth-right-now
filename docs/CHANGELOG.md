@@ -1,3 +1,11 @@
+## 2026-10-26 Bangkok — Herbertville batch11 deployed and accepted
+
+Production71d2772d499af9cb1899be727369b96d943e618c. Pages40248553644 SUCCESS/all122 required release smoke tests; Operations40248553614 SUCCESS/complete packet valid/zero issues. Exact served manifest and served-file SHA256 checks PASS; actual browser verified Herbertville current-image label, exact council image link and campground listing. No fresh human-video playback inferred.
+
+Coverage831/1,000 distinct camera-backed places (169 remaining);840 source records/832 catalog places,570 valid directory rows. One river-view destination and one unpaid campground business. Both council index labels resolve to the same image and count once. Duplicate council-guide URL caught by local validator and excluded without changing validators; council context remains documented in evidence. No media copied, beach-view or safe-access promise, affiliate activation or earnings claim.
+
+Existing839 source records, five-camera evidence/ledger,232 public affiliate offers,design/publicOFF gates unchanged. LIVE HERE genuine playback review remains due today26Oct11:00Bangkok; original WatchEarth horizon1Nov11:00 subject to failures. Actual-clock WatchEarth FULL5/4providers is eligibility evidence only;321 stale/expired catalog sources remain maintenance debt. Evidence docs/ERN_EXPANSION_BATCH11_2026-10-26.md. Continue focused usage-aware work from this accepted checkpoint.
+
 ## 2026-10-26 Bangkok — Herbertville expansion batch11 prepared
 
 Baseline main70ae50da / production972b7ff1. Actual-clock WatchEarth FULL5/4providers at07:12Bangkok;321 stale/expired catalog sources remain maintenance debt, not fresh coverage. Existing five-owner playback evidence unchanged; genuine LIVE HERE playback review remains due26Oct11:00Bangkok, WatchEarth original horizon1Nov11:00 subject to failures.
