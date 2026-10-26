@@ -1,3 +1,11 @@
+## 2026-10-26 Bangkok — Bad Urach/Tübingen batch15 deployed and accepted
+
+Productiond6fff5303f7339935c7591933a6a349f597fb6d0. Pages40317855728 SUCCESS/all122 required release smoke tests; Operations40317855644 SUCCESS/complete packet valid/zero issues. Exact served manifest and12 SHA256 checks PASS, including home/app/styles/core/both lazy source parts/provider ledger/offers/directory/aliases/two new destinations. Both served pages have correct current-image labels, exact provider-page actions and reviewed resources; owner five playback timestamps preserved.
+
+Coverage836/1,000 distinct camera-backed places (164 remaining);845 source records/837 catalog places,584 valid directory rows. Exactly two new destinations: Bad Urach market square and independently dated Tübingen tourism Neckarfront. Four unpaid business/attraction listings and two official visitor guides. Municipal Tübingen market camera remains clock-held (apparent future under post-DST CET), no guessed CEST conversion or failed-source label. Bad Urach extra angles count once; Neckarfront framing does not promise visible river surface. Ordinary attributed external page links only, no copyrighted media/prose/iframe reused or media licence inferred.
+
+Exact punting-product May–Sep/selected Saturdays to mid-Oct schedule retained against broader webcam-page May–Oct wording; no26Oct trip availability asserted. Bad Urach closure notices and bath/museum/office schedules kept separate from camera health. No affiliate activation or income claim. All843 prior source records, five-camera renewal/ledger,232 offers,design/publicOFF gates unchanged. Owner26Oct15:13:51–55Bangkok renewal remains in force: next24h horizon27Oct15:13, source/Watch seven-day horizon2Nov15:13 subject to later failures. Evidence docs/ERN_EXPANSION_BATCH15_2026-10-26.md. Continue focused usage-aware expansion from this accepted checkpoint.
+
 ## 2026-10-26 Bangkok — Bad Urach/Tübingen expansion batch15 prepared
 
 Baseline main053cb744 / productiona64ad006. WatchEarth actual-clock18:40Bangkok FULL5/4providers; owner26Oct15:13:51–55Bangkok five-camera proof/ledger preserved exactly. Next LIVE HERE horizon27Oct15:13; source/Watch horizon2Nov15:13, subject to later failures. No automatic renewal or horizon changes.
