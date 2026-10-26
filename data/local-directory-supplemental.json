@@ -12465,5 +12465,119 @@
     "affiliate": false,
     "reviewBasis": "FIRST_PARTY_OPERATOR_OR_OFFICIAL_GOVERNMENT_PAGE_REVIEW",
     "reviewSourceUrl": "https://www.doc.govt.nz/parks-and-recreation/places-to-go/manawatu-whanganui/places/mangaweka-scenic-reserve/"
+  },
+  {
+    "id": "local-bad-urach-albthermen",
+    "placeId": "germany-bad-urach",
+    "place": "Bad Urach",
+    "name": "AlbThermen Bad Urach",
+    "type": "thermal baths",
+    "url": "https://www.albthermen.com/",
+    "summary": "Review thermal-bath, sauna and visitor information directly with AlbThermen. Bath, sauna and restaurant schedules differ; confirm current entry conditions and any age requirements. No medical benefit, ticket availability or treatment suitability is inferred.",
+    "country": "Germany",
+    "tags": [
+      "visitor planning"
+    ],
+    "verifiedAt": "2026-10-26T11:46:54Z",
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_OPERATOR_OR_OFFICIAL_TOURISM_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.albthermen.com/"
+  },
+  {
+    "id": "local-bad-urach-bischoffs",
+    "placeId": "germany-bad-urach",
+    "place": "Bad Urach",
+    "name": "BISCHOFFS Hotel",
+    "type": "hotel",
+    "url": "https://www.bischoffs-badurach.de/bischoffs/",
+    "summary": "Explore independently operated rooms and stay arrangements near Bad Urach’s old town. Confirm room type, dates, current terms and arrival arrangements with the hotel; listed offers do not guarantee availability.",
+    "country": "Germany",
+    "tags": [
+      "visitor planning"
+    ],
+    "verifiedAt": "2026-10-26T11:46:54Z",
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_OPERATOR_OR_OFFICIAL_TOURISM_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.bischoffs-badurach.de/bischoffs/"
+  },
+  {
+    "id": "local-bad-urach-route-notices",
+    "placeId": "germany-bad-urach",
+    "place": "Bad Urach",
+    "name": "Bad Urach — official route and safety notices",
+    "type": "visitor information",
+    "url": "https://www.badurach-tourismus.de/wandern-outdoor/aktuelle-sicherheitshinweise",
+    "summary": "Check official route notices before exploring beyond the town square. The tourism page lists closures affecting route 9 and Nordic Walking routes 4/6, fallen trees on the route 14 ascent, and a route 1 closure linked to Kurpark works. Read the latest details before setting out.",
+    "country": "Germany",
+    "tags": [
+      "visitor planning"
+    ],
+    "verifiedAt": "2026-10-26T11:46:54Z",
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_OPERATOR_OR_OFFICIAL_TOURISM_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.badurach-tourismus.de/wandern-outdoor/aktuelle-sicherheitshinweise"
+  },
+  {
+    "id": "local-tuebingen-krone",
+    "placeId": "germany-tuebingen",
+    "place": "Tübingen",
+    "name": "Hotel Krone Tübingen",
+    "type": "hotel",
+    "url": "https://www.krone-tuebingen.de/en/",
+    "summary": "Review rooms and hotel services in central Tübingen. Confirm dates, room type, rates and any spa or restaurant arrangements directly; camera visibility does not establish room or table availability.",
+    "country": "Germany",
+    "tags": [
+      "visitor planning"
+    ],
+    "verifiedAt": "2026-10-26T11:46:54Z",
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_OPERATOR_OR_OFFICIAL_TOURISM_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.krone-tuebingen.de/en/"
+  },
+  {
+    "id": "local-tuebingen-ancient-cultures",
+    "placeId": "germany-tuebingen",
+    "place": "Tübingen",
+    "name": "Museum Alte Kulturen — Schloss Hohentübingen",
+    "type": "museum",
+    "url": "https://www.tuebingen-info.de/de/mein-aufenthalt/fuehrungen-durch-museen-und-sammlungen/museum-alte-kulturen-im-schloss-hohentuebingen",
+    "summary": "Explore the official tourism information for the castle museum’s collections and guided visits. Museum and tour schedules differ from tourist-office opening hours; confirm the current museum timetable, tickets and tour arrangements before visiting.",
+    "country": "Germany",
+    "tags": [
+      "visitor planning"
+    ],
+    "verifiedAt": "2026-10-26T11:46:54Z",
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_OPERATOR_OR_OFFICIAL_TOURISM_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.tuebingen-info.de/de/mein-aufenthalt/fuehrungen-durch-museen-und-sammlungen/museum-alte-kulturen-im-schloss-hohentuebingen"
+  },
+  {
+    "id": "local-tuebingen-punting-season",
+    "placeId": "germany-tuebingen",
+    "place": "Tübingen",
+    "name": "Tübingen — official public punting information",
+    "type": "visitor information",
+    "url": "https://www.tuebingen-info.de/de/mein-aufenthalt/stocherkahnfahrten/oeffentliche-stocherkahnfahrt",
+    "summary": "Plan future public punting trips using the exact tourism schedule. This page lists May–September, with some fine-weather Saturdays from mid-April to mid-October. Do not assume a public trip is running on 26 October or from the webcam page’s broader May–October wording; confirm dates directly.",
+    "country": "Germany",
+    "tags": [
+      "visitor planning"
+    ],
+    "verifiedAt": "2026-10-26T11:46:54Z",
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_OPERATOR_OR_OFFICIAL_TOURISM_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.tuebingen-info.de/de/mein-aufenthalt/stocherkahnfahrten/oeffentliche-stocherkahnfahrt"
   }
 ]

@@ -1,3 +1,11 @@
+## 2026-10-26 Bangkok — Bad Urach/Tübingen expansion batch15 prepared
+
+Baseline main053cb744 / productiona64ad006. WatchEarth actual-clock18:40Bangkok FULL5/4providers; owner26Oct15:13:51–55Bangkok five-camera proof/ledger preserved exactly. Next LIVE HERE horizon27Oct15:13; source/Watch horizon2Nov15:13, subject to later failures. No automatic renewal or horizon changes.
+
+Two distinct German current-image places: Bad Urach market square460x345 capture26Oct12:22:39 and Tübingen tourism Neckarfront1280x720 capture12:39:24. CETUTC+1 inferred after25Oct DST end, offsets not printed; actual images visually inspected locally. Separate Tübingen municipal market clock13:23:21 appears future under CET and remains held, no silent CEST assumption; independent tourism camera admitted. Provider-page links only, copyright/copying restrictions retained, no media/prose/iframe reuse. Bad Urach extra angles count once; Neckarfront framing does not promise river-surface visibility.
+
+Four unpaid business/attraction listings (AlbThermen,BISCHOFFS,Hotel Krone,castle museum) and two official visitor guides. Exact public-punting schedule narrower than webcam-page wording: May–Sep plus selected fine-weather Saturdays to mid-Oct, no26Oct departure inferred. Bad Urach route closures checked separately; museum hours not confused with tourist office. No rate/availability, medical benefit, affiliate activation or earnings claim. Expected845 sources/837 catalog places/836 camera-backed places toward1,000 (164 remaining),584 directory rows. All843 previous sources, five-camera evidence/ledger,232 offers,design/publicOFF gates unchanged. Scoped source/alias/directory checks, preservation assertions and all122 required release smoke tests PASS. Normal deployment acceptance pending.
+
 ## 2026-10-26 Bangkok — Owner five-camera renewal deployed and accepted
 
 Productiona64ad006a91a0124ac7da7cf370017a44208c29a. Pages40291570011 SUCCESS/all122 required release smoke tests; Operations40291570041 SUCCESS/complete packet valid/zero issues. Exact served manifest and11 SHA256 checks PASS; all five source verification/playback markers and latest HUMAN_PLAYBACK ledger observations match exact owner timestamps. New review batch replaces consumed e91d081432cf484a. Raw owner packet and validation record excluded from public release manifest.

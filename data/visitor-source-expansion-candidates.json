@@ -2395,6 +2395,44 @@
       "resolvedCatalogIds": [
         "nz-mangaweka-river-current"
       ]
+    },
+    {
+      "id": "germany-bad-urach-tuebingen-batch15-oct26",
+      "priority": "P2",
+      "placeGroup": "Bad Urach and Tübingen",
+      "country": "Germany",
+      "provider": "Stadt Bad Urach / Tourismus und Stadtmarketing Tübingen GmbH",
+      "candidateType": "OFFICIAL_CURRENT_IMAGE",
+      "visitorDecisionValue": "HIGH",
+      "qualityPotential": "HIGH",
+      "programFit": [
+        "stay",
+        "activities",
+        "culture",
+        "eat"
+      ],
+      "evidenceUrls": [
+        "https://www.bad-urach.de/de/aktuelles/Webcams",
+        "https://www.tuebingen-info.de/de/webcam",
+        "https://www.bad-urach.de/impressum",
+        "https://www.tuebingen-info.de/de/impressum"
+      ],
+      "state": "TWO_DISTINCT_CAMERA_PLACES_ADMITTED_ONE_ALTERNATE_CLOCK_HOLD",
+      "why": "Dated actual town/old-town visual context alongside independently reviewed stays, bath, museum and route/season planning.",
+      "next": "Maintain actual dates and ordinary external-link rights scope. Revisit held municipal market clock only after material clock/configuration evidence, not a repeated retry or silent timezone relabel. Other Bad Urach angles do not inflate place count.",
+      "reviewedAt": "2026-10-26T11:46:54Z",
+      "resolvedCatalogIds": [
+        "germany-bad-urach-market-current",
+        "germany-tuebingen-neckarfront-current"
+      ],
+      "heldTargets": [
+        {
+          "name": "Tübingen municipal market camera",
+          "sourceUrl": "https://www.tuebingen.de/webcam.html",
+          "imageUrl": "https://www.tuebingen.de/camera/webcam_marktplatz.jpg",
+          "reason": "Printed26Oct13:23:21 appears future relative to review clock if CET inferred after DST ended25Oct; offset not printed/configuration unresolved. No guessed CEST conversion or currentness admission. Independent tourism Neckarfront qualifies separately."
+        }
+      ]
     }
   ],
   "guardrails": {
