@@ -2486,6 +2486,33 @@
       "why": "NPS labels webcam active, but exact image request returned403 during read-only review; no actual image or currentness could be verified. No broader provider outage or bot-block diagnosis inferred.",
       "next": "Revisit only on materially new provider evidence or a verified accessible image; do not retry-loop or count an unverified camera.",
       "reviewedAt": "2026-10-26T21:02:32Z"
+    },
+    {
+      "id": "nps-colorado-saddlehorn-batch17",
+      "priority": "P2",
+      "placeGroup": "Colorado National Monument Saddlehorn",
+      "country": "United States",
+      "provider": "National Park Service",
+      "candidateType": "OFFICIAL_CURRENT_IMAGE",
+      "visitorDecisionValue": "HIGH",
+      "qualityPotential": "HIGH",
+      "programFit": [
+        "stay",
+        "activities",
+        "nature"
+      ],
+      "evidenceUrls": [
+        "https://www.nps.gov/media/webcam/view.htm?id=81B46AB6-1DD8-B71B-0B12AA5101C4657E",
+        "https://www.nps.gov/colm/planyourvisit/conditions.htm",
+        "https://www.nps.gov/aboutus/publications.htm"
+      ],
+      "state": "CAMERA_LOCATION_ADMITTED_LINK_ONLY",
+      "why": "Distinct visitor-center canyon view visually checked with printed current timestamp; ordinary official viewer link only.",
+      "next": "Keep image freshness and rights evidence current; check road access independently.",
+      "reviewedAt": "2026-10-26T23:51:30Z",
+      "resolvedCatalogIds": [
+        "us-colorado-national-monument-saddlehorn-current"
+      ]
     }
   ],
   "guardrails": {

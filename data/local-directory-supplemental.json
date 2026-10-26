@@ -12712,5 +12712,81 @@
     "affiliate": false,
     "reviewBasis": "FIRST_PARTY_OPERATOR_OR_OFFICIAL_NPS_PAGE_REVIEW",
     "reviewSourceUrl": "https://www.nps.gov/redw/planyourvisit/jedediah-smith-campground.htm"
+  },
+  {
+    "id": "local-saddlehorn-balanced-rock-inn",
+    "placeId": "us-colorado-national-monument-saddlehorn",
+    "place": "Colorado National Monument — Saddlehorn",
+    "name": "Balanced Rock Inn",
+    "type": "hotel",
+    "url": "https://www.balancedrockinn.com/home",
+    "summary": "Explore rooms at this Fruita inn near the monument. Confirm availability, amenities and terms directly.",
+    "country": "United States",
+    "tags": [
+      "visitor planning"
+    ],
+    "verifiedAt": "2026-10-26T23:51:30Z",
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_OPERATOR_OR_OFFICIAL_NPS_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.balancedrockinn.com/home"
+  },
+  {
+    "id": "local-saddlehorn-old-crowe-inn",
+    "placeId": "us-colorado-national-monument-saddlehorn",
+    "place": "Colorado National Monument — Saddlehorn",
+    "name": "The Old Crowe Inn",
+    "type": "bed and breakfast",
+    "url": "https://theoldcroweinn.com/",
+    "summary": "Explore downtown Fruita lodging. Confirm current availability, amenities and terms directly.",
+    "country": "United States",
+    "tags": [
+      "visitor planning"
+    ],
+    "verifiedAt": "2026-10-26T23:51:30Z",
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_OPERATOR_OR_OFFICIAL_NPS_PAGE_REVIEW",
+    "reviewSourceUrl": "https://theoldcroweinn.com/"
+  },
+  {
+    "id": "local-saddlehorn-over-the-edge",
+    "placeId": "us-colorado-national-monument-saddlehorn",
+    "place": "Colorado National Monument — Saddlehorn",
+    "name": "Over The Edge Fruita",
+    "type": "bicycle shop",
+    "url": "https://www.otefruita.com/articles/visit-over-the-edge-fruita-pg202.htm",
+    "summary": "Explore a Fruita bicycle shop and its local visitor information. Check current services and opening times directly.",
+    "country": "United States",
+    "tags": [
+      "visitor planning"
+    ],
+    "verifiedAt": "2026-10-26T23:51:30Z",
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_OPERATOR_OR_OFFICIAL_NPS_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.otefruita.com/articles/visit-over-the-edge-fruita-pg202.htm"
+  },
+  {
+    "id": "local-saddlehorn-nps-conditions",
+    "placeId": "us-colorado-national-monument-saddlehorn",
+    "place": "Colorado National Monument — Saddlehorn",
+    "name": "Colorado National Monument — alerts and conditions",
+    "type": "visitor information",
+    "url": "https://www.nps.gov/colm/planyourvisit/conditions.htm",
+    "summary": "Check official park alerts, road conditions and visitor-center information before visiting; the webcam does not establish access.",
+    "country": "United States",
+    "tags": [
+      "visitor planning"
+    ],
+    "verifiedAt": "2026-10-26T23:51:30Z",
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_OPERATOR_OR_OFFICIAL_NPS_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.nps.gov/colm/planyourvisit/conditions.htm"
   }
 ]

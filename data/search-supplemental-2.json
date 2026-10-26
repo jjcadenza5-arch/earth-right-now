@@ -2310,5 +2310,45 @@
     "sourceUrl": "https://www.nps.gov/media/webcam/view.htm?id=BB7B050A-BE3B-E7FE-BFED58CB2E874B0F",
     "story": "See forest trunks, ferns and a campground-side view in Jedediah Smith Redwoods State Park. The image looks into the forest rather than toward the Smith River. Check current road, campground and trail information separately before visiting.",
     "freshnessEvidence": "Exact NPS-published2304x1728 image visually inspected locally: dense tall forest trunks, ferns, understory, filtered daylight and foreground railing. NPS identifies this as the Jedediah Smith campground/day-use view. Printed26Oct2026 14:00:00 with no offset. America/Los_Angeles daylightUTC−7 inferred, equivalent21:00:00Z; HTTP Last-Modified21:00:08Z is separate corroborating evidence. No river view, species-by-individual identification or safe-trail inference. Review completed 2026-10-26T21:02:32Z. Clock precision/configuration unverified; printed timestamp, not HTTP or retrieval time, establishes capture evidence. NPS describes approximately one-minute refresh; no independently measured cadence or video playback claimed."
+  },
+  {
+    "provider": "National Park Service",
+    "country": "United States",
+    "timeZone": "America/Denver",
+    "categories": [
+      "Nature",
+      "Parks & Scenic",
+      "Useful Earth"
+    ],
+    "truth": "LIVE_IMAGE",
+    "permission": "LINK_ONLY",
+    "health": "HEALTHY",
+    "playback": "EXTERNAL",
+    "officialUrl": "https://www.nps.gov/colm/planyourvisit/conditions.htm",
+    "attribution": "National Park Service — Saddlehorn Visitor Center webcam",
+    "checkedAt": "2026-10-26T23:51:30Z",
+    "lastSuccessfulCheck": "2026-10-26T23:51:30Z",
+    "quality": 82,
+    "freshness": 90,
+    "moment": 75,
+    "featuredHold": true,
+    "watchHold": true,
+    "searchSupplemental": true,
+    "externalWindowRequired": true,
+    "rightsSourceUrl": "https://www.nps.gov/aboutus/publications.htm",
+    "rightsBasis": "NPS notes government-created material is generally public domain while third-party material may have separate rights. ERN uses only an attributed ordinary external link to the official viewer and an original description; no image, logo, thumbnail, iframe or media reuse licence inferred.",
+    "id": "us-colorado-national-monument-saddlehorn-current",
+    "placeId": "us-colorado-national-monument-saddlehorn",
+    "title": "Colorado National Monument — Saddlehorn",
+    "seoName": "Colorado National Monument — Saddlehorn",
+    "region": "Fruita / Western Colorado",
+    "aliases": [
+      "Colorado National Monument",
+      "Saddlehorn Visitor Center",
+      "Rim Rock Drive Colorado"
+    ],
+    "sourceUrl": "https://www.nps.gov/media/webcam/view.htm?id=81B46AB6-1DD8-B71B-0B12AA5101C4657E",
+    "story": "Look across the canyons from near the Saddlehorn Visitor Center in a refreshed still image. Check park alerts, road conditions and visitor-center arrangements separately before visiting.",
+    "freshnessEvidence": "Exact NPS-published 1280x720 image visually inspected: sunlit canyon cliffs, vegetation, visitor-center roof and distant landforms. Printed 2026-10-26 05:50:14 PM without offset; America/Denver MDT UTC−6 inferred, equivalent 23:50:14Z. HTTP Last-Modified 23:51:16Z independently corroborates freshness, not capture time. Review 23:51:30Z; clock precision and configuration unverified. No video playback, guaranteed visibility or road access inferred."
   }
 ]

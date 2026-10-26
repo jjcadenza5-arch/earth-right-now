@@ -1,3 +1,7 @@
+## 2026-10-27 Bangkok — Saddlehorn camera and business expansion prepared
+
+Baseline main 6f031eba. One new Colorado National Monument Saddlehorn camera-backed place, three unpaid Fruita business listings and one official park conditions guide; no affiliate activation or income claim. NPS image visually inspected 26 Oct 17:50:14, offset not printed, Denver MDT UTC−6 inferred (23:50:14Z); HTTP Last-Modified 23:51:16Z independent corroboration, not capture time. Ordinary attributed external viewer link only; no media reuse inferred. Check roads, opening hours and reservations separately. New River Gorge image was dark and insufficient for scenic visual verification; Lava Beds image returned 403; neither added. Five owner playback dates remain unchanged, 24-hour horizon today 27 Oct 15:13 Bangkok; seven-day horizon 2 Nov 15:13 subject to failures. Existing design and public OFF gates preserved.
+
 ## 2026-10-27 Bangkok — Redwood three-location batch16 deployed and accepted
 
 Productionea352870aa17abc49c4f170b191a851adfc38954. Pages40401153423 SUCCESS/all122 required release smoke tests; Operations40401153308 SUCCESS/complete packet valid/zero issues. Exact served manifest and13 SHA256 checks PASS, including home/app/styles/core/both lazy source parts/provider ledger/offers/directory/aliases/three destination pages. Each page has its correct current-image label, exact NPS action and reviewed resources; owner five playback timestamps preserved.
