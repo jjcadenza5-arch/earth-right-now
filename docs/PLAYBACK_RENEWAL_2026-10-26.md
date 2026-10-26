@@ -1,3 +1,11 @@
+## 2026-10-26 Bangkok — Playback-renewal queue repair deployed; owner review required
+
+Production f7192b5e2e4d6bad5e780e8aa639b637f3f3604d. Pages40286581837 SUCCESS/all122 release smoke tests; Operations40286581955 SUCCESS/complete packet valid/zero issues. Served manifest and11 SHA256 checks PASS, including unchanged home/app/styles, core/lazy catalog, provider ledger/offers/directory and exact review HTML/current.json. Deployed primary exactly Rovaniemi,Taitung,Auckland,Kifune,Fushimi; all five cards type restore and video proof dates still25Oct04:00Z. No actual human playback renewed.
+
+At14:29Bangkok all five owner LIVE HERE24h proofs expired by3.5h, while WatchEarth remained FULL5/4providers under its separate seven-day horizon (original1Nov11:00Bangkok subject to failures). This is honest gate separation, not a rendering outage. Repaired operator-work ordering only: protect approaching-expiry proof first, then newest previously proven expired windows; old debt retained in backlog. Regression verifies five recently proven expired windows are not buried by older high-quality debt; ready remains0, holds/schedules/health/permission filters retained. No visitor/editorial/Watch ranking or expiry relaxation.
+
+Normal release also carries scheduled two-still-source pilot commit2d7cc3c6; scheduled pilot40273043505 and Operations40271703396 independently succeeded. No automatic video renewal or workflow rerun. Camera coverage remains834/1,000 (166 remaining),843 sources/835 catalog places,578 directory rows,232 public offers and existing design/publicOFF gates preserved. NEXT HUMAN ACTION: open https://earthrightnow.app/review/inside-ern.html, review the five primary cards, record true outcomes, Download JSON and return it for validation/application. Checklist docs/PLAYBACK_RENEWAL_2026-10-26.md. Do not apply dates until genuine owner evidence arrives.
+
 # Five-camera playback renewal —26October2026 Bangkok
 
 ## 2026-10-26 Bangkok — Overdue playback renewal and operator-queue repair prepared
