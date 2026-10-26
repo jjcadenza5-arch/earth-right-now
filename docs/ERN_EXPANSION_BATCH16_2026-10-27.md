@@ -1,3 +1,11 @@
+## 2026-10-27 Bangkok — Redwood three-location batch16 deployed and accepted
+
+Productionea352870aa17abc49c4f170b191a851adfc38954. Pages40401153423 SUCCESS/all122 required release smoke tests; Operations40401153308 SUCCESS/complete packet valid/zero issues. Exact served manifest and13 SHA256 checks PASS, including home/app/styles/core/both lazy source parts/provider ledger/offers/directory/aliases/three destination pages. Each page has its correct current-image label, exact NPS action and reviewed resources; owner five playback timestamps preserved.
+
+Coverage839/1,000 distinct camera-backed places (161 remaining);848 source records/840 catalog places,591 valid directory rows. Three physically distinct Redwood visitor locations: Kuchel coast, Elk Prairie meadow and Jedediah Smith forest; they belong to the same broader park system, not three national parks. Four unpaid local businesses and three official park guides. NPS reports donated webcam network; ordinary attributed external links only, no media copied/embedded or blanket public-domain licence assumed. El Morro exact image returned403 and remains research-only, without global outage/bot diagnosis.
+
+No wildlife sighting, activity safety, opening, reservation, affiliate activation or income inferred from camera images. Existing845 source records, five-camera renewal/ledger,232 offers,design/publicOFF gates unchanged. Owner26Oct15:13:51–55Bangkok renewal remains valid: next24h LIVE HERE horizon today27Oct15:13, source/Watch seven-day horizon2Nov15:13 subject to later failures. Evidence docs/ERN_EXPANSION_BATCH16_2026-10-27.md. Continue focused usage-aware expansion from this accepted checkpoint.
+
 # Redwood current-image and visitor-resource expansion —27October2026 Bangkok
 
 ## 2026-10-27 Bangkok — Redwood three-location expansion batch16 prepared
