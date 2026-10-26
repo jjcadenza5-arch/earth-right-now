@@ -1,3 +1,11 @@
+## 2026-10-26 Bangkok — Overdue playback renewal and operator-queue repair prepared
+
+Baseline main2d7cc3c6 (scheduled still-image pilot commit), public production87fac291. At14:29Bangkok, WatchEarth FULL5/4providers under original seven-day horizon, but LIVE HERE 24h playback proof for all five owner25Oct11:00 confirmations expired today11:00. LIVE HERE ready0 is freshness enforcement, not a rendering fault or new outage. No owner/human playback renewal inferred from status, scripts, iframe loads or still images.
+
+Found review usability defect: oldest expired proof consumed the primary five while the five owner-confirmed yesterday were buried in backlog. Operator-only queue repair protects due windows first, then most recently proven expired windows, retaining older debt in backlog. No source/editorial/Watch ranking, catalogue mutation, health or freshness-limit change. Regression tests cover five recently expired windows versus higher-quality old debt and protection of approaching-expiry proof. Generated primary exactlyRovaniemi,Taitung,Auckland,Kifune,Fushimi; ready remains0 until genuine review evidence is applied.
+
+Scheduled Operations40271703396 SUCCESS/packet valid/zero issues. Scheduled image pilot40273043505 SUCCESS renewed only Yellowstone Biscuit Basin and Ruapehu still-image evidence in2d7cc3c6; five video timestamps unchanged. Pilot commit not yet in served production manifest (still87fac291), so this normal path repair release will carry it forward. No manual workflow dispatch/rerun. Coverage834/1,000 camera-backed places (166 remaining),843 sources/835 catalog places,578 directory rows,232 public offers/design/publicOFF gates unchanged. Exact checklist docs/PLAYBACK_RENEWAL_2026-10-26.md. All122 required release smoke tests and targeted queue regressions PASS. Deployment acceptance pending; genuine human review remains required.
+
 ## 2026-10-26 Bangkok — Mangaweka batch13 deployed and accepted
 
 Production87fac291678be912d66a38e3192e313d934c92dc. Pages40262207015 SUCCESS/all122 required release smoke tests; Operations40262206858 SUCCESS/complete packet valid/zero issues. Exact served manifest,11 SHA256 file checks and destination source/label/resource checks PASS. Static page/file verification is not browser video playback or fresh owner renewal.

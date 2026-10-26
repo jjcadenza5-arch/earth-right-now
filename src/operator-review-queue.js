@@ -14,7 +14,16 @@ export function operatorReviewQueue(sources=[],observations=[],{now=new Date(),l
     })
     .filter(Boolean)
     .filter(s=>scheduleOpen(s,now))
-    .sort((a,b)=>(a.remainingHours??Infinity)-(b.remainingHours??Infinity)||(Number(b.quality)||0)-(Number(a.quality)||0)||String(a.id).localeCompare(String(b.id)));
+    .sort((a,b)=>{
+      // Protect windows approaching expiry first; recover the most recently
+      // proven expired windows before spending the primary batch on old debt.
+      const expiredA=a.reason==="EXPIRED",expiredB=b.reason==="EXPIRED";
+      if(expiredA!==expiredB)return expiredA?1:-1;
+      const urgency=expiredA
+        ?Date.parse(b.playbackVerifiedAt)-Date.parse(a.playbackVerifiedAt)
+        :(a.remainingHours??Infinity)-(b.remainingHours??Infinity);
+      return urgency||(Number(b.quality)||0)-(Number(a.quality)||0)||String(a.id).localeCompare(String(b.id));
+    });
   const renewable=(horizon.items||[])
     .filter(x=>["CURRENT","DUE_12H","DUE_6H"].includes(x.state)&&!x.held)
     .map(x=>{

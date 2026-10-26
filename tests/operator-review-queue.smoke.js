@@ -38,3 +38,20 @@ assert.equal(efficient.ready,6);assert.equal(efficient.renewalCount,3);assert.eq
 
 const scheduled=[{id:"closed",title:"Closed schedule",provider:"P",playback:"EMBED",permission:"EMBED_ALLOWED",health:"HEALTHY",playbackVerifiedAt:"2026-09-23T00:00:00Z",embedUrl:"https://x/closed",sourceUrl:"https://x/closed-source",quality:99,freshness:99,moment:99,checkedAt:"2026-09-24T17:00:00Z",lastSuccessfulCheck:"2026-09-24T17:00:00Z",availabilitySchedule:{timeZone:"Asia/Tokyo",start:"11:00",end:"18:00"}},{id:"open",title:"Always open",provider:"P",playback:"EMBED",permission:"EMBED_ALLOWED",health:"HEALTHY",playbackVerifiedAt:"2026-09-23T00:00:00Z",embedUrl:"https://x/open",sourceUrl:"https://x/open-source",quality:90,freshness:99,moment:99,checkedAt:"2026-09-24T17:00:00Z",lastSuccessfulCheck:"2026-09-24T17:00:00Z"}];
 const sch=operatorReviewQueue(scheduled,[],{now:new Date("2026-09-24T12:30:00Z"),limit:5,targetReady:1});assert.ok(!sch.renewal.some(x=>x.id==="closed"));assert.equal(sch.primaryItems[0].id,"open");
+
+// A recently owner-reviewed five-window set must not be buried behind older
+// expired proof; this only orders manual work and never restores eligibility.
+const recoveryNow=new Date("2026-10-26T07:30:00Z");
+const recentFive=Array.from({length:5},(_,i)=>({...expiredSources[0],id:"recent-"+i,playbackVerifiedAt:"2026-10-25T04:00:00Z",checkedAt:"2026-10-25T04:00:00Z",lastSuccessfulCheck:"2026-10-25T04:00:00Z",quality:80+i}));
+const oldDebt={...expiredSources[0],id:"old-debt",playbackVerifiedAt:"2026-10-07T04:00:00Z",quality:100};
+const recentObservations=[oldDebt,...recentFive].map(x=>({id:x.id,confirmation:"HUMAN_PLAYBACK",observedAt:x.playbackVerifiedAt,httpStatus:200}));
+const recentQueue=operatorReviewQueue([oldDebt,...recentFive],recentObservations,{now:recoveryNow,limit:20,targetReady:5});
+assert.equal(recentQueue.ready,0);assert.equal(recentQueue.readyShortfall,5);
+assert.deepEqual(new Set(recentQueue.primaryItems.map(x=>x.id)),new Set(recentFive.map(x=>x.id)));
+assert.ok(recentQueue.primaryItems.every(x=>x.reason==="EXPIRED"&&x.action==="RENEW_EXPIRED_VISITOR_PLAYBACK"));
+assert.ok(recentQueue.backlogItems.some(x=>x.id==="old-debt"));
+assert.equal(recentQueue.safety.automaticPlaybackVerificationAllowed,false);
+const dueProtected={...recentFive[0],id:"protect-due",playbackVerifiedAt:"2026-10-25T12:00:00Z"};
+const mixed=operatorReviewQueue([oldDebt,...recentFive,dueProtected],[...recentObservations,{id:dueProtected.id,confirmation:"HUMAN_PLAYBACK",observedAt:dueProtected.playbackVerifiedAt,httpStatus:200}],{now:recoveryNow,limit:20,targetReady:5});
+assert.equal(mixed.primaryItems[0].id,"protect-due");
+assert.ok(mixed.primaryItems.slice(1).every(x=>x.id.startsWith("recent-")));
