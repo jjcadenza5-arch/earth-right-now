@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "kind": "ERN_OPERATOR_REVIEW_EVIDENCE",
+  "generatedAt": "2026-10-26T08:14:07.325Z",
+  "reviewOrigin": "https://earthrightnow.app/review/inside-ern.html",
+  "reviewBatch": "e91d081432cf484a",
+  "catalogMutationAllowed": false,
+  "networkStatus": "UNKNOWN_NOT_RECORDED",
+  "items": [
+    {
+      "id": "auckland-viaduct-harbour",
+      "title": "Auckland Viaduct Harbour",
+      "provider": "Auckland Viaduct View",
+      "observedAt": "2026-10-26T08:13:53.841Z",
+      "sourceUrl": "https://www.viaduct.co.nz/",
+      "embedUrl": "https://www.youtube.com/embed/live_stream?channel=UCfNoVlW5-BHsoCKTGs_F0WQ",
+      "type": "restore",
+      "outcome": "HUMAN_PLAYBACK_CONFIRMED",
+      "evidenceKind": "HUMAN_REVIEW",
+      "networkStatus": "UNKNOWN_NOT_RECORDED"
+    },
+    {
+      "id": "kyoto-fushimi-inari-live",
+      "title": "Kyoto — Fushimi Inari",
+      "provider": "Kyoto City Tourism Association",
+      "observedAt": "2026-10-26T08:13:51.341Z",
+      "sourceUrl": "https://global.kyoto.travel/en/comfort/",
+      "embedUrl": "https://www.youtube-nocookie.com/embed/MMeBDRfRHyA",
+      "type": "restore",
+      "outcome": "HUMAN_PLAYBACK_CONFIRMED",
+      "evidenceKind": "HUMAN_REVIEW",
+      "networkStatus": "UNKNOWN_NOT_RECORDED"
+    },
+    {
+      "id": "kyoto-kifune-shrine-live",
+      "title": "Kyoto — Kifune Shrine",
+      "provider": "Kyoto City Tourism Association",
+      "observedAt": "2026-10-26T08:13:52.443Z",
+      "sourceUrl": "https://global.kyoto.travel/en/comfort/",
+      "embedUrl": "https://www.youtube-nocookie.com/embed/eJAqPCdS1cY",
+      "type": "restore",
+      "outcome": "HUMAN_PLAYBACK_CONFIRMED",
+      "evidenceKind": "HUMAN_REVIEW",
+      "networkStatus": "UNKNOWN_NOT_RECORDED"
+    },
+    {
+      "id": "rovaniemi-santa-claus-village-live",
+      "title": "Rovaniemi — Santa Claus Village",
+      "provider": "Santa Claus Village / City of Rovaniemi",
+      "observedAt": "2026-10-26T08:13:55.625Z",
+      "sourceUrl": "https://santaclausvillage.info/live-video-webcam/",
+      "embedUrl": "https://www.youtube-nocookie.com/embed/Cp4RRAEgpeU",
+      "type": "restore",
+      "outcome": "HUMAN_PLAYBACK_CONFIRMED",
+      "evidenceKind": "HUMAN_REVIEW",
+      "networkStatus": "UNKNOWN_NOT_RECORDED"
+    },
+    {
+      "id": "taitung-jinzun",
+      "title": "Taitung Jinzun — Pacific Coast",
+      "provider": "East Coast National Scenic Area",
+      "observedAt": "2026-10-26T08:13:54.708Z",
+      "sourceUrl": "https://www.eastcoast-nsa.gov.tw/en/service/live-camera/22/",
+      "embedUrl": "https://www.youtube-nocookie.com/embed/ZdqHgQwvZOw",
+      "type": "restore",
+      "outcome": "HUMAN_PLAYBACK_CONFIRMED",
+      "evidenceKind": "HUMAN_REVIEW",
+      "networkStatus": "UNKNOWN_NOT_RECORDED"
+    }
+  ]
+}
