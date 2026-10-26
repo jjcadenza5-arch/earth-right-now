@@ -1,3 +1,11 @@
+## 2026-10-26 Bangkok — Mangaweka batch13 deployed and accepted
+
+Production87fac291678be912d66a38e3192e313d934c92dc. Pages40262207015 SUCCESS/all122 required release smoke tests; Operations40262206858 SUCCESS/complete packet valid/zero issues. Exact served manifest,11 SHA256 file checks and destination source/label/resource checks PASS. Static page/file verification is not browser video playback or fresh owner renewal.
+
+Coverage834/1,000 distinct camera-backed places (166 remaining);843 source records/835 catalog places,578 valid directory rows. One new Mangaweka river/cliff view, plus three unpaid Awastone listings across rafting/camping/café and one official reserve guide. These are three visitor intents from one operator, not three independent partners. Current café, kitchen and pizzeria service require operator confirmation; no rates, date availability, universal safety or income claim. Existing blurred Rangitīkei river-mouth hold remains unchanged.
+
+All842 prior source records, five-camera evidence/ledger,232 public affiliate offers,design/publicOFF gates preserved. Actual-clock09:58Bangkok WatchEarth FULL5/4providers is eligibility evidence only;321 stale/expired catalog sources remain maintenance debt. Genuine LIVE HERE playback review still due today26Oct11:00Bangkok; original WatchEarth horizon1Nov11:00 subject to failures. No automatic video renewal, date padding or freshness-limit relaxation. Evidence docs/ERN_EXPANSION_BATCH13_2026-10-26.md. Continue focused usage-aware work and prioritise the genuine playback review at its horizon.
+
 # Mangaweka expansion —26October2026 Bangkok
 
 ## 2026-10-26 Bangkok — Mangaweka batch13 prepared
