@@ -2433,6 +2433,59 @@
           "reason": "Printed26Oct13:23:21 appears future relative to review clock if CET inferred after DST ended25Oct; offset not printed/configuration unresolved. No guessed CEST conversion or currentness admission. Independent tourism Neckarfront qualifies separately."
         }
       ]
+    },
+    {
+      "id": "redwood-nps-three-locations-batch16-oct27",
+      "priority": "P2",
+      "placeGroup": "Redwood coast, Elk Prairie and Jedediah Smith",
+      "country": "United States",
+      "provider": "National Park Service / California State Parks",
+      "candidateType": "OFFICIAL_CURRENT_IMAGE_NETWORK",
+      "visitorDecisionValue": "HIGH",
+      "qualityPotential": "HIGH",
+      "programFit": [
+        "stay",
+        "activities",
+        "nature"
+      ],
+      "evidenceUrls": [
+        "https://www.nps.gov/media/webcam/view.htm?id=BD37BB78-0E56-34CE-3270526D6CCC87CA",
+        "https://www.nps.gov/media/webcam/view.htm?id=7553A227-AAEA-6A87-2496155B0FB5BE97",
+        "https://www.nps.gov/media/webcam/view.htm?id=BB7B050A-BE3B-E7FE-BFED58CB2E874B0F",
+        "https://www.nps.gov/redw/learn/photosmultimedia/webcams.htm",
+        "https://www.nps.gov/aboutus/publications.htm"
+      ],
+      "state": "THREE_DISTINCT_CAMERA_LOCATIONS_ADMITTED_LINK_ONLY",
+      "why": "Three physically distinct visitor locations: Orick-area coast, Prairie Creek meadow, and Jedediah Smith forest near Hiouchi; one image per place, not angles or extra park-system counts.",
+      "next": "Maintain actual date and image/rights evidence. Check visitor center hours, wildlife, access and camping separately; no automatic renewals or media reuse.",
+      "reviewedAt": "2026-10-26T21:02:32Z",
+      "resolvedCatalogIds": [
+        "us-redwood-kuchel-coast-current",
+        "us-prairie-creek-elk-prairie-current",
+        "us-jedediah-smith-redwoods-current"
+      ]
+    },
+    {
+      "id": "nps-el-morro-bounded-hold-oct27",
+      "priority": "P2",
+      "placeGroup": "El Morro National Monument",
+      "country": "United States",
+      "provider": "National Park Service",
+      "candidateType": "OFFICIAL_CURRENT_IMAGE",
+      "visitorDecisionValue": "HIGH",
+      "qualityPotential": "UNKNOWN",
+      "programFit": [
+        "activities",
+        "stay"
+      ],
+      "evidenceUrls": [
+        "https://www.nps.gov/media/webcam/view.htm?id=81B46AD5-1DD8-B71B-0BFB3F36B5DDC6EF",
+        "https://www.nps.gov/elmo/planyourvisit/conditions.htm"
+      ],
+      "state": "HOLD_IMAGE_ACCESS_403",
+      "why": "NPS labels webcam active, but exact image request returned403 during read-only review; no actual image or currentness could be verified. No broader provider outage or bot-block diagnosis inferred.",
+      "next": "Revisit only on materially new provider evidence or a verified accessible image; do not retry-loop or count an unverified camera.",
+      "reviewedAt": "2026-10-26T21:02:32Z"
     }
   ],
   "guardrails": {

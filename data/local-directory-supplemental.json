@@ -12579,5 +12579,138 @@
     "affiliate": false,
     "reviewBasis": "FIRST_PARTY_OPERATOR_OR_OFFICIAL_TOURISM_PAGE_REVIEW",
     "reviewSourceUrl": "https://www.tuebingen-info.de/de/mein-aufenthalt/stocherkahnfahrten/oeffentliche-stocherkahnfahrt"
+  },
+  {
+    "id": "local-kuchel-roosevelt-base-camp",
+    "placeId": "us-redwood-kuchel-coast",
+    "place": "Orick / Kuchel",
+    "name": "Roosevelt Base Camp",
+    "type": "motel",
+    "url": "https://www.rooseveltbasecamp.com/",
+    "summary": "Review rooms at this Orick roadside motel near Redwood National and State Parks. Confirm dates, facilities and holiday minimum-stay requirements with the operator; the coastal camera does not establish room availability.",
+    "country": "United States",
+    "tags": [
+      "visitor planning"
+    ],
+    "verifiedAt": "2026-10-26T21:02:32Z",
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_OPERATOR_OR_OFFICIAL_NPS_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.rooseveltbasecamp.com/"
+  },
+  {
+    "id": "local-kuchel-redwood-conditions",
+    "placeId": "us-redwood-kuchel-coast",
+    "place": "Orick / Kuchel",
+    "name": "Redwood parks — current conditions",
+    "type": "visitor information",
+    "url": "https://www.nps.gov/redw/planyourvisit/conditions.htm",
+    "summary": "Check official Redwood park road, trail and day-use alerts before visiting. Camera visibility does not establish access, safe water conditions or an open visitor center; conditions can change.",
+    "country": "United States",
+    "tags": [
+      "visitor planning"
+    ],
+    "verifiedAt": "2026-10-26T21:02:32Z",
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_OPERATOR_OR_OFFICIAL_NPS_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.nps.gov/redw/planyourvisit/conditions.htm"
+  },
+  {
+    "id": "local-elk-prairie-elk-meadow-cabins",
+    "placeId": "us-prairie-creek-elk-prairie",
+    "place": "Elk Prairie",
+    "name": "Elk Meadow Cabins",
+    "type": "cabins",
+    "url": "https://elkmeadowcabins.com/",
+    "summary": "Explore cabin accommodation near Orick and the redwoods. Confirm the exact property, dates, facilities and booking terms directly; wildlife sightings and availability are not guaranteed.",
+    "country": "United States",
+    "tags": [
+      "visitor planning"
+    ],
+    "verifiedAt": "2026-10-26T21:02:32Z",
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_OPERATOR_OR_OFFICIAL_NPS_PAGE_REVIEW",
+    "reviewSourceUrl": "https://elkmeadowcabins.com/"
+  },
+  {
+    "id": "local-elk-prairie-buckarettes",
+    "placeId": "us-prairie-creek-elk-prairie",
+    "place": "Elk Prairie",
+    "name": "Redwood Creek Buckarettes",
+    "type": "horseback tour operator",
+    "url": "https://redwoodcreekbuckarettes.com/",
+    "summary": "Review guided horseback-tour options near the redwoods. Confirm the selected ride, age or other participant requirements, operating dates and current conditions directly; the prairie camera does not verify a tour departure.",
+    "country": "United States",
+    "tags": [
+      "visitor planning"
+    ],
+    "verifiedAt": "2026-10-26T21:02:32Z",
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_OPERATOR_OR_OFFICIAL_NPS_PAGE_REVIEW",
+    "reviewSourceUrl": "https://redwoodcreekbuckarettes.com/"
+  },
+  {
+    "id": "local-elk-prairie-nps-campground",
+    "placeId": "us-prairie-creek-elk-prairie",
+    "place": "Elk Prairie",
+    "name": "Elk Prairie Campground — NPS information",
+    "type": "visitor information",
+    "url": "https://www.nps.gov/redw/planyourvisit/elk-prairie-campground.htm",
+    "summary": "Read official information for the Elk Prairie campground in Prairie Creek Redwoods State Park. Check current reservations, restrictions and availability through the park and state reservation service.",
+    "country": "United States",
+    "tags": [
+      "visitor planning"
+    ],
+    "verifiedAt": "2026-10-26T21:02:32Z",
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_OPERATOR_OR_OFFICIAL_NPS_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.nps.gov/redw/planyourvisit/elk-prairie-campground.htm"
+  },
+  {
+    "id": "local-jedediah-hiouchi-motel",
+    "placeId": "us-jedediah-smith-redwoods",
+    "place": "Jedediah Smith Redwoods",
+    "name": "Hiouchi Motel",
+    "type": "motel",
+    "url": "https://hiouchimotel.com/",
+    "summary": "Review motel rooms in Hiouchi near Jedediah Smith Redwoods State Park. Confirm room availability, accessibility features, cancellation terms and current amenities directly with the motel.",
+    "country": "United States",
+    "tags": [
+      "visitor planning"
+    ],
+    "verifiedAt": "2026-10-26T21:02:32Z",
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_OPERATOR_OR_OFFICIAL_NPS_PAGE_REVIEW",
+    "reviewSourceUrl": "https://hiouchimotel.com/"
+  },
+  {
+    "id": "local-jedediah-nps-campground",
+    "placeId": "us-jedediah-smith-redwoods",
+    "place": "Jedediah Smith Redwoods",
+    "name": "Jedediah Smith Campground — NPS information",
+    "type": "visitor information",
+    "url": "https://www.nps.gov/redw/planyourvisit/jedediah-smith-campground.htm",
+    "summary": "Read official campground information, including site-specific vehicle-size constraints. Confirm current campsite availability, road limits and reservation arrangements with the park/state service; the forest camera is not a campsite-availability check.",
+    "country": "United States",
+    "tags": [
+      "visitor planning"
+    ],
+    "verifiedAt": "2026-10-26T21:02:32Z",
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_OPERATOR_OR_OFFICIAL_NPS_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.nps.gov/redw/planyourvisit/jedediah-smith-campground.htm"
   }
 ]
