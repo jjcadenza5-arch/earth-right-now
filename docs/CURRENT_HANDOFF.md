@@ -1,3 +1,11 @@
+## 2026-10-26 Bangkok — Herbertville expansion batch11 prepared
+
+Baseline main70ae50da / production972b7ff1. Actual-clock WatchEarth FULL5/4providers at07:12Bangkok;321 stale/expired catalog sources remain maintenance debt, not fresh coverage. Existing five-owner playback evidence unchanged; genuine LIVE HERE playback review remains due26Oct11:00Bangkok, WatchEarth original horizon1Nov11:00 subject to failures.
+
+One distinct new current-image place: Herbertville Wainui River, exact council-linked1824x1368 scene visually inspected locally. Capture26Oct11:56:10 NZST (explicitUTC+12), equivalent25Oct23:56:10Z. Current river/banks/trees/buildings/hills visible; no ocean/beach view promised. Official Wainui Coast and Wainui Herbertville labels point to the same image, counted once. LINK_ONLY/LIVE_IMAGE/EXTERNAL, Watch/featured held; terms reviewed, no copied media or embedding licence inferred.
+
+One unpaid campground business. Council guide reviewed for context, but not duplicated because its exact URL is already listed for Ākitio. Cabin linen requirement supported by first-party page; no rate/availability or safe-access claims. Expected840 source records/832 catalog places/831 camera-backed places toward1,000 (169 remaining),570 directory rows. Existing839 source rows, five-camera evidence/ledger,232 public affiliate offers,design/publicOFF gates unchanged. Scoped source/alias/directory checks and all122 required release smoke tests PASS. Initial local directory check rejected duplicate council-guide URL; duplicate removed without validator changes. Normal deployment acceptance pending.
+
 ## 2026-10-26 Bangkok — Daylight expansion batch10 and private-research maintenance ACCEPTED
 
 Final production972b7ff1b8b22a7eab42f557eba913ceede719e5. Pages40238491122 SUCCESS/all122 revised release tests; Operations40238491117 SUCCESS/complete packet valid/zero issues. Exact served manifest and12 SHA256 checks PASS, including home/app/styles/core/both lazy source parts/renewal ledger/public offers/aliases/directory/two new destinations. Private active-research file, new archive and regression test absent from public release manifest. Actual browser verified both new destination pages and their provider/resource links on initial deployment; repair preserves the same public content.

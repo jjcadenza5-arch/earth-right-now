@@ -2314,6 +2314,32 @@
       ],
       "why": "Two distinct dated rendered destinations, not angles. Romanshorn scene rendered after one reload. Nyon mid-distance blur/limited mountains recorded; no cause assigned. No camera media or provider copy reused; original metadata and external links.",
       "next": "Maintain dated link-only evidence; opening/boat-service/access states remain separate. No automatic renewal, unverified optional-video admission or angle inflation."
+    },
+    {
+      "id": "horizons-herbertville-wainui-batch11-oct26",
+      "priority": "P2",
+      "placeGroup": "Herbertville / Wainui River",
+      "country": "New Zealand",
+      "provider": "Horizons Regional Council",
+      "candidateType": "OFFICIAL_CURRENT_IMAGE",
+      "visitorDecisionValue": "HIGH",
+      "qualityPotential": "HIGH",
+      "programFit": [
+        "stay",
+        "activities"
+      ],
+      "evidenceUrls": [
+        "https://www.horizons.govt.nz/webcams",
+        "https://www.horizons.govt.nz/media/webcam/HerbWainui_latest_photo.jpg",
+        "https://www.horizons.govt.nz/terms-and-conditions"
+      ],
+      "state": "ONE_DISTINCT_CAMERA_PLACE_ADMITTED_LINK_ONLY",
+      "why": "Useful current river and settlement view near a coastal visitor destination; not a beach-camera promise.",
+      "next": "Maintain actual capture evidence without automatic renewal. Both official index labels share the same image and count one place, not two. Confirm access and services separately.",
+      "reviewedAt": "2026-10-26T00:14:45Z",
+      "resolvedCatalogIds": [
+        "nz-herbertville-wainui-current"
+      ]
     }
   ],
   "guardrails": {

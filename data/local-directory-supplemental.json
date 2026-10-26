@@ -12289,5 +12289,25 @@
     "affiliate": false,
     "reviewBasis": "FIRST_PARTY_OPERATOR_COUNCIL_OR_LOCAL_COMMUNITY_PAGE_REVIEW",
     "reviewSourceUrl": "https://www.tararuadc.govt.nz/living-community/our-towns/coast"
+  },
+  {
+    "id": "local-herbertville-campground",
+    "placeId": "nz-herbertville-wainui",
+    "place": "Herbertville",
+    "name": "Herbertville Campground",
+    "type": "campground",
+    "url": "https://sites.google.com/view/herbertvillecampground/camp-site-options",
+    "summary": "Compare powered and non-powered sites and cabin options near Herbertville. The operator asks cabin guests to bring linen, bedding and pillows. Confirm dates, facilities and arrival arrangements directly; the river camera does not establish availability or safe access.",
+    "country": "New Zealand",
+    "tags": [
+      "Herbertville",
+      "visitor planning"
+    ],
+    "verifiedAt": "2026-10-26T00:14:45Z",
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_OPERATOR_OR_COUNCIL_PAGE_REVIEW",
+    "reviewSourceUrl": "https://sites.google.com/view/herbertvillecampground/camp-site-options"
   }
 ]
