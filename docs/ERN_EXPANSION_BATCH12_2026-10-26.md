@@ -1,3 +1,11 @@
+## 2026-10-26 Bangkok — Pipiriki/Hōkio outlet batch12 deployed and accepted
+
+Productionbbb7e0383b2a941d9f5ccc6485fe2bfde3509dfa. Pages40260107131 SUCCESS/all122 required release smoke tests; Operations40260107094 SUCCESS/complete packet valid/zero issues. Exact served release manifest,12 SHA256 checks and both destination-page label/source/resource checks PASS. Static public-page verification, not browser video playback or renewed owner evidence.
+
+Coverage833/1,000 distinct camera-backed places (167 remaining);842 source records/834 catalog places,574 valid directory rows. Exactly two new destinations: Pipiriki Whanganui River and Lake Horowhenua Hōkio outlet. Outlet is not a lake-wide/park panorama. Two unpaid operator/accommodation listings and two official visitor guides; campground old2025–26 seasonal dates explicitly flagged rather than asserting current opening. Lake restrictions/access guidance comes from council, separately from image health. No media copying, new public affiliate activation, date-specific availability or earnings claim.
+
+All840 previous source records, five-camera evidence/ledger,232 public offers,design/publicOFF gates preserved. WatchEarth actual-clock09:32Bangkok FULL5/4providers is eligibility only;321 stale/expired catalog sources remain maintenance debt. LIVE HERE genuine playback review still due today26Oct11:00Bangkok; WatchEarth original horizon1Nov11:00 subject to later failures. No automatic video renewal or freshness-limit change. Evidence docs/ERN_EXPANSION_BATCH12_2026-10-26.md. Continue focused usage-aware expansion and prioritise genuine playback review at its horizon.
+
 # Pipiriki and Hōkio outlet expansion —26October2026 Bangkok
 
 ## 2026-10-26 Bangkok — Pipiriki/Horowhenua batch12 prepared
