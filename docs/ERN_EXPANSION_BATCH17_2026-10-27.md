@@ -1,3 +1,9 @@
+## 2026-10-27 Bangkok — Saddlehorn expansion deployed and accepted
+
+Production caca5646d71deaaf21475e01352f8bdff39dbdf8. Pages 40422812448 SUCCESS and all 122 release smoke tests passed; Operations 40422812451 SUCCESS, packet valid with zero issues. Served manifest matches production; eight SHA256 checks passed including home, core and lazy sources, provider observations, directory, aliases and the new destination page. Destination displays NEAR-NOW IMAGE, exact NPS viewer and reviewed business resources. Initial verification raced deployment and used the old manifest; a fresh complete check against the new manifest passed.
+
+Coverage 840/1,000 distinct camera-backed places (160 remaining); 849 source records/841 catalog places, 595 valid directory rows. One Saddlehorn current still, three unpaid Fruita businesses and one official park conditions guide. Current camera capture timestamp has no offset; Denver MDT UTC−6 inferred, clock precision unverified. Ordinary attributed NPS viewer link, no copied media or inferred media licence. Lava Beds inaccessible 403 and New River Gorge dark during review remain unadmitted. No video playback, road access, bookings, affiliate income or availability inferred. Existing design, public OFF gates and five owner playback timestamps preserved. Next LIVE HERE 24-hour horizon 27 Oct 15:13 Bangkok; seven-day source/Watch horizon 2 Nov 15:13 subject to failures. Evidence docs/ERN_EXPANSION_BATCH17_2026-10-27.md.
+
 # Saddlehorn expansion evidence
 
 ## 2026-10-27 Bangkok — Saddlehorn camera and business expansion prepared
