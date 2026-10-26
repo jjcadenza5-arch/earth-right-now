@@ -12385,5 +12385,85 @@
     "affiliate": false,
     "reviewBasis": "FIRST_PARTY_OPERATOR_OR_OFFICIAL_GOVERNMENT_PAGE_REVIEW",
     "reviewSourceUrl": "https://www.horowhenua.govt.nz/CommunityPlaces/Halls-Recreation-Sport/Parks-Reserves-Recreation/Muaupoko-Park-Lake-Horowhenua-Domain-Levin"
+  },
+  {
+    "id": "local-mangaweka-awastone-raft",
+    "placeId": "nz-mangaweka-river",
+    "place": "Mangaweka",
+    "name": "Awastone — Rangitīkei river adventures",
+    "type": "rafting operator",
+    "url": "https://www.mangaweka.co.nz/raft",
+    "summary": "Compare guided river activities and scenic float options from Mangaweka. Confirm the selected trip, participant requirements, river conditions and departure directly; the camera does not confirm operation or personal suitability.",
+    "country": "New Zealand",
+    "tags": [
+      "Mangaweka",
+      "visitor planning"
+    ],
+    "verifiedAt": "2026-10-26T03:00:22Z",
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_OPERATOR_OR_OFFICIAL_GOVERNMENT_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.mangaweka.co.nz/raft"
+  },
+  {
+    "id": "local-mangaweka-awastone-camp",
+    "placeId": "nz-mangaweka-river",
+    "place": "Mangaweka",
+    "name": "Awastone & Mangaweka camping",
+    "type": "campground",
+    "url": "https://www.mangaweka.co.nz/camp",
+    "summary": "Review Awastone and Mangaweka camping and accommodation options near the river. Confirm the chosen property, facilities, arrival arrangements and available dates with the operator before travelling.",
+    "country": "New Zealand",
+    "tags": [
+      "Mangaweka",
+      "visitor planning"
+    ],
+    "verifiedAt": "2026-10-26T03:00:22Z",
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_OPERATOR_OR_OFFICIAL_GOVERNMENT_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.mangaweka.co.nz/camp"
+  },
+  {
+    "id": "local-mangaweka-awastone-cafe",
+    "placeId": "nz-mangaweka-river",
+    "place": "Mangaweka",
+    "name": "Awastone Licensed Riverside Café",
+    "type": "cafe",
+    "url": "https://www.mangaweka.co.nz/cafe",
+    "summary": "Plan a riverside food stop at Awastone. Café, kitchen and pizzeria hours differ and can change; check the operator’s current service details before visiting.",
+    "country": "New Zealand",
+    "tags": [
+      "Mangaweka",
+      "visitor planning"
+    ],
+    "verifiedAt": "2026-10-26T03:00:22Z",
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_OPERATOR_OR_OFFICIAL_GOVERNMENT_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.mangaweka.co.nz/cafe"
+  },
+  {
+    "id": "local-mangaweka-doc-reserve",
+    "placeId": "nz-mangaweka-river",
+    "place": "Mangaweka",
+    "name": "Mangaweka Scenic Reserve — Department of Conservation",
+    "type": "visitor information",
+    "url": "https://www.doc.govt.nz/parks-and-recreation/places-to-go/manawatu-whanganui/places/mangaweka-scenic-reserve/",
+    "summary": "Read official information for the forest reserve and its viewpoints over Mangaweka, river terraces and the ranges. Check current access and track notices separately; the river camera does not verify walking-track conditions.",
+    "country": "New Zealand",
+    "tags": [
+      "Mangaweka",
+      "visitor planning"
+    ],
+    "verifiedAt": "2026-10-26T03:00:22Z",
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_OPERATOR_OR_OFFICIAL_GOVERNMENT_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.doc.govt.nz/parks-and-recreation/places-to-go/manawatu-whanganui/places/mangaweka-scenic-reserve/"
   }
 ]

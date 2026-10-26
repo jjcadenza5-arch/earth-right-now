@@ -2070,5 +2070,45 @@
     "sourceUrl": "https://www.horizons.govt.nz/media/webcam/Hokio_latest_photo.jpg",
     "story": "See the vegetated Hōkio outlet of Lake Horowhenua in a refreshed still, including the low water-control structure and surrounding banks. This is not a lake-wide panorama or park camera. Read current council lake and park guidance separately; clear-looking water does not establish water quality, swimming suitability or public access.",
     "freshnessEvidence": "Exact official council-index image downloaded once for read-only local visual inspection, decoded3840x2160. Outlet water, low weir/control structure, poles, flax and wooded/grass banks under blue sky and clouds. This is the outlet view, not a panorama of the lake or Muaūpoko Park. Printed capture 26-10-2026 14:37:49; no offset displayed. Pacific/Auckland daylight time UTC+13 inferred from location/date, equivalent 2026-10-26T01:37:49Z. Clock precision/timezone configuration not independently verified; capture not inferred from retrieval time. Review completed 2026-10-26T02:35:16Z. No measured cadence, continuous video, safe access, water depth or operational service inferred."
+  },
+  {
+    "provider": "Horizons Regional Council",
+    "country": "New Zealand",
+    "timeZone": "Pacific/Auckland",
+    "categories": [
+      "Beaches & Water",
+      "Nature",
+      "Useful Earth"
+    ],
+    "truth": "LIVE_IMAGE",
+    "permission": "LINK_ONLY",
+    "health": "HEALTHY",
+    "playback": "EXTERNAL",
+    "officialUrl": "https://www.horizons.govt.nz/webcams",
+    "attribution": "Horizons Regional Council — Rangitīkei at Mangaweka webcam",
+    "checkedAt": "2026-10-26T03:00:22Z",
+    "lastSuccessfulCheck": "2026-10-26T03:00:22Z",
+    "quality": 80,
+    "freshness": 90,
+    "moment": 75,
+    "featuredHold": true,
+    "watchHold": true,
+    "searchSupplemental": true,
+    "externalWindowRequired": true,
+    "rightsSourceUrl": "https://www.horizons.govt.nz/terms-and-conditions",
+    "rightsBasis": "Council camera index explicitly links to this public full-size image. Terms reviewed: public site may be used for personal/business purposes, substantial copying/republishing requires consent. ERN supplies only ordinary attributed external hyperlinks and original short descriptions; no media, logo, thumbnail, iframe or provider prose copied/embedded. No special link prohibition observed; no media-reuse or embedding licence inferred.",
+    "id": "nz-mangaweka-river-current",
+    "placeId": "nz-mangaweka-river",
+    "title": "Mangaweka — Rangitīkei River & Cliffs",
+    "seoName": "Mangaweka — Rangitīkei River & Cliffs",
+    "region": "Mangaweka / Rangitīkei",
+    "aliases": [
+      "Mangaweka",
+      "Rangitīkei River Mangaweka",
+      "Mangaweka Cliffs"
+    ],
+    "sourceUrl": "https://www.horizons.govt.nz/media/webcam/Mangaweka_latest_photo.jpg",
+    "story": "Look along the Rangitīkei River at Mangaweka, with gravel banks, wooded edges and pale cliffs around the bend. The view helps reveal the river setting before a visit. Check current river advice, access and activity arrangements separately; visible water or people do not establish safe swimming, rafting or bank access.",
+    "freshnessEvidence": "Exact council-index-linked public image downloaded once for read-only local visual inspection, decoded1920x1080. Actual blue-green river, white ripples, gravel banks, pale steep cliffs, wooded edges and a distant person visible. No identity recorded or person detail enlarged. Printed26-10-2026 14:45:03; no timezone printed. Pacific/Auckland daylightUTC+13 inferred from date/location, equivalent2026-10-26T01:45:03Z. Clock precision/configuration not independently verified and capture not inferred from retrieval. Review completed 2026-10-26T03:00:22Z. No measured cadence, continuous-video playback, measured flow, water quality, safe-access or operator-service inference."
   }
 ]

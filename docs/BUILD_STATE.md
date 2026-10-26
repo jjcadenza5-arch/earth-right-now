@@ -1,3 +1,11 @@
+## 2026-10-26 Bangkok — Mangaweka batch13 prepared
+
+Baseline maind3b49efc / productionbbb7e038. Actual-clock09:58Bangkok WatchEarth FULL5/4providers;321 stale/expired sources remain maintenance debt. Five-owner playback evidence unchanged; genuine LIVE HERE playback review remains due today11:00Bangkok, original WatchEarth horizon1Nov11:00 subject to failures. No automatic video renewal or horizon extension.
+
+One distinct new current-image place: Mangaweka Rangitīkei River/cliffs. Exact council-linked1920x1080 image locally visually inspected; printed26Oct14:45:03, timezone not printed, Pacific/Auckland daylightUTC+13 inferred (01:45:03Z). River, white ripples, gravel banks, wooded edges and pale cliffs identifiable. Distant person not identified/enlarged. LIVE_IMAGE/LINK_ONLY/EXTERNAL, Watch/featured held, no media copied or video claim. Existing blurred Rangitīkei river-mouth hold is separate and unchanged.
+
+Three unpaid listings for one Awastone operator across rafting, camping and café intents, plus one official reserve guide. Café/kitchen/pizzeria hours distinguished; no date-specific availability, universal activity-safety claim, affiliate activation or income inferred. Expected843 sources/835 catalog places/834 camera-backed places toward1,000 (166 remaining),578 directory rows. All842 previous source records, five-camera evidence/ledger,232 offers,design/publicOFF gates unchanged. Scoped source/alias/directory checks, preservation assertions and all122 required release smoke tests PASS. Normal deployment acceptance pending.
+
 ## 2026-10-26 Bangkok — Pipiriki/Hōkio outlet batch12 deployed and accepted
 
 Productionbbb7e0383b2a941d9f5ccc6485fe2bfde3509dfa. Pages40260107131 SUCCESS/all122 required release smoke tests; Operations40260107094 SUCCESS/complete packet valid/zero issues. Exact served release manifest,12 SHA256 checks and both destination-page label/source/resource checks PASS. Static public-page verification, not browser video playback or renewed owner evidence.
