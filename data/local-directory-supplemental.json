@@ -12309,5 +12309,81 @@
     "affiliate": false,
     "reviewBasis": "FIRST_PARTY_OPERATOR_OR_COUNCIL_PAGE_REVIEW",
     "reviewSourceUrl": "https://sites.google.com/view/herbertvillecampground/camp-site-options"
+  },
+  {
+    "id": "local-pipiriki-river-adventures",
+    "placeId": "nz-pipiriki-river",
+    "place": "Pipiriki",
+    "name": "Whanganui River Adventures",
+    "type": "river tour operator",
+    "url": "https://www.whanganuiriveradventures.co.nz/",
+    "summary": "Explore locally operated jet-boat and canoe-trip options from Pipiriki. Confirm the chosen trip, conditions, age requirements and departure arrangements directly; an attractive river image does not confirm a tour is running.",
+    "country": "New Zealand",
+    "tags": [
+      "visitor planning"
+    ],
+    "verifiedAt": "2026-10-26T02:35:16Z",
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_OPERATOR_OR_OFFICIAL_GOVERNMENT_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.whanganuiriveradventures.co.nz/"
+  },
+  {
+    "id": "local-pipiriki-camping",
+    "placeId": "nz-pipiriki-river",
+    "place": "Pipiriki",
+    "name": "Pipiriki Camping Grounds",
+    "type": "campground",
+    "url": "https://www.whanganuiriveradventures.co.nz/pipiriki-camping-ground/",
+    "summary": "Review cabins and camping options operated by Whanganui River Adventures. The page retains older 2025–26 seasonal dates, so confirm current opening, dates, facilities and availability directly before travelling.",
+    "country": "New Zealand",
+    "tags": [
+      "visitor planning"
+    ],
+    "verifiedAt": "2026-10-26T02:35:16Z",
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_OPERATOR_OR_OFFICIAL_GOVERNMENT_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.whanganuiriveradventures.co.nz/pipiriki-camping-ground/"
+  },
+  {
+    "id": "local-pipiriki-doc-journey",
+    "placeId": "nz-pipiriki-river",
+    "place": "Pipiriki",
+    "name": "Whanganui Journey — Department of Conservation",
+    "type": "visitor information",
+    "url": "https://www.doc.govt.nz/whanganuijourney",
+    "summary": "Read official journey planning, paddling experience requirements, alerts and booking information. Pipiriki is an endpoint for the river journey; current river conditions and visitor suitability require separate review.",
+    "country": "New Zealand",
+    "tags": [
+      "visitor planning"
+    ],
+    "verifiedAt": "2026-10-26T02:35:16Z",
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_OPERATOR_OR_OFFICIAL_GOVERNMENT_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.doc.govt.nz/whanganuijourney"
+  },
+  {
+    "id": "local-horowhenua-muaupoko-park",
+    "placeId": "nz-horowhenua-hokio",
+    "place": "Lake Horowhenua",
+    "name": "Muaūpoko Park — council lake guide",
+    "type": "visitor information",
+    "url": "https://www.horowhenua.govt.nz/CommunityPlaces/Halls-Recreation-Sport/Parks-Reserves-Recreation/Muaupoko-Park-Lake-Horowhenua-Domain-Levin",
+    "summary": "Read council guidance for the park beside Lake Horowhenua, separately from the outlet camera. Council says the lake is unsuitable for swimming, power boats are prohibited and vehicle access is not guaranteed. Confirm current park access and notices before visiting.",
+    "country": "New Zealand",
+    "tags": [
+      "visitor planning"
+    ],
+    "verifiedAt": "2026-10-26T02:35:16Z",
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_OPERATOR_OR_OFFICIAL_GOVERNMENT_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.horowhenua.govt.nz/CommunityPlaces/Halls-Recreation-Sport/Parks-Reserves-Recreation/Muaupoko-Park-Lake-Horowhenua-Domain-Levin"
   }
 ]

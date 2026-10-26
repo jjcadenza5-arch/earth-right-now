@@ -2340,6 +2340,34 @@
       "resolvedCatalogIds": [
         "nz-herbertville-wainui-current"
       ]
+    },
+    {
+      "id": "horizons-pipiriki-horowhenua-batch12-oct26",
+      "priority": "P2",
+      "placeGroup": "Pipiriki and Lake Horowhenua outlet",
+      "country": "New Zealand",
+      "provider": "Horizons Regional Council",
+      "candidateType": "OFFICIAL_CURRENT_IMAGE",
+      "visitorDecisionValue": "HIGH",
+      "qualityPotential": "HIGH",
+      "programFit": [
+        "stay",
+        "activities"
+      ],
+      "evidenceUrls": [
+        "https://www.horizons.govt.nz/media/webcam/Pipiriki_latest_photo.jpg",
+        "https://www.horizons.govt.nz/media/webcam/Hokio_latest_photo.jpg",
+        "https://www.horizons.govt.nz/webcams",
+        "https://www.horizons.govt.nz/terms-and-conditions"
+      ],
+      "state": "TWO_DISTINCT_CAMERA_PLACES_ADMITTED_LINK_ONLY",
+      "why": "Distinct river-journey endpoint and coastal-dune-lake outlet context, each with current useful visual evidence and separate visitor guidance.",
+      "next": "Maintain actual dated evidence without automatic renewal or media reuse. Outlet is not a lake/park panorama; river scene does not verify trip safety or service operation.",
+      "reviewedAt": "2026-10-26T02:35:16Z",
+      "resolvedCatalogIds": [
+        "nz-pipiriki-river-current",
+        "nz-horowhenua-hokio-current"
+      ]
     }
   ],
   "guardrails": {

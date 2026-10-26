@@ -1305,6 +1305,16 @@
       "Herbertville",
       "Wainui River Herbertville",
       "Cape Turnagain coast"
+    ],
+    "nz-pipiriki-river": [
+      "Pipiriki",
+      "Whanganui River Pipiriki",
+      "Whanganui Journey endpoint"
+    ],
+    "nz-horowhenua-hokio": [
+      "Lake Horowhenua",
+      "Punahau",
+      "Hōkio outlet"
     ]
   }
 }

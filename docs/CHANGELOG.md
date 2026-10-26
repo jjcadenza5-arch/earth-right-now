@@ -1,3 +1,11 @@
+## 2026-10-26 Bangkok — Pipiriki/Horowhenua batch12 prepared
+
+Baseline main0f8d48c2 / production71d2772d. Actual-clock09:32Bangkok WatchEarth FULL5/4providers;321 stale/expired catalog sources remain maintenance debt. Original five-owner playback evidence unchanged; LIVE HERE genuine playback review due today11:00Bangkok, WatchEarth original horizon1Nov11:00 subject to failures. Neither report nor static-image inspection renews human video evidence.
+
+Two distinct new current-image places: Pipiriki Whanganui River and Lake Horowhenua Hōkio outlet. Exact council-linked3840x2160 files locally visually inspected; printed26Oct14:15:01 and14:37:49 respectively, timezone not printed, Pacific/Auckland daylightUTC+13 inferred. Pipiriki partly obstructed by foliage/bright highlights; Hōkio is an outlet/control structure, not a lake-wide or park panorama. LINK_ONLY/LIVE_IMAGE/EXTERNAL, Watch/featured held, no copied media or embedding licence inferred.
+
+Two unpaid Pipiriki operator/accommodation listings and two official visitor guides. Campground retains older2025–26 season dates: current opening not asserted. Council lake guidance says unsuitable for swimming/no power boats/vehicle access not guaranteed; guide clearly separate from outlet camera. No public affiliate activation, rates, booking availability or income claim. Expected842 sources/834 catalog places/833 camera-backed places toward1,000 (167 remaining),574 directory rows. All840 previous source records,232 public offers,five-camera ledger,design/publicOFF gates unchanged. Scoped source/alias/directory checks and all122 required release smoke tests PASS. Normal deployment acceptance pending.
+
 ## 2026-10-26 Bangkok — Herbertville batch11 deployed and accepted
 
 Production71d2772d499af9cb1899be727369b96d943e618c. Pages40248553644 SUCCESS/all122 required release smoke tests; Operations40248553614 SUCCESS/complete packet valid/zero issues. Exact served manifest and served-file SHA256 checks PASS; actual browser verified Herbertville current-image label, exact council image link and campground listing. No fresh human-video playback inferred.
