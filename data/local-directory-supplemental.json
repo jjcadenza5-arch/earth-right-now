@@ -12788,5 +12788,62 @@
     "affiliate": false,
     "reviewBasis": "FIRST_PARTY_OPERATOR_OR_OFFICIAL_NPS_PAGE_REVIEW",
     "reviewSourceUrl": "https://www.nps.gov/colm/planyourvisit/conditions.htm"
+  },
+  {
+    "id": "local-gunnison-point-black-canyon-motel",
+    "placeId": "us-black-canyon-gunnison-point",
+    "place": "Black Canyon — Gunnison Point",
+    "name": "Black Canyon Motel",
+    "type": "motel",
+    "url": "https://blackcanyonmotel.us/contact/",
+    "summary": "Find contact information for this Montrose motel. Confirm room availability, amenities and terms directly.",
+    "country": "United States",
+    "tags": [
+      "visitor planning"
+    ],
+    "verifiedAt": "2026-10-27T00:21:34Z",
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_OPERATOR_OR_OFFICIAL_NPS_PAGE_REVIEW",
+    "reviewSourceUrl": "https://blackcanyonmotel.us/contact/"
+  },
+  {
+    "id": "local-gunnison-point-surf-cycle",
+    "placeId": "us-black-canyon-gunnison-point",
+    "place": "Black Canyon — Gunnison Point",
+    "name": "Montrose Surf + Cycle",
+    "type": "outdoor shop",
+    "url": "https://www.montrosesurfandcycle.com/",
+    "summary": "Explore a Montrose outdoor shop and its activity offerings. Confirm current services, hours and equipment availability directly.",
+    "country": "United States",
+    "tags": [
+      "visitor planning"
+    ],
+    "verifiedAt": "2026-10-27T00:21:34Z",
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_OPERATOR_OR_OFFICIAL_NPS_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.montrosesurfandcycle.com/"
+  },
+  {
+    "id": "local-gunnison-point-nps-conditions",
+    "placeId": "us-black-canyon-gunnison-point",
+    "place": "Black Canyon — Gunnison Point",
+    "name": "Black Canyon — park conditions",
+    "type": "visitor information",
+    "url": "https://www.nps.gov/blca/planyourvisit/conditions.htm",
+    "summary": "Check official current alerts, South Rim road, visitor-center and trail information before visiting; the camera does not establish access.",
+    "country": "United States",
+    "tags": [
+      "visitor planning"
+    ],
+    "verifiedAt": "2026-10-27T00:21:34Z",
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_OPERATOR_OR_OFFICIAL_NPS_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.nps.gov/blca/planyourvisit/conditions.htm"
   }
 ]

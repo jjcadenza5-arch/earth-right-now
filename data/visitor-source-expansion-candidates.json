@@ -2513,6 +2513,33 @@
       "resolvedCatalogIds": [
         "us-colorado-national-monument-saddlehorn-current"
       ]
+    },
+    {
+      "id": "nps-gunnison-point-batch18",
+      "priority": "P2",
+      "placeGroup": "Black Canyon Gunnison Point",
+      "country": "United States",
+      "provider": "National Park Service",
+      "candidateType": "OFFICIAL_CURRENT_IMAGE",
+      "visitorDecisionValue": "HIGH",
+      "qualityPotential": "HIGH",
+      "programFit": [
+        "stay",
+        "activities",
+        "nature"
+      ],
+      "evidenceUrls": [
+        "https://www.nps.gov/media/webcam/view.htm?id=0FA6F288-B063-7618-DF540382B0C0A179",
+        "https://www.nps.gov/blca/planyourvisit/conditions.htm",
+        "https://www.nps.gov/aboutus/publications.htm"
+      ],
+      "state": "CAMERA_LOCATION_ADMITTED_LINK_ONLY",
+      "why": "Distinct Gunnison Point view visually checked with printed current timestamp; ordinary external NPS viewer link only.",
+      "next": "Keep current image and rights evidence fresh; check park alerts and access independently.",
+      "reviewedAt": "2026-10-27T00:21:34Z",
+      "resolvedCatalogIds": [
+        "us-black-canyon-gunnison-point-current"
+      ]
     }
   ],
   "guardrails": {

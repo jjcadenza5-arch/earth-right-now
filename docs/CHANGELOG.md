@@ -1,3 +1,7 @@
+## 2026-10-27 Bangkok — Gunnison Point and Montrose expansion prepared
+
+Baseline main 49bf4c19. One distinct Black Canyon Gunnison Point camera-backed place, two unpaid Montrose businesses and one NPS conditions guide; no affiliate activation or income claim. Exact 1920x1080 NPS still visually inspected, printed 26 Oct 18:20:57 with no offset; Denver MDT UTC−6 inferred (27 Oct 00:20:57Z), clock precision unverified. HTTP Last-Modified 00:21:06Z is separate corroboration, not capture time. Attributed ordinary external viewer link only; no media copied or media licence inferred. Check park alerts, access, services and availability independently. Five owner playback timestamps preserved: 24-hour horizon today 27 Oct 15:13 Bangkok; seven-day horizon 2 Nov 15:13 subject to failures. Existing design and public OFF gates preserved.
+
 ## 2026-10-27 Bangkok — Saddlehorn expansion deployed and accepted
 
 Production caca5646d71deaaf21475e01352f8bdff39dbdf8. Pages 40422812448 SUCCESS and all 122 release smoke tests passed; Operations 40422812451 SUCCESS, packet valid with zero issues. Served manifest matches production; eight SHA256 checks passed including home, core and lazy sources, provider observations, directory, aliases and the new destination page. Destination displays NEAR-NOW IMAGE, exact NPS viewer and reviewed business resources. Initial verification raced deployment and used the old manifest; a fresh complete check against the new manifest passed.

@@ -2350,5 +2350,45 @@
     "sourceUrl": "https://www.nps.gov/media/webcam/view.htm?id=81B46AB6-1DD8-B71B-0B12AA5101C4657E",
     "story": "Look across the canyons from near the Saddlehorn Visitor Center in a refreshed still image. Check park alerts, road conditions and visitor-center arrangements separately before visiting.",
     "freshnessEvidence": "Exact NPS-published 1280x720 image visually inspected: sunlit canyon cliffs, vegetation, visitor-center roof and distant landforms. Printed 2026-10-26 05:50:14 PM without offset; America/Denver MDT UTC−6 inferred, equivalent 23:50:14Z. HTTP Last-Modified 23:51:16Z independently corroborates freshness, not capture time. Review 23:51:30Z; clock precision and configuration unverified. No video playback, guaranteed visibility or road access inferred."
+  },
+  {
+    "provider": "National Park Service",
+    "country": "United States",
+    "timeZone": "America/Denver",
+    "categories": [
+      "Nature",
+      "Parks & Scenic",
+      "Useful Earth"
+    ],
+    "truth": "LIVE_IMAGE",
+    "permission": "LINK_ONLY",
+    "health": "HEALTHY",
+    "playback": "EXTERNAL",
+    "officialUrl": "https://www.nps.gov/blca/planyourvisit/conditions.htm",
+    "attribution": "National Park Service — Gunnison Point webcam",
+    "checkedAt": "2026-10-27T00:21:34Z",
+    "lastSuccessfulCheck": "2026-10-27T00:21:34Z",
+    "quality": 82,
+    "freshness": 90,
+    "moment": 75,
+    "featuredHold": true,
+    "watchHold": true,
+    "searchSupplemental": true,
+    "externalWindowRequired": true,
+    "rightsSourceUrl": "https://www.nps.gov/aboutus/publications.htm",
+    "rightsBasis": "NPS notes government-created material is generally public domain while third-party material may have separate rights. ERN uses only an attributed ordinary external link to the official viewer and an original description; no image, logo, thumbnail, iframe or media reuse licence inferred.",
+    "id": "us-black-canyon-gunnison-point-current",
+    "placeId": "us-black-canyon-gunnison-point",
+    "title": "Black Canyon — Gunnison Point",
+    "seoName": "Black Canyon — Gunnison Point",
+    "region": "Montrose / Western Colorado",
+    "aliases": [
+      "Black Canyon of the Gunnison",
+      "Gunnison Point",
+      "Black Canyon South Rim"
+    ],
+    "sourceUrl": "https://www.nps.gov/media/webcam/view.htm?id=0FA6F288-B063-7618-DF540382B0C0A179",
+    "story": "Look north over Gunnison Point from the South Rim Visitor Center in a refreshed still image. Check official alerts and road, trail and visitor-center conditions separately before a visit.",
+    "freshnessEvidence": "NPS-published 1920x1080 image visually inspected: canyon walls, overlook railings, vegetation and evening sky. Printed 26 Oct 2026 06:20:57 PM without offset; America/Denver MDT UTC−6 inferred, equivalent 27 Oct 00:20:57Z. HTTP Last-Modified 00:21:06Z is separate corroboration, not capture time. Review completed 00:21:34Z. Camera clock precision and configuration unverified; no video playback, river view, overlook access or trail safety inferred."
   }
 ]
