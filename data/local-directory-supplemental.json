@@ -12845,5 +12845,62 @@
     "affiliate": false,
     "reviewBasis": "FIRST_PARTY_OPERATOR_OR_OFFICIAL_NPS_PAGE_REVIEW",
     "reviewSourceUrl": "https://www.nps.gov/blca/planyourvisit/conditions.htm"
+  },
+  {
+    "id": "local-lake-leake-inn",
+    "placeId": "au-lake-leake-tasmania",
+    "place": "Lake Leake — Tasmania",
+    "name": "Lake Leake Inn",
+    "type": "hotel",
+    "url": "https://www.lakeleakeinn.com.au/accommodation/",
+    "summary": "Explore accommodation at Lake Leake Inn. Rooms have shared bathrooms according to the operator; confirm availability, facilities and cancellation terms directly.",
+    "country": "Australia",
+    "tags": [
+      "visitor planning"
+    ],
+    "verifiedAt": "2026-10-27T05:48:52Z",
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_OPERATOR_OR_OFFICIAL_GOVERNMENT_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.lakeleakeinn.com.au/accommodation/"
+  },
+  {
+    "id": "local-lake-leake-ifs",
+    "placeId": "au-lake-leake-tasmania",
+    "place": "Lake Leake — Tasmania",
+    "name": "Lake Leake — Inland Fisheries Service",
+    "type": "visitor information",
+    "url": "https://www.ifs.tas.gov.au/fisheries/waters-a-z/lake-leake/",
+    "summary": "Review official fishing rules, access and boating information. Confirm current licence requirements and restrictions before fishing; the webcam cannot establish conditions or safety.",
+    "country": "Australia",
+    "tags": [
+      "visitor planning"
+    ],
+    "verifiedAt": "2026-10-27T05:48:52Z",
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_OPERATOR_OR_OFFICIAL_GOVERNMENT_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.ifs.tas.gov.au/fisheries/waters-a-z/lake-leake/"
+  },
+  {
+    "id": "local-lake-leake-council-camping",
+    "placeId": "au-lake-leake-tasmania",
+    "place": "Lake Leake — Tasmania",
+    "name": "Lake Leake campground — council information",
+    "type": "visitor information",
+    "url": "https://northernmidlands.tas.gov.au/community/facilities/campgrounds-and-caravan-parks",
+    "summary": "Check council campground information and current eligibility before visiting. The council identifies the Lake Leake campground for self-contained caravans and motorhomes; confirm current rules directly.",
+    "country": "Australia",
+    "tags": [
+      "visitor planning"
+    ],
+    "verifiedAt": "2026-10-27T05:48:52Z",
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_OPERATOR_OR_OFFICIAL_GOVERNMENT_PAGE_REVIEW",
+    "reviewSourceUrl": "https://northernmidlands.tas.gov.au/community/facilities/campgrounds-and-caravan-parks"
   }
 ]

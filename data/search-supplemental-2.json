@@ -2390,5 +2390,45 @@
     "sourceUrl": "https://www.nps.gov/media/webcam/view.htm?id=0FA6F288-B063-7618-DF540382B0C0A179",
     "story": "Look north over Gunnison Point from the South Rim Visitor Center in a refreshed still image. Check official alerts and road, trail and visitor-center conditions separately before a visit.",
     "freshnessEvidence": "NPS-published 1920x1080 image visually inspected: canyon walls, overlook railings, vegetation and evening sky. Printed 26 Oct 2026 06:20:57 PM without offset; America/Denver MDT UTC−6 inferred, equivalent 27 Oct 00:20:57Z. HTTP Last-Modified 00:21:06Z is separate corroboration, not capture time. Review completed 00:21:34Z. Camera clock precision and configuration unverified; no video playback, river view, overlook access or trail safety inferred."
+  },
+  {
+    "provider": "Anglers Alliance Tasmania",
+    "country": "Australia",
+    "timeZone": "Australia/Hobart",
+    "categories": [
+      "Nature",
+      "Parks & Scenic",
+      "Useful Earth"
+    ],
+    "truth": "LIVE_IMAGE",
+    "permission": "LINK_ONLY",
+    "health": "HEALTHY",
+    "playback": "EXTERNAL",
+    "officialUrl": "https://www.ifs.tas.gov.au/fisheries/waters-a-z/lake-leake/",
+    "attribution": "Anglers Alliance Tasmania — Lake Leake webcam",
+    "checkedAt": "2026-10-27T05:48:52Z",
+    "lastSuccessfulCheck": "2026-10-27T05:48:52Z",
+    "quality": 82,
+    "freshness": 90,
+    "moment": 75,
+    "featuredHold": true,
+    "watchHold": true,
+    "searchSupplemental": true,
+    "externalWindowRequired": true,
+    "rightsSourceUrl": "https://www.anglersalliance.org.au/web-cams/lake-leake",
+    "rightsBasis": "Volunteer-operated network is publicly accessible on the provider page. ERN uses an attributed ordinary external hyperlink and original description only; no frame, image, thumbnail or provider text reused. Free public viewing does not establish an image-reuse or embedding licence.",
+    "id": "au-lake-leake-tasmania-current",
+    "placeId": "au-lake-leake-tasmania",
+    "title": "Lake Leake — Tasmania",
+    "seoName": "Lake Leake — Tasmania",
+    "region": "Eastern Midlands / Tasmania",
+    "aliases": [
+      "Lake Leake Tasmania",
+      "Lake Leake webcam",
+      "Tasmania Lake Leake"
+    ],
+    "sourceUrl": "https://www.anglersalliance.org.au/web-cams/lake-leake",
+    "story": "Look over Lake Leake and its wooded shore in a refreshed still from Anglers Alliance Tasmania. Check official access, camping arrangements and fishing rules separately before visiting.",
+    "freshnessEvidence": "Provider iframe latest listed image for 27 Oct 2026; inspected exact 1920x1080 still showing lake, shoreline vegetation, stumps, a bench and afternoon clouds. Filename and camera EXIF both show 16:39:47 on 27 Oct, without UTC offset or visible timestamp; Australia/Hobart AEDT UTC+11 inferred as 05:39:47Z. HTTP Last-Modified 05:46:27Z is separate upload corroboration, not capture time. Checked 05:48:52Z. Camera clock configuration/precision unverified. The immediately preceding filename shows 16:29:46, an observed sample interval not a service guarantee. No video playback, fish sightings, water safety or campsite availability inferred."
   }
 ]
