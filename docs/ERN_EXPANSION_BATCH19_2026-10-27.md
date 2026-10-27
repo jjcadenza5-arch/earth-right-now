@@ -1,3 +1,9 @@
+## 2026-10-27 Bangkok — Lake Leake expansion deployed and accepted
+
+Production be327e584fdefe93efcb11313e616491fa943fa2. Pages 40457609181 SUCCESS/all 122 release smoke tests; Operations 40457609152 SUCCESS/packet valid with zero issues. Exact served manifest and eight SHA256 checks passed for home, core and lazy sources, provider ledger, directory, aliases and destination page. Page shows NEAR-NOW IMAGE, exact AAT provider link, inn and official resources.
+
+Coverage 842/1,000 distinct camera-backed places (158 remaining); 851 source records/843 catalog places and 601 valid directory rows. One Lake Leake current still, one unpaid local inn and two official visitor guides; no affiliate activation or income claim. Provider iframe frame filename and EXIF timestamp 27 Oct 16:39:47 with offset absent; Hobart AEDT UTC+11 inferred, clock configuration unverified; HTTP last-modified separately corroborates upload. Attributed external provider page only, no media copied or reuse licence inferred. Fishing rules, access, safety and camping eligibility require official checks. Peaceful Bay API returned Unauthorized; unadmitted, no bypass. Existing source rows, scheduled two-image pilot evidence and five human playback timestamps preserved; design/public OFF gates unchanged. At 12:46 Bangkok Watch Earth FULL5; next LIVE HERE 24-hour horizon 27 Oct 15:13 Bangkok, source/Watch seven-day horizon 2 Nov 15:13 subject to failures. Evidence docs/ERN_EXPANSION_BATCH19_2026-10-27.md.
+
 # Lake Leake expansion evidence
 
 ## 2026-10-27 Bangkok — Lake Leake camera and business expansion prepared
