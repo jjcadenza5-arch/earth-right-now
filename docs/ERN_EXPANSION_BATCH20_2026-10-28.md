@@ -1,3 +1,11 @@
+## 2026-10-28 Bangkok — Tooms Lake expansion deployed; owner playback review overdue
+
+Production b314a0c02c8f5a9c58e6376e4011ed9e36009044. Pages 40599970247 SUCCESS/all 122 release smoke tests; Operations 40599970262 SUCCESS/valid packet zero issues. Exact served manifest and nine SHA256 checks passed for home, core and lazy sources, provider ledger, directory, aliases, destination and review current.json. Page has NEAR-NOW IMAGE, exact provider link and both Ross lodgings. Deployed review batch 0358b89bbd7ef1d6 primary Rovaniemi, Taitung, Auckland, Kifune and Fushimi.
+
+Coverage 843/1,000 distinct camera-backed places (157 remaining); 852 source records/844 catalog places and 604 valid directory rows. One Tooms Lake still, two unpaid Ross lodgings and official fisheries guide; no affiliate activation or income claim. Camera frame filename and EXIF 28 Oct 09:58:09 without offset; Hobart AEDT UTC+11 inferred, clock precision unverified. HTTP Last-Modified separately corroborates upload; ordinary attributed external provider link only, no media reuse inferred. Ross is a regional base, not lake lodging. Fishing, safety and access require official checks. Existing source rows and five owner video proof timestamps preserved; design/public OFF gates unchanged.
+
+Owner playback proofs expired 27 Oct 15:13 Bangkok under 24-hour LIVE HERE rule. Actual-clock Watch Earth FULL5 under separate seven-day source horizon through 2 Nov 15:13 subject to failures; no fresh playback or failure inferred. Owner action: https://earthrightnow.app/review/inside-ern.html — review all five primary cards, record truthful outcomes, Download JSON and return it. Validate exact deployed batch, source/embed IDs and timestamps before applying proof atomically. Evidence docs/ERN_EXPANSION_BATCH20_2026-10-28.md.
+
 # Tooms Lake expansion evidence
 
 ## 2026-10-28 Bangkok — Tooms Lake expansion prepared; playback review overdue
