@@ -12902,5 +12902,62 @@
     "affiliate": false,
     "reviewBasis": "FIRST_PARTY_OPERATOR_OR_OFFICIAL_GOVERNMENT_PAGE_REVIEW",
     "reviewSourceUrl": "https://northernmidlands.tas.gov.au/community/facilities/campgrounds-and-caravan-parks"
+  },
+  {
+    "id": "local-tooms-lake-ross-hotel",
+    "placeId": "au-tooms-lake-tasmania",
+    "place": "Tooms Lake — Tasmania",
+    "name": "The Ross Hotel",
+    "type": "hotel",
+    "url": "https://therosshotel.com.au/stay/",
+    "summary": "Explore accommodation in the Tasmanian village of Ross, a regional base for Tooms Lake. Confirm rooms, current renovations, availability and terms directly.",
+    "country": "Australia",
+    "tags": [
+      "visitor planning"
+    ],
+    "verifiedAt": "2026-10-27T23:06:29Z",
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_OPERATOR_OR_OFFICIAL_GOVERNMENT_PAGE_REVIEW",
+    "reviewSourceUrl": "https://therosshotel.com.au/stay/"
+  },
+  {
+    "id": "local-tooms-lake-riverview",
+    "placeId": "au-tooms-lake-tasmania",
+    "place": "Tooms Lake — Tasmania",
+    "name": "Riverview at Ross",
+    "type": "hotel",
+    "url": "https://riverviewatross.com.au/",
+    "summary": "Explore accommodation in Ross, a regional base for the Tooms Lake area. Confirm room availability, amenities and terms directly.",
+    "country": "Australia",
+    "tags": [
+      "visitor planning"
+    ],
+    "verifiedAt": "2026-10-27T23:06:29Z",
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_OPERATOR_OR_OFFICIAL_GOVERNMENT_PAGE_REVIEW",
+    "reviewSourceUrl": "https://riverviewatross.com.au/"
+  },
+  {
+    "id": "local-tooms-lake-ifs",
+    "placeId": "au-tooms-lake-tasmania",
+    "place": "Tooms Lake — Tasmania",
+    "name": "Tooms Lake — Inland Fisheries Service",
+    "type": "visitor information",
+    "url": "https://www.ifs.tas.gov.au/fisheries/waters-a-z/tooms-lake/",
+    "summary": "Review official fishing rules, access, campground and boating information. Check licence requirements and current conditions before visiting; the image does not establish access or safety.",
+    "country": "Australia",
+    "tags": [
+      "visitor planning"
+    ],
+    "verifiedAt": "2026-10-27T23:06:29Z",
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_OPERATOR_OR_OFFICIAL_GOVERNMENT_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.ifs.tas.gov.au/fisheries/waters-a-z/tooms-lake/"
   }
 ]

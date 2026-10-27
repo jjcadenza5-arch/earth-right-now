@@ -2567,6 +2567,33 @@
       "resolvedCatalogIds": [
         "au-lake-leake-tasmania-current"
       ]
+    },
+    {
+      "id": "tasmania-tooms-lake-batch20",
+      "priority": "P2",
+      "placeGroup": "Tooms Lake Tasmania",
+      "country": "Australia",
+      "provider": "Anglers Alliance Tasmania",
+      "candidateType": "VOLUNTEER_CURRENT_IMAGE_NETWORK",
+      "visitorDecisionValue": "HIGH",
+      "qualityPotential": "HIGH",
+      "programFit": [
+        "stay",
+        "activities",
+        "nature"
+      ],
+      "evidenceUrls": [
+        "https://www.anglersalliance.org.au/webcam-tooms-lake",
+        "https://www.ifs.tas.gov.au/fisheries/waters-a-z/tooms-lake/",
+        "https://www.ifs.tas.gov.au/news/2024/dec/18/anglers-alliance-tasmania-aat-webcam-access"
+      ],
+      "state": "CAMERA_LOCATION_ADMITTED_LINK_ONLY",
+      "why": "Distinct Tasmanian lake image visually checked; filename and camera EXIF timestamp with offset inferred. Ordinary attributed provider page link only.",
+      "next": "Maintain current image and rights evidence; check access, licence and campground separately.",
+      "reviewedAt": "2026-10-27T23:06:29Z",
+      "resolvedCatalogIds": [
+        "au-tooms-lake-tasmania-current"
+      ]
     }
   ],
   "guardrails": {

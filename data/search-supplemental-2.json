@@ -2430,5 +2430,45 @@
     "sourceUrl": "https://www.anglersalliance.org.au/web-cams/lake-leake",
     "story": "Look over Lake Leake and its wooded shore in a refreshed still from Anglers Alliance Tasmania. Check official access, camping arrangements and fishing rules separately before visiting.",
     "freshnessEvidence": "Provider iframe latest listed image for 27 Oct 2026; inspected exact 1920x1080 still showing lake, shoreline vegetation, stumps, a bench and afternoon clouds. Filename and camera EXIF both show 16:39:47 on 27 Oct, without UTC offset or visible timestamp; Australia/Hobart AEDT UTC+11 inferred as 05:39:47Z. HTTP Last-Modified 05:46:27Z is separate upload corroboration, not capture time. Checked 05:48:52Z. Camera clock configuration/precision unverified. The immediately preceding filename shows 16:29:46, an observed sample interval not a service guarantee. No video playback, fish sightings, water safety or campsite availability inferred."
+  },
+  {
+    "provider": "Anglers Alliance Tasmania",
+    "country": "Australia",
+    "timeZone": "Australia/Hobart",
+    "categories": [
+      "Nature",
+      "Parks & Scenic",
+      "Useful Earth"
+    ],
+    "truth": "LIVE_IMAGE",
+    "permission": "LINK_ONLY",
+    "health": "HEALTHY",
+    "playback": "EXTERNAL",
+    "officialUrl": "https://www.ifs.tas.gov.au/fisheries/waters-a-z/tooms-lake/",
+    "attribution": "Anglers Alliance Tasmania — Tooms Lake webcam",
+    "checkedAt": "2026-10-27T23:06:29Z",
+    "lastSuccessfulCheck": "2026-10-27T23:06:29Z",
+    "quality": 82,
+    "freshness": 90,
+    "moment": 75,
+    "featuredHold": true,
+    "watchHold": true,
+    "searchSupplemental": true,
+    "externalWindowRequired": true,
+    "rightsSourceUrl": "https://www.anglersalliance.org.au/webcam-tooms-lake",
+    "rightsBasis": "Volunteer-operated network is publicly accessible on the provider page. ERN uses an attributed ordinary external hyperlink and original description only; no frame, image, thumbnail or provider text reused. Free public viewing does not establish an image-reuse or embedding licence.",
+    "id": "au-tooms-lake-tasmania-current",
+    "placeId": "au-tooms-lake-tasmania",
+    "title": "Tooms Lake — Tasmania",
+    "seoName": "Tooms Lake — Tasmania",
+    "region": "Eastern Midlands / Tasmania",
+    "aliases": [
+      "Tooms Lake Tasmania",
+      "Tooms Lake webcam",
+      "Tooms Lake Conservation Area"
+    ],
+    "sourceUrl": "https://www.anglersalliance.org.au/webcam-tooms-lake",
+    "story": "Look across Tooms Lake toward the wooded shore in a refreshed still from Anglers Alliance Tasmania. Check official fishing, access and campground information separately before visiting.",
+    "freshnessEvidence": "Provider iframe lists a 28 Oct 2026 frame; visually inspected 1280x800 image showing open lake, partly submerged trunks, wooded shore and clouds. Filename and camera EXIF show 28 Oct 09:58:09 without offset or visible timestamp; Australia/Hobart AEDT UTC+11 inferred as 27 Oct 22:58:09Z. HTTP Last-Modified 23:03:03Z separately corroborates upload, not capture time. Review 23:06:29Z; camera clock precision and configuration unverified. No video playback, fish sightings, water safety or campsite availability inferred."
   }
 ]
