@@ -2928,6 +2928,54 @@
       "resolvedCatalogIds": [
         "ch-leukerbad-bodmen-current"
       ]
+    },
+    {
+      "id": "felsenegg-panorama-batch31",
+      "priority": "P2",
+      "placeGroup": "Felsenegg Lake Zurich panorama",
+      "country": "Switzerland",
+      "provider": "Felsenegg Gastro AG",
+      "candidateType": "FIRST_PARTY_CURRENT_IMAGE",
+      "visitorDecisionValue": "HIGH",
+      "qualityPotential": "HIGH",
+      "programFit": [
+        "food",
+        "nature",
+        "transport"
+      ],
+      "evidenceUrls": [
+        "https://www.felsenegg.com/restaurant",
+        "https://www.felsenegg.com/impressum"
+      ],
+      "state": "CAMERA_LOCATION_ADMITTED_LINK_ONLY",
+      "why": "Distinct viewpoint with current printed date/time and independent upload header; settlement/lake panorama visually legible. Ordinary external provider-page link only.",
+      "next": "Maintain image/rights evidence and confirm restaurant/access/transport independently.",
+      "reviewedAt": "2026-10-28T08:51:09Z",
+      "resolvedCatalogIds": [
+        "ch-felsenegg-zurich-lake-current"
+      ]
+    },
+    {
+      "id": "arnisee-image-quality-hold-oct28",
+      "priority": "P2",
+      "placeGroup": "Arnisee cableway lake webcam",
+      "country": "Switzerland",
+      "provider": "Arnisee cableways",
+      "candidateType": "FIRST_PARTY_CURRENT_IMAGE",
+      "visitorDecisionValue": "HIGH",
+      "qualityPotential": "UNKNOWN",
+      "programFit": [
+        "nature",
+        "food",
+        "transport"
+      ],
+      "evidenceUrls": [
+        "https://arnisee.ch/live/"
+      ],
+      "state": "HOLD_OBSCURED_IMAGE",
+      "why": "Exact1920x1080 public image visually inspected: almost entirely grey obscuration, only small foreground surface detail. HTTP upload08:40:14Z does not establish capture time; no printed timestamp. Cause or outage not diagnosed; not admitted/count increased.",
+      "next": "Revisit only materially clearer current imagery; no retry loop, automatic promotion or transport/seasonal opening inference.",
+      "reviewedAt": "2026-10-28T08:51:09Z"
     }
   ],
   "guardrails": {

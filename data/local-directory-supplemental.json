@@ -13529,5 +13529,43 @@
     "affiliate": false,
     "reviewBasis": "FIRST_PARTY_OPERATOR_PAGE_REVIEW",
     "reviewSourceUrl": "https://leukerbad.ch/en/therme"
+  },
+  {
+    "id": "local-felsenegg-restaurant",
+    "placeId": "ch-felsenegg-zurich-lake",
+    "place": "Felsenegg — Lake Zürich Panorama",
+    "name": "Panorama Restaurant Felsenegg",
+    "type": "restaurant",
+    "url": "https://www.felsenegg.com/en/restaurant",
+    "summary": "Explore dining at Felsenegg above Lake Zürich. Confirm seasonal hours, weather-related early closing and table availability directly. The operator notes a driving restriction: plan access rather than driving to the restaurant.",
+    "country": "Switzerland",
+    "tags": [
+      "visitor planning"
+    ],
+    "verifiedAt": "2026-10-28T08:51:09Z",
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_OPERATOR_OR_OFFICIAL_TRANSPORT_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.felsenegg.com/en/restaurant"
+  },
+  {
+    "id": "local-felsenegg-zvv",
+    "placeId": "ch-felsenegg-zurich-lake",
+    "place": "Felsenegg — Lake Zürich Panorama",
+    "name": "Felseneggbahn — ZVV visitor transport guide",
+    "type": "visitor information",
+    "url": "https://www.zvv.ch/de/freizeit-und-events/freizeittipps/entdecken-und-erleben/mit-der-luftseilbahn-auf-die-felsenegg.html",
+    "summary": "Plan public-transport access via Adliswil and the Felseneggbahn. Check current services and the Zürich HB–Selnau rail disruption noted through 12 December 2026 directly with ZVV/SZU; the panorama does not confirm cable-car operation, a safe walking route or an available connection.",
+    "country": "Switzerland",
+    "tags": [
+      "visitor planning"
+    ],
+    "verifiedAt": "2026-10-28T08:51:09Z",
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_OPERATOR_OR_OFFICIAL_TRANSPORT_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.zvv.ch/de/freizeit-und-events/freizeittipps/entdecken-und-erleben/mit-der-luftseilbahn-auf-die-felsenegg.html"
   }
 ]

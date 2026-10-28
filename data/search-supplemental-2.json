@@ -2989,5 +2989,45 @@
     "sourceUrl": "https://www.bodmenstuebli.ch/die-webcam",
     "story": "Look over Bodmen’s buildings, wooded slopes and valley from the restaurant panorama near Leukerbad. Sun glare can limit the central view; check restaurant opening, route access and town activities separately before visiting.",
     "freshnessEvidence": "Exact1280x480 public provider-linked image visually inspected: Bodmen buildings, slopes, trees and valley legible around strong central sun glare. Some rectangular masked areas; no identities or personal activities assessed. Printed2026-10-28 CET09:38:23 explicitly includes CET, equivalent08:38:23Z. Retrieved08:38:32Z HTTP200; Last-Modified08:38:25Z independently corroborates upload, not capture. Camera clock precision unverified; printed approximate temperature not independently verified or used as weather evidence. No route safety, restaurant opening, thermal-bath status or video playback inferred. Review completed 2026-10-28T08:39:33Z."
+  },
+  {
+    "provider": "Felsenegg Gastro AG",
+    "country": "Switzerland",
+    "timeZone": "Europe/Zurich",
+    "categories": [
+      "Nature",
+      "Parks & Scenic",
+      "Useful Earth"
+    ],
+    "truth": "LIVE_IMAGE",
+    "permission": "LINK_ONLY",
+    "health": "HEALTHY",
+    "playback": "EXTERNAL",
+    "officialUrl": "https://www.felsenegg.com/restaurant",
+    "attribution": "Felsenegg Gastro AG — east panorama webcam",
+    "checkedAt": "2026-10-28T08:51:09Z",
+    "lastSuccessfulCheck": "2026-10-28T08:51:09Z",
+    "quality": 82,
+    "freshness": 90,
+    "moment": 75,
+    "featuredHold": true,
+    "watchHold": true,
+    "searchSupplemental": true,
+    "externalWindowRequired": true,
+    "rightsSourceUrl": "https://www.felsenegg.com/impressum",
+    "rightsBasis": "Public first-party restaurant page supplies east/west webcam links. German imprint identifies Felsenegg Gastro AG; reviewed German imprint/privacy notice contain no incoming-link restriction or media reuse licence. Attributed ordinary external provider-page link and original description only; no image, thumbnail, iframe, logo or provider prose copied or embedded. Public availability does not establish embedding/reproduction permission.",
+    "id": "ch-felsenegg-zurich-lake-current",
+    "placeId": "ch-felsenegg-zurich-lake",
+    "title": "Felsenegg — Lake Zürich Panorama",
+    "seoName": "Felsenegg — Lake Zürich Panorama",
+    "region": "Felsenegg / Stallikon, Zürich",
+    "aliases": [
+      "Felsenegg panorama",
+      "Felsenegg Lake Zurich webcam",
+      "Adliswil Felsenegg"
+    ],
+    "sourceUrl": "https://www.felsenegg.com/restaurant",
+    "story": "Look across wooded slopes and the settlement below Felsenegg toward Lake Zürich in a refreshed panoramic still. Check restaurant opening, cable-car operation and current rail connections separately before visiting.",
+    "freshnessEvidence": "Exact provider-linked east panorama1920x540 visually inspected: autumn trees, foreground roof, settlement and Lake Zürich legible under cloud. Printed28-10-2026 09:48:45 has no timezone/offset; Europe/Zurich CETUTC+1 inferred08:48:45Z. Latest-image redirect filename encodes084846 separately, one second later; filename timezone not asserted. Retrieved08:50:09Z HTTP200; Last-Modified08:48:58Z independently corroborates upload, not capture. Initial multi-redirect request exhausted timeout; one bounded request to the publicly returned exact final asset succeeded, no authentication or challenge bypass. Camera clock precision unverified. No transport operation, trail safety, restaurant opening or video playback inferred. Review completed 2026-10-28T08:51:09Z."
   }
 ]
