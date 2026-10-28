@@ -12959,5 +12959,81 @@
     "affiliate": false,
     "reviewBasis": "FIRST_PARTY_OPERATOR_OR_OFFICIAL_GOVERNMENT_PAGE_REVIEW",
     "reviewSourceUrl": "https://www.ifs.tas.gov.au/fisheries/waters-a-z/tooms-lake/"
+  },
+  {
+    "id": "local-great-lake-hotel",
+    "placeId": "au-yingina-great-lake",
+    "place": "yingina / Great Lake",
+    "name": "Great Lake Hotel — Miena",
+    "type": "hotel",
+    "url": "https://mienavillage.com.au/accommodation/",
+    "summary": "Explore accommodation in Miena near yingina / Great Lake. Confirm current room types, amenities, availability and cancellation terms directly.",
+    "country": "Australia",
+    "tags": [
+      "visitor planning"
+    ],
+    "verifiedAt": "2026-10-28T00:18:22Z",
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_OPERATOR_OR_OFFICIAL_GOVERNMENT_PAGE_REVIEW",
+    "reviewSourceUrl": "https://mienavillage.com.au/accommodation/"
+  },
+  {
+    "id": "local-great-lake-ifs",
+    "placeId": "au-yingina-great-lake",
+    "place": "yingina / Great Lake",
+    "name": "yingina / Great Lake — Inland Fisheries Service",
+    "type": "visitor information",
+    "url": "https://www.ifs.tas.gov.au/fisheries/waters-a-z/yingina-great-lake/",
+    "summary": "Review official access, fishing and boating information. Check current licence requirements, inflow restrictions and designated camping areas; the camera is not a water-level gauge or access guarantee.",
+    "country": "Australia",
+    "tags": [
+      "visitor planning"
+    ],
+    "verifiedAt": "2026-10-28T00:18:22Z",
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_OPERATOR_OR_OFFICIAL_GOVERNMENT_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.ifs.tas.gov.au/fisheries/waters-a-z/yingina-great-lake/"
+  },
+  {
+    "id": "local-penstock-central-highlands-lodge",
+    "placeId": "au-penstock-lagoon",
+    "place": "Penstock Lagoon — Tasmania",
+    "name": "Central Highlands Lodge — Miena",
+    "type": "hotel",
+    "url": "https://centralhighlandslodge.com.au/",
+    "summary": "Explore lodging in Miena as a regional base for Penstock Lagoon and the Central Highlands. The lodge is on Great Lake, not at Penstock Lagoon; confirm current availability and terms directly.",
+    "country": "Australia",
+    "tags": [
+      "visitor planning"
+    ],
+    "verifiedAt": "2026-10-28T00:18:22Z",
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_OPERATOR_OR_OFFICIAL_GOVERNMENT_PAGE_REVIEW",
+    "reviewSourceUrl": "https://centralhighlandslodge.com.au/"
+  },
+  {
+    "id": "local-penstock-ifs",
+    "placeId": "au-penstock-lagoon",
+    "place": "Penstock Lagoon — Tasmania",
+    "name": "Penstock Lagoon — Inland Fisheries Service",
+    "type": "visitor information",
+    "url": "https://www.ifs.tas.gov.au/fisheries/waters-a-z/penstock-lagoon/",
+    "summary": "Review official fly-fishing-only rules, access easements, designated camping and boating restrictions. Check current licence and access requirements before visiting; the image does not establish safety.",
+    "country": "Australia",
+    "tags": [
+      "visitor planning"
+    ],
+    "verifiedAt": "2026-10-28T00:18:22Z",
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_OPERATOR_OR_OFFICIAL_GOVERNMENT_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.ifs.tas.gov.au/fisheries/waters-a-z/penstock-lagoon/"
   }
 ]

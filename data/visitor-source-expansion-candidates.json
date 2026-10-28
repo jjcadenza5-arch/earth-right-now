@@ -2594,6 +2594,35 @@
       "resolvedCatalogIds": [
         "au-tooms-lake-tasmania-current"
       ]
+    },
+    {
+      "id": "tasmania-great-lake-penstock-batch21",
+      "priority": "P2",
+      "placeGroup": "yingina / Great Lake and Penstock Lagoon",
+      "country": "Australia",
+      "provider": "Anglers Alliance Tasmania",
+      "candidateType": "VOLUNTEER_CURRENT_IMAGE_NETWORK",
+      "visitorDecisionValue": "HIGH",
+      "qualityPotential": "HIGH",
+      "programFit": [
+        "stay",
+        "activities",
+        "nature"
+      ],
+      "evidenceUrls": [
+        "https://www.anglersalliance.org.au/web-cams/great-lake-webcam",
+        "https://www.anglersalliance.org.au/web-cams/penstock-lagoon-webcam",
+        "https://www.ifs.tas.gov.au/fisheries/waters-a-z/yingina-great-lake/",
+        "https://www.ifs.tas.gov.au/fisheries/waters-a-z/penstock-lagoon/"
+      ],
+      "state": "TWO_DISTINCT_CAMERA_LOCATIONS_ADMITTED_LINK_ONLY",
+      "why": "Two separate lake visitor locations; exact provider latest-listed frames visually inspected with filename timestamps and independent upload headers. Historical web-search snapshots were not used to claim currentness.",
+      "next": "Maintain current image and rights evidence; check fishing licences, camping and access independently.",
+      "reviewedAt": "2026-10-28T00:18:22Z",
+      "resolvedCatalogIds": [
+        "au-yingina-great-lake-current",
+        "au-penstock-lagoon-current"
+      ]
     }
   ],
   "guardrails": {
