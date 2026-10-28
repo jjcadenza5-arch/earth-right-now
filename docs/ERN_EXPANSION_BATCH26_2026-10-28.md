@@ -1,3 +1,11 @@
+## 2026-10-28 Bangkok — Glarus expansion deployed and accepted
+
+Production 6facad7dd3273c50746fac546d3ab34c949eec77. Pages40645229111 SUCCESS/all122 required release smoke tests; Operations40645229179 SUCCESS/packet valid zero issues; syntax40645229145 SUCCESS. Exact served manifest and twelve SHA256 checks passed for home/app/styles, core/both lazy sources, ledger, offers, directory, aliases, destination and review current.json. Correct NEAR-NOW IMAGE label, exact KSGL provider action and hotel/museum resources verified. All five owner playback dates and latest matching observations preserved.
+
+Coverage852/1,000 distinct camera-backed places (148 remaining);861 source records/853 catalog places,626 valid directory rows. One Glarus1920x1080 south-facing town/Alpine-valley panorama. Provider filename28Oct07:27:01 and separate page caption07:28, noEXIF/printed timestamp/offset; ZurichCETUTC+1 inferred after25OctDST end as06:27:01Z. HTTP Last-Modified06:28:46Z separately corroborates upload, not capture; clock precision unverified. KSGL requires prior written consent for reproduction: ERN supplies an attributed ordinary external page link and original description only, no image/thumbnail/iframe/logo/prose copied or media licence inferred. Panoramic scene contains no identifiable individual or clinical-activity assessment; no medical advice or camera-site access claim.
+
+Two unpaid local hotel/art-museum operators, no bookings, hours, ticket, price, affiliate activation or income guaranteed. Tourism/tour pages403-challenged and omitted without bypass; Timaru image request timed out and remains unverified, no camera outage inferred or shared controls operated. Wellington/Nelson already present and not double counted; Willisau current frame not verified, not counted. All860 prior source records, five owner28Oct renewal/ledger,232 offers,design/publicOFF gates preserved. Next24h LIVE HERE29Oct07:06Bangkok; source/Watch seven-day horizon4Nov07:06 subject to failures. Evidence docs/ERN_EXPANSION_BATCH26_2026-10-28.md. Continue focused usage-aware expansion from this accepted checkpoint.
+
 # Glarus expansion evidence
 
 ## 2026-10-28 Bangkok — Glarus expansion prepared
