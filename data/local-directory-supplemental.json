@@ -13035,5 +13035,81 @@
     "affiliate": false,
     "reviewBasis": "FIRST_PARTY_OPERATOR_OR_OFFICIAL_GOVERNMENT_PAGE_REVIEW",
     "reviewSourceUrl": "https://www.ifs.tas.gov.au/fisheries/waters-a-z/penstock-lagoon/"
+  },
+  {
+    "id": "local-arthurs-tea-tree-lodge",
+    "placeId": "au-arthurs-lake",
+    "place": "Arthurs Lake — Tasmania",
+    "name": "Tea Tree Lodge",
+    "type": "lodge",
+    "url": "https://www.teatreelodge.com.au/",
+    "summary": "Explore accommodation at Arthurs Lake near Wilburville. Confirm current availability, facilities, bedding arrangements and booking terms directly with the operator.",
+    "country": "Australia",
+    "tags": [
+      "visitor planning"
+    ],
+    "verifiedAt": "2026-10-28T00:33:16Z",
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_OPERATOR_OR_OFFICIAL_GOVERNMENT_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.teatreelodge.com.au/"
+  },
+  {
+    "id": "local-arthurs-ifs",
+    "placeId": "au-arthurs-lake",
+    "place": "Arthurs Lake — Tasmania",
+    "name": "Arthurs Lake — Inland Fisheries Service",
+    "type": "visitor information",
+    "url": "https://www.ifs.tas.gov.au/fisheries/waters-a-z/arthurs-lake/",
+    "summary": "Read official access, fishing and boating information, including inflow restrictions. Check current licence and conditions before visiting; a camera image does not establish safe boating.",
+    "country": "Australia",
+    "tags": [
+      "visitor planning"
+    ],
+    "verifiedAt": "2026-10-28T00:33:16Z",
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_OPERATOR_OR_OFFICIAL_GOVERNMENT_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.ifs.tas.gov.au/fisheries/waters-a-z/arthurs-lake/"
+  },
+  {
+    "id": "local-arthurs-hydro-campground",
+    "placeId": "au-arthurs-lake",
+    "place": "Arthurs Lake — Tasmania",
+    "name": "Arthurs Lake campgrounds — Hydro Tasmania",
+    "type": "visitor information",
+    "url": "https://www.hydro.com.au/projects/arthurs-lake-campgrounds",
+    "summary": "Review campground management changes and contact Hydro Tasmania to confirm current access. Published reopening plans do not confirm that Pumphouse Bay or Jonah Bay is open today.",
+    "country": "Australia",
+    "tags": [
+      "visitor planning"
+    ],
+    "verifiedAt": "2026-10-28T00:33:16Z",
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_OPERATOR_OR_OFFICIAL_GOVERNMENT_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.hydro.com.au/projects/arthurs-lake-campgrounds"
+  },
+  {
+    "id": "local-bronte-ifs",
+    "placeId": "au-bronte-lagoon",
+    "place": "Bronte Lagoon — Tasmania",
+    "name": "Bronte Lagoon — Inland Fisheries Service",
+    "type": "visitor information",
+    "url": "https://www.ifs.tas.gov.au/fisheries/waters-a-z/bronte-lagoon/",
+    "summary": "Check official fishing, camping and boat-launch information. Confirm current licence requirements and navigation exclusions; shoreline camping has limited facilities and is not guaranteed by the camera view.",
+    "country": "Australia",
+    "tags": [
+      "visitor planning"
+    ],
+    "verifiedAt": "2026-10-28T00:33:16Z",
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_OPERATOR_OR_OFFICIAL_GOVERNMENT_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.ifs.tas.gov.au/fisheries/waters-a-z/bronte-lagoon/"
   }
 ]
