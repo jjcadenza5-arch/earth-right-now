@@ -1,3 +1,11 @@
+## 2026-10-28 Bangkok — Owner five-camera renewal deployed and accepted
+
+Production 63627449a4e21e7a4dad0d9f31303c5b08c096d8. Pages 40607061276 SUCCESS/all 122 required release smoke tests; Operations 40607061180 SUCCESS/packet valid with zero issues. Exact served manifest and twelve SHA256 checks passed including home/app/styles, core and both lazy source parts, ledger, offers, directory, aliases and review HTML/current.json. All five served source playbackVerifiedAt, checkedAt and lastSuccessfulCheck fields plus newest HUMAN_PLAYBACK ledger observations match exact owner timestamps. Review batch a64b70f0d5902bec replaces consumed 0358b89bbd7ef1d6. Raw owner packet and validation record excluded from public manifest.
+
+Owner confirmed five exact deployed cameras at 28 Oct 07:06:03.264–07:06:32.093 Bangkok. Trusted origin, deployed batch, exact primary five and source/embed URLs matched; accepted5/rejected0; independent provider pages HTTP200 all5; manual atomic plan5ready/0blocked with old timestamp and latest-ledger preconditions checked. Original owner networkStatus UNKNOWN retained; separate availability probes prove reachability only. No scene, duration, browser or LIVE-clock details invented. LIVE HERE current5/ready5/shortfall0; Watch Earth FULL5/4providers. Next24h horizon 29 Oct 07:06:03–32 Bangkok; source/Watch seven-day horizon 4 Nov 07:06:03–32 subject to failures; no horizon relaxation or automatic video renewal. Sixteen unrelated historical consistency diagnostics exactly match baseline; none involve renewed five.
+
+Coverage843/1,000 camera-backed places (157 remaining),852 sources/844 catalog places,604 directory rows and232 offers unchanged. All other source records, existing ledger history, website design/publicOFF gates preserved. Evidence docs/OWNER_FIVE_RENEWAL_2026-10-28.md and data/review-evidence/owner-five-playback-2026-10-28*.json. Owner action complete; resume focused usage-aware expansion from this accepted checkpoint.
+
 # Owner five-camera renewal — 28 October 2026
 
 ## 2026-10-28 Bangkok — Owner five-camera renewal prepared
