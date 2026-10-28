@@ -172,12 +172,12 @@
       "services"
     ],
     "programUrl": "https://app.travelpayouts.com/",
-    "termsUrl": "https://www.travelpayouts.com/terms",
+    "termsUrl": "https://support.travelpayouts.com/hc/en-us/articles/360004162111-Terms-of-the-Travelpayouts-Travel-Affiliate-Network",
     "programStatus": "ACTIVE_PROJECT_OPERATOR_CONFIRMED",
     "applicationRequired": false,
     "networkOrAccount": "Travelpayouts Earthrightnow Project",
     "commissionEvidence": "Program-specific reward rates vary by partner. ERN stores individual partner terms separately and does not treat platform-level availability as guaranteed earnings.",
-    "termsReviewedAt": "2026-09-28T14:25:00Z",
+    "termsReviewedAt": "2026-10-28T15:19:50Z",
     "relationshipActive": true,
     "credentialsConfigured": true,
     "publicActivationAllowed": true,
@@ -197,7 +197,9 @@
     "ownerDriveObservedState": "SETUP_PROMPT_VISIBLE_DRIVE_NOT_WORKING",
     "ownerDriveDecision": "HOLD_SITE_WIDE_DRIVE_AUTOMATION",
     "ownerDriveEvidence": "Owner screenshots show Travelpayouts Drive setup prompt plus Content Analytics, Targeted Offers, Switch Links, Link Relevant Keywords, Insert Recommendations and Display Smart Previews. ERN intentionally keeps Drive automation off.",
-    "driveFutureExperiment": "Only on explicit planning surfaces after material traffic growth and separate owner approval; never rewrite Open Live Source."
+    "driveFutureExperiment": "Only on explicit planning surfaces after material traffic growth and separate owner approval; never rewrite Open Live Source.",
+    "termsReviewEvidence": "docs/TRAVELPAYOUTS_PUBLIC_TERMS_REVIEW_2026-10-28.md",
+    "termsReviewScope": "PUBLIC_NETWORK_TERMS_AND_PUBLIC_OFFER_ONLY; no login, contract acceptance, account status or payout re-verification, activation or automation change"
   },
   {
     "id": "hotels-com",
