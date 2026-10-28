@@ -2630,5 +2630,45 @@
     "sourceUrl": "https://www.anglersalliance.org.au/web-cams/bronte-lagoon-webcam",
     "story": "Look across Bronte Lagoon toward its wooded shore in a refreshed still. Check official visitor, access and fishing information separately before a visit.",
     "freshnessEvidence": "Exact provider-latest 1920x1080 still visually inspected: open lagoon, foreground grass, wooded opposite shore and low grey cloud. Scene is legible despite subdued contrast; no cause or weather severity inferred. Filename shows28Oct11:29:58; no EXIF date or visible timestamp. Offset absent; Australia/Hobart AEDT UTC+11 inferred as00:29:58Z. HTTP Last-Modified00:30:06Z separately corroborates upload, not capture time. Review completed 2026-10-28T00:33:16Z. Camera clock precision/configuration unverified. No video playback, fish sightings, numeric water level, safe boating, access or campsite availability inferred."
+  },
+  {
+    "provider": "Anglers Alliance Tasmania",
+    "country": "Australia",
+    "timeZone": "Australia/Hobart",
+    "categories": [
+      "Nature",
+      "Parks & Scenic",
+      "Useful Earth"
+    ],
+    "truth": "LIVE_IMAGE",
+    "permission": "LINK_ONLY",
+    "health": "HEALTHY",
+    "playback": "EXTERNAL",
+    "officialUrl": "https://www.ifs.tas.gov.au/fisheries/waters-a-z/lake-burbury/",
+    "attribution": "Anglers Alliance Tasmania — Lake Burbury webcam",
+    "checkedAt": "2026-10-28T01:53:12Z",
+    "lastSuccessfulCheck": "2026-10-28T01:53:12Z",
+    "quality": 80,
+    "freshness": 90,
+    "moment": 75,
+    "featuredHold": true,
+    "watchHold": true,
+    "searchSupplemental": true,
+    "externalWindowRequired": true,
+    "rightsSourceUrl": "https://www.anglersalliance.org.au/web-cams/lake-burbury-webcam",
+    "rightsBasis": "Volunteer-operated network is publicly accessible on the provider page. ERN uses an attributed ordinary external hyperlink and original description only; no frame, image, thumbnail or provider text reused. Free public viewing does not establish an image-reuse or embedding licence.",
+    "id": "au-lake-burbury-current",
+    "placeId": "au-lake-burbury",
+    "title": "Lake Burbury — Tasmania",
+    "seoName": "Lake Burbury — Tasmania",
+    "region": "Queenstown / West Coast Tasmania",
+    "aliases": [
+      "Lake Burbury Tasmania",
+      "Lake Burbury webcam",
+      "Burbury Queenstown Tasmania"
+    ],
+    "sourceUrl": "https://www.anglersalliance.org.au/web-cams/lake-burbury-webcam",
+    "story": "Look across Lake Burbury toward wooded islands and mountain terrain in a refreshed still. Check official access, boating and visitor information independently before visiting.",
+    "freshnessEvidence": "Exact latest-listed provider1920x1080 still visually inspected: foreground vegetation, lake surface, wooded islands, mountain terrain and cloud. Some foreground image marks and distant obscuration, but main lake and islands legible. Provider filename and camera EXIF both show28Oct12:49:58 with no UTC offset or visible timestamp; HobartAEDTUTC+11 inferred as01:49:58Z. HTTP Last-Modified01:50:01Z independently corroborates upload, not capture time. Review completed 2026-10-28T01:53:12Z. Camera clock precision/configuration unverified. No numeric water level, weather severity, fish sightings, activity safety or video playback inferred."
   }
 ]

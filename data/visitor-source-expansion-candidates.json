@@ -2673,6 +2673,53 @@
       "why": "Current28Oct11:30:00 frame1280x800 visually inspected but strongly obscured/washed out. Cause not established; no provider outage or weather diagnosis inferred. Not counted.",
       "next": "Revisit on materially clearer provider imagery; no automatic promotion or retry loop.",
       "reviewedAt": "2026-10-28T00:33:16Z"
+    },
+    {
+      "id": "tasmania-lake-burbury-batch23",
+      "priority": "P2",
+      "placeGroup": "Lake Burbury Tasmania",
+      "country": "Australia",
+      "provider": "Anglers Alliance Tasmania",
+      "candidateType": "VOLUNTEER_CURRENT_IMAGE_NETWORK",
+      "visitorDecisionValue": "HIGH",
+      "qualityPotential": "HIGH",
+      "programFit": [
+        "stay",
+        "activities",
+        "nature"
+      ],
+      "evidenceUrls": [
+        "https://www.anglersalliance.org.au/web-cams/lake-burbury-webcam",
+        "https://www.ifs.tas.gov.au/fisheries/waters-a-z/lake-burbury/"
+      ],
+      "state": "CAMERA_LOCATION_ADMITTED_LINK_ONLY",
+      "why": "Distinct lake scene visually inspected with current provider filename and camera EXIF timestamp; upload header separate corroboration. Attributed ordinary external link only.",
+      "next": "Maintain current image and rights evidence; check fishing, boating and access independently.",
+      "reviewedAt": "2026-10-28T01:53:12Z",
+      "resolvedCatalogIds": [
+        "au-lake-burbury-current"
+      ]
+    },
+    {
+      "id": "lake-mackintosh-quality-hold-oct28",
+      "priority": "P2",
+      "placeGroup": "Lake Mackintosh",
+      "country": "Australia",
+      "provider": "Anglers Alliance Tasmania",
+      "candidateType": "VOLUNTEER_CURRENT_IMAGE_NETWORK",
+      "visitorDecisionValue": "HIGH",
+      "qualityPotential": "UNKNOWN",
+      "programFit": [
+        "stay",
+        "nature"
+      ],
+      "evidenceUrls": [
+        "https://www.anglersalliance.org.au/web-cams/lake-mackintosh"
+      ],
+      "state": "HOLD_OBSCURED_IMAGE",
+      "why": "Current28Oct12:49:59 frame1280x800 inspected: lake and near shore visible, distant terrain strongly obscured and low contrast. Held for more useful scenic quality; cause not diagnosed, no outage inferred. Not counted.",
+      "next": "Revisit only on materially clearer provider imagery; no retry loop or automatic promotion.",
+      "reviewedAt": "2026-10-28T01:53:12Z"
     }
   ],
   "guardrails": {

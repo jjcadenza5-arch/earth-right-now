@@ -13111,5 +13111,81 @@
     "affiliate": false,
     "reviewBasis": "FIRST_PARTY_OPERATOR_OR_OFFICIAL_GOVERNMENT_PAGE_REVIEW",
     "reviewSourceUrl": "https://www.ifs.tas.gov.au/fisheries/waters-a-z/bronte-lagoon/"
+  },
+  {
+    "id": "local-burbury-gold-rush-inn",
+    "placeId": "au-lake-burbury",
+    "place": "Lake Burbury — Tasmania",
+    "name": "Gold Rush Inn — Queenstown",
+    "type": "motel",
+    "url": "https://www.goldrushinn.com.au/",
+    "summary": "Explore accommodation in Queenstown, Tasmania, a regional base for Lake Burbury. Confirm current rooms, amenities, availability and booking terms directly.",
+    "country": "Australia",
+    "tags": [
+      "visitor planning"
+    ],
+    "verifiedAt": "2026-10-28T01:53:12Z",
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_OPERATOR_OR_OFFICIAL_GOVERNMENT_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.goldrushinn.com.au/"
+  },
+  {
+    "id": "local-burbury-wilderness-railway",
+    "placeId": "au-lake-burbury",
+    "place": "Lake Burbury — Tasmania",
+    "name": "West Coast Wilderness Railway — journeys",
+    "type": "heritage railway",
+    "url": "https://wcwr.com.au/plan/journeys/",
+    "summary": "Compare heritage railway experiences departing from Queenstown and Strahan. Check the exact departure station, current timetable, accessibility and ticket availability with the operator; the lake camera does not confirm a train service.",
+    "country": "Australia",
+    "tags": [
+      "visitor planning"
+    ],
+    "verifiedAt": "2026-10-28T01:53:12Z",
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_OPERATOR_OR_OFFICIAL_GOVERNMENT_PAGE_REVIEW",
+    "reviewSourceUrl": "https://wcwr.com.au/plan/journeys/"
+  },
+  {
+    "id": "local-burbury-ifs",
+    "placeId": "au-lake-burbury",
+    "place": "Lake Burbury — Tasmania",
+    "name": "Lake Burbury — Inland Fisheries Service",
+    "type": "visitor information",
+    "url": "https://www.ifs.tas.gov.au/fisheries/waters-a-z/lake-burbury/",
+    "summary": "Review official fishing, boating and access information, including navigation exclusions. Check current licence requirements and conditions; camera visibility does not establish safe boating.",
+    "country": "Australia",
+    "tags": [
+      "visitor planning"
+    ],
+    "verifiedAt": "2026-10-28T01:53:12Z",
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_OPERATOR_OR_OFFICIAL_GOVERNMENT_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.ifs.tas.gov.au/fisheries/waters-a-z/lake-burbury/"
+  },
+  {
+    "id": "local-burbury-tourism-campground",
+    "placeId": "au-lake-burbury",
+    "place": "Lake Burbury — Tasmania",
+    "name": "Lake Burbury Camping Ground — Discover Tasmania",
+    "type": "visitor information",
+    "url": "https://www.discovertasmania.com.au/accommodation/lakeburburycampingground/",
+    "summary": "Read official tourism information for the Lyell Highway campground. Confirm current access, facilities and fees directly; this formal campground is distinct from Darwin Dam camping farther south.",
+    "country": "Australia",
+    "tags": [
+      "visitor planning"
+    ],
+    "verifiedAt": "2026-10-28T01:53:12Z",
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_OPERATOR_OR_OFFICIAL_GOVERNMENT_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.discovertasmania.com.au/accommodation/lakeburburycampingground/"
   }
 ]
