@@ -2848,6 +2848,33 @@
       "resolvedCatalogIds": [
         "ch-weinfelden-stelzenhof-current"
       ]
+    },
+    {
+      "id": "schaffhausen-vordergasse-batch28",
+      "priority": "P2",
+      "placeGroup": "Schaffhausen Vordergasse old town",
+      "country": "Switzerland",
+      "provider": "Schaffhauser Nachrichten / Meier + Cie AG",
+      "candidateType": "FIRST_PARTY_CURRENT_IMAGE",
+      "visitorDecisionValue": "HIGH",
+      "qualityPotential": "HIGH",
+      "programFit": [
+        "stay",
+        "food",
+        "town"
+      ],
+      "evidenceUrls": [
+        "https://www.shn.ch/webcam",
+        "https://www.shn.ch/agb",
+        "https://www.shn.ch/impressum"
+      ],
+      "state": "CAMERA_LOCATION_ADMITTED_LINK_ONLY",
+      "why": "Distinct old-town street image visually inspected with current printed local date/time; CET offset inferred, clock precision unverified. Copyright restrictions respected through ordinary external provider-page link only; no incoming-link restriction found on reviewed terms.",
+      "next": "Maintain current-image and rights evidence; do not copy or embed imagery. Verify business hours and hotel check-in separately.",
+      "reviewedAt": "2026-10-28T07:23:27Z",
+      "resolvedCatalogIds": [
+        "ch-schaffhausen-vordergasse-current"
+      ]
     }
   ],
   "guardrails": {

@@ -13396,5 +13396,43 @@
     "affiliate": false,
     "reviewBasis": "FIRST_PARTY_OPERATOR_PAGE_REVIEW",
     "reviewSourceUrl": "https://www.stelzenhof.ch/essen-trinken/"
+  },
+  {
+    "id": "local-schaffhausen-hotel2b",
+    "placeId": "ch-schaffhausen-vordergasse",
+    "place": "Schaffhausen — Vordergasse",
+    "name": "HOTEL2B Schaffhausen",
+    "type": "hotel",
+    "url": "https://www.hotel2b.ch/en/",
+    "summary": "Explore accommodation in Schaffhausen old town. Confirm rooms, availability and booking terms directly; the operator directs check-in to US-MEX Restaurant at Vordergasse 43, distinct from the hotel address at Münsterplatz 30.",
+    "country": "Switzerland",
+    "tags": [
+      "visitor planning"
+    ],
+    "verifiedAt": "2026-10-28T07:23:27Z",
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_OPERATOR_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.hotel2b.ch/en/"
+  },
+  {
+    "id": "local-schaffhausen-wohnzeit",
+    "placeId": "ch-schaffhausen-vordergasse",
+    "place": "Schaffhausen — Vordergasse",
+    "name": "Wohnzeit Bistro & Laden",
+    "type": "bistro",
+    "url": "https://wohnzeit.sh/",
+    "summary": "Explore the bistro and shop at Vordergasse 6 in Schaffhausen. Confirm current menus, opening times and table arrangements directly; the street camera does not establish that the business is open.",
+    "country": "Switzerland",
+    "tags": [
+      "visitor planning"
+    ],
+    "verifiedAt": "2026-10-28T07:23:27Z",
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_OPERATOR_PAGE_REVIEW",
+    "reviewSourceUrl": "https://wohnzeit.sh/"
   }
 ]

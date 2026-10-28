@@ -2870,5 +2870,44 @@
     "sourceUrl": "https://www.stelzenhof.ch/",
     "story": "Look across fields and autumn trees from Stelzenhof on the Ottenberg above Weinfelden in a refreshed still. Check restaurant opening, menus and reservations directly before visiting.",
     "freshnessEvidence": "Exact1280x444 public current.jpg visually inspected: terrace edge, autumn trees, fields, wooded hill and distant countryside; main scene legible. Printed timestamp2026-10-28 CET07:45:00 explicitly includes CET, equivalent06:45:00Z. HTTP Last-Modified06:45:07Z independently corroborates upload, not capture. Retrieved06:52:26Z; camera clock precision unverified. No activity safety, restaurant opening, public access, weather severity or video playback inferred. Review completed 2026-10-28T06:56:48Z."
+  },
+  {
+    "provider": "Schaffhauser Nachrichten / Meier + Cie AG",
+    "country": "Switzerland",
+    "timeZone": "Europe/Zurich",
+    "categories": [
+      "Cities",
+      "Useful Earth"
+    ],
+    "truth": "LIVE_IMAGE",
+    "permission": "LINK_ONLY",
+    "health": "HEALTHY",
+    "playback": "EXTERNAL",
+    "officialUrl": "https://www.shn.ch/webcam",
+    "attribution": "Schaffhauser Nachrichten — Vordergasse webcam",
+    "checkedAt": "2026-10-28T07:23:27Z",
+    "lastSuccessfulCheck": "2026-10-28T07:23:27Z",
+    "quality": 77,
+    "freshness": 90,
+    "moment": 75,
+    "featuredHold": true,
+    "watchHold": true,
+    "searchSupplemental": true,
+    "externalWindowRequired": true,
+    "rightsSourceUrl": "https://www.shn.ch/agb",
+    "rightsBasis": "Publisher reserves copyright; reuse, redistribution and commercial exploitation of content require prior written consent. Reviewed AGB and imprint contain no incoming-link restriction. ERN uses an attributed ordinary external link to the publicly accessible webcam page and original description only; no image, thumbnail, iframe, logo or publisher prose copied or embedded. No media reuse licence, subscription access or paywall bypass inferred.",
+    "id": "ch-schaffhausen-vordergasse-current",
+    "placeId": "ch-schaffhausen-vordergasse",
+    "title": "Schaffhausen — Vordergasse",
+    "seoName": "Schaffhausen — Vordergasse",
+    "region": "Schaffhausen old town",
+    "aliases": [
+      "Schaffhausen Vordergasse",
+      "Schaffhausen old town webcam",
+      "Vordergasse Fronwagplatz"
+    ],
+    "sourceUrl": "https://www.shn.ch/webcam",
+    "story": "Look up Schaffhausen’s Vordergasse toward Fronwagplatz in a refreshed old-town street image. Check local opening times and visitor arrangements independently before going.",
+    "freshnessEvidence": "Exact public cam.php1280x720 image visually inspected: old-town buildings, shopfronts and street scene legible despite soft focus; no individual identities or personal activity assessed. Printed2026/10/28 08:10:41 has no timezone/offset. Europe/Zurich CETUTC+1 inferred after25Oct DST end, equivalent07:10:41Z. Retrieved28Oct07:22Z with HTTP200; response provides no capture Last-Modified corroboration. Earlier reviewed frame printed07:40:29, indicating image updates; not continuous video proof. Camera clock precision/configuration unverified. Public webcam page has a general login module but webcam image is accessible without authentication; no bypass. No business opening, crowd measurement, road safety or video playback inferred. Review completed 2026-10-28T07:23:27Z."
   }
 ]

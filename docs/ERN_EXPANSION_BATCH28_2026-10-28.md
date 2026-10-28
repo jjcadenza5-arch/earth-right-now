@@ -1,0 +1,9 @@
+## 2026-10-28 Bangkok — Schaffhausen Vordergasse expansion prepared
+
+Baseline main63d8cc90. One distinct old-town camera-backed place and two unpaid first-party hotel/bistro listings. Exact1280x720 public cam.php visually inspected: street, buildings and shopfronts legible despite soft focus; no individuals identified or personal activities assessed. Printed28Oct08:10:41 without offset; ZurichCETUTC+1 inferred after25OctDST end as07:10:41Z. Retrieved07:22Z/HTTP200, no Last-Modified capture corroboration; earlier frame07:40:29 differs, supports updates but not continuous video. Camera clock precision unverified. Public webcam image accessible without authentication despite generic login module; no bypass. Reviewed publisher AGB/imprint reserve copyright/reuse rights, with no incoming-link restriction found. Attributed ordinary external webcam-page link and original description only; no image/thumbnail/iframe/logo/prose copied, no commercial media licence inferred.
+
+Coverage854/1,000 distinct camera-backed places (146 remaining);863 source records/855 catalog places;629 directory rows. Counts reflect admitted places, not freshness of every historical source. HOTEL2B hotel address and separate US-MEX check-in address distinguished; Wohnzeit bistro/shop verified at Vordergasse6. No booking, prices, opening, paid placement, affiliate activation or income guaranteed. All862 prior sources, five owner28Oct exact playback dates/ledger,232 offers,website design and publicOFF gates preserved. Next24h LIVE HERE29Oct07:06Bangkok; source/Watch seven-day horizon4Nov07:06 subject to failures.
+
+Review completed 2026-10-28T07:23:27Z.
+
+Provider https://www.shn.ch/webcam ; exact inspected public image https://www.shn.ch/cam.php ; terms https://www.shn.ch/agb ; imprint https://www.shn.ch/impressum ; businesses https://www.hotel2b.ch/en/ and https://wohnzeit.sh/ .
