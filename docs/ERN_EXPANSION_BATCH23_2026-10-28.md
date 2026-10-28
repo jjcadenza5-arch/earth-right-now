@@ -1,3 +1,11 @@
+## 2026-10-28 Bangkok — Lake Burbury expansion deployed and accepted
+
+Production c4ff33911ac2d8af1d74f32d548bd0db9ff7d122. Pages40617812101 SUCCESS/all122 required release smoke tests; Operations40617812103 SUCCESS/packet valid zero issues; syntax40617812025 SUCCESS. Exact served manifest and twelve SHA256 checks passed including home/app/styles, core/both lazy sources, ledger, offers, directory, aliases, destination and review current.json. Correct NEAR-NOW IMAGE label, exact AAT source action, hotel and railway resources verified. All five owner playback dates and latest matching ledger proofs preserved.
+
+Coverage848/1,000 distinct camera-backed places (152 remaining);857 source records/849 catalog places,616 valid directory rows. One Lake Burbury1920x1080 current still; filename and camera EXIF28Oct12:49:58, no printed time/offset, HobartAEDTUTC+11 inferred01:49:58Z, clock precision unverified. Independent HTTP Last-Modified01:50:01Z is upload corroboration, not capture. Main lake/islands/terrain legible despite image marks and distant obscuration. Lake Mackintosh image strongly obscures distant terrain; research-only quality hold, no count increase or cause/outage inferred. Ordinary attributed external provider-page link only, no media copied/reuse licence inferred.
+
+Two unpaid Queenstown Tasmania business/activity operators (Gold Rush Inn, West Coast Wilderness Railway) and two official guides. Regional base, exact departure station/date and formal Lyell Highway campground versus southern Darwin Dam distinctions preserved. No booking, prices, train service, fish, numerical water level, activity safety, affiliate activation or income claim. All856 prior sources, five owner renewal/ledger,232 offers,design/publicOFF gates unchanged. Next24h LIVE HERE29Oct07:06Bangkok; seven-day source/Watch4Nov07:06 subject to failures. Evidence docs/ERN_EXPANSION_BATCH23_2026-10-28.md. Continue focused usage-aware expansion from this accepted checkpoint.
+
 # Lake Burbury expansion evidence
 
 ## 2026-10-28 Bangkok — Lake Burbury expansion prepared
