@@ -2822,6 +2822,32 @@
       "why": "Official page identifies a shared controllable webcam; latest public image request timed out after20seconds with no image bytes, so no capture timestamp or current visual quality verified. No camera health/outage inference; not counted. Shared camera controls not operated.",
       "next": "Revisit on materially new accessible image evidence; no control changes or retry loop.",
       "reviewedAt": "2026-10-28T06:37:55Z"
+    },
+    {
+      "id": "weinfelden-stelzenhof-batch27",
+      "priority": "P2",
+      "placeGroup": "Weinfelden Stelzenhof and Ottenberg",
+      "country": "Switzerland",
+      "provider": "Stelzenhof AG",
+      "candidateType": "FIRST_PARTY_CURRENT_IMAGE",
+      "visitorDecisionValue": "HIGH",
+      "qualityPotential": "HIGH",
+      "programFit": [
+        "food",
+        "nature"
+      ],
+      "evidenceUrls": [
+        "https://www.stelzenhof.ch/",
+        "https://www.stelzenhof.ch/impressum/",
+        "https://www.stelzenhof.ch/essen-trinken/"
+      ],
+      "state": "CAMERA_LOCATION_ADMITTED_LINK_ONLY",
+      "why": "Distinct countryside scene visually inspected with current explicit CET timestamp and independent upload header. External attributed provider-page link only.",
+      "next": "Maintain current-image and rights evidence; restaurant hours, menu and table availability require direct confirmation.",
+      "reviewedAt": "2026-10-28T06:56:48Z",
+      "resolvedCatalogIds": [
+        "ch-weinfelden-stelzenhof-current"
+      ]
     }
   ],
   "guardrails": {

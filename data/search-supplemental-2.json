@@ -2830,5 +2830,45 @@
     "sourceUrl": "https://ksgl.ch/webcambild",
     "story": "Look south across Glarus and its Alpine valley from a panoramic webcam. Check town opening times and mountain access separately; the view does not establish trail conditions or public access to the camera site.",
     "freshnessEvidence": "Exact1920x1080 provider image visually inspected: town rooftops, church, valley sides, distant peaks and cloud, with panoramic foreground buildings and helipad. No identifiable individuals or medical activity assessed. Provider HTML current-image filename encodes28Oct2026 07:27:01; rendered caption07:28 is separate page metadata. No camera EXIF date, visible timestamp or UTC offset. Europe/Zurich CETUTC+1 inferred after25Oct DST end, equivalent06:27:01Z. HTTP Last-Modified06:28:46Z separately corroborates upload, not capture time. Review completed 2026-10-28T06:37:55Z. Clock precision/configuration unverified. No clinical, weather-severity, trail-safety or video-playback inference."
+  },
+  {
+    "provider": "Stelzenhof AG",
+    "country": "Switzerland",
+    "timeZone": "Europe/Zurich",
+    "categories": [
+      "Nature",
+      "Parks & Scenic",
+      "Useful Earth"
+    ],
+    "truth": "LIVE_IMAGE",
+    "permission": "LINK_ONLY",
+    "health": "HEALTHY",
+    "playback": "EXTERNAL",
+    "officialUrl": "https://www.stelzenhof.ch/",
+    "attribution": "Stelzenhof AG — Ottenberg countryside webcam",
+    "checkedAt": "2026-10-28T06:56:48Z",
+    "lastSuccessfulCheck": "2026-10-28T06:56:48Z",
+    "quality": 80,
+    "freshness": 90,
+    "moment": 75,
+    "featuredHold": true,
+    "watchHold": true,
+    "searchSupplemental": true,
+    "externalWindowRequired": true,
+    "rightsSourceUrl": "https://www.stelzenhof.ch/impressum/",
+    "rightsBasis": "Operator reserves copyright and requires written consent for reuse outside copyright limits. Attributed ordinary external provider-page link and original description only; no image, thumbnail, iframe, logo or provider prose copied or embedded, no media reuse licence inferred. No incoming-link restriction found on reviewed imprint.",
+    "id": "ch-weinfelden-stelzenhof-current",
+    "placeId": "ch-weinfelden-stelzenhof",
+    "title": "Weinfelden — Stelzenhof & Ottenberg",
+    "seoName": "Weinfelden — Stelzenhof & Ottenberg",
+    "region": "Ottenberg / Weinfelden, Thurgau",
+    "aliases": [
+      "Weinfelden Stelzenhof",
+      "Ottenberg webcam",
+      "Stelzenhof countryside"
+    ],
+    "sourceUrl": "https://www.stelzenhof.ch/",
+    "story": "Look across fields and autumn trees from Stelzenhof on the Ottenberg above Weinfelden in a refreshed still. Check restaurant opening, menus and reservations directly before visiting.",
+    "freshnessEvidence": "Exact1280x444 public current.jpg visually inspected: terrace edge, autumn trees, fields, wooded hill and distant countryside; main scene legible. Printed timestamp2026-10-28 CET07:45:00 explicitly includes CET, equivalent06:45:00Z. HTTP Last-Modified06:45:07Z independently corroborates upload, not capture. Retrieved06:52:26Z; camera clock precision unverified. No activity safety, restaurant opening, public access, weather severity or video playback inferred. Review completed 2026-10-28T06:56:48Z."
   }
 ]

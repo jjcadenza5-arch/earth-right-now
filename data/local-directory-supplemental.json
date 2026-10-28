@@ -13377,5 +13377,24 @@
     "affiliate": false,
     "reviewBasis": "FIRST_PARTY_OPERATOR_PAGE_REVIEW",
     "reviewSourceUrl": "https://kunsthausglarus.ch/de/information"
+  },
+  {
+    "id": "local-weinfelden-stelzenhof-dining",
+    "placeId": "ch-weinfelden-stelzenhof",
+    "place": "Weinfelden — Stelzenhof & Ottenberg",
+    "name": "Wirtschaft Stelzenhof",
+    "type": "restaurant",
+    "url": "https://www.stelzenhof.ch/essen-trinken/",
+    "summary": "Explore dining at Stelzenhof on the Ottenberg above Weinfelden. Confirm current menus, dietary options, kitchen times and table availability directly; the countryside image does not establish that the restaurant is open.",
+    "country": "Switzerland",
+    "tags": [
+      "visitor planning"
+    ],
+    "verifiedAt": "2026-10-28T06:56:48Z",
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_OPERATOR_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.stelzenhof.ch/essen-trinken/"
   }
 ]
