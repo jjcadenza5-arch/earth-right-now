@@ -1,3 +1,11 @@
+## 2026-10-28 Bangkok — Arthurs Lake and Bronte Lagoon expansion deployed and accepted
+
+Production b5cc3a847eba0baaf72a04412ee437f0bac8f965. Pages40609748996 SUCCESS/all122 required release smoke tests; Operations40609749060 SUCCESS/packet valid zero issues; syntax40609749184 SUCCESS. Exact served manifest and twelve SHA256 checks passed including home/app/styles, core/both lazy sources, ledger, offers, directory, aliases and two destination pages. Both destination labels/provider actions/resources verified; five exact owner playback dates and matching latest observations preserved.
+
+Coverage847/1,000 distinct camera-backed places (153 remaining);856 source records/848 catalog places,612 valid directory rows. Arthurs Lake clear current image and Bronte Lagoon legible subdued current image; both provider filenames28Oct11:29:58, offset absent/HobartAEDTUTC+11 inferred, no EXIF/visible timestamp and clock precision unverified. Independent HTTP upload headers corroborate freshness, not capture time. One unpaid Tea Tree Lodge listing and three official visitor guides; no affiliate activation or income claim. Hydro campground notice combines closed wording with historical planned reopening; public summary requires direct current access confirmation. No conflation with Lake St Clair Pumphouse Point. Little Pine current image strongly obscured/washed out; research-only quality hold, not counted, no cause/outage diagnosed. Highland Cabins operator page inaccessible; not promoted from third-party snippets.
+
+All854 prior source records, five owner renewal/ledger and232 offers preserved; website design/publicOFF gates unchanged. External attributed provider-page links only, no media reuse licence inferred. No fish, numeric lake level, activity safety, bookings or campsite availability claimed. Next24h LIVE HERE horizon29Oct07:06Bangkok; source/Watch seven-day horizon4Nov07:06 subject to failures. Evidence docs/ERN_EXPANSION_BATCH22_2026-10-28.md. Continue focused usage-aware expansion from this accepted checkpoint.
+
 # Arthurs Lake and Bronte Lagoon evidence
 
 ## 2026-10-28 Bangkok — Arthurs Lake and Bronte Lagoon expansion prepared
