@@ -2750,5 +2750,45 @@
     "sourceUrl": "https://www.anglersalliance.org.au/web-cams/lake-augusta-webcam",
     "story": "Look across Lake Augusta from near the dam in a refreshed still. Check current road and track access, boating and fishing information separately before a visit.",
     "freshnessEvidence": "Exact latest-listed provider1280x800 image visually inspected: lake, distant low banks and hills, cloud and foreground structure edge. Subdued contrast but lake and shore legible. Filename shows28Oct13:19:59 without UTC offset, camera EXIF date or visible timestamp; HobartAEDTUTC+11 inferred02:19:59Z. HTTP Last-Modified02:20:01Z independently corroborates upload, not capture time. Review completed 2026-10-28T02:24:04Z. Camera clock precision/configuration unverified. No numeric lake level, fish sightings, weather severity, safe activity, public access or video playback inferred."
+  },
+  {
+    "provider": "Anglers Alliance Tasmania",
+    "country": "Australia",
+    "timeZone": "Australia/Hobart",
+    "categories": [
+      "Nature",
+      "Parks & Scenic",
+      "Useful Earth"
+    ],
+    "truth": "LIVE_IMAGE",
+    "permission": "LINK_ONLY",
+    "health": "HEALTHY",
+    "playback": "EXTERNAL",
+    "officialUrl": "https://www.ifs.tas.gov.au/fisheries/waters-a-z/four-springs-lake/",
+    "attribution": "Anglers Alliance Tasmania — Four Springs Lake webcam",
+    "checkedAt": "2026-10-28T06:23:59Z",
+    "lastSuccessfulCheck": "2026-10-28T06:23:59Z",
+    "quality": 84,
+    "freshness": 90,
+    "moment": 75,
+    "featuredHold": true,
+    "watchHold": true,
+    "searchSupplemental": true,
+    "externalWindowRequired": true,
+    "rightsSourceUrl": "https://www.anglersalliance.org.au/web-cams/four-springs-webcam",
+    "rightsBasis": "Volunteer-operated network is publicly accessible on the provider page. ERN uses an attributed ordinary external hyperlink and original description only; no frame, image, thumbnail or provider text reused. Free public viewing does not establish an image-reuse or embedding licence.",
+    "id": "au-four-springs-lake-current",
+    "placeId": "au-four-springs-lake",
+    "title": "Four Springs Lake — Tasmania",
+    "seoName": "Four Springs Lake — Tasmania",
+    "region": "Hagley / Meander Valley, Tasmania",
+    "aliases": [
+      "Four Springs Lake Tasmania",
+      "Four Springs webcam",
+      "Four Springs Reserve"
+    ],
+    "sourceUrl": "https://www.anglersalliance.org.au/web-cams/four-springs-webcam",
+    "story": "Look over Four Springs Lake toward its wooded shore in a refreshed still. The reserve is for day visits; check official fishing and access rules independently before visiting.",
+    "freshnessEvidence": "Exact latest-listed provider1920x1080 still visually inspected: lake, reeds, foreground vegetation, wooded shore and blue sky with clouds. Small image mark at upper right does not obscure the main scene. Filename shows28Oct17:19:58; no camera EXIF date or visible timestamp/UTC offset. HobartAEDTUTC+11 inferred06:19:58Z. HTTP Last-Modified06:20:01Z independently corroborates upload, not capture time. Review completed 2026-10-28T06:23:59Z. Camera clock precision/configuration unverified. No numeric lake level, fish, activity safety, current access or video playback inferred."
   }
 ]

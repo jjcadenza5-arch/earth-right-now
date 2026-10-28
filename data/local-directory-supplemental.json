@@ -13263,5 +13263,81 @@
     "affiliate": false,
     "reviewBasis": "FIRST_PARTY_OPERATOR_OR_OFFICIAL_GOVERNMENT_PAGE_REVIEW",
     "reviewSourceUrl": "https://www.ifs.tas.gov.au/fisheries/waters-a-z/lake-augusta/"
+  },
+  {
+    "id": "local-four-springs-fitzpatricks",
+    "placeId": "au-four-springs-lake",
+    "place": "Four Springs Lake — Tasmania",
+    "name": "Fitzpatrick’s Inn — Westbury",
+    "type": "inn",
+    "url": "https://www.fitzpatricksinn.com.au/stay",
+    "summary": "Explore accommodation in Westbury as a regional base for Four Springs Lake and the Meander Valley. Confirm current room options, amenities, availability and booking terms directly.",
+    "country": "Australia",
+    "tags": [
+      "visitor planning"
+    ],
+    "verifiedAt": "2026-10-28T06:23:59Z",
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_OPERATOR_OR_OFFICIAL_GOVERNMENT_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.fitzpatricksinn.com.au/stay"
+  },
+  {
+    "id": "local-four-springs-gingerbread",
+    "placeId": "au-four-springs-lake",
+    "place": "Four Springs Lake — Tasmania",
+    "name": "Westbury Gingerbread Cottages",
+    "type": "cottages",
+    "url": "https://www.westburycottages.com.au/",
+    "summary": "Explore self-contained cottage accommodation in Westbury, a regional base rather than lodging at Four Springs Lake. Confirm current availability, facilities and booking terms directly.",
+    "country": "Australia",
+    "tags": [
+      "visitor planning"
+    ],
+    "verifiedAt": "2026-10-28T06:23:59Z",
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_OPERATOR_OR_OFFICIAL_GOVERNMENT_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.westburycottages.com.au/"
+  },
+  {
+    "id": "local-four-springs-steam-world",
+    "placeId": "au-four-springs-lake",
+    "place": "Four Springs Lake — Tasmania",
+    "name": "Pearn’s Steam World — Westbury",
+    "type": "museum",
+    "url": "https://www.steamworld.com.au/visit",
+    "summary": "Explore the Westbury agricultural and steam-machinery museum. Confirm opening, admission and specific train rides or guided experiences directly; volunteer availability affects experiences and a steam-powered ride is not guaranteed.",
+    "country": "Australia",
+    "tags": [
+      "visitor planning"
+    ],
+    "verifiedAt": "2026-10-28T06:23:59Z",
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_OPERATOR_OR_OFFICIAL_GOVERNMENT_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.steamworld.com.au/visit"
+  },
+  {
+    "id": "local-four-springs-ifs",
+    "placeId": "au-four-springs-lake",
+    "place": "Four Springs Lake — Tasmania",
+    "name": "Four Springs Lake — Inland Fisheries Service",
+    "type": "visitor information",
+    "url": "https://www.ifs.tas.gov.au/fisheries/waters-a-z/four-springs-lake/",
+    "summary": "Review official access, fishing and boating information. Four Springs Reserve is for day use only, with no camping or fires; confirm current access and licence requirements before visiting.",
+    "country": "Australia",
+    "tags": [
+      "visitor planning"
+    ],
+    "verifiedAt": "2026-10-28T06:23:59Z",
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_OPERATOR_OR_OFFICIAL_GOVERNMENT_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.ifs.tas.gov.au/fisheries/waters-a-z/four-springs-lake/"
   }
 ]

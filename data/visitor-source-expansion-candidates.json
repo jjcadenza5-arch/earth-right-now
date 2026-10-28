@@ -2749,6 +2749,32 @@
         "au-lake-sorell-current",
         "au-lake-augusta-current"
       ]
+    },
+    {
+      "id": "tasmania-four-springs-batch25",
+      "priority": "P2",
+      "placeGroup": "Four Springs Lake Tasmania",
+      "country": "Australia",
+      "provider": "Anglers Alliance Tasmania",
+      "candidateType": "VOLUNTEER_CURRENT_IMAGE_NETWORK",
+      "visitorDecisionValue": "HIGH",
+      "qualityPotential": "HIGH",
+      "programFit": [
+        "stay",
+        "activities",
+        "nature"
+      ],
+      "evidenceUrls": [
+        "https://www.anglersalliance.org.au/web-cams/four-springs-webcam",
+        "https://www.ifs.tas.gov.au/fisheries/waters-a-z/four-springs-lake/"
+      ],
+      "state": "CAMERA_LOCATION_ADMITTED_LINK_ONLY",
+      "why": "Distinct lake visitor location; current latest-listed provider frame visually inspected with filename timestamp and independent upload header. Historical cached page date not used as current evidence.",
+      "next": "Maintain image and rights evidence; check day-use and fishing restrictions independently.",
+      "reviewedAt": "2026-10-28T06:23:59Z",
+      "resolvedCatalogIds": [
+        "au-four-springs-lake-current"
+      ]
     }
   ],
   "guardrails": {
