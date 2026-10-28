@@ -2909,5 +2909,45 @@
     "sourceUrl": "https://www.shn.ch/webcam",
     "story": "Look up Schaffhausen’s Vordergasse toward Fronwagplatz in a refreshed old-town street image. Check local opening times and visitor arrangements independently before going.",
     "freshnessEvidence": "Exact public cam.php1280x720 image visually inspected: old-town buildings, shopfronts and street scene legible despite soft focus; no individual identities or personal activity assessed. Printed2026/10/28 08:10:41 has no timezone/offset. Europe/Zurich CETUTC+1 inferred after25Oct DST end, equivalent07:10:41Z. Retrieved28Oct07:22Z with HTTP200; response provides no capture Last-Modified corroboration. Earlier reviewed frame printed07:40:29, indicating image updates; not continuous video proof. Camera clock precision/configuration unverified. Public webcam page has a general login module but webcam image is accessible without authentication; no bypass. No business opening, crowd measurement, road safety or video playback inferred. Review completed 2026-10-28T07:23:27Z."
+  },
+  {
+    "provider": "Hotel Seepark Thun",
+    "country": "Switzerland",
+    "timeZone": "Europe/Zurich",
+    "categories": [
+      "Nature",
+      "Parks & Scenic",
+      "Useful Earth"
+    ],
+    "truth": "LIVE_IMAGE",
+    "permission": "LINK_ONLY",
+    "health": "HEALTHY",
+    "playback": "EXTERNAL",
+    "officialUrl": "https://www.seepark.ch/en/corporate/webcam",
+    "attribution": "Hotel Seepark Thun — Lake Thun webcam",
+    "checkedAt": "2026-10-28T08:30:25Z",
+    "lastSuccessfulCheck": "2026-10-28T08:30:25Z",
+    "quality": 76,
+    "freshness": 90,
+    "moment": 75,
+    "featuredHold": true,
+    "watchHold": true,
+    "searchSupplemental": true,
+    "externalWindowRequired": true,
+    "rightsSourceUrl": "https://www.seepark.ch/en/corporate/publication-details-legal-information",
+    "rightsBasis": "Hotel legal notice reserves copyright for the website content; no incoming-link restriction found in reviewed notice. Attributed ordinary external provider-page link and original description only. No image, thumbnail, iframe, logo or provider prose copied or embedded; no image reuse licence inferred.",
+    "id": "ch-thun-seepark-lake-current",
+    "placeId": "ch-thun-seepark-lake",
+    "title": "Thun — Seepark & Lake Thun",
+    "seoName": "Thun — Seepark & Lake Thun",
+    "region": "Thun / Bernese Oberland",
+    "aliases": [
+      "Thun Seepark webcam",
+      "Lake Thun Seepark",
+      "Thunersee Thun"
+    ],
+    "sourceUrl": "https://www.seepark.ch/en/corporate/webcam",
+    "story": "Look across Lake Thun from the Seepark shoreline in a refreshed still. Foreground foliage and low cloud can limit the panorama; check hotel, dining and town attraction arrangements separately before visiting.",
+    "freshnessEvidence": "Exact1024x768 current.jpg visually inspected: lake, opposite shore and low hills visible, foreground foliage/tree branches occupy part of frame, distant higher mountains obscured by low cloud. Main lake/shore scene legible; no Eiger, Mönch or Jungfrau visibility claim. Printed28Oct2026 09:29:00 has no UTC offset; Europe/Zurich CETUTC+1 inferred08:29:00Z after25Oct DST end. Retrieved08:29:27Z HTTP200; Last-Modified08:29:03Z independently corroborates upload, not capture. Camera clock precision/configuration unverified. Search fetch returned403 for image/legal page; ordinary bounded public GET returned200 without authentication or challenge bypass. No boating safety, mountain access, numerical water level, business opening or video playback inferred. Review completed 2026-10-28T08:30:25Z."
   }
 ]

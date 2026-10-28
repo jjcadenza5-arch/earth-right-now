@@ -2875,6 +2875,33 @@
       "resolvedCatalogIds": [
         "ch-schaffhausen-vordergasse-current"
       ]
+    },
+    {
+      "id": "thun-seepark-lake-batch29",
+      "priority": "P2",
+      "placeGroup": "Thun Seepark and Lake Thun",
+      "country": "Switzerland",
+      "provider": "Hotel Seepark Thun",
+      "candidateType": "FIRST_PARTY_CURRENT_IMAGE",
+      "visitorDecisionValue": "HIGH",
+      "qualityPotential": "HIGH",
+      "programFit": [
+        "stay",
+        "food",
+        "nature",
+        "activities"
+      ],
+      "evidenceUrls": [
+        "https://www.seepark.ch/en/corporate/webcam",
+        "https://www.seepark.ch/en/corporate/publication-details-legal-information"
+      ],
+      "state": "CAMERA_LOCATION_ADMITTED_LINK_ONLY",
+      "why": "Distinct Lake Thun shore scene visually inspected with current printed date/time and independent upload header. Foliage and cloud limit panorama; lake and opposite shore legible. External attributed provider-page link only.",
+      "next": "Maintain current-image and rights evidence; do not claim distant peaks visible or every room has this view. Verify visitor and accessibility arrangements separately.",
+      "reviewedAt": "2026-10-28T08:30:25Z",
+      "resolvedCatalogIds": [
+        "ch-thun-seepark-lake-current"
+      ]
     }
   ],
   "guardrails": {

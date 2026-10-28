@@ -13434,5 +13434,62 @@
     "affiliate": false,
     "reviewBasis": "FIRST_PARTY_OPERATOR_PAGE_REVIEW",
     "reviewSourceUrl": "https://wohnzeit.sh/"
+  },
+  {
+    "id": "local-thun-seepark-hotel",
+    "placeId": "ch-thun-seepark-lake",
+    "place": "Thun — Seepark & Lake Thun",
+    "name": "Hotel Seepark Thun",
+    "type": "hotel",
+    "url": "https://www.seepark.ch/en/discover/rooms-suites",
+    "summary": "Explore rooms and suites at Seepark on Lake Thun. Confirm the exact room outlook, facilities, availability and booking terms directly; the camera panorama does not establish the view from every room.",
+    "country": "Switzerland",
+    "tags": [
+      "visitor planning"
+    ],
+    "verifiedAt": "2026-10-28T08:30:25Z",
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_OPERATOR_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.seepark.ch/en/discover/rooms-suites"
+  },
+  {
+    "id": "local-thun-seepark-dining",
+    "placeId": "ch-thun-seepark-lake",
+    "place": "Thun — Seepark & Lake Thun",
+    "name": "Hotel Seepark — Restaurants & Bar",
+    "type": "restaurant",
+    "url": "https://www.seepark.ch/en/themes/restaurants",
+    "summary": "Explore dining and bar options at Hotel Seepark. Confirm the selected venue, current menus, dietary options, service times and table availability directly; the lake image does not confirm opening.",
+    "country": "Switzerland",
+    "tags": [
+      "visitor planning"
+    ],
+    "verifiedAt": "2026-10-28T08:30:25Z",
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_OPERATOR_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.seepark.ch/en/themes/restaurants"
+  },
+  {
+    "id": "local-thun-castle-museum",
+    "placeId": "ch-thun-seepark-lake",
+    "place": "Thun — Seepark & Lake Thun",
+    "name": "Thun Castle Museum",
+    "type": "museum",
+    "url": "https://schlossthun.ch/en/visitor-information/faq/",
+    "summary": "Plan a separate town visit to Thun Castle Museum. Check seasonal opening and admission directly. The museum has stairs and no internal lift; confirm access needs with the museum rather than assuming that the lift to Schlossberg makes every museum area step-free.",
+    "country": "Switzerland",
+    "tags": [
+      "visitor planning"
+    ],
+    "verifiedAt": "2026-10-28T08:30:25Z",
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_OPERATOR_PAGE_REVIEW",
+    "reviewSourceUrl": "https://schlossthun.ch/en/visitor-information/faq/"
   }
 ]
