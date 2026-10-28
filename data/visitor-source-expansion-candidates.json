@@ -2775,6 +2775,53 @@
       "resolvedCatalogIds": [
         "au-four-springs-lake-current"
       ]
+    },
+    {
+      "id": "glarus-ksgl-panorama-batch26",
+      "priority": "P2",
+      "placeGroup": "Glarus town and Alpine valley",
+      "country": "Switzerland",
+      "provider": "Kantonsspital Glarus",
+      "candidateType": "FIRST_PARTY_CURRENT_IMAGE",
+      "visitorDecisionValue": "HIGH",
+      "qualityPotential": "HIGH",
+      "programFit": [
+        "stay",
+        "activities",
+        "town"
+      ],
+      "evidenceUrls": [
+        "https://ksgl.ch/webcambild",
+        "https://ksgl.ch/impressum"
+      ],
+      "state": "CAMERA_LOCATION_ADMITTED_LINK_ONLY",
+      "why": "Distinct town panorama visually inspected with current provider image filename and independent upload header. Reproduction requires written consent; external attributed provider-page link only.",
+      "next": "Maintain current image and rights evidence; check visitor hours and mountain access separately.",
+      "reviewedAt": "2026-10-28T06:37:55Z",
+      "resolvedCatalogIds": [
+        "ch-glarus-town-valley-current"
+      ]
+    },
+    {
+      "id": "timaru-current-image-timeout-oct28",
+      "priority": "P2",
+      "placeGroup": "Timaru town webcam",
+      "country": "New Zealand",
+      "provider": "Timaru District Council",
+      "candidateType": "OFFICIAL_CURRENT_IMAGE",
+      "visitorDecisionValue": "HIGH",
+      "qualityPotential": "UNKNOWN",
+      "programFit": [
+        "stay",
+        "town"
+      ],
+      "evidenceUrls": [
+        "https://www.timaru.govt.nz/community/our-district/webcam"
+      ],
+      "state": "HOLD_IMAGE_CURRENTNESS_UNVERIFIED",
+      "why": "Official page identifies a shared controllable webcam; latest public image request timed out after20seconds with no image bytes, so no capture timestamp or current visual quality verified. No camera health/outage inference; not counted. Shared camera controls not operated.",
+      "next": "Revisit on materially new accessible image evidence; no control changes or retry loop.",
+      "reviewedAt": "2026-10-28T06:37:55Z"
     }
   ],
   "guardrails": {

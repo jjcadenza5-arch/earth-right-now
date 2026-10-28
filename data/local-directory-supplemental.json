@@ -13339,5 +13339,43 @@
     "affiliate": false,
     "reviewBasis": "FIRST_PARTY_OPERATOR_OR_OFFICIAL_GOVERNMENT_PAGE_REVIEW",
     "reviewSourceUrl": "https://www.ifs.tas.gov.au/fisheries/waters-a-z/four-springs-lake/"
+  },
+  {
+    "id": "local-glarus-post-glarnerhof",
+    "placeId": "ch-glarus-town-valley",
+    "place": "Glarus — Town & Alpine Valley",
+    "name": "Hotel Post Glarnerhof",
+    "type": "hotel",
+    "url": "https://www.hotelpost-glarnerhof.ch/",
+    "summary": "Explore accommodation in Glarus near the railway station. Confirm current room availability, amenities and booking terms directly with the hotel.",
+    "country": "Switzerland",
+    "tags": [
+      "visitor planning"
+    ],
+    "verifiedAt": "2026-10-28T06:37:55Z",
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_OPERATOR_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.hotelpost-glarnerhof.ch/"
+  },
+  {
+    "id": "local-glarus-kunsthaus",
+    "placeId": "ch-glarus-town-valley",
+    "place": "Glarus — Town & Alpine Valley",
+    "name": "Kunsthaus Glarus",
+    "type": "art museum",
+    "url": "https://kunsthausglarus.ch/de/information",
+    "summary": "Explore the Kunsthaus in Glarus and check current exhibitions, opening times, admission and accessibility directly. The panoramic town image does not confirm museum opening or ticket availability.",
+    "country": "Switzerland",
+    "tags": [
+      "visitor planning"
+    ],
+    "verifiedAt": "2026-10-28T06:37:55Z",
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_OPERATOR_PAGE_REVIEW",
+    "reviewSourceUrl": "https://kunsthausglarus.ch/de/information"
   }
 ]

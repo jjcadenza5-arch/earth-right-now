@@ -2790,5 +2790,45 @@
     "sourceUrl": "https://www.anglersalliance.org.au/web-cams/four-springs-webcam",
     "story": "Look over Four Springs Lake toward its wooded shore in a refreshed still. The reserve is for day visits; check official fishing and access rules independently before visiting.",
     "freshnessEvidence": "Exact latest-listed provider1920x1080 still visually inspected: lake, reeds, foreground vegetation, wooded shore and blue sky with clouds. Small image mark at upper right does not obscure the main scene. Filename shows28Oct17:19:58; no camera EXIF date or visible timestamp/UTC offset. HobartAEDTUTC+11 inferred06:19:58Z. HTTP Last-Modified06:20:01Z independently corroborates upload, not capture time. Review completed 2026-10-28T06:23:59Z. Camera clock precision/configuration unverified. No numeric lake level, fish, activity safety, current access or video playback inferred."
+  },
+  {
+    "provider": "Kantonsspital Glarus",
+    "country": "Switzerland",
+    "timeZone": "Europe/Zurich",
+    "categories": [
+      "Nature",
+      "Parks & Scenic",
+      "Useful Earth"
+    ],
+    "truth": "LIVE_IMAGE",
+    "permission": "LINK_ONLY",
+    "health": "HEALTHY",
+    "playback": "EXTERNAL",
+    "officialUrl": "https://ksgl.ch/webcambild",
+    "attribution": "Kantonsspital Glarus — south-facing panoramic webcam",
+    "checkedAt": "2026-10-28T06:37:55Z",
+    "lastSuccessfulCheck": "2026-10-28T06:37:55Z",
+    "quality": 80,
+    "freshness": 90,
+    "moment": 75,
+    "featuredHold": true,
+    "watchHold": true,
+    "searchSupplemental": true,
+    "externalWindowRequired": true,
+    "rightsSourceUrl": "https://ksgl.ch/impressum",
+    "rightsBasis": "KSGL reserves copyright and requires prior written consent for reproduction of website elements. ERN uses only an attributed ordinary external hyperlink to the provider webcam page and an original description. No image, thumbnail, iframe, logo or provider prose copied or embedded; no media reuse licence or incoming-link prohibition inferred.",
+    "id": "ch-glarus-town-valley-current",
+    "placeId": "ch-glarus-town-valley",
+    "title": "Glarus — Town & Alpine Valley",
+    "seoName": "Glarus — Town & Alpine Valley",
+    "region": "Glarus / Glarnerland",
+    "aliases": [
+      "Glarus Switzerland",
+      "Glarus Glarnerland",
+      "Glarus valley webcam"
+    ],
+    "sourceUrl": "https://ksgl.ch/webcambild",
+    "story": "Look south across Glarus and its Alpine valley from a panoramic webcam. Check town opening times and mountain access separately; the view does not establish trail conditions or public access to the camera site.",
+    "freshnessEvidence": "Exact1920x1080 provider image visually inspected: town rooftops, church, valley sides, distant peaks and cloud, with panoramic foreground buildings and helipad. No identifiable individuals or medical activity assessed. Provider HTML current-image filename encodes28Oct2026 07:27:01; rendered caption07:28 is separate page metadata. No camera EXIF date, visible timestamp or UTC offset. Europe/Zurich CETUTC+1 inferred after25Oct DST end, equivalent06:27:01Z. HTTP Last-Modified06:28:46Z separately corroborates upload, not capture time. Review completed 2026-10-28T06:37:55Z. Clock precision/configuration unverified. No clinical, weather-severity, trail-safety or video-playback inference."
   }
 ]
