@@ -1,3 +1,11 @@
+## 2026-10-28 Bangkok — Great Lake and Penstock expansion deployed and accepted
+
+Production ebf5133908cade752ba52306a453b4ba3a49de1e. Pages40608106612 SUCCESS/all122 required release smoke tests; Operations40608106620 SUCCESS/packet valid zero issues; syntax40608106619 SUCCESS. Exact served manifest and twelve SHA256 checks passed including home/app/styles, core/both lazy sources, provider ledger, offers, directory, aliases and two destination pages. Both pages have NEAR-NOW IMAGE, exact AAT provider links and reviewed resources; all five owner renewal timestamps and matching latest ledger proofs preserved.
+
+Coverage845/1,000 distinct camera-backed places (155 remaining);854 source records/846 catalog places,608 valid directory rows. Two distinct locations yingina/Great Lake and Penstock Lagoon; two unpaid lodging operators and two official IFS visitor guides. Great Lake dam-side image somewhat soft but scene legible; filename timestamp/noEXIF/no printed time; Penstock filename+EXIF/no printed time. Both offset absent; HobartAEDTUTC+11 inferred, camera clock precision unverified; HTTP Last-Modified independent upload corroboration only. Direct provider iframe supplied current28Oct evidence; old25Aug web-search snapshots were not used as current proof. External attributed provider-page links only, no media copied or reuse licence inferred. No numeric water level, fish, safe access, bookings or income claimed. Penstock lodging is explicitly a Miena regional base on Great Lake, not lagoon-side accommodation.
+
+All852 prior source records and five owner video renewal/ledger unchanged; website design/publicOFF gates preserved. Scoped alias formatting issue corrected before publication; all source/alias/directory checks and full release suite pass. Next24h LIVE HERE horizon29Oct07:06Bangkok; seven-day source/Watch4Nov07:06 subject to failures. Evidence docs/ERN_EXPANSION_BATCH21_2026-10-28.md. Continue focused usage-aware expansion from this accepted checkpoint.
+
 # Great Lake and Penstock evidence
 
 ## 2026-10-28 Bangkok — Great Lake and Penstock expansion prepared
