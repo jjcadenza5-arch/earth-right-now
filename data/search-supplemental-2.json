@@ -3029,5 +3029,45 @@
     "sourceUrl": "https://www.felsenegg.com/restaurant",
     "story": "Look across wooded slopes and the settlement below Felsenegg toward Lake Zürich in a refreshed panoramic still. Check restaurant opening, cable-car operation and current rail connections separately before visiting.",
     "freshnessEvidence": "Exact provider-linked east panorama1920x540 visually inspected: autumn trees, foreground roof, settlement and Lake Zürich legible under cloud. Printed28-10-2026 09:48:45 has no timezone/offset; Europe/Zurich CETUTC+1 inferred08:48:45Z. Latest-image redirect filename encodes084846 separately, one second later; filename timezone not asserted. Retrieved08:50:09Z HTTP200; Last-Modified08:48:58Z independently corroborates upload, not capture. Initial multi-redirect request exhausted timeout; one bounded request to the publicly returned exact final asset succeeded, no authentication or challenge bypass. Camera clock precision unverified. No transport operation, trail safety, restaurant opening or video playback inferred. Review completed 2026-10-28T08:51:09Z."
+  },
+  {
+    "provider": "prowebcam.ch / Ivo Stragiotti",
+    "country": "Switzerland",
+    "timeZone": "Europe/Zurich",
+    "categories": [
+      "Nature",
+      "Parks & Scenic",
+      "Useful Earth"
+    ],
+    "truth": "LIVE_IMAGE",
+    "permission": "LINK_ONLY",
+    "health": "HEALTHY",
+    "playback": "EXTERNAL",
+    "officialUrl": "https://prowebcam.ch/webcam/faulensee/",
+    "attribution": "prowebcam.ch — Faulensee southeast-facing webcam",
+    "checkedAt": "2026-10-28T12:41:26Z",
+    "lastSuccessfulCheck": "2026-10-28T12:41:26Z",
+    "quality": 77,
+    "freshness": 90,
+    "moment": 75,
+    "featuredHold": true,
+    "watchHold": true,
+    "searchSupplemental": true,
+    "externalWindowRequired": true,
+    "rightsSourceUrl": "https://www.prowebcam.ch/impressum/",
+    "rightsBasis": "First-party webcam operator identifies itself in the imprint. Reviewed webcam/info/imprint pages contain no incoming-link restriction or media reuse licence. GNU availability described for camera software is not an image licence. Attributed ordinary external provider-page link and original description only; no image, thumbnail, iframe, logo or provider prose copied or embedded.",
+    "id": "ch-faulensee-lake-current",
+    "placeId": "ch-faulensee-lake",
+    "title": "Faulensee — Lake Thun Shore",
+    "seoName": "Faulensee — Lake Thun Shore",
+    "region": "Faulensee / Spiez, Bern",
+    "aliases": [
+      "Faulensee webcam",
+      "Faulensee Lake Thun",
+      "Faulensee Thunersee"
+    ],
+    "sourceUrl": "https://prowebcam.ch/webcam/faulensee/",
+    "story": "Look southeast over Faulensee rooftops and Lake Thun in a refreshed still. Low cloud can hide the distant mountain backdrop; check local dining, accommodation and shore access separately before visiting.",
+    "freshnessEvidence": "Exact provider-page816x459 current/816.jpg visually inspected: lake, near-side roofs/vegetation and right-hand shoreline legible; distant mountains strongly obscured by cloud, foreground privacy blur present. No individuals identified or personal activities assessed. Printed28.10.26 13:30 lacks timezone/offset; Europe/Zurich CETUTC+1 inferred12:30Z after25Oct DST end, minute precision only. Retrieved12:39:56Z HTTP200; Last-Modified12:30:35Z independently corroborates upload, not capture. Camera clock precision unverified; printed temperature/humidity/pressure not independently verified or used as weather evidence. No mountain visibility, bathing/boating safety, business opening or video playback inferred. Review completed 2026-10-28T12:41:26Z."
   }
 ]

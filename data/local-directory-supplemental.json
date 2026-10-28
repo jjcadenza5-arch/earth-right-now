@@ -13567,5 +13567,43 @@
     "affiliate": false,
     "reviewBasis": "FIRST_PARTY_OPERATOR_OR_OFFICIAL_TRANSPORT_PAGE_REVIEW",
     "reviewSourceUrl": "https://www.zvv.ch/de/freizeit-und-events/freizeittipps/entdecken-und-erleben/mit-der-luftseilbahn-auf-die-felsenegg.html"
+  },
+  {
+    "id": "local-faulensee-seeblick",
+    "placeId": "ch-faulensee-lake",
+    "place": "Faulensee — Lake Thun Shore",
+    "name": "Strandhotel Seeblick — Restaurant",
+    "type": "restaurant",
+    "url": "https://www.seeblick.ch/en/restaurant",
+    "summary": "Explore dining at Strandhotel Seeblick in Faulensee. Confirm current menus, dietary options, kitchen times and table availability directly; the lake image does not establish opening or a free terrace table.",
+    "country": "Switzerland",
+    "tags": [
+      "visitor planning"
+    ],
+    "verifiedAt": "2026-10-28T12:41:26Z",
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_OPERATOR_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.seeblick.ch/en/restaurant"
+  },
+  {
+    "id": "local-faulensee-moeve",
+    "placeId": "ch-faulensee-lake",
+    "place": "Faulensee — Lake Thun Shore",
+    "name": "Hotel Restaurant Möve",
+    "type": "hotel and restaurant",
+    "url": "https://www.moeve.ch/",
+    "summary": "Explore rooms and dining at Möve in Faulensee. Confirm exact room outlook, availability, menus and opening directly; the operator lists a 24–26 December closure, so do not assume year-round daily service.",
+    "country": "Switzerland",
+    "tags": [
+      "visitor planning"
+    ],
+    "verifiedAt": "2026-10-28T12:41:26Z",
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_OPERATOR_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.moeve.ch/"
   }
 ]
