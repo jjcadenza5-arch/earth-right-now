@@ -3069,5 +3069,45 @@
     "sourceUrl": "https://prowebcam.ch/webcam/faulensee/",
     "story": "Look southeast over Faulensee rooftops and Lake Thun in a refreshed still. Low cloud can hide the distant mountain backdrop; check local dining, accommodation and shore access separately before visiting.",
     "freshnessEvidence": "Exact provider-page816x459 current/816.jpg visually inspected: lake, near-side roofs/vegetation and right-hand shoreline legible; distant mountains strongly obscured by cloud, foreground privacy blur present. No individuals identified or personal activities assessed. Printed28.10.26 13:30 lacks timezone/offset; Europe/Zurich CETUTC+1 inferred12:30Z after25Oct DST end, minute precision only. Retrieved12:39:56Z HTTP200; Last-Modified12:30:35Z independently corroborates upload, not capture. Camera clock precision unverified; printed temperature/humidity/pressure not independently verified or used as weather evidence. No mountain visibility, bathing/boating safety, business opening or video playback inferred. Review completed 2026-10-28T12:41:26Z."
+  },
+  {
+    "provider": "Grimmialpbergbahnen Diemtigtal AG / prowebcam.ch",
+    "country": "Switzerland",
+    "timeZone": "Europe/Zurich",
+    "categories": [
+      "Nature",
+      "Parks & Scenic",
+      "Useful Earth"
+    ],
+    "truth": "LIVE_IMAGE",
+    "permission": "LINK_ONLY",
+    "health": "HEALTHY",
+    "playback": "EXTERNAL",
+    "officialUrl": "https://www.grimmialp.ch/",
+    "attribution": "Grimmialpbergbahnen Diemtigtal AG / prowebcam.ch — lower-slope webcam",
+    "checkedAt": "2026-10-28T14:04:02Z",
+    "lastSuccessfulCheck": "2026-10-28T14:04:02Z",
+    "quality": 77,
+    "freshness": 90,
+    "moment": 75,
+    "featuredHold": true,
+    "watchHold": true,
+    "searchSupplemental": true,
+    "externalWindowRequired": true,
+    "rightsSourceUrl": "https://www.prowebcam.ch/impressum/",
+    "rightsBasis": "Lift operator explicitly links this exact lower-slope webcam; camera-info page identifies Grimmialpbergbahnen as operator. Reviewed public webcam/info/imprint pages contain no incoming-link restriction or media reuse licence. GNU camera-software availability is not an image licence. Attributed ordinary external provider-page link and original description only; no image, thumbnail, iframe, logo or provider prose copied or embedded.",
+    "id": "ch-grimmialp-lower-slopes-current",
+    "placeId": "ch-grimmialp-lower-slopes",
+    "title": "Grimmialp — Lower Slopes",
+    "seoName": "Grimmialp — Lower Slopes",
+    "region": "Schwenden / Diemtigtal, Bern",
+    "aliases": [
+      "Grimmialp webcam",
+      "Grimmialp Kinderlift Egg",
+      "Schwenden Diemtigtal webcam"
+    ],
+    "sourceUrl": "https://www.prowebcam.ch/webcam/grimmialp/",
+    "story": "Look across Grimmialp’s lower grassy slopes in a refreshed still from Schwenden. Cloud can hide the higher terrain; check seasonal lift operation, restaurant opening and route conditions directly before visiting.",
+    "freshnessEvidence": "Exact provider-linked816x382 current/816.jpg visually inspected: grassy lower slopes, lift infrastructure and wooded flanks legible; cloud obscures higher terrain. Printed28.10.26 15:00 lacks timezone/offset; Europe/Zurich CETUTC+1 inferred14:00Z after25Oct DST end, minute precision only. Retrieved14:02:49Z HTTP200; Last-Modified14:00:25Z independently corroborates upload, not capture. Camera clock precision unverified. No lift movement/operation, skiability, snow safety, trail access, restaurant opening or video playback inferred. Operator website independently reports end of summer lift season, not a camera failure. Review completed 2026-10-28T14:04:02Z."
   }
 ]

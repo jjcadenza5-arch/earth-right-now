@@ -3003,6 +3003,34 @@
       "resolvedCatalogIds": [
         "ch-faulensee-lake-current"
       ]
+    },
+    {
+      "id": "grimmialp-lower-slopes-batch33",
+      "priority": "P2",
+      "placeGroup": "Grimmialp lower slopes Schwenden",
+      "country": "Switzerland",
+      "provider": "Grimmialpbergbahnen Diemtigtal AG / prowebcam.ch",
+      "candidateType": "FIRST_PARTY_CURRENT_IMAGE",
+      "visitorDecisionValue": "HIGH",
+      "qualityPotential": "HIGH",
+      "programFit": [
+        "food",
+        "nature",
+        "activities"
+      ],
+      "evidenceUrls": [
+        "https://www.prowebcam.ch/webcam/grimmialp/",
+        "https://www.grimmialp.ch/",
+        "https://www.prowebcam.ch/webcam/grimmialp/infos/",
+        "https://www.prowebcam.ch/impressum/"
+      ],
+      "state": "CAMERA_LOCATION_ADMITTED_LINK_ONLY",
+      "why": "Distinct lower-slope scene visually legible with current minute-precision printed time and independent upload header. Exact webcam linked by lift operator. Summer lift season ended independently; no operation inferred from image.",
+      "next": "Maintain image/rights evidence and operator seasonal notices; no skiability, lift operation or trail-safety inference.",
+      "reviewedAt": "2026-10-28T14:04:02Z",
+      "resolvedCatalogIds": [
+        "ch-grimmialp-lower-slopes-current"
+      ]
     }
   ],
   "guardrails": {

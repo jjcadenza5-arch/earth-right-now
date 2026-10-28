@@ -13605,5 +13605,43 @@
     "affiliate": false,
     "reviewBasis": "FIRST_PARTY_OPERATOR_PAGE_REVIEW",
     "reviewSourceUrl": "https://www.moeve.ch/"
+  },
+  {
+    "id": "local-grimmialp-spillgerten",
+    "placeId": "ch-grimmialp-lower-slopes",
+    "place": "Grimmialp — Lower Slopes",
+    "name": "Hotel & Restaurant Spillgerten — Dining",
+    "type": "restaurant",
+    "url": "https://www.spillgerten.ch/restaurant",
+    "summary": "Explore dining near Grimmialp’s valley station in Schwenden. Confirm current menus, kitchen times and table availability directly; the operator requests evening table reservations and may close early in poor weather.",
+    "country": "Switzerland",
+    "tags": [
+      "visitor planning"
+    ],
+    "verifiedAt": "2026-10-28T14:04:02Z",
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_OPERATOR_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.spillgerten.ch/restaurant"
+  },
+  {
+    "id": "local-grimmialp-lift-info",
+    "placeId": "ch-grimmialp-lower-slopes",
+    "place": "Grimmialp — Lower Slopes",
+    "name": "Grimmialpbergbahnen — Seasonal Visitor Information",
+    "type": "visitor information",
+    "url": "https://www.grimmialp.ch/",
+    "summary": "Check the lift operator’s current seasonal notices and visitor information. Summer lift service has ended; confirm the next operating season and current access directly. A current slope image does not mean the chairlift, ski facilities or mountain restaurants are operating.",
+    "country": "Switzerland",
+    "tags": [
+      "visitor planning"
+    ],
+    "verifiedAt": "2026-10-28T14:04:02Z",
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_OPERATOR_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.grimmialp.ch/"
   }
 ]
