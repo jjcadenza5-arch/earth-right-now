@@ -13491,5 +13491,43 @@
     "affiliate": false,
     "reviewBasis": "FIRST_PARTY_OPERATOR_PAGE_REVIEW",
     "reviewSourceUrl": "https://schlossthun.ch/en/visitor-information/faq/"
+  },
+  {
+    "id": "local-leukerbad-bodmen-restaurant",
+    "placeId": "ch-leukerbad-bodmen",
+    "place": "Leukerbad — Bodmen Panorama",
+    "name": "Restaurant Bodmenstübli",
+    "type": "restaurant",
+    "url": "https://www.bodmenstuebli.ch/das-restaurant",
+    "summary": "Explore dining at Bodmenstübli near Leukerbad. Confirm seasonal opening dates, weekly closures, route access and table availability directly; dates vary between operator pages and the camera does not establish that the restaurant is open.",
+    "country": "Switzerland",
+    "tags": [
+      "visitor planning"
+    ],
+    "verifiedAt": "2026-10-28T08:39:33Z",
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_OPERATOR_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.bodmenstuebli.ch/das-restaurant"
+  },
+  {
+    "id": "local-leukerbad-therme",
+    "placeId": "ch-leukerbad-bodmen",
+    "place": "Leukerbad — Bodmen Panorama",
+    "name": "Leukerbad Therme",
+    "type": "thermal baths",
+    "url": "https://leukerbad.ch/en/therme",
+    "summary": "Explore the separate thermal-bath complex in Leukerbad village. Confirm current facility status, admission, age restrictions and accessibility directly before visiting; a dated status panel or the Bodmen panorama does not establish that pools are currently open.",
+    "country": "Switzerland",
+    "tags": [
+      "visitor planning"
+    ],
+    "verifiedAt": "2026-10-28T08:39:33Z",
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_OPERATOR_PAGE_REVIEW",
+    "reviewSourceUrl": "https://leukerbad.ch/en/therme"
   }
 ]

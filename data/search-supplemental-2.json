@@ -2949,5 +2949,45 @@
     "sourceUrl": "https://www.seepark.ch/en/corporate/webcam",
     "story": "Look across Lake Thun from the Seepark shoreline in a refreshed still. Foreground foliage and low cloud can limit the panorama; check hotel, dining and town attraction arrangements separately before visiting.",
     "freshnessEvidence": "Exact1024x768 current.jpg visually inspected: lake, opposite shore and low hills visible, foreground foliage/tree branches occupy part of frame, distant higher mountains obscured by low cloud. Main lake/shore scene legible; no Eiger, Mönch or Jungfrau visibility claim. Printed28Oct2026 09:29:00 has no UTC offset; Europe/Zurich CETUTC+1 inferred08:29:00Z after25Oct DST end. Retrieved08:29:27Z HTTP200; Last-Modified08:29:03Z independently corroborates upload, not capture. Camera clock precision/configuration unverified. Search fetch returned403 for image/legal page; ordinary bounded public GET returned200 without authentication or challenge bypass. No boating safety, mountain access, numerical water level, business opening or video playback inferred. Review completed 2026-10-28T08:30:25Z."
+  },
+  {
+    "provider": "Restaurant Bodmenstübli",
+    "country": "Switzerland",
+    "timeZone": "Europe/Zurich",
+    "categories": [
+      "Nature",
+      "Parks & Scenic",
+      "Useful Earth"
+    ],
+    "truth": "LIVE_IMAGE",
+    "permission": "LINK_ONLY",
+    "health": "HEALTHY",
+    "playback": "EXTERNAL",
+    "officialUrl": "https://www.bodmenstuebli.ch/die-webcam",
+    "attribution": "Restaurant Bodmenstübli — Bodmen panorama webcam",
+    "checkedAt": "2026-10-28T08:39:33Z",
+    "lastSuccessfulCheck": "2026-10-28T08:39:33Z",
+    "quality": 77,
+    "freshness": 90,
+    "moment": 75,
+    "featuredHold": true,
+    "watchHold": true,
+    "searchSupplemental": true,
+    "externalWindowRequired": true,
+    "rightsSourceUrl": "https://www.bodmenstuebli.ch/impressum",
+    "rightsBasis": "Operator reserves rights and requires prior written consent for reproduction. No incoming-link restriction found in reviewed imprint. ERN uses an attributed ordinary external provider-page link and original description only; no image, thumbnail, iframe, logo or provider prose copied or embedded. No media reuse licence inferred.",
+    "id": "ch-leukerbad-bodmen-current",
+    "placeId": "ch-leukerbad-bodmen",
+    "title": "Leukerbad — Bodmen Panorama",
+    "seoName": "Leukerbad — Bodmen Panorama",
+    "region": "Bodmen / Leukerbad, Valais",
+    "aliases": [
+      "Leukerbad Bodmen",
+      "Bodmenstübli webcam",
+      "Bodmen Rhone Valley panorama"
+    ],
+    "sourceUrl": "https://www.bodmenstuebli.ch/die-webcam",
+    "story": "Look over Bodmen’s buildings, wooded slopes and valley from the restaurant panorama near Leukerbad. Sun glare can limit the central view; check restaurant opening, route access and town activities separately before visiting.",
+    "freshnessEvidence": "Exact1280x480 public provider-linked image visually inspected: Bodmen buildings, slopes, trees and valley legible around strong central sun glare. Some rectangular masked areas; no identities or personal activities assessed. Printed2026-10-28 CET09:38:23 explicitly includes CET, equivalent08:38:23Z. Retrieved08:38:32Z HTTP200; Last-Modified08:38:25Z independently corroborates upload, not capture. Camera clock precision unverified; printed approximate temperature not independently verified or used as weather evidence. No route safety, restaurant opening, thermal-bath status or video playback inferred. Review completed 2026-10-28T08:39:33Z."
   }
 ]

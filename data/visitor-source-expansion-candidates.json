@@ -2902,6 +2902,32 @@
       "resolvedCatalogIds": [
         "ch-thun-seepark-lake-current"
       ]
+    },
+    {
+      "id": "leukerbad-bodmen-batch30",
+      "priority": "P2",
+      "placeGroup": "Leukerbad Bodmen panorama",
+      "country": "Switzerland",
+      "provider": "Restaurant Bodmenstübli",
+      "candidateType": "FIRST_PARTY_CURRENT_IMAGE",
+      "visitorDecisionValue": "HIGH",
+      "qualityPotential": "HIGH",
+      "programFit": [
+        "food",
+        "nature",
+        "activities"
+      ],
+      "evidenceUrls": [
+        "https://www.bodmenstuebli.ch/die-webcam",
+        "https://www.bodmenstuebli.ch/impressum"
+      ],
+      "state": "CAMERA_LOCATION_ADMITTED_LINK_ONLY",
+      "why": "Distinct Bodmen scene visually inspected with explicit current CET timestamp and independent upload header. Strong central sun glare limits panorama but surrounding slopes/buildings/valley legible. External attributed provider-page link only.",
+      "next": "Maintain image and rights evidence; confirm restaurant seasonal dates and separate thermal-bath facility status directly. Do not infer route safety or temperature accuracy.",
+      "reviewedAt": "2026-10-28T08:39:33Z",
+      "resolvedCatalogIds": [
+        "ch-leukerbad-bodmen-current"
+      ]
     }
   ],
   "guardrails": {
