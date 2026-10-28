@@ -3109,5 +3109,44 @@
     "sourceUrl": "https://www.prowebcam.ch/webcam/grimmialp/",
     "story": "Look across Grimmialp’s lower grassy slopes in a refreshed still from Schwenden. Cloud can hide the higher terrain; check seasonal lift operation, restaurant opening and route conditions directly before visiting.",
     "freshnessEvidence": "Exact provider-linked816x382 current/816.jpg visually inspected: grassy lower slopes, lift infrastructure and wooded flanks legible; cloud obscures higher terrain. Printed28.10.26 15:00 lacks timezone/offset; Europe/Zurich CETUTC+1 inferred14:00Z after25Oct DST end, minute precision only. Retrieved14:02:49Z HTTP200; Last-Modified14:00:25Z independently corroborates upload, not capture. Camera clock precision unverified. No lift movement/operation, skiability, snow safety, trail access, restaurant opening or video playback inferred. Operator website independently reports end of summer lift season, not a camera failure. Review completed 2026-10-28T14:04:02Z."
+  },
+  {
+    "provider": "Stadt Memmingen",
+    "country": "Germany",
+    "timeZone": "Europe/Berlin",
+    "categories": [
+      "Cities",
+      "Useful Earth"
+    ],
+    "truth": "LIVE_IMAGE",
+    "permission": "LINK_ONLY",
+    "health": "HEALTHY",
+    "playback": "EXTERNAL",
+    "officialUrl": "https://www.memmingen.de/goodies/webcam/st-martin-xl.html",
+    "attribution": "Stadt Memmingen — view from St. Martin over the market square",
+    "checkedAt": "2026-10-28T15:12:02Z",
+    "lastSuccessfulCheck": "2026-10-28T15:12:02Z",
+    "quality": 83,
+    "freshness": 90,
+    "moment": 75,
+    "featuredHold": true,
+    "watchHold": true,
+    "searchSupplemental": true,
+    "externalWindowRequired": true,
+    "rightsSourceUrl": "https://www.memmingen.de/impressum.html",
+    "rightsBasis": "City reserves copyright and requires express permission for commercial translation, reproduction, electronic storage or alteration of its content. Reviewed imprint contains no incoming-link restriction. ERN provides an attributed ordinary external webcam-page link and original description only; no image, thumbnail, iframe, logo or municipal prose copied or embedded, no content-reuse licence inferred.",
+    "id": "de-memmingen-market-square-current",
+    "placeId": "de-memmingen-market-square",
+    "title": "Memmingen — Market Square",
+    "seoName": "Memmingen — Market Square",
+    "region": "Memmingen / Bavarian Swabia",
+    "aliases": [
+      "Memmingen Marktplatz",
+      "Memmingen market square webcam",
+      "Memmingen St Martin webcam"
+    ],
+    "sourceUrl": "https://www.memmingen.de/goodies/webcam/st-martin-xl.html",
+    "story": "Look over Memmingen’s market square and old-town rooftops from St. Martin in a refreshed still. Check restaurant opening, accommodation and visitor arrangements separately before visiting.",
+    "freshnessEvidence": "Exact public1280x960 current_1280.jpg visually inspected: market square, historic buildings, rooftops and surrounding town legible. No individuals identified or personal activities assessed. Printed2026-10-28 CET16:09:00 explicitly includes CET, equivalent15:09:00Z. Retrieved15:10:09Z HTTP200; Last-Modified15:09:23Z independently corroborates upload, not capture. Camera clock precision unverified. Separate weather widget on cached provider page contains older data and is not used as image or weather evidence. No crowd measurement, church access, business opening or video playback inferred. Review completed 2026-10-28T15:12:02Z."
   }
 ]

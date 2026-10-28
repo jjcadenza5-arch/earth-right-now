@@ -13643,5 +13643,43 @@
     "affiliate": false,
     "reviewBasis": "FIRST_PARTY_OPERATOR_PAGE_REVIEW",
     "reviewSourceUrl": "https://www.grimmialp.ch/"
+  },
+  {
+    "id": "local-memmingen-weisses-ross",
+    "placeId": "de-memmingen-market-square",
+    "place": "Memmingen — Market Square",
+    "name": "Hotel Weisses Ross — Memmingen",
+    "type": "hotel",
+    "url": "https://www.hotelweissesross.de/hotel/",
+    "summary": "Explore accommodation at Hotel Weisses Ross in central Memmingen. Confirm exact room facilities, availability, parking arrangements and booking terms directly; the square image does not establish a room view or available parking.",
+    "country": "Germany",
+    "tags": [
+      "visitor planning"
+    ],
+    "verifiedAt": "2026-10-28T15:12:02Z",
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_OPERATOR_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.hotelweissesross.de/hotel/"
+  },
+  {
+    "id": "local-memmingen-lorenzo",
+    "placeId": "de-memmingen-market-square",
+    "place": "Memmingen — Market Square",
+    "name": "Lorenzo — Marktplatz",
+    "type": "restaurant",
+    "url": "https://www.lorenzo-marktplatz.de/",
+    "summary": "Explore Italian dining at Lorenzo on Memmingen’s market square. Confirm current menus, kitchen times, holiday closures and table availability directly; the dated January holiday notice is historical and the camera does not confirm opening.",
+    "country": "Germany",
+    "tags": [
+      "visitor planning"
+    ],
+    "verifiedAt": "2026-10-28T15:12:02Z",
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_OPERATOR_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.lorenzo-marktplatz.de/"
   }
 ]

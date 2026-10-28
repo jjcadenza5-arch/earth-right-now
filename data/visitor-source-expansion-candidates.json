@@ -3031,6 +3031,55 @@
       "resolvedCatalogIds": [
         "ch-grimmialp-lower-slopes-current"
       ]
+    },
+    {
+      "id": "memmingen-market-square-batch34",
+      "priority": "P2",
+      "placeGroup": "Memmingen market square",
+      "country": "Germany",
+      "provider": "Stadt Memmingen",
+      "candidateType": "OFFICIAL_CURRENT_IMAGE",
+      "visitorDecisionValue": "HIGH",
+      "qualityPotential": "HIGH",
+      "programFit": [
+        "stay",
+        "food",
+        "town"
+      ],
+      "evidenceUrls": [
+        "https://www.memmingen.de/goodies/webcam/st-martin-xl.html",
+        "https://www.memmingen.de/impressum.html"
+      ],
+      "state": "CAMERA_LOCATION_ADMITTED_LINK_ONLY",
+      "why": "Distinct town-square image visually legible with current explicit CET timestamp and independent upload header. Copyright/reuse restrictions respected via ordinary external provider-page link only.",
+      "next": "Maintain current image/rights evidence; verify business hours and room arrangements separately.",
+      "reviewedAt": "2026-10-28T15:12:02Z",
+      "resolvedCatalogIds": [
+        "de-memmingen-market-square-current"
+      ]
+    },
+    {
+      "id": "wangen-capture-time-hold-oct28",
+      "priority": "P2",
+      "placeGroup": "Wangen im Allgau market square",
+      "country": "Germany",
+      "provider": "Stadt Wangen im Allgäu",
+      "candidateType": "OFFICIAL_CURRENT_IMAGE",
+      "visitorDecisionValue": "HIGH",
+      "qualityPotential": "HIGH",
+      "programFit": [
+        "stay",
+        "food",
+        "town"
+      ],
+      "evidenceUrls": [
+        "https://www.wangen.de/live-bilder",
+        "https://www.wangen.de/impressum"
+      ],
+      "state": "HOLD_IMAGE_CURRENTNESS_UNVERIFIED",
+      "why": "Exact2880x1620 official image visually clear; HTTP upload15:07:55Z is recent but no printed/EXIF capture timestamp. Upload time alone not treated as capture proof. No image copied, not admitted or counted.",
+      "next": "Revisit only material capture-currentness evidence and complete exact linking-terms review; no automatic promotion or retry loop.",
+      "reviewedAt": "2026-10-28T15:12:02Z"
     }
   ],
   "guardrails": {
