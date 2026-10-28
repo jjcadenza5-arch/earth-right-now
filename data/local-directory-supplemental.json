@@ -13187,5 +13187,81 @@
     "affiliate": false,
     "reviewBasis": "FIRST_PARTY_OPERATOR_OR_OFFICIAL_GOVERNMENT_PAGE_REVIEW",
     "reviewSourceUrl": "https://www.discovertasmania.com.au/accommodation/lakeburburycampingground/"
+  },
+  {
+    "id": "local-sorell-doctors",
+    "placeId": "au-lake-sorell",
+    "place": "Lake Sorell — Tasmania",
+    "name": "The Doctor’s — Interlaken, Tasmania",
+    "type": "chalet",
+    "url": "https://www.thedoctorsinterlaken.com/",
+    "summary": "Explore a private chalet at Lake Sorell in Interlaken, Tasmania. Confirm current availability, guest access and booking terms directly; private facilities are not public visitor amenities.",
+    "country": "Australia",
+    "tags": [
+      "visitor planning"
+    ],
+    "verifiedAt": "2026-10-28T02:24:04Z",
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_OPERATOR_OR_OFFICIAL_GOVERNMENT_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.thedoctorsinterlaken.com/"
+  },
+  {
+    "id": "local-sorell-ifs",
+    "placeId": "au-lake-sorell",
+    "place": "Lake Sorell — Tasmania",
+    "name": "Lake Sorell — Inland Fisheries Service",
+    "type": "visitor information",
+    "url": "https://www.ifs.tas.gov.au/fisheries/waters-a-z/lake-sorell/",
+    "summary": "Review official fishing, access and conservation information, including inflow and canal closures. Check current licence requirements and conditions before visiting.",
+    "country": "Australia",
+    "tags": [
+      "visitor planning"
+    ],
+    "verifiedAt": "2026-10-28T02:24:04Z",
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_OPERATOR_OR_OFFICIAL_GOVERNMENT_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.ifs.tas.gov.au/fisheries/waters-a-z/lake-sorell/"
+  },
+  {
+    "id": "local-augusta-thousand-lakes",
+    "placeId": "au-lake-augusta",
+    "place": "Lake Augusta — Tasmania",
+    "name": "Thousand Lakes Lodge",
+    "type": "lodge",
+    "url": "https://www.thousandlakeslodge.com.au/",
+    "summary": "Explore accommodation on Lake Augusta Road. The operator permits access and dining for accommodated guests only, with no public facilities. Confirm road access, availability and booking arrangements directly.",
+    "country": "Australia",
+    "tags": [
+      "visitor planning"
+    ],
+    "verifiedAt": "2026-10-28T02:24:04Z",
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_OPERATOR_OR_OFFICIAL_GOVERNMENT_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.thousandlakeslodge.com.au/"
+  },
+  {
+    "id": "local-augusta-ifs",
+    "placeId": "au-lake-augusta",
+    "place": "Lake Augusta — Tasmania",
+    "name": "Lake Augusta — Inland Fisheries Service",
+    "type": "visitor information",
+    "url": "https://www.ifs.tas.gov.au/fisheries/waters-a-z/lake-augusta/",
+    "summary": "Review official fishing, boating and track-access information. Check current Parks and Wildlife road and track advice; access to one lake does not establish that every Western Lakes track is open.",
+    "country": "Australia",
+    "tags": [
+      "visitor planning"
+    ],
+    "verifiedAt": "2026-10-28T02:24:04Z",
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_OPERATOR_OR_OFFICIAL_GOVERNMENT_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.ifs.tas.gov.au/fisheries/waters-a-z/lake-augusta/"
   }
 ]

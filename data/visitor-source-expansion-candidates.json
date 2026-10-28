@@ -2720,6 +2720,35 @@
       "why": "Current28Oct12:49:59 frame1280x800 inspected: lake and near shore visible, distant terrain strongly obscured and low contrast. Held for more useful scenic quality; cause not diagnosed, no outage inferred. Not counted.",
       "next": "Revisit only on materially clearer provider imagery; no retry loop or automatic promotion.",
       "reviewedAt": "2026-10-28T01:53:12Z"
+    },
+    {
+      "id": "tasmania-sorell-augusta-batch24",
+      "priority": "P2",
+      "placeGroup": "Lake Sorell and Lake Augusta",
+      "country": "Australia",
+      "provider": "Anglers Alliance Tasmania",
+      "candidateType": "VOLUNTEER_CURRENT_IMAGE_NETWORK",
+      "visitorDecisionValue": "HIGH",
+      "qualityPotential": "HIGH",
+      "programFit": [
+        "stay",
+        "activities",
+        "nature"
+      ],
+      "evidenceUrls": [
+        "https://www.anglersalliance.org.au/web-cams/lake-sorell-webcam",
+        "https://www.anglersalliance.org.au/web-cams/lake-augusta-webcam",
+        "https://www.ifs.tas.gov.au/fisheries/waters-a-z/lake-sorell/",
+        "https://www.ifs.tas.gov.au/fisheries/waters-a-z/lake-augusta/"
+      ],
+      "state": "TWO_DISTINCT_CAMERA_LOCATIONS_ADMITTED_LINK_ONLY",
+      "why": "Two distinct Tasmanian lakes; latest provider frames visually inspected with current filename dates, Sorell camera EXIF, and independent upload headers. External attributed links only.",
+      "next": "Maintain image and rights evidence; verify fishing, road and track restrictions independently.",
+      "reviewedAt": "2026-10-28T02:24:04Z",
+      "resolvedCatalogIds": [
+        "au-lake-sorell-current",
+        "au-lake-augusta-current"
+      ]
     }
   ],
   "guardrails": {
