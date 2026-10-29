@@ -1,3 +1,17 @@
+## 2026-10-29 Bangkok — Seven-slot Watch Earth stage saved; awaiting two playback checks
+
+Separate staging branch work/watch-earth-seven-stage1-20261029 prepared; all122 release tests and targeted seven-slot fail-closed regressions passed. Main/production still five-cap; no source/ledger/proof changes, no seven-camera claim. Two exact Kyoto targets and owner-only review instructions follow. No automatic evidence or camera mutation.
+
+## 2026-10-29 Bangkok — Watch Earth seven-slot stage prepared; two human checks pending
+
+Owner approved5→7→10 staged rotation expansion, starting with two verified moving streams. Stage1 code raises only the Watch Earth ceiling/default target to7, retains the established five-stream curated floor and every permission/health/live-video/quality/recency/playback gate. Current real catalog still yields exactly5; synthetic tests must show7 eligible moving streams pass, excess capped7, stale/nonvideo padding rejected and5 preserved while2 proofs pending. No public source dates or observation records changed.
+
+Chosen existing exact-permission candidates: Kyoto Kiyomizu-zaka (cUnYPpK7ENk) and Hanamikoji Street (J3xHBUgWRqc). Both old proofs expired. In deployed review batch85fe56d1b9f1a2e3, cloud-browser player shells loaded and Play was clicked individually, but both player areas remained black without visible moving scene. This is INCONCLUSIVE cloud-browser evidence, not an owner playback failure or proof of provider outage. No human review button clicked/export fabricated and no catalog proof renewed. Official Kyoto public page still lists Gion/Kiyomizu live camera area; provider metadata is not playback proof.
+
+Human action needed after staging is saved: open https://earthrightnow.app/review/inside-ern.html ; expand Additional restoration backlog; individually load/watch Kiyomizu-zaka and Hanamikoji Street; mark only actual true outcomes, then Copy JSON and return the packet. Use current page batch, not a manufactured observation time. Exactly two checks, no need to renew the established five now. Apply accepted source+ledger evidence atomically with staged code only after exact-target/current-batch/precondition checks. If either fails, retain5 and choose a different qualified candidate; never pad.
+
+Current production remains1a5a7612 (five choices), coverage863/1,000 places,872 sources/864 catalog places,235 offers/648 directory rows,226 source-eligible affiliate placements unchanged. Website design, commercial publicOFF gates and five owner29Oct exact dates/ledger preserved.24h LIVE HERE horizon30Oct07:59Bangkok, source/Watch seven-day horizon5Nov07:59subject to failures. Evidence docs/WATCH_EARTH_SEVEN_STAGE1_2026-10-29.md. Stage is not deployed and not seven verified cameras yet.
+
 ## 2026-10-29 Bangkok — Two camera places and two affiliate placements deployed and accepted
 
 Production1a5a7612c6eb0320408c3a05a9fef1a812785cde. Pages40818947667 SUCCESS/all122 release smoke tests; Operations40818947697 SUCCESS/packet valid true issueCount0 issues[]; syntax40818947668 SUCCESS. Exact served production and thirteen SHA256 checks passed. Both new destination pages show NEAR-NOW IMAGE, exact provider links and Klook affiliate link with disclosure/rel sponsored; Ōrewa page also includes the café. Homepage differs only by existing build cache busting; runtime/core/first supplement/entire owner ledger unchanged and exact five owner29Oct playback dates retained.

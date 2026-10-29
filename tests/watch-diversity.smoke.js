@@ -6,7 +6,7 @@ const body=app.slice(start,end);
 assert.ok(start>=0&&end>start,"curated Watch Earth builder exists");
 assert.match(body,/sources\.filter\(s=>watchEligible\(s\)&&currentInside\(s\)\)/,"Featured windows must be current, proven live streams playable in ERN");
 assert.match(app,/s.truth==="LIVE_VIDEO"&&s.playback==="EMBED"&&s.permission==="EMBED_ALLOWED"&&recentPlaybackProof\(s\)/,"Live camera proof required");
-assert.match(body,/limit=5/,"Watch Earth must keep the five-window cap");
+assert.match(body,/limit=7/,"Watch Earth must keep the seven-window cap");
 assert.match(body,/places\.has\(id\)/,"Watch Earth must avoid repeating a destination");
 assert.match(body,/countries\.get\(c\)/,"Watch Earth must consider country diversity");
 assert.match(body,/providers\.get\(p\)/,"Watch Earth must consider provider diversity");
