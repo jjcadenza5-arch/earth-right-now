@@ -1,3 +1,7 @@
+## 2026-10-29 Bangkok — Renewal queue aligned to seven-camera rotation
+
+Review-page builder and operator queue status now target7, keeping the curated fallback floor5 and unchanged24h/seven-day horizons. Regression verifies all5 original cameras are requested when they expire before the2 new proofs, rather than stopping at5 total. Current ready7/target7/shortfall0 and7 evergreen renewal cards locally. No additional source/ledger or viewer runtime changes. Whole-product guard correction retained. Production acceptance remains pending.
+
 ## 2026-10-29 Bangkok — Seven-slot deployment guard corrected
 
 Initial Pages40821064897 passed122 release tests but stopped at a legacy whole-product literal requiring five. Corrected it to the approved seven-slot selector, keeping unique-place and country/provider protections and scoping the check to buildWatch. Targeted whole-product preflight and Watch Earth audit pass; no runtime/source/proof change or guard bypass. Production stays1a5a7612 until normal correction push succeeds. Evidence docs/WATCH_EARTH_SEVEN_ACCEPTANCE_2026-10-29.md.

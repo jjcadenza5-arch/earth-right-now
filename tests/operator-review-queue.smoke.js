@@ -55,3 +55,13 @@ const dueProtected={...recentFive[0],id:"protect-due",playbackVerifiedAt:"2026-1
 const mixed=operatorReviewQueue([oldDebt,...recentFive,dueProtected],[...recentObservations,{id:dueProtected.id,confirmation:"HUMAN_PLAYBACK",observedAt:dueProtected.playbackVerifiedAt,httpStatus:200}],{now:recoveryNow,limit:20,targetReady:5});
 assert.equal(mixed.primaryItems[0].id,"protect-due");
 assert.ok(mixed.primaryItems.slice(1).every(x=>x.id.startsWith("recent-")));
+
+// Protect the whole seven-stream rotation when its original five proofs expire first.
+const freshTwo=Array.from({length:2},(_,i)=>({...recentFive[0],id:"new-seven-"+i,embedUrl:"https://couchtourist.com/embed/cam/"+(9700+i)+"/",playbackVerifiedAt:"2026-10-26T06:30:00Z",checkedAt:"2026-10-26T06:30:00Z",lastSuccessfulCheck:"2026-10-26T06:30:00Z"}));
+const sevenSources=[oldDebt,...recentFive,...freshTwo];
+const sevenObservations=sevenSources.map(s=>({id:s.id,confirmation:"HUMAN_PLAYBACK",observedAt:s.playbackVerifiedAt,httpStatus:200}));
+const protectSeven=operatorReviewQueue(sevenSources,sevenObservations,{now:recoveryNow,limit:20,targetReady:7});
+assert.equal(protectSeven.ready,2);assert.equal(protectSeven.targetReady,7);assert.equal(protectSeven.readyShortfall,5);
+assert.deepEqual(new Set(protectSeven.primaryItems.map(x=>x.id)),new Set(recentFive.map(x=>x.id)),"Renew all original five to protect seven, rather than stopping at five total");
+assert.equal(protectSeven.safety.automaticPlaybackVerificationAllowed,false);
+console.log("Seven-stream operator maintenance protects the full rotation across staggered proof deadlines");

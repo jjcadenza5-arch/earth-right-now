@@ -12,7 +12,7 @@ const providerFamilies=JSON.parse(fs.readFileSync("data/embed-provider-families.
 const providerGeneratedTargets=JSON.parse(fs.readFileSync("data/provider-generated-targets.json","utf8"));
 const familyResearch=providerFamilyResearchStatus(providerFamilies,{now:new Date()});
 const researchQueue=researchReviewQueue(research,{providerFamilyReport:familyResearch,primaryCount:4});
-const reviewQueue=operatorReviewQueue(sources,observations,{now:new Date(),limit:20,targetReady:5});
+const reviewQueue=operatorReviewQueue(sources,observations,{now:new Date(),limit:20,targetReady:7});
 
 const esc=s=>String(s??"").replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;");
 const safe=u=>{try{const x=new URL(String(u||""));return /^https:$/.test(x.protocol)?x.toString():""}catch{return""}};
