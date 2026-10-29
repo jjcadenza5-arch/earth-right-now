@@ -1,3 +1,13 @@
+## 2026-10-29 Bangkok — Muriwai camera and affiliate coverage deployed and accepted
+
+Productioncfa14289110d9bdf18d569b0cc11c539fab573b6. Pages40817421191 SUCCESS/all122 release smoke tests; Operations40817421216 SUCCESS/packet valid true issueCount0 issues[]; syntax40817421202 SUCCESS. Exact served production and twelve SHA256 checks passed. New Muriwai destination has NEAR-NOW IMAGE, exact club webcam link, official visitor guide and Klook affiliate link with disclosure/rel sponsored. Existing runtime/homepage preserved except normal build cache busting; core, first supplement and entire owner ledger unchanged. Exact five owner29Oct playback dates preserved.
+
+Coverage861/1,000 distinct camera-backed places (139 remaining),870 sources/862 catalog places;233 offers and647 valid directory rows. Added one Muriwai Golf Links still-image place, one unpaid official golf visitor guide and one same-scope Auckland-wide Klook affiliate placement. Public source-eligible affiliate inventory224 offers across219 places, Klook20 placements; unique tracked URLs, original owner proof dates/expiry and partner evidence unchanged. Initial local suite found three downstream failures from commercial count drift; reconciled only count accounting and full122 rerun passed. No gate weakened or verification renewed.
+
+1920x1080 course image visually legible, printed29Oct17:15:06 without offset; AucklandNZDTUTC+13 inferred04:15:06Z, responseDate04:17:02Z separate, no upload/camera-clock precision claimed. Club publishes300000ms refresh; external attributed page link only, no media copied/reused. Windsurf homepage503 limits separate-provider terms review; no incoming-link restriction seen on reviewed club pages. Klook redirect reached expected Auckland destination/tracking parameters but final landing timed out; original human verification/expiry retained, no new landing success inferred. Auckland-wide activities do not guarantee golf inventory, tee times or transport. Visitor guide retains24h cancellation/unused-slot/discretionary-refund caveats.
+
+Paid-business progress is commission-eligible coverage, not a paying advertiser, booking, tracking attribution or income claim. Website design, publicOFF gates, manual-only placement and five-camera renewal preserved. Next24h LIVE HERE30Oct07:59Bangkok; seven-day source/Watch horizon5Nov07:59subject to failures. Evidence docs/ERN_EXPANSION_BATCH38_2026-10-29.md. Continue focused usage-aware camera and commercially useful expansion from this accepted checkpoint.
+
 # ERN expansion batch38 — Muriwai camera and affiliate coverage
 
 Reviewed 2026-10-29T04:19:19Z; baseline cd7442147dc056ec317fe2838b311039a437f18a, accepted production51b357afe73ecce827463f23dad935e4fd016efa.
