@@ -3908,5 +3908,63 @@
       "Jasná",
       "Tatry Mountain Resorts"
     ]
+  },
+  {
+    "id": "youtube-nyc-brooklyn-skyline-family",
+    "status": "RESEARCH_ONLY",
+    "provider": "Brooklyn Waterfront Cams",
+    "familyLabel": "New York — Manhattan Skyline from Brooklyn exact YouTube player research",
+    "researchUrl": "https://brooklynwaterfront.cam/",
+    "termsUrl": "https://developers.google.com/youtube/terms/required-minimum-functionality",
+    "verifiedAt": "2026-10-29T15:22:34Z",
+    "permissionEvidence": "The operator page identifies an always-on 4K Brooklyn Navy Yard / East River / Manhattan skyline camera. Clicking Play in the official page creates exact YouTube embed obqnslJKrxc; this is distinct from its separately linked timelapse videos. Browser player shell remained black, so no actual moving/live scene was verified. Platform player requirements reviewed; operator-specific permission is still pending and no family-wide grant is inferred.",
+    "permissionStatus": "SPECIFIC_OWNER_PLAYER_RESEARCH_NO_BLANKET_PERMISSION",
+    "technicalStatus": "EXACT_OWNER_EMBED_RESOLVED_PLAYBACK_UNVERIFIED",
+    "humanPlaybackStatus": "REQUIRED_ON_DEPLOYED_ERN",
+    "promotion": "BLOCKED_UNTIL_SPECIFIC_REVIEW",
+    "nextAction": "CONFIRM_EXACT_PLAYER_PERMISSION_AND_DEPLOYED_CURRENT_MOVING_SCENE",
+    "networkFamily": "youtube.com",
+    "termsEffectiveAt": null,
+    "termsReviewedAt": "2026-10-29T15:22:34Z",
+    "communityGuidelinesUrl": "https://developers.google.com/youtube/terms/developer-policies",
+    "usageMode": "PROVIDER_BRANDED_PLAYER_ONLY",
+    "embeddingCondition": "STANDARD_EMBED_PLAYER",
+    "playerBrandingRequired": true,
+    "restreamAllowed": false,
+    "permissionConfirmed": false,
+    "researchSources": [
+      "https://brooklynwaterfront.cam/",
+      "https://developers.google.com/youtube/terms/required-minimum-functionality",
+      "https://developers.google.com/youtube/terms/developer-policies"
+    ]
+  },
+  {
+    "id": "youtube-davos-jakobshorn-gueggel-family",
+    "status": "RESEARCH_ONLY",
+    "provider": "Châlet Güggel Davos",
+    "familyLabel": "Davos — Jakobshorn Mountain Panorama exact YouTube player research",
+    "researchUrl": "https://www.chaletgueggel.ch/en/live-webcam",
+    "termsUrl": "https://developers.google.com/youtube/terms/required-minimum-functionality",
+    "verifiedAt": "2026-10-29T15:22:34Z",
+    "permissionEvidence": "The mountain restaurant official live-webcam page directly embeds exact YouTube player sSen5EoOiJs and describes 24-hour live images of Jakobshorn mountain scenery. HTTP200 page and exact embed HTML independently retrieved. Page wording/loading does not prove actual live video. Platform player requirements reviewed; operator-specific permission is still pending and no family-wide grant is inferred.",
+    "permissionStatus": "SPECIFIC_OWNER_PLAYER_RESEARCH_NO_BLANKET_PERMISSION",
+    "technicalStatus": "EXACT_OWNER_EMBED_RESOLVED_PLAYBACK_UNVERIFIED",
+    "humanPlaybackStatus": "REQUIRED_ON_DEPLOYED_ERN",
+    "promotion": "BLOCKED_UNTIL_SPECIFIC_REVIEW",
+    "nextAction": "CONFIRM_EXACT_PLAYER_PERMISSION_AND_DEPLOYED_CURRENT_MOVING_SCENE",
+    "networkFamily": "youtube.com",
+    "termsEffectiveAt": null,
+    "termsReviewedAt": "2026-10-29T15:22:34Z",
+    "communityGuidelinesUrl": "https://developers.google.com/youtube/terms/developer-policies",
+    "usageMode": "PROVIDER_BRANDED_PLAYER_ONLY",
+    "embeddingCondition": "STANDARD_EMBED_PLAYER",
+    "playerBrandingRequired": true,
+    "restreamAllowed": false,
+    "permissionConfirmed": false,
+    "researchSources": [
+      "https://www.chaletgueggel.ch/en/live-webcam",
+      "https://developers.google.com/youtube/terms/required-minimum-functionality",
+      "https://developers.google.com/youtube/terms/developer-policies"
+    ]
   }
 ]

@@ -37,8 +37,8 @@ const insideReview=(reviewQueue.primaryItems||reviewQueue.items||[]).filter(x=>x
 const insideBacklog=(reviewQueue.backlogItems||[]).filter(x=>x.embedUrl);
 const primaryInsideIds=new Set([...insideReview,...insideBacklog].map(x=>String(x.id)));
 const evergreenRenewals=(reviewQueue.renewable||[]).filter(x=>x.embedUrl&&!primaryInsideIds.has(String(x.id)));
-const researchPrimary=researchQueue.primary.map(x=>({...x,title:x.provider+" — "+x.id}));
-const researchAlternates=researchQueue.alternates.map(x=>({...x,title:x.provider+" — "+x.id}));
+const researchPrimary=researchQueue.primary.map(x=>({...x,title:x.title||x.provider+" — "+x.id}));
+const researchAlternates=researchQueue.alternates.map(x=>({...x,title:x.title||x.provider+" — "+x.id}));
 const researchFallbacks=researchAlternates.filter(x=>x.requiredHumanAction!=="WAIT_FOR_TARGET_OR_PROVIDER_CHANGE");
 const researchDeferred=researchAlternates.filter(x=>x.requiredHumanAction==="WAIT_FOR_TARGET_OR_PROVIDER_CHANGE");
 const generatedReview=providerGeneratedTargets.filter(x=>x.integrationKind==="PROVIDER_GENERATED_WIDGET"&&x.exactTargetUrl&&!x.reviewedAt&&!x.reviewOutcome&&x.promotionAllowed===false&&x.catalogMutationAllowed===false&&x.automaticGenerationAllowed===false).map(x=>({
