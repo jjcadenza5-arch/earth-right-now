@@ -3123,6 +3123,50 @@
       "why": "Exact2304x1296 current image visually inspected but heavily obscured/blurred; no useful coast detail. Printed29Oct14:14:58; provider explicitly states fixedNZSTUTC+12, equivalent02:14:58Z. Independent upload02:14:59Z, retrieved02:28:25Z; clock/delay precision unverified. Obscuration cause not diagnosed, not admitted/count increased.",
       "next": "Revisit only materially clearer current imagery; preserve provider fixedNZST and stated15minute refresh/delay caveat. No retry loop or automatic promotion.",
       "reviewedAt": "2026-10-29T02:30:33Z"
+    },
+    {
+      "id": "kariaotahi-source-access-hold-oct29",
+      "priority": "P2",
+      "placeGroup": "Kariaotahi Beach",
+      "country": "New Zealand",
+      "provider": "Surf Life Saving Kariaotahi",
+      "candidateType": "FIRST_PARTY_CURRENT_IMAGE",
+      "visitorDecisionValue": "HIGH",
+      "qualityPotential": "UNKNOWN",
+      "programFit": [
+        "stay",
+        "dining"
+      ],
+      "evidenceUrls": [
+        "https://kariaotahi.org.nz/conditions",
+        "http://www.kariaotahi.mobi/"
+      ],
+      "state": "HOLD_IMAGE_CURRENTNESS_UNVERIFIED",
+      "why": "Club conditions page identifies a public webcam link. Ordinary request to its published HTTP target returned an upstream connection-termination message; no actual current image, timestamp or quality verified. No provider outage inferred.",
+      "next": "Revisit only material public source/access evidence; no bypass, repeated requests or automatic promotion.",
+      "reviewedAt": "2026-10-29T04:02:49Z"
+    },
+    {
+      "id": "peaceful-bay-image-access-hold-oct29",
+      "priority": "P2",
+      "placeGroup": "Peaceful Bay",
+      "country": "Australia",
+      "provider": "Transport WA / Department of Transport and Major Infrastructure",
+      "candidateType": "FIRST_PARTY_CURRENT_IMAGE",
+      "visitorDecisionValue": "HIGH",
+      "qualityPotential": "UNKNOWN",
+      "programFit": [
+        "stay",
+        "dining"
+      ],
+      "evidenceUrls": [
+        "https://www.transport.wa.gov.au/marine/charts-warnings-current-conditions/coast-cams/peaceful-bay",
+        "https://www.transport.wa.gov.au/marine/charts-warnings-current-conditions/coastal-data-charts/disclaimer-copyright"
+      ],
+      "state": "HOLD_IMAGE_CURRENTNESS_UNVERIFIED",
+      "why": "Official page says south-facing camera at Marine Rescue building and one-minute images. Public page-script image-list request returned Unauthorized; no actual image, capture time or visual quality verified. Coastal-data licence reviewed but no admission or media reuse inferred.",
+      "next": "Wait for materially available public imagery; no authentication workaround, bypass or promotion. Camping/fish-and-chips first-party discovery remains unattached to this uncatalogued place.",
+      "reviewedAt": "2026-10-29T04:02:49Z"
     }
   ],
   "guardrails": {

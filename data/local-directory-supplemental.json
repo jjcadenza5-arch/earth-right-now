@@ -13719,5 +13719,45 @@
     "affiliate": false,
     "reviewBasis": "FIRST_PARTY_OPERATOR_PAGE_REVIEW",
     "reviewSourceUrl": "https://www.foxtonwindmill.co.nz/pages/tours-2-0"
+  },
+  {
+    "id": "local-auckland-maritime-museum",
+    "placeId": "auckland-viaduct-harbour",
+    "place": "Viaduct Harbour / Auckland",
+    "country": "New Zealand",
+    "name": "New Zealand Maritime Museum — Viaduct Harbour",
+    "type": "museum",
+    "url": "https://www.maritimemuseum.co.nz/visit",
+    "summary": "Plan a museum visit on Hobson’s Wharf with the official admission, arrival and accessibility information. Auckland-resident admission requires valid proof of address; other ticket conditions apply. Check last entry and Christmas Day closure before travelling. Heritage sailings need separate availability and access checks; museum entry does not guarantee a sailing.",
+    "tags": [
+      "visitor planning",
+      "Auckland waterfront"
+    ],
+    "verifiedAt": "2026-10-29T04:02:49Z",
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_OPERATOR_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.maritimemuseum.co.nz/visit"
+  },
+  {
+    "id": "local-auckland-koel-cafe",
+    "placeId": "auckland-viaduct-harbour",
+    "place": "Viaduct Harbour / Auckland",
+    "country": "New Zealand",
+    "name": "Koel Café — Maritime Museum foyer",
+    "type": "café",
+    "url": "https://www.koel.co.nz/",
+    "summary": "Coffee, tea and cabinet food at the Maritime Museum entrance on Auckland’s Viaduct waterfront. The café operator provides its menu and contact details; the museum identifies the foyer location. Confirm current service hours, available food and dietary needs directly before visiting; a museum or camera listing does not reserve seating.",
+    "tags": [
+      "visitor planning",
+      "Auckland waterfront"
+    ],
+    "verifiedAt": "2026-10-29T04:02:49Z",
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_OPERATOR_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.koel.co.nz/"
   }
 ]
