@@ -1,0 +1,608 @@
+{
+  "schemaVersion": 1,
+  "validatedAt": "2026-10-29T01:02:02.929Z",
+  "expectedDeployedReview": {
+    "schemaVersion": 1,
+    "reviewBatch": "6ac71a4d3a91dc70",
+    "generatedAt": "2026-10-28T15:23:43.236Z",
+    "primaryInside": [
+      "rovaniemi-santa-claus-village-live",
+      "taitung-jinzun",
+      "auckland-viaduct-harbour",
+      "kyoto-kifune-shrine-live",
+      "kyoto-fushimi-inari-live"
+    ],
+    "renewableInside": [],
+    "backlogInside": [
+      "volcan-tajogaite",
+      "taiwan-yehliu-live",
+      "verbier",
+      "kyoto-kiyomizuzaka-live",
+      "kyoto-hanamikoji-live",
+      "takayama-miyagawa-stream",
+      "kyoto-nishiki-market-live"
+    ],
+    "researchPrimary": [],
+    "researchFallbacks": [],
+    "generatedReview": []
+  },
+  "packetValidation": {
+    "ok": true,
+    "summary": {
+      "accepted": 5,
+      "rejected": 0,
+      "confirmed": 5,
+      "failed": 0,
+      "inconclusive": 0
+    },
+    "rejected": []
+  },
+  "availability": {
+    "results": [
+      {
+        "id": "auckland-viaduct-harbour",
+        "outcome": "PAGE_REACHABLE",
+        "url": "https://www.viaduct.co.nz/",
+        "httpStatus": 200,
+        "exitCode": 0,
+        "observedAt": "2026-10-29T01:01:20.463999Z"
+      },
+      {
+        "id": "kyoto-fushimi-inari-live",
+        "outcome": "PAGE_REACHABLE",
+        "url": "https://global.kyoto.travel/en/comfort/",
+        "httpStatus": 200,
+        "exitCode": 0,
+        "observedAt": "2026-10-29T01:01:20.791808Z"
+      },
+      {
+        "id": "kyoto-kifune-shrine-live",
+        "outcome": "PAGE_REACHABLE",
+        "url": "https://global.kyoto.travel/en/comfort/",
+        "httpStatus": 200,
+        "exitCode": 0,
+        "observedAt": "2026-10-29T01:01:20.791808Z"
+      },
+      {
+        "id": "rovaniemi-santa-claus-village-live",
+        "outcome": "PAGE_REACHABLE",
+        "url": "https://santaclausvillage.info/live-video-webcam/",
+        "httpStatus": 200,
+        "exitCode": 0,
+        "observedAt": "2026-10-29T01:01:22.071914Z"
+      },
+      {
+        "id": "taitung-jinzun",
+        "outcome": "PAGE_REACHABLE",
+        "url": "https://www.eastcoast-nsa.gov.tw/en/service/live-camera/22/",
+        "httpStatus": 200,
+        "exitCode": 0,
+        "observedAt": "2026-10-29T01:01:25.548990Z"
+      }
+    ]
+  },
+  "proposals": {
+    "schemaVersion": 1,
+    "generatedAt": "2026-10-29T01:02:02.945Z",
+    "validation": {
+      "ok": true,
+      "summary": {
+        "accepted": 5,
+        "rejected": 0,
+        "confirmed": 5,
+        "failed": 0,
+        "inconclusive": 0
+      },
+      "rejected": []
+    },
+    "catalogMutationAllowed": false,
+    "automaticHealthChangeAllowed": false,
+    "automaticPermissionApprovalAllowed": false,
+    "playbackProofUpdateAtomicityRequired": true,
+    "sourceProposals": [
+      {
+        "id": "auckland-viaduct-harbour",
+        "outcome": "HUMAN_PLAYBACK_CONFIRMED",
+        "status": "READY_FOR_PROVIDER_OBSERVATION_PROPOSAL",
+        "reviewObservedAt": "2026-10-29T00:59:34.747Z",
+        "availabilityObservedAt": "2026-10-29T01:01:20.463999Z",
+        "separationHours": 0.03,
+        "availabilityOutcome": "PAGE_REACHABLE",
+        "proposedObservation": {
+          "id": "auckland-viaduct-harbour",
+          "httpStatus": 200,
+          "confirmation": "HUMAN_PLAYBACK",
+          "observedAt": "2026-10-29T00:59:34.747Z",
+          "reason": "Human playback confirmed in deployed ERN review lab; independent provider-page availability evidence was also current."
+        },
+        "proposedCatalogPlaybackMarker": {
+          "id": "auckland-viaduct-harbour",
+          "playbackVerifiedAt": "2026-10-29T00:59:34.747Z"
+        },
+        "atomicProofUpdateRequired": true,
+        "automaticWriteAllowed": false
+      },
+      {
+        "id": "kyoto-fushimi-inari-live",
+        "outcome": "HUMAN_PLAYBACK_CONFIRMED",
+        "status": "READY_FOR_PROVIDER_OBSERVATION_PROPOSAL",
+        "reviewObservedAt": "2026-10-29T00:59:42.530Z",
+        "availabilityObservedAt": "2026-10-29T01:01:20.791808Z",
+        "separationHours": 0.03,
+        "availabilityOutcome": "PAGE_REACHABLE",
+        "proposedObservation": {
+          "id": "kyoto-fushimi-inari-live",
+          "httpStatus": 200,
+          "confirmation": "HUMAN_PLAYBACK",
+          "observedAt": "2026-10-29T00:59:42.530Z",
+          "reason": "Human playback confirmed in deployed ERN review lab; independent provider-page availability evidence was also current."
+        },
+        "proposedCatalogPlaybackMarker": {
+          "id": "kyoto-fushimi-inari-live",
+          "playbackVerifiedAt": "2026-10-29T00:59:42.530Z"
+        },
+        "atomicProofUpdateRequired": true,
+        "automaticWriteAllowed": false
+      },
+      {
+        "id": "kyoto-kifune-shrine-live",
+        "outcome": "HUMAN_PLAYBACK_CONFIRMED",
+        "status": "READY_FOR_PROVIDER_OBSERVATION_PROPOSAL",
+        "reviewObservedAt": "2026-10-29T00:59:39.331Z",
+        "availabilityObservedAt": "2026-10-29T01:01:20.791808Z",
+        "separationHours": 0.03,
+        "availabilityOutcome": "PAGE_REACHABLE",
+        "proposedObservation": {
+          "id": "kyoto-kifune-shrine-live",
+          "httpStatus": 200,
+          "confirmation": "HUMAN_PLAYBACK",
+          "observedAt": "2026-10-29T00:59:39.331Z",
+          "reason": "Human playback confirmed in deployed ERN review lab; independent provider-page availability evidence was also current."
+        },
+        "proposedCatalogPlaybackMarker": {
+          "id": "kyoto-kifune-shrine-live",
+          "playbackVerifiedAt": "2026-10-29T00:59:39.331Z"
+        },
+        "atomicProofUpdateRequired": true,
+        "automaticWriteAllowed": false
+      },
+      {
+        "id": "rovaniemi-santa-claus-village-live",
+        "outcome": "HUMAN_PLAYBACK_CONFIRMED",
+        "status": "READY_FOR_PROVIDER_OBSERVATION_PROPOSAL",
+        "reviewObservedAt": "2026-10-29T00:59:26.914Z",
+        "availabilityObservedAt": "2026-10-29T01:01:22.071914Z",
+        "separationHours": 0.03,
+        "availabilityOutcome": "PAGE_REACHABLE",
+        "proposedObservation": {
+          "id": "rovaniemi-santa-claus-village-live",
+          "httpStatus": 200,
+          "confirmation": "HUMAN_PLAYBACK",
+          "observedAt": "2026-10-29T00:59:26.914Z",
+          "reason": "Human playback confirmed in deployed ERN review lab; independent provider-page availability evidence was also current."
+        },
+        "proposedCatalogPlaybackMarker": {
+          "id": "rovaniemi-santa-claus-village-live",
+          "playbackVerifiedAt": "2026-10-29T00:59:26.914Z"
+        },
+        "atomicProofUpdateRequired": true,
+        "automaticWriteAllowed": false
+      },
+      {
+        "id": "taitung-jinzun",
+        "outcome": "HUMAN_PLAYBACK_CONFIRMED",
+        "status": "READY_FOR_PROVIDER_OBSERVATION_PROPOSAL",
+        "reviewObservedAt": "2026-10-29T00:59:30.214Z",
+        "availabilityObservedAt": "2026-10-29T01:01:25.548990Z",
+        "separationHours": 0.03,
+        "availabilityOutcome": "PAGE_REACHABLE",
+        "proposedObservation": {
+          "id": "taitung-jinzun",
+          "httpStatus": 200,
+          "confirmation": "HUMAN_PLAYBACK",
+          "observedAt": "2026-10-29T00:59:30.214Z",
+          "reason": "Human playback confirmed in deployed ERN review lab; independent provider-page availability evidence was also current."
+        },
+        "proposedCatalogPlaybackMarker": {
+          "id": "taitung-jinzun",
+          "playbackVerifiedAt": "2026-10-29T00:59:30.214Z"
+        },
+        "atomicProofUpdateRequired": true,
+        "automaticWriteAllowed": false
+      }
+    ],
+    "researchProposals": [],
+    "generatedProposals": [],
+    "summary": {
+      "sourceReady": 5,
+      "sourceNeedsAvailability": 0,
+      "sourceFailureReview": 0,
+      "sourceTargetChanged": 0,
+      "researchReadyForReview": 0,
+      "researchNeedsPreflight": 0,
+      "researchTargetChanged": 0,
+      "generatedReadyToRecord": 0,
+      "generatedTargetChanged": 0
+    },
+    "note": "Proposal layer only. When current target records are supplied, reviewed source/embed URLs must still match before evidence can progress. Confirmed playback proposals remain manual and atomic."
+  },
+  "manualApplicationPlan": {
+    "schemaVersion": 1,
+    "generatedAt": "2026-10-29T01:02:02.945Z",
+    "total": 5,
+    "ready": 5,
+    "blocked": 0,
+    "items": [
+      {
+        "id": "auckland-viaduct-harbour",
+        "ready": true,
+        "reasons": [],
+        "expectedCurrent": {
+          "playbackVerifiedAt": "2026-10-28T00:06:15.530Z",
+          "latestObservationObservedAt": "2026-10-28T00:06:15.530Z",
+          "latestObservationKind": "HUMAN_PLAYBACK"
+        },
+        "proposedAtomicUpdate": {
+          "catalog": {
+            "id": "auckland-viaduct-harbour",
+            "playbackVerifiedAt": "2026-10-29T00:59:34.747Z"
+          },
+          "observation": {
+            "id": "auckland-viaduct-harbour",
+            "httpStatus": 200,
+            "confirmation": "HUMAN_PLAYBACK",
+            "observedAt": "2026-10-29T00:59:34.747Z",
+            "reason": "Human playback confirmed in deployed ERN review lab; independent provider-page availability evidence was also current."
+          }
+        },
+        "preconditions": {
+          "playback": "EMBED",
+          "permission": "EMBED_ALLOWED",
+          "health": "HEALTHY",
+          "expectedPlaybackVerifiedAt": "2026-10-28T00:06:15.530Z",
+          "expectedLatestObservationObservedAt": "2026-10-28T00:06:15.530Z"
+        },
+        "automaticWriteAllowed": false
+      },
+      {
+        "id": "kyoto-fushimi-inari-live",
+        "ready": true,
+        "reasons": [],
+        "expectedCurrent": {
+          "playbackVerifiedAt": "2026-10-28T00:06:32.093Z",
+          "latestObservationObservedAt": "2026-10-28T00:06:32.093Z",
+          "latestObservationKind": "HUMAN_PLAYBACK"
+        },
+        "proposedAtomicUpdate": {
+          "catalog": {
+            "id": "kyoto-fushimi-inari-live",
+            "playbackVerifiedAt": "2026-10-29T00:59:42.530Z"
+          },
+          "observation": {
+            "id": "kyoto-fushimi-inari-live",
+            "httpStatus": 200,
+            "confirmation": "HUMAN_PLAYBACK",
+            "observedAt": "2026-10-29T00:59:42.530Z",
+            "reason": "Human playback confirmed in deployed ERN review lab; independent provider-page availability evidence was also current."
+          }
+        },
+        "preconditions": {
+          "playback": "EMBED",
+          "permission": "EMBED_ALLOWED",
+          "health": "HEALTHY",
+          "expectedPlaybackVerifiedAt": "2026-10-28T00:06:32.093Z",
+          "expectedLatestObservationObservedAt": "2026-10-28T00:06:32.093Z"
+        },
+        "automaticWriteAllowed": false
+      },
+      {
+        "id": "kyoto-kifune-shrine-live",
+        "ready": true,
+        "reasons": [],
+        "expectedCurrent": {
+          "playbackVerifiedAt": "2026-10-28T00:06:24.193Z",
+          "latestObservationObservedAt": "2026-10-28T00:06:24.193Z",
+          "latestObservationKind": "HUMAN_PLAYBACK"
+        },
+        "proposedAtomicUpdate": {
+          "catalog": {
+            "id": "kyoto-kifune-shrine-live",
+            "playbackVerifiedAt": "2026-10-29T00:59:39.331Z"
+          },
+          "observation": {
+            "id": "kyoto-kifune-shrine-live",
+            "httpStatus": 200,
+            "confirmation": "HUMAN_PLAYBACK",
+            "observedAt": "2026-10-29T00:59:39.331Z",
+            "reason": "Human playback confirmed in deployed ERN review lab; independent provider-page availability evidence was also current."
+          }
+        },
+        "preconditions": {
+          "playback": "EMBED",
+          "permission": "EMBED_ALLOWED",
+          "health": "HEALTHY",
+          "expectedPlaybackVerifiedAt": "2026-10-28T00:06:24.193Z",
+          "expectedLatestObservationObservedAt": "2026-10-28T00:06:24.193Z"
+        },
+        "automaticWriteAllowed": false
+      },
+      {
+        "id": "rovaniemi-santa-claus-village-live",
+        "ready": true,
+        "reasons": [],
+        "expectedCurrent": {
+          "playbackVerifiedAt": "2026-10-28T00:06:03.264Z",
+          "latestObservationObservedAt": "2026-10-28T00:06:03.264Z",
+          "latestObservationKind": "HUMAN_PLAYBACK"
+        },
+        "proposedAtomicUpdate": {
+          "catalog": {
+            "id": "rovaniemi-santa-claus-village-live",
+            "playbackVerifiedAt": "2026-10-29T00:59:26.914Z"
+          },
+          "observation": {
+            "id": "rovaniemi-santa-claus-village-live",
+            "httpStatus": 200,
+            "confirmation": "HUMAN_PLAYBACK",
+            "observedAt": "2026-10-29T00:59:26.914Z",
+            "reason": "Human playback confirmed in deployed ERN review lab; independent provider-page availability evidence was also current."
+          }
+        },
+        "preconditions": {
+          "playback": "EMBED",
+          "permission": "EMBED_ALLOWED",
+          "health": "HEALTHY",
+          "expectedPlaybackVerifiedAt": "2026-10-28T00:06:03.264Z",
+          "expectedLatestObservationObservedAt": "2026-10-28T00:06:03.264Z"
+        },
+        "automaticWriteAllowed": false
+      },
+      {
+        "id": "taitung-jinzun",
+        "ready": true,
+        "reasons": [],
+        "expectedCurrent": {
+          "playbackVerifiedAt": "2026-10-28T00:06:09.694Z",
+          "latestObservationObservedAt": "2026-10-28T00:06:09.694Z",
+          "latestObservationKind": "HUMAN_PLAYBACK"
+        },
+        "proposedAtomicUpdate": {
+          "catalog": {
+            "id": "taitung-jinzun",
+            "playbackVerifiedAt": "2026-10-29T00:59:30.214Z"
+          },
+          "observation": {
+            "id": "taitung-jinzun",
+            "httpStatus": 200,
+            "confirmation": "HUMAN_PLAYBACK",
+            "observedAt": "2026-10-29T00:59:30.214Z",
+            "reason": "Human playback confirmed in deployed ERN review lab; independent provider-page availability evidence was also current."
+          }
+        },
+        "preconditions": {
+          "playback": "EMBED",
+          "permission": "EMBED_ALLOWED",
+          "health": "HEALTHY",
+          "expectedPlaybackVerifiedAt": "2026-10-28T00:06:09.694Z",
+          "expectedLatestObservationObservedAt": "2026-10-28T00:06:09.694Z"
+        },
+        "automaticWriteAllowed": false
+      }
+    ],
+    "safety": {
+      "automaticWriteAllowed": false,
+      "partialProofUpdateAllowed": false,
+      "staleOverwriteAllowed": false,
+      "sourceTruthMutationBeyondPlaybackMarkerAllowed": false
+    },
+    "note": "Manual application plan only. Apply catalog marker + HUMAN_PLAYBACK observation together after re-checking preconditions against current main; never apply one side alone or overwrite newer evidence."
+  },
+  "consistency": {
+    "baselineIssues": [
+      {
+        "id": "verbier",
+        "code": "PLAYBACK_EVIDENCE_TIMESTAMP_MISMATCH",
+        "playbackVerifiedAt": "2026-10-10T04:01:03.725Z",
+        "observedAt": "2026-10-05T02:11:49.173Z",
+        "separationMinutes": 7309.2
+      },
+      {
+        "id": "takayama-miyagawa-stream",
+        "code": "PLAYBACK_EVIDENCE_TIMESTAMP_MISMATCH",
+        "playbackVerifiedAt": "2026-10-07T11:20:00.000Z",
+        "observedAt": "2026-09-30T00:01:33.752Z",
+        "separationMinutes": 10758.4
+      },
+      {
+        "id": "volcan-tajogaite",
+        "code": "PLAYBACK_EVIDENCE_TIMESTAMP_MISMATCH",
+        "playbackVerifiedAt": "2026-10-15T00:53:27.000Z",
+        "observedAt": "2026-09-30T00:01:39.808Z",
+        "separationMinutes": 21651.8
+      },
+      {
+        "id": "la-palma-aridane-valley",
+        "code": "PLAYBACK_EVIDENCE_TIMESTAMP_MISMATCH",
+        "playbackVerifiedAt": "2026-10-15T16:25:11.000Z",
+        "observedAt": "2026-09-30T00:01:25.646Z",
+        "separationMinutes": 22583.8
+      },
+      {
+        "id": "la-palma-caldera-taburiente",
+        "code": "PLAYBACK_EVIDENCE_TIMESTAMP_MISMATCH",
+        "playbackVerifiedAt": "2026-10-15T00:53:26.000Z",
+        "observedAt": "2026-10-05T02:11:54.841Z",
+        "separationMinutes": 14321.5
+      },
+      {
+        "id": "kyoto-kiyomizuzaka-live",
+        "code": "PLAYBACK_EVIDENCE_TIMESTAMP_MISMATCH",
+        "playbackVerifiedAt": "2026-10-10T03:02:23.992Z",
+        "observedAt": "2026-10-02T00:45:00.000Z",
+        "separationMinutes": 11657.4
+      },
+      {
+        "id": "kyoto-hanamikoji-live",
+        "code": "PLAYBACK_EVIDENCE_TIMESTAMP_MISMATCH",
+        "playbackVerifiedAt": "2026-10-10T03:02:19.141Z",
+        "observedAt": "2026-10-02T00:45:00.000Z",
+        "separationMinutes": 11657.3
+      },
+      {
+        "id": "kyoto-nishiki-market-live",
+        "code": "PLAYBACK_EVIDENCE_TIMESTAMP_MISMATCH",
+        "playbackVerifiedAt": "2026-10-10T04:00:58.428Z",
+        "observedAt": "2026-10-05T02:11:32.473Z",
+        "separationMinutes": 7309.4
+      },
+      {
+        "id": "taiwan-yehliu-live",
+        "code": "CATALOG_MARKER_WITHOUT_HUMAN_OBSERVATION",
+        "playbackVerifiedAt": "2026-10-10T04:01:09.259Z",
+        "observationKind": null
+      },
+      {
+        "id": "taiwan-heping-island-live",
+        "code": "CATALOG_MARKER_WITHOUT_HUMAN_OBSERVATION",
+        "playbackVerifiedAt": "2026-10-05T10:40:42.619Z",
+        "observationKind": null
+      },
+      {
+        "id": "guernsey-harbour-live",
+        "code": "UNKNOWN_SOURCE_OBSERVATION",
+        "observedAt": "2026-10-06T02:50:00.000Z"
+      },
+      {
+        "id": "guernsey-havelet-bay-live",
+        "code": "UNKNOWN_SOURCE_OBSERVATION",
+        "observedAt": "2026-10-06T02:50:00.000Z"
+      },
+      {
+        "id": "brazil-aguas-lindoia-live",
+        "code": "UNKNOWN_SOURCE_OBSERVATION",
+        "observedAt": "2026-10-06T04:45:00.000Z"
+      },
+      {
+        "id": "brazil-aguas-lindoia-live",
+        "code": "UNKNOWN_SOURCE_OBSERVATION",
+        "observedAt": "2026-10-06T05:45:00.000Z"
+      },
+      {
+        "id": "guernsey-harbour-live",
+        "code": "UNKNOWN_SOURCE_OBSERVATION",
+        "observedAt": "2026-10-06T05:45:00.000Z"
+      },
+      {
+        "id": "guernsey-havelet-bay-live",
+        "code": "UNKNOWN_SOURCE_OBSERVATION",
+        "observedAt": "2026-10-06T05:45:00.000Z"
+      }
+    ],
+    "afterIssues": [
+      {
+        "id": "verbier",
+        "code": "PLAYBACK_EVIDENCE_TIMESTAMP_MISMATCH",
+        "playbackVerifiedAt": "2026-10-10T04:01:03.725Z",
+        "observedAt": "2026-10-05T02:11:49.173Z",
+        "separationMinutes": 7309.2
+      },
+      {
+        "id": "takayama-miyagawa-stream",
+        "code": "PLAYBACK_EVIDENCE_TIMESTAMP_MISMATCH",
+        "playbackVerifiedAt": "2026-10-07T11:20:00.000Z",
+        "observedAt": "2026-09-30T00:01:33.752Z",
+        "separationMinutes": 10758.4
+      },
+      {
+        "id": "volcan-tajogaite",
+        "code": "PLAYBACK_EVIDENCE_TIMESTAMP_MISMATCH",
+        "playbackVerifiedAt": "2026-10-15T00:53:27.000Z",
+        "observedAt": "2026-09-30T00:01:39.808Z",
+        "separationMinutes": 21651.8
+      },
+      {
+        "id": "la-palma-aridane-valley",
+        "code": "PLAYBACK_EVIDENCE_TIMESTAMP_MISMATCH",
+        "playbackVerifiedAt": "2026-10-15T16:25:11.000Z",
+        "observedAt": "2026-09-30T00:01:25.646Z",
+        "separationMinutes": 22583.8
+      },
+      {
+        "id": "la-palma-caldera-taburiente",
+        "code": "PLAYBACK_EVIDENCE_TIMESTAMP_MISMATCH",
+        "playbackVerifiedAt": "2026-10-15T00:53:26.000Z",
+        "observedAt": "2026-10-05T02:11:54.841Z",
+        "separationMinutes": 14321.5
+      },
+      {
+        "id": "kyoto-kiyomizuzaka-live",
+        "code": "PLAYBACK_EVIDENCE_TIMESTAMP_MISMATCH",
+        "playbackVerifiedAt": "2026-10-10T03:02:23.992Z",
+        "observedAt": "2026-10-02T00:45:00.000Z",
+        "separationMinutes": 11657.4
+      },
+      {
+        "id": "kyoto-hanamikoji-live",
+        "code": "PLAYBACK_EVIDENCE_TIMESTAMP_MISMATCH",
+        "playbackVerifiedAt": "2026-10-10T03:02:19.141Z",
+        "observedAt": "2026-10-02T00:45:00.000Z",
+        "separationMinutes": 11657.3
+      },
+      {
+        "id": "kyoto-nishiki-market-live",
+        "code": "PLAYBACK_EVIDENCE_TIMESTAMP_MISMATCH",
+        "playbackVerifiedAt": "2026-10-10T04:00:58.428Z",
+        "observedAt": "2026-10-05T02:11:32.473Z",
+        "separationMinutes": 7309.4
+      },
+      {
+        "id": "taiwan-yehliu-live",
+        "code": "CATALOG_MARKER_WITHOUT_HUMAN_OBSERVATION",
+        "playbackVerifiedAt": "2026-10-10T04:01:09.259Z",
+        "observationKind": null
+      },
+      {
+        "id": "taiwan-heping-island-live",
+        "code": "CATALOG_MARKER_WITHOUT_HUMAN_OBSERVATION",
+        "playbackVerifiedAt": "2026-10-05T10:40:42.619Z",
+        "observationKind": null
+      },
+      {
+        "id": "guernsey-harbour-live",
+        "code": "UNKNOWN_SOURCE_OBSERVATION",
+        "observedAt": "2026-10-06T02:50:00.000Z"
+      },
+      {
+        "id": "guernsey-havelet-bay-live",
+        "code": "UNKNOWN_SOURCE_OBSERVATION",
+        "observedAt": "2026-10-06T02:50:00.000Z"
+      },
+      {
+        "id": "brazil-aguas-lindoia-live",
+        "code": "UNKNOWN_SOURCE_OBSERVATION",
+        "observedAt": "2026-10-06T04:45:00.000Z"
+      },
+      {
+        "id": "brazil-aguas-lindoia-live",
+        "code": "UNKNOWN_SOURCE_OBSERVATION",
+        "observedAt": "2026-10-06T05:45:00.000Z"
+      },
+      {
+        "id": "guernsey-harbour-live",
+        "code": "UNKNOWN_SOURCE_OBSERVATION",
+        "observedAt": "2026-10-06T05:45:00.000Z"
+      },
+      {
+        "id": "guernsey-havelet-bay-live",
+        "code": "UNKNOWN_SOURCE_OBSERVATION",
+        "observedAt": "2026-10-06T05:45:00.000Z"
+      }
+    ],
+    "unchanged": true
+  },
+  "recovery": {
+    "ready": 5,
+    "shortfall": 0
+  },
+  "scope": "Owner-authorized manual atomic renewal; no health, permission, truth or runtime changes. Owner network UNKNOWN retained."
+}
