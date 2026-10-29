@@ -1,0 +1,1120 @@
+{
+  "validatedAt": "2026-10-29T16:14:08.856Z",
+  "deployedReviewBatch": "6e2c74df0bcac1be",
+  "validation": {
+    "ok": true,
+    "accepted": [
+      {
+        "id": "auckland-viaduct-harbour",
+        "type": "restore",
+        "outcome": "HUMAN_PLAYBACK_CONFIRMED",
+        "observedAt": "2026-10-29T16:09:01.659Z",
+        "title": "Auckland Viaduct Harbour",
+        "provider": "Auckland Viaduct View",
+        "sourceUrl": "https://www.viaduct.co.nz/",
+        "embedUrl": "https://www.youtube.com/embed/live_stream?channel=UCfNoVlW5-BHsoCKTGs_F0WQ",
+        "evidenceKind": "HUMAN_REVIEW",
+        "networkStatus": "UNKNOWN_NOT_RECORDED"
+      },
+      {
+        "id": "kyoto-fushimi-inari-live",
+        "type": "restore",
+        "outcome": "HUMAN_PLAYBACK_CONFIRMED",
+        "observedAt": "2026-10-29T16:09:11.015Z",
+        "title": "Kyoto — Fushimi Inari",
+        "provider": "Kyoto City Tourism Association",
+        "sourceUrl": "https://global.kyoto.travel/en/comfort/",
+        "embedUrl": "https://www.youtube-nocookie.com/embed/MMeBDRfRHyA",
+        "evidenceKind": "HUMAN_REVIEW",
+        "networkStatus": "UNKNOWN_NOT_RECORDED"
+      },
+      {
+        "id": "kyoto-hanamikoji-live",
+        "type": "restore",
+        "outcome": "HUMAN_PLAYBACK_CONFIRMED",
+        "observedAt": "2026-10-29T16:09:18.977Z",
+        "title": "Kyoto — Hanamikoji Street",
+        "provider": "Kyoto City Tourism Association",
+        "sourceUrl": "https://global.kyoto.travel/en/comfort/",
+        "embedUrl": "https://www.youtube-nocookie.com/embed/J3xHBUgWRqc",
+        "evidenceKind": "HUMAN_REVIEW",
+        "networkStatus": "UNKNOWN_NOT_RECORDED"
+      },
+      {
+        "id": "kyoto-kifune-shrine-live",
+        "type": "restore",
+        "outcome": "HUMAN_PLAYBACK_CONFIRMED",
+        "observedAt": "2026-10-29T16:09:06.894Z",
+        "title": "Kyoto — Kifune Shrine",
+        "provider": "Kyoto City Tourism Association",
+        "sourceUrl": "https://global.kyoto.travel/en/comfort/",
+        "embedUrl": "https://www.youtube-nocookie.com/embed/eJAqPCdS1cY",
+        "evidenceKind": "HUMAN_REVIEW",
+        "networkStatus": "UNKNOWN_NOT_RECORDED"
+      },
+      {
+        "id": "kyoto-kiyomizuzaka-live",
+        "type": "restore",
+        "outcome": "HUMAN_PLAYBACK_CONFIRMED",
+        "observedAt": "2026-10-29T16:09:22.826Z",
+        "title": "Kyoto — Kiyomizu-zaka",
+        "provider": "Kyoto City Tourism Association",
+        "sourceUrl": "https://global.kyoto.travel/en/comfort/",
+        "embedUrl": "https://www.youtube-nocookie.com/embed/cUnYPpK7ENk",
+        "evidenceKind": "HUMAN_REVIEW",
+        "networkStatus": "UNKNOWN_NOT_RECORDED"
+      },
+      {
+        "id": "kyoto-nishiki-market-live",
+        "type": "backlog",
+        "outcome": "HUMAN_PLAYBACK_CONFIRMED",
+        "observedAt": "2026-10-29T16:09:48.576Z",
+        "title": "Kyoto — Nishiki Market",
+        "provider": "Kyoto City Tourism Association",
+        "sourceUrl": "https://global.kyoto.travel/en/comfort/",
+        "embedUrl": "https://www.youtube-nocookie.com/embed/qZ2ghbe3zc0",
+        "evidenceKind": "HUMAN_REVIEW",
+        "networkStatus": "UNKNOWN_NOT_RECORDED"
+      },
+      {
+        "id": "rovaniemi-santa-claus-village-live",
+        "type": "restore",
+        "outcome": "HUMAN_PLAYBACK_CONFIRMED",
+        "observedAt": "2026-10-29T16:08:53.243Z",
+        "title": "Rovaniemi — Santa Claus Village",
+        "provider": "Santa Claus Village / City of Rovaniemi",
+        "sourceUrl": "https://santaclausvillage.info/live-video-webcam/",
+        "embedUrl": "https://www.youtube-nocookie.com/embed/Cp4RRAEgpeU",
+        "evidenceKind": "HUMAN_REVIEW",
+        "networkStatus": "UNKNOWN_NOT_RECORDED"
+      },
+      {
+        "id": "taitung-jinzun",
+        "type": "restore",
+        "outcome": "HUMAN_PLAYBACK_CONFIRMED",
+        "observedAt": "2026-10-29T16:08:56.777Z",
+        "title": "Taitung Jinzun — Pacific Coast",
+        "provider": "East Coast National Scenic Area",
+        "sourceUrl": "https://www.eastcoast-nsa.gov.tw/en/service/live-camera/22/",
+        "embedUrl": "https://www.youtube-nocookie.com/embed/ZdqHgQwvZOw",
+        "evidenceKind": "HUMAN_REVIEW",
+        "networkStatus": "UNKNOWN_NOT_RECORDED"
+      },
+      {
+        "id": "taiwan-yehliu-live",
+        "type": "backlog",
+        "outcome": "HUMAN_PLAYBACK_CONFIRMED",
+        "observedAt": "2026-10-29T16:09:35.727Z",
+        "title": "Yehliu Geopark — Taiwan North Coast",
+        "provider": "Taiwan Tourism Administration",
+        "sourceUrl": "https://www.northguan-nsa.gov.tw/user/article.aspx?Lang=2&SNo=04007411",
+        "embedUrl": "https://www.youtube-nocookie.com/embed/ZjuY4qKaj40",
+        "evidenceKind": "HUMAN_REVIEW",
+        "networkStatus": "UNKNOWN_NOT_RECORDED"
+      },
+      {
+        "id": "takayama-miyagawa-stream",
+        "type": "backlog",
+        "outcome": "HUMAN_PLAYBACK_CONFIRMED",
+        "observedAt": "2026-10-29T16:09:44.877Z",
+        "title": "Takayama — Miyagawa & Kaji Bridge",
+        "provider": "Hida-Takayama Live Camera",
+        "sourceUrl": "https://takayama-live.com/streaming",
+        "embedUrl": "https://www.youtube.com/embed/live_stream?channel=UC5MNHWRJRJ1buoVIg2sHmCw",
+        "evidenceKind": "HUMAN_REVIEW",
+        "networkStatus": "UNKNOWN_NOT_RECORDED"
+      },
+      {
+        "id": "verbier",
+        "type": "backlog",
+        "outcome": "HUMAN_PLAYBACK_CONFIRMED",
+        "observedAt": "2026-10-29T16:09:40.126Z",
+        "title": "Verbier",
+        "provider": "Verbier – Val de Bagnes Tourism",
+        "sourceUrl": "https://www.verbier.ch/en/practice/live/webcams/",
+        "embedUrl": "https://www.youtube-nocookie.com/embed/9ljoXhTxjag",
+        "evidenceKind": "HUMAN_REVIEW",
+        "networkStatus": "UNKNOWN_NOT_RECORDED"
+      },
+      {
+        "id": "volcan-tajogaite",
+        "type": "backlog",
+        "outcome": "HUMAN_PLAYBACK_CONFIRMED",
+        "observedAt": "2026-10-29T16:09:31.510Z",
+        "title": "Volcán Tajogaite",
+        "provider": "Webcam La Palma",
+        "sourceUrl": "https://webcam-lapalma.de/webcam-vulkan-la-palma/",
+        "embedUrl": "https://webcam-lapalma.de/embed/vulkan/",
+        "evidenceKind": "HUMAN_REVIEW",
+        "networkStatus": "UNKNOWN_NOT_RECORDED"
+      },
+      {
+        "id": "youtube-davos-jakobshorn-gueggel",
+        "type": "research",
+        "outcome": "HUMAN_PLAYBACK_CONFIRMED",
+        "observedAt": "2026-10-29T16:10:05.294Z",
+        "title": "Davos — Jakobshorn Mountain Panorama",
+        "provider": "Châlet Güggel Davos",
+        "sourceUrl": "https://www.chaletgueggel.ch/en/live-webcam",
+        "embedUrl": "https://www.youtube-nocookie.com/embed/sSen5EoOiJs",
+        "evidenceKind": "HUMAN_REVIEW",
+        "networkStatus": "UNKNOWN_NOT_RECORDED"
+      },
+      {
+        "id": "youtube-nyc-brooklyn-skyline",
+        "type": "research",
+        "outcome": "HUMAN_PLAYBACK_CONFIRMED",
+        "observedAt": "2026-10-29T16:09:59.743Z",
+        "title": "New York — Manhattan Skyline from Brooklyn",
+        "provider": "Brooklyn Waterfront Cams",
+        "sourceUrl": "https://brooklynwaterfront.cam/",
+        "embedUrl": "https://www.youtube-nocookie.com/embed/obqnslJKrxc",
+        "evidenceKind": "HUMAN_REVIEW",
+        "networkStatus": "UNKNOWN_NOT_RECORDED"
+      }
+    ],
+    "rejected": [],
+    "sourceEvidence": [
+      {
+        "id": "auckland-viaduct-harbour",
+        "type": "restore",
+        "outcome": "HUMAN_PLAYBACK_CONFIRMED",
+        "observedAt": "2026-10-29T16:09:01.659Z",
+        "title": "Auckland Viaduct Harbour",
+        "provider": "Auckland Viaduct View",
+        "sourceUrl": "https://www.viaduct.co.nz/",
+        "embedUrl": "https://www.youtube.com/embed/live_stream?channel=UCfNoVlW5-BHsoCKTGs_F0WQ",
+        "evidenceKind": "HUMAN_REVIEW",
+        "networkStatus": "UNKNOWN_NOT_RECORDED"
+      },
+      {
+        "id": "kyoto-fushimi-inari-live",
+        "type": "restore",
+        "outcome": "HUMAN_PLAYBACK_CONFIRMED",
+        "observedAt": "2026-10-29T16:09:11.015Z",
+        "title": "Kyoto — Fushimi Inari",
+        "provider": "Kyoto City Tourism Association",
+        "sourceUrl": "https://global.kyoto.travel/en/comfort/",
+        "embedUrl": "https://www.youtube-nocookie.com/embed/MMeBDRfRHyA",
+        "evidenceKind": "HUMAN_REVIEW",
+        "networkStatus": "UNKNOWN_NOT_RECORDED"
+      },
+      {
+        "id": "kyoto-hanamikoji-live",
+        "type": "restore",
+        "outcome": "HUMAN_PLAYBACK_CONFIRMED",
+        "observedAt": "2026-10-29T16:09:18.977Z",
+        "title": "Kyoto — Hanamikoji Street",
+        "provider": "Kyoto City Tourism Association",
+        "sourceUrl": "https://global.kyoto.travel/en/comfort/",
+        "embedUrl": "https://www.youtube-nocookie.com/embed/J3xHBUgWRqc",
+        "evidenceKind": "HUMAN_REVIEW",
+        "networkStatus": "UNKNOWN_NOT_RECORDED"
+      },
+      {
+        "id": "kyoto-kifune-shrine-live",
+        "type": "restore",
+        "outcome": "HUMAN_PLAYBACK_CONFIRMED",
+        "observedAt": "2026-10-29T16:09:06.894Z",
+        "title": "Kyoto — Kifune Shrine",
+        "provider": "Kyoto City Tourism Association",
+        "sourceUrl": "https://global.kyoto.travel/en/comfort/",
+        "embedUrl": "https://www.youtube-nocookie.com/embed/eJAqPCdS1cY",
+        "evidenceKind": "HUMAN_REVIEW",
+        "networkStatus": "UNKNOWN_NOT_RECORDED"
+      },
+      {
+        "id": "kyoto-kiyomizuzaka-live",
+        "type": "restore",
+        "outcome": "HUMAN_PLAYBACK_CONFIRMED",
+        "observedAt": "2026-10-29T16:09:22.826Z",
+        "title": "Kyoto — Kiyomizu-zaka",
+        "provider": "Kyoto City Tourism Association",
+        "sourceUrl": "https://global.kyoto.travel/en/comfort/",
+        "embedUrl": "https://www.youtube-nocookie.com/embed/cUnYPpK7ENk",
+        "evidenceKind": "HUMAN_REVIEW",
+        "networkStatus": "UNKNOWN_NOT_RECORDED"
+      },
+      {
+        "id": "kyoto-nishiki-market-live",
+        "type": "backlog",
+        "outcome": "HUMAN_PLAYBACK_CONFIRMED",
+        "observedAt": "2026-10-29T16:09:48.576Z",
+        "title": "Kyoto — Nishiki Market",
+        "provider": "Kyoto City Tourism Association",
+        "sourceUrl": "https://global.kyoto.travel/en/comfort/",
+        "embedUrl": "https://www.youtube-nocookie.com/embed/qZ2ghbe3zc0",
+        "evidenceKind": "HUMAN_REVIEW",
+        "networkStatus": "UNKNOWN_NOT_RECORDED"
+      },
+      {
+        "id": "rovaniemi-santa-claus-village-live",
+        "type": "restore",
+        "outcome": "HUMAN_PLAYBACK_CONFIRMED",
+        "observedAt": "2026-10-29T16:08:53.243Z",
+        "title": "Rovaniemi — Santa Claus Village",
+        "provider": "Santa Claus Village / City of Rovaniemi",
+        "sourceUrl": "https://santaclausvillage.info/live-video-webcam/",
+        "embedUrl": "https://www.youtube-nocookie.com/embed/Cp4RRAEgpeU",
+        "evidenceKind": "HUMAN_REVIEW",
+        "networkStatus": "UNKNOWN_NOT_RECORDED"
+      },
+      {
+        "id": "taitung-jinzun",
+        "type": "restore",
+        "outcome": "HUMAN_PLAYBACK_CONFIRMED",
+        "observedAt": "2026-10-29T16:08:56.777Z",
+        "title": "Taitung Jinzun — Pacific Coast",
+        "provider": "East Coast National Scenic Area",
+        "sourceUrl": "https://www.eastcoast-nsa.gov.tw/en/service/live-camera/22/",
+        "embedUrl": "https://www.youtube-nocookie.com/embed/ZdqHgQwvZOw",
+        "evidenceKind": "HUMAN_REVIEW",
+        "networkStatus": "UNKNOWN_NOT_RECORDED"
+      },
+      {
+        "id": "taiwan-yehliu-live",
+        "type": "backlog",
+        "outcome": "HUMAN_PLAYBACK_CONFIRMED",
+        "observedAt": "2026-10-29T16:09:35.727Z",
+        "title": "Yehliu Geopark — Taiwan North Coast",
+        "provider": "Taiwan Tourism Administration",
+        "sourceUrl": "https://www.northguan-nsa.gov.tw/user/article.aspx?Lang=2&SNo=04007411",
+        "embedUrl": "https://www.youtube-nocookie.com/embed/ZjuY4qKaj40",
+        "evidenceKind": "HUMAN_REVIEW",
+        "networkStatus": "UNKNOWN_NOT_RECORDED"
+      },
+      {
+        "id": "takayama-miyagawa-stream",
+        "type": "backlog",
+        "outcome": "HUMAN_PLAYBACK_CONFIRMED",
+        "observedAt": "2026-10-29T16:09:44.877Z",
+        "title": "Takayama — Miyagawa & Kaji Bridge",
+        "provider": "Hida-Takayama Live Camera",
+        "sourceUrl": "https://takayama-live.com/streaming",
+        "embedUrl": "https://www.youtube.com/embed/live_stream?channel=UC5MNHWRJRJ1buoVIg2sHmCw",
+        "evidenceKind": "HUMAN_REVIEW",
+        "networkStatus": "UNKNOWN_NOT_RECORDED"
+      },
+      {
+        "id": "verbier",
+        "type": "backlog",
+        "outcome": "HUMAN_PLAYBACK_CONFIRMED",
+        "observedAt": "2026-10-29T16:09:40.126Z",
+        "title": "Verbier",
+        "provider": "Verbier – Val de Bagnes Tourism",
+        "sourceUrl": "https://www.verbier.ch/en/practice/live/webcams/",
+        "embedUrl": "https://www.youtube-nocookie.com/embed/9ljoXhTxjag",
+        "evidenceKind": "HUMAN_REVIEW",
+        "networkStatus": "UNKNOWN_NOT_RECORDED"
+      },
+      {
+        "id": "volcan-tajogaite",
+        "type": "backlog",
+        "outcome": "HUMAN_PLAYBACK_CONFIRMED",
+        "observedAt": "2026-10-29T16:09:31.510Z",
+        "title": "Volcán Tajogaite",
+        "provider": "Webcam La Palma",
+        "sourceUrl": "https://webcam-lapalma.de/webcam-vulkan-la-palma/",
+        "embedUrl": "https://webcam-lapalma.de/embed/vulkan/",
+        "evidenceKind": "HUMAN_REVIEW",
+        "networkStatus": "UNKNOWN_NOT_RECORDED"
+      }
+    ],
+    "researchEvidence": [
+      {
+        "id": "youtube-davos-jakobshorn-gueggel",
+        "type": "research",
+        "outcome": "HUMAN_PLAYBACK_CONFIRMED",
+        "observedAt": "2026-10-29T16:10:05.294Z",
+        "title": "Davos — Jakobshorn Mountain Panorama",
+        "provider": "Châlet Güggel Davos",
+        "sourceUrl": "https://www.chaletgueggel.ch/en/live-webcam",
+        "embedUrl": "https://www.youtube-nocookie.com/embed/sSen5EoOiJs",
+        "evidenceKind": "HUMAN_REVIEW",
+        "networkStatus": "UNKNOWN_NOT_RECORDED"
+      },
+      {
+        "id": "youtube-nyc-brooklyn-skyline",
+        "type": "research",
+        "outcome": "HUMAN_PLAYBACK_CONFIRMED",
+        "observedAt": "2026-10-29T16:09:59.743Z",
+        "title": "New York — Manhattan Skyline from Brooklyn",
+        "provider": "Brooklyn Waterfront Cams",
+        "sourceUrl": "https://brooklynwaterfront.cam/",
+        "embedUrl": "https://www.youtube-nocookie.com/embed/obqnslJKrxc",
+        "evidenceKind": "HUMAN_REVIEW",
+        "networkStatus": "UNKNOWN_NOT_RECORDED"
+      }
+    ],
+    "generatedEvidence": [],
+    "reviewOrigin": "https://earthrightnow.app/review/inside-ern.html",
+    "originTrusted": true,
+    "summary": {
+      "accepted": 14,
+      "rejected": 0,
+      "confirmed": 14,
+      "failed": 0,
+      "inconclusive": 0
+    },
+    "note": "Validation only. Optional deployed-origin and freshness checks can fail closed; human review evidence is never converted into source truth automatically."
+  },
+  "exactTargetAndCardBinding": true,
+  "selection": {
+    "renew": [
+      "auckland-viaduct-harbour",
+      "kyoto-fushimi-inari-live",
+      "kyoto-hanamikoji-live",
+      "kyoto-kifune-shrine-live",
+      "kyoto-kiyomizuzaka-live",
+      "rovaniemi-santa-claus-village-live",
+      "taitung-jinzun"
+    ],
+    "admit": [
+      "youtube-davos-jakobshorn-gueggel",
+      "youtube-nyc-brooklyn-skyline"
+    ],
+    "defer": [
+      "kyoto-nishiki-market-live",
+      "taiwan-yehliu-live",
+      "takayama-miyagawa-stream",
+      "verbier",
+      "volcan-tajogaite"
+    ]
+  },
+  "availability": {
+    "results": [
+      {
+        "id": "auckland-viaduct-harbour",
+        "sourceUrl": "https://www.viaduct.co.nz/",
+        "httpStatus": 200,
+        "observedAt": "2026-10-29T16:14:23.419053+00:00",
+        "outcome": "PAGE_REACHABLE"
+      },
+      {
+        "id": "kyoto-fushimi-inari-live",
+        "outcome": "PAGE_REACHABLE",
+        "httpStatus": 200,
+        "observedAt": "2026-10-29T04:59:01.782Z",
+        "sourceUrl": "https://global.kyoto.travel/en/comfort/",
+        "note": "Existing independent04:59UTC Kyoto HTTP200 remains within24h evidence separation. Current plain-client GET403 recorded separately, not a camera outage or fresh200. Owner current playback independent."
+      },
+      {
+        "id": "kyoto-hanamikoji-live",
+        "outcome": "PAGE_REACHABLE",
+        "httpStatus": 200,
+        "observedAt": "2026-10-29T04:59:01.782Z",
+        "sourceUrl": "https://global.kyoto.travel/en/comfort/",
+        "note": "Existing independent04:59UTC Kyoto HTTP200 remains within24h evidence separation. Current plain-client GET403 recorded separately, not a camera outage or fresh200. Owner current playback independent."
+      },
+      {
+        "id": "kyoto-kifune-shrine-live",
+        "outcome": "PAGE_REACHABLE",
+        "httpStatus": 200,
+        "observedAt": "2026-10-29T04:59:01.782Z",
+        "sourceUrl": "https://global.kyoto.travel/en/comfort/",
+        "note": "Existing independent04:59UTC Kyoto HTTP200 remains within24h evidence separation. Current plain-client GET403 recorded separately, not a camera outage or fresh200. Owner current playback independent."
+      },
+      {
+        "id": "kyoto-kiyomizuzaka-live",
+        "outcome": "PAGE_REACHABLE",
+        "httpStatus": 200,
+        "observedAt": "2026-10-29T04:59:01.782Z",
+        "sourceUrl": "https://global.kyoto.travel/en/comfort/",
+        "note": "Existing independent04:59UTC Kyoto HTTP200 remains within24h evidence separation. Current plain-client GET403 recorded separately, not a camera outage or fresh200. Owner current playback independent."
+      },
+      {
+        "id": "rovaniemi-santa-claus-village-live",
+        "sourceUrl": "https://santaclausvillage.info/live-video-webcam/",
+        "httpStatus": 200,
+        "observedAt": "2026-10-29T16:14:23.417734+00:00",
+        "outcome": "PAGE_REACHABLE"
+      },
+      {
+        "id": "taitung-jinzun",
+        "sourceUrl": "https://www.eastcoast-nsa.gov.tw/en/service/live-camera/22/",
+        "httpStatus": 200,
+        "observedAt": "2026-10-29T16:14:23.418671+00:00",
+        "outcome": "PAGE_REACHABLE"
+      }
+    ]
+  },
+  "technicalPreflight": {
+    "rows": [
+      {
+        "id": "youtube-davos-jakobshorn-gueggel",
+        "technicalReady": true,
+        "outcome": "EXACT_BRANDED_EMBED_AND_OEMBED_REACHABLE",
+        "embedHttpStatus": 200,
+        "metadata": {
+          "title": "Livestream von CHÂLET GÜGGEL DAVOS",
+          "author_name": "CHÂLET GÜGGEL DAVOS",
+          "author_url": "https://www.youtube.com/@CHALET-GUEGGEL",
+          "type": "video",
+          "height": 113,
+          "width": 200,
+          "version": "1.0",
+          "provider_name": "YouTube",
+          "provider_url": "https://www.youtube.com/",
+          "thumbnail_height": 360,
+          "thumbnail_width": 480,
+          "thumbnail_url": "https://i.ytimg.com/vi/sSen5EoOiJs/hqdefault.jpg",
+          "html": "<iframe width=\"200\" height=\"113\" src=\"https://www.youtube.com/embed/sSen5EoOiJs?feature=oembed\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen title=\"Livestream von CHÂLET GÜGGEL DAVOS\"></iframe>"
+        }
+      },
+      {
+        "id": "youtube-nyc-brooklyn-skyline",
+        "technicalReady": true,
+        "outcome": "EXACT_BRANDED_EMBED_AND_OEMBED_REACHABLE",
+        "embedHttpStatus": 200,
+        "metadata": {
+          "title": "🔴 New York City Live Cam in 4K — New York Harbor, Brooklyn & Manhattan Skyline, East River | 24/7",
+          "author_name": "Brooklyn Waterfront Cams",
+          "author_url": "https://www.youtube.com/@BrooklynWaterfrontCams",
+          "type": "video",
+          "height": 113,
+          "width": 200,
+          "version": "1.0",
+          "provider_name": "YouTube",
+          "provider_url": "https://www.youtube.com/",
+          "thumbnail_height": 360,
+          "thumbnail_width": 480,
+          "thumbnail_url": "https://i.ytimg.com/vi/obqnslJKrxc/hqdefault.jpg",
+          "html": "<iframe width=\"200\" height=\"113\" src=\"https://www.youtube.com/embed/obqnslJKrxc?feature=oembed\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen title=\"🔴 New York City Live Cam in 4K — New York Harbor, Brooklyn &amp; Manhattan Skyline, East River | 24/7\"></iframe>"
+        }
+      }
+    ]
+  },
+  "proposals": {
+    "schemaVersion": 1,
+    "generatedAt": "2026-10-29T16:28:23.834Z",
+    "validation": {
+      "ok": true,
+      "summary": {
+        "accepted": 14,
+        "rejected": 0,
+        "confirmed": 14,
+        "failed": 0,
+        "inconclusive": 0
+      },
+      "rejected": []
+    },
+    "catalogMutationAllowed": false,
+    "automaticHealthChangeAllowed": false,
+    "automaticPermissionApprovalAllowed": false,
+    "playbackProofUpdateAtomicityRequired": true,
+    "sourceProposals": [
+      {
+        "id": "auckland-viaduct-harbour",
+        "outcome": "HUMAN_PLAYBACK_CONFIRMED",
+        "status": "READY_FOR_PROVIDER_OBSERVATION_PROPOSAL",
+        "reviewObservedAt": "2026-10-29T16:09:01.659Z",
+        "availabilityObservedAt": "2026-10-29T16:14:23.419053+00:00",
+        "separationHours": 0.09,
+        "availabilityOutcome": "PAGE_REACHABLE",
+        "proposedObservation": {
+          "id": "auckland-viaduct-harbour",
+          "httpStatus": 200,
+          "confirmation": "HUMAN_PLAYBACK",
+          "observedAt": "2026-10-29T16:09:01.659Z",
+          "reason": "Human playback confirmed in deployed ERN review lab; independent provider-page availability evidence was also current."
+        },
+        "proposedCatalogPlaybackMarker": {
+          "id": "auckland-viaduct-harbour",
+          "playbackVerifiedAt": "2026-10-29T16:09:01.659Z"
+        },
+        "atomicProofUpdateRequired": true,
+        "automaticWriteAllowed": false
+      },
+      {
+        "id": "kyoto-fushimi-inari-live",
+        "outcome": "HUMAN_PLAYBACK_CONFIRMED",
+        "status": "READY_FOR_PROVIDER_OBSERVATION_PROPOSAL",
+        "reviewObservedAt": "2026-10-29T16:09:11.015Z",
+        "availabilityObservedAt": "2026-10-29T04:59:01.782Z",
+        "separationHours": 11.17,
+        "availabilityOutcome": "PAGE_REACHABLE",
+        "proposedObservation": {
+          "id": "kyoto-fushimi-inari-live",
+          "httpStatus": 200,
+          "confirmation": "HUMAN_PLAYBACK",
+          "observedAt": "2026-10-29T16:09:11.015Z",
+          "reason": "Human playback confirmed in deployed ERN review lab; independent provider-page availability evidence was also current."
+        },
+        "proposedCatalogPlaybackMarker": {
+          "id": "kyoto-fushimi-inari-live",
+          "playbackVerifiedAt": "2026-10-29T16:09:11.015Z"
+        },
+        "atomicProofUpdateRequired": true,
+        "automaticWriteAllowed": false
+      },
+      {
+        "id": "kyoto-hanamikoji-live",
+        "outcome": "HUMAN_PLAYBACK_CONFIRMED",
+        "status": "READY_FOR_PROVIDER_OBSERVATION_PROPOSAL",
+        "reviewObservedAt": "2026-10-29T16:09:18.977Z",
+        "availabilityObservedAt": "2026-10-29T04:59:01.782Z",
+        "separationHours": 11.17,
+        "availabilityOutcome": "PAGE_REACHABLE",
+        "proposedObservation": {
+          "id": "kyoto-hanamikoji-live",
+          "httpStatus": 200,
+          "confirmation": "HUMAN_PLAYBACK",
+          "observedAt": "2026-10-29T16:09:18.977Z",
+          "reason": "Human playback confirmed in deployed ERN review lab; independent provider-page availability evidence was also current."
+        },
+        "proposedCatalogPlaybackMarker": {
+          "id": "kyoto-hanamikoji-live",
+          "playbackVerifiedAt": "2026-10-29T16:09:18.977Z"
+        },
+        "atomicProofUpdateRequired": true,
+        "automaticWriteAllowed": false
+      },
+      {
+        "id": "kyoto-kifune-shrine-live",
+        "outcome": "HUMAN_PLAYBACK_CONFIRMED",
+        "status": "READY_FOR_PROVIDER_OBSERVATION_PROPOSAL",
+        "reviewObservedAt": "2026-10-29T16:09:06.894Z",
+        "availabilityObservedAt": "2026-10-29T04:59:01.782Z",
+        "separationHours": 11.17,
+        "availabilityOutcome": "PAGE_REACHABLE",
+        "proposedObservation": {
+          "id": "kyoto-kifune-shrine-live",
+          "httpStatus": 200,
+          "confirmation": "HUMAN_PLAYBACK",
+          "observedAt": "2026-10-29T16:09:06.894Z",
+          "reason": "Human playback confirmed in deployed ERN review lab; independent provider-page availability evidence was also current."
+        },
+        "proposedCatalogPlaybackMarker": {
+          "id": "kyoto-kifune-shrine-live",
+          "playbackVerifiedAt": "2026-10-29T16:09:06.894Z"
+        },
+        "atomicProofUpdateRequired": true,
+        "automaticWriteAllowed": false
+      },
+      {
+        "id": "kyoto-kiyomizuzaka-live",
+        "outcome": "HUMAN_PLAYBACK_CONFIRMED",
+        "status": "READY_FOR_PROVIDER_OBSERVATION_PROPOSAL",
+        "reviewObservedAt": "2026-10-29T16:09:22.826Z",
+        "availabilityObservedAt": "2026-10-29T04:59:01.782Z",
+        "separationHours": 11.17,
+        "availabilityOutcome": "PAGE_REACHABLE",
+        "proposedObservation": {
+          "id": "kyoto-kiyomizuzaka-live",
+          "httpStatus": 200,
+          "confirmation": "HUMAN_PLAYBACK",
+          "observedAt": "2026-10-29T16:09:22.826Z",
+          "reason": "Human playback confirmed in deployed ERN review lab; independent provider-page availability evidence was also current."
+        },
+        "proposedCatalogPlaybackMarker": {
+          "id": "kyoto-kiyomizuzaka-live",
+          "playbackVerifiedAt": "2026-10-29T16:09:22.826Z"
+        },
+        "atomicProofUpdateRequired": true,
+        "automaticWriteAllowed": false
+      },
+      {
+        "id": "kyoto-nishiki-market-live",
+        "outcome": "HUMAN_PLAYBACK_CONFIRMED",
+        "status": "NEEDS_FRESH_AVAILABILITY_EVIDENCE",
+        "reviewObservedAt": "2026-10-29T16:09:48.576Z",
+        "availabilityObservedAt": null,
+        "availabilityOutcome": null,
+        "proposedObservation": null,
+        "proposedCatalogPlaybackMarker": null,
+        "atomicProofUpdateRequired": false,
+        "automaticWriteAllowed": false
+      },
+      {
+        "id": "rovaniemi-santa-claus-village-live",
+        "outcome": "HUMAN_PLAYBACK_CONFIRMED",
+        "status": "READY_FOR_PROVIDER_OBSERVATION_PROPOSAL",
+        "reviewObservedAt": "2026-10-29T16:08:53.243Z",
+        "availabilityObservedAt": "2026-10-29T16:14:23.417734+00:00",
+        "separationHours": 0.09,
+        "availabilityOutcome": "PAGE_REACHABLE",
+        "proposedObservation": {
+          "id": "rovaniemi-santa-claus-village-live",
+          "httpStatus": 200,
+          "confirmation": "HUMAN_PLAYBACK",
+          "observedAt": "2026-10-29T16:08:53.243Z",
+          "reason": "Human playback confirmed in deployed ERN review lab; independent provider-page availability evidence was also current."
+        },
+        "proposedCatalogPlaybackMarker": {
+          "id": "rovaniemi-santa-claus-village-live",
+          "playbackVerifiedAt": "2026-10-29T16:08:53.243Z"
+        },
+        "atomicProofUpdateRequired": true,
+        "automaticWriteAllowed": false
+      },
+      {
+        "id": "taitung-jinzun",
+        "outcome": "HUMAN_PLAYBACK_CONFIRMED",
+        "status": "READY_FOR_PROVIDER_OBSERVATION_PROPOSAL",
+        "reviewObservedAt": "2026-10-29T16:08:56.777Z",
+        "availabilityObservedAt": "2026-10-29T16:14:23.418671+00:00",
+        "separationHours": 0.09,
+        "availabilityOutcome": "PAGE_REACHABLE",
+        "proposedObservation": {
+          "id": "taitung-jinzun",
+          "httpStatus": 200,
+          "confirmation": "HUMAN_PLAYBACK",
+          "observedAt": "2026-10-29T16:08:56.777Z",
+          "reason": "Human playback confirmed in deployed ERN review lab; independent provider-page availability evidence was also current."
+        },
+        "proposedCatalogPlaybackMarker": {
+          "id": "taitung-jinzun",
+          "playbackVerifiedAt": "2026-10-29T16:08:56.777Z"
+        },
+        "atomicProofUpdateRequired": true,
+        "automaticWriteAllowed": false
+      },
+      {
+        "id": "taiwan-yehliu-live",
+        "outcome": "HUMAN_PLAYBACK_CONFIRMED",
+        "status": "NEEDS_FRESH_AVAILABILITY_EVIDENCE",
+        "reviewObservedAt": "2026-10-29T16:09:35.727Z",
+        "availabilityObservedAt": null,
+        "availabilityOutcome": null,
+        "proposedObservation": null,
+        "proposedCatalogPlaybackMarker": null,
+        "atomicProofUpdateRequired": false,
+        "automaticWriteAllowed": false
+      },
+      {
+        "id": "takayama-miyagawa-stream",
+        "outcome": "HUMAN_PLAYBACK_CONFIRMED",
+        "status": "NEEDS_FRESH_AVAILABILITY_EVIDENCE",
+        "reviewObservedAt": "2026-10-29T16:09:44.877Z",
+        "availabilityObservedAt": null,
+        "availabilityOutcome": null,
+        "proposedObservation": null,
+        "proposedCatalogPlaybackMarker": null,
+        "atomicProofUpdateRequired": false,
+        "automaticWriteAllowed": false
+      },
+      {
+        "id": "verbier",
+        "outcome": "HUMAN_PLAYBACK_CONFIRMED",
+        "status": "NEEDS_FRESH_AVAILABILITY_EVIDENCE",
+        "reviewObservedAt": "2026-10-29T16:09:40.126Z",
+        "availabilityObservedAt": null,
+        "availabilityOutcome": null,
+        "proposedObservation": null,
+        "proposedCatalogPlaybackMarker": null,
+        "atomicProofUpdateRequired": false,
+        "automaticWriteAllowed": false
+      },
+      {
+        "id": "volcan-tajogaite",
+        "outcome": "HUMAN_PLAYBACK_CONFIRMED",
+        "status": "NEEDS_FRESH_AVAILABILITY_EVIDENCE",
+        "reviewObservedAt": "2026-10-29T16:09:31.510Z",
+        "availabilityObservedAt": null,
+        "availabilityOutcome": null,
+        "proposedObservation": null,
+        "proposedCatalogPlaybackMarker": null,
+        "atomicProofUpdateRequired": false,
+        "automaticWriteAllowed": false
+      }
+    ],
+    "researchProposals": [
+      {
+        "id": "youtube-davos-jakobshorn-gueggel",
+        "outcome": "HUMAN_PLAYBACK_CONFIRMED",
+        "status": "READY_FOR_PERMISSION_AND_EDITORIAL_REVIEW",
+        "reviewObservedAt": "2026-10-29T16:10:05.294Z",
+        "technicalReady": true,
+        "preflightOutcome": "EXACT_BRANDED_EMBED_AND_OEMBED_REACHABLE",
+        "catalogPromotionAllowed": false,
+        "automaticWriteAllowed": false,
+        "note": "Human playback plus technical readiness still does not confirm per-video/provider permission or editorial approval."
+      },
+      {
+        "id": "youtube-nyc-brooklyn-skyline",
+        "outcome": "HUMAN_PLAYBACK_CONFIRMED",
+        "status": "READY_FOR_PERMISSION_AND_EDITORIAL_REVIEW",
+        "reviewObservedAt": "2026-10-29T16:09:59.743Z",
+        "technicalReady": true,
+        "preflightOutcome": "EXACT_BRANDED_EMBED_AND_OEMBED_REACHABLE",
+        "catalogPromotionAllowed": false,
+        "automaticWriteAllowed": false,
+        "note": "Human playback plus technical readiness still does not confirm per-video/provider permission or editorial approval."
+      }
+    ],
+    "generatedProposals": [],
+    "summary": {
+      "sourceReady": 7,
+      "sourceNeedsAvailability": 5,
+      "sourceFailureReview": 0,
+      "sourceTargetChanged": 0,
+      "researchReadyForReview": 2,
+      "researchNeedsPreflight": 0,
+      "researchTargetChanged": 0,
+      "generatedReadyToRecord": 0,
+      "generatedTargetChanged": 0
+    },
+    "note": "Proposal layer only. When current target records are supplied, reviewed source/embed URLs must still match before evidence can progress. Confirmed playback proposals remain manual and atomic."
+  },
+  "selectedApplicationPlan": {
+    "schemaVersion": 1,
+    "generatedAt": "2026-10-29T16:28:23.835Z",
+    "total": 7,
+    "ready": 7,
+    "blocked": 0,
+    "items": [
+      {
+        "id": "auckland-viaduct-harbour",
+        "ready": true,
+        "reasons": [],
+        "expectedCurrent": {
+          "playbackVerifiedAt": "2026-10-29T00:59:34.747Z",
+          "latestObservationObservedAt": "2026-10-29T00:59:34.747Z",
+          "latestObservationKind": "HUMAN_PLAYBACK"
+        },
+        "proposedAtomicUpdate": {
+          "catalog": {
+            "id": "auckland-viaduct-harbour",
+            "playbackVerifiedAt": "2026-10-29T16:09:01.659Z"
+          },
+          "observation": {
+            "id": "auckland-viaduct-harbour",
+            "httpStatus": 200,
+            "confirmation": "HUMAN_PLAYBACK",
+            "observedAt": "2026-10-29T16:09:01.659Z",
+            "reason": "Human playback confirmed in deployed ERN review lab; independent provider-page availability evidence was also current.",
+            "reviewer": "OWNER",
+            "browser": "UNKNOWN_NOT_RECORDED",
+            "reviewUrl": "https://earthrightnow.app/review/inside-ern.html",
+            "reviewBatch": "6e2c74df0bcac1be",
+            "sourceUrl": "https://www.viaduct.co.nz/",
+            "embedUrl": "https://www.youtube.com/embed/live_stream?channel=UCfNoVlW5-BHsoCKTGs_F0WQ",
+            "evidenceKind": "HUMAN_REVIEW",
+            "ownerPacketType": "restore",
+            "ownerPacketNetworkStatus": "UNKNOWN_NOT_RECORDED",
+            "availabilityEvidenceSource": "data/review-evidence/owner-watch-nine-2026-10-29-validation.json",
+            "limitations": "Exact owner playback time retained. No browser, duration, scene description or camera-clock reading supplied in packet; none inferred. HTTP availability is independent and separately timestamped."
+          }
+        },
+        "preconditions": {
+          "playback": "EMBED",
+          "permission": "EMBED_ALLOWED",
+          "health": "HEALTHY",
+          "expectedPlaybackVerifiedAt": "2026-10-29T00:59:34.747Z",
+          "expectedLatestObservationObservedAt": "2026-10-29T00:59:34.747Z"
+        },
+        "automaticWriteAllowed": false
+      },
+      {
+        "id": "kyoto-fushimi-inari-live",
+        "ready": true,
+        "reasons": [],
+        "expectedCurrent": {
+          "playbackVerifiedAt": "2026-10-29T00:59:42.530Z",
+          "latestObservationObservedAt": "2026-10-29T00:59:42.530Z",
+          "latestObservationKind": "HUMAN_PLAYBACK"
+        },
+        "proposedAtomicUpdate": {
+          "catalog": {
+            "id": "kyoto-fushimi-inari-live",
+            "playbackVerifiedAt": "2026-10-29T16:09:11.015Z"
+          },
+          "observation": {
+            "id": "kyoto-fushimi-inari-live",
+            "httpStatus": 200,
+            "confirmation": "HUMAN_PLAYBACK",
+            "observedAt": "2026-10-29T16:09:11.015Z",
+            "reason": "Human playback confirmed in deployed ERN review lab; independent provider-page availability evidence was also current.",
+            "reviewer": "OWNER",
+            "browser": "UNKNOWN_NOT_RECORDED",
+            "reviewUrl": "https://earthrightnow.app/review/inside-ern.html",
+            "reviewBatch": "6e2c74df0bcac1be",
+            "sourceUrl": "https://global.kyoto.travel/en/comfort/",
+            "embedUrl": "https://www.youtube-nocookie.com/embed/MMeBDRfRHyA",
+            "evidenceKind": "HUMAN_REVIEW",
+            "ownerPacketType": "restore",
+            "ownerPacketNetworkStatus": "UNKNOWN_NOT_RECORDED",
+            "availabilityEvidenceSource": "data/review-evidence/owner-watch-nine-2026-10-29-validation.json",
+            "limitations": "Exact owner playback time retained. No browser, duration, scene description or camera-clock reading supplied in packet; none inferred. HTTP availability is independent and separately timestamped."
+          }
+        },
+        "preconditions": {
+          "playback": "EMBED",
+          "permission": "EMBED_ALLOWED",
+          "health": "HEALTHY",
+          "expectedPlaybackVerifiedAt": "2026-10-29T00:59:42.530Z",
+          "expectedLatestObservationObservedAt": "2026-10-29T00:59:42.530Z"
+        },
+        "automaticWriteAllowed": false
+      },
+      {
+        "id": "kyoto-hanamikoji-live",
+        "ready": true,
+        "reasons": [],
+        "expectedCurrent": {
+          "playbackVerifiedAt": "2026-10-29T04:55:43.145Z",
+          "latestObservationObservedAt": "2026-10-29T04:55:43.145Z",
+          "latestObservationKind": "HUMAN_PLAYBACK"
+        },
+        "proposedAtomicUpdate": {
+          "catalog": {
+            "id": "kyoto-hanamikoji-live",
+            "playbackVerifiedAt": "2026-10-29T16:09:18.977Z"
+          },
+          "observation": {
+            "id": "kyoto-hanamikoji-live",
+            "httpStatus": 200,
+            "confirmation": "HUMAN_PLAYBACK",
+            "observedAt": "2026-10-29T16:09:18.977Z",
+            "reason": "Human playback confirmed in deployed ERN review lab; independent provider-page availability evidence was also current.",
+            "reviewer": "OWNER",
+            "browser": "UNKNOWN_NOT_RECORDED",
+            "reviewUrl": "https://earthrightnow.app/review/inside-ern.html",
+            "reviewBatch": "6e2c74df0bcac1be",
+            "sourceUrl": "https://global.kyoto.travel/en/comfort/",
+            "embedUrl": "https://www.youtube-nocookie.com/embed/J3xHBUgWRqc",
+            "evidenceKind": "HUMAN_REVIEW",
+            "ownerPacketType": "restore",
+            "ownerPacketNetworkStatus": "UNKNOWN_NOT_RECORDED",
+            "availabilityEvidenceSource": "data/review-evidence/owner-watch-nine-2026-10-29-validation.json",
+            "limitations": "Exact owner playback time retained. No browser, duration, scene description or camera-clock reading supplied in packet; none inferred. HTTP availability is independent and separately timestamped."
+          }
+        },
+        "preconditions": {
+          "playback": "EMBED",
+          "permission": "EMBED_ALLOWED",
+          "health": "HEALTHY",
+          "expectedPlaybackVerifiedAt": "2026-10-29T04:55:43.145Z",
+          "expectedLatestObservationObservedAt": "2026-10-29T04:55:43.145Z"
+        },
+        "automaticWriteAllowed": false
+      },
+      {
+        "id": "kyoto-kifune-shrine-live",
+        "ready": true,
+        "reasons": [],
+        "expectedCurrent": {
+          "playbackVerifiedAt": "2026-10-29T00:59:39.331Z",
+          "latestObservationObservedAt": "2026-10-29T00:59:39.331Z",
+          "latestObservationKind": "HUMAN_PLAYBACK"
+        },
+        "proposedAtomicUpdate": {
+          "catalog": {
+            "id": "kyoto-kifune-shrine-live",
+            "playbackVerifiedAt": "2026-10-29T16:09:06.894Z"
+          },
+          "observation": {
+            "id": "kyoto-kifune-shrine-live",
+            "httpStatus": 200,
+            "confirmation": "HUMAN_PLAYBACK",
+            "observedAt": "2026-10-29T16:09:06.894Z",
+            "reason": "Human playback confirmed in deployed ERN review lab; independent provider-page availability evidence was also current.",
+            "reviewer": "OWNER",
+            "browser": "UNKNOWN_NOT_RECORDED",
+            "reviewUrl": "https://earthrightnow.app/review/inside-ern.html",
+            "reviewBatch": "6e2c74df0bcac1be",
+            "sourceUrl": "https://global.kyoto.travel/en/comfort/",
+            "embedUrl": "https://www.youtube-nocookie.com/embed/eJAqPCdS1cY",
+            "evidenceKind": "HUMAN_REVIEW",
+            "ownerPacketType": "restore",
+            "ownerPacketNetworkStatus": "UNKNOWN_NOT_RECORDED",
+            "availabilityEvidenceSource": "data/review-evidence/owner-watch-nine-2026-10-29-validation.json",
+            "limitations": "Exact owner playback time retained. No browser, duration, scene description or camera-clock reading supplied in packet; none inferred. HTTP availability is independent and separately timestamped."
+          }
+        },
+        "preconditions": {
+          "playback": "EMBED",
+          "permission": "EMBED_ALLOWED",
+          "health": "HEALTHY",
+          "expectedPlaybackVerifiedAt": "2026-10-29T00:59:39.331Z",
+          "expectedLatestObservationObservedAt": "2026-10-29T00:59:39.331Z"
+        },
+        "automaticWriteAllowed": false
+      },
+      {
+        "id": "kyoto-kiyomizuzaka-live",
+        "ready": true,
+        "reasons": [],
+        "expectedCurrent": {
+          "playbackVerifiedAt": "2026-10-29T04:55:39.563Z",
+          "latestObservationObservedAt": "2026-10-29T04:55:39.563Z",
+          "latestObservationKind": "HUMAN_PLAYBACK"
+        },
+        "proposedAtomicUpdate": {
+          "catalog": {
+            "id": "kyoto-kiyomizuzaka-live",
+            "playbackVerifiedAt": "2026-10-29T16:09:22.826Z"
+          },
+          "observation": {
+            "id": "kyoto-kiyomizuzaka-live",
+            "httpStatus": 200,
+            "confirmation": "HUMAN_PLAYBACK",
+            "observedAt": "2026-10-29T16:09:22.826Z",
+            "reason": "Human playback confirmed in deployed ERN review lab; independent provider-page availability evidence was also current.",
+            "reviewer": "OWNER",
+            "browser": "UNKNOWN_NOT_RECORDED",
+            "reviewUrl": "https://earthrightnow.app/review/inside-ern.html",
+            "reviewBatch": "6e2c74df0bcac1be",
+            "sourceUrl": "https://global.kyoto.travel/en/comfort/",
+            "embedUrl": "https://www.youtube-nocookie.com/embed/cUnYPpK7ENk",
+            "evidenceKind": "HUMAN_REVIEW",
+            "ownerPacketType": "restore",
+            "ownerPacketNetworkStatus": "UNKNOWN_NOT_RECORDED",
+            "availabilityEvidenceSource": "data/review-evidence/owner-watch-nine-2026-10-29-validation.json",
+            "limitations": "Exact owner playback time retained. No browser, duration, scene description or camera-clock reading supplied in packet; none inferred. HTTP availability is independent and separately timestamped."
+          }
+        },
+        "preconditions": {
+          "playback": "EMBED",
+          "permission": "EMBED_ALLOWED",
+          "health": "HEALTHY",
+          "expectedPlaybackVerifiedAt": "2026-10-29T04:55:39.563Z",
+          "expectedLatestObservationObservedAt": "2026-10-29T04:55:39.563Z"
+        },
+        "automaticWriteAllowed": false
+      },
+      {
+        "id": "rovaniemi-santa-claus-village-live",
+        "ready": true,
+        "reasons": [],
+        "expectedCurrent": {
+          "playbackVerifiedAt": "2026-10-29T00:59:26.914Z",
+          "latestObservationObservedAt": "2026-10-29T00:59:26.914Z",
+          "latestObservationKind": "HUMAN_PLAYBACK"
+        },
+        "proposedAtomicUpdate": {
+          "catalog": {
+            "id": "rovaniemi-santa-claus-village-live",
+            "playbackVerifiedAt": "2026-10-29T16:08:53.243Z"
+          },
+          "observation": {
+            "id": "rovaniemi-santa-claus-village-live",
+            "httpStatus": 200,
+            "confirmation": "HUMAN_PLAYBACK",
+            "observedAt": "2026-10-29T16:08:53.243Z",
+            "reason": "Human playback confirmed in deployed ERN review lab; independent provider-page availability evidence was also current.",
+            "reviewer": "OWNER",
+            "browser": "UNKNOWN_NOT_RECORDED",
+            "reviewUrl": "https://earthrightnow.app/review/inside-ern.html",
+            "reviewBatch": "6e2c74df0bcac1be",
+            "sourceUrl": "https://santaclausvillage.info/live-video-webcam/",
+            "embedUrl": "https://www.youtube-nocookie.com/embed/Cp4RRAEgpeU",
+            "evidenceKind": "HUMAN_REVIEW",
+            "ownerPacketType": "restore",
+            "ownerPacketNetworkStatus": "UNKNOWN_NOT_RECORDED",
+            "availabilityEvidenceSource": "data/review-evidence/owner-watch-nine-2026-10-29-validation.json",
+            "limitations": "Exact owner playback time retained. No browser, duration, scene description or camera-clock reading supplied in packet; none inferred. HTTP availability is independent and separately timestamped."
+          }
+        },
+        "preconditions": {
+          "playback": "EMBED",
+          "permission": "EMBED_ALLOWED",
+          "health": "HEALTHY",
+          "expectedPlaybackVerifiedAt": "2026-10-29T00:59:26.914Z",
+          "expectedLatestObservationObservedAt": "2026-10-29T00:59:26.914Z"
+        },
+        "automaticWriteAllowed": false
+      },
+      {
+        "id": "taitung-jinzun",
+        "ready": true,
+        "reasons": [],
+        "expectedCurrent": {
+          "playbackVerifiedAt": "2026-10-29T00:59:30.214Z",
+          "latestObservationObservedAt": "2026-10-29T00:59:30.214Z",
+          "latestObservationKind": "HUMAN_PLAYBACK"
+        },
+        "proposedAtomicUpdate": {
+          "catalog": {
+            "id": "taitung-jinzun",
+            "playbackVerifiedAt": "2026-10-29T16:08:56.777Z"
+          },
+          "observation": {
+            "id": "taitung-jinzun",
+            "httpStatus": 200,
+            "confirmation": "HUMAN_PLAYBACK",
+            "observedAt": "2026-10-29T16:08:56.777Z",
+            "reason": "Human playback confirmed in deployed ERN review lab; independent provider-page availability evidence was also current.",
+            "reviewer": "OWNER",
+            "browser": "UNKNOWN_NOT_RECORDED",
+            "reviewUrl": "https://earthrightnow.app/review/inside-ern.html",
+            "reviewBatch": "6e2c74df0bcac1be",
+            "sourceUrl": "https://www.eastcoast-nsa.gov.tw/en/service/live-camera/22/",
+            "embedUrl": "https://www.youtube-nocookie.com/embed/ZdqHgQwvZOw",
+            "evidenceKind": "HUMAN_REVIEW",
+            "ownerPacketType": "restore",
+            "ownerPacketNetworkStatus": "UNKNOWN_NOT_RECORDED",
+            "availabilityEvidenceSource": "data/review-evidence/owner-watch-nine-2026-10-29-validation.json",
+            "limitations": "Exact owner playback time retained. No browser, duration, scene description or camera-clock reading supplied in packet; none inferred. HTTP availability is independent and separately timestamped."
+          }
+        },
+        "preconditions": {
+          "playback": "EMBED",
+          "permission": "EMBED_ALLOWED",
+          "health": "HEALTHY",
+          "expectedPlaybackVerifiedAt": "2026-10-29T00:59:30.214Z",
+          "expectedLatestObservationObservedAt": "2026-10-29T00:59:30.214Z"
+        },
+        "automaticWriteAllowed": false
+      }
+    ],
+    "safety": {
+      "automaticWriteAllowed": false,
+      "partialProofUpdateAllowed": false,
+      "staleOverwriteAllowed": false,
+      "sourceTruthMutationBeyondPlaybackMarkerAllowed": false
+    },
+    "note": "Manual application plan only. Apply catalog marker + HUMAN_PLAYBACK observation together after re-checking preconditions against current main; never apply one side alone or overwrite newer evidence."
+  },
+  "ownerVisualClarity": {
+    "evidenceKind": "OWNER_TEXT_FOLLOWUP",
+    "scope": [
+      "youtube-nyc-brooklyn-skyline",
+      "youtube-davos-jakobshorn-gueggel"
+    ],
+    "answer": "Both clearly visible (Recommended)",
+    "note": "Owner answered direct follow-up confirming both skyline and mountain landscape clearly visible in the live videos just checked. This adds visual-quality evidence; no new playback timestamp/browser/network/duration inferred."
+  },
+  "manualApplication": {
+    "renewed": [
+      "auckland-viaduct-harbour",
+      "kyoto-fushimi-inari-live",
+      "kyoto-hanamikoji-live",
+      "kyoto-kifune-shrine-live",
+      "kyoto-kiyomizuzaka-live",
+      "rovaniemi-santa-claus-village-live",
+      "taitung-jinzun"
+    ],
+    "admitted": [
+      {
+        "candidateId": "youtube-nyc-brooklyn-skyline",
+        "sourceId": "nyc-brooklyn-skyline-live",
+        "placeId": "new-york-harbor"
+      },
+      {
+        "candidateId": "youtube-davos-jakobshorn-gueggel",
+        "sourceId": "davos-jakobshorn-live",
+        "placeId": "davos-jakobshorn"
+      }
+    ],
+    "deferred": [
+      "kyoto-nishiki-market-live",
+      "taiwan-yehliu-live",
+      "takayama-miyagawa-stream",
+      "verbier",
+      "volcan-tajogaite"
+    ],
+    "directoryRelocation": {
+      "ids": [
+        "local-calypso-charters-anguilla",
+        "local-mtatsminda-funicular",
+        "local-mattstock-chairlift",
+        "local-dolphin-explorer-marco",
+        "local-the-massif-patagonia"
+      ],
+      "combinedRowsAndOrderUnchanged": true,
+      "verificationDatesUnchanged": true
+    },
+    "noAutomaticPromotion": true
+  }
+}

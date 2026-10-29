@@ -13,7 +13,7 @@ const anchor=new Date(Math.max(...checks)),day=anchor.toISOString().slice(0,10);
 const hours=[0,6,12,18];
 const auditMoments=[new Date(),...hours.map(hour=>new Date(`${day}T${String(hour).padStart(2,"0")}:00:00Z`))];
 const rows=auditMoments.map(now=>{
-  const items=buildDynamicWatchEarth(sources,{limit:7,now}),snap=watchEarthSnapshot(items,{limit:7,now});
+  const items=buildDynamicWatchEarth(sources,{limit:9,now}),snap=watchEarthSnapshot(items,{limit:9,now});
   const ids=items.map(s=>s.id),uniqueIds=new Set(ids),eligible=items.filter(s=>watchEarthEligible(s,{now})).length;
   const previews=items.filter(s=>s.truth==="PREVIEW").length;
   const nonLiveVideo=items.filter(s=>s.truth!=="LIVE_VIDEO"||s.playback!=="EMBED"||s.permission!=="EMBED_ALLOWED").map(s=>s.id);
@@ -32,7 +32,7 @@ for(const row of rows){
   if(row.duplicateIds)violations.push(`${row.utc}: ${row.duplicateIds} duplicate source id(s)`);
   if(row.previews)violations.push(`${row.utc}: ${row.previews} PREVIEW item(s) leaked into Watch Earth`);
   if(row.nonLiveVideo.length)violations.push(`${row.utc}: non-stream source(s) leaked into Watch Earth: ${row.nonLiveVideo.join(", ")}`);
-  if(row.count>7)violations.push(`${row.utc}: more than seven Watch Earth items`);
+  if(row.count>9)violations.push(`${row.utc}: more than nine Watch Earth items`);
   if(row.places!==row.count)violations.push(`${row.utc}: journey repeats a place before reaching its available breadth`);
   if(row.count>=3&&row.resilience==="LIMITED")violations.push(`${row.utc}: provider resilience diagnostics unexpectedly limited for a full journey`);
 }

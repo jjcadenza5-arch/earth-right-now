@@ -6,5 +6,5 @@ const external=Array.from({length:20},(_,i)=>({...base,id:"e"+i,placeId:"e"+i,co
 const inside=Array.from({length:3},(_,i)=>({...base,id:"i"+i,placeId:"i"+i,country:"I"+i,truth:"LIVE_VIDEO",permission:"EMBED_ALLOWED",playback:"EMBED",embedUrl:"https://couchtourist.com/embed/cam/"+(9100+i)+"/",playbackVerifiedAt:now.toISOString()}));
 const r=watchEarthProductBalance([...external,...inside],{now});
 assert.equal(r.strongCurrent,3);assert.equal(r.insideCurrent,3);assert.equal(r.externalCurrent,0);
-assert.equal(r.target,7);assert.equal(r.insideShortfall,2);assert.equal(r.recommendedLimit,3);assert.equal(r.recommendedReduction,4);assert.equal(r.status,"INSIDE_SHORTFALL");
+assert.equal(r.target,9);assert.equal(r.insideShortfall,2);assert.equal(r.recommendedLimit,3);assert.equal(r.recommendedReduction,6);assert.equal(r.status,"INSIDE_SHORTFALL");
 console.log("Watch Earth reports live-video shortfalls instead of filling with external links");

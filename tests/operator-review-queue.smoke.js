@@ -65,3 +65,12 @@ assert.equal(protectSeven.ready,2);assert.equal(protectSeven.targetReady,7);asse
 assert.deepEqual(new Set(protectSeven.primaryItems.map(x=>x.id)),new Set(recentFive.map(x=>x.id)),"Renew all original five to protect seven, rather than stopping at five total");
 assert.equal(protectSeven.safety.automaticPlaybackVerificationAllowed,false);
 console.log("Seven-stream operator maintenance protects the full rotation across staggered proof deadlines");
+
+// Nine-camera target protects all seven staggered renewals, not only the old floor.
+const freshNine=Array.from({length:2},(_,i)=>({...freshTwo[0],id:"nine-new-"+i,embedUrl:"https://couchtourist.com/embed/cam/"+(9800+i)+"/"}));
+const dueSeven=[...recentFive,...freshTwo.map(s=>({...s,id:"due-"+s.id,playbackVerifiedAt:recentFive[0].playbackVerifiedAt,checkedAt:recentFive[0].checkedAt,lastSuccessfulCheck:recentFive[0].lastSuccessfulCheck}))];
+const ninePool=[...dueSeven,...freshNine];
+const nineObs=ninePool.map(s=>({id:s.id,confirmation:"HUMAN_PLAYBACK",observedAt:s.playbackVerifiedAt,httpStatus:200}));
+const protectNine=operatorReviewQueue(ninePool,nineObs,{now:recoveryNow,limit:20,targetReady:9});
+assert.equal(protectNine.readyShortfall,7);
+assert.deepEqual(new Set(protectNine.primaryItems.map(s=>s.id)),new Set(dueSeven.map(s=>s.id)));

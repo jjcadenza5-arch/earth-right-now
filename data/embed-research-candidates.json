@@ -440,7 +440,7 @@
   {
     "id": "youtube-nyc-brooklyn-skyline",
     "title": "New York — Manhattan Skyline from Brooklyn",
-    "status": "RESEARCH_ONLY",
+    "status": "APPROVED",
     "provider": "Brooklyn Waterfront Cams",
     "platform": "YouTube",
     "sourceUrl": "https://brooklynwaterfront.cam/",
@@ -448,9 +448,9 @@
     "ownerEvidence": "The operator page identifies an always-on 4K Brooklyn Navy Yard / East River / Manhattan skyline camera. Clicking Play in the official page creates exact YouTube embed obqnslJKrxc; this is distinct from its separately linked timelapse videos. Browser player shell remained black, so no actual moving/live scene was verified.",
     "currentEvidence": "The operator page identifies an always-on 4K Brooklyn Navy Yard / East River / Manhattan skyline camera. Clicking Play in the official page creates exact YouTube embed obqnslJKrxc; this is distinct from its separately linked timelapse videos. Browser player shell remained black, so no actual moving/live scene was verified.",
     "discoveredAt": "2026-10-29T15:22:34Z",
-    "permissionReview": "PER_VIDEO_EMBED_PERMISSION_REQUIRES_DEPLOYED_TEST",
-    "playbackReview": "HUMAN_PLAYBACK_REQUIRED",
-    "promotion": "BLOCKED_UNTIL_SPECIFIC_REVIEW",
+    "permissionReview": "PER_VIDEO_EMBED_CONFIRMED",
+    "playbackReview": "HUMAN_PLAYBACK_CONFIRMED",
+    "promotion": "APPROVED_FOR_CATALOG",
     "currentEvidenceReviewedAt": "2026-10-29T15:22:34Z",
     "platformEvidence": "Only the unchanged provider-branded YouTube player may be tested. Preserve branding, controls, advertising and referring origin. No restream, recording, extracted stream or imagery reuse. Exact-target permission and deployed human live/current playback remain required.",
     "operationalResearchReason": "OWNER_REQUESTED_WATCH_EARTH_GEOGRAPHIC_VARIETY",
@@ -459,12 +459,18 @@
       "https://developers.google.com/youtube/terms/required-minimum-functionality",
       "https://developers.google.com/youtube/terms/developer-policies"
     ],
-    "reviewNote": "Research only. Confirm real moving scene and current/LIVE state, not a thumbnail, replay or timelapse. Skyline/mountain must be legible; report browser and any failure. No automatic source creation or Watch Earth admission."
+    "reviewNote": "Exact owner-published standard YouTube player approved after target-bound deployed owner playback and separate clear-view confirmation; preserve player controls/branding/advertising. No blanket provider permission or media-reuse licence.",
+    "lastHumanReviewAt": "2026-10-29T16:09:59.743Z",
+    "lastHumanReviewOutcome": "HUMAN_PLAYBACK_CONFIRMED",
+    "reviewBatch": "6e2c74df0bcac1be",
+    "reviewedSourceUrl": "https://brooklynwaterfront.cam/",
+    "reviewedEmbedUrl": "https://www.youtube-nocookie.com/embed/obqnslJKrxc",
+    "publishedSourceId": "nyc-brooklyn-skyline-live"
   },
   {
     "id": "youtube-davos-jakobshorn-gueggel",
     "title": "Davos — Jakobshorn Mountain Panorama",
-    "status": "RESEARCH_ONLY",
+    "status": "APPROVED",
     "provider": "Châlet Güggel Davos",
     "platform": "YouTube",
     "sourceUrl": "https://www.chaletgueggel.ch/en/live-webcam",
@@ -472,9 +478,9 @@
     "ownerEvidence": "The mountain restaurant official live-webcam page directly embeds exact YouTube player sSen5EoOiJs and describes 24-hour live images of Jakobshorn mountain scenery. HTTP200 page and exact embed HTML independently retrieved. Page wording/loading does not prove actual live video.",
     "currentEvidence": "The mountain restaurant official live-webcam page directly embeds exact YouTube player sSen5EoOiJs and describes 24-hour live images of Jakobshorn mountain scenery. HTTP200 page and exact embed HTML independently retrieved. Page wording/loading does not prove actual live video.",
     "discoveredAt": "2026-10-29T15:22:34Z",
-    "permissionReview": "PER_VIDEO_EMBED_PERMISSION_REQUIRES_DEPLOYED_TEST",
-    "playbackReview": "HUMAN_PLAYBACK_REQUIRED",
-    "promotion": "BLOCKED_UNTIL_SPECIFIC_REVIEW",
+    "permissionReview": "PER_VIDEO_EMBED_CONFIRMED",
+    "playbackReview": "HUMAN_PLAYBACK_CONFIRMED",
+    "promotion": "APPROVED_FOR_CATALOG",
     "currentEvidenceReviewedAt": "2026-10-29T15:22:34Z",
     "platformEvidence": "Only the unchanged provider-branded YouTube player may be tested. Preserve branding, controls, advertising and referring origin. No restream, recording, extracted stream or imagery reuse. Exact-target permission and deployed human live/current playback remain required.",
     "operationalResearchReason": "OWNER_REQUESTED_WATCH_EARTH_GEOGRAPHIC_VARIETY",
@@ -483,6 +489,12 @@
       "https://developers.google.com/youtube/terms/required-minimum-functionality",
       "https://developers.google.com/youtube/terms/developer-policies"
     ],
-    "reviewNote": "Research only. Confirm real moving scene and current/LIVE state, not a thumbnail, replay or timelapse. Skyline/mountain must be legible; report browser and any failure. No automatic source creation or Watch Earth admission."
+    "reviewNote": "Exact owner-published standard YouTube player approved after target-bound deployed owner playback and separate clear-view confirmation; preserve player controls/branding/advertising. No blanket provider permission or media-reuse licence.",
+    "lastHumanReviewAt": "2026-10-29T16:10:05.294Z",
+    "lastHumanReviewOutcome": "HUMAN_PLAYBACK_CONFIRMED",
+    "reviewBatch": "6e2c74df0bcac1be",
+    "reviewedSourceUrl": "https://www.chaletgueggel.ch/en/live-webcam",
+    "reviewedEmbedUrl": "https://www.youtube-nocookie.com/embed/sSen5EoOiJs",
+    "publishedSourceId": "davos-jakobshorn-live"
   }
 ]

@@ -33,7 +33,7 @@ must(read("src/travel-planning-client.js").includes("partnerCurrent")&&read("src
 must(app.includes('s.truth==="LIVE_VIDEO"&&s.playback==="EMBED"&&s.permission==="EMBED_ALLOWED"&&recentPlaybackProof(s)'),"Watch Earth must require verified, approved moving live-video streams; stills, PREVIEW and external-only must be excluded");
 must(app.includes("sources.filter(s=>watchEligible(s)&&currentInside(s))"),"Watch Earth must require in-ERN playback without treating optional thumbnail imagery as live proof");
 const watchSelector=app.slice(app.indexOf("function buildWatch("),app.indexOf("function generatedBackground"));
-must(watchSelector.includes("limit=7")&&watchSelector.includes("places.has(id)")&&watchSelector.includes("countries.get(c)")&&watchSelector.includes("providers.get(p)"),"Watch Earth must curate at most seven distinct places with country/provider diversity");
+must(watchSelector.includes("limit=9")&&watchSelector.includes("places.has(id)")&&watchSelector.includes("countries.get(c)")&&watchSelector.includes("providers.get(p)"),"Watch Earth must curate at most nine distinct places with country/provider diversity");
 must(app.includes("function provenWatchHere(s){return watchEligible(s)}")&&app.includes("state.watch.find(provenWatchHere)"),"Hero Watch action must only open a proven Watch Earth live stream");
 must(app.includes("function atlasEligible(s)")&&app.includes("state.sources.filter(atlasEligible)"),"Living Atlas lost broader truthful mapped-catalog coverage");
 must(app.includes("localDirectoryMatch(")&&app.includes("localDirectoryCard("),"reviewed local-place search plumbing missing");

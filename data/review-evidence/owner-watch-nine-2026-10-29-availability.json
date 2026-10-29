@@ -1,0 +1,104 @@
+{
+  "checkedAt": "2026-10-29T16:14:34.859538+00:00",
+  "results": [
+    {
+      "url": "https://brooklynwaterfront.cam/",
+      "observedAt": "2026-10-29T16:14:23.416747+00:00",
+      "httpStatus": 403,
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "url": "https://global.kyoto.travel/en/comfort/",
+      "observedAt": "2026-10-29T16:14:23.417266+00:00",
+      "httpStatus": 403,
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "url": "https://santaclausvillage.info/live-video-webcam/",
+      "finalUrl": "https://santaclausvillage.info/live-video-webcam/",
+      "httpStatus": 200,
+      "observedAt": "2026-10-29T16:14:23.417734+00:00",
+      "bytes": 78584
+    },
+    {
+      "url": "https://www.chaletgueggel.ch/en/live-webcam",
+      "finalUrl": "https://www.chaletgueggel.ch/en/live-webcam",
+      "httpStatus": 200,
+      "observedAt": "2026-10-29T16:14:23.418091+00:00",
+      "bytes": 20673,
+      "exactEmbedPresent": true
+    },
+    {
+      "url": "https://www.eastcoast-nsa.gov.tw/en/service/live-camera/22/",
+      "finalUrl": "https://www.eastcoast-nsa.gov.tw/en/service/live-camera/22/",
+      "httpStatus": 200,
+      "observedAt": "2026-10-29T16:14:23.418671+00:00",
+      "bytes": 56005
+    },
+    {
+      "url": "https://www.viaduct.co.nz/",
+      "finalUrl": "https://www.viaduct.co.nz/",
+      "httpStatus": 200,
+      "observedAt": "2026-10-29T16:14:23.419053+00:00",
+      "bytes": 82750
+    },
+    {
+      "url": "https://www.youtube-nocookie.com/embed/obqnslJKrxc",
+      "finalUrl": "https://www.youtube-nocookie.com/embed/obqnslJKrxc",
+      "httpStatus": 200,
+      "observedAt": "2026-10-29T16:14:29.057556+00:00",
+      "bytes": 144598
+    },
+    {
+      "url": "https://www.youtube-nocookie.com/embed/sSen5EoOiJs",
+      "finalUrl": "https://www.youtube-nocookie.com/embed/sSen5EoOiJs",
+      "httpStatus": 200,
+      "observedAt": "2026-10-29T16:14:29.155226+00:00",
+      "bytes": 144930
+    },
+    {
+      "url": "https://www.youtube.com/oembed?url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DobqnslJKrxc&format=json",
+      "finalUrl": "https://www.youtube.com/oembed?url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DobqnslJKrxc&format=json",
+      "httpStatus": 200,
+      "observedAt": "2026-10-29T16:14:29.500430+00:00",
+      "bytes": 995,
+      "metadata": {
+        "title": "🔴 New York City Live Cam in 4K — New York Harbor, Brooklyn & Manhattan Skyline, East River | 24/7",
+        "author_name": "Brooklyn Waterfront Cams",
+        "author_url": "https://www.youtube.com/@BrooklynWaterfrontCams",
+        "type": "video",
+        "height": 113,
+        "width": 200,
+        "version": "1.0",
+        "provider_name": "YouTube",
+        "provider_url": "https://www.youtube.com/",
+        "thumbnail_height": 360,
+        "thumbnail_width": 480,
+        "thumbnail_url": "https://i.ytimg.com/vi/obqnslJKrxc/hqdefault.jpg",
+        "html": "<iframe width=\"200\" height=\"113\" src=\"https://www.youtube.com/embed/obqnslJKrxc?feature=oembed\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen title=\"🔴 New York City Live Cam in 4K — New York Harbor, Brooklyn &amp; Manhattan Skyline, East River | 24/7\"></iframe>"
+      }
+    },
+    {
+      "url": "https://www.youtube.com/oembed?url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DsSen5EoOiJs&format=json",
+      "finalUrl": "https://www.youtube.com/oembed?url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DsSen5EoOiJs&format=json",
+      "httpStatus": 200,
+      "observedAt": "2026-10-29T16:14:30.489271+00:00",
+      "bytes": 840,
+      "metadata": {
+        "title": "Livestream von CHÂLET GÜGGEL DAVOS",
+        "author_name": "CHÂLET GÜGGEL DAVOS",
+        "author_url": "https://www.youtube.com/@CHALET-GUEGGEL",
+        "type": "video",
+        "height": 113,
+        "width": 200,
+        "version": "1.0",
+        "provider_name": "YouTube",
+        "provider_url": "https://www.youtube.com/",
+        "thumbnail_height": 360,
+        "thumbnail_width": 480,
+        "thumbnail_url": "https://i.ytimg.com/vi/sSen5EoOiJs/hqdefault.jpg",
+        "html": "<iframe width=\"200\" height=\"113\" src=\"https://www.youtube.com/embed/sSen5EoOiJs?feature=oembed\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen title=\"Livestream von CHÂLET GÜGGEL DAVOS\"></iframe>"
+      }
+    }
+  ]
+}
