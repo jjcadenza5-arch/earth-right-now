@@ -69,3 +69,22 @@ assert.equal(waiting.status,"CURATED","Keep the established five usable while ev
 assert.equal(waiting.capacityRemaining,2);
 assert.match(app.slice(app.indexOf("function buildWatch("),app.indexOf("function generatedBackground")),/limit=7/);
 console.log("Seven-slot staging preserves the five-stream curated floor, rejects stale/nonvideo padding, and caps excess candidates");
+
+// Five cards are a rotating window, while viewer navigation retains the full seven.
+const windowCode=app.slice(app.indexOf("function watchWindow("),app.indexOf("function renderWatch("));
+const visibleWindow=new Function(windowCode+";return watchWindow")();
+const cards=Array.from({length:7},(_,i)=>({id:String(i+1)}));
+const shown=new Set();
+for(let step=0;step<7;step++){
+ const window=visibleWindow(cards,step);
+ assert.equal(window.length,5);
+ assert.equal(new Set(window.map(x=>x.id)).size,5);
+ for(const item of window)shown.add(item.id);
+ assert.deepEqual(window.map(x=>x.id),visibleWindow([...cards].reverse(),step).map(x=>x.id));
+}
+assert.equal(shown.size,7,"All seven participate across rotation steps");
+assert.deepEqual(visibleWindow(cards,7),visibleWindow(cards,0),"Window wraps after seven steps");
+assert.equal(visibleWindow(cards.slice(0,2),0).length,2,"Never pad an undersized pool");
+assert.equal(visibleWindow([],0).length,0);
+assert.match(app,/state.watch=buildWatch\(state.sources\);const v=watchWindow\(state.watch\)/);
+assert.match(app,/state.watchIndex=\(state.watchIndex\+d\+state.watch.length\)%state.watch.length/);
