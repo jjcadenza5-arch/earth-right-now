@@ -1,0 +1,95 @@
+{
+  "schemaVersion": 1,
+  "kind": "ERN_OPERATOR_REVIEW_EVIDENCE",
+  "generatedAt": "2026-10-29T04:55:52.643Z",
+  "reviewOrigin": "https://earthrightnow.app/review/inside-ern.html",
+  "reviewBatch": "85fe56d1b9f1a2e3",
+  "catalogMutationAllowed": false,
+  "networkStatus": "UNKNOWN_NOT_RECORDED",
+  "items": [
+    {
+      "id": "kyoto-hanamikoji-live",
+      "type": "backlog",
+      "title": "Kyoto — Hanamikoji Street",
+      "provider": "Kyoto City Tourism Association",
+      "outcome": "HUMAN_PLAYBACK_CONFIRMED",
+      "observedAt": "2026-10-29T04:55:43.145Z",
+      "evidenceKind": "HUMAN_REVIEW",
+      "networkStatus": "UNKNOWN_NOT_RECORDED",
+      "sourceUrl": "https://global.kyoto.travel/en/comfort/",
+      "embedUrl": "https://www.youtube-nocookie.com/embed/J3xHBUgWRqc"
+    },
+    {
+      "id": "kyoto-kiyomizuzaka-live",
+      "type": "backlog",
+      "title": "Kyoto — Kiyomizu-zaka",
+      "provider": "Kyoto City Tourism Association",
+      "outcome": "HUMAN_PLAYBACK_CONFIRMED",
+      "observedAt": "2026-10-29T04:55:39.563Z",
+      "evidenceKind": "HUMAN_REVIEW",
+      "networkStatus": "UNKNOWN_NOT_RECORDED",
+      "sourceUrl": "https://global.kyoto.travel/en/comfort/",
+      "embedUrl": "https://www.youtube-nocookie.com/embed/cUnYPpK7ENk"
+    },
+    {
+      "id": "kyoto-nishiki-market-live",
+      "type": "backlog",
+      "title": "Kyoto — Nishiki Market",
+      "provider": "Kyoto City Tourism Association",
+      "outcome": "HUMAN_PLAYBACK_CONFIRMED",
+      "observedAt": "2026-10-29T04:55:36.133Z",
+      "evidenceKind": "HUMAN_REVIEW",
+      "networkStatus": "UNKNOWN_NOT_RECORDED",
+      "sourceUrl": "https://global.kyoto.travel/en/comfort/",
+      "embedUrl": "https://www.youtube-nocookie.com/embed/qZ2ghbe3zc0"
+    },
+    {
+      "id": "taiwan-yehliu-live",
+      "type": "backlog",
+      "title": "Yehliu Geopark — Taiwan North Coast",
+      "provider": "Taiwan Tourism Administration",
+      "outcome": "HUMAN_PLAYBACK_CONFIRMED",
+      "observedAt": "2026-10-29T04:55:26.342Z",
+      "evidenceKind": "HUMAN_REVIEW",
+      "networkStatus": "UNKNOWN_NOT_RECORDED",
+      "sourceUrl": "https://www.northguan-nsa.gov.tw/user/article.aspx?Lang=2&SNo=04007411",
+      "embedUrl": "https://www.youtube-nocookie.com/embed/ZjuY4qKaj40"
+    },
+    {
+      "id": "takayama-miyagawa-stream",
+      "type": "backlog",
+      "title": "Takayama — Miyagawa & Kaji Bridge",
+      "provider": "Hida-Takayama Live Camera",
+      "outcome": "HUMAN_PLAYBACK_CONFIRMED",
+      "observedAt": "2026-10-29T04:55:48.843Z",
+      "evidenceKind": "HUMAN_REVIEW",
+      "networkStatus": "UNKNOWN_NOT_RECORDED",
+      "sourceUrl": "https://takayama-live.com/streaming",
+      "embedUrl": "https://www.youtube.com/embed/live_stream?channel=UC5MNHWRJRJ1buoVIg2sHmCw"
+    },
+    {
+      "id": "verbier",
+      "type": "backlog",
+      "title": "Verbier",
+      "provider": "Verbier – Val de Bagnes Tourism",
+      "outcome": "HUMAN_PLAYBACK_CONFIRMED",
+      "observedAt": "2026-10-29T04:55:30.338Z",
+      "evidenceKind": "HUMAN_REVIEW",
+      "networkStatus": "UNKNOWN_NOT_RECORDED",
+      "sourceUrl": "https://www.verbier.ch/en/practice/live/webcams/",
+      "embedUrl": "https://www.youtube-nocookie.com/embed/9ljoXhTxjag"
+    },
+    {
+      "id": "volcan-tajogaite",
+      "type": "backlog",
+      "title": "Volcán Tajogaite",
+      "provider": "Webcam La Palma",
+      "outcome": "HUMAN_PLAYBACK_CONFIRMED",
+      "observedAt": "2026-10-29T04:55:19.984Z",
+      "evidenceKind": "HUMAN_REVIEW",
+      "networkStatus": "UNKNOWN_NOT_RECORDED",
+      "sourceUrl": "https://webcam-lapalma.de/webcam-vulkan-la-palma/",
+      "embedUrl": "https://webcam-lapalma.de/embed/vulkan/"
+    }
+  ]
+}

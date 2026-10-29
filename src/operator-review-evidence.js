@@ -1,5 +1,5 @@
 const OUTCOMES=new Set(["HUMAN_PLAYBACK_CONFIRMED","PLAYBACK_FAILED","INCONCLUSIVE"]);
-const TYPES=new Set(["restore","research","generated"]);
+const TYPES=new Set(["restore","backlog","research","generated"]);
 function normalizeOriginPath(raw){
  try{
    const u=new URL(String(raw||""));
@@ -32,12 +32,12 @@ export function validateOperatorReviewEvidence(packet,{
  }
  if(!Array.isArray(packet.items))rejected.push({reason:"ITEMS_MUST_BE_ARRAY"});
  for(const item of Array.isArray(packet.items)?packet.items:[]){
-   const id=String(item?.id||"").trim(),type=String(item?.type||"").trim(),key=type+":"+id;
+   const id=String(item?.id||"").trim(),type=String(item?.type||"").trim(),key=(type==="backlog"?"restore":type)+":"+id;
    if(!id){rejected.push({id:null,reason:"MISSING_ID"});continue}
    if(!TYPES.has(type)){rejected.push({id,reason:"INVALID_TYPE"});continue}
    if(seen.has(key)){rejected.push({id,reason:"DUPLICATE_ITEM"});continue}
    seen.add(key);
-   if(type==="restore"&&!known.has(id)){rejected.push({id,reason:"UNKNOWN_SOURCE_ID"});continue}
+   if((type==="restore"||type==="backlog")&&!known.has(id)){rejected.push({id,reason:"UNKNOWN_SOURCE_ID"});continue}
    if(type==="research"&&!research.has(id)){rejected.push({id,reason:"UNKNOWN_RESEARCH_ID"});continue}
    if(type==="generated"&&!generated.has(id)){rejected.push({id,reason:"UNKNOWN_GENERATED_TARGET_ID"});continue}
    if(!OUTCOMES.has(item.outcome)){rejected.push({id,reason:"INVALID_OUTCOME"});continue}
@@ -51,7 +51,7 @@ export function validateOperatorReviewEvidence(packet,{
    if(item.networkStatus!=="UNKNOWN_NOT_RECORDED"){rejected.push({id,reason:"ITEM_NETWORK_STATUS_MUST_BE_UNKNOWN"});continue}
    accepted.push({id,type,outcome:item.outcome,observedAt:new Date(t).toISOString(),title:item.title||null,provider:item.provider||null,sourceUrl:item.sourceUrl||null,embedUrl:item.embedUrl||null,evidenceKind:"HUMAN_REVIEW",networkStatus:"UNKNOWN_NOT_RECORDED"});
  }
- const sourceEvidence=accepted.filter(x=>x.type==="restore"),researchEvidence=accepted.filter(x=>x.type==="research"),generatedEvidence=accepted.filter(x=>x.type==="generated");
+ const sourceEvidence=accepted.filter(x=>x.type==="restore"||x.type==="backlog"),researchEvidence=accepted.filter(x=>x.type==="research"),generatedEvidence=accepted.filter(x=>x.type==="generated");
  return{
    ok:rejected.length===0,
    accepted,rejected,sourceEvidence,researchEvidence,generatedEvidence,

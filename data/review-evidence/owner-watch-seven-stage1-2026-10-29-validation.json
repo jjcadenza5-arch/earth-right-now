@@ -1,0 +1,476 @@
+{
+  "schemaVersion": 1,
+  "validatedAt": "2026-10-29T04:59:01.782Z",
+  "deployedReviewBatch": "85fe56d1b9f1a2e3",
+  "validation": {
+    "ok": true,
+    "accepted": [
+      {
+        "id": "kyoto-hanamikoji-live",
+        "type": "backlog",
+        "outcome": "HUMAN_PLAYBACK_CONFIRMED",
+        "observedAt": "2026-10-29T04:55:43.145Z",
+        "title": "Kyoto — Hanamikoji Street",
+        "provider": "Kyoto City Tourism Association",
+        "sourceUrl": "https://global.kyoto.travel/en/comfort/",
+        "embedUrl": "https://www.youtube-nocookie.com/embed/J3xHBUgWRqc",
+        "evidenceKind": "HUMAN_REVIEW",
+        "networkStatus": "UNKNOWN_NOT_RECORDED"
+      },
+      {
+        "id": "kyoto-kiyomizuzaka-live",
+        "type": "backlog",
+        "outcome": "HUMAN_PLAYBACK_CONFIRMED",
+        "observedAt": "2026-10-29T04:55:39.563Z",
+        "title": "Kyoto — Kiyomizu-zaka",
+        "provider": "Kyoto City Tourism Association",
+        "sourceUrl": "https://global.kyoto.travel/en/comfort/",
+        "embedUrl": "https://www.youtube-nocookie.com/embed/cUnYPpK7ENk",
+        "evidenceKind": "HUMAN_REVIEW",
+        "networkStatus": "UNKNOWN_NOT_RECORDED"
+      },
+      {
+        "id": "kyoto-nishiki-market-live",
+        "type": "backlog",
+        "outcome": "HUMAN_PLAYBACK_CONFIRMED",
+        "observedAt": "2026-10-29T04:55:36.133Z",
+        "title": "Kyoto — Nishiki Market",
+        "provider": "Kyoto City Tourism Association",
+        "sourceUrl": "https://global.kyoto.travel/en/comfort/",
+        "embedUrl": "https://www.youtube-nocookie.com/embed/qZ2ghbe3zc0",
+        "evidenceKind": "HUMAN_REVIEW",
+        "networkStatus": "UNKNOWN_NOT_RECORDED"
+      },
+      {
+        "id": "taiwan-yehliu-live",
+        "type": "backlog",
+        "outcome": "HUMAN_PLAYBACK_CONFIRMED",
+        "observedAt": "2026-10-29T04:55:26.342Z",
+        "title": "Yehliu Geopark — Taiwan North Coast",
+        "provider": "Taiwan Tourism Administration",
+        "sourceUrl": "https://www.northguan-nsa.gov.tw/user/article.aspx?Lang=2&SNo=04007411",
+        "embedUrl": "https://www.youtube-nocookie.com/embed/ZjuY4qKaj40",
+        "evidenceKind": "HUMAN_REVIEW",
+        "networkStatus": "UNKNOWN_NOT_RECORDED"
+      },
+      {
+        "id": "takayama-miyagawa-stream",
+        "type": "backlog",
+        "outcome": "HUMAN_PLAYBACK_CONFIRMED",
+        "observedAt": "2026-10-29T04:55:48.843Z",
+        "title": "Takayama — Miyagawa & Kaji Bridge",
+        "provider": "Hida-Takayama Live Camera",
+        "sourceUrl": "https://takayama-live.com/streaming",
+        "embedUrl": "https://www.youtube.com/embed/live_stream?channel=UC5MNHWRJRJ1buoVIg2sHmCw",
+        "evidenceKind": "HUMAN_REVIEW",
+        "networkStatus": "UNKNOWN_NOT_RECORDED"
+      },
+      {
+        "id": "verbier",
+        "type": "backlog",
+        "outcome": "HUMAN_PLAYBACK_CONFIRMED",
+        "observedAt": "2026-10-29T04:55:30.338Z",
+        "title": "Verbier",
+        "provider": "Verbier – Val de Bagnes Tourism",
+        "sourceUrl": "https://www.verbier.ch/en/practice/live/webcams/",
+        "embedUrl": "https://www.youtube-nocookie.com/embed/9ljoXhTxjag",
+        "evidenceKind": "HUMAN_REVIEW",
+        "networkStatus": "UNKNOWN_NOT_RECORDED"
+      },
+      {
+        "id": "volcan-tajogaite",
+        "type": "backlog",
+        "outcome": "HUMAN_PLAYBACK_CONFIRMED",
+        "observedAt": "2026-10-29T04:55:19.984Z",
+        "title": "Volcán Tajogaite",
+        "provider": "Webcam La Palma",
+        "sourceUrl": "https://webcam-lapalma.de/webcam-vulkan-la-palma/",
+        "embedUrl": "https://webcam-lapalma.de/embed/vulkan/",
+        "evidenceKind": "HUMAN_REVIEW",
+        "networkStatus": "UNKNOWN_NOT_RECORDED"
+      }
+    ],
+    "rejected": [],
+    "sourceEvidence": [
+      {
+        "id": "kyoto-hanamikoji-live",
+        "type": "backlog",
+        "outcome": "HUMAN_PLAYBACK_CONFIRMED",
+        "observedAt": "2026-10-29T04:55:43.145Z",
+        "title": "Kyoto — Hanamikoji Street",
+        "provider": "Kyoto City Tourism Association",
+        "sourceUrl": "https://global.kyoto.travel/en/comfort/",
+        "embedUrl": "https://www.youtube-nocookie.com/embed/J3xHBUgWRqc",
+        "evidenceKind": "HUMAN_REVIEW",
+        "networkStatus": "UNKNOWN_NOT_RECORDED"
+      },
+      {
+        "id": "kyoto-kiyomizuzaka-live",
+        "type": "backlog",
+        "outcome": "HUMAN_PLAYBACK_CONFIRMED",
+        "observedAt": "2026-10-29T04:55:39.563Z",
+        "title": "Kyoto — Kiyomizu-zaka",
+        "provider": "Kyoto City Tourism Association",
+        "sourceUrl": "https://global.kyoto.travel/en/comfort/",
+        "embedUrl": "https://www.youtube-nocookie.com/embed/cUnYPpK7ENk",
+        "evidenceKind": "HUMAN_REVIEW",
+        "networkStatus": "UNKNOWN_NOT_RECORDED"
+      },
+      {
+        "id": "kyoto-nishiki-market-live",
+        "type": "backlog",
+        "outcome": "HUMAN_PLAYBACK_CONFIRMED",
+        "observedAt": "2026-10-29T04:55:36.133Z",
+        "title": "Kyoto — Nishiki Market",
+        "provider": "Kyoto City Tourism Association",
+        "sourceUrl": "https://global.kyoto.travel/en/comfort/",
+        "embedUrl": "https://www.youtube-nocookie.com/embed/qZ2ghbe3zc0",
+        "evidenceKind": "HUMAN_REVIEW",
+        "networkStatus": "UNKNOWN_NOT_RECORDED"
+      },
+      {
+        "id": "taiwan-yehliu-live",
+        "type": "backlog",
+        "outcome": "HUMAN_PLAYBACK_CONFIRMED",
+        "observedAt": "2026-10-29T04:55:26.342Z",
+        "title": "Yehliu Geopark — Taiwan North Coast",
+        "provider": "Taiwan Tourism Administration",
+        "sourceUrl": "https://www.northguan-nsa.gov.tw/user/article.aspx?Lang=2&SNo=04007411",
+        "embedUrl": "https://www.youtube-nocookie.com/embed/ZjuY4qKaj40",
+        "evidenceKind": "HUMAN_REVIEW",
+        "networkStatus": "UNKNOWN_NOT_RECORDED"
+      },
+      {
+        "id": "takayama-miyagawa-stream",
+        "type": "backlog",
+        "outcome": "HUMAN_PLAYBACK_CONFIRMED",
+        "observedAt": "2026-10-29T04:55:48.843Z",
+        "title": "Takayama — Miyagawa & Kaji Bridge",
+        "provider": "Hida-Takayama Live Camera",
+        "sourceUrl": "https://takayama-live.com/streaming",
+        "embedUrl": "https://www.youtube.com/embed/live_stream?channel=UC5MNHWRJRJ1buoVIg2sHmCw",
+        "evidenceKind": "HUMAN_REVIEW",
+        "networkStatus": "UNKNOWN_NOT_RECORDED"
+      },
+      {
+        "id": "verbier",
+        "type": "backlog",
+        "outcome": "HUMAN_PLAYBACK_CONFIRMED",
+        "observedAt": "2026-10-29T04:55:30.338Z",
+        "title": "Verbier",
+        "provider": "Verbier – Val de Bagnes Tourism",
+        "sourceUrl": "https://www.verbier.ch/en/practice/live/webcams/",
+        "embedUrl": "https://www.youtube-nocookie.com/embed/9ljoXhTxjag",
+        "evidenceKind": "HUMAN_REVIEW",
+        "networkStatus": "UNKNOWN_NOT_RECORDED"
+      },
+      {
+        "id": "volcan-tajogaite",
+        "type": "backlog",
+        "outcome": "HUMAN_PLAYBACK_CONFIRMED",
+        "observedAt": "2026-10-29T04:55:19.984Z",
+        "title": "Volcán Tajogaite",
+        "provider": "Webcam La Palma",
+        "sourceUrl": "https://webcam-lapalma.de/webcam-vulkan-la-palma/",
+        "embedUrl": "https://webcam-lapalma.de/embed/vulkan/",
+        "evidenceKind": "HUMAN_REVIEW",
+        "networkStatus": "UNKNOWN_NOT_RECORDED"
+      }
+    ],
+    "researchEvidence": [],
+    "generatedEvidence": [],
+    "reviewOrigin": "https://earthrightnow.app/review/inside-ern.html",
+    "originTrusted": true,
+    "summary": {
+      "accepted": 7,
+      "rejected": 0,
+      "confirmed": 7,
+      "failed": 0,
+      "inconclusive": 0
+    },
+    "note": "Validation only. Optional deployed-origin and freshness checks can fail closed; human review evidence is never converted into source truth automatically."
+  },
+  "exactDeployedAndCurrentTargetsMatched": [
+    "kyoto-hanamikoji-live",
+    "kyoto-kiyomizuzaka-live",
+    "kyoto-nishiki-market-live",
+    "taiwan-yehliu-live",
+    "takayama-miyagawa-stream",
+    "verbier",
+    "volcan-tajogaite"
+  ],
+  "selectedForStageOne": [
+    "kyoto-kiyomizuzaka-live",
+    "kyoto-hanamikoji-live"
+  ],
+  "deferredEvidence": [
+    {
+      "id": "kyoto-nishiki-market-live",
+      "observedAt": "2026-10-29T04:55:36.133Z",
+      "disposition": "PRESERVED_NOT_APPLIED_IN_SEVEN_SLOT_STAGE",
+      "reason": "Keep approved two-camera expansion scope. Existing source holds/failures/schedules and other gates unchanged; later application requires fresh precondition, source/permission and scope review."
+    },
+    {
+      "id": "taiwan-yehliu-live",
+      "observedAt": "2026-10-29T04:55:26.342Z",
+      "disposition": "PRESERVED_NOT_APPLIED_IN_SEVEN_SLOT_STAGE",
+      "reason": "Keep approved two-camera expansion scope. Existing source holds/failures/schedules and other gates unchanged; later application requires fresh precondition, source/permission and scope review."
+    },
+    {
+      "id": "takayama-miyagawa-stream",
+      "observedAt": "2026-10-29T04:55:48.843Z",
+      "disposition": "PRESERVED_NOT_APPLIED_IN_SEVEN_SLOT_STAGE",
+      "reason": "Keep approved two-camera expansion scope. Existing source holds/failures/schedules and other gates unchanged; later application requires fresh precondition, source/permission and scope review."
+    },
+    {
+      "id": "verbier",
+      "observedAt": "2026-10-29T04:55:30.338Z",
+      "disposition": "PRESERVED_NOT_APPLIED_IN_SEVEN_SLOT_STAGE",
+      "reason": "Keep approved two-camera expansion scope. Existing source holds/failures/schedules and other gates unchanged; later application requires fresh precondition, source/permission and scope review."
+    },
+    {
+      "id": "volcan-tajogaite",
+      "observedAt": "2026-10-29T04:55:19.984Z",
+      "disposition": "PRESERVED_NOT_APPLIED_IN_SEVEN_SLOT_STAGE",
+      "reason": "Keep approved two-camera expansion scope. Existing source holds/failures/schedules and other gates unchanged; later application requires fresh precondition, source/permission and scope review."
+    }
+  ],
+  "availability": {
+    "results": [
+      {
+        "id": "kyoto-kiyomizuzaka-live",
+        "outcome": "PAGE_REACHABLE",
+        "httpStatus": 200,
+        "observedAt": "2026-10-29T04:59:01.782Z",
+        "sourceUrl": "https://global.kyoto.travel/en/comfort/",
+        "note": "One independent public Kyoto provider-page GET serves both exact Kyoto sources; availability only, not owner playback/network evidence."
+      },
+      {
+        "id": "kyoto-hanamikoji-live",
+        "outcome": "PAGE_REACHABLE",
+        "httpStatus": 200,
+        "observedAt": "2026-10-29T04:59:01.782Z",
+        "sourceUrl": "https://global.kyoto.travel/en/comfort/",
+        "note": "One independent public Kyoto provider-page GET serves both exact Kyoto sources; availability only, not owner playback/network evidence."
+      }
+    ]
+  },
+  "proposals": {
+    "schemaVersion": 1,
+    "generatedAt": "2026-10-29T04:59:01.785Z",
+    "validation": {
+      "ok": true,
+      "summary": {
+        "accepted": 7,
+        "rejected": 0,
+        "confirmed": 7,
+        "failed": 0,
+        "inconclusive": 0
+      },
+      "rejected": []
+    },
+    "catalogMutationAllowed": false,
+    "automaticHealthChangeAllowed": false,
+    "automaticPermissionApprovalAllowed": false,
+    "playbackProofUpdateAtomicityRequired": true,
+    "sourceProposals": [
+      {
+        "id": "kyoto-hanamikoji-live",
+        "outcome": "HUMAN_PLAYBACK_CONFIRMED",
+        "status": "READY_FOR_PROVIDER_OBSERVATION_PROPOSAL",
+        "reviewObservedAt": "2026-10-29T04:55:43.145Z",
+        "availabilityObservedAt": "2026-10-29T04:59:01.782Z",
+        "separationHours": 0.06,
+        "availabilityOutcome": "PAGE_REACHABLE",
+        "proposedObservation": {
+          "id": "kyoto-hanamikoji-live",
+          "httpStatus": 200,
+          "confirmation": "HUMAN_PLAYBACK",
+          "observedAt": "2026-10-29T04:55:43.145Z",
+          "reason": "Human playback confirmed in deployed ERN review lab; independent provider-page availability evidence was also current."
+        },
+        "proposedCatalogPlaybackMarker": {
+          "id": "kyoto-hanamikoji-live",
+          "playbackVerifiedAt": "2026-10-29T04:55:43.145Z"
+        },
+        "atomicProofUpdateRequired": true,
+        "automaticWriteAllowed": false
+      },
+      {
+        "id": "kyoto-kiyomizuzaka-live",
+        "outcome": "HUMAN_PLAYBACK_CONFIRMED",
+        "status": "READY_FOR_PROVIDER_OBSERVATION_PROPOSAL",
+        "reviewObservedAt": "2026-10-29T04:55:39.563Z",
+        "availabilityObservedAt": "2026-10-29T04:59:01.782Z",
+        "separationHours": 0.06,
+        "availabilityOutcome": "PAGE_REACHABLE",
+        "proposedObservation": {
+          "id": "kyoto-kiyomizuzaka-live",
+          "httpStatus": 200,
+          "confirmation": "HUMAN_PLAYBACK",
+          "observedAt": "2026-10-29T04:55:39.563Z",
+          "reason": "Human playback confirmed in deployed ERN review lab; independent provider-page availability evidence was also current."
+        },
+        "proposedCatalogPlaybackMarker": {
+          "id": "kyoto-kiyomizuzaka-live",
+          "playbackVerifiedAt": "2026-10-29T04:55:39.563Z"
+        },
+        "atomicProofUpdateRequired": true,
+        "automaticWriteAllowed": false
+      },
+      {
+        "id": "kyoto-nishiki-market-live",
+        "outcome": "HUMAN_PLAYBACK_CONFIRMED",
+        "status": "NEEDS_FRESH_AVAILABILITY_EVIDENCE",
+        "reviewObservedAt": "2026-10-29T04:55:36.133Z",
+        "availabilityObservedAt": null,
+        "availabilityOutcome": null,
+        "proposedObservation": null,
+        "proposedCatalogPlaybackMarker": null,
+        "atomicProofUpdateRequired": false,
+        "automaticWriteAllowed": false
+      },
+      {
+        "id": "taiwan-yehliu-live",
+        "outcome": "HUMAN_PLAYBACK_CONFIRMED",
+        "status": "NEEDS_FRESH_AVAILABILITY_EVIDENCE",
+        "reviewObservedAt": "2026-10-29T04:55:26.342Z",
+        "availabilityObservedAt": null,
+        "availabilityOutcome": null,
+        "proposedObservation": null,
+        "proposedCatalogPlaybackMarker": null,
+        "atomicProofUpdateRequired": false,
+        "automaticWriteAllowed": false
+      },
+      {
+        "id": "takayama-miyagawa-stream",
+        "outcome": "HUMAN_PLAYBACK_CONFIRMED",
+        "status": "NEEDS_FRESH_AVAILABILITY_EVIDENCE",
+        "reviewObservedAt": "2026-10-29T04:55:48.843Z",
+        "availabilityObservedAt": null,
+        "availabilityOutcome": null,
+        "proposedObservation": null,
+        "proposedCatalogPlaybackMarker": null,
+        "atomicProofUpdateRequired": false,
+        "automaticWriteAllowed": false
+      },
+      {
+        "id": "verbier",
+        "outcome": "HUMAN_PLAYBACK_CONFIRMED",
+        "status": "NEEDS_FRESH_AVAILABILITY_EVIDENCE",
+        "reviewObservedAt": "2026-10-29T04:55:30.338Z",
+        "availabilityObservedAt": null,
+        "availabilityOutcome": null,
+        "proposedObservation": null,
+        "proposedCatalogPlaybackMarker": null,
+        "atomicProofUpdateRequired": false,
+        "automaticWriteAllowed": false
+      },
+      {
+        "id": "volcan-tajogaite",
+        "outcome": "HUMAN_PLAYBACK_CONFIRMED",
+        "status": "NEEDS_FRESH_AVAILABILITY_EVIDENCE",
+        "reviewObservedAt": "2026-10-29T04:55:19.984Z",
+        "availabilityObservedAt": null,
+        "availabilityOutcome": null,
+        "proposedObservation": null,
+        "proposedCatalogPlaybackMarker": null,
+        "atomicProofUpdateRequired": false,
+        "automaticWriteAllowed": false
+      }
+    ],
+    "researchProposals": [],
+    "generatedProposals": [],
+    "summary": {
+      "sourceReady": 2,
+      "sourceNeedsAvailability": 5,
+      "sourceFailureReview": 0,
+      "sourceTargetChanged": 0,
+      "researchReadyForReview": 0,
+      "researchNeedsPreflight": 0,
+      "researchTargetChanged": 0,
+      "generatedReadyToRecord": 0,
+      "generatedTargetChanged": 0
+    },
+    "note": "Proposal layer only. When current target records are supplied, reviewed source/embed URLs must still match before evidence can progress. Confirmed playback proposals remain manual and atomic."
+  },
+  "selectedApplicationPlan": {
+    "schemaVersion": 1,
+    "generatedAt": "2026-10-29T04:59:01.785Z",
+    "total": 2,
+    "ready": 2,
+    "blocked": 0,
+    "items": [
+      {
+        "id": "kyoto-hanamikoji-live",
+        "ready": true,
+        "reasons": [],
+        "expectedCurrent": {
+          "playbackVerifiedAt": "2026-10-10T03:02:19.141Z",
+          "latestObservationObservedAt": "2026-10-02T00:45:00Z",
+          "latestObservationKind": "HUMAN_PLAYBACK"
+        },
+        "proposedAtomicUpdate": {
+          "catalog": {
+            "id": "kyoto-hanamikoji-live",
+            "playbackVerifiedAt": "2026-10-29T04:55:43.145Z"
+          },
+          "observation": {
+            "id": "kyoto-hanamikoji-live",
+            "httpStatus": 200,
+            "confirmation": "HUMAN_PLAYBACK",
+            "observedAt": "2026-10-29T04:55:43.145Z",
+            "reason": "Human playback confirmed in deployed ERN review lab; independent provider-page availability evidence was also current."
+          }
+        },
+        "preconditions": {
+          "playback": "EMBED",
+          "permission": "EMBED_ALLOWED",
+          "health": "HEALTHY",
+          "expectedPlaybackVerifiedAt": "2026-10-10T03:02:19.141Z",
+          "expectedLatestObservationObservedAt": "2026-10-02T00:45:00Z"
+        },
+        "automaticWriteAllowed": false
+      },
+      {
+        "id": "kyoto-kiyomizuzaka-live",
+        "ready": true,
+        "reasons": [],
+        "expectedCurrent": {
+          "playbackVerifiedAt": "2026-10-10T03:02:23.992Z",
+          "latestObservationObservedAt": "2026-10-02T00:45:00Z",
+          "latestObservationKind": "HUMAN_PLAYBACK"
+        },
+        "proposedAtomicUpdate": {
+          "catalog": {
+            "id": "kyoto-kiyomizuzaka-live",
+            "playbackVerifiedAt": "2026-10-29T04:55:39.563Z"
+          },
+          "observation": {
+            "id": "kyoto-kiyomizuzaka-live",
+            "httpStatus": 200,
+            "confirmation": "HUMAN_PLAYBACK",
+            "observedAt": "2026-10-29T04:55:39.563Z",
+            "reason": "Human playback confirmed in deployed ERN review lab; independent provider-page availability evidence was also current."
+          }
+        },
+        "preconditions": {
+          "playback": "EMBED",
+          "permission": "EMBED_ALLOWED",
+          "health": "HEALTHY",
+          "expectedPlaybackVerifiedAt": "2026-10-10T03:02:23.992Z",
+          "expectedLatestObservationObservedAt": "2026-10-02T00:45:00Z"
+        },
+        "automaticWriteAllowed": false
+      }
+    ],
+    "safety": {
+      "automaticWriteAllowed": false,
+      "partialProofUpdateAllowed": false,
+      "staleOverwriteAllowed": false,
+      "sourceTruthMutationBeyondPlaybackMarkerAllowed": false
+    },
+    "note": "Manual application plan only. Apply catalog marker + HUMAN_PLAYBACK observation together after re-checking preconditions against current main; never apply one side alone or overwrite newer evidence."
+  },
+  "automaticWriteAllowed": false
+}

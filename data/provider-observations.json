@@ -1209,5 +1209,41 @@
     "ownerPacketNetworkStatus": "UNKNOWN_NOT_RECORDED",
     "availabilityEvidenceSource": "data/review-evidence/owner-five-playback-2026-10-29-validation.json",
     "limitations": "Owner packet confirms playback. No scene description, measured viewing duration, browser name or LIVE-clock reading supplied; none inferred. HTTP200 is from a separate provider-page probe, not the owner packet."
+  },
+  {
+    "id": "kyoto-hanamikoji-live",
+    "httpStatus": 200,
+    "confirmation": "HUMAN_PLAYBACK",
+    "observedAt": "2026-10-29T04:55:43.145Z",
+    "reason": "Human playback confirmed in deployed ERN review lab; independent provider-page availability evidence was also current.",
+    "reviewer": "OWNER",
+    "browser": "UNKNOWN_NOT_RECORDED",
+    "reviewUrl": "https://earthrightnow.app/review/inside-ern.html",
+    "reviewBatch": "85fe56d1b9f1a2e3",
+    "sourceUrl": "https://global.kyoto.travel/en/comfort/",
+    "embedUrl": "https://www.youtube-nocookie.com/embed/J3xHBUgWRqc",
+    "evidenceKind": "HUMAN_REVIEW",
+    "ownerPacketType": "backlog",
+    "ownerPacketNetworkStatus": "UNKNOWN_NOT_RECORDED",
+    "availabilityEvidenceSource": "data/review-evidence/owner-watch-seven-stage1-2026-10-29-validation.json",
+    "limitations": "Owner packet confirms playback. No scene description, measured viewing duration, browser name or LIVE-clock reading supplied; none inferred. HTTP200 is from a separate provider-page probe, not the owner packet. Extra five submitted observations are retained in raw evidence but not applied in this two-camera stage."
+  },
+  {
+    "id": "kyoto-kiyomizuzaka-live",
+    "httpStatus": 200,
+    "confirmation": "HUMAN_PLAYBACK",
+    "observedAt": "2026-10-29T04:55:39.563Z",
+    "reason": "Human playback confirmed in deployed ERN review lab; independent provider-page availability evidence was also current.",
+    "reviewer": "OWNER",
+    "browser": "UNKNOWN_NOT_RECORDED",
+    "reviewUrl": "https://earthrightnow.app/review/inside-ern.html",
+    "reviewBatch": "85fe56d1b9f1a2e3",
+    "sourceUrl": "https://global.kyoto.travel/en/comfort/",
+    "embedUrl": "https://www.youtube-nocookie.com/embed/cUnYPpK7ENk",
+    "evidenceKind": "HUMAN_REVIEW",
+    "ownerPacketType": "backlog",
+    "ownerPacketNetworkStatus": "UNKNOWN_NOT_RECORDED",
+    "availabilityEvidenceSource": "data/review-evidence/owner-watch-seven-stage1-2026-10-29-validation.json",
+    "limitations": "Owner packet confirms playback. No scene description, measured viewing duration, browser name or LIVE-clock reading supplied; none inferred. HTTP200 is from a separate provider-page probe, not the owner packet. Extra five submitted observations are retained in raw evidence but not applied in this two-camera stage."
   }
 ]

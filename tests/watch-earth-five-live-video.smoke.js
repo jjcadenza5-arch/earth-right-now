@@ -20,7 +20,7 @@ const bait=[
  {...seed,id:"unproven-video",placeId:"unproven-video",quality:100,moment:100,playbackVerifiedAt:null}
 ];
 const assertTruth=items=>{
- assert.ok(items.length<=5,"Watch Earth has an absolute five-stream ceiling");
+ assert.ok(items.length<=7,"Watch Earth has an absolute seven-stream ceiling");
  assert.equal(new Set(items.map(s=>s.placeId||s.id)).size,items.length,"No repeated destinations");
  for(const s of items){
   assert.equal(s.truth,"LIVE_VIDEO",s.id);
@@ -30,7 +30,7 @@ const assertTruth=items=>{
  }
 };
 const actual=buildWatchEarth([...sources,...bait],{limit:20,now});
-assert.ok(actual.length>0&&actual.length<=5);
+assert.ok(actual.length>0&&actual.length<=7);
 assertTruth(actual);
 assert.ok(actual.every(s=>!bait.some(b=>b.id===s.id)));
 const dynamic=buildDynamicWatchEarth(sources,{limit:20,now});
@@ -43,7 +43,7 @@ const sparse=buildWatchEarth([...eligible.slice(0,2),...bait],{limit:20,now});
 assert.equal(sparse.length,2,"Do not pad five with unverified or nonvideo sources");
 assertTruth(sparse);
 const status=watchEarthLiveNowStatus(sources,{now});
-assert.equal(status.target,5);
+assert.equal(status.target,7);
 assert.equal(status.count,dynamic.length);
 assert.equal(status.inside,dynamic.length);
 const app=fs.readFileSync(new URL("../src/app-lite.js",import.meta.url),"utf8");
@@ -53,4 +53,19 @@ assert.doesNotMatch(app.slice(app.indexOf("function buildWatch("),app.indexOf("f
 const html=fs.readFileSync(new URL("../index.html",import.meta.url),"utf8");
 assert.ok(html.includes('data-i18n="currentWindows">live camera streams.'),"Promise must match published UI");
 assert.ok(html.includes('href="./places/"'),"Full searchable catalog must remain available");
-console.log("Five verified embedded live-video streams only; nonvideo and stale sources stay in wider discovery");
+console.log("Up to seven verified embedded live-video streams only; nonvideo and stale sources stay in wider discovery");
+// Stage 1 capacity grows only when enough independent places pass every existing gate.
+const expanded=Array.from({length:9},(_,i)=>({...seed,id:"stage-seven-"+i,placeId:"stage-seven-place-"+i,country:"Country"+i,provider:"Provider"+i,sourceUrl:"https://couchtourist.com/cam/"+(9100+i)+"/",embedUrl:"https://couchtourist.com/embed/cam/"+(9100+i)+"/"}));
+const seven=buildWatchEarth([...expanded,...bait],{limit:20,now});
+assert.equal(seven.length,7,"Stage 1 permits seven proven streams, never ten or twenty");
+assertTruth(seven);
+assert.equal(buildDynamicWatchEarth(expanded,{limit:20,now}).length,7,"Dynamic journey uses the same seven-stream ceiling");
+assert.equal(watchEarthLiveNowStatus(expanded,{now}).status,"FULL");
+const establishedFive=expanded.slice(0,5);
+const dueTwo=expanded.slice(5,7).map(s=>({...s,playbackVerifiedAt:"2020-01-01T00:00:00Z"}));
+const waiting=watchEarthLiveNowStatus([...establishedFive,...dueTwo,...bait],{now});
+assert.equal(waiting.count,5,"An expanded ceiling cannot renew two expired proofs");
+assert.equal(waiting.status,"CURATED","Keep the established five usable while evidence is pending");
+assert.equal(waiting.capacityRemaining,2);
+assert.match(app.slice(app.indexOf("function buildWatch("),app.indexOf("function generatedBackground")),/limit=7/);
+console.log("Seven-slot staging preserves the five-stream curated floor, rejects stale/nonvideo padding, and caps excess candidates");
