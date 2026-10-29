@@ -1,3 +1,11 @@
+## 2026-10-29 Bangkok — Auckland searchable visitor-business expansion deployed and accepted
+
+Production51b357afe73ecce827463f23dad935e4fd016efa. Pages40815647670 SUCCESS/all122 release smoke tests; Operations40815647643 SUCCESS/packet valid true issueCount0 issues[]; syntax40815647655 SUCCESS. Exact served production and twelve SHA256 checks passed; all runtime/source/ledger/offer/alias files preserved, homepage differs only by the existing build cache-busting replacements. Five exact owner29Oct playback dates and entire observation ledger unchanged.
+
+Directory646 valid entries after two unpaid first-party additions: New Zealand Maritime Museum and Koel Café at Auckland Viaduct. Both served in the approved directory and matched by existing ERN search logic. Important surface distinction: the static Auckland destination retains its existing first-four-venues limit, so these appended entries are searchable rather than new static destination links. No layout, ranking or display-limit changes made. Museum ticket/address-proof, last-entry, Christmas closure and separate sailing/access conditions require checking; café service, menu and dietary needs need direct confirmation. Existing SOUL not duplicated.
+
+Camera coverage860/1,000 distinct places (140 remaining),869 sources/861 catalog places,232 offers unchanged. Kariaotahi published target connection failure and Peaceful Bay public image-list Unauthorized mean no actual imagery verified; both held, no bypass/outage inference or retry loop. Website/publicOFF gates and five-camera renewal preserved. Next24h LIVE HERE30Oct07:59Bangkok; seven-day source/Watch horizon5Nov07:59subject to failures. No new camera, booking, affiliate activation or income claimed. Evidence docs/ERN_EXPANSION_BATCH37_2026-10-29.md. Continue focused usage-aware research; prioritize qualifying camera evidence and business resources with useful discoverability.
+
 # ERN expansion batch37 — 29 October 2026 Bangkok
 
 Review completed 2026-10-29T04:02:49Z. Baseline main8527ccc6383802d13c2b3b10a939537bd4b95bed, productionbc30b80881bb560de39f30c65e4de06e20457761.
