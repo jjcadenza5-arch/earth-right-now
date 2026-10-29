@@ -19,3 +19,12 @@ Primary sources:
 - https://developers.google.com/youtube/terms/developer-policies
 
 This is preparation, not a published-camera or income increase. No human review controls were pressed by the agent. Brooklyn plain HTTP retrieval returned403 while the normal browser displayed the official page; no bypass or outage inferred. Official source poster appears legible but is not moving-video proof. Current source and all prior human observations remain unchanged.
+
+## Deployed review-stage acceptance
+
+## 2026-10-29 Bangkok — New York / Davos review stage deployed and accepted
+
+Production b03f29b8969a38d778fefc10015f06e08a7b6137, treeda10d34c2b285b734ee677e6f2daa336a4b07a36. Pages40901600399 SUCCESS/job123545074049/all122 release tests; Operations40901600754 SUCCESS/job123545075243/packet valid true issueCount0 issues[]; syntax40901601136 SUCCESS. Ten served SHA256 checks passed, with exact byte preservation of runtime/styles/core/both supplements/entire human ledger/offers/directory. Review batch6e2c74df0bcac1be and both exact research IDs verified served. Browser visibly confirms both friendly candidate cards, load controls, exact YouTube titles/owner channels. Both player shells load; Play clicked, but actual scenes remain black in cloudbrowser. INCONCLUSIVE only; no human outcome controls used, no owner evidence fabricated, no outage/embedding failure inferred.
+
+Human action: https://earthrightnow.app/review/inside-ern.html → Second-provider research → individually load New York — Manhattan Skyline from Brooklyn and Davos — Jakobshorn Mountain Panorama. Confirm actual clear moving/current footage and mark true outcomes, then Copy JSON and return it with skyline/mountain clarity observations. Only these2 checks requested now. Source-specific permission must still be resolved before catalog admission; review evidence never auto-promotes. Existing EarthCam stayslink-only and Verbier visual hold unchanged. Public Watch Earth remains7/5 visible. Next authorized implementation after qualifying evidence: add approved targets and expand rotation pool to9 while retaining5 visible; do not claim this stage is already public9. No paid-business/source count changes or redesign.
+
