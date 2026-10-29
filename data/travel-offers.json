@@ -4158,5 +4158,23 @@
     "manualOpenVerified": false,
     "verificationMethod": "CURRENT_DESTINATION_INVENTORY_PLUS_OWNER_VERIFIED_AFFILIATE_ID_REUSE",
     "evidence": "Current Viator 2026 Phuket inventory was independently rechecked on the exact destination page. The tracked URL uses ERN's already owner-verified Viator partner identity P00322254 / mcid 42383. Optional downstream planning only; commercial value cannot affect Earth ranking."
+  },
+  {
+    "id": "klook-auckland-muriwai-activities",
+    "title": "Explore activities across Auckland",
+    "placeId": "nz-muriwai-golf-links",
+    "provider": "Klook",
+    "intent": "activities",
+    "affiliate": true,
+    "sponsored": false,
+    "partnerId": "klook",
+    "destinationScope": "Auckland",
+    "url": "https://klook.tpo.mx/kZmdWsAo",
+    "disclosure": "Affiliate link",
+    "verifiedAt": "2026-09-28T13:45:00Z",
+    "expiresAt": "2026-12-27T13:45:00Z",
+    "evidence": "Human generated a destination-specific Klook/Auckland link through the verified Travelpayouts ERN Project and confirmed it opens the Auckland destination page correctly. Same exact URL mapped to Muriwai Golf Links on 2026-10-29T04:19:19Z because the club identifies its location as Coast Road Muriwai Auckland. Auckland-wide activity planning only; no golf-course ticket, tee time, Muriwai-specific inventory or transport inclusion claimed. Original human verification date and expiry preserved. Bounded29Oct redirect reached the expected Auckland destination URL with affiliate parameters, but final-page connection timed out; no new successful landing/playback, purchase attribution or income verification claimed.",
+    "verified": true,
+    "placementReviewedAt": "2026-10-29T04:19:19Z"
   }
 ]

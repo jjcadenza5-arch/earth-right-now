@@ -13759,5 +13759,26 @@
     "affiliate": false,
     "reviewBasis": "FIRST_PARTY_OPERATOR_PAGE_REVIEW",
     "reviewSourceUrl": "https://www.koel.co.nz/"
+  },
+  {
+    "id": "local-muriwai-golf-visitor-planning",
+    "placeId": "nz-muriwai-golf-links",
+    "place": "Muriwai — Golf Links",
+    "name": "Muriwai Golf Links — visitor tee times and green fees",
+    "type": "visitor information",
+    "url": "https://www.muriwaigolfclub.co.nz/green-fees",
+    "summary": "Official visitor green-fee and booking conditions for the Muriwai course on Coast Road. Confirm tee times, eligibility for the published golf-affiliation rate and current fees directly. The club applies a 24-hour cancellation policy and may charge for unused slots, including adverse-weather cancellations while the course remains playable; refunds are discretionary. This is an unpaid operator guide, not an ERN affiliate booking.",
+    "country": "New Zealand",
+    "tags": [
+      "golf",
+      "visitor planning",
+      "Muriwai"
+    ],
+    "verifiedAt": "2026-10-29T04:19:19Z",
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_OPERATOR_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.muriwaigolfclub.co.nz/green-fees"
   }
 ]

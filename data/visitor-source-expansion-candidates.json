@@ -3167,6 +3167,31 @@
       "why": "Official page says south-facing camera at Marine Rescue building and one-minute images. Public page-script image-list request returned Unauthorized; no actual image, capture time or visual quality verified. Coastal-data licence reviewed but no admission or media reuse inferred.",
       "next": "Wait for materially available public imagery; no authentication workaround, bypass or promotion. Camping/fish-and-chips first-party discovery remains unattached to this uncatalogued place.",
       "reviewedAt": "2026-10-29T04:02:49Z"
+    },
+    {
+      "id": "muriwai-golf-links-batch38",
+      "priority": "P2",
+      "placeGroup": "Muriwai Golf Links",
+      "country": "New Zealand",
+      "provider": "Muriwai Golf Links / windsurf.co.nz",
+      "candidateType": "FIRST_PARTY_CURRENT_IMAGE",
+      "visitorDecisionValue": "HIGH",
+      "qualityPotential": "HIGH",
+      "programFit": [
+        "activities",
+        "golf"
+      ],
+      "evidenceUrls": [
+        "https://www.muriwaigolfclub.co.nz/webcam",
+        "https://www.muriwaigolfclub.co.nz/green-fees"
+      ],
+      "state": "CAMERA_LOCATION_ADMITTED_LINK_ONLY",
+      "why": "Distinct visually legible1920x1080 golf-course image with printed29Oct17:15:06 local time, NZDTUTC+13 inferred. Attributed external club-page link only, no camera media reused. Existing verified Auckland affiliate destination link mapped within scope, without changing proof dates or claiming golf inventory.",
+      "next": "Maintain image currentness; confirm tee times and conditions separately. Commercial landing timeout is not a successful landing verification; retain original bounded human proof and do not auto-renew.",
+      "reviewedAt": "2026-10-29T04:19:19Z",
+      "resolvedCatalogIds": [
+        "nz-muriwai-golf-links-current"
+      ]
     }
   ],
   "guardrails": {

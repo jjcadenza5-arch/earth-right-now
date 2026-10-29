@@ -3148,5 +3148,44 @@
     "sourceUrl": "https://www.memmingen.de/goodies/webcam/st-martin-xl.html",
     "story": "Look over Memmingen’s market square and old-town rooftops from St. Martin in a refreshed still. Check restaurant opening, accommodation and visitor arrangements separately before visiting.",
     "freshnessEvidence": "Exact public1280x960 current_1280.jpg visually inspected: market square, historic buildings, rooftops and surrounding town legible. No individuals identified or personal activities assessed. Printed2026-10-28 CET16:09:00 explicitly includes CET, equivalent15:09:00Z. Retrieved15:10:09Z HTTP200; Last-Modified15:09:23Z independently corroborates upload, not capture. Camera clock precision unverified. Separate weather widget on cached provider page contains older data and is not used as image or weather evidence. No crowd measurement, church access, business opening or video playback inferred. Review completed 2026-10-28T15:12:02Z."
+  },
+  {
+    "provider": "Muriwai Golf Links / windsurf.co.nz",
+    "country": "New Zealand",
+    "timeZone": "Pacific/Auckland",
+    "categories": [
+      "Nature",
+      "Useful Earth"
+    ],
+    "truth": "LIVE_IMAGE",
+    "permission": "LINK_ONLY",
+    "health": "HEALTHY",
+    "playback": "EXTERNAL",
+    "officialUrl": "https://www.muriwaigolfclub.co.nz/",
+    "attribution": "Muriwai Golf Links / windsurf.co.nz — course webcam",
+    "checkedAt": "2026-10-29T04:19:19Z",
+    "lastSuccessfulCheck": "2026-10-29T04:19:19Z",
+    "quality": 82,
+    "freshness": 90,
+    "moment": 75,
+    "featuredHold": true,
+    "watchHold": true,
+    "searchSupplemental": true,
+    "externalWindowRequired": true,
+    "rightsSourceUrl": "https://www.muriwaigolfclub.co.nz/webcam",
+    "rightsBasis": "Club publishes the exact public refreshed image; image credits windsurf.co.nz. Reviewed club webcam and green-fee pages contain no incoming-link restriction. Windsurf homepage ordinary request returned503, so no separate provider-site terms or media licence claimed. Attributed ordinary external club webcam-page link and original description only; no image, thumbnail, iframe, logo or provider prose reused, no embedding or content-reuse permission inferred.",
+    "id": "nz-muriwai-golf-links-current",
+    "placeId": "nz-muriwai-golf-links",
+    "title": "Muriwai — Golf Links",
+    "seoName": "Muriwai — Golf Links",
+    "region": "Muriwai / Auckland",
+    "aliases": [
+      "Muriwai Golf Club webcam",
+      "Muriwai Golf Links",
+      "Muriwai course webcam"
+    ],
+    "sourceUrl": "https://www.muriwaigolfclub.co.nz/webcam",
+    "story": "Look across Muriwai’s rolling golf-course fairways, bunkers and coastal hills in a refreshed still. Check tee-time availability, green fees, cancellation conditions and course access directly with the club before visiting.",
+    "freshnessEvidence": "Exact club-published1920x1080 UNetworkCameraImage.ashx?controlId=142765 visually inspected: fairways, bunkers, trees and coastal hills legible, small ocean glimpse at far right. No individuals identified or personal activities assessed. Printed29/10/2026 17:15:06 lacks timezone/offset; Pacific/Auckland NZDTUTC+13 inferred04:15:06Z. HTTP200 response Date04:17:02Z is retrieval/server-response context, not capture/upload proof; no Last-Modified supplied. Club HTML requests300000ms refresh; still image, not video. Camera clock precision unverified; no current playability, opening, booking availability or beach/water safety inferred. Review completed 2026-10-29T04:19:19Z."
   }
 ]
