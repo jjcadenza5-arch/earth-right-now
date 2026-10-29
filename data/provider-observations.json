@@ -1245,5 +1245,19 @@
     "ownerPacketNetworkStatus": "UNKNOWN_NOT_RECORDED",
     "availabilityEvidenceSource": "data/review-evidence/owner-watch-seven-stage1-2026-10-29-validation.json",
     "limitations": "Owner packet confirms playback. No scene description, measured viewing duration, browser name or LIVE-clock reading supplied; none inferred. HTTP200 is from a separate provider-page probe, not the owner packet. Extra five submitted observations are retained in raw evidence but not applied in this two-camera stage."
+  },
+  {
+    "id": "glacier-national-park",
+    "observedAt": "2026-10-29T06:29:09Z",
+    "confirmation": "PROVIDER_SOURCE_CURRENT_LINK_ONLY",
+    "httpStatus": 200,
+    "sourceUrl": "https://www.nps.gov/glac/learn/photosmultimedia/webcams.htm",
+    "reason": "Official NPS webcam index reviewed and its exact Apgar Village image visually inspected. Current date/time overlay and HTTP upload support current external webcam availability; link-only attribution and all playback/rights fields preserved.",
+    "evidenceUrl": "https://www.nps.gov/webcams-glac/ApgarVillage.jpg",
+    "imageTimestamp": "2026-10-29T00:29:03",
+    "imageTimeZone": "America/Denver",
+    "imageTimestampUtcInferred": "2026-10-29T06:29:03Z",
+    "lastModified": "Thu, 29 Oct 2026 06:29:08 GMT",
+    "limitations": "1920x1080 night image: lit village buildings and foreground pavement visible, surrounding mountains dark. Camera clock precision unverified. A refreshed still is not moving-video playback proof, human review, park-wide camera health or media reuse permission."
   }
 ]
