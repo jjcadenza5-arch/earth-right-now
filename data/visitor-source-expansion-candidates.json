@@ -3080,6 +3080,49 @@
       "why": "Exact2880x1620 official image visually clear; HTTP upload15:07:55Z is recent but no printed/EXIF capture timestamp. Upload time alone not treated as capture proof. No image copied, not admitted or counted.",
       "next": "Revisit only material capture-currentness evidence and complete exact linking-terms review; no automatic promotion or retry loop.",
       "reviewedAt": "2026-10-28T15:12:02Z"
+    },
+    {
+      "id": "waipawa-image-timeout-oct29",
+      "priority": "P2",
+      "placeGroup": "Waipawa town bridge",
+      "country": "New Zealand",
+      "provider": "Hawkes Bay Regional Council",
+      "candidateType": "OFFICIAL_CURRENT_IMAGE",
+      "visitorDecisionValue": "HIGH",
+      "qualityPotential": "UNKNOWN",
+      "programFit": [
+        "town",
+        "food"
+      ],
+      "evidenceUrls": [
+        "https://www.hbrc.govt.nz/webcams/waipawa/"
+      ],
+      "state": "HOLD_IMAGE_CURRENTNESS_UNVERIFIED",
+      "why": "Official page/image target found; bounded public Waipawa.jpg request timed out20seconds with no image bytes. No current capture or visual quality verified. No outage inferred; not admitted or counted.",
+      "next": "Revisit only materially new accessible image evidence; no bypass, retry loop or automatic promotion.",
+      "reviewedAt": "2026-10-29T02:30:33Z"
+    },
+    {
+      "id": "waitarere-image-quality-hold-oct29",
+      "priority": "P2",
+      "placeGroup": "Waitarere Beach north end",
+      "country": "New Zealand",
+      "provider": "WaitarereBeach.net.nz / Remote Networks camera",
+      "candidateType": "FIRST_PARTY_CURRENT_IMAGE",
+      "visitorDecisionValue": "HIGH",
+      "qualityPotential": "UNKNOWN",
+      "programFit": [
+        "stay",
+        "nature"
+      ],
+      "evidenceUrls": [
+        "https://waitarerebeach.net.nz/",
+        "https://www.remotecameras.co.nz/Webcams/WaitarereBeach.jpg"
+      ],
+      "state": "HOLD_OBSCURED_IMAGE",
+      "why": "Exact2304x1296 current image visually inspected but heavily obscured/blurred; no useful coast detail. Printed29Oct14:14:58; provider explicitly states fixedNZSTUTC+12, equivalent02:14:58Z. Independent upload02:14:59Z, retrieved02:28:25Z; clock/delay precision unverified. Obscuration cause not diagnosed, not admitted/count increased.",
+      "next": "Revisit only materially clearer current imagery; preserve provider fixedNZST and stated15minute refresh/delay caveat. No retry loop or automatic promotion.",
+      "reviewedAt": "2026-10-29T02:30:33Z"
     }
   ],
   "guardrails": {

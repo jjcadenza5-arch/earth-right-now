@@ -13681,5 +13681,43 @@
     "affiliate": false,
     "reviewBasis": "FIRST_PARTY_OPERATOR_PAGE_REVIEW",
     "reviewSourceUrl": "https://www.lorenzo-marktplatz.de/"
+  },
+  {
+    "id": "local-foxton-ocean-eatery",
+    "placeId": "nz-foxton-beach",
+    "place": "Foxton Beach — Manawatū Coast",
+    "name": "Ocean Beach Eatery — Foxton Beach",
+    "type": "restaurant",
+    "url": "https://www.oceanbeacheatery.co.nz/",
+    "summary": "Explore dining at Ocean Beach Eatery on Signal Street in Foxton Beach. Confirm current menus, holiday hours, any public-holiday surcharge and table availability directly; the beach camera does not establish that the restaurant is open.",
+    "country": "New Zealand",
+    "tags": [
+      "visitor planning"
+    ],
+    "verifiedAt": "2026-10-29T02:30:33Z",
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_OPERATOR_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.oceanbeacheatery.co.nz/"
+  },
+  {
+    "id": "local-foxton-de-molen",
+    "placeId": "nz-foxton-beach",
+    "place": "Foxton Beach — Manawatū Coast",
+    "name": "De Molen — Foxton Windmill Tours",
+    "type": "attraction",
+    "url": "https://www.foxtonwindmill.co.nz/pages/tours-2-0",
+    "summary": "Plan a separate visit to De Molen in Foxton town, rather than at Foxton Beach. Confirm guide availability and access needs directly: the tour has steep stairs, and working sails and milling depend on wind. A beach image does not establish that a tour is running.",
+    "country": "New Zealand",
+    "tags": [
+      "visitor planning"
+    ],
+    "verifiedAt": "2026-10-29T02:30:33Z",
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_OPERATOR_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.foxtonwindmill.co.nz/pages/tours-2-0"
   }
 ]
