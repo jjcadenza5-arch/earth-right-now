@@ -20,3 +20,18 @@ Primary evidence:
 - https://support.google.com/youtube/answer/171780?hl=en
 - https://developers.google.com/youtube/terms/required-minimum-functionality
 - https://developers.google.com/youtube/terms/developer-policies
+
+## Production acceptance
+
+## 2026-10-29 Bangkok — Nine-camera rotation deployed and accepted
+
+Production9c663d3e8f823a37a3ebca386a178a46b5d55f21, tree3d73f73159c6be4cc9f96e6fd593a37a05704d2f. Pages40913059754 SUCCESS/job123585892255/all122 release tests; Operations40913059741 SUCCESS/job123585891673/packet valid true issueCount0 issues[]; syntax40913059797 SUCCESS. Twelve served SHA256 checks passed; all nine exact source checkedAt/lastSuccessfulCheck/playbackVerifiedAt and latest HUMAN_PLAYBACK ledger dates match owner packet. Raw evidence files excluded from public manifest. New review batchc97741918c1dc58b replaces consumed6e2c74df0bcac1be, protects nine evergreen renewals, no pending research candidates.
+
+Browser https://earthrightnow.app/#watch visibly shows5 live camera cards plus9 in rotation. Two Surprise Me clicks shift the window and show New York, Rovaniemi, Taitung, Auckland, Davos together; new NYC/Swiss entries are real members of the public rotation. Existing website design and five-card window function retained. Nine current qualified streams across6countries/6providers; zero audit violations. Viewer arrows and opt-in30-second Journey traverse9 (~4.5minutes per loop), one player at a time; no timed card carousel or nine simultaneous streams. Curated floor5 and all existing truth/rights/health/quality/currentness/168h Watch/24h LIVE HERE gates preserved.
+
+Owner packet14accepted/0rejected after exact target/current-batch/origin/freshness checks. Applied seven renewals plus two researched admissions after owner explicitly confirmed both new scenes clearly visible. Nine append-only observations, seven manual atomic renewal plans ready/0blocked. NewYork reuses existing new-york-harbor place (no angle double-count); Davos adds one distinct place. Coverage864/1,000 camera-backedplaces (136remaining),874sources/865catalogplaces.235offers/648directoryrows/226source-eligibleaffiliateplacements unchanged. Combined directory648rows/order/fields/dates exactly preserved while last5 core rows moved to front of existing lazy supplement to keep original575KBcore/160KBstartup limits; no source migration, removal, budget increase or redesign.
+
+Backlog five evidence retained raw without promotion: Verbier/Takayama holds unchanged, Nishiki observation outside published hours, Yehliu/Tajogaite deferred. No browser, duration, owner network or scene details invented. NewYork source plain GET403 and Kyoto current plain GET403 documented without outage/bypass inference; YouTube exact new embed/oEmbed200, Davos source200, otherrenewal sourcepages200; recorded Kyoto04:59:01.782Z/200 reused within24h separation with original timestamp, never relabelled fresh. Exact source-specific branded-player review only, no blanket licence/restream/media reuse. Evidence docs/WATCH_EARTH_NINE_2026-10-29.md and data/review-evidence/owner-watch-nine-2026-10-29*.json.
+
+Next24h renewal horizons30Oct23:08:53–23:10:05Bangkok; Watch168h horizon5Nov23:08–23:10 subject to failures. Task complete: keep9 in pool/5 visible unless owner requests next stage. No further human action needed for this release.
+
