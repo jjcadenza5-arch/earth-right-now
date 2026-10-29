@@ -32,3 +32,5 @@ Originalfive24h LIVE HERE horizon30Oct07:59Bangkok and seven-day source/Watch5No
 Targeted validator/proposal/target-binding/atomic-proof tests passed. Final full122 release suite and production/hash/runtime acceptance pending below. No approval/rights/freshness gate weakened; no extra source, hold, account or automatic mutation enabled.
 
 Local final validation: all122 current release smoke tests passed after selected owner evidence and backlog validator fix. Targeted regression/proposal/target-binding/atomic-proof tests passed. Publish and served acceptance pending.
+
+Initial publication eca75cf8 passed122 CI release smoke tests but Pages40821064897 stopped at Whole-product guard: an older literal still required limit=5. Updated the check to the approved seven-slot ceiling, scoped specifically to buildWatch, retaining place/country/provider protections; targeted whole-product preflight and Watch Earth audit pass. Production remained1a5a7612 throughout the stopped deployment. A normal correction push, not workflow rerun or gate bypass, follows.

@@ -1,3 +1,7 @@
+## 2026-10-29 Bangkok — Seven-slot deployment guard corrected
+
+Initial Pages40821064897 passed122 release tests but stopped at a legacy whole-product literal requiring five. Corrected it to the approved seven-slot selector, keeping unique-place and country/provider protections and scoping the check to buildWatch. Targeted whole-product preflight and Watch Earth audit pass; no runtime/source/proof change or guard bypass. Production stays1a5a7612 until normal correction push succeeds. Evidence docs/WATCH_EARTH_SEVEN_ACCEPTANCE_2026-10-29.md.
+
 ## 2026-10-29 Bangkok — Seven-camera Watch Earth release prepared from owner playback evidence
 
 Baseline main058e65bf, production1a5a7612; tested staging code52e9a0ec applied selectively. Owner packet generated04:55:52.643Z matches deployed batch85fe56d1b9f1a2e3, exact backlog membership/current source+embed/title+provider for all7, trusted origin and24h review freshness: accepted7/rejected0. Selected planned Kiyomizu-zaka04:55:39.563Z and Hanamikoji04:55:43.145Z; independent Kyoto provider pageHTTP200. Atomic plan2ready/0blocked, expected marker/latest-ledger preconditions checked. Only those2 source rows change3dates each, plus2 append-only HUMAN_PLAYBACK ledger entries. All870 other source records, originalfive exact owner29Oct dates and ledger history preserved. Extra5 reviews retained raw/validated but not applied; holds, schedules and failures unchanged. No scene, duration, browser or owner network invented.
