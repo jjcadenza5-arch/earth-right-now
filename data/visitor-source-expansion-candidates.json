@@ -3192,6 +3192,75 @@
       "resolvedCatalogIds": [
         "nz-muriwai-golf-links-current"
       ]
+    },
+    {
+      "id": "nz-orewa-beach-batch39",
+      "priority": "P2",
+      "placeGroup": "Ōrewa — Beach",
+      "country": "New Zealand",
+      "provider": "Ōrewa Surf Life Saving Club / windsurf.co.nz",
+      "candidateType": "FIRST_PARTY_CURRENT_IMAGE",
+      "visitorDecisionValue": "HIGH",
+      "qualityPotential": "HIGH",
+      "programFit": [
+        "activities",
+        "visitor planning"
+      ],
+      "evidenceUrls": [
+        "https://www.orewasurfclub.org.nz/webcam-cameras"
+      ],
+      "state": "CAMERA_LOCATION_ADMITTED_LINK_ONLY",
+      "why": "Exact club-published800x600 https://4winds.co.nz/webcam/orewa1.jpg visually inspected: sand, shore break and water legible, soft image and indistinct distant horizon. Printed29/10/2026 17:28:15 lacks offset; AucklandNZDTUTC+13 inferred04:28:15Z. Independent Last-Modified04:28:13Z is upload context, two seconds before printed capture clock; clock synchronisation/precision unverified. Retrieved04:29:23Z HTTP200. Cache max-age604800 can retain an old frame: visitors must inspect the provider timestamp, no continuous-video claim. No water safety, patrol, café opening or booking inferred. Review completed 2026-10-29T04:33:34Z. External attributed provider page only; no camera media reuse.",
+      "next": "Maintain image currentness and inspect provider timestamp; keep video, safety and commercial proof separate.",
+      "reviewedAt": "2026-10-29T04:33:34Z",
+      "resolvedCatalogIds": [
+        "nz-orewa-beach-current"
+      ]
+    },
+    {
+      "id": "nz-grey-lynn-skyline-batch39",
+      "priority": "P2",
+      "placeGroup": "Auckland — Skyline from Grey Lynn",
+      "country": "New Zealand",
+      "provider": "Grey Lynn Weather / Ricky Huntington",
+      "candidateType": "FIRST_PARTY_CURRENT_IMAGE",
+      "visitorDecisionValue": "HIGH",
+      "qualityPotential": "HIGH",
+      "programFit": [
+        "activities",
+        "visitor planning"
+      ],
+      "evidenceUrls": [
+        "https://www.greylynnweather.net/"
+      ],
+      "state": "CAMERA_LOCATION_ADMITTED_LINK_ONLY",
+      "why": "Exact provider-linked768x576 https://www.greylynnweather.net/jpgwebcam.jpg visually inspected: tree canopy, rooftops and distant city skyline/Sky Tower legible beneath a wide sky. Printed17:30 and29/10/202… (year clipped at right edge); separately fetched first-party page states LAST READING17:30 DATE29October2026, corroborating date context, not independent capture proof. AucklandNZDTUTC+13 inferred04:30Z, minute precision only. Independent Last-Modified04:31:23Z/upload, retrieved04:31:26Z HTTP200. Clock precision unverified; printed weather values and warning/METAR tables not independently verified or used as weather evidence. No individuals identified, personal activities assessed, camera-site public access or meteorological/aviation safety inferred. Review completed 2026-10-29T04:33:34Z. External attributed provider page only; no camera media reuse.",
+      "next": "Maintain image currentness and inspect provider timestamp; keep video, safety and commercial proof separate.",
+      "reviewedAt": "2026-10-29T04:33:34Z",
+      "resolvedCatalogIds": [
+        "nz-grey-lynn-skyline-current"
+      ]
+    },
+    {
+      "id": "point-chevalier-source-access-hold-oct29",
+      "priority": "P2",
+      "placeGroup": "Point Chevalier",
+      "country": "New Zealand",
+      "provider": "Point Chevalier Sailing Club / windsurf.co.nz",
+      "candidateType": "FIRST_PARTY_CURRENT_IMAGE",
+      "visitorDecisionValue": "HIGH",
+      "qualityPotential": "UNKNOWN",
+      "programFit": [
+        "activities"
+      ],
+      "evidenceUrls": [
+        "https://www.sailptchev.org.nz/",
+        "http://www.windsurf.co.nz/windsurf_cam_ptchev.asp"
+      ],
+      "state": "HOLD_IMAGE_CURRENTNESS_UNVERIFIED",
+      "why": "Club links public windsurf camera page. Ordinary published HTTP target and HTTPS counterpart both503; no actual imagery/capture/quality verified. Separate club-linked IPCamLive angles not playback-verified. No outage inferred or source counted.",
+      "next": "Revisit only material public source evidence, no bypass or retry loop.",
+      "reviewedAt": "2026-10-29T04:33:34Z"
     }
   ],
   "guardrails": {

@@ -3187,5 +3187,83 @@
     "sourceUrl": "https://www.muriwaigolfclub.co.nz/webcam",
     "story": "Look across Muriwai’s rolling golf-course fairways, bunkers and coastal hills in a refreshed still. Check tee-time availability, green fees, cancellation conditions and course access directly with the club before visiting.",
     "freshnessEvidence": "Exact club-published1920x1080 UNetworkCameraImage.ashx?controlId=142765 visually inspected: fairways, bunkers, trees and coastal hills legible, small ocean glimpse at far right. No individuals identified or personal activities assessed. Printed29/10/2026 17:15:06 lacks timezone/offset; Pacific/Auckland NZDTUTC+13 inferred04:15:06Z. HTTP200 response Date04:17:02Z is retrieval/server-response context, not capture/upload proof; no Last-Modified supplied. Club HTML requests300000ms refresh; still image, not video. Camera clock precision unverified; no current playability, opening, booking availability or beach/water safety inferred. Review completed 2026-10-29T04:19:19Z."
+  },
+  {
+    "country": "New Zealand",
+    "timeZone": "Pacific/Auckland",
+    "categories": [
+      "Nature",
+      "Useful Earth"
+    ],
+    "truth": "LIVE_IMAGE",
+    "permission": "LINK_ONLY",
+    "health": "HEALTHY",
+    "playback": "EXTERNAL",
+    "freshness": 90,
+    "moment": 75,
+    "featuredHold": true,
+    "watchHold": true,
+    "searchSupplemental": true,
+    "externalWindowRequired": true,
+    "checkedAt": "2026-10-29T04:33:34Z",
+    "lastSuccessfulCheck": "2026-10-29T04:33:34Z",
+    "id": "nz-orewa-beach-current",
+    "placeId": "nz-orewa-beach",
+    "title": "Ōrewa — Beach",
+    "seoName": "Ōrewa — Beach",
+    "provider": "Ōrewa Surf Life Saving Club / windsurf.co.nz",
+    "region": "Ōrewa / Auckland",
+    "officialUrl": "https://www.orewasurfclub.org.nz/webcam-cameras",
+    "sourceUrl": "https://www.orewasurfclub.org.nz/webcam-cameras",
+    "attribution": "Ōrewa Surf Life Saving Club / windsurf.co.nz",
+    "quality": 75,
+    "aliases": [
+      "Orewa beach webcam",
+      "Ōrewa Surf Life Saving Club",
+      "Orewa surf club beach"
+    ],
+    "story": "Look over Ōrewa’s sandy beach and nearshore water in a refreshed still. The view is soft and the distant horizon can be indistinct; check official water-quality, patrol and access advice separately before visiting.",
+    "rightsSourceUrl": "https://www.orewasurfclub.org.nz/webcam-cameras",
+    "rightsBasis": "Club explicitly identifies windsurf.co.nz as camera supplier/operator and publishes the exact4winds.co.nz still. Reviewed club webcam/café pages contain no incoming-link restriction or media licence. Attributed ordinary external club-page link and original description only; no image, thumbnail, iframe, logo or provider prose copied/embedded. No provider-wide terms review or media-reuse permission inferred.",
+    "freshnessEvidence": "Exact club-published800x600 https://4winds.co.nz/webcam/orewa1.jpg visually inspected: sand, shore break and water legible, soft image and indistinct distant horizon. Printed29/10/2026 17:28:15 lacks offset; AucklandNZDTUTC+13 inferred04:28:15Z. Independent Last-Modified04:28:13Z is upload context, two seconds before printed capture clock; clock synchronisation/precision unverified. Retrieved04:29:23Z HTTP200. Cache max-age604800 can retain an old frame: visitors must inspect the provider timestamp, no continuous-video claim. No water safety, patrol, café opening or booking inferred. Review completed 2026-10-29T04:33:34Z."
+  },
+  {
+    "country": "New Zealand",
+    "timeZone": "Pacific/Auckland",
+    "categories": [
+      "Cities",
+      "Useful Earth"
+    ],
+    "truth": "LIVE_IMAGE",
+    "permission": "LINK_ONLY",
+    "health": "HEALTHY",
+    "playback": "EXTERNAL",
+    "freshness": 90,
+    "moment": 75,
+    "featuredHold": true,
+    "watchHold": true,
+    "searchSupplemental": true,
+    "externalWindowRequired": true,
+    "checkedAt": "2026-10-29T04:33:34Z",
+    "lastSuccessfulCheck": "2026-10-29T04:33:34Z",
+    "id": "nz-grey-lynn-skyline-current",
+    "placeId": "nz-grey-lynn-skyline",
+    "title": "Auckland — Skyline from Grey Lynn",
+    "seoName": "Auckland — Skyline from Grey Lynn",
+    "provider": "Grey Lynn Weather / Ricky Huntington",
+    "region": "Grey Lynn / Auckland",
+    "officialUrl": "https://www.greylynnweather.net/",
+    "sourceUrl": "https://www.greylynnweather.net/",
+    "attribution": "Grey Lynn Weather / Ricky Huntington",
+    "quality": 76,
+    "aliases": [
+      "Grey Lynn Weather webcam",
+      "Auckland skyline Grey Lynn",
+      "Grey Lynn Sky Tower panorama"
+    ],
+    "story": "Look across Grey Lynn’s tree canopy and rooftops toward Auckland’s skyline in a refreshed still. This is a distant city outlook from a weather station; check local visitor arrangements separately and do not use the image as a weather or travel-safety forecast.",
+    "rightsSourceUrl": "https://www.greylynnweather.net/",
+    "rightsBasis": "Public weather-station page identifies Ricky Huntington and links the exact latest weather-camera image. No incoming-link restriction or media licence found on reviewed page. Attributed ordinary external provider-page link and original description only; no image, thumbnail, iframe, logo or provider prose copied/embedded. No camera-site access or content-reuse permission inferred.",
+    "freshnessEvidence": "Exact provider-linked768x576 https://www.greylynnweather.net/jpgwebcam.jpg visually inspected: tree canopy, rooftops and distant city skyline/Sky Tower legible beneath a wide sky. Printed17:30 and29/10/202… (year clipped at right edge); separately fetched first-party page states LAST READING17:30 DATE29October2026, corroborating date context, not independent capture proof. AucklandNZDTUTC+13 inferred04:30Z, minute precision only. Independent Last-Modified04:31:23Z/upload, retrieved04:31:26Z HTTP200. Clock precision unverified; printed weather values and warning/METAR tables not independently verified or used as weather evidence. No individuals identified, personal activities assessed, camera-site public access or meteorological/aviation safety inferred. Review completed 2026-10-29T04:33:34Z."
   }
 ]

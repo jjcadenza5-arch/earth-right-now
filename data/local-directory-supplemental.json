@@ -13780,5 +13780,26 @@
     "affiliate": false,
     "reviewBasis": "FIRST_PARTY_OPERATOR_PAGE_REVIEW",
     "reviewSourceUrl": "https://www.muriwaigolfclub.co.nz/green-fees"
+  },
+  {
+    "id": "local-orewa-surf-club-cafe",
+    "placeId": "nz-orewa-beach",
+    "place": "Ōrewa — Beach",
+    "name": "Ōrewa Surf Club Café",
+    "type": "café",
+    "url": "https://www.orewasurfclub.org.nz/cafe-general-info",
+    "summary": "Club-owned café at 275 Hibiscus Coast Highway with breakfast and lunch service; dinner arrangements vary by day. Check current hours, menu, dietary needs and seating directly before visiting. The club states that alcohol purchases require membership under its liquor licence; confirm the current membership arrangements with the café. Historical event notices are not a promise of today’s programme.",
+    "country": "New Zealand",
+    "tags": [
+      "café",
+      "Orewa",
+      "visitor planning"
+    ],
+    "verifiedAt": "2026-10-29T04:33:34Z",
+    "status": "APPROVED",
+    "paidPlacement": false,
+    "affiliate": false,
+    "reviewBasis": "FIRST_PARTY_OPERATOR_PAGE_REVIEW",
+    "reviewSourceUrl": "https://www.orewasurfclub.org.nz/cafe-general-info"
   }
 ]
