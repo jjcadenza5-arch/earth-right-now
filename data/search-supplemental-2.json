@@ -3304,5 +3304,79 @@
     "rightsSourceUrl": "https://www.glidingmatamata.co.nz/",
     "rightsBasis": "First-party club homepage publishes webcam views facing north toward Te Aroha and southeast toward Matamata, linking exact webcam.pear.co.nz images. Attributed ordinary external homepage link and original wording only; no image, thumbnail, iframe, logo or provider prose reused. No media licence or camera-site public access inferred.",
     "freshnessEvidence": "Exact first-party-linked https://webcam.pear.co.nz/pic5_2400.jpg visually reviewed: grass airfield, windsock, trees and distant ridge visible, with some haze and lens spots. Printed Fri30Oct17:35:13NZDT2026 explicitly gives UTC+13, hence04:35:13Z. Independent Last-Modified30Oct04:35:20Z, retrieved04:38:56.416Z HTTP200; upload seven seconds after printed clock. Clock accuracy unverified. Landscape usefulness reviewed; no individual identified, personal activity assessed, flight safety, operational status, forecast or moving playback proven."
+  },
+  {
+    "id": "nz-okahu-bay-current",
+    "placeId": "nz-okahu-bay",
+    "title": "Auckland — Okahu Bay & Harbour",
+    "seoName": "Auckland — Okahu Bay & Harbour",
+    "country": "New Zealand",
+    "region": "Okahu Bay / Auckland",
+    "timeZone": "Pacific/Auckland",
+    "categories": [
+      "Nature",
+      "Useful Earth"
+    ],
+    "provider": "Okahu weather cameras",
+    "attribution": "Okahu weather cameras",
+    "officialUrl": "https://www.okahu.com/OkahuCams.html",
+    "sourceUrl": "https://www.okahu.com/OkahuCams.html",
+    "truth": "LIVE_IMAGE",
+    "permission": "LINK_ONLY",
+    "health": "HEALTHY",
+    "playback": "EXTERNAL",
+    "quality": 77,
+    "freshness": 90,
+    "moment": 75,
+    "featuredHold": true,
+    "watchHold": true,
+    "searchSupplemental": true,
+    "externalWindowRequired": true,
+    "checkedAt": "2026-10-30T05:01:44Z",
+    "lastSuccessfulCheck": "2026-10-30T05:01:44Z",
+    "story": "Look northeast across Okahu Bay toward the harbour and distant coastal hills in a refreshed still. A rooftop occupies the foreground; this is a broad outlook, not a beach close-up or boating-safety assessment.",
+    "aliases": [
+      "Auckland  Okahu Bay & Harbour webcam"
+    ],
+    "rightsSourceUrl": "https://www.okahu.com/OkahuCams.html",
+    "rightsBasis": "Public provider-hosted camera page links exact image; first-party Okahu regional camera listing identifies the location. Attributed ordinary external page link and original wording only. No incoming-link restriction found on reviewed pages; no image, thumbnail, iframe, logo or provider prose reused. No media ownership, reuse licence, camera-site public access or aviation endorsement inferred.",
+    "freshnessEvidence": "Exact provider-linked https://www.okahu.com/weather/okahu.jpg downloaded and visually inspected. 2048x1152 still visibly shows water, wooded shoreline and distant hills beneath a wide sky, with a large rooftop foreground and some haze. Printed30Oct2026/17:52:01, zone absent; Auckland NZDT UTC+13 inferred04:52:01Z. Independent Last-Modified04:52:02Z; retrieved04:58:25.149Z HTTP200. Clock accuracy unverified. Current-image/landscape evidence only, no moving playback or navigation, aviation, marine safety or forecast proof; no individuals identified or personal activity assessed."
+  },
+  {
+    "id": "nz-jacks-bay-ridge-current",
+    "placeId": "nz-jacks-bay-ridge",
+    "title": "Jacks Bay — Bay of Islands Ridge Outlook",
+    "seoName": "Jacks Bay — Bay of Islands Ridge Outlook",
+    "country": "New Zealand",
+    "region": "Jacks Bay / Bay of Islands / Northland",
+    "timeZone": "Pacific/Auckland",
+    "categories": [
+      "Nature",
+      "Useful Earth"
+    ],
+    "provider": "Okahu weather cameras",
+    "attribution": "Okahu weather cameras",
+    "officialUrl": "https://www.okahu.com/JacksCams.html",
+    "sourceUrl": "https://www.okahu.com/JacksCams.html",
+    "truth": "LIVE_IMAGE",
+    "permission": "LINK_ONLY",
+    "health": "HEALTHY",
+    "playback": "EXTERNAL",
+    "quality": 80,
+    "freshness": 90,
+    "moment": 75,
+    "featuredHold": true,
+    "watchHold": true,
+    "searchSupplemental": true,
+    "externalWindowRequired": true,
+    "checkedAt": "2026-10-30T05:01:44Z",
+    "lastSuccessfulCheck": "2026-10-30T05:01:44Z",
+    "story": "Look from Jacks Ridge across wooded slopes toward the Bay of Islands in a refreshed still. The foreground is shaded and the view is distant; check public access and any activity departure point separately.",
+    "aliases": [
+      "Jacks Bay  Bay of Islands Ridge Outlook webcam"
+    ],
+    "rightsSourceUrl": "https://www.okahu.com/JacksCams.html",
+    "rightsBasis": "Public provider-hosted camera page links exact image; first-party Okahu regional camera listing identifies the location. Attributed ordinary external page link and original wording only. No incoming-link restriction found on reviewed pages; no image, thumbnail, iframe, logo or provider prose reused. No media ownership, reuse licence, camera-site public access or aviation endorsement inferred.",
+    "freshnessEvidence": "Exact provider-linked https://www.okahu.com/weather/ridge.jpg downloaded and visually inspected. 1280x720 still visibly shows wooded slopes, bay water and distant islands/headlands; foreground shaded. Printed Jacks Ridge NNW,30Oct2026/17:53:02, zone absent; NZDT UTC+13 inferred04:53:02Z. Independent Last-Modified04:59:45Z, retrieved04:59:45.950Z HTTP200. Upload is later than printed image time; headers do not independently prove capture and clock accuracy is unverified. Current-image/landscape evidence only, no moving playback or navigation, aviation, marine safety or forecast proof; no individuals identified or personal activity assessed."
   }
 ]

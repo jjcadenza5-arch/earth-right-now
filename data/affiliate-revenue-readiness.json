@@ -151,23 +151,23 @@
     "Preserve one-best-provider-per-user-need presentation and commission-neutral Earth ranking."
   ],
   "currentPublicRevenueActive": {
-    "offerCount": 227,
-    "uniquePlaceCount": 222,
+    "offerCount": 230,
+    "uniquePlaceCount": 225,
     "byProgram": {
-      "viator": 197,
-      "klook": 22,
+      "viator": 199,
+      "klook": 23,
       "tiqets": 5,
       "welcome-pickups": 3
     },
     "uniqueTrackedUrlsByProgram": {
-      "viator": 94,
+      "viator": 96,
       "klook": 10,
       "tiqets": 4,
       "welcome-pickups": 3
     },
     "definition": "Verified current affiliate offers exposed through ERN's public travel-offer layer, backed by an enabled current affiliate partner, and attached to a currently HEALTHY LIVE_VIDEO / LIVE_IMAGE / EXTERNAL_LIVE ERN place across core or supplemental discovery.",
     "note": "Source-eligible counts reconciled after fresh Sultanahmet recorded-footage and Progreso unavailable-player review. Both DEGRADED sources are excluded; all link, partner and historical camera verification dates remain unchanged. This is eligibility accounting, not measured traffic or revenue.",
-    "sourceEligibilityReviewedAt": "2026-10-30T01:15:14Z",
-    "sourceEligibilityNote": "Ounasvaara provider explicitly reports CAMERA OFFLINE at23Oct browser review. Existing source-health gate excludes its one Klook offer; shared Rovaniemi tracked URL, partner and link-verification dates unchanged. Source-eligible counts are not bookings or income. 29Oct Muriwai adds one HEALTHY LIVE_IMAGE place with one same-scope existing Klook/Auckland link: eligible offers224, unique places219, Klook20. Unique tracked URLs and all link/partner proof dates unchanged; not a new verified destination link, booking or income. Batch39 adds two distinct HEALTHY LIVE_IMAGE Auckland places with two same-scope placements of the existing Klook link:226 eligible offers/221 places/Klook22. Distinct tracked URLs, verified destination-link count, all proof dates and safeguards unchanged; no advertiser, booking or income claim. 30Oct Watch Earth nine-camera audit adds one Davos destination-level Viator placement:227 source-eligible offers/222 places/Viator197; one additional tracked destination URL. Reuses existing owner-verified Viator identity and preserves partner evidence/expiry, Travelpayouts verified-link counts and safeguards. Nine cameras now have current commission-link coverage; no paid sponsor, booking, attribution or income claimed."
+    "sourceEligibilityReviewedAt": "2026-10-30T05:01:44Z",
+    "sourceEligibilityNote": "Ounasvaara provider explicitly reports CAMERA OFFLINE at23Oct browser review. Existing source-health gate excludes its one Klook offer; shared Rovaniemi tracked URL, partner and link-verification dates unchanged. Source-eligible counts are not bookings or income. 29Oct Muriwai adds one HEALTHY LIVE_IMAGE place with one same-scope existing Klook/Auckland link: eligible offers224, unique places219, Klook20. Unique tracked URLs and all link/partner proof dates unchanged; not a new verified destination link, booking or income. Batch39 adds two distinct HEALTHY LIVE_IMAGE Auckland places with two same-scope placements of the existing Klook link:226 eligible offers/221 places/Klook22. Distinct tracked URLs, verified destination-link count, all proof dates and safeguards unchanged; no advertiser, booking or income claim. 30Oct Watch Earth nine-camera audit adds one Davos destination-level Viator placement:227 source-eligible offers/222 places/Viator197; one additional tracked destination URL. Reuses existing owner-verified Viator identity and preserves partner evidence/expiry, Travelpayouts verified-link counts and safeguards. Nine cameras now have current commission-link coverage; no paid sponsor, booking, attribution or income claimed. Batch41 adds Okahu/JacksBay current-image places and fills Matamata gap:3manual placements/2new Viator destination URLs plus1same-scope Klook/Auckland reuse,230eligibleoffers/225places/Viator199/Klook23. Active program count4, owner/partner dates, exact Klook proof, historical verified destination-link counts and safeguards unchanged; no income claimed."
   }
 }

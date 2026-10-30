@@ -3341,6 +3341,80 @@
       "why": "Direct provider page503 and web retrieval timeout; imagery not verified. Not admitted; no outage or bypass inference.",
       "next": "Revisit only after material new source evidence; do not count as camera coverage.",
       "reviewedAt": "2026-10-30T04:42:14Z"
+    },
+    {
+      "id": "nz-okahu-bay-oct30",
+      "priority": "P2",
+      "placeGroup": "Okahu Bay / Auckland",
+      "country": "New Zealand",
+      "provider": "Okahu weather cameras",
+      "candidateType": "FIRST_PARTY_CURRENT_IMAGE",
+      "visitorDecisionValue": "HIGH",
+      "qualityPotential": "GOOD",
+      "programFit": [
+        "activities"
+      ],
+      "evidenceUrls": [
+        "https://www.okahu.com/OkahuCams.html"
+      ],
+      "state": "CAMERA_LOCATION_ADMITTED_LINK_ONLY",
+      "why": "Exact provider-linked https://www.okahu.com/weather/okahu.jpg downloaded and visually inspected. 2048x1152 still visibly shows water, wooded shoreline and distant hills beneath a wide sky, with a large rooftop foreground and some haze. Printed30Oct2026/17:52:01, zone absent; Auckland NZDT UTC+13 inferred04:52:01Z. Independent Last-Modified04:52:02Z; retrieved04:58:25.149Z HTTP200. Clock accuracy unverified. Current-image/landscape evidence only, no moving playback or navigation, aviation, marine safety or forecast proof; no individuals identified or personal activity assessed.",
+      "next": "Maintain image currentness and keep video, rights and safety evidence separate.",
+      "reviewedAt": "2026-10-30T05:01:44Z",
+      "resolvedCatalogIds": [
+        "nz-okahu-bay-current"
+      ]
+    },
+    {
+      "id": "nz-jacks-bay-ridge-oct30",
+      "priority": "P2",
+      "placeGroup": "Jacks Bay / Bay of Islands / Northland",
+      "country": "New Zealand",
+      "provider": "Okahu weather cameras",
+      "candidateType": "FIRST_PARTY_CURRENT_IMAGE",
+      "visitorDecisionValue": "HIGH",
+      "qualityPotential": "GOOD",
+      "programFit": [
+        "activities"
+      ],
+      "evidenceUrls": [
+        "https://www.okahu.com/JacksCams.html"
+      ],
+      "state": "CAMERA_LOCATION_ADMITTED_LINK_ONLY",
+      "why": "Exact provider-linked https://www.okahu.com/weather/ridge.jpg downloaded and visually inspected. 1280x720 still visibly shows wooded slopes, bay water and distant islands/headlands; foreground shaded. Printed Jacks Ridge NNW,30Oct2026/17:53:02, zone absent; NZDT UTC+13 inferred04:53:02Z. Independent Last-Modified04:59:45Z, retrieved04:59:45.950Z HTTP200. Upload is later than printed image time; headers do not independently prove capture and clock accuracy is unverified. Current-image/landscape evidence only, no moving playback or navigation, aviation, marine safety or forecast proof; no individuals identified or personal activity assessed.",
+      "next": "Maintain image currentness and keep video, rights and safety evidence separate.",
+      "reviewedAt": "2026-10-30T05:01:44Z",
+      "resolvedCatalogIds": [
+        "nz-jacks-bay-ridge-current"
+      ]
+    },
+    {
+      "id": "pikes-point-visual-hold-oct30",
+      "priority": "P2",
+      "placeGroup": "Pikes Point",
+      "country": "New Zealand",
+      "candidateType": "FIRST_PARTY_CURRENT_IMAGE",
+      "state": "HOLD_CURRENTNESS_OR_QUALITY_UNVERIFIED",
+      "evidenceUrls": [
+        "https://www.okahu.com/PikesCams.html"
+      ],
+      "why": "NW image30Oct17:53:01 is essentially sky/glare with no useful land view. SE image17:54:52 shows an industrial street/nearby buildings, not a useful scenic visitor outlook for this batch. Both fresh uploads200, but freshness alone does not qualify a camera. No individuals identified or activities assessed. Not counted.",
+      "next": "Revisit only material new source evidence; do not count as camera coverage.",
+      "reviewedAt": "2026-10-30T05:01:44Z"
+    },
+    {
+      "id": "drury-camera-access-hold-oct30",
+      "priority": "P2",
+      "placeGroup": "Drury",
+      "country": "New Zealand",
+      "candidateType": "FIRST_PARTY_CURRENT_IMAGE",
+      "state": "HOLD_CURRENTNESS_OR_QUALITY_UNVERIFIED",
+      "evidenceUrls": [
+        "https://glidingauckland.co.nz/webcams/"
+      ],
+      "why": "Direct provider page403, without bot-screen evidence. Primary search page identifies airfield webcams, but exact publicly linked North timelapse image returned404; no actual current imagery reviewed. Not admitted, no outage/bypass or video failure inferred.",
+      "next": "Revisit only material new source evidence; do not count as camera coverage.",
+      "reviewedAt": "2026-10-30T05:01:44Z"
     }
   ],
   "guardrails": {
