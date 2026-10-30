@@ -496,5 +496,30 @@
     "reviewedSourceUrl": "https://www.chaletgueggel.ch/en/live-webcam",
     "reviewedEmbedUrl": "https://www.youtube-nocookie.com/embed/sSen5EoOiJs",
     "publishedSourceId": "davos-jakobshorn-live"
+  },
+  {
+    "id": "youtube-mpala-watering-hole-current",
+    "title": "Mpala — Watering Hole Wildlife",
+    "status": "RESEARCH_ONLY",
+    "provider": "Mpala Research Centre / Explore.org",
+    "platform": "YouTube",
+    "sourceUrl": "https://mpala.org/mpala-live/",
+    "candidateEmbedUrl": "https://www.youtube-nocookie.com/embed/oORXfTviuCs",
+    "ownerEvidence": "Official Mpala Live page: selected Watering Hole in Kenya then Play; rendered iframe exact youtube.com/embed/oORXfTviuCs with Explore African Wildlife attribution, 2026-10-30.",
+    "currentEvidence": "Official player title LIVE Watering Hole in Kenya - MPALA | explore.org. This is target identity only: black player in research browser, no actual live/moving scene confirmed.",
+    "discoveredAt": "2026-10-30T12:10:00Z",
+    "permissionReview": "OFFICIAL_BRANDED_PLAYER_ENABLED_DEPLOYED_PERMISSION_CHECK_REQUIRED",
+    "playbackReview": "HUMAN_PLAYBACK_REQUIRED",
+    "promotion": "BLOCKED_UNTIL_DEPLOYED_PLAYBACK_AND_PERMISSION_REVIEW",
+    "currentEvidenceReviewedAt": "2026-10-30T12:10:00Z",
+    "platformEvidence": "Explore terms revised2026-01-23 allow enabled Explore-branded embeds, retaining attribution/notices. Official Mpala page embeds this exact Explore African Wildlife YouTube target. Standard branded player only, preserve controls/advertising/referrer; no restream, downloaded media, separate logo/thumbnail reuse or blanket permission inferred. Actual deployed availability remains unverified.",
+    "operationalResearchReason": "OWNER_REQUESTED_ONE_ANIMAL_WATCH_EARTH_STREAM",
+    "researchSources": [
+      "https://mpala.org/mpala-live/",
+      "https://explore.org/terms-of-service",
+      "https://explore.org/community-guidelines",
+      "https://developers.google.com/youtube/terms/required-minimum-functionality"
+    ],
+    "reviewNote": "Materially new exact target oORXfTviuCs, not historical CouchTourist playback or older KyQAB-TKOVA. Research browser official embedded player black after load/wait and one click; no explicit bot challenge or provider-outage inference. Require exact deployed live moving playback and clear scene before catalog promotion. Wildlife presence not guaranteed; highlight/replay footage never LIVE. Existing Mpala source remains LINK_ONLY with its original expiry proof."
   }
 ]
