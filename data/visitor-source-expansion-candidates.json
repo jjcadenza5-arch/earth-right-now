@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-30T07:39:00Z",
+  "generatedAt": "2026-10-30T07:58:00Z",
   "principle": "Research any visitor-interest place where truthful current visual evidence can materially help someone decide whether, when, or how to go. Commercial fit supports prioritization but never bypasses source truth or quality gates.",
   "publicPromotionAllowed": false,
   "candidates": [
@@ -3578,6 +3578,103 @@
       "why": "Municipality links cooperative WebcamCollections camera; actual1280x720 browser image is clear/current30OctCET08:35:54. However24Oct2025provider terms restrict commercial service use/unauthorised linking, competitive/revenue use and systematic directory extraction. No specific ERN approval. Held on rights despite scene quality; no media reused, live-video or permission inferred.",
       "next": "No admission or affiliate mapping without adequate provider permission; no contact/outreach authorized or sent.",
       "reviewedAt": "2026-10-30T07:39:00Z"
+    },
+    {
+      "id": "germany-herzogstand-north-current-oct30",
+      "priority": "P2",
+      "placeGroup": "Fahrenbergkopf / Kochel am See / Bavaria",
+      "country": "Germany",
+      "provider": "Foto-Webcam.eu",
+      "candidateType": "FIRST_PARTY_CURRENT_IMAGE",
+      "state": "CAMERA_LOCATION_ADMITTED_LINK_ONLY",
+      "evidenceUrls": [
+        "https://www.foto-webcam.eu/webcam/kochelsee/",
+        "https://www.foto-webcam.eu/webcam/kochelsee/infos/"
+      ],
+      "why": "Actual720x405 first-party current image visually inspected: clear forested foreground ridge, mountain path/slopes and broad cloud sea, with distant lowlands/sky; Kochelsee and town obscured at review, not claimed visible. Printed30.10.26 08:50, timezone absent; Europe/Berlin CETUTC+1 inferred07:50Z at minute precision. Exact https://www.foto-webcam.eu/webcam/kochelsee/current/720.jpg GET200, Last-Modified07:50:19Z/retrieved07:53:49.336Z. Camera-specific info identifies Fahrenbergkopf above Herzogstandbahn, north/northeast view. Clock accuracy/cadence unverified; raw weather overlays may lag20minutes and are not verified forecasts or safety evidence. Separate Herzogstand South camera has provider-reported technical outage and is not selected.",
+      "next": "Maintain actual-image currentness and exact attributed external links; retain visibility/clock/operating-status caveats, no video proof inferred.",
+      "reviewedAt": "2026-10-30T07:58:00Z",
+      "resolvedCatalogIds": [
+        "germany-herzogstand-north-current"
+      ]
+    },
+    {
+      "id": "germany-husum-market-current-oct30",
+      "priority": "P2",
+      "placeGroup": "Husum / North Frisia / Schleswig-Holstein",
+      "country": "Germany",
+      "provider": "Stadt Husum / Foto-Webcam.eu",
+      "candidateType": "FIRST_PARTY_CURRENT_IMAGE",
+      "state": "CAMERA_LOCATION_ADMITTED_LINK_ONLY",
+      "evidenceUrls": [
+        "https://www.foto-webcam.eu/webcam/husum-marktplatz/",
+        "https://www.foto-webcam.eu/webcam/husum-marktplatz/infos/"
+      ],
+      "why": "Actual720x405 first-party current image visually inspected: church tower/façade, square monument, paving, autumn trees and surrounding historic buildings clearly legible; fog obscures distant background, no individuals identified or activity assessed. Printed30.10.26 08:30, timezone absent; Europe/Berlin CETUTC+1 inferred07:30Z minute precision. Exact https://www.foto-webcam.eu/webcam/husum-marktplatz/current/720.jpg GET200, Last-Modified07:29:30Z/retrieved07:55:40.444Z; upload slightly before rounded capture label, clock accuracy unverified. Camera-specific info identifies old town hall mounting, southeast view and Stadt Husum ownership. Sensor temperature has explicit accuracy limits; not reused as verified weather/safety data. No continuous moving-playback or measured refresh guarantee.",
+      "next": "Maintain actual-image currentness and exact attributed external links; retain visibility/clock/operating-status caveats, no video proof inferred.",
+      "reviewedAt": "2026-10-30T07:58:00Z",
+      "resolvedCatalogIds": [
+        "germany-husum-market-current"
+      ]
+    },
+    {
+      "id": "sibiu-camera-access-hold-oct30",
+      "priority": "P2",
+      "placeGroup": "Sibiu",
+      "country": "Romania",
+      "candidateType": "FIRST_PARTY_CURRENT_IMAGE",
+      "state": "HOLD_CURRENTNESS_OR_QUALITY_UNVERIFIED",
+      "evidenceUrls": [
+        "https://www.sibiu.ro/LiveOK/cam1.php",
+        "https://www.sibiu.ro/LiveOK/cam4.php"
+      ],
+      "why": "Primary municipal camera pages listed, but terminal page GET500 and browser site-served hard security-screening block. Stopped on observed block, no recovery/bypass/alternate-route probing after block. One already-started image request returned200 before block classification, not used as a substitute for qualified accessible primary review. No new source, outage claim or proof renewal.",
+      "next": "Revisit only with material access/evidence improvement, no repeated probing; no owner action needed for other expansion.",
+      "reviewedAt": "2026-10-30T07:58:00Z"
+    },
+    {
+      "id": "kampenwand-visibility-hold-oct30",
+      "priority": "P2",
+      "placeGroup": "Kampenwand / Chiemgau",
+      "country": "Germany",
+      "candidateType": "FIRST_PARTY_CURRENT_IMAGE",
+      "state": "HOLD_CURRENTNESS_OR_QUALITY_UNVERIFIED",
+      "evidenceUrls": [
+        "https://www.foto-webcam.eu/webcam/kampenwand/",
+        "https://www.foto-webcam.eu/webcam/kampenwand/infos/"
+      ],
+      "why": "Actual current720x405 frame30Oct08:50 shows foreground conifers in dense obscuration, distant scenic Chiemsee/Chiemgau detail not usable for this admission batch. Timestamp/link rights alone do not establish useful scene quality. Chiemsee affiliate inventory alone does not qualify camera.",
+      "next": "Revisit on materially clearer view, not repeated polling; do not count camera or attach commission link.",
+      "reviewedAt": "2026-10-30T07:58:00Z"
+    },
+    {
+      "id": "herzogstand-south-offline-hold-oct30",
+      "priority": "P2",
+      "placeGroup": "Herzogstand South / Walchensee",
+      "country": "Germany",
+      "candidateType": "FIRST_PARTY_CURRENT_IMAGE",
+      "state": "HOLD_CURRENTNESS_OR_QUALITY_UNVERIFIED",
+      "evidenceUrls": [
+        "https://www.foto-webcam.eu/webcam/herzogstand/"
+      ],
+      "why": "Primary page explicitly reports camera currently offline due to technical fault, with old26Octcapture in retrieved page. Separate current north-facing camera does not restore this south-facing view. Not admitted or counted.",
+      "next": "Await material provider recovery and actual image evidence; no outage inference for other cameras.",
+      "reviewedAt": "2026-10-30T07:58:00Z"
+    },
+    {
+      "id": "malaysia-camera-discovery-hold-oct30",
+      "priority": "P2",
+      "placeGroup": "Langkawi / Penang",
+      "country": "Malaysia",
+      "candidateType": "FIRST_PARTY_CURRENT_IMAGE",
+      "state": "HOLD_CURRENTNESS_OR_QUALITY_UNVERIFIED",
+      "evidenceUrls": [
+        "https://www.lada.gov.my/en/langkawi-skycab/",
+        "https://penanghill.gov.my/index.php/en/home"
+      ],
+      "why": "Primary tourism pages establish visitor context but no qualified current camera scene/playback or exact usable camera target obtained in bounded discovery. Promotional gallery videos and tourism panorama descriptions are not camera-currentness proof.",
+      "next": "Hold without counting cameras or forcing affiliate mappings; revisit only specific primary-camera evidence.",
+      "reviewedAt": "2026-10-30T07:58:00Z"
     }
   ],
   "guardrails": {
