@@ -3433,7 +3433,7 @@
         "https://myairportcams.com/disclaimer.htm"
       ],
       "state": "CAMERA_LOCATION_ADMITTED_LINK_ONLY",
-      "why": "Exact public1824x1368 image https://view.myairportcams.com/NZKK/showimagecamera2.php retrieved30Oct05:23:34.176Z HTTP200 image/jpeg, no Last-Modified header. Visually legible grass airfield/low buildings/roofline beneath clouds; printed2026-10-30 17:14:10 UTC+12 =05:14:10Z using the explicit printed offset. Actual Pacific/Auckland is NZDTUTC+13; provider clock appears fixed-offset, so not silently relabelled as local time. No independent capture header or clock-accuracy proof. No individual identified or activity assessed; image labels/distances/runway annotations not validated, no moving-playback or aviation-safety proof.",
+      "why": "Exact public2560x1920 image https://view.myairportcams.com/NZKK/showimagecamera2.php retrieved30Oct05:23:34.176Z HTTP200 image/jpeg, no Last-Modified header. Visually legible grass airfield/low buildings/roofline beneath clouds; printed2026-10-30 17:14:10 UTC+12 =05:14:10Z using the explicit printed offset. Actual Pacific/Auckland is NZDTUTC+13; provider clock appears fixed-offset, so not silently relabelled as local time. No independent capture header or clock-accuracy proof. No individual identified or activity assessed; image labels/distances/runway annotations not validated, no moving-playback or aviation-safety proof.",
       "next": "Maintain actual-image currentness; preserve rights, clock-offset and safety caveats.",
       "reviewedAt": "2026-10-30T05:30:27Z",
       "resolvedCatalogIds": [
