@@ -7,6 +7,7 @@ on:
       - ".github/workflows/operations-watch.yml"
       - "data/sources.json"
       - "data/search-supplemental.json"
+      - "data/search-supplemental-2.json"
       - "data/provider-observations.json"
       - "data/embed-research-candidates.json"
       - "data/embed-provider-families.json"
