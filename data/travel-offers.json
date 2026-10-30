@@ -4101,7 +4101,7 @@
   },
   {
     "id": "viator-oeschinensee-kandersteg-public",
-    "title": "Explore Oeschinensee & Kandersteg",
+    "title": "Lake Thun & Blausee tour — optional Kandersteg extension",
     "placeId": "oeschinensee",
     "provider": "Viator",
     "intent": "activities",
@@ -4117,7 +4117,7 @@
     "verificationEvidenceUrl": "https://www.viator.com/tours/Interlaken/BLUELAKE-Blausee-with-Thunlake-photostop-morning-tour/d5011-33924P2",
     "manualOpenVerified": false,
     "verificationMethod": "CURRENT_PRODUCT_INVENTORY_PLUS_OWNER_VERIFIED_AFFILIATE_ID_REUSE",
-    "evidence": "Current Viator 2026 Kander Valley inventory was independently rechecked. The active tour references the Oeschinensee gondola and Kandersteg area. The tracked URL reuses ERN's owner-verified Viator identity P00322254 / mcid 42383. Optional downstream planning only."
+    "evidence": "Current Viator 2026 Kander Valley inventory was independently rechecked. The active tour references the Oeschinensee gondola and Kandersteg area. The tracked URL reuses ERN's owner-verified Viator identity P00322254 / mcid 42383. Optional downstream planning only. Product fit rechecked 2026-10-30: current itinerary offers Kandersteg only with the full-day option; the Oeschinen Lake cable car is an optional activity at additional expense, subject to selected booking and operating conditions. The half-day itinerary does not promise Oeschinensee. No price, admission, access, availability or pickup guarantee; historical verification/account dates and tracking identity unchanged."
   },
   {
     "id": "viator-hua-hin-public",

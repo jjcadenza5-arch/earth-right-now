@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-30T07:58:00Z",
+  "generatedAt": "2026-10-30T08:33:00Z",
   "principle": "Research any visitor-interest place where truthful current visual evidence can materially help someone decide whether, when, or how to go. Commercial fit supports prioritization but never bypasses source truth or quality gates.",
   "publicPromotionAllowed": false,
   "candidates": [
@@ -3675,6 +3675,26 @@
       "why": "Primary tourism pages establish visitor context but no qualified current camera scene/playback or exact usable camera target obtained in bounded discovery. Promotional gallery videos and tourism panorama descriptions are not camera-currentness proof.",
       "next": "Hold without counting cameras or forcing affiliate mappings; revisit only specific primary-camera evidence.",
       "reviewedAt": "2026-10-30T07:58:00Z"
+    },
+    {
+      "id": "batch46-existing-destination-renewal-review",
+      "priority": "P1",
+      "placeGroup": "Existing European destinations and wildlife fallbacks",
+      "country": "Multiple",
+      "provider": "Existing official operators",
+      "candidateType": "EXISTING_SOURCE_REVALIDATION",
+      "state": "THREE_ACTUAL_IMAGE_RENEWALS_OTHER_PROOFS_HELD",
+      "reviewedAt": "2026-10-30T08:33:00Z",
+      "evidenceUrls": [
+        "https://www.oeschinensee.ch/en/webcams/",
+        "https://www.heidelberg-marketing.de/planen/wetter-und-webcams",
+        "https://webshop.lakelucerne.ch/en/pages/webcams",
+        "https://www.visit-dresden-elbland.de/en/weathercam-dresden-elbland/",
+        "https://farchant.panomax.com/",
+        "https://www.sanparks.org/legal/terms-conditions"
+      ],
+      "why": "Renewed only Oeschinensee and two Heidelberg external still panoramas after actual scenes and displayed current image dates. Lucerne and Dresden/Radebeul official pages displayed destination copy without usable current camera imagery. Farchant scene has useful autumn valley/woods but only time 09:20 visible, no qualified capture date reviewed; no renewal. Bled current camera not visually qualified. SANParks current image not visually qualified and linking/media permission basis needs narrow review, without a provider-wide ban inference. Isle of Man lookup request rejected; no renewal or outage inference.",
+      "next": "Keep unqualified sources on existing expiry/reference fallbacks and all original proof dates. Revisit held sources only with material current scene/date/rights evidence; no new automatic promotion, no broad retries, no HTTP-only moving-video proof. Existing two-source image pilot remains unchanged."
     }
   ],
   "guardrails": {
