@@ -1,3 +1,9 @@
+## 2026-10-30 Bangkok — Nine-camera affiliate coverage deployed and verified
+
+Production commit 50a0636b2965d14266a86c98620a8540825c1816, tree 4ee6f845c9874bd8eb3ddfad5b53100758783e8a. Pages run40984950756/job123833687022 SUCCESS; all122 release smoke tests passed locally and release checks succeeded. Operations run40984950766/job123833687029 SUCCESS, valid true, issueCount0, issues[]. Ten served artifact SHA256 checks passed against the release manifest, including unchanged runtime/styles/camera evidence and the updated offers, partner/directory data and generated Davos page. Live Davos viewer #planDo verified exact Viator tracked URL, offerId viator-davos-jakobshorn-activities, label Things to do — Viator — Affiliate link, rel noopener noreferrer sponsored.
+
+All9 Watch Earth cameras have current affiliate coverage through the actual public selector: 7 Klook and2 Viator selections,6 distinct tracked URLs. Eight were already covered; one Davos destination placement added. This is commission eligibility, not confirmed earnings, nine paying sponsors or nine new advertisers. Offers236/source-eligible placements227 across222places. Nine-camera pool/five visible, camera proofs/ledger, design, partner evidence dates and commercial safeguards preserved. No outreach, booking, payment or account actions performed. This documentation-only acceptance checkpoint does not change the deployed product.
+
 # Watch Earth business coverage — 30 October 2026
 
 ## 2026-10-30 Bangkok — All nine Watch Earth cameras have affiliate coverage prepared
