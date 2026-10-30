@@ -2,7 +2,7 @@ import { buildDynamicWatchEarth } from "./dynamic-watch-earth.js";
 import { watchEarthSnapshot } from "./watch-earth.js";
 import { recencyState } from "./source-recency.js";
 
-export function watchEarthLiveNowStatus(sources=[],{now=new Date(),limit=9,minCurated=5}={}){
+export function watchEarthLiveNowStatus(sources=[],{now=new Date(),limit=10,minCurated=5}={}){
  const moment=now instanceof Date?now:new Date(now);
  const items=buildDynamicWatchEarth(sources,{limit,now:moment});
  const snap=watchEarthSnapshot(items,{limit,now:moment});

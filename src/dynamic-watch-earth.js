@@ -10,12 +10,12 @@ import { diversifyWatchEarthProviders } from "./watch-earth-provider-diversity.j
 import { interleaveWatchEarthProviders } from "./watch-earth-provider-interleave.js";
 import { preserveWatchEarthInsideCore } from "./watch-earth-inside-core.js";
 
-export function buildDynamicWatchEarth(sources,{limit=9,now=new Date()}={}){
+export function buildDynamicWatchEarth(sources,{limit=10,now=new Date()}={}){
   const healthy=runtimeWatchEarthSources(sources,now);
   const immersive=immersiveWatchEarthSources(healthy,{now});
   const candidatePool=immersive.length>=Math.min(limit,8)?immersive:[...immersive,...healthy.filter(s=>!immersive.includes(s))];
   const ranked=buildWatchEarth(candidatePool,{
-    limit:Math.min(9,limit),
+    limit:Math.min(10,limit),
     maxPerCountry:1,
     maxPerPlace:1,
     now

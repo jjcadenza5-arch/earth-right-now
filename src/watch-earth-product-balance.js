@@ -1,11 +1,11 @@
 import { watchEarthEligible } from "./watch-earth.js";
 import { playbackCapability } from "./playback-capability.js";
 
-export function watchEarthProductBalance(sources=[],{now=new Date(),target=9,preferredInside=5,externalSoftCap=0}={}){
+export function watchEarthProductBalance(sources=[],{now=new Date(),target=10,preferredInside=5,externalSoftCap=0}={}){
   const eligible=(sources||[]).filter(s=>watchEarthEligible(s,{now}));
   const inside=eligible.filter(s=>playbackCapability(s,{now}).action==="PLAY");
   const external=eligible.filter(s=>playbackCapability(s,{now}).action==="EXTERNAL");
-  const recommendedLimit=Math.min(9,Math.max(0,Number(target)||0),inside.length);
+  const recommendedLimit=Math.min(10,Math.max(0,Number(target)||0),inside.length);
   const insideShare=recommendedLimit?Math.min(inside.length,recommendedLimit)/recommendedLimit:0;
   const externalShare=recommendedLimit?Math.min(external.length,Math.max(0,recommendedLimit-inside.length))/recommendedLimit:0;
   const insideShortfall=Math.max(0,preferredInside-inside.length);
@@ -22,6 +22,6 @@ export function watchEarthProductBalance(sources=[],{now=new Date(),target=9,pre
     insideShare:Number(insideShare.toFixed(3)),
     externalShare:Number(externalShare.toFixed(3)),
     status:inside.length<preferredInside?"INSIDE_SHORTFALL":externalShare>.75?"EXTERNAL_HEAVY":"BALANCED",
-    note:"Nine verified moving camera streams at most; the established curated floor remains five; no provider-only or refreshed-image substitutes. Shortfalls are visible."
+    note:"Ten verified moving camera streams at most; the established curated floor remains five; no provider-only or refreshed-image substitutes. Shortfalls are visible."
   };
 }

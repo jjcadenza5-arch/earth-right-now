@@ -20,10 +20,10 @@ function rankedPool(sources,now){
   .sort((a,b)=>(watchEarthBeautyScore(b,now)+watchEarthExperienceScore(b)*.35)-
                 (watchEarthBeautyScore(a,now)+watchEarthExperienceScore(a)*.35));
 }
-// Up to nine truthful, playable moving-camera streams from distinct places.
+// Up to ten truthful, playable moving-camera streams from distinct places.
 // Prefer one country per slot before relaxing diversity; never pad with weak or stale sources.
-export function buildWatchEarth(sources,{limit=9,maxPerCountry=1,maxPerPlace=1,now=new Date()}={}){
- const pool=rankedPool(sources,now),ceiling=Math.min(9,Math.max(0,Number(limit)||0));
+export function buildWatchEarth(sources,{limit=10,maxPerCountry=1,maxPerPlace=1,now=new Date()}={}){
+ const pool=rankedPool(sources,now),ceiling=Math.min(10,Math.max(0,Number(limit)||0));
  const countries=new Map(),places=new Map(),out=[];
  for(const pass of [0,1]){
   for(const source of pool){
@@ -39,10 +39,10 @@ export function buildWatchEarth(sources,{limit=9,maxPerCountry=1,maxPerPlace=1,n
  }
  return out;
 }
-export function watchEarthFallback(sources,{limit=9,now=new Date()}={}){
+export function watchEarthFallback(sources,{limit=10,now=new Date()}={}){
  return buildWatchEarth(sources,{limit,now});
 }
-export function watchEarthSnapshot(sources,{limit=9,now=new Date()}={}){
+export function watchEarthSnapshot(sources,{limit=10,now=new Date()}={}){
  const items=buildWatchEarth(sources,{limit,now});
  const phases=new Map();let inside=0,nightCities=0,daylight=0,golden=0,unknownLight=0;
  for(const s of items){const phase=solarMoment(s,now).phase;phases.set(phase,(phases.get(phase)||0)+1);if(playbackCapability(s,{now}).action==="PLAY")inside++;if(phase==="NIGHT"&&/(Cities|Harbour|Skyline|Urban|Streets|Landmarks)/i.test((s.categories||[]).join(" ")))nightCities++;if(phase==="DAY")daylight++;if(["SUNRISE","SUNSET","MORNING_GOLDEN","EVENING_GOLDEN"].includes(phase))golden++;if(phase==="UNKNOWN")unknownLight++}

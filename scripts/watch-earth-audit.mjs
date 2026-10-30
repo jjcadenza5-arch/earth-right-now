@@ -13,13 +13,13 @@ const anchor=new Date(Math.max(...checks)),day=anchor.toISOString().slice(0,10);
 const hours=[0,6,12,18];
 const auditMoments=[new Date(),...hours.map(hour=>new Date(`${day}T${String(hour).padStart(2,"0")}:00:00Z`))];
 const rows=auditMoments.map(now=>{
-  const items=buildDynamicWatchEarth(sources,{limit:9,now}),snap=watchEarthSnapshot(items,{limit:9,now});
+  const items=buildDynamicWatchEarth(sources,{limit:10,now}),snap=watchEarthSnapshot(items,{limit:10,now});
   const ids=items.map(s=>s.id),uniqueIds=new Set(ids),eligible=items.filter(s=>watchEarthEligible(s,{now})).length;
   const previews=items.filter(s=>s.truth==="PREVIEW").length;
   const nonLiveVideo=items.filter(s=>s.truth!=="LIVE_VIDEO"||s.playback!=="EMBED"||s.permission!=="EMBED_ALLOWED").map(s=>s.id);
   const sequence=watchEarthSequenceDiagnostics(items);
   const weakFirstFive=items.slice(0,5).filter(s=>(Number(s.quality)||0)<84||(Number(s.moment)||0)<80).map(s=>s.id);
-  return{utc:now.toISOString(),actualNow:Math.abs(Date.now()-now.getTime())<60000,...snap,...sequence,target:9,shortfall:Math.max(0,9-items.length),eligible,duplicateIds:ids.length-uniqueIds.size,previews,nonLiveVideo,weakFirstFive,titles:items.map(s=>s.title)};
+  return{utc:now.toISOString(),actualNow:Math.abs(Date.now()-now.getTime())<60000,...snap,...sequence,target:10,shortfall:Math.max(0,10-items.length),eligible,duplicateIds:ids.length-uniqueIds.size,previews,nonLiveVideo,weakFirstFive,titles:items.map(s=>s.title)};
 });
 const violations=[];
 for(const row of rows){
@@ -32,7 +32,7 @@ for(const row of rows){
   if(row.duplicateIds)violations.push(`${row.utc}: ${row.duplicateIds} duplicate source id(s)`);
   if(row.previews)violations.push(`${row.utc}: ${row.previews} PREVIEW item(s) leaked into Watch Earth`);
   if(row.nonLiveVideo.length)violations.push(`${row.utc}: non-stream source(s) leaked into Watch Earth: ${row.nonLiveVideo.join(", ")}`);
-  if(row.count>9)violations.push(`${row.utc}: more than nine Watch Earth items`);
+  if(row.count>10)violations.push(`${row.utc}: more than ten Watch Earth items`);
   if(row.places!==row.count)violations.push(`${row.utc}: journey repeats a place before reaching its available breadth`);
   if(row.count>=3&&row.resilience==="LIMITED")violations.push(`${row.utc}: provider resilience diagnostics unexpectedly limited for a full journey`);
 }

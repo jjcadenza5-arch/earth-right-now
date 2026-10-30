@@ -1,0 +1,111 @@
+{
+  "reviewBatch": "5ffb78bc2d55d087",
+  "purpose": "Independent exact embed HTTP availability only; not owner network or moving-video proof",
+  "rows": [
+    {
+      "id": "auckland-viaduct-harbour",
+      "url": "https://www.youtube.com/embed/live_stream?channel=UCfNoVlW5-BHsoCKTGs_F0WQ",
+      "checkedAt": "2026-10-30T12:22:07.935736+00:00",
+      "httpStatus": 200,
+      "finalUrl": "https://www.youtube.com/embed/live_stream?channel=UCfNoVlW5-BHsoCKTGs_F0WQ"
+    },
+    {
+      "id": "davos-jakobshorn-live",
+      "url": "https://www.youtube-nocookie.com/embed/sSen5EoOiJs",
+      "checkedAt": "2026-10-30T12:22:07.936581+00:00",
+      "httpStatus": 200,
+      "finalUrl": "https://www.youtube-nocookie.com/embed/sSen5EoOiJs"
+    },
+    {
+      "id": "kyoto-fushimi-inari-live",
+      "url": "https://www.youtube-nocookie.com/embed/MMeBDRfRHyA",
+      "checkedAt": "2026-10-30T12:22:07.937449+00:00",
+      "httpStatus": 200,
+      "finalUrl": "https://www.youtube-nocookie.com/embed/MMeBDRfRHyA"
+    },
+    {
+      "id": "kyoto-hanamikoji-live",
+      "url": "https://www.youtube-nocookie.com/embed/J3xHBUgWRqc",
+      "checkedAt": "2026-10-30T12:22:07.938595+00:00",
+      "httpStatus": 200,
+      "finalUrl": "https://www.youtube-nocookie.com/embed/J3xHBUgWRqc"
+    },
+    {
+      "id": "kyoto-kifune-shrine-live",
+      "url": "https://www.youtube-nocookie.com/embed/eJAqPCdS1cY",
+      "checkedAt": "2026-10-30T12:22:07.938935+00:00",
+      "httpStatus": 200,
+      "finalUrl": "https://www.youtube-nocookie.com/embed/eJAqPCdS1cY"
+    },
+    {
+      "id": "kyoto-kiyomizuzaka-live",
+      "url": "https://www.youtube-nocookie.com/embed/cUnYPpK7ENk",
+      "checkedAt": "2026-10-30T12:22:14.049753+00:00",
+      "httpStatus": 200,
+      "finalUrl": "https://www.youtube-nocookie.com/embed/cUnYPpK7ENk"
+    },
+    {
+      "id": "kyoto-nishiki-market-live",
+      "url": "https://www.youtube-nocookie.com/embed/qZ2ghbe3zc0",
+      "checkedAt": "2026-10-30T12:22:14.098776+00:00",
+      "httpStatus": 200,
+      "finalUrl": "https://www.youtube-nocookie.com/embed/qZ2ghbe3zc0"
+    },
+    {
+      "id": "nyc-brooklyn-skyline-live",
+      "url": "https://www.youtube-nocookie.com/embed/obqnslJKrxc",
+      "checkedAt": "2026-10-30T12:22:14.113041+00:00",
+      "httpStatus": 200,
+      "finalUrl": "https://www.youtube-nocookie.com/embed/obqnslJKrxc"
+    },
+    {
+      "id": "rovaniemi-santa-claus-village-live",
+      "url": "https://www.youtube-nocookie.com/embed/Cp4RRAEgpeU",
+      "checkedAt": "2026-10-30T12:22:14.114756+00:00",
+      "httpStatus": 200,
+      "finalUrl": "https://www.youtube-nocookie.com/embed/Cp4RRAEgpeU"
+    },
+    {
+      "id": "taitung-jinzun",
+      "url": "https://www.youtube-nocookie.com/embed/ZdqHgQwvZOw",
+      "checkedAt": "2026-10-30T12:22:16.125670+00:00",
+      "httpStatus": 200,
+      "finalUrl": "https://www.youtube-nocookie.com/embed/ZdqHgQwvZOw"
+    },
+    {
+      "id": "taiwan-yehliu-live",
+      "url": "https://www.youtube-nocookie.com/embed/ZjuY4qKaj40",
+      "checkedAt": "2026-10-30T12:22:18.786707+00:00",
+      "httpStatus": 200,
+      "finalUrl": "https://www.youtube-nocookie.com/embed/ZjuY4qKaj40"
+    },
+    {
+      "id": "takayama-miyagawa-stream",
+      "url": "https://www.youtube.com/embed/live_stream?channel=UC5MNHWRJRJ1buoVIg2sHmCw",
+      "checkedAt": "2026-10-30T12:22:18.798527+00:00",
+      "httpStatus": 200,
+      "finalUrl": "https://www.youtube.com/embed/live_stream?channel=UC5MNHWRJRJ1buoVIg2sHmCw"
+    },
+    {
+      "id": "verbier",
+      "url": "https://www.youtube-nocookie.com/embed/9ljoXhTxjag",
+      "checkedAt": "2026-10-30T12:22:18.824931+00:00",
+      "httpStatus": 200,
+      "finalUrl": "https://www.youtube-nocookie.com/embed/9ljoXhTxjag"
+    },
+    {
+      "id": "volcan-tajogaite",
+      "url": "https://webcam-lapalma.de/embed/vulkan/",
+      "checkedAt": "2026-10-30T12:22:18.828681+00:00",
+      "httpStatus": 200,
+      "finalUrl": "https://webcam-lapalma.de/embed/vulkan/"
+    },
+    {
+      "id": "youtube-mpala-watering-hole-current",
+      "url": "https://www.youtube-nocookie.com/embed/oORXfTviuCs",
+      "checkedAt": "2026-10-30T12:22:18.880169+00:00",
+      "httpStatus": 200,
+      "finalUrl": "https://www.youtube-nocookie.com/embed/oORXfTviuCs"
+    }
+  ]
+}

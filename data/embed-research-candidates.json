@@ -500,7 +500,7 @@
   {
     "id": "youtube-mpala-watering-hole-current",
     "title": "Mpala — Watering Hole Wildlife",
-    "status": "RESEARCH_ONLY",
+    "status": "APPROVED",
     "provider": "Mpala Research Centre / Explore.org",
     "platform": "YouTube",
     "sourceUrl": "https://mpala.org/mpala-live/",
@@ -508,9 +508,9 @@
     "ownerEvidence": "Official Mpala Live page: selected Watering Hole in Kenya then Play; rendered iframe exact youtube.com/embed/oORXfTviuCs with Explore African Wildlife attribution, 2026-10-30.",
     "currentEvidence": "Official player title LIVE Watering Hole in Kenya - MPALA | explore.org. This is target identity only: black player in research browser, no actual live/moving scene confirmed.",
     "discoveredAt": "2026-10-30T12:10:00Z",
-    "permissionReview": "OFFICIAL_BRANDED_PLAYER_ENABLED_DEPLOYED_PERMISSION_CHECK_REQUIRED",
-    "playbackReview": "HUMAN_PLAYBACK_REQUIRED",
-    "promotion": "BLOCKED_UNTIL_DEPLOYED_PLAYBACK_AND_PERMISSION_REVIEW",
+    "permissionReview": "PER_VIDEO_EMBED_CONFIRMED",
+    "playbackReview": "HUMAN_PLAYBACK_CONFIRMED",
+    "promotion": "APPROVED_FOR_CATALOG",
     "currentEvidenceReviewedAt": "2026-10-30T12:10:00Z",
     "platformEvidence": "Explore terms revised2026-01-23 allow enabled Explore-branded embeds, retaining attribution/notices. Official Mpala page embeds this exact Explore African Wildlife YouTube target. Standard branded player only, preserve controls/advertising/referrer; no restream, downloaded media, separate logo/thumbnail reuse or blanket permission inferred. Actual deployed availability remains unverified.",
     "operationalResearchReason": "OWNER_REQUESTED_ONE_ANIMAL_WATCH_EARTH_STREAM",
@@ -520,6 +520,12 @@
       "https://explore.org/community-guidelines",
       "https://developers.google.com/youtube/terms/required-minimum-functionality"
     ],
-    "reviewNote": "Materially new exact target oORXfTviuCs, not historical CouchTourist playback or older KyQAB-TKOVA. Research browser official embedded player black after load/wait and one click; no explicit bot challenge or provider-outage inference. Require exact deployed live moving playback and clear scene before catalog promotion. Wildlife presence not guaranteed; highlight/replay footage never LIVE. Existing Mpala source remains LINK_ONLY with its original expiry proof."
+    "reviewNote": "Exact owner-published and enabled Explore African Wildlife YouTube target approved after owner confirmed live/current playback in deployed ERN. Official publication and enabled branded-embed terms reviewed separately. Preserve all branding/controls/ads/referrer; no media reuse, restream, footage monetization, precise animal sightings or guarantee animals remain visible. Prior research-browser black result is not owner failure. Quality90 retained; moment84 is editorial interest in the owner-confirmed moving watering-hole view, not a claim of observed species/scene details.",
+    "lastHumanReviewAt": "2026-10-30T12:19:46.521Z",
+    "lastHumanReviewOutcome": "HUMAN_PLAYBACK_CONFIRMED",
+    "reviewBatch": "5ffb78bc2d55d087",
+    "reviewedSourceUrl": "https://mpala.org/mpala-live/",
+    "reviewedEmbedUrl": "https://www.youtube-nocookie.com/embed/oORXfTviuCs",
+    "publishedSourceId": "mpala-watering-hole"
   }
 ]
