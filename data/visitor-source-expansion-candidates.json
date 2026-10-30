@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-30T06:43:00Z",
+  "generatedAt": "2026-10-30T07:39:00Z",
   "principle": "Research any visitor-interest place where truthful current visual evidence can materially help someone decide whether, when, or how to go. Commercial fit supports prioritization but never bypasses source truth or quality gates.",
   "publicPromotionAllowed": false,
   "candidates": [
@@ -3510,6 +3510,74 @@
       "why": "30Oct provider browser image decoded320x240 with current printed date, but scene largely washed out and foreground indistinct. Insufficient useful visitor view; no outage or weather diagnosis inferred. Not admitted or counted.",
       "next": "Revisit only materially clearer useful imagery, not repeated polling.",
       "reviewedAt": "2026-10-30T06:43:00Z"
+    },
+    {
+      "id": "sweden-tarnaby-gautan-current-oct30",
+      "priority": "P2",
+      "placeGroup": "Tärnaby / Västerbotten",
+      "country": "Sweden",
+      "provider": "Storumans kommun",
+      "candidateType": "FIRST_PARTY_CURRENT_IMAGE",
+      "state": "CAMERA_LOCATION_ADMITTED_LINK_ONLY",
+      "evidenceUrls": [
+        "https://storuman.se/kommun/Webbkamera1/",
+        "https://www.storuman.se/kommun/Kommun--politik/om-webbplatsen-storuman.se/"
+      ],
+      "why": "Primary municipal page identifies Tärna Church, Lake Gäutan and background Ryfjället, links exact https://www.storuman.se/webcams/tarnaby/tarnaby.jpg . Actual1280x720 image visually inspected: legible church, lakeshore, village lights, water reflections and wooded slopes in dim dawn; distant mountain detail obscured. PrintedTärnaby2026-10-30 06:08:13, timezone absent; Europe/Stockholm CETUTC+1 inferred05:08:13Z. GET200/retrieved07:32:22.087Z, Last-Modified05:08:17Z, Date07:32:21Z. Capture was approximately2h24old at retrieval, explicitly not a minute-current proof; cadence/clock accuracy unverified. Provider warns image can stick and browser may need refresh; no continued updating or video playback assumed. Not admitted to Watch Earth, image/media not reused.",
+      "next": "Maintain actual-image currentness, preserve capture-lag/operating-status caveats and external-only rights boundary; do not infer video proof.",
+      "reviewedAt": "2026-10-30T07:39:00Z",
+      "resolvedCatalogIds": [
+        "sweden-tarnaby-gautan-current"
+      ]
+    },
+    {
+      "id": "sweden-hemavan-bjork-current-oct30",
+      "priority": "P2",
+      "placeGroup": "Hemavan / Västerbotten",
+      "country": "Sweden",
+      "provider": "Hemavan Alpint AB / Webbkameror.se",
+      "candidateType": "FIRST_PARTY_CURRENT_IMAGE",
+      "state": "CAMERA_LOCATION_ADMITTED_LINK_ONLY",
+      "evidenceUrls": [
+        "https://hemavan.nu/en/skiing-2/web-cameras/",
+        "https://hemavan.nu/en/about-us/terms-conditions/"
+      ],
+      "why": "First-party resort page separates current stills from one-second images on another service and states60second updates (provider claim, not measured). Björk exact published image https://liveevent.nu/hemavan-tarnaby/hemavan_7_640.jpg GET200, actual640x480 visually reviewed: angular restaurant building, foreground path/grass, broad valley and mountain ridges, small water patch, bright partly overexposed sky. Burned-in2026-10-30 CET08:35:08 gives07:35:08Z using explicitUTC+1; Last-Modified07:35:09Z, retrieved07:36:04.522Z/Date07:36:04Z. Clock accuracy unverified. Another Kungsliften camera has provider-reported technical problems; not selected or used to downgrade this view. Resort operating page says summer closed/winter planned27Nov; no open-slope, lift, skiability or safe-access promise. Refreshed still only, not moving video.",
+      "next": "Maintain actual-image currentness, preserve capture-lag/operating-status caveats and external-only rights boundary; do not infer video proof.",
+      "reviewedAt": "2026-10-30T07:39:00Z",
+      "resolvedCatalogIds": [
+        "sweden-hemavan-bjork-current"
+      ]
+    },
+    {
+      "id": "abisko-still-unavailable-oct30",
+      "priority": "P2",
+      "placeGroup": "Abisko",
+      "country": "Sweden",
+      "candidateType": "FIRST_PARTY_CURRENT_IMAGE",
+      "state": "HOLD_CURRENTNESS_OR_PERMISSION_UNVERIFIED",
+      "evidenceUrls": [
+        "https://lightsoverlapland.com/aurora-webcam/"
+      ],
+      "why": "First-party browser page loads, but Northwest still widget remains empty. Public widget script GET403; Twitch panes say unable to play media, LIVE badges are not playback evidence. No qualified current scene, no outage or bot inference, no retry/bypass. Current Viator Abisko inventory/tracked GET200 does not substitute for camera evidence.",
+      "next": "Revisit only materially available actual camera evidence; do not count destination or monetize unverified source.",
+      "reviewedAt": "2026-10-30T07:39:00Z"
+    },
+    {
+      "id": "kiruna-luossavaara-terms-hold-oct30",
+      "priority": "P2",
+      "placeGroup": "Kiruna / Luossavaara",
+      "country": "Sweden",
+      "candidateType": "FIRST_PARTY_CURRENT_IMAGE",
+      "state": "HOLD_CURRENTNESS_OR_PERMISSION_UNVERIFIED",
+      "evidenceUrls": [
+        "https://kiruna.se/uppleva--gora/utomhusaktiviteter/luossavaara-fritidsanlaggning.html",
+        "https://webcamcollections.com/countries/sweden/kiruna-luossavaara-hill",
+        "https://app.termly.io/policy-viewer/policy.html?policyUUID=5fc74a96-ad9b-41a8-ab33-ba9f1c8e7d58"
+      ],
+      "why": "Municipality links cooperative WebcamCollections camera; actual1280x720 browser image is clear/current30OctCET08:35:54. However24Oct2025provider terms restrict commercial service use/unauthorised linking, competitive/revenue use and systematic directory extraction. No specific ERN approval. Held on rights despite scene quality; no media reused, live-video or permission inferred.",
+      "next": "No admission or affiliate mapping without adequate provider permission; no contact/outreach authorized or sent.",
+      "reviewedAt": "2026-10-30T07:39:00Z"
     }
   ],
   "guardrails": {

@@ -4377,5 +4377,27 @@
     "verificationMethod": "CURRENT_DESTINATION_INVENTORY_PLUS_OWNER_VERIFIED_AFFILIATE_ID_REUSE",
     "evidence": "Current primary destination inventory reviewed30Oct; exact tracked GET200 retained destination and ERN pid=P00322254/mcid42383/medium=link. Existing owner-verified Viator identity reused; manualOpenVerifiedfalse and partner-bounded26Dec13:17Z expiry retained. No new owner click-through/account renewal/conversion proof. Destination-wide activities only; no exact camera-site access, pickup, included transport, fare, date, availability, safety, booking or income promise. Richmond is in Tasman near Nelson; clearly labelled broad Nelson/Tasman-area planning, departures may be elsewhere.",
     "placementReviewedAt": "2026-10-30T06:43:00Z"
+  },
+  {
+    "id": "viator-sapporo-cts-airport-transfer",
+    "placeId": "japan-ohdori4-stv-view",
+    "title": "Explore a private New Chitose–Sapporo transfer",
+    "provider": "Viator",
+    "intent": "transport",
+    "affiliate": true,
+    "sponsored": false,
+    "partnerId": "viator",
+    "destinationScope": "New Chitose Airport / Sapporo city",
+    "linkScope": "product",
+    "url": "https://www.viator.com/tours/Sapporo/One-Way-Private-Airport-Transfer-from-to-CTS/d5559-355173P54?pid=P00322254&mcid=42383&medium=link",
+    "disclosure": "Affiliate link",
+    "verified": true,
+    "verifiedAt": "2026-10-30T07:39:00Z",
+    "expiresAt": "2026-12-26T13:17:00Z",
+    "verificationEvidenceUrl": "https://www.viator.com/tours/Sapporo/One-Way-Private-Airport-Transfer-from-to-CTS/d5559-355173P54",
+    "manualOpenVerified": false,
+    "verificationMethod": "CURRENT_DESTINATION_INVENTORY_PLUS_OWNER_VERIFIED_AFFILIATE_ID_REUSE",
+    "evidence": "30Oct primary product355173P54 explicitly offers one-way New Chitose Airport/Sapporo-city transfers to designated area with exact address needed. Exact tracked GET200 redirected to https://www.viator.com/Sapporo/d5559-ttd/p-355173P54 retaining ERNpid=P00322254/mcid42383/medium=link and same product. Existing owner-verified Viator identity reused, manualOpenVerifiedfalse;26Dec13:17Z partner-bounded expiry and account proof unchanged. This transport-planning option is distinct from existing Sapporo activities. Not guaranteed pickup/dropoff at Odori Park/camera, two-way service, fixed fare/time, driver language, child seat, capacity, availability, accessibility or safety. Confirm current product/address/time/luggage/requirements directly; no copied product price/review/inclusion text, booking, conversion or income claimed.",
+    "placementReviewedAt": "2026-10-30T07:39:00Z"
   }
 ]
