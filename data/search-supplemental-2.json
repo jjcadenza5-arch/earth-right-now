@@ -1317,8 +1317,8 @@
     "sourceUrl": "https://winterthur.roundshot.com/roterturm/",
     "officialUrl": "https://stadt.winterthur.ch/themen/mobilitaet/oev-taxi-sharing",
     "attribution": "Stadt Winterthur — Roundshot panorama",
-    "checkedAt": "2026-10-23T23:26:24Z",
-    "lastSuccessfulCheck": "2026-10-23T23:26:24Z",
+    "checkedAt": "2026-10-30T06:43:00Z",
+    "lastSuccessfulCheck": "2026-10-30T06:43:00Z",
     "quality": 80,
     "freshness": 95,
     "moment": 75,
@@ -1329,7 +1329,7 @@
     "externalWindowRequired": true,
     "rightsBasis": "First-party viewer links to operator and offers camera-link sharing. Exact legal panel credits images by Stadt Winterthur, Seitz Phototechnik technology, all rights reserved. Attributed LINK_ONLY handoff; no special link prohibition observed. No image, thumbnail, tile, logo, video or iframe reused, and no embedding or restreaming permission inferred.",
     "rightsSourceUrl": "https://winterthur.roundshot.com/roterturm/#/legal",
-    "freshnessEvidence": "Interactive first-party browser review completed 2026-10-23T23:26:24Z. Visible capture label 24.10.2026 01:20; existing catalog timezone Europe/Zurich (timezone not printed beside capture label). Actual scene inspected: Illuminated city rooftops, railway platforms/tracks, construction cranes and wooded hills beneath a cloudy night sky. Some station lights are strongly overexposed. Latest-view next and last controls disabled. Video teaser not played or admitted as live. Panorama rotation is movement around a captured still, not live video. No media reused, measured refresh cadence or uninterrupted reliability asserted."
+    "freshnessEvidence": "30Oct first-party browser visual review at https://winterthur.roundshot.com/roterturm/#/ : actual panorama clearly shows city rooftops, railway tracks/platforms, cranes, autumn trees and wooded hills in morning light. Visible capture label30.10.2026 07:30; existing Europe/Zurich UTC+1 inferred06:30Z, minute precision and clock accuracy unverified. Captured still panorama, not continuous live video; separate video teaser not played or admitted. Existing LINK_ONLY/all-rights-reserved basis and external-window handoff retained, no tiles/media reused or measured cadence/transport operation inferred."
   },
   {
     "id": "australia-kunanyi-summit-current",
@@ -3455,5 +3455,44 @@
     "rightsSourceUrl": "https://www.tasman.govt.nz/my-council/about-us/terms-and-conditions/website-terms-of-use",
     "rightsBasis": "Council terms explicitly allow clear links identifying the Tasman District Council website and reserve the right to request removal. Copyright/content reuse is generally personal/non-commercial and third-party material may have separate rights. ERN provides attributed ordinary council-page link and original description only; no image, logo, prose, iframe, timelapse or thumbnail reused, no commercial media licence inferred.",
     "freshnessEvidence": "Council page identifies Kerr Bay and south-facing Mount Robert/Nelson Lakes view, links exact https://live.immerse.cam/static/lakerotoiti.jpg?height=768&width=1024 . Actual1024x768 image visually reviewed: lake water, jetty/shore, wooded slopes and mountain ridges legible, some foreground shade/cloud. Printed30October2026/6:20pm; zone absent, NZDTUTC+13 inferred05:20Z minute precision. Image GETHTTP200, Date30Oct05:26:29Z/retrieved05:26:29.709Z, no Last-Modified; response time is not capture proof and clock accuracy unverified. Direct council-page GET403 but cloud browser successfully displays exact council page and source context; no provider outage or bot inference/bypass. Daily timelapse explicitly separate, not promoted as live moving footage. No navigation, lake safety, access or forecast guarantee."
+  },
+  {
+    "country": "New Zealand",
+    "timeZone": "Pacific/Auckland",
+    "categories": [
+      "Nature",
+      "Useful Earth"
+    ],
+    "truth": "LIVE_IMAGE",
+    "permission": "LINK_ONLY",
+    "health": "HEALTHY",
+    "playback": "EXTERNAL",
+    "freshness": 90,
+    "moment": 75,
+    "featuredHold": true,
+    "watchHold": true,
+    "searchSupplemental": true,
+    "externalWindowRequired": true,
+    "checkedAt": "2026-10-30T06:43:00Z",
+    "lastSuccessfulCheck": "2026-10-30T06:43:00Z",
+    "id": "nz-richmond-waimea-current",
+    "placeId": "nz-richmond-waimea",
+    "title": "Richmond — Waimea Plains Panorama",
+    "seoName": "Richmond — Waimea Plains",
+    "region": "Richmond / Waimea Plains / Tasman",
+    "provider": "Tasman District Council / Immerse",
+    "attribution": "Tasman District Council / Immerse",
+    "officialUrl": "https://www.tasman.govt.nz/my-region/webcams/richmond",
+    "sourceUrl": "https://www.tasman.govt.nz/my-region/webcams/richmond",
+    "quality": 84,
+    "aliases": [
+      "Richmond Tasman webcam",
+      "Waimea Plains camera",
+      "Richmond New Zealand panorama"
+    ],
+    "story": "Look west from the hills above Richmond across the Waimea Plains toward the distant ridges. This council-hosted refreshed still gives a broad view of the town and landscape; it is separate from the daily timelapse. For a visit, check access and conditions with the relevant operator. Regional activities may depart elsewhere in Nelson or Tasman.",
+    "rightsSourceUrl": "https://www.tasman.govt.nz/my-council/about-us/terms-and-conditions/website-terms-of-use",
+    "rightsBasis": "Council terms explicitly allow clear links identifying the Tasman District Council website and reserve the right to request removal. Copyright/content reuse is generally personal/non-commercial and third-party material may have separate rights. ERN provides attributed ordinary council-page link and original description only; no image, logo, prose, iframe, timelapse or thumbnail reused, no commercial media licence inferred.",
+    "freshnessEvidence": "Primary council page identifies hillside camera looking west over Richmond and Waimea Plains and links exact https://live.immerse.cam/static/richmond.jpg?height=768&width=1024 . Actual1024x768 image GET200 retrieved30Oct06:37:09.617Z, Date06:37:09Z and no Last-Modified; visually reviewed town, open plains, trees and distant ridges under clear sky, some haze. Printed30October2026/6:50pm; timezone absent, NZDT UTC+13 inferred05:50Z, minute precision; clock accuracy unverified. Response time is not capture proof. Daily timelapse separate; no live moving-video proof, safety/access/forecast guarantee or copied media."
   }
 ]

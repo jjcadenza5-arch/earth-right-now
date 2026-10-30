@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-15T14:40:45.770400Z",
+  "generatedAt": "2026-10-30T06:43:00Z",
   "principle": "Research any visitor-interest place where truthful current visual evidence can materially help someone decide whether, when, or how to go. Commercial fit supports prioritization but never bypasses source truth or quality gates.",
   "publicPromotionAllowed": false,
   "candidates": [
@@ -3477,6 +3477,39 @@
       "why": "Image is mainly driveway/parked vehicles/landscaping with obstructing eaves, not sufficient visitor landscape value. Printed18:25:04 has absent zone and appears ahead of05:23:38Z retrieval under NZDT inference; upload05:16:14Z earlier still. Clock/capture context unresolved. Station page403. Not admitted, no individuals identified or activity assessed.",
       "next": "Revisit only material better view/currentness evidence; no safety or operational inference.",
       "reviewedAt": "2026-10-30T05:30:27Z"
+    },
+    {
+      "id": "nz-richmond-waimea-oct30",
+      "priority": "P2",
+      "placeGroup": "Richmond / Waimea Plains / Tasman",
+      "country": "New Zealand",
+      "provider": "Tasman District Council / Immerse",
+      "candidateType": "FIRST_PARTY_CURRENT_IMAGE",
+      "state": "CAMERA_LOCATION_ADMITTED_LINK_ONLY",
+      "evidenceUrls": [
+        "https://www.tasman.govt.nz/my-region/webcams/richmond",
+        "https://www.tasman.govt.nz/my-council/about-us/terms-and-conditions/website-terms-of-use"
+      ],
+      "why": "Primary council page identifies hillside camera looking west over Richmond and Waimea Plains and links exact https://live.immerse.cam/static/richmond.jpg?height=768&width=1024 . Actual1024x768 image GET200 retrieved30Oct06:37:09.617Z, Date06:37:09Z and no Last-Modified; visually reviewed town, open plains, trees and distant ridges under clear sky, some haze. Printed30October2026/6:50pm; timezone absent, NZDT UTC+13 inferred05:50Z, minute precision; clock accuracy unverified. Response time is not capture proof. Daily timelapse separate; no live moving-video proof, safety/access/forecast guarantee or copied media.",
+      "next": "Maintain actual-image evidence and ordinary attributed links; never relabel timelapse as live video.",
+      "reviewedAt": "2026-10-30T06:43:00Z",
+      "resolvedCatalogIds": [
+        "nz-richmond-waimea-current"
+      ]
+    },
+    {
+      "id": "rebun-visibility-quality-hold-oct30",
+      "priority": "P2",
+      "placeGroup": "Rebun Island",
+      "country": "Japan",
+      "candidateType": "FIRST_PARTY_CURRENT_IMAGE",
+      "state": "HOLD_CURRENTNESS_OR_QUALITY_UNVERIFIED",
+      "evidenceUrls": [
+        "https://www.stv.jp/webcam/rebun/index.html"
+      ],
+      "why": "30Oct provider browser image decoded320x240 with current printed date, but scene largely washed out and foreground indistinct. Insufficient useful visitor view; no outage or weather diagnosis inferred. Not admitted or counted.",
+      "next": "Revisit only materially clearer useful imagery, not repeated polling.",
+      "reviewedAt": "2026-10-30T06:43:00Z"
     }
   ],
   "guardrails": {

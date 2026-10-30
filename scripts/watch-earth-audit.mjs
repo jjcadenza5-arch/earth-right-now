@@ -19,7 +19,7 @@ const rows=auditMoments.map(now=>{
   const nonLiveVideo=items.filter(s=>s.truth!=="LIVE_VIDEO"||s.playback!=="EMBED"||s.permission!=="EMBED_ALLOWED").map(s=>s.id);
   const sequence=watchEarthSequenceDiagnostics(items);
   const weakFirstFive=items.slice(0,5).filter(s=>(Number(s.quality)||0)<84||(Number(s.moment)||0)<80).map(s=>s.id);
-  return{utc:now.toISOString(),actualNow:Math.abs(Date.now()-now.getTime())<60000,...snap,...sequence,target:7,shortfall:Math.max(0,7-items.length),eligible,duplicateIds:ids.length-uniqueIds.size,previews,nonLiveVideo,weakFirstFive,titles:items.map(s=>s.title)};
+  return{utc:now.toISOString(),actualNow:Math.abs(Date.now()-now.getTime())<60000,...snap,...sequence,target:9,shortfall:Math.max(0,9-items.length),eligible,duplicateIds:ids.length-uniqueIds.size,previews,nonLiveVideo,weakFirstFive,titles:items.map(s=>s.title)};
 });
 const violations=[];
 for(const row of rows){
