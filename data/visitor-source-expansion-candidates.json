@@ -3415,6 +3415,68 @@
       "why": "Direct provider page403, without bot-screen evidence. Primary search page identifies airfield webcams, but exact publicly linked North timelapse image returned404; no actual current imagery reviewed. Not admitted, no outage/bypass or video failure inferred.",
       "next": "Revisit only material new source evidence; do not count as camera coverage.",
       "reviewedAt": "2026-10-30T05:01:44Z"
+    },
+    {
+      "id": "nz-kerikeri-airport-oct30",
+      "priority": "P2",
+      "placeGroup": "Kerikeri / Bay of Islands / Northland",
+      "country": "New Zealand",
+      "provider": "Aus Web Cams / MyAirportCams",
+      "candidateType": "FIRST_PARTY_CURRENT_IMAGE",
+      "visitorDecisionValue": "HIGH",
+      "qualityPotential": "GOOD",
+      "programFit": [
+        "activities"
+      ],
+      "evidenceUrls": [
+        "https://view.myairportcams.com/NZKK/showimagecamera2.php",
+        "https://myairportcams.com/disclaimer.htm"
+      ],
+      "state": "CAMERA_LOCATION_ADMITTED_LINK_ONLY",
+      "why": "Exact public1824x1368 image https://view.myairportcams.com/NZKK/showimagecamera2.php retrieved30Oct05:23:34.176Z HTTP200 image/jpeg, no Last-Modified header. Visually legible grass airfield/low buildings/roofline beneath clouds; printed2026-10-30 17:14:10 UTC+12 =05:14:10Z using the explicit printed offset. Actual Pacific/Auckland is NZDTUTC+13; provider clock appears fixed-offset, so not silently relabelled as local time. No independent capture header or clock-accuracy proof. No individual identified or activity assessed; image labels/distances/runway annotations not validated, no moving-playback or aviation-safety proof.",
+      "next": "Maintain actual-image currentness; preserve rights, clock-offset and safety caveats.",
+      "reviewedAt": "2026-10-30T05:30:27Z",
+      "resolvedCatalogIds": [
+        "nz-kerikeri-airport-current"
+      ]
+    },
+    {
+      "id": "nz-lake-rotoiti-kerr-bay-oct30",
+      "priority": "P2",
+      "placeGroup": "Kerr Bay / St Arnaud / Nelson Lakes National Park",
+      "country": "New Zealand",
+      "provider": "Tasman District Council / Immerse",
+      "candidateType": "FIRST_PARTY_CURRENT_IMAGE",
+      "visitorDecisionValue": "HIGH",
+      "qualityPotential": "GOOD",
+      "programFit": [
+        "activities"
+      ],
+      "evidenceUrls": [
+        "https://www.tasman.govt.nz/my-region/webcams/lake-rotoiti",
+        "https://www.tasman.govt.nz/my-council/about-us/terms-and-conditions/website-terms-of-use"
+      ],
+      "state": "CAMERA_LOCATION_ADMITTED_LINK_ONLY",
+      "why": "Council page identifies Kerr Bay and south-facing Mount Robert/Nelson Lakes view, links exact https://live.immerse.cam/static/lakerotoiti.jpg?height=768&width=1024 . Actual1024x768 image visually reviewed: lake water, jetty/shore, wooded slopes and mountain ridges legible, some foreground shade/cloud. Printed30October2026/6:20pm; zone absent, NZDTUTC+13 inferred05:20Z minute precision. Image GETHTTP200, Date30Oct05:26:29Z/retrieved05:26:29.709Z, no Last-Modified; response time is not capture proof and clock accuracy unverified. Direct council-page GET403 but cloud browser successfully displays exact council page and source context; no provider outage or bot inference/bypass. Daily timelapse explicitly separate, not promoted as live moving footage. No navigation, lake safety, access or forecast guarantee.",
+      "next": "Maintain actual-image currentness; preserve rights, clock-offset and safety caveats.",
+      "reviewedAt": "2026-10-30T05:30:27Z",
+      "resolvedCatalogIds": [
+        "nz-lake-rotoiti-kerr-bay-current"
+      ]
+    },
+    {
+      "id": "wairakei-driveway-quality-hold-oct30",
+      "priority": "P2",
+      "placeGroup": "Wairakei",
+      "country": "New Zealand",
+      "candidateType": "FIRST_PARTY_CURRENT_IMAGE",
+      "state": "HOLD_CURRENTNESS_OR_QUALITY_UNVERIFIED",
+      "evidenceUrls": [
+        "https://www.okahu.com/weather/waiNE.jpg"
+      ],
+      "why": "Image is mainly driveway/parked vehicles/landscaping with obstructing eaves, not sufficient visitor landscape value. Printed18:25:04 has absent zone and appears ahead of05:23:38Z retrieval under NZDT inference; upload05:16:14Z earlier still. Clock/capture context unresolved. Station page403. Not admitted, no individuals identified or activity assessed.",
+      "next": "Revisit only material better view/currentness evidence; no safety or operational inference.",
+      "reviewedAt": "2026-10-30T05:30:27Z"
     }
   ],
   "guardrails": {
