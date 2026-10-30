@@ -1,0 +1,152 @@
+{
+  "checkedAt": "2026-10-30T01:15:14.781Z",
+  "cameraCount": 9,
+  "covered": 9,
+  "gaps": [],
+  "rows": [
+    {
+      "sourceId": "auckland-viaduct-harbour",
+      "title": "Auckland Viaduct Harbour",
+      "placeId": "auckland-viaduct-harbour",
+      "selectedOfferId": "klook-auckland-activities",
+      "provider": "Klook",
+      "url": "https://klook.tpo.mx/kZmdWsAo",
+      "destinationScope": "Auckland",
+      "verifiedAt": "2026-09-28T13:45:00Z",
+      "expiresAt": "2026-12-27T13:45:00Z",
+      "allCurrentAffiliateOffers": [
+        "klook-auckland-activities",
+        "welcome-pickups-auckland-transfer"
+      ],
+      "disclosure": "Affiliate link"
+    },
+    {
+      "sourceId": "kyoto-fushimi-inari-live",
+      "title": "Kyoto — Fushimi Inari",
+      "placeId": "kyoto-fushimi-inari",
+      "selectedOfferId": "klook-kyoto-fushimi-inari",
+      "provider": "Klook",
+      "url": "https://klook.tpo.mx/R6eK3qEH",
+      "destinationScope": "Kyoto",
+      "verifiedAt": "2026-10-02T00:00:00Z",
+      "expiresAt": "2026-12-31T00:00:00Z",
+      "allCurrentAffiliateOffers": [
+        "klook-kyoto-fushimi-inari"
+      ],
+      "disclosure": "Affiliate link"
+    },
+    {
+      "sourceId": "kyoto-hanamikoji-live",
+      "title": "Kyoto — Hanamikoji Street",
+      "placeId": "kyoto-hanamikoji",
+      "selectedOfferId": "klook-kyoto-hanamikoji",
+      "provider": "Klook",
+      "url": "https://klook.tpo.mx/R6eK3qEH",
+      "destinationScope": "Kyoto",
+      "verifiedAt": "2026-10-02T00:00:00Z",
+      "expiresAt": "2026-12-31T00:00:00Z",
+      "allCurrentAffiliateOffers": [
+        "klook-kyoto-hanamikoji"
+      ],
+      "disclosure": "Affiliate link"
+    },
+    {
+      "sourceId": "kyoto-kifune-shrine-live",
+      "title": "Kyoto — Kifune Shrine",
+      "placeId": "kyoto-kifune-shrine",
+      "selectedOfferId": "klook-kyoto-kifune-shrine",
+      "provider": "Klook",
+      "url": "https://klook.tpo.mx/R6eK3qEH",
+      "destinationScope": "Kyoto",
+      "verifiedAt": "2026-10-02T00:00:00Z",
+      "expiresAt": "2026-12-31T00:00:00Z",
+      "allCurrentAffiliateOffers": [
+        "klook-kyoto-kifune-shrine"
+      ],
+      "disclosure": "Affiliate link"
+    },
+    {
+      "sourceId": "kyoto-kiyomizuzaka-live",
+      "title": "Kyoto — Kiyomizu-zaka",
+      "placeId": "kyoto-kiyomizuzaka",
+      "selectedOfferId": "klook-kyoto-kiyomizuzaka",
+      "provider": "Klook",
+      "url": "https://klook.tpo.mx/R6eK3qEH",
+      "destinationScope": "Kyoto",
+      "verifiedAt": "2026-10-02T00:00:00Z",
+      "expiresAt": "2026-12-31T00:00:00Z",
+      "allCurrentAffiliateOffers": [
+        "klook-kyoto-kiyomizuzaka"
+      ],
+      "disclosure": "Affiliate link"
+    },
+    {
+      "sourceId": "rovaniemi-santa-claus-village-live",
+      "title": "Rovaniemi — Santa Claus Village",
+      "placeId": "rovaniemi-santa-claus-village",
+      "selectedOfferId": "klook-rovaniemi-santa-claus-village",
+      "provider": "Klook",
+      "url": "https://klook.tpo.mx/6p7bRKjH",
+      "destinationScope": "Rovaniemi / Santa Claus Village",
+      "verifiedAt": "2026-10-02T00:00:00Z",
+      "expiresAt": "2026-12-31T00:00:00Z",
+      "allCurrentAffiliateOffers": [
+        "klook-rovaniemi-santa-claus-village"
+      ],
+      "disclosure": "Affiliate link"
+    },
+    {
+      "sourceId": "taitung-jinzun",
+      "title": "Taitung Jinzun — Pacific Coast",
+      "placeId": "taitung-jinzun",
+      "selectedOfferId": "viator-taitung-east-coast-public",
+      "provider": "Viator",
+      "url": "https://www.viator.com/tours/Taipei/5-Day-Best-of-Taiwan-Tour-from-Taipei-Sun-Moon-Lake-Taroko-Gorge-Kaohsiung-and-Taitung/d5262-30715A?pid=P00322254&mcid=42383&medium=link",
+      "destinationScope": "Taitung / East Coast National Scenic Area",
+      "verifiedAt": "2026-10-07T13:40:00Z",
+      "expiresAt": "2026-12-26T13:40:00Z",
+      "allCurrentAffiliateOffers": [
+        "viator-taitung-east-coast-public"
+      ],
+      "disclosure": "Affiliate link"
+    },
+    {
+      "sourceId": "nyc-brooklyn-skyline-live",
+      "title": "New York — Manhattan Skyline from Brooklyn",
+      "placeId": "new-york-harbor",
+      "selectedOfferId": "klook-new-york-skyline",
+      "provider": "Klook",
+      "url": "https://klook.tpo.mx/9ofY8SDC",
+      "destinationScope": "New York",
+      "verifiedAt": "2026-09-28T14:02:00Z",
+      "expiresAt": "2026-12-27T14:02:00Z",
+      "allCurrentAffiliateOffers": [
+        "klook-new-york-skyline",
+        "tiqets-statue-liberty-close"
+      ],
+      "disclosure": "Affiliate link"
+    },
+    {
+      "sourceId": "davos-jakobshorn-live",
+      "title": "Davos — Jakobshorn Mountain Panorama",
+      "placeId": "davos-jakobshorn",
+      "selectedOfferId": "viator-davos-jakobshorn-activities",
+      "provider": "Viator",
+      "url": "https://www.viator.com/en-GB/Davos/d24630-ttd?pid=P00322254&mcid=42383&medium=link",
+      "destinationScope": "Davos",
+      "verifiedAt": "2026-10-30T01:15:14Z",
+      "expiresAt": "2026-12-26T13:17:00Z",
+      "allCurrentAffiliateOffers": [
+        "viator-davos-jakobshorn-activities"
+      ],
+      "disclosure": "Affiliate link"
+    }
+  ],
+  "method": "Actual public ERNTravelPlanning.offerFor used by viewer Things to do; current verified offer, source eligibility and active partner gates applied. Existing affiliate disclosure/sponsored rel retained. Destination fit reviewed per camera. No partner account re-verification or conversion proof inferred.",
+  "davosTrackedLinkCheck": {
+    "url": "https://www.viator.com/en-GB/Davos/d24630-ttd?pid=P00322254&mcid=42383&medium=link",
+    "finalUrl": "https://www.viator.com/en-GB/Davos/d24630-ttd?pid=P00322254&mcid=42383&medium=link",
+    "httpStatus": 200,
+    "observedAt": "2026-10-30T01:14:30.057827+00:00"
+  }
+}

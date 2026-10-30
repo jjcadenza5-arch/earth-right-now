@@ -1,0 +1,28 @@
+# Watch Earth business coverage — 30 October 2026
+
+## 2026-10-30 Bangkok — All nine Watch Earth cameras have affiliate coverage prepared
+
+Baseline main883ed899 / production9c663d3e. Audited the exact nine-camera pool through the actual public ERNTravelPlanning.offerFor selector with current offer/active partner/source gates: eight already covered, Davos gap. Added one manually mapped Davos-wide Viator activities destination link using existing owner-verified P00322254/mcid42383 identity. Primary Viator 2026 Davos destination inventory reviewed (walks, transfers, mountain activities); independent tracked GETHTTP200 retains exact path and tracking parameters. manualOpenVerified false retained: no owner click-through, commission attribution, booking, income or new account approval inferred. Expiry bounded to existing Viator partner26Dec13:17UTC, no account proof renewal. Broad Davos options do not guarantee Jakobshorn access, lift tickets, included transport, a chosen date or activity safety.
+
+All9 now select a current disclosed commission offer under viewer Things to do: Auckland/Kyoto4/Rovaniemi/NewYork choose Klook; Taitung/Davos choose Viator. Other existing Auckland transfer/Viator and NewYork Tiqets links retained. Full camera mapping docs/WATCH_EARTH_BUSINESS_AUDIT_2026-10-30.json; business report docs/WATCH_EARTH_BUSINESS_COVERAGE_2026-10-30.md. Nine current selected actions cover six distinct tracked URLs, not nine advertisers or paying camera sponsors. User request interpreted as commission-eligible business options, not falsely marking unpaid businesses as sponsors.
+
+Offers235→236, source-eligible affiliate placements226→227 across221→222places, Viator196→197/uniqueViatortrackedURLs93→94; all other program counts, original235offers, affiliate account/partner dates, Travelpayouts11verifieddestinationlinks and publicOFF/manual-only/no-paid-ranking safeguards unchanged. No public runtime/style/homepage changes, all source files and entire owner playback ledger unchanged; nine-camera pool/five visible retained. Camera coverage864/1,000,874sources/865catalogplaces,648directoryrows unchanged. Existing affiliate disclosure and sponsored rel used, no automatic rewriting/placement or paid ranking enabled. Deployment acceptance pending.
+
+
+| Camera | Selected affiliate offer | Scope |
+|---|---|---|
+| Auckland Viaduct Harbour | Klook / klook-auckland-activities | Auckland |
+| Kyoto — Fushimi Inari | Klook / klook-kyoto-fushimi-inari | Kyoto |
+| Kyoto — Hanamikoji Street | Klook / klook-kyoto-hanamikoji | Kyoto |
+| Kyoto — Kifune Shrine | Klook / klook-kyoto-kifune-shrine | Kyoto |
+| Kyoto — Kiyomizu-zaka | Klook / klook-kyoto-kiyomizuzaka | Kyoto |
+| Rovaniemi — Santa Claus Village | Klook / klook-rovaniemi-santa-claus-village | Rovaniemi / Santa Claus Village |
+| Taitung Jinzun — Pacific Coast | Viator / viator-taitung-east-coast-public | Taitung / East Coast National Scenic Area |
+| New York — Manhattan Skyline from Brooklyn | Klook / klook-new-york-skyline | New York |
+| Davos — Jakobshorn Mountain Panorama | Viator / viator-davos-jakobshorn-activities | Davos |
+
+Sources:
+- https://www.viator.com/en-GB/Davos/d24630-ttd
+- https://www.viator.com/en-GB/tours/Davos/Davos-Paragliding-Tandem-Flight/d24630-26187P1
+
+The nine-camera audit applies the shipped selection logic and existing proof/expiry gates. It does not renew the eight existing destinations’ original human link proofs. Kyoto links are Kyoto-wide; Taitung link is a broader Taiwan itinerary that includes Taitung, not guaranteed Jinzun access; New York activities and Statue of Liberty tickets retain their separate scopes. No stay/eat/transport offer is invented to fill additional intent categories.

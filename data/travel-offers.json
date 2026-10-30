@@ -4212,5 +4212,26 @@
     "evidence": "Human generated a destination-specific Klook/Auckland link through the verified Travelpayouts ERN Project and confirmed it opens the Auckland destination page correctly. Same exact URL manually mapped on 2026-10-29T04:33:34Z to Auckland — Skyline from Grey Lynn within Auckland. Broad Auckland activities only; no beach activity, weather-station access, local-specific inventory, transfer or ticket guarantee. Original owner verification date/expiry retained. Prior29Oct bounded redirect reached expected Auckland destination with affiliate parameters but final-page connection timed out; no repeated request or new successful landing, purchase attribution or income verification claimed.",
     "verified": true,
     "placementReviewedAt": "2026-10-29T04:33:34Z"
+  },
+  {
+    "id": "viator-davos-jakobshorn-activities",
+    "title": "Explore Davos tours & activities",
+    "placeId": "davos-jakobshorn",
+    "provider": "Viator",
+    "intent": "activities",
+    "affiliate": true,
+    "sponsored": false,
+    "partnerId": "viator",
+    "destinationScope": "Davos",
+    "linkScope": "destination",
+    "url": "https://www.viator.com/en-GB/Davos/d24630-ttd?pid=P00322254&mcid=42383&medium=link",
+    "disclosure": "Affiliate link",
+    "verified": true,
+    "verifiedAt": "2026-10-30T01:15:14Z",
+    "expiresAt": "2026-12-26T13:17:00Z",
+    "verificationEvidenceUrl": "https://www.viator.com/en-GB/Davos/d24630-ttd",
+    "manualOpenVerified": false,
+    "verificationMethod": "CURRENT_DESTINATION_INVENTORY_PLUS_OWNER_VERIFIED_AFFILIATE_ID_REUSE",
+    "evidence": "Reviewed current first-party Viator Davos 2026 destination inventory, including city walks, transfers and mountain activities. Manually mapped to the Davos/Jakobshorn camera using ERN existing owner-verified Viator identity P00322254 / mcid42383. Broad Davos options do not promise Jakobshorn admission, open lifts, transport inclusion or availability on a chosen date. This exact tracked URL was not owner-click-verified; no attribution, booking or income confirmed. Independent tracked-URL GET returned HTTP200 with exact Davos path and all three ERN tracking parameters retained; this is link availability, not owner click-through or conversion attribution."
   }
 ]
