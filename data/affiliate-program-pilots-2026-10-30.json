@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-10-30T04:42:14Z",
+  "state": "OWNER_GENERATED_TRACKED_LINKS_REQUIRED",
+  "activePublicProgramCount": 4,
+  "proposedAdditionalProgramCount": 2,
+  "publicActivationAllowed": false,
+  "programs": [
+    {
+      "programId": "go-city",
+      "network": "Travelpayouts Earthrightnow Project",
+      "placeId": "new-york-harbor",
+      "destination": "New York",
+      "untrackedTargetUrl": "https://gocity.com/en/new-york",
+      "programEvidenceUrl": "https://gocity.com/en/affiliate-program",
+      "role": "City attraction passes",
+      "inventoryEvidence": "Current primary destination page lists Explorer, Essentials and All-Inclusive passes. Individual attraction inclusion, reservations, operating dates and pass terms require current provider confirmation. No price or savings promise copied.",
+      "proposedLabel": "Explore New York city passes",
+      "trackedUrl": null
+    },
+    {
+      "programId": "kkday",
+      "network": "Travelpayouts Earthrightnow Project",
+      "placeId": "kyoto-kiyomizuzaka",
+      "destination": "Kyoto",
+      "untrackedTargetUrl": "https://www.kkday.com/en/product/617922",
+      "programEvidenceUrl": "https://kkpartners.kkday.com/",
+      "role": "Kyoto cultural experience",
+      "inventoryEvidence": "Primary KKday product describes tea preparation/tasting at Tea Ceremony Koto near Kinkakuji-michi. This is a separate Kyoto venue, not at Kiyomizu-zaka or a temple admission. Kimono use is venue-only; voucher and current package terms control. No availability/price/commission promise.",
+      "proposedLabel": "Kyoto tea ceremony — separate venue",
+      "trackedUrl": null
+    }
+  ],
+  "existingOwnerEvidence": "03Oct owner account exposed Generate links for both programs; retained as historical account evidence, not refreshed account approval. Direct program pages reviewed for inventory/background only; no separate direct account opened or terms accepted.",
+  "requiredOwnerAction": "In existing Travelpayouts Earthrightnow Project, generate one Go City link for New York and one KKday link for the exact Kyoto product above. Open each and confirm expected destination. Return the two generated URLs and outcomes; no credentials or private account screenshots required.",
+  "activationChecks": [
+    "Exact ERN owner-generated tracking URL, never invented or copied from another publisher",
+    "Expected destination and ERN attribution verified without assuming commission on every purchase",
+    "Current account/program terms and disclosure requirements checked for the Travelpayouts route",
+    "Add explicit enabled partner record only after evidence passes",
+    "Limited manual pilot, existing affiliate disclosure and sponsored rel",
+    "No paid source ranking, automatic placement, rewriting, Drive or extra competing viewer buttons"
+  ],
+  "safeguards": {
+    "automaticPlacementAllowed": false,
+    "automaticLinkRewritingAllowed": false,
+    "paidRankingAllowed": false,
+    "driveAutomationAllowed": false
+  }
+}

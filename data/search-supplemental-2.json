@@ -3265,5 +3265,44 @@
     "rightsSourceUrl": "https://www.greylynnweather.net/",
     "rightsBasis": "Public weather-station page identifies Ricky Huntington and links the exact latest weather-camera image. No incoming-link restriction or media licence found on reviewed page. Attributed ordinary external provider-page link and original description only; no image, thumbnail, iframe, logo or provider prose copied/embedded. No camera-site access or content-reuse permission inferred.",
     "freshnessEvidence": "Exact provider-linked768x576 https://www.greylynnweather.net/jpgwebcam.jpg visually inspected: tree canopy, rooftops and distant city skyline/Sky Tower legible beneath a wide sky. Printed17:30 and29/10/202… (year clipped at right edge); separately fetched first-party page states LAST READING17:30 DATE29October2026, corroborating date context, not independent capture proof. AucklandNZDTUTC+13 inferred04:30Z, minute precision only. Independent Last-Modified04:31:23Z/upload, retrieved04:31:26Z HTTP200. Clock precision unverified; printed weather values and warning/METAR tables not independently verified or used as weather evidence. No individuals identified, personal activities assessed, camera-site public access or meteorological/aviation safety inferred. Review completed 2026-10-29T04:33:34Z."
+  },
+  {
+    "country": "New Zealand",
+    "timeZone": "Pacific/Auckland",
+    "truth": "LIVE_IMAGE",
+    "permission": "LINK_ONLY",
+    "health": "HEALTHY",
+    "playback": "EXTERNAL",
+    "freshness": 90,
+    "moment": 75,
+    "featuredHold": true,
+    "watchHold": true,
+    "searchSupplemental": true,
+    "externalWindowRequired": true,
+    "id": "nz-matamata-aerodrome-current",
+    "placeId": "nz-matamata-aerodrome",
+    "title": "Matamata — Airfield & Kaimai Outlook",
+    "seoName": "Matamata — Airfield & Kaimai Outlook",
+    "provider": "Piako Gliding Club",
+    "attribution": "Piako Gliding Club",
+    "region": "Waharoa / Matamata / Waikato",
+    "categories": [
+      "Nature",
+      "Useful Earth"
+    ],
+    "officialUrl": "https://www.glidingmatamata.co.nz/",
+    "sourceUrl": "https://www.glidingmatamata.co.nz/",
+    "checkedAt": "2026-10-30T04:42:14Z",
+    "lastSuccessfulCheck": "2026-10-30T04:42:14Z",
+    "quality": 78,
+    "aliases": [
+      "Piako Gliding Club webcam",
+      "Matamata airfield camera",
+      "Waharoa airfield outlook"
+    ],
+    "story": "Look across the grass airfield toward the Kaimai landscape in a refreshed still from Piako Gliding Club, north of Matamata. This is a landscape window, not an aviation briefing; check visitor arrangements directly with the club.",
+    "rightsSourceUrl": "https://www.glidingmatamata.co.nz/",
+    "rightsBasis": "First-party club homepage publishes webcam views facing north toward Te Aroha and southeast toward Matamata, linking exact webcam.pear.co.nz images. Attributed ordinary external homepage link and original wording only; no image, thumbnail, iframe, logo or provider prose reused. No media licence or camera-site public access inferred.",
+    "freshnessEvidence": "Exact first-party-linked https://webcam.pear.co.nz/pic5_2400.jpg visually reviewed: grass airfield, windsock, trees and distant ridge visible, with some haze and lens spots. Printed Fri30Oct17:35:13NZDT2026 explicitly gives UTC+13, hence04:35:13Z. Independent Last-Modified30Oct04:35:20Z, retrieved04:38:56.416Z HTTP200; upload seven seconds after printed clock. Clock accuracy unverified. Landscape usefulness reviewed; no individual identified, personal activity assessed, flight safety, operational status, forecast or moving playback proven."
   }
 ]

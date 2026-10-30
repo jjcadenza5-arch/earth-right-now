@@ -3261,6 +3261,86 @@
       "why": "Club links public windsurf camera page. Ordinary published HTTP target and HTTPS counterpart both503; no actual imagery/capture/quality verified. Separate club-linked IPCamLive angles not playback-verified. No outage inferred or source counted.",
       "next": "Revisit only material public source evidence, no bypass or retry loop.",
       "reviewedAt": "2026-10-29T04:33:34Z"
+    },
+    {
+      "id": "matamata-airfield-camera-oct30",
+      "priority": "P2",
+      "placeGroup": "Matamata Aerodrome / Waharoa",
+      "country": "New Zealand",
+      "provider": "Piako Gliding Club",
+      "candidateType": "FIRST_PARTY_CURRENT_IMAGE",
+      "visitorDecisionValue": "HIGH",
+      "qualityPotential": "GOOD",
+      "programFit": [
+        "activities"
+      ],
+      "evidenceUrls": [
+        "https://www.glidingmatamata.co.nz/",
+        "https://webcam.pear.co.nz/pic5_2400.jpg"
+      ],
+      "state": "CAMERA_LOCATION_ADMITTED_LINK_ONLY",
+      "why": "Exact first-party-linked https://webcam.pear.co.nz/pic5_2400.jpg visually reviewed: grass airfield, windsock, trees and distant ridge visible, with some haze and lens spots. Printed Fri30Oct17:35:13NZDT2026 explicitly gives UTC+13, hence04:35:13Z. Independent Last-Modified30Oct04:35:20Z, retrieved04:38:56.416Z HTTP200; upload seven seconds after printed clock. Clock accuracy unverified. Landscape usefulness reviewed; no individual identified, personal activity assessed, flight safety, operational status, forecast or moving playback proven.",
+      "next": "Maintain current-image evidence; keep all video, aviation safety and rights gates unchanged.",
+      "reviewedAt": "2026-10-30T04:42:14Z",
+      "resolvedCatalogIds": [
+        "nz-matamata-aerodrome-current"
+      ]
+    },
+    {
+      "id": "lake-pupuke-stale-image-oct30",
+      "priority": "P2",
+      "placeGroup": "Lake Pupuke",
+      "country": "New Zealand",
+      "candidateType": "FIRST_PARTY_CURRENT_IMAGE",
+      "state": "HOLD_CURRENTNESS_OR_QUALITY_UNVERIFIED",
+      "evidenceUrls": [
+        "https://northshorecanoeclub.org.nz/webcammain/"
+      ],
+      "why": "Club publishes five-minute image05:00–19:30, but exact linked lakep2.jpg response has Last-Modified04Jun2026; current capture not established. Not admitted.",
+      "next": "Revisit only after material new source evidence; do not count as camera coverage.",
+      "reviewedAt": "2026-10-30T04:42:14Z"
+    },
+    {
+      "id": "awhitu-low-visual-quality-oct30",
+      "priority": "P2",
+      "placeGroup": "Awhitu Peninsula",
+      "country": "New Zealand",
+      "candidateType": "FIRST_PARTY_CURRENT_IMAGE",
+      "state": "HOLD_CURRENTNESS_OR_QUALITY_UNVERIFIED",
+      "evidenceUrls": [
+        "https://www.weather-display.com/windy/gb/grahamsbeach.htm"
+      ],
+      "why": "Exact image HTTP200/upload30Oct04:30:10Z, retrieved04:38:29Z, but glare dominates and only indistinct dark foreground/horizon visible. Printed17:30 lacks date/zone. Insufficient useful current place view, not admitted.",
+      "next": "Revisit only after material new source evidence; do not count as camera coverage.",
+      "reviewedAt": "2026-10-30T04:42:14Z"
+    },
+    {
+      "id": "takapuna-provider-offline-oct30",
+      "priority": "P2",
+      "placeGroup": "Takapuna",
+      "country": "New Zealand",
+      "candidateType": "FIRST_PARTY_CURRENT_IMAGE",
+      "state": "HOLD_CURRENTNESS_OR_QUALITY_UNVERIFIED",
+      "evidenceUrls": [
+        "https://windsurf.co.nz/windsurf_cam_takapuna.asp"
+      ],
+      "why": "Published provider page explicitly says camera offline due to renovations; direct page request503. Not admitted; no inference about separate boating-club PredictWind camera.",
+      "next": "Revisit only after material new source evidence; do not count as camera coverage.",
+      "reviewedAt": "2026-10-30T04:42:14Z"
+    },
+    {
+      "id": "taupiri-access-hold-oct30",
+      "priority": "P2",
+      "placeGroup": "Taupiri",
+      "country": "New Zealand",
+      "candidateType": "FIRST_PARTY_CURRENT_IMAGE",
+      "state": "HOLD_CURRENTNESS_OR_QUALITY_UNVERIFIED",
+      "evidenceUrls": [
+        "https://taupiriweather.co.nz/webcam.php"
+      ],
+      "why": "Direct provider page503 and web retrieval timeout; imagery not verified. Not admitted; no outage or bypass inference.",
+      "next": "Revisit only after material new source evidence; do not count as camera coverage.",
+      "reviewedAt": "2026-10-30T04:42:14Z"
     }
   ],
   "guardrails": {
