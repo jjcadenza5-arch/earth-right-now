@@ -1,0 +1,80 @@
+{
+  "reviewedAt": "2026-11-03T08:39:07Z",
+  "imageMetadata": [
+    {
+      "id": "dagebull",
+      "url": "https://www.dagebuell-tourismus.de/service/webcams",
+      "finalUrl": "https://www.dagebuell-tourismus.de/service/webcams",
+      "httpStatus": 200,
+      "lastModified": null,
+      "contentType": "text/html; charset=utf-8",
+      "retrievedAt": "2026-11-03T08:33:06.443015+00:00",
+      "path": ".ern49-dagebull.html"
+    },
+    {
+      "id": "lillevik",
+      "url": "https://lilleviklofoten.no/en/webcams/",
+      "finalUrl": "https://lilleviklofoten.no/en/webcams/",
+      "httpStatus": 200,
+      "lastModified": null,
+      "contentType": "text/html; charset=UTF-8",
+      "retrievedAt": "2026-11-03T08:33:06.376655+00:00",
+      "path": ".ern49-lillevik.html"
+    },
+    {
+      "id": "kochelsee",
+      "url": "https://www.foto-webcam.eu/webcam/kochelsee/current/720.jpg",
+      "finalUrl": "https://www.foto-webcam.eu/webcam/kochelsee/current/720.jpg",
+      "httpStatus": 200,
+      "lastModified": "Tue, 03 Nov 2026 08:30:25 GMT",
+      "contentType": "image/jpeg",
+      "retrievedAt": "2026-11-03T08:33:06.018709+00:00",
+      "path": ".ern49-kochelsee.jpg"
+    },
+    {
+      "id": "husum",
+      "url": "https://www.foto-webcam.eu/webcam/husum-marktplatz/current/720.jpg",
+      "finalUrl": "https://www.foto-webcam.eu/webcam/husum-marktplatz/current/720.jpg",
+      "httpStatus": 200,
+      "lastModified": "Tue, 03 Nov 2026 07:59:27 GMT",
+      "contentType": "image/jpeg",
+      "retrievedAt": "2026-11-03T08:33:06.127253+00:00",
+      "path": ".ern49-husum.jpg"
+    },
+    {
+      "id": "dagebull-view",
+      "url": "https://faehre2.de/fileadmin/cam/webcam1.jpg",
+      "finalUrl": "https://faehre2.de/fileadmin/cam/webcam1.jpg",
+      "httpStatus": 200,
+      "lastModified": "Tue, 03 Nov 2026 08:33:00 GMT",
+      "retrievedAt": "2026-11-03T08:33:50.949836+00:00",
+      "bytes": 249925
+    },
+    {
+      "id": "lillevik-view",
+      "url": "https://lilleviklofoten.no/webcam/latest.php",
+      "finalUrl": "https://lilleviklofoten.no/webcam/latest.php",
+      "httpStatus": 200,
+      "lastModified": "Tue, 03 Nov 2026 08:28:01 GMT",
+      "retrievedAt": "2026-11-03T08:33:48.246841+00:00",
+      "bytes": 343318
+    }
+  ],
+  "affiliateCheck": {
+    "url": "https://www.viator.com/Lofoten/d33309-ttd?pid=P00322254&mcid=42383&medium=link",
+    "finalUrl": "https://www.viator.com/Lofoten/d33309-ttd?pid=P00322254&mcid=42383&medium=link",
+    "httpStatus": 200,
+    "retrievedAt": "2026-11-03T08:35:32.090881+00:00",
+    "bytes": 477712
+  },
+  "sapporoBrowser": {
+    "page": "https://www.stv.jp/webcam/ohdori4/index.html",
+    "image": "https://www.stv.jp/cameraimg/ohdori4_L.jpg",
+    "decodedDimensions": "960x540",
+    "captureLabel": "2026/11/03 17:30",
+    "timeZoneInference": "Asia/Tokyo UTC+9;08:30Z minute precision, accuracy unverified",
+    "scene": "Illuminated fountain and nearby trees; surrounding park dark, no broad city view claim."
+  },
+  "mediaReuseAllowed": false,
+  "movingPlaybackRenewed": false
+}

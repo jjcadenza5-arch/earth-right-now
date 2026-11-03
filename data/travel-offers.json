@@ -4443,5 +4443,27 @@
     "verificationMethod": "CURRENT_DESTINATION_INVENTORY_PLUS_OWNER_VERIFIED_AFFILIATE_ID_REUSE",
     "evidence": "30Oct current primary transfer inventory reviewed and exact tracked GET200 retained destination/category and existing ERNpid=P00322254/mcid42383/medium=link. Existing owner-verified Viator identity reused; manualOpenVerifiedfalse and26Dec13:17Z partner-bounded expiry preserved. Current owner29Oct camera proof reused without renewal. Distinct transport intent complements existing activities. Primary current category and arrival product13975P26 identify Rovaniemi Airport/train-station to city accommodation planning. This is airport/city transfer planning, not a claim that Santa Claus Village or the exact camera location is an included pickup/dropoff. Exact address, arrival details, seats/luggage, accessibility and product terms need confirmation. No copied product imagery/prices/reviews/inclusions, fixed fare/time, roundtrip, current availability, safety, booking, attribution or income guarantee.",
     "placementReviewedAt": "2026-10-30T07:58:00Z"
+  },
+  {
+    "id": "viator-lofoten-gimsoy-public",
+    "placeId": "norway-lillevik-gimsoy",
+    "title": "Explore Lofoten activities — check departure location",
+    "provider": "Viator",
+    "intent": "activities",
+    "affiliate": true,
+    "sponsored": false,
+    "partnerId": "viator",
+    "destinationScope": "Lofoten islands, regional trip planning",
+    "linkScope": "destination",
+    "url": "https://www.viator.com/Lofoten/d33309-ttd?pid=P00322254&mcid=42383&medium=link",
+    "disclosure": "Affiliate link",
+    "verified": true,
+    "verifiedAt": "2026-11-03T08:39:07Z",
+    "expiresAt": "2026-12-26T13:17:00Z",
+    "verificationEvidenceUrl": "https://www.viator.com/Lofoten/d33309-ttd",
+    "manualOpenVerified": false,
+    "verificationMethod": "CURRENT_DESTINATION_INVENTORY_PLUS_OWNER_VERIFIED_AFFILIATE_ID_REUSE",
+    "placementReviewedAt": "2026-11-03T08:39:07Z",
+    "evidence": "3Nov primary current Lofoten category inventory reviewed, regional sightseeing, hiking, cruises and seasonal excursions. Exact tracked GET200 at08:35:32Z retained d33309 destination and existing ERNpidP00322254/mcid42383/mediumlink. Historical owner/account/partner proofs and26Dec partner expiry preserved. One manual regional placement, not an exact Gimsøy/Lillevik pickup or operator endorsement. Products depart from different Lofoten towns and require separate transport/season/address/availability checks. No copied prices/reviews/inclusions/images, guaranteed aurora/safety/availability, booking, attribution or revenue claim."
   }
 ]
