@@ -1,0 +1,213 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-11-03T13:28:57.569Z",
+  "samplePolicy": "Fixed ten representative destinations: five moving streams, two external refreshed stills, failed player, scheduled source and expired image. Human reviewed copy; technical checks do not establish Google indexing.",
+  "source": "Generated release artifact; served verification required after publication",
+  "robotsRootAllowed": true,
+  "pages": [
+    {
+      "placeId": "mpala-watering-hole",
+      "url": "https://earthrightnow.app/places/mpala-watering-hole/",
+      "title": "Mpala Watering Hole Live Now | Earth Right Now",
+      "description": "See Mpala Watering Hole now with Earth Right Now. Mpala wildlife watering hole. Animals may be out of view.",
+      "canonical": "https://earthrightnow.app/places/mpala-watering-hole/",
+      "robots": "index,follow",
+      "indexEligible": true,
+      "sitemapIncluded": true,
+      "directoryLinked": true,
+      "internalLinkCount": 16,
+      "missingInternalLinks": [],
+      "viewingGuidancePresent": true,
+      "truthLabels": [
+        "LIVE WINDOW"
+      ],
+      "sha256": "ece2500c7b1077af6b268a0b0300bff995e90edf89f09b7feb3797243d70482c",
+      "technicalPass": true
+    },
+    {
+      "placeId": "new-york-harbor",
+      "url": "https://earthrightnow.app/places/new-york-harbor/",
+      "title": "New York Manhattan Skyline from Brooklyn Live Now | Earth Right Now",
+      "description": "See New York now with Earth Right Now. Manhattan skyline and East River activity from the Brooklyn waterfront. This camera does not establish access, transport or weather safety.",
+      "canonical": "https://earthrightnow.app/places/new-york-harbor/",
+      "robots": "index,follow",
+      "indexEligible": true,
+      "sitemapIncluded": true,
+      "directoryLinked": true,
+      "internalLinkCount": 16,
+      "missingInternalLinks": [],
+      "viewingGuidancePresent": true,
+      "truthLabels": [
+        "LIVE WINDOW"
+      ],
+      "sha256": "89db97e9492463fb732bbb677879a22a96249465d22579b9b08768f55695e3b0",
+      "technicalPass": true
+    },
+    {
+      "placeId": "kyoto-hanamikoji",
+      "url": "https://earthrightnow.app/places/kyoto-hanamikoji/",
+      "title": "Kyoto Hanamikoji Street Live Now | Earth Right Now",
+      "description": "See Kyoto now with Earth Right Now. See current street and visitor conditions in Hanamikoji before heading into Gion.",
+      "canonical": "https://earthrightnow.app/places/kyoto-hanamikoji/",
+      "robots": "index,follow",
+      "indexEligible": true,
+      "sitemapIncluded": true,
+      "directoryLinked": true,
+      "internalLinkCount": 15,
+      "missingInternalLinks": [],
+      "viewingGuidancePresent": true,
+      "truthLabels": [
+        "LIVE WINDOW"
+      ],
+      "sha256": "7089653f5ac7ce452f0e1c43b4c5a07c6f0c4646ea4ded24cfc4e6b735c52071",
+      "technicalPass": true
+    },
+    {
+      "placeId": "taiwan-yehliu",
+      "url": "https://earthrightnow.app/places/taiwan-yehliu/",
+      "title": "Yehliu Geopark Taiwan North Coast Live Now | Earth Right Now",
+      "description": "See Yehliu Geopark now with Earth Right Now. Live view from Yehliu Geopark on Taiwan's North Coast.",
+      "canonical": "https://earthrightnow.app/places/taiwan-yehliu/",
+      "robots": "index,follow",
+      "indexEligible": true,
+      "sitemapIncluded": true,
+      "directoryLinked": true,
+      "internalLinkCount": 16,
+      "missingInternalLinks": [],
+      "viewingGuidancePresent": true,
+      "truthLabels": [
+        "LIVE WINDOW"
+      ],
+      "sha256": "b83c864f5d9cef143ce5fe22340b664e8e8f39bf20ab4fd8afae75c209985f1e",
+      "technicalPass": true
+    },
+    {
+      "placeId": "taitung-jinzun",
+      "url": "https://earthrightnow.app/places/taitung-jinzun/",
+      "title": "Taitung Jinzun Pacific Coast Live Now | Earth Right Now",
+      "description": "See Taitung Jinzun now with Earth Right Now. Live Pacific coast at Jinzun, Taitung.",
+      "canonical": "https://earthrightnow.app/places/taitung-jinzun/",
+      "robots": "index,follow",
+      "indexEligible": true,
+      "sitemapIncluded": true,
+      "directoryLinked": true,
+      "internalLinkCount": 15,
+      "missingInternalLinks": [],
+      "viewingGuidancePresent": true,
+      "truthLabels": [
+        "LIVE WINDOW"
+      ],
+      "sha256": "6713c999d1777d2138e200320b69c3f293e6b19d92a48162216533204e363241",
+      "technicalPass": true
+    },
+    {
+      "placeId": "davos-jakobshorn",
+      "url": "https://earthrightnow.app/places/davos-jakobshorn/",
+      "title": "Davos Jakobshorn Mountain Panorama Place Information | Earth Right Now",
+      "description": "Explore Davos with reviewed place information. ERN has no verified current view right now; check back after source review.",
+      "canonical": "https://earthrightnow.app/places/davos-jakobshorn/",
+      "robots": "noindex,follow",
+      "indexEligible": false,
+      "sitemapIncluded": false,
+      "directoryLinked": true,
+      "internalLinkCount": 15,
+      "missingInternalLinks": [],
+      "viewingGuidancePresent": true,
+      "truthLabels": [
+        "PLAYBACK RECHECK DUE"
+      ],
+      "sha256": "ce6c6588c3c8b2ea0af3127af628d084643f2fe02934c8f53c0f2fd887228d0b",
+      "technicalPass": true
+    },
+    {
+      "placeId": "kyoto-nishiki-market",
+      "url": "https://earthrightnow.app/places/kyoto-nishiki-market/",
+      "title": "Kyoto Nishiki Market Place Information | Earth Right Now",
+      "description": "Explore Kyoto with reviewed place information. ERN has no verified current view right now; check back after source review.",
+      "canonical": "https://earthrightnow.app/places/kyoto-nishiki-market/",
+      "robots": "noindex,follow",
+      "indexEligible": false,
+      "sitemapIncluded": false,
+      "directoryLinked": true,
+      "internalLinkCount": 14,
+      "missingInternalLinks": [],
+      "viewingGuidancePresent": true,
+      "truthLabels": [
+        "PLAYBACK RECHECK DUE"
+      ],
+      "sha256": "77506ab335ddb7c39103a7a9c3011e9d3910f74ea2d3e7d4f922028119cbd494",
+      "technicalPass": true
+    },
+    {
+      "placeId": "germany-dagebull-ferry",
+      "url": "https://earthrightnow.app/places/germany-dagebull-ferry/",
+      "title": "Dagebüll Ferry Terminal Current Image | Earth Right Now",
+      "description": "See Dagebüll now with Earth Right Now. See the ferry-terminal lanes, boarding structures and waterfront at Dagebüll in a refreshed still. This view gives place context for a journey toward the North Frisian islands;…",
+      "canonical": "https://earthrightnow.app/places/germany-dagebull-ferry/",
+      "robots": "index,follow",
+      "indexEligible": true,
+      "sitemapIncluded": true,
+      "directoryLinked": true,
+      "internalLinkCount": 16,
+      "missingInternalLinks": [],
+      "viewingGuidancePresent": true,
+      "truthLabels": [],
+      "sha256": "99f0b32d28a797d6812b071bed36bb03c02dbaf4f12eff43ccda56693994105b",
+      "technicalPass": true
+    },
+    {
+      "placeId": "norway-lillevik-gimsoy",
+      "url": "https://earthrightnow.app/places/norway-lillevik-gimsoy/",
+      "title": "Gimsøy, Lofoten Current Image | Earth Right Now",
+      "description": "See Gimsøy, Lofoten now with Earth Right Now. Look over the shore and water toward the mountain ridge from Lillevik on Gimsøy in the Lofoten islands. This is a refreshed still image, not an embedded video. Cloud and…",
+      "canonical": "https://earthrightnow.app/places/norway-lillevik-gimsoy/",
+      "robots": "index,follow",
+      "indexEligible": true,
+      "sitemapIncluded": true,
+      "directoryLinked": true,
+      "internalLinkCount": 16,
+      "missingInternalLinks": [],
+      "viewingGuidancePresent": true,
+      "truthLabels": [],
+      "sha256": "44f28c89e67bc9d46645d8fb04cc1587aab5dbddbcf7391369db4061ac91c443",
+      "technicalPass": true
+    },
+    {
+      "placeId": "oeschinensee",
+      "url": "https://earthrightnow.app/places/oeschinensee/",
+      "title": "Oeschinensee Mountain &amp; Lake Views Place Information | Earth Right Now",
+      "description": "Explore Oeschinensee with reviewed place information. ERN has no verified current view right now; check back after source review.",
+      "canonical": "https://earthrightnow.app/places/oeschinensee/",
+      "robots": "noindex,follow",
+      "indexEligible": false,
+      "sitemapIncluded": false,
+      "directoryLinked": true,
+      "internalLinkCount": 16,
+      "missingInternalLinks": [],
+      "viewingGuidancePresent": true,
+      "truthLabels": [],
+      "sha256": "ddb3dd3df2b9cb764ae0792bb12432c30327cb5eb2b3f352eb1743489f98eb87",
+      "technicalPass": true
+    }
+  ],
+  "summary": {
+    "reviewed": 10,
+    "technicalPassed": 10,
+    "indexEligible": 7,
+    "noindexReferences": 3
+  },
+  "searchConsole": {
+    "status": "ACCESS_UNAVAILABLE",
+    "period": null,
+    "indexedPages": null,
+    "impressions": null,
+    "clicks": null,
+    "queries": null,
+    "note": "No Search Console connector or current export available. Technical eligibility is not indexing or ranking evidence; no demand inferred."
+  },
+  "weeklyComparison": {
+    "sameSample": true,
+    "compare": "Page changes, truth/index eligibility and GSC same-property equal seven-day periods when supplied. Record GSC reporting dates and timezone; distinguish site totals from sample pages.",
+    "demandAction": "No demand-driven expansion priority changed without actual query/page evidence. Historical isolated interest is a lead, not repeated demand."
+  }
+}
