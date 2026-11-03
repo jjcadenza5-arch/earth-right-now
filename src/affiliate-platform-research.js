@@ -60,14 +60,15 @@ export function affiliatePlatformResearchStatus(rows=[],{now=Date.now(),maxAgeDa
   const reasons=[...common.reasons,...(state==="ACTIVE_OPERATOR_CONFIRMED"?activeReasons(raw):state==="LINK_GENERATION_AVAILABLE"?linkToolReasons(raw):researchReasons(raw))];
   return{...raw,state,ageDays:Number.isFinite(common.ageDays)?Number(common.ageDays.toFixed(2)):null,valid:reasons.length===0,reasons};
  });
+ const heldForTermsReview=items.filter(x=>!x.valid&&x.reasons.length>0&&x.reasons.every(r=>r==="TERMS_REVIEW_STALE")).length;
  const validItems=items.filter(x=>x.valid),researchCandidates=validItems.filter(x=>x.state==="RESEARCH_CANDIDATE"),linkToolPlatforms=validItems.filter(x=>x.state==="LINK_GENERATION_AVAILABLE"),activePlatforms=validItems.filter(x=>x.state==="ACTIVE_OPERATOR_CONFIRMED");
  return{
-  generatedAt:new Date(Number(now)).toISOString(),total:items.length,valid:validItems.length,invalid:items.length-validItems.length,
+  generatedAt:new Date(Number(now)).toISOString(),total:items.length,valid:validItems.length,invalid:items.length-validItems.length,heldForTermsReview,blockingInvalid:items.length-validItems.length-heldForTermsReview,
   researchCandidates:researchCandidates.length,linkToolPlatforms:linkToolPlatforms.length,activePlatforms:activePlatforms.length,
   intentCoverage:Object.fromEntries([...INTENTS].map(k=>[k,validItems.filter(x=>x.intents.includes(k)).length])),
   items,publicActivationAllowed:false,
   safety:{automaticApplicationAllowed:false,automaticRelationshipClaimAllowed:false,credentialsStored:false,trackedLinksAllowed:false,automaticPlacementAllowed:false,automaticLinkRewritingAllowed:false,paidRankingAllowed:false,revenueForecast:false},
   next:linkToolPlatforms.length?"PREPARE_VERIFIED_LINKS_FROM_AVAILABLE_TOOLS":researchCandidates.length?"CHOOSE_RESEARCH_CANDIDATES_FOR_APPLICATION_LATER":activePlatforms.length?"OPERATE_ACTIVE_PLATFORMS_MANUALLY":"REFRESH_PLATFORM_RESEARCH",
-  note:"Mixed affiliate-platform registry. Research candidates remain inactive/fail-closed. Account-side link-generation programs are usable only through manual verified links and remain fail-closed for public placement until ERN verifies each exact link. Explicit operator-confirmed active platforms retain their existing manual/disclosure safeguards."
+  note:"Overdue terms remain invalid/held and excluded from usable candidates; only structural/policy errors block diagnostics. No terms dates or approval gates are renewed. Mixed affiliate-platform registry. Research candidates remain inactive/fail-closed. Account-side link-generation programs are usable only through manual verified links and remain fail-closed for public placement until ERN verifies each exact link. Explicit operator-confirmed active platforms retain their existing manual/disclosure safeguards."
  };
 }

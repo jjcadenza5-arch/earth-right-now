@@ -53,6 +53,13 @@ const files={
 for(const [name,value] of Object.entries(files))await writeFile(path.join(dir,name),JSON.stringify(value));
 await writeFile(path.join(dir,"operator-brief.md"),"_Read-only operational summary._");
 let r=await validateOperationsPacket(dir);assert.equal(r.valid,true);assert.equal(r.issueCount,0);
+const heldAffiliate={...files["affiliate-platform-research.json"],total:1,invalid:1,items:[{id:"overdue",valid:false,reasons:["TERMS_REVIEW_STALE"]}]};
+await writeFile(path.join(dir,"affiliate-platform-research.json"),JSON.stringify(heldAffiliate));
+r=await validateOperationsPacket(dir);assert.equal(r.valid,true,"Stale-only held research must remain a complete diagnostic packet");
+await writeFile(path.join(dir,"affiliate-platform-research.json"),JSON.stringify({...heldAffiliate,items:[{id:"unsafe",valid:false,reasons:["TERMS_REVIEW_STALE","PAID_RANKING_MUST_BE_FALSE"]}]}));
+r=await validateOperationsPacket(dir);assert.equal(r.valid,false);assert.ok(r.issues.some(x=>x.code==="INVALID_AFFILIATE_RESEARCH_ROWS"));
+await writeFile(path.join(dir,"affiliate-platform-research.json"),JSON.stringify(files["affiliate-platform-research.json"]));
+
 
 const bad=await mkdtemp(path.join(os.tmpdir(),"ern-packet-bad-"));
 for(const [name,value] of Object.entries(files))await writeFile(path.join(bad,name),JSON.stringify(value));

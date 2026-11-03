@@ -381,7 +381,9 @@ export async function validateOperationsPacket(dir="ern-ops"){
     if(affiliateResearch?.safety?.credentialsStored!==false)issues.push({file:"affiliate-platform-research.json",code:"AFFILIATE_RESEARCH_CREDENTIAL_VIOLATION"});
     if(affiliateResearch?.safety?.trackedLinksAllowed!==false)issues.push({file:"affiliate-platform-research.json",code:"AFFILIATE_RESEARCH_TRACKING_VIOLATION"});
     if(affiliateResearch?.safety?.paidRankingAllowed!==false)issues.push({file:"affiliate-platform-research.json",code:"AFFILIATE_RESEARCH_RANKING_VIOLATION"});
-    if(affiliateResearch?.invalid)issues.push({file:"affiliate-platform-research.json",code:"INVALID_AFFILIATE_RESEARCH_ROWS",count:affiliateResearch.invalid});
+    const heldTermsRows=(affiliateResearch.items||[]).filter(x=>x?.valid===false&&Array.isArray(x.reasons)&&x.reasons.length>0&&x.reasons.every(reason=>reason==="TERMS_REVIEW_STALE")).length;
+    const blockingAffiliateRows=Math.max(0,(Number(affiliateResearch.invalid)||0)-heldTermsRows);
+    if(blockingAffiliateRows)issues.push({file:"affiliate-platform-research.json",code:"INVALID_AFFILIATE_RESEARCH_ROWS",count:blockingAffiliateRows});
   }
 
   const affiliateReadiness=files["affiliate-application-readiness.json"];
