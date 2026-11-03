@@ -28,7 +28,12 @@ assert.match(css,/\.wander-card>\.wander-visual\{position:absolute;inset:0\}/,"f
 assert.match(build,/editorial-card-photos\.js/,"lazy photo module must ship in release");
 const {approvedPhotos,eligibleVisual,approvedPhotoLicense}=await import("../src/editorial-card-photos.js");
 const register=JSON.parse(readFileSync(new URL("../data/destination-photo-rights-candidates.json",import.meta.url),"utf8"));
-assert.equal(approvedPhotos(register).size,48);
+assert.ok(approvedPhotos(register).size>=48,"retain the previously approved photographic coverage as new exact-place covers are added");
+for(const id of ["kyoto-hanamikoji","kyoto-kiyomizuzaka","mpala-watering-hole","new-york-harbor","volcan-tajogaite"]){
+ const photo=approvedPhotos(register).get(id);assert.ok(photo,"rotation destination needs an approved cover: "+id);
+ assert.ok(photo.dateTaken&&photo.previewInspectedAt&&photo.sourceRevisionUrl,"new covers need dated visual and licence provenance");
+ assert.match(photo.note,/not.*(current|camera|verification)/i,"archival cover must not become camera evidence");
+}
 assert.ok(approvedPhotos(register).has("wengen-bellevue"));
 for(const id of ["levi-ski-resort","plitvice-lakes","brussels-grand-place"])assert.ok(approvedPhotos(register).has(id));
 assert.ok(approvedPhotos(register).has("oeschinensee")&&approvedPhotos(register).has("flam-aurlandsfjord"));
