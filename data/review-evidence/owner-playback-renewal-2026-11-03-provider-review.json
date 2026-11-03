@@ -1,0 +1,22 @@
+{
+  "reviewedAt": "2026-11-03T09:50:18.227984+00:00",
+  "davos": {
+    "sourceUrl": "https://www.chaletgueggel.ch/en/live-webcam",
+    "httpStatus": 200,
+    "retrievedAt": "2026-11-03T09:47:33.394039Z",
+    "publishedVideoId": "sSen5EoOiJs",
+    "changedTarget": false,
+    "interpretation": "Official publication/HTTP is not playback and does not override failed owner review."
+  },
+  "tajogaite": {
+    "sourceUrl": "https://webcam-lapalma.de/webcam-vulkan-la-palma/",
+    "permissionUrl": "https://webcam-lapalma.de/webcam-einbetten/",
+    "enabledEmbed": "https://webcam-lapalma.de/embed/vulkan/",
+    "attributionRequirement": "Visible webcam-lapalma.de link retained by existing ERN player."
+  },
+  "yehliu": {
+    "sourceUrl": "https://www.northguan-nsa.gov.tw/user/article.aspx?Lang=2&SNo=04007411",
+    "primaryLookup": "TIMEOUT_WEB_LOOKUP",
+    "interpretation": "Existing specific permission and owner exact deployed playback retained; no provider-wide outage/permission change inferred."
+  }
+}

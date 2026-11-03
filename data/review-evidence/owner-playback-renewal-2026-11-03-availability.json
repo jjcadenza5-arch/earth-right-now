@@ -1,0 +1,111 @@
+{
+  "reviewBatch": "99b7464652ab1008",
+  "purpose": "Independent exact embed HTTP availability; not owner network or live/moving proof and never overrides owner failure",
+  "rows": [
+    {
+      "id": "auckland-viaduct-harbour",
+      "url": "https://www.youtube.com/embed/live_stream?channel=UCfNoVlW5-BHsoCKTGs_F0WQ",
+      "checkedAt": "2026-11-03T09:46:57.800757+00:00",
+      "httpStatus": 200,
+      "finalUrl": "https://www.youtube.com/embed/live_stream?channel=UCfNoVlW5-BHsoCKTGs_F0WQ"
+    },
+    {
+      "id": "davos-jakobshorn-live",
+      "url": "https://www.youtube-nocookie.com/embed/sSen5EoOiJs",
+      "checkedAt": "2026-11-03T09:46:57.801832+00:00",
+      "httpStatus": 200,
+      "finalUrl": "https://www.youtube-nocookie.com/embed/sSen5EoOiJs"
+    },
+    {
+      "id": "kyoto-fushimi-inari-live",
+      "url": "https://www.youtube-nocookie.com/embed/MMeBDRfRHyA",
+      "checkedAt": "2026-11-03T09:46:57.802339+00:00",
+      "httpStatus": 200,
+      "finalUrl": "https://www.youtube-nocookie.com/embed/MMeBDRfRHyA"
+    },
+    {
+      "id": "kyoto-hanamikoji-live",
+      "url": "https://www.youtube-nocookie.com/embed/J3xHBUgWRqc",
+      "checkedAt": "2026-11-03T09:46:57.803692+00:00",
+      "httpStatus": 200,
+      "finalUrl": "https://www.youtube-nocookie.com/embed/J3xHBUgWRqc"
+    },
+    {
+      "id": "kyoto-kifune-shrine-live",
+      "url": "https://www.youtube-nocookie.com/embed/eJAqPCdS1cY",
+      "checkedAt": "2026-11-03T09:46:57.804928+00:00",
+      "httpStatus": 200,
+      "finalUrl": "https://www.youtube-nocookie.com/embed/eJAqPCdS1cY"
+    },
+    {
+      "id": "kyoto-kiyomizuzaka-live",
+      "url": "https://www.youtube-nocookie.com/embed/cUnYPpK7ENk",
+      "checkedAt": "2026-11-03T09:47:03.444865+00:00",
+      "httpStatus": 200,
+      "finalUrl": "https://www.youtube-nocookie.com/embed/cUnYPpK7ENk"
+    },
+    {
+      "id": "kyoto-nishiki-market-live",
+      "url": "https://www.youtube-nocookie.com/embed/qZ2ghbe3zc0",
+      "checkedAt": "2026-11-03T09:47:04.303187+00:00",
+      "httpStatus": 200,
+      "finalUrl": "https://www.youtube-nocookie.com/embed/qZ2ghbe3zc0"
+    },
+    {
+      "id": "mpala-watering-hole",
+      "url": "https://www.youtube-nocookie.com/embed/oORXfTviuCs",
+      "checkedAt": "2026-11-03T09:47:04.306989+00:00",
+      "httpStatus": 200,
+      "finalUrl": "https://www.youtube-nocookie.com/embed/oORXfTviuCs"
+    },
+    {
+      "id": "nyc-brooklyn-skyline-live",
+      "url": "https://www.youtube-nocookie.com/embed/obqnslJKrxc",
+      "checkedAt": "2026-11-03T09:47:04.355924+00:00",
+      "httpStatus": 200,
+      "finalUrl": "https://www.youtube-nocookie.com/embed/obqnslJKrxc"
+    },
+    {
+      "id": "rovaniemi-santa-claus-village-live",
+      "url": "https://www.youtube-nocookie.com/embed/Cp4RRAEgpeU",
+      "checkedAt": "2026-11-03T09:47:04.401222+00:00",
+      "httpStatus": 200,
+      "finalUrl": "https://www.youtube-nocookie.com/embed/Cp4RRAEgpeU"
+    },
+    {
+      "id": "taitung-jinzun",
+      "url": "https://www.youtube-nocookie.com/embed/ZdqHgQwvZOw",
+      "checkedAt": "2026-11-03T09:47:04.434036+00:00",
+      "httpStatus": 200,
+      "finalUrl": "https://www.youtube-nocookie.com/embed/ZdqHgQwvZOw"
+    },
+    {
+      "id": "taiwan-yehliu-live",
+      "url": "https://www.youtube-nocookie.com/embed/ZjuY4qKaj40",
+      "checkedAt": "2026-11-03T09:47:11.745720+00:00",
+      "httpStatus": 200,
+      "finalUrl": "https://www.youtube-nocookie.com/embed/ZjuY4qKaj40"
+    },
+    {
+      "id": "takayama-miyagawa-stream",
+      "url": "https://www.youtube.com/embed/live_stream?channel=UC5MNHWRJRJ1buoVIg2sHmCw",
+      "checkedAt": "2026-11-03T09:47:11.748878+00:00",
+      "httpStatus": 200,
+      "finalUrl": "https://www.youtube.com/embed/live_stream?channel=UC5MNHWRJRJ1buoVIg2sHmCw"
+    },
+    {
+      "id": "verbier",
+      "url": "https://www.youtube-nocookie.com/embed/9ljoXhTxjag",
+      "checkedAt": "2026-11-03T09:47:11.749826+00:00",
+      "httpStatus": 200,
+      "finalUrl": "https://www.youtube-nocookie.com/embed/9ljoXhTxjag"
+    },
+    {
+      "id": "volcan-tajogaite",
+      "url": "https://webcam-lapalma.de/embed/vulkan/",
+      "checkedAt": "2026-11-03T09:47:11.845995+00:00",
+      "httpStatus": 200,
+      "finalUrl": "https://webcam-lapalma.de/embed/vulkan/"
+    }
+  ]
+}
