@@ -13058,18 +13058,18 @@
     "sourceUrl": "https://www.coffsharbour.nsw.gov.au/Resident-services/Emergency-and-disaster-information/Bridge-Cameras",
     "officialUrl": "https://www.coffsharbour.nsw.gov.au/Resident-services/Emergency-and-disaster-information/Bridge-Cameras",
     "attribution": "City of Coffs Harbour — Edward Sharp Bridge camera",
-    "checkedAt": "2026-10-12T16:59:01.845536Z",
-    "lastSuccessfulCheck": "2026-10-12T16:59:01.845536Z",
+    "checkedAt": "2026-11-03T14:27:42Z",
+    "lastSuccessfulCheck": "2026-11-03T14:27:42Z",
     "quality": 58,
     "freshness": 90,
     "moment": 55,
-    "story": "Refreshed bridge and river image. Read its capture clock; an image does not confirm road access. Council reports thirty-minute updates under normal conditions.",
+    "story": "Refreshed bridge camera at Nana Glen. The reviewed night image shows road-edge and railing detail in low light; river detail is not clear. Inspect the capture clock and use council notices for access or flood decisions. Camera updates may pause.",
     "featuredHold": true,
     "watchHold": true,
     "searchSupplemental": true,
     "externalWindowRequired": true,
     "rightsBasis": "Council publishes and directly links this public camera image. ERN links to the council context page only; no imagery download, thumbnail reuse, hotlinking, framing or embedding permission inferred.",
-    "freshnessEvidence": "Council-linked image decoded 3840x2160. Visible clock: OCT 13 Tuesday 03:36:38 AM, matching the reviewed New South Wales local day/time within the council-reported thirty-minute cadence. Year and timezone are not printed on the image; no full capture timestamp invented. Night bridge/road scene and council/location caption inspected."
+    "freshnessEvidence": "3Nov2026 browser inspected exact council-linked JPEG: Edward Sharpe Bridge caption and council branding, dark monochrome road/railing scene with some lights; no useful river/flood-depth detail inferred. Burned-inNOV04 Wednesday12:43:23AM; Sydney local date/day matches4Nov2026. Year/timezone inferred from review context, not printed; implied3Nov13:43:23Z, clock accuracy unverified. Council-reported30minute cadence not measured. Quality58/featuredHold/watchHold retained, external page only."
   },
   {
     "id": "us-acadia-jordan-pond-current",

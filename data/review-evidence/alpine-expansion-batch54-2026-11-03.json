@@ -1,0 +1,138 @@
+{
+  "reviewedAt": "2026-11-03T14:27:42Z",
+  "newSources": [
+    {
+      "truth": "LIVE_IMAGE",
+      "permission": "LINK_ONLY",
+      "health": "HEALTHY",
+      "playback": "EXTERNAL",
+      "freshness": 90,
+      "moment": 75,
+      "featuredHold": true,
+      "watchHold": true,
+      "searchSupplemental": true,
+      "externalWindowRequired": true,
+      "checkedAt": "2026-11-03T14:27:42Z",
+      "lastSuccessfulCheck": "2026-11-03T14:27:42Z",
+      "country": "Austria",
+      "timeZone": "Europe/Vienna",
+      "id": "austria-lienz-zettersfeld-current",
+      "placeId": "austria-lienz-zettersfeld",
+      "title": "Lienz — Town & Dolomites from Zettersfeld",
+      "seoName": "Lienz",
+      "provider": "Foto-Webcam.eu — Lienz Zettersfeld",
+      "attribution": "Foto-Webcam.eu",
+      "region": "East Tyrol",
+      "categories": [
+        "Mountains",
+        "Cities & Streets",
+        "Beautiful Earth"
+      ],
+      "quality": 86,
+      "sourceUrl": "https://www.foto-webcam.eu/webcam/lienz/",
+      "officialUrl": "https://www.foto-webcam.eu/webcam/lienz/",
+      "rightsSourceUrl": "https://www.foto-webcam.eu/webcam/lienz/infos/",
+      "rightsBasis": "Exact camera information explicitly permits links to this camera page. ERN uses attributed external page handoff only; no imagery, thumbnail, crop, embedding or moving-video permission exercised.",
+      "story": "Look over Lienz and its valley from Zettersfeld toward the Lienz Dolomites. This is a refreshed still at the provider. Cloud may cover parts of the ridge; the image does not establish lift operation, trail access or safe mountain conditions.",
+      "freshnessEvidence": "Actual browser scene3Nov2026: town/valley and autumn forest clearly visible, mountain ridge partly veiled by low cloud. Provider image label03.11.26 15:20, with year/month/day controls2026/Nov/03. Europe/Vienna CET implies14:20Z at minute precision; clock accuracy unverified. No moving playback claim."
+    },
+    {
+      "truth": "LIVE_IMAGE",
+      "permission": "LINK_ONLY",
+      "health": "HEALTHY",
+      "playback": "EXTERNAL",
+      "freshness": 90,
+      "moment": 75,
+      "featuredHold": true,
+      "watchHold": true,
+      "searchSupplemental": true,
+      "externalWindowRequired": true,
+      "checkedAt": "2026-11-03T14:27:42Z",
+      "lastSuccessfulCheck": "2026-11-03T14:27:42Z",
+      "country": "Austria",
+      "timeZone": "Europe/Vienna",
+      "id": "austria-ramsau-lindenhof-current",
+      "placeId": "austria-ramsau-lindenhof",
+      "title": "Ramsau am Dachstein — Lindenhof Village View",
+      "seoName": "Ramsau am Dachstein",
+      "provider": "Hotel Lindenhof / Ramsbergerhof via Foto-Webcam.eu",
+      "attribution": "Hotel Lindenhof / Ramsbergerhof / Foto-Webcam.eu",
+      "region": "Styria / Schladming-Dachstein",
+      "categories": [
+        "Mountains",
+        "Villages",
+        "Useful Earth"
+      ],
+      "quality": 74,
+      "sourceUrl": "https://www.foto-webcam.eu/webcam/hotel-lindenhof/",
+      "officialUrl": "https://www.foto-webcam.eu/webcam/hotel-lindenhof/",
+      "rightsSourceUrl": "https://www.foto-webcam.eu/webcam/hotel-lindenhof/infos/",
+      "rightsBasis": "Camera-owner information names Hotel Lindenhof and Ramsbergerhof and explicitly permits links to the exact camera page. Attributed external page only; no imagery/thumbnail/crop/embedding reuse.",
+      "story": "See the Lindenhof and Ramsbergerhof foreground, village buildings, trees and lawns in a refreshed still from Ramsau am Dachstein. Fog currently hides the mountain background, so do not expect a clear Dachstein panorama. Check the image clock and official visitor notices; the view does not confirm access, snow activities or transport.",
+      "freshnessEvidence": "Actual browser decoded1200x675 still /webcam/hotel-lindenhof/2026/11/03/1520_lm.jpg. Visible hotels/houses, autumn trees, lawns and a little white roof covering; dense grey fog obscures distant mountain view. Label03.11.26 15:20 and2026/Nov/03controls. Europe/Vienna CET implies14:20Z minute precision, accuracy unverified. No mountain visibility or moving-video claim."
+    }
+  ],
+  "affiliatePlacements": [
+    {
+      "id": "viator-mpala-nanyuki-regional",
+      "placeId": "mpala-watering-hole",
+      "title": "Explore Nanyuki regional tours — not Mpala admission",
+      "destinationScope": "Nanyuki / Laikipia region; not Mpala access",
+      "url": "https://www.viator.com/en-SG/Nanyuki/d50867-ttd?pid=P00322254&mcid=42383&medium=link",
+      "evidence": "3Nov exact tracked URL browser rendered five Nanyuki/regional tour listings, including Nanyuki-departing safari. Regional planning only: no Mpala entry, animal sighting, pickup at research centre or camera location promised. Check each departure point and operator access. Reuses existing owner-verified ERN Viator tracking identity; no account approval renewal or earnings claim.",
+      "provider": "Viator",
+      "partnerId": "viator",
+      "intent": "activities",
+      "affiliate": true,
+      "sponsored": false,
+      "disclosure": "Affiliate link",
+      "verified": true,
+      "verifiedAt": "2026-11-03T14:27:42Z",
+      "expiresAt": "2026-12-26T13:17:00Z",
+      "commissionClaimed": false,
+      "verificationMethod": "PRIMARY_PAGE_BROWSER_REVIEW_PLUS_EXISTING_OWNER_TRACKING_ID",
+      "placementReviewedAt": "2026-11-03T14:27:42Z"
+    },
+    {
+      "id": "viator-ramsau-seasonal-salzburg",
+      "placeId": "austria-ramsau-lindenhof",
+      "title": "Seasonal Ramsau sleigh/carriage trip — departs Salzburg",
+      "destinationScope": "Ramsau am Dachstein excursion from Salzburg; seasonal",
+      "url": "https://www.viator.com/tours/Salzburg/Christmas-Horse-Drawn-Sleigh-Ride-from-Salzburg/d451-3595HORSE?pid=P00322254&mcid=42383&medium=link",
+      "evidence": "Primary Viator itinerary names Ramsau am Dachstein.3Nov exact tracked product target renders Salzburg listings with selected Christmas Horse-Drawn Sleigh/Carriage Ride product3595HORSE visible. Seasonal excursion from Salzburg, not local Ramsau pickup or hotel admission; confirm current itinerary/dates/meeting point, snow not guaranteed and carriage may substitute. No prices/reviews/inclusions copied. Existing owner-verified tracking identity and partner expiry preserved; no booking or revenue claim.",
+      "provider": "Viator",
+      "partnerId": "viator",
+      "intent": "activities",
+      "affiliate": true,
+      "sponsored": false,
+      "disclosure": "Affiliate link",
+      "verified": true,
+      "verifiedAt": "2026-11-03T14:27:42Z",
+      "expiresAt": "2026-12-26T13:17:00Z",
+      "commissionClaimed": false,
+      "verificationMethod": "PRIMARY_PAGE_BROWSER_REVIEW_PLUS_EXISTING_OWNER_TRACKING_ID",
+      "placementReviewedAt": "2026-11-03T14:27:42Z"
+    }
+  ],
+  "maintenance": "Nana Glen actual current night JPEG renewed with narrow visibility copy; original quality/holds retained. Hermitage/Rotorua/Taksim earlier fetch failures do not establish outages; old proof retained. Dongargarh security hold and Malaysia holds unchanged.",
+  "transportLimitations": [
+    {
+      "id": "lienz",
+      "error": "<urlopen error timed out>"
+    },
+    {
+      "id": "ramsau",
+      "error": "<urlopen error timed out>"
+    },
+    {
+      "id": "nana",
+      "error": "<urlopen error timed out>"
+    },
+    {
+      "id": "hermitage",
+      "error": "<urlopen error timed out>"
+    }
+  ],
+  "imageReuseAllowed": false,
+  "movingPlaybackRenewed": false
+}
