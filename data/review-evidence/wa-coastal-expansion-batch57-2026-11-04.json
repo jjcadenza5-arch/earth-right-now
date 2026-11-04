@@ -1,0 +1,139 @@
+{
+  "reviewedAt": "2026-11-04T02:49:09Z",
+  "newSources": [
+    {
+      "country": "Australia",
+      "region": "Western Australia",
+      "timeZone": "Australia/Perth",
+      "truth": "LIVE_IMAGE",
+      "permission": "LINK_ONLY",
+      "health": "HEALTHY",
+      "playback": "EXTERNAL",
+      "featuredHold": true,
+      "watchHold": true,
+      "searchSupplemental": true,
+      "externalWindowRequired": true,
+      "checkedAt": "2026-11-04T02:49:09Z",
+      "lastSuccessfulCheck": "2026-11-04T02:49:09Z",
+      "freshness": 90,
+      "moment": 80,
+      "provider": "Western Australia Department of Transport and Major Infrastructure",
+      "attribution": "State of Western Australia / Department of Transport and Major Infrastructure",
+      "rightsSourceUrl": "https://transport.wa.gov.au/marine/charts-warnings-current-conditions/coastal-data-charts/disclaimer-copyright",
+      "rightsBasis": "Official WA Government public coast-cam service, attributed external camera-page link only. Linked coastal-data copyright/disclaimer reviewed; no broad image reuse, copying, cropping, hotlinking or embedding permission inferred or exercised. No government endorsement implied.",
+      "id": "au-albany-middleton-beach-current",
+      "placeId": "au-albany-middleton-beach",
+      "title": "Albany — Middleton Beach",
+      "seoName": "Albany Middleton Beach",
+      "categories": [
+        "Beaches",
+        "Coasts",
+        "Beautiful Earth"
+      ],
+      "quality": 86,
+      "sourceUrl": "https://transport.wa.gov.au/marine/charts-warnings-current-conditions/coast-cams/albany",
+      "officialUrl": "https://transport.wa.gov.au/marine/charts-warnings-current-conditions/coast-cams/albany",
+      "story": "Look east across Middleton Beach from the Albany Surf Life Saving Club camera. The reviewed still shows sand, shore break, blue water and the opposite shoreline, partly framed by the building. Open the official camera page and check its capture clock; the visible scene does not establish swimming safety, patrol service, water quality or conditions elsewhere in Albany. The archive contains older images and is not continuous live video.",
+      "freshnessEvidence": "4Nov2026 actual browser decoded1920x1080 latest page-published0944.jpg, fully rendered: beach sand, shore break, water and distant shoreline visible with structural foreground obstruction. Burned-in Department of Transport and Major Infrastructure - Albany - Wed04Nov2026 -09:44:02. Australia/Perth AWST inferred implies01:44:02Z; timezone/clock accuracy unverified. Reviewed around02:50Z, roughly one hour old; advertised one-minute cadence not measured or guaranteed. External still only."
+    },
+    {
+      "country": "Australia",
+      "region": "Western Australia",
+      "timeZone": "Australia/Perth",
+      "truth": "LIVE_IMAGE",
+      "permission": "LINK_ONLY",
+      "health": "HEALTHY",
+      "playback": "EXTERNAL",
+      "featuredHold": true,
+      "watchHold": true,
+      "searchSupplemental": true,
+      "externalWindowRequired": true,
+      "checkedAt": "2026-11-04T02:49:09Z",
+      "lastSuccessfulCheck": "2026-11-04T02:49:09Z",
+      "freshness": 90,
+      "moment": 80,
+      "provider": "Western Australia Department of Transport and Major Infrastructure",
+      "attribution": "State of Western Australia / Department of Transport and Major Infrastructure",
+      "rightsSourceUrl": "https://transport.wa.gov.au/marine/charts-warnings-current-conditions/coastal-data-charts/disclaimer-copyright",
+      "rightsBasis": "Official WA Government public coast-cam service, attributed external camera-page link only. Linked coastal-data copyright/disclaimer reviewed; no broad image reuse, copying, cropping, hotlinking or embedding permission inferred or exercised. No government endorsement implied.",
+      "id": "au-mandurah-ocean-marina-current",
+      "placeId": "au-mandurah-ocean-marina",
+      "title": "Mandurah — Ocean Marina Entrance",
+      "seoName": "Mandurah Ocean Marina",
+      "categories": [
+        "Harbours",
+        "Coasts",
+        "Useful Earth"
+      ],
+      "quality": 88,
+      "sourceUrl": "https://transport.wa.gov.au/marine/charts-warnings-current-conditions/coast-cams/mandurah-ocean-marina",
+      "officialUrl": "https://transport.wa.gov.au/marine/charts-warnings-current-conditions/coast-cams/mandurah-ocean-marina",
+      "story": "See the Mandurah Ocean Marina entrance, breakwaters and ocean from the Marine Operation Centre roof camera. The reviewed still shows the entrance, nearby road and parking area under clear sky; it does not cover every berth or the inland canals. Inspect the official capture clock and check marine notices, tides and weather separately. A camera image does not establish navigation safety, berth access, cruise operation or dolphin sightings.",
+      "freshnessEvidence": "4Nov2026 browser decoded1920x1080 latest page-published0945.jpg and inspected full scene: harbour entrance/breakwaters, blue ocean, shoreline, cars/road/parking, clear sky, some foreground overhead lines. Burned-in Department of Transport - Mandurah - Wed04Nov2026 -09:45:01. Perth AWST inferred implies01:45:01Z; timezone/clock accuracy unverified. Around one hour old at review; provider one-minute update statement is not independently measured. Still-image archive, not continuous video."
+    }
+  ],
+  "affiliatePlacements": [
+    {
+      "id": "viator-albany-wa-regional-tours",
+      "placeId": "au-albany-middleton-beach",
+      "title": "Explore Albany, WA tours — check meeting point",
+      "destinationScope": "Albany, Western Australia and nearby region; not beach admission",
+      "url": "https://www.viator.com/Albany-tours/Tours-and-Sightseeing/d4748-g12?pid=P00322254&mcid=42383&medium=link",
+      "evidence": "4Nov exact tracked browser page rendered10results; Australia/Western Australia/Albany breadcrumbs confirm WA d4748, not New York d23070. Regional cruises, heritage and nature tours; some routes extend beyond Middleton Beach. Check individual meeting point, dates and itinerary; no beach admission, camera access or pickup at surf club promised. Existing ERN tracking identity/partner expiry unchanged; no prices/ratings/inclusions copied.",
+      "provider": "Viator",
+      "partnerId": "viator",
+      "intent": "activities",
+      "affiliate": true,
+      "sponsored": false,
+      "disclosure": "Affiliate link",
+      "verified": true,
+      "verifiedAt": "2026-11-04T02:49:09Z",
+      "expiresAt": "2026-12-26T13:17:00Z",
+      "commissionClaimed": false,
+      "verificationMethod": "PRIMARY_PAGE_BROWSER_REVIEW_PLUS_EXISTING_OWNER_TRACKING_ID",
+      "placementReviewedAt": "2026-11-04T02:49:09Z"
+    },
+    {
+      "id": "viator-mandurah-regional-activities",
+      "placeId": "au-mandurah-ocean-marina",
+      "title": "Explore Mandurah cruises & activities — check departure point",
+      "destinationScope": "Mandurah waterways and regional activities; departure points vary",
+      "url": "https://www.viator.com/Mandurah/d36688-ttd?pid=P00322254&mcid=42383&medium=link",
+      "evidence": "4Nov exact tracked browser destination rendered15results and Australia/Western Australia/Mandurah breadcrumbs, including canal/estuary cruises. Regional planning only; verify individual boarding point, date, weather, operator conditions and itinerary. No departure from camera site, cruise operation, berth access or dolphin sightings guaranteed. Existing owner-verified ERN tracking identity and partner expiry preserved; no copied prices/ratings/inclusions or earnings claim.",
+      "provider": "Viator",
+      "partnerId": "viator",
+      "intent": "activities",
+      "affiliate": true,
+      "sponsored": false,
+      "disclosure": "Affiliate link",
+      "verified": true,
+      "verifiedAt": "2026-11-04T02:49:09Z",
+      "expiresAt": "2026-12-26T13:17:00Z",
+      "commissionClaimed": false,
+      "verificationMethod": "PRIMARY_PAGE_BROWSER_REVIEW_PLUS_EXISTING_OWNER_TRACKING_ID",
+      "placementReviewedAt": "2026-11-04T02:49:09Z"
+    }
+  ],
+  "maintenance": "Priority Taksim official page fetch timed out; inconclusive, no proof renewed or outage inferred. Old dates and security/failed/schedule/visual holds retained.",
+  "deferredCandidates": [
+    {
+      "place": "Angelus Basin",
+      "observedDate": "2026-11-04 15:40",
+      "decodedWidth": 1920,
+      "scene": "Near rocks and snow patches; dense fog hides lake/hut. Not added pending more useful visual evidence."
+    },
+    {
+      "place": "Brewster / Mt Armstrong",
+      "observedDate": "2026-11-04 13:32",
+      "decodedWidth": 1920,
+      "scene": "Near-total fog with a rock edge; not added to camera coverage."
+    },
+    {
+      "place": "Albert Burn Saddle",
+      "reason": "Search exposed August historical gallery; no fresh proof used or promotion attempted."
+    }
+  ],
+  "imageReuseAllowed": false,
+  "movingPlaybackRenewed": false,
+  "governmentEndorsementClaimed": false
+}
