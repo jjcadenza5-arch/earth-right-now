@@ -1,0 +1,114 @@
+{
+  "reviewedAt": "2026-11-04T12:41:19Z",
+  "newSources": [
+    {
+      "id": "italy-sirmione-lake-current",
+      "placeId": "italy-sirmione-lake",
+      "title": "Sirmione — Lake & Crenellated Tower",
+      "seoName": "Sirmione",
+      "country": "Italy",
+      "region": "Sirmione / Lake Garda / Lombardy",
+      "timeZone": "Europe/Rome",
+      "categories": [
+        "Lakes",
+        "Architecture",
+        "Beautiful Earth"
+      ],
+      "truth": "LIVE_IMAGE",
+      "permission": "LINK_ONLY",
+      "health": "HEALTHY",
+      "playback": "EXTERNAL",
+      "featuredHold": true,
+      "watchHold": true,
+      "searchSupplemental": true,
+      "externalWindowRequired": true,
+      "freshness": 90,
+      "moment": 78,
+      "quality": 85,
+      "checkedAt": "2026-11-04T12:41:19Z",
+      "lastSuccessfulCheck": "2026-11-04T12:41:19Z",
+      "provider": "MeteoGarda.it / Osservatorio Bianchi",
+      "attribution": "MeteoGarda.it",
+      "sourceUrl": "https://www.meteogarda.it/webcam.php",
+      "officialUrl": "https://www.meteogarda.it/sirmione/",
+      "rightsSourceUrl": "https://www.meteogarda.it/info.php",
+      "rightsBasis": "First-party MeteoGarda camera index states cameras are directly managed by the publisher; operator information and all-rights-reserved footer reviewed. Ordinary attributed external camera-index handoff only, selecting the Sirmione image. No camera imagery/logo/thumbnail/prose reuse, hotlink, iframe, archive or video reuse, and no media licence inferred.",
+      "story": "See Lake Garda, a crenellated tower, foreground rooftops and distant hills from Sirmione in a refreshed still. Open MeteoGarda’s Sirmione image and check its capture clock; other cameras on the same index may be old. Cloud can limit the opposite shore. This view gives context for a town walk or lake trip, but does not show castle interiors, establish entry or confirm boat operation. Check departures, access and operator notices separately.",
+      "freshnessEvidence": "4Nov2026 actual browser decoded1280x960 operator-linked https://www.meteogarda.it/sirmione/sirmione.jpg fully inspected. Burned-in2026-11-04 CET13:40:01; lake water, crenellated tower, foreground roofs/terrace and distant hills visible under cloud. Explicit CET corresponds12:40:01Z, clock accuracy unverified; reviewed within minutes. Ten-minute cadence is publisher-described on Sirmione station page, not measured; weather-panel data there is separately dated and not used as current evidence. External refreshed still only, no moving-video proof or coordinates invented."
+    }
+  ],
+  "maintenance": {
+    "sourceId": "norway-lillevik-gimsoy-current",
+    "previousSuccessfulCheck": "2026-11-03T08:39:07Z",
+    "currentEvidence": "4Nov2026 actual browser decoded900x506 operator latest-resized-900.jpg image fully inspected, not promotional photographs below. Burned-in04/11/2026 13:32:59 WED, matching4November page navigation and13:32 image alt; Europe/Oslo CET inferred12:32:59Z, clock accuracy unverified. Usable coastal water, grass, red boathouse and broad mountain ridge under dramatic cloud; no aurora/weather/safe-sea claim. Fullsize3840x2160 link advertised, not decoded. Existing exact operator external-link rights basis retained, no media reuse; ten-minute cadence not measured. Prior3Nov proof retained in batch62 evidence."
+  },
+  "affiliatePlacements": [
+    {
+      "id": "viator-sirmione-visit-options",
+      "placeId": "italy-sirmione-lake",
+      "title": "Explore Sirmione activities — departures vary",
+      "destinationScope": "Sirmione visit options, including local activities and excursions departing other cities",
+      "url": "https://www.viator.com/Lombardy-attractions/Sirmione/d25822-a17308?pid=P00322254&mcid=42383&medium=link",
+      "evidence": "4Nov exact tracked attraction page rendered34results and Italy/Lombardy/Sirmione breadcrumbs, including local boat/walking options and excursions departing Verona/Milan. Check individual departure, meeting point, current dates, access and weather-dependent operation. Category scope is not camera-site admission or a local departure guarantee. Existing ERN owner identity P00322254/mcid42383/account proofs/partner expiry unchanged; no copied prices/ratings, booking or earnings claim.",
+      "provider": "Viator",
+      "partnerId": "viator",
+      "intent": "activities",
+      "affiliate": true,
+      "sponsored": false,
+      "disclosure": "Affiliate link",
+      "verified": true,
+      "verifiedAt": "2026-11-04T12:41:19Z",
+      "expiresAt": "2026-12-26T13:17:00Z",
+      "commissionClaimed": false,
+      "verificationMethod": "PRIMARY_PAGE_BROWSER_REVIEW_PLUS_EXISTING_OWNER_TRACKING_ID",
+      "placementReviewedAt": "2026-11-04T12:41:19Z"
+    },
+    {
+      "id": "viator-sirmione-from-verona-options",
+      "placeId": "italy-sirmione-lake",
+      "title": "Sirmione day-trip option — departs Verona",
+      "destinationScope": "Verona-departing Lake Garda/Sirmione excursion, not a Sirmione pickup or camera-site departure",
+      "url": "https://www.viator.com/tours/Verona/SIRMIONE-AND-LAKE-GARDA-TOUR/d945-6476P18?pid=P00322254&mcid=42383&medium=link",
+      "evidence": "4Nov exact tracked6476P18 URL rendered ExploreVerona selected-tour results, with FromVerona LakeGarda/Sirmione day-tour/cruise highlighted as You selected. This is selected-tour discovery, not a full product-detail or date-selected checkout verification. Primary Sirmione category also describes this Verona-departing excursion. Confirm full itinerary, exact meeting point, dates, inclusions and boat operation with operator. No Sirmione pickup or current seat availability claimed. Existing ERN owner identity P00322254/mcid42383/account proofs/partner expiry unchanged; no copied prices/ratings, booking or earnings claim.",
+      "provider": "Viator",
+      "partnerId": "viator",
+      "intent": "activities",
+      "affiliate": true,
+      "sponsored": false,
+      "disclosure": "Affiliate link",
+      "verified": true,
+      "verifiedAt": "2026-11-04T12:41:19Z",
+      "expiresAt": "2026-12-26T13:17:00Z",
+      "commissionClaimed": false,
+      "verificationMethod": "PRIMARY_PAGE_BROWSER_REVIEW_PLUS_EXISTING_OWNER_TRACKING_ID",
+      "placementReviewedAt": "2026-11-04T12:41:19Z"
+    }
+  ],
+  "rejectedCurrentSources": [
+    {
+      "place": "Malcesine MeteoGarda",
+      "sourceUrl": "https://www.meteogarda.it/malcesine/malcesine.jpg",
+      "observedDimensions": "1024x768",
+      "burnedIn": "2017-08-06 CEST18:35:02"
+    },
+    {
+      "place": "Riva del Garda MeteoGarda",
+      "sourceUrl": "https://www.meteogarda.it/rivadelgarda/rivadelgarda.jpg",
+      "observedDimensions": "1280x960",
+      "burnedIn": "2018-07-27 CEST10:50:03"
+    },
+    {
+      "place": "Malcesine VillaEdera via Windsquare",
+      "sourceUrl": "https://villaederamalcesine.com/webcam/webcam.jpg",
+      "publisherPage": "https://www.wwwind.com/webcam/",
+      "observedDimensions": "2688x1512",
+      "burnedIn": "2023-09-21 01:44:39"
+    }
+  ],
+  "deferredAffiliateTarget": {
+    "url": "https://www.viator.com/tours/Lake-Garda/Sirmione-off-the-Crowds-Boat-and-Walking-Tour-with-a-Drink/d27338-317158P7",
+    "reason": "Rendered selected-tour results rather than full detail; no dedicated product offer added. General Sirmione discovery covers local options without pretending full meeting-point proof."
+  },
+  "imageReuseAllowed": false,
+  "movingPlaybackRenewed": false
+}

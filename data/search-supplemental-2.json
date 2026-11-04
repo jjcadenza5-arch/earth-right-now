@@ -3707,8 +3707,8 @@
     "watchHold": true,
     "searchSupplemental": true,
     "externalWindowRequired": true,
-    "checkedAt": "2026-11-03T08:39:07Z",
-    "lastSuccessfulCheck": "2026-11-03T08:39:07Z",
+    "checkedAt": "2026-11-04T12:41:19Z",
+    "lastSuccessfulCheck": "2026-11-04T12:41:19Z",
     "id": "norway-lillevik-gimsoy-current",
     "placeId": "norway-lillevik-gimsoy",
     "title": "Lofoten — Gimsøy Coast at Lillevik",
@@ -3737,7 +3737,7 @@
     "story": "Look over the shore and water toward the mountain ridge from Lillevik on Gimsøy in the Lofoten islands. This is a refreshed still image, not an embedded video. Cloud and short daylight hours change what is visible; check local forecasts, road conditions and activity departure locations separately. The camera does not guarantee northern lights or access to private property.",
     "rightsSourceUrl": "https://lilleviklofoten.no/webcam/",
     "rightsBasis": "First-party Lillevik webcam page and its linked operator webcam overview reviewed. ERN retains an ordinary attributed external operator-page link with original description only. No image, logo, copied prose, thumbnail, iframe, archive or video reused; no media/embedding licence claimed.",
-    "freshnessEvidence": "Actual2048x1152 image from exact operator-published https://lilleviklofoten.no/webcam/latest.php visually inspected: clear coastal water, grassy shoreline, small red boathouse and broad mountain ridge under cloud. Label03/11/2026 09:22:11 TUE; Europe/Oslo CET inferred08:22:11Z, clock accuracy unverified. GET200 Last-Modified08:28:01Z/retrieved08:33:48.246Z. Primary current page navigation says3November2026; ten-minute cadence operator-described, not measured. No aurora/daylight/sea-safety claim or coordinates invented."
+    "freshnessEvidence": "4Nov2026 actual browser decoded900x506 operator latest-resized-900.jpg image fully inspected, not promotional photographs below. Burned-in04/11/2026 13:32:59 WED, matching4November page navigation and13:32 image alt; Europe/Oslo CET inferred12:32:59Z, clock accuracy unverified. Usable coastal water, grass, red boathouse and broad mountain ridge under dramatic cloud; no aurora/weather/safe-sea claim. Fullsize3840x2160 link advertised, not decoded. Existing exact operator external-link rights basis retained, no media reuse; ten-minute cadence not measured. Prior3Nov proof retained in batch62 evidence."
   },
   {
     "truth": "LIVE_IMAGE",
@@ -4333,5 +4333,40 @@
     "officialUrl": "https://www.fotowebcam.ch/webcam/webcam5/",
     "story": "Look toward the Gurnigel Beizli building and outdoor tables at the forest edge in an external refreshed still. The close view includes the terrace and forecourt, with wooded slopes behind; it is not a broad mountain panorama. Use it for place context, then confirm opening hours, road conditions and any planned route separately. Check the provider timestamp before relying on the scene. Archive and timelapse controls show older images rather than continuous live video.",
     "freshnessEvidence": "4Nov2026 actual browser decoded816x459 image /2026/11/04/1250_la.jpg fully inspected. Burned-in Webcam Gurnigel Beizli/04.11.26 12:50/Schwefelbergbad(CH). Building/terrace/tables/forecourt/trees clearly visible, partial vehicle at right, close composition rather than unobstructed panorama. Europe/Zurich CET inferred11:50Z, clock accuracy unverified; within minutes of review. No hours, access or moving-video claim."
+  },
+  {
+    "id": "italy-sirmione-lake-current",
+    "placeId": "italy-sirmione-lake",
+    "title": "Sirmione — Lake & Crenellated Tower",
+    "seoName": "Sirmione",
+    "country": "Italy",
+    "region": "Sirmione / Lake Garda / Lombardy",
+    "timeZone": "Europe/Rome",
+    "categories": [
+      "Lakes",
+      "Architecture",
+      "Beautiful Earth"
+    ],
+    "truth": "LIVE_IMAGE",
+    "permission": "LINK_ONLY",
+    "health": "HEALTHY",
+    "playback": "EXTERNAL",
+    "featuredHold": true,
+    "watchHold": true,
+    "searchSupplemental": true,
+    "externalWindowRequired": true,
+    "freshness": 90,
+    "moment": 78,
+    "quality": 85,
+    "checkedAt": "2026-11-04T12:41:19Z",
+    "lastSuccessfulCheck": "2026-11-04T12:41:19Z",
+    "provider": "MeteoGarda.it / Osservatorio Bianchi",
+    "attribution": "MeteoGarda.it",
+    "sourceUrl": "https://www.meteogarda.it/webcam.php",
+    "officialUrl": "https://www.meteogarda.it/sirmione/",
+    "rightsSourceUrl": "https://www.meteogarda.it/info.php",
+    "rightsBasis": "First-party MeteoGarda camera index states cameras are directly managed by the publisher; operator information and all-rights-reserved footer reviewed. Ordinary attributed external camera-index handoff only, selecting the Sirmione image. No camera imagery/logo/thumbnail/prose reuse, hotlink, iframe, archive or video reuse, and no media licence inferred.",
+    "story": "See Lake Garda, a crenellated tower, foreground rooftops and distant hills from Sirmione in a refreshed still. Open MeteoGarda’s Sirmione image and check its capture clock; other cameras on the same index may be old. Cloud can limit the opposite shore. This view gives context for a town walk or lake trip, but does not show castle interiors, establish entry or confirm boat operation. Check departures, access and operator notices separately.",
+    "freshnessEvidence": "4Nov2026 actual browser decoded1280x960 operator-linked https://www.meteogarda.it/sirmione/sirmione.jpg fully inspected. Burned-in2026-11-04 CET13:40:01; lake water, crenellated tower, foreground roofs/terrace and distant hills visible under cloud. Explicit CET corresponds12:40:01Z, clock accuracy unverified; reviewed within minutes. Ten-minute cadence is publisher-described on Sirmione station page, not measured; weather-panel data there is separately dated and not used as current evidence. External refreshed still only, no moving-video proof or coordinates invented."
   }
 ]
