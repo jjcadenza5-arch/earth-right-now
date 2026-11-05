@@ -1,3 +1,7 @@
+## 2026-11-05 Bangkok — Recovery reconciliation: guidance publication trigger
+
+Reconciled remote main d18b24279b889af0cf3463c2c886b5bd9c9c3089 against successful release 7c546faf9045bb19a7a74bc117678a91ed1599e4. Main was one commit ahead with pending Batch71 guidance. No Actions run existed for that commit because the Pages path filter omitted data/destination-viewing-guidance.json. Commit c4be0693bcf5b76962fa47350ce9feeff38f8150 adds that exact input to the existing Pages trigger. Product, source, offer data and deployment commands remain unchanged. Publication and served acceptance pending; Batch71 is not yet accepted. Coverage remains 902 camera-backed places, 265 eligible affiliate placements and four programs.
+
 ## 2026-11-05 Bangkok — Batch71 prepared: Küssnacht and Niederhorn
 
 Guidance follow-up: served checks found the220-character source-story/short-description builder hid important notices. Added build-only full-length viewing guidance for Küssnacht clock discrepancy, Niederhorn15November season and regional-offer limits, plus Rigi exact route/spa breaks. No runtime/source/offer changes or weakened assertions. Initial camera release succeeded; follow-up publication required before batch acceptance.
