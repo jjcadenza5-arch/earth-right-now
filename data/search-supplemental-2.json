@@ -4578,5 +4578,40 @@
     "officialUrl": "https://transport.wa.gov.au/marine/charts-warnings-current-conditions/coast-cams/jurien-bay-harbour",
     "story": "An alternative official refreshed still looks across Jurien Bay harbour entrance and its rock breakwaters. Water, a channel marker, foreshore vegetation and a distant shoreline are visible, but foreground scaffolding and stairs block much of the right-hand view. Use this limited harbour window alongside the coastal camera, not as a clear panorama or evidence of safe navigation, boat departures, wildlife or public access. Check the image clock and current marine notices; archive frames can be older.",
     "freshnessEvidence": "5Nov2026 actual browser decoded2560x1440 active1000.jpg fully inspected. Burned-in DTMI/JurienBayHarbour/Thu05Nov2026/10:00:05. Harbour water/rock breakwaters/channel marker/foreshore vegetation/distant shoreline visible; substantial scaffolding/stairs obstruct foreground/right. Perth AWST inferred02:00:05Z, clock accuracy unverified, around1hour old at review. Provider one-minute statement not measured. Conservative quality65/feature/watch holds, refreshed still only. Shared existing Jurien Bay placeId: alternative view, not an additional distinct destination. Existing coast camera dates unchanged."
+  },
+  {
+    "id": "switzerland-rigi-kulm-bistro-current",
+    "placeId": "switzerland-rigi-kulm",
+    "title": "Rigi Kulm — Summit Railway & Alpine Horizon",
+    "seoName": "Rigi Kulm",
+    "country": "Switzerland",
+    "region": "Mount Rigi / Central Switzerland",
+    "timeZone": "Europe/Zurich",
+    "provider": "RigiPic / Rigi Bahnen",
+    "attribution": "RigiPic / RIGI BAHNEN AG",
+    "categories": [
+      "Mountains",
+      "Railways",
+      "Useful Earth"
+    ],
+    "truth": "LIVE_IMAGE",
+    "permission": "LINK_ONLY",
+    "health": "HEALTHY",
+    "playback": "EXTERNAL",
+    "featuredHold": true,
+    "watchHold": true,
+    "searchSupplemental": true,
+    "externalWindowRequired": true,
+    "quality": 80,
+    "freshness": 90,
+    "moment": 80,
+    "sourceUrl": "https://www.rigi.ch/en/inform/webcams",
+    "officialUrl": "https://www.rigi.ch/en/inform/webcams",
+    "checkedAt": "2026-11-05T07:00:51Z",
+    "lastSuccessfulCheck": "2026-11-05T07:00:51Z",
+    "rightsSourceUrl": "https://www.rigi.ch/en/inform/webcams",
+    "rightsBasis": "Official Rigi gallery publishes the named Rigi Kulm/Rigi Bistro camera. ERN provides an attributed external gallery handoff only; no image hotlink, thumbnail, iframe, copying or imagery-reuse permission inferred. No operator endorsement.",
+    "story": "See Rigi Kulm’s railway tracks, terrace and distant Alpine ridges in a refreshed still. The roof, folded parasols, wires and sunrise glare limit the view. Check the camera clock and operator notices: Kräbel–Rigi Scheidegg cable car has weekday maintenance 2–13 November 2026, and Weggis–Rigi Kaltbad 16–27 November. An active camera does not confirm trains, restaurants or trails are open; check your exact route before booking.",
+    "freshnessEvidence": "5Nov2026 actual browser full decoded2304x1728 RigiBistro.jpg inspected. Burned-in RigiBistro07:53/05Nov26; CET inferred06:53Z at minute precision, camera clock accuracy unverified, within about10minutes during review. Terrace/tables/foldedparasols, curving tracks/overheadwires, station structure and layered Alpine horizon visible in sunrise light; roof/glare/foreground limit panorama. External refreshed still, not moving video; cadence not measured. Official gallery identifies view toward summit railway. Separate Staffel image lacked visible clock and is not used as verified coverage."
   }
 ]
