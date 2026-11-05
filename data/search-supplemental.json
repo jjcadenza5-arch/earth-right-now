@@ -13058,18 +13058,18 @@
     "sourceUrl": "https://www.coffsharbour.nsw.gov.au/Resident-services/Emergency-and-disaster-information/Bridge-Cameras",
     "officialUrl": "https://www.coffsharbour.nsw.gov.au/Resident-services/Emergency-and-disaster-information/Bridge-Cameras",
     "attribution": "City of Coffs Harbour — Edward Sharp Bridge camera",
-    "checkedAt": "2026-11-03T14:27:42Z",
-    "lastSuccessfulCheck": "2026-11-03T14:27:42Z",
+    "checkedAt": "2026-11-05T02:17:21Z",
+    "lastSuccessfulCheck": "2026-11-05T02:17:21Z",
     "quality": 58,
     "freshness": 90,
     "moment": 55,
-    "story": "Refreshed bridge camera at Nana Glen. The reviewed night image shows road-edge and railing detail in low light; river detail is not clear. Inspect the capture clock and use council notices for access or flood decisions. Camera updates may pause.",
+    "story": "See the road approach to Edward Sharp Bridge at Nana Glen in a refreshed council camera image. The reviewed daytime view shows the bridge approach, road markings, railings, roadside grass and trees. River depth is not clearly visible. Check the image clock and council road or emergency notices before travelling; a visible road is not proof of safe crossing or current access. Updates may pause.",
     "featuredHold": true,
     "watchHold": true,
     "searchSupplemental": true,
     "externalWindowRequired": true,
     "rightsBasis": "Council publishes and directly links this public camera image. ERN links to the council context page only; no imagery download, thumbnail reuse, hotlinking, framing or embedding permission inferred.",
-    "freshnessEvidence": "3Nov2026 browser inspected exact council-linked JPEG: Edward Sharpe Bridge caption and council branding, dark monochrome road/railing scene with some lights; no useful river/flood-depth detail inferred. Burned-inNOV04 Wednesday12:43:23AM; Sydney local date/day matches4Nov2026. Year/timezone inferred from review context, not printed; implied3Nov13:43:23Z, clock accuracy unverified. Council-reported30minute cadence not measured. Quality58/featuredHold/watchHold retained, external page only."
+    "freshnessEvidence": "5Nov2026 actual council-linked3840x2160 JPEG fully visually inspected: Edward Sharpe Bridge/council caption, clear daytime road approach, markings, railings, grass, trees and vehicle. Burned-in NOV05 Thursday01:09:46PM. Year2026 and Sydney AEDT inferred from review context, not printed; implied02:09:46Z, clock accuracy unverified, about10minutes old at review. River depth not established. Council30minute normal cadence not measured; image warns telecommunications outages affect update frequency. Quality58/featuredHold/watchHold and external-only rights unchanged. Prior night proof retained in batch65 evidence."
   },
   {
     "id": "us-acadia-jordan-pond-current",
