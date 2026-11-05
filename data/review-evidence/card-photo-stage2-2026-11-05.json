@@ -1,0 +1,32 @@
+{
+  "reviewedAt": "2026-11-05T04:04:58Z",
+  "placements": [
+    {
+      "placeId": "us-glacier-lake-mcdonald",
+      "reusedFrom": "glacier-national-park",
+      "caption": "Archival Lake McDonald photograph; different lakeshore viewpoint from the Apgar webcam"
+    },
+    {
+      "placeId": "nz-whakapapa",
+      "reusedFrom": "nz-ruapehu",
+      "caption": "Archival north-west Mount Ruapehu landscape; not Whakapapa ski facilities or current snow conditions"
+    },
+    {
+      "placeId": "italy-cervinia",
+      "reusedFrom": "zermatt-matterhorn",
+      "caption": "Archival Matterhorn mountain photograph; different viewpoint from the Italian Cervinia webcams, not resort facilities"
+    },
+    {
+      "placeId": "swiss-villa-honegg",
+      "reusedFrom": "lake-lucerne",
+      "caption": "Archival Lake Lucerne waterfront photograph taken in Lucerne; not Villa Honegg hotel or its elevated camera viewpoint"
+    }
+  ],
+  "newUniquePhotos": 0,
+  "photoPlaceMappingsBefore": 55,
+  "photoPlaceMappingsAfter": 59,
+  "runtimeChanged": false,
+  "sourceVerificationChanged": false,
+  "usageMeterAvailable": false,
+  "ownerIntendedUsageCapPercent": 5
+}
