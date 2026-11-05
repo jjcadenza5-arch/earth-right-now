@@ -3712,6 +3712,26 @@
       ],
       "why": "Actual current scenes/dates reviewed. Added two distinct external still-image places, renewed Husum and Sapporo. Herzogstand North actual3Nov09:30 image is dense fog with only nearby treetops, insufficient useful mountain/place detail; its old verification dates remain unchanged.",
       "next": "Maintain evidence/ordinary attributed external links. No embedding/media licence, video playback or new automatic pilot renewal inferred. Revisit Herzogstand only after material visibility improvement; preserve rights/quality holds and Watch ten/five design."
+    },
+    {
+      "id": "germany-alpine-stills-batch72-nov05",
+      "priority": "P1",
+      "placeGroup": "Funtensee, Stöhrhaus/Untersberg and Zugspitze summit; Eibsee glare hold",
+      "country": "Germany",
+      "candidateType": "FIRST_PARTY_CURRENT_STILL",
+      "state": "THREE_PLACES_ADMITTED_ONE_VISUAL_HOLD",
+      "reviewedAt": "2026-11-05T13:53:14Z",
+      "evidenceUrls": [
+        "https://www.foto-webcam.eu/webcam/funtensee/infos/",
+        "https://www.foto-webcam.eu/webcam/stoehrhaus/infos/",
+        "https://www.foto-webcam.eu/webcam/zugspitze-nord/infos/",
+        "https://www.foto-webcam.eu/webcam/eibsee-hotel/infos/",
+        "https://stoehrhaus.de/",
+        "https://zugspitze.de/de/Service-Informationen/Betriebszeiten-Fahrplaene",
+        "https://www.berchtesgaden.de/huetten/kaerlingerhaus-funtensee"
+      ],
+      "why": "Three actual720x405 downloaded 5Nov14:40CET frames show useful current lake/mountain/valley detail, checked separately from exact link permission. Eibsee-hotel14:40 has severe sun/lens glare across the water and mountains; not admitted or counted. Stöhrhaus operator staffed-season end18Oct supersedes conflicting tourism open labels. Zugspitze November closure notices retained in full destination guidance. Funtensee hut tourism page lists closed. No camera image establishes safe access or bookable services.",
+      "next": "Keep external refreshed-still labels and feature/watch holds; no moving stream or image-reuse promotion. Revisit Eibsee only after a material visibility improvement. Maintain exact operator notices before trip planning."
     }
   ],
   "guardrails": {

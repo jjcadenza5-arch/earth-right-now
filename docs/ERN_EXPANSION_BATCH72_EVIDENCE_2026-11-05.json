@@ -1,0 +1,99 @@
+{
+  "reviewedAt": "2026-11-05T13:53:14Z",
+  "schemaVersion": 1,
+  "baseline": "c73132655422d9740274c5b580378fba10db8d45",
+  "cameraEvidence": [
+    {
+      "camera": "eibsee-hotel",
+      "infoUrl": "https://www.foto-webcam.eu/webcam/eibsee-hotel/infos/",
+      "imageUrl": "https://www.foto-webcam.eu/webcam/eibsee-hotel/current/720.jpg",
+      "retrievedAt": "2026-11-05T13:49:33.830290+00:00",
+      "httpStatus": 200,
+      "lastModified": "Thu, 05 Nov 2026 13:40:32 GMT",
+      "sha256": "4191785e5457760e2520478042f0b995b71bb0291ae2cfa7a3d34c41943502e3",
+      "bytes": 106111,
+      "dimensions": [
+        720,
+        405
+      ],
+      "printedTime": "05.11.26 14:40",
+      "inferredUtc": "2026-11-05T13:40:00Z",
+      "clockAccuracy": "UNVERIFIED",
+      "decision": "VISUAL_GLARE_HOLD",
+      "mediaReusedInProduct": false
+    },
+    {
+      "camera": "funtensee",
+      "infoUrl": "https://www.foto-webcam.eu/webcam/funtensee/infos/",
+      "imageUrl": "https://www.foto-webcam.eu/webcam/funtensee/current/720.jpg",
+      "retrievedAt": "2026-11-05T13:49:33.818456+00:00",
+      "httpStatus": 200,
+      "lastModified": "Thu, 05 Nov 2026 13:40:28 GMT",
+      "sha256": "91eaeca4ee3f25caa2bcf3e77bc7cdf5fe3311d3fd38f0405a56c375a2555c6d",
+      "bytes": 250710,
+      "dimensions": [
+        720,
+        405
+      ],
+      "printedTime": "05.11.26 14:40",
+      "inferredUtc": "2026-11-05T13:40:00Z",
+      "clockAccuracy": "UNVERIFIED",
+      "decision": "ADMIT_EXTERNAL_REFRESHED_STILL",
+      "mediaReusedInProduct": false
+    },
+    {
+      "camera": "stoehrhaus",
+      "infoUrl": "https://www.foto-webcam.eu/webcam/stoehrhaus/infos/",
+      "imageUrl": "https://www.foto-webcam.eu/webcam/stoehrhaus/current/720.jpg",
+      "retrievedAt": "2026-11-05T13:49:33.822215+00:00",
+      "httpStatus": 200,
+      "lastModified": "Thu, 05 Nov 2026 13:40:16 GMT",
+      "sha256": "97156202224007ab76c6a4639ca202178f60059af6c6c33b29e45e40d9064285",
+      "bytes": 141500,
+      "dimensions": [
+        720,
+        405
+      ],
+      "printedTime": "05.11.26 14:40",
+      "inferredUtc": "2026-11-05T13:40:00Z",
+      "clockAccuracy": "UNVERIFIED",
+      "decision": "ADMIT_EXTERNAL_REFRESHED_STILL",
+      "mediaReusedInProduct": false
+    },
+    {
+      "camera": "zugspitze-nord",
+      "infoUrl": "https://www.foto-webcam.eu/webcam/zugspitze-nord/infos/",
+      "imageUrl": "https://www.foto-webcam.eu/webcam/zugspitze-nord/current/720.jpg",
+      "retrievedAt": "2026-11-05T13:49:33.970464+00:00",
+      "httpStatus": 200,
+      "lastModified": "Thu, 05 Nov 2026 13:40:03 GMT",
+      "sha256": "8df2fce2f9ae427b15e593ccde650ec7419ebb6ccb9983b72666ee8fedc69e55",
+      "bytes": 193413,
+      "dimensions": [
+        720,
+        405
+      ],
+      "printedTime": "05.11.26 14:40",
+      "inferredUtc": "2026-11-05T13:40:00Z",
+      "clockAccuracy": "UNVERIFIED",
+      "decision": "ADMIT_EXTERNAL_REFRESHED_STILL",
+      "mediaReusedInProduct": false
+    }
+  ],
+  "affiliateLinkChecks": [
+    {
+      "requested": "https://www.viator.com/Garmisch-Partenkirchen-attractions/Zugspitze/d22133-a18916?pid=P00322254&mcid=42383&medium=link",
+      "url": "https://www.viator.com/Garmisch-Partenkirchen-attractions/Zugspitze/d22133-a18916?pid=P00322254&mcid=42383&medium=link",
+      "status": 200,
+      "retrievedAt": "2026-11-05T13:50:49.506693+00:00",
+      "bytes": 647094
+    },
+    {
+      "requested": "https://www.viator.com/Berchtesgaden-tours/Tours-and-Sightseeing/d50870-g12?pid=P00322254&mcid=42383&medium=link",
+      "url": "https://www.viator.com/Berchtesgaden-tours/Tours-and-Sightseeing/d50870-g12?pid=P00322254&mcid=42383&medium=link",
+      "status": 200,
+      "retrievedAt": "2026-11-05T13:50:49.482704+00:00",
+      "bytes": 333927
+    }
+  ]
+}
