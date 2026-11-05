@@ -7897,8 +7897,8 @@
     "playback": "EXTERNAL",
     "sourceUrl": "https://www.hermitage.co.nz/webcam?view=Wide+View",
     "attribution": "The Hermitage Hotel",
-    "checkedAt": "2026-11-04T01:28:19Z",
-    "lastSuccessfulCheck": "2026-11-04T01:28:19Z",
+    "checkedAt": "2026-11-05T01:56:37Z",
+    "lastSuccessfulCheck": "2026-11-05T01:56:37Z",
     "quality": 98,
     "freshness": 99,
     "moment": 98,
@@ -7906,7 +7906,7 @@
     "featuredHold": true,
     "watchHold": true,
     "rightsBasis": "First-party hotel/destination webcam page; ERN links externally and does not infer republication rights.",
-    "freshnessEvidence": "4Nov2026 actual browser scene reviewed: valley sides, rock/snow patches and cloud hiding summit. Decoded1280px image AorakiMountCook/202611041415_1280.jpg; visible2:15PM/Now label. NZ local date/time inferred from filename and current review, implies01:15Z minute precision; camera clock accuracy unverified. Provider advertises5images/hour, not independently measured. Remains external refreshed still, quality and featured/watch holds unchanged.",
+    "freshnessEvidence": "5Nov2026 actual browser decoded1280x720 first-party-published AorakiMountCook/202611051442_1280.jpg fully inspected as an image, distinct from hotel promotional photographs. Valley sides, rock/snow patches and snow-covered nearer peak visible with substantial cloud obscuring upper/distant mountain. Filename local date/time implies5Nov14:42 NZDT /01:42Z at minute precision, timezone inferred and camera clock accuracy unverified, about10-20minutes old during review. Provider cadence not measured. External refreshed still only; existing quality/featured/watch holds and rights basis unchanged. Prior4Nov proof retained in batch64 evidence.",
     "searchSupplemental": true
   },
   {
