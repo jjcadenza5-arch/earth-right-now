@@ -1,0 +1,68 @@
+{
+  "reviewedAt": "2026-11-05T02:29:07Z",
+  "affiliatePlacements": [
+    {
+      "id": "viator-au-trigg-point-perth-activities",
+      "placeId": "au-trigg-point",
+      "title": "Explore Perth-region activities — check departure",
+      "destinationScope": "Perth metropolitan and regional outings; not beach admission, local surf lessons or beach pickup",
+      "url": "https://www.viator.com/Perth/d389-ttd?pid=P00322254&mcid=42383&medium=link",
+      "provider": "Viator",
+      "partnerId": "viator",
+      "intent": "activities",
+      "affiliate": true,
+      "sponsored": false,
+      "disclosure": "Affiliate link",
+      "verified": true,
+      "verifiedAt": "2026-11-05T02:29:07Z",
+      "expiresAt": "2026-12-26T13:17:00Z",
+      "commissionClaimed": false,
+      "verificationMethod": "PRIMARY_PAGE_BROWSER_REVIEW_PLUS_EXISTING_OWNER_TRACKING_ID",
+      "placementReviewedAt": "2026-11-05T02:29:07Z",
+      "evidence": "5Nov2026 exact tracked Perth destination URL rendered200+results with Perth/WesternAustralia/Australia breadcrumbs and city sightseeing/SwanRiver/Rottnest options. Geographically relevant broader Perth planning from this metropolitan beach, not a specific activity at the beach. Check each itinerary, departure/meeting point, travel to it, dates and operator terms. No beach pickup/admission, surf instruction, swimming safety, operating availability, booking or income implied. Existing owner/account/partner proof and expiry retained; no prices/ratings/provider prose copied. Two placements reuse one newly checked tracked destinationURL, not two unique links or programs."
+    },
+    {
+      "id": "viator-au-swanbourne-beach-perth-activities",
+      "placeId": "au-swanbourne-beach",
+      "title": "Explore Perth-region activities — check departure",
+      "destinationScope": "Perth metropolitan and regional outings; not beach admission, local surf lessons or beach pickup",
+      "url": "https://www.viator.com/Perth/d389-ttd?pid=P00322254&mcid=42383&medium=link",
+      "provider": "Viator",
+      "partnerId": "viator",
+      "intent": "activities",
+      "affiliate": true,
+      "sponsored": false,
+      "disclosure": "Affiliate link",
+      "verified": true,
+      "verifiedAt": "2026-11-05T02:29:07Z",
+      "expiresAt": "2026-12-26T13:17:00Z",
+      "commissionClaimed": false,
+      "verificationMethod": "PRIMARY_PAGE_BROWSER_REVIEW_PLUS_EXISTING_OWNER_TRACKING_ID",
+      "placementReviewedAt": "2026-11-05T02:29:07Z",
+      "evidence": "5Nov2026 exact tracked Perth destination URL rendered200+results with Perth/WesternAustralia/Australia breadcrumbs and city sightseeing/SwanRiver/Rottnest options. Geographically relevant broader Perth planning from this metropolitan beach, not a specific activity at the beach. Check each itinerary, departure/meeting point, travel to it, dates and operator terms. No beach pickup/admission, surf instruction, swimming safety, operating availability, booking or income implied. Existing owner/account/partner proof and expiry retained; no prices/ratings/provider prose copied. Two placements reuse one newly checked tracked destinationURL, not two unique links or programs."
+    }
+  ],
+  "termsReview": {
+    "familyId": "youtube",
+    "url": "https://developers.google.com/youtube/terms/required-minimum-functionality",
+    "previousReviewedAt": "2026-09-24T15:54:00Z",
+    "reviewedAt": "2026-11-05T02:29:07Z",
+    "pageUpdatedAt": "2026-11-01",
+    "permissionConfirmed": false,
+    "promotionUnchanged": true
+  },
+  "deferredCameraResearch": [
+    {
+      "provider": "Coastguard Whakatane",
+      "url": "https://www.coastguardwhakatane.co.nz/whakatane-harbour-cameras/",
+      "reason": "Primary page explicitly requires written permission for commercial/business image use. No imagery/iframe/catalog promotion; no permission inferred from public access."
+    },
+    {
+      "provider": "GeoNet",
+      "url": "https://www.geonet.org.nz/volcano/cameras/whakatane",
+      "reason": "Independent current page showed5Nov15:20NZDT thumbnail; DOM-published fullWHOH.0220261105152000NZDT.jpg request blocked by client. No full-frame inspection established, so not added or counted; no bypass attempted."
+    }
+  ],
+  "cameraVerificationDatesChanged": false,
+  "paidTraffic": "HOLD"
+}
