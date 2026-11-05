@@ -1,3 +1,7 @@
+## 2026-11-05 Bangkok — Batch71 ACCEPTED after recovery
+
+Production c4be0693bcf5b76962fa47350ce9feeff38f8150; Pages run 42038065402/job127281297537 SUCCESS, including release smoke, build, deploy, social metadata and visitor reality sync. All 122 release tests also passed locally. Served release manifest identifies c4be0693; three destination HTML SHA256 hashes match its manifest. Küssnacht clock discrepancy/regional pickup limits, Niederhorn 15 November season/admission limits, and Rigi route/spa maintenance notices all verified in served full guidance. Existing successful Operations run42013388490 on7c546faf retained for unchanged source/offer data; no new Operations run claimed. Batch71 coverage902/1,000,265eligible affiliate placements/144uniqueURLs/fourprograms,59photo mappings and Watch up to10selected/fivevisible unchanged. Continue maintenance-first selective expansion toward1,000 plus staged licensed photo improvements; preserve all holds, evidence timestamps, website and existing deployment workflow. Paid traffic remains HOLD.
+
 ## 2026-11-05 Bangkok — Batch71 prepared: Küssnacht and Niederhorn
 
 Guidance follow-up: served checks found the220-character source-story/short-description builder hid important notices. Added build-only full-length viewing guidance for Küssnacht clock discrepancy, Niederhorn15November season and regional-offer limits, plus Rigi exact route/spa breaks. No runtime/source/offer changes or weakened assertions. Initial camera release succeeded; follow-up publication required before batch acceptance.
