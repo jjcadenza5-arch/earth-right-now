@@ -52,5 +52,52 @@
       "result": "Actual2304x1728 night image inspected; caption RigiBistro04:00/05Nov26, CETinferred03:00Z, clock accuracy unverified. Terrace/tables/foldedparasols/roof visible; distant panorama not usable. No catalog promotion or mountain visibility claim. Recheck daylight only if useful; not a broken-source conclusion."
     }
   ],
-  "affiliateInventoryUnchanged": true
+  "affiliateInventoryUnchanged": true,
+  "caseyMaintenance": {
+    "reviewedAt": "2026-11-05T03:09:32Z",
+    "previousRecord": {
+      "id": "antarctica-casey-station",
+      "placeId": "antarctica-casey-station",
+      "title": "Casey Research Station — Antarctica",
+      "provider": "Australian Antarctic Program",
+      "country": "Antarctica",
+      "region": "Windmill Islands",
+      "categories": [
+        "Polar Earth",
+        "Science & Research",
+        "Beautiful Earth"
+      ],
+      "truth": "LIVE_IMAGE",
+      "permission": "LINK_ONLY",
+      "health": "HEALTHY",
+      "playback": "EXTERNAL",
+      "sourceUrl": "https://www.antarctica.gov.au/antarctic-operations/webcams/casey/",
+      "attribution": "Australian Antarctic Program",
+      "checkedAt": "2026-10-15T02:35:53Z",
+      "lastSuccessfulCheck": "2026-10-15T02:35:53Z",
+      "quality": 91,
+      "freshness": 98,
+      "moment": 88,
+      "featuredHold": true,
+      "watchHold": true,
+      "searchOnly": true,
+      "story": "Official current still images from Australia's Casey research station in Antarctica.",
+      "refreshIntervalSeconds": 180,
+      "verificationClass": "QUASI_LIVE_OFFICIAL_REFRESH",
+      "lat": -66.282,
+      "lon": 110.527,
+      "coordinateBasis": "PLACE_REFERENCE",
+      "timeZone": "Antarctica/Casey",
+      "rightsBasis": "Link only.",
+      "freshnessEvidence": "15Oct view."
+    },
+    "sourceUrl": "https://www.antarctica.gov.au/antarctic-operations/webcams/casey/",
+    "imageUrl": "https://images.antarctica.gov.au/webcams/casey/2026/11/05/C2611050303s.jpg",
+    "dimensions": [
+      704,
+      564
+    ],
+    "observed": "Actual full decoded still shows snow-covered station yard, red buildings, containers, rocks, yellow vehicle, flag and cloudy sky. Burned-in Thu05Nov2026 02:03pm AEDT implies03:03Z; website caption calls this local CAST, discrepancy preserved, no timezone-field change or camera clock accuracy claim. Time-lapse player not treated as moving live proof. Existing quality91/searchOnly/feature/watch/rights holds unchanged; external official-page handoff only.",
+    "cause": "Pages guard fell to19candidates/9countries when three Antarctic records passed21days. Actual Casey renewal restores20/10 without weakening thresholds or renewing Davis/Mawson."
+  }
 }
