@@ -3,15 +3,57 @@
   "reviewedAt": "2026-11-03",
   "purpose": "Original visitor guidance based on existing reviewed camera scope. Never verification evidence, opening-hour advice or permission to promote a source.",
   "places": {
-    "mpala-watering-hole": ["Use the Mpala watering-hole view to look for wildlife around the water and compare light across the scene. Animals may be outside the frame; an empty view does not mean wildlife is absent from the wider research centre.", "The dated elephant photograph is background context, not a sighting from this camera. Watching this feed does not establish visitor access to Mpala; consult the research centre before planning an in-person visit."],
-    "new-york-harbor": ["This Brooklyn waterfront camera offers a Manhattan skyline and East River context. Look at the visible skyline, light and waterfront activity before choosing a place to explore; one camera cannot describe conditions across all of New York.", "The archival cover photograph was taken from Brooklyn Bridge Park, a different viewpoint from the Navy Yard camera. Confirm the address and departure point of any attraction, activity or transfer separately; a skyline view does not confirm public access to the camera site."],
-    "kyoto-hanamikoji": ["Look along Hanamikoji for the street scene and the amount of pedestrian activity visible in the frame before exploring Gion. The camera covers one view; it cannot measure crowding throughout the district.", "Compare the live view with the dated editorial street photograph rather than treating the photograph as today's conditions. Respect local signs and private entrances, and check an activity's meeting point before booking."],
-    "taiwan-yehliu": ["Use the Yehliu Geopark view as a first look at Taiwan's North Coast. Look for the detail and visibility the camera actually shows; cloud, darkness or framing may limit what can be seen.", "A clear-looking camera view does not establish opening hours, weather safety or access to individual rock formations. Follow the destination's visitor-information links and confirm an activity's departure point separately."],
-    "taitung-jinzun": ["The Jinzun camera gives a Pacific-coast view in Taitung. Compare the visible coast, light and sea appearance before deciding whether the scene suits the visit you have in mind.", "This distant view is not a surf, swimming or marine-safety assessment. Check official local notices and your transport or activity details separately; the camera cannot establish beach access or conditions outside its frame."],
-    "davos-jakobshorn": ["The Jakobshorn panorama source is retained for mountain context, but its player failed the latest owner review. Use the source-status section below to distinguish that failed player from any current ERN alternatives.", "The official provider link is a fallback, not a claim that playback has recovered. Check mountain access, transport and operating notices with the relevant operator before travelling; an older mountain photograph or previous successful check does not establish today's visibility."],
-    "kyoto-nishiki-market": ["Nishiki Market's provider publishes a live-camera window of 11:00–18:00 in Japan time. That is a camera schedule, not a statement of the opening hours of every shop. ERN also requires current playback evidence before showing the source as live.", "Outside the camera window, footage that still plays may not represent the market now. Use nearby verified Kyoto views for current visual context and check individual businesses separately when planning a visit."],
-    "germany-dagebull-ferry": ["The Dagebüll source is an external refreshed still image of the ferry-terminal lanes, boarding structures and waterfront. Open the provider's image and check its timestamp before comparing the terminal scene with your travel plans.", "A still photograph cannot confirm queue length, sailing status or departure time. Check the ferry operator's timetable and service notices for journeys toward the North Frisian islands; ERN does not infer transport availability from the camera."],
-    "norway-lillevik-gimsoy": ["The Lillevik view looks over shore and water toward a mountain ridge on Gimsøy in Lofoten. It is an external refreshed still, so inspect the provider's timestamp and visible cloud or darkness rather than expecting continuous moving video.", "The camera does not establish access to private land or predict mountain visibility later in the day. Regional activity links may depart elsewhere in Lofoten; check the meeting point and transfer arrangements before booking."],
-    "oeschinensee": ["The Oeschinensee source is kept as a reference while current-image verification is due. The dated lake photograph illustrates the destination and must not be read as today's mountain visibility or lake conditions.", "Open the official source for its latest camera and visitor notices before planning around the lake view. Confirm access, transport and operating information independently; an expired camera check does not establish whether a route is open."]
+    "mpala-watering-hole": [
+      "Use the Mpala watering-hole view to look for wildlife around the water and compare light across the scene. Animals may be outside the frame; an empty view does not mean wildlife is absent from the wider research centre.",
+      "The dated elephant photograph is background context, not a sighting from this camera. Watching this feed does not establish visitor access to Mpala; consult the research centre before planning an in-person visit."
+    ],
+    "new-york-harbor": [
+      "This Brooklyn waterfront camera offers a Manhattan skyline and East River context. Look at the visible skyline, light and waterfront activity before choosing a place to explore; one camera cannot describe conditions across all of New York.",
+      "The archival cover photograph was taken from Brooklyn Bridge Park, a different viewpoint from the Navy Yard camera. Confirm the address and departure point of any attraction, activity or transfer separately; a skyline view does not confirm public access to the camera site."
+    ],
+    "kyoto-hanamikoji": [
+      "Look along Hanamikoji for the street scene and the amount of pedestrian activity visible in the frame before exploring Gion. The camera covers one view; it cannot measure crowding throughout the district.",
+      "Compare the live view with the dated editorial street photograph rather than treating the photograph as today's conditions. Respect local signs and private entrances, and check an activity's meeting point before booking."
+    ],
+    "taiwan-yehliu": [
+      "Use the Yehliu Geopark view as a first look at Taiwan's North Coast. Look for the detail and visibility the camera actually shows; cloud, darkness or framing may limit what can be seen.",
+      "A clear-looking camera view does not establish opening hours, weather safety or access to individual rock formations. Follow the destination's visitor-information links and confirm an activity's departure point separately."
+    ],
+    "taitung-jinzun": [
+      "The Jinzun camera gives a Pacific-coast view in Taitung. Compare the visible coast, light and sea appearance before deciding whether the scene suits the visit you have in mind.",
+      "This distant view is not a surf, swimming or marine-safety assessment. Check official local notices and your transport or activity details separately; the camera cannot establish beach access or conditions outside its frame."
+    ],
+    "davos-jakobshorn": [
+      "The Jakobshorn panorama source is retained for mountain context, but its player failed the latest owner review. Use the source-status section below to distinguish that failed player from any current ERN alternatives.",
+      "The official provider link is a fallback, not a claim that playback has recovered. Check mountain access, transport and operating notices with the relevant operator before travelling; an older mountain photograph or previous successful check does not establish today's visibility."
+    ],
+    "kyoto-nishiki-market": [
+      "Nishiki Market's provider publishes a live-camera window of 11:00–18:00 in Japan time. That is a camera schedule, not a statement of the opening hours of every shop. ERN also requires current playback evidence before showing the source as live.",
+      "Outside the camera window, footage that still plays may not represent the market now. Use nearby verified Kyoto views for current visual context and check individual businesses separately when planning a visit."
+    ],
+    "germany-dagebull-ferry": [
+      "The Dagebüll source is an external refreshed still image of the ferry-terminal lanes, boarding structures and waterfront. Open the provider's image and check its timestamp before comparing the terminal scene with your travel plans.",
+      "A still photograph cannot confirm queue length, sailing status or departure time. Check the ferry operator's timetable and service notices for journeys toward the North Frisian islands; ERN does not infer transport availability from the camera."
+    ],
+    "norway-lillevik-gimsoy": [
+      "The Lillevik view looks over shore and water toward a mountain ridge on Gimsøy in Lofoten. It is an external refreshed still, so inspect the provider's timestamp and visible cloud or darkness rather than expecting continuous moving video.",
+      "The camera does not establish access to private land or predict mountain visibility later in the day. Regional activity links may depart elsewhere in Lofoten; check the meeting point and transfer arrangements before booking."
+    ],
+    "oeschinensee": [
+      "The Oeschinensee source is kept as a reference while current-image verification is due. The dated lake photograph illustrates the destination and must not be read as today's mountain visibility or lake conditions.",
+      "Open the official source for its latest camera and visitor notices before planning around the lake view. Confirm access, transport and operating information independently; an expired camera check does not establish whether a route is open."
+    ],
+    "switzerland-kuessnacht": [
+      "The refreshed still shows Küssnacht rooftops, church tower and lakefront; haze may hide the far shore. The reviewed camera clock appeared about 15 minutes ahead of the review clock. Treat the capture time cautiously and check it at the provider; ERN has not calibrated the camera clock.",
+      "Regional Rigi excursion links are not Küssnacht pickup or local admission. Check departure town, onward connections, exact itinerary and the Rigi operator’s maintenance notices before booking."
+    ],
+    "switzerland-niederhorn": [
+      "This is a refreshed panoramic still, not continuous moving video. Low cloud can conceal Lake Thun and the valley even when distant mountain peaks are visible. Check the selected image date in the provider viewer.",
+      "The operator advertises the autumn season through 15 November 2026. Check the current timetable, lift, weather and trail notices before travel. Interlaken-region affiliate options are not Niederhorn admission, summit pickup or included transport to the cable car."
+    ],
+    "switzerland-rigi-kulm": [
+      "The Rigi Bistro camera shows terrace, tracks and an Alpine horizon; roof, parasols, wires and glare limit the view. A visible station does not confirm a train, restaurant or trail is open.",
+      "Operator notice reviewed 5 November 2026: Kräbel–Rigi Scheidegg cable car has weekday maintenance 2–13 November; Weggis–Rigi Kaltbad has weekday maintenance 16–27 November. The mineral baths list a 23–27 November break. Check the operator’s current operating information, exact route and travel to the valley station before booking."
+    ]
   }
 }
