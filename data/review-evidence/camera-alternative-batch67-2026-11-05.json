@@ -1,0 +1,56 @@
+{
+  "reviewedAt": "2026-11-05T03:02:58Z",
+  "newAlternativeSource": {
+    "country": "Australia",
+    "region": "Western Australia",
+    "timeZone": "Australia/Perth",
+    "truth": "LIVE_IMAGE",
+    "permission": "LINK_ONLY",
+    "health": "HEALTHY",
+    "playback": "EXTERNAL",
+    "featuredHold": true,
+    "watchHold": true,
+    "searchSupplemental": true,
+    "externalWindowRequired": true,
+    "freshness": 90,
+    "provider": "Western Australia Department of Transport and Major Infrastructure",
+    "attribution": "State of Western Australia / Department of Transport and Major Infrastructure",
+    "rightsSourceUrl": "https://transport.wa.gov.au/marine/charts-warnings-current-conditions/coastal-data-charts/disclaimer-copyright",
+    "rightsBasis": "Official WA Government public coast-cam service, attributed external camera-page link only. Linked coastal-data copyright/disclaimer reviewed; no broad image reuse, copying, cropping, hotlinking or embedding permission inferred or exercised. No government endorsement implied.",
+    "checkedAt": "2026-11-05T03:02:58Z",
+    "lastSuccessfulCheck": "2026-11-05T03:02:58Z",
+    "moment": 80,
+    "id": "au-jurien-bay-harbour-current",
+    "placeId": "au-jurien-bay-coast",
+    "title": "Jurien Bay — Harbour Entrance",
+    "seoName": "Jurien Bay Coast",
+    "categories": [
+      "Harbors",
+      "Coasts",
+      "Useful Earth"
+    ],
+    "quality": 65,
+    "sourceUrl": "https://transport.wa.gov.au/marine/charts-warnings-current-conditions/coast-cams/jurien-bay-harbour",
+    "officialUrl": "https://transport.wa.gov.au/marine/charts-warnings-current-conditions/coast-cams/jurien-bay-harbour",
+    "story": "An alternative official refreshed still looks across Jurien Bay harbour entrance and its rock breakwaters. Water, a channel marker, foreshore vegetation and a distant shoreline are visible, but foreground scaffolding and stairs block much of the right-hand view. Use this limited harbour window alongside the coastal camera, not as a clear panorama or evidence of safe navigation, boat departures, wildlife or public access. Check the image clock and current marine notices; archive frames can be older.",
+    "freshnessEvidence": "5Nov2026 actual browser decoded2560x1440 active1000.jpg fully inspected. Burned-in DTMI/JurienBayHarbour/Thu05Nov2026/10:00:05. Harbour water/rock breakwaters/channel marker/foreshore vegetation/distant shoreline visible; substantial scaffolding/stairs obstruct foreground/right. Perth AWST inferred02:00:05Z, clock accuracy unverified, around1hour old at review. Provider one-minute statement not measured. Conservative quality65/feature/watch holds, refreshed still only. Shared existing Jurien Bay placeId: alternative view, not an additional distinct destination. Existing coast camera dates unchanged."
+  },
+  "distinctPlacesAdded": 0,
+  "sourceRecordsAdded": 1,
+  "movingStreamsAdded": 0,
+  "existingCameraDatesUnchanged": true,
+  "rightsResearchReused": true,
+  "mediaReuseAllowed": false,
+  "deferredResearch": [
+    {
+      "sourceUrl": "https://www.capeegmontsearescue.org.nz/live-cams/",
+      "result": "Browser camera area unavailable; organization-block message, no bypass or currentness inferred."
+    },
+    {
+      "sourceUrl": "https://www.rigi.ch/en/inform/webcams",
+      "observedImage": "https://rigipic.ch/RigiBistro.jpg?ver=1793847643293",
+      "result": "Actual2304x1728 night image inspected; caption RigiBistro04:00/05Nov26, CETinferred03:00Z, clock accuracy unverified. Terrace/tables/foldedparasols/roof visible; distant panorama not usable. No catalog promotion or mountain visibility claim. Recheck daylight only if useful; not a broken-source conclusion."
+    }
+  ],
+  "affiliateInventoryUnchanged": true
+}

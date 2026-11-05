@@ -4543,5 +4543,40 @@
     "officialUrl": "https://transport.wa.gov.au/marine/charts-warnings-current-conditions/coast-cams/trigg-point",
     "story": "Look west from the Trigg Surf Life Saving Tower over the beach, breaking waves and Indian Ocean in an official refreshed still. The reviewed image shows coastal vegetation, sand, several people in the surf and a distant vessel. Check the capture clock and current beach notices before visiting; visible surfers do not establish safe conditions, patrol coverage or suitability for a lesson. Archive controls can show older views.",
     "freshnessEvidence": "5Nov2026 actual browser decoded2560x1440 active0913.jpg fully inspected. Burned-in DTMI/TriggPoint/Thu05Nov2026/09:13:05. Beach, vegetation, breaking waves, people in surf and distant vessel visible under blue sky. Perth AWST inferred01:13:05Z; camera clock accuracy unverified, around1hour old at review. Published one-minute capture statement not measured. Refreshed still only; no safe-swimming or patrol inference. Reused existing WA rights research, official-page link only."
+  },
+  {
+    "country": "Australia",
+    "region": "Western Australia",
+    "timeZone": "Australia/Perth",
+    "truth": "LIVE_IMAGE",
+    "permission": "LINK_ONLY",
+    "health": "HEALTHY",
+    "playback": "EXTERNAL",
+    "featuredHold": true,
+    "watchHold": true,
+    "searchSupplemental": true,
+    "externalWindowRequired": true,
+    "freshness": 90,
+    "provider": "Western Australia Department of Transport and Major Infrastructure",
+    "attribution": "State of Western Australia / Department of Transport and Major Infrastructure",
+    "rightsSourceUrl": "https://transport.wa.gov.au/marine/charts-warnings-current-conditions/coastal-data-charts/disclaimer-copyright",
+    "rightsBasis": "Official WA Government public coast-cam service, attributed external camera-page link only. Linked coastal-data copyright/disclaimer reviewed; no broad image reuse, copying, cropping, hotlinking or embedding permission inferred or exercised. No government endorsement implied.",
+    "checkedAt": "2026-11-05T03:02:58Z",
+    "lastSuccessfulCheck": "2026-11-05T03:02:58Z",
+    "moment": 80,
+    "id": "au-jurien-bay-harbour-current",
+    "placeId": "au-jurien-bay-coast",
+    "title": "Jurien Bay — Harbour Entrance",
+    "seoName": "Jurien Bay Coast",
+    "categories": [
+      "Harbors",
+      "Coasts",
+      "Useful Earth"
+    ],
+    "quality": 65,
+    "sourceUrl": "https://transport.wa.gov.au/marine/charts-warnings-current-conditions/coast-cams/jurien-bay-harbour",
+    "officialUrl": "https://transport.wa.gov.au/marine/charts-warnings-current-conditions/coast-cams/jurien-bay-harbour",
+    "story": "An alternative official refreshed still looks across Jurien Bay harbour entrance and its rock breakwaters. Water, a channel marker, foreshore vegetation and a distant shoreline are visible, but foreground scaffolding and stairs block much of the right-hand view. Use this limited harbour window alongside the coastal camera, not as a clear panorama or evidence of safe navigation, boat departures, wildlife or public access. Check the image clock and current marine notices; archive frames can be older.",
+    "freshnessEvidence": "5Nov2026 actual browser decoded2560x1440 active1000.jpg fully inspected. Burned-in DTMI/JurienBayHarbour/Thu05Nov2026/10:00:05. Harbour water/rock breakwaters/channel marker/foreshore vegetation/distant shoreline visible; substantial scaffolding/stairs obstruct foreground/right. Perth AWST inferred02:00:05Z, clock accuracy unverified, around1hour old at review. Provider one-minute statement not measured. Conservative quality65/feature/watch holds, refreshed still only. Shared existing Jurien Bay placeId: alternative view, not an additional distinct destination. Existing coast camera dates unchanged."
   }
 ]
