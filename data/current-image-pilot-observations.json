@@ -9,24 +9,6 @@
   ],
   "observations": [
     {
-      "observedAt": "2026-10-07T00:57:52.168Z",
-      "utcDate": "2026-10-07",
-      "event": "schedule",
-      "state": "RENEWED",
-      "items": [
-        {
-          "id": "yellowstone-biscuit-basin-current-image",
-          "evidenceTimestamp": "Wed, 07 Oct 2026 00:45:06 GMT",
-          "evidenceAgeMinutes": 12.8
-        },
-        {
-          "id": "nz-ruapehu-current-image",
-          "evidenceTimestamp": "Wed, 07 Oct 2026 00:51:02 GMT",
-          "evidenceAgeMinutes": 6.8
-        }
-      ]
-    },
-    {
       "observedAt": "2026-10-08T00:58:16.011Z",
       "utcDate": "2026-10-08",
       "event": "schedule",
@@ -545,6 +527,24 @@
           "id": "nz-ruapehu-current-image",
           "evidenceTimestamp": "Sat, 07 Nov 2026 06:21:02 GMT",
           "evidenceAgeMinutes": 10.3
+        }
+      ]
+    },
+    {
+      "observedAt": "2026-11-08T06:38:07.006Z",
+      "utcDate": "2026-11-08",
+      "event": "schedule",
+      "state": "RENEWED",
+      "items": [
+        {
+          "id": "yellowstone-biscuit-basin-current-image",
+          "evidenceTimestamp": "Sun, 08 Nov 2026 06:30:05 GMT",
+          "evidenceAgeMinutes": 8
+        },
+        {
+          "id": "nz-ruapehu-current-image",
+          "evidenceTimestamp": "Sun, 08 Nov 2026 06:31:02 GMT",
+          "evidenceAgeMinutes": 7.1
         }
       ]
     }
