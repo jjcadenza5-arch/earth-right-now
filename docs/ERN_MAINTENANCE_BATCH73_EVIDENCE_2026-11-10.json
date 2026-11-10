@@ -1,0 +1,80 @@
+{
+  "reviewedAt": "2026-11-10T14:09:33Z",
+  "baseline": "de4118bb9d278ba8b8b0e57d799bdc6517b33bb5",
+  "watchReport": {
+    "checkedAt": "2026-11-10T14:05:48.959Z",
+    "status": "EMPTY",
+    "target": 10,
+    "targetRole": "CEILING_NOT_QUOTA",
+    "curatedFloor": 5,
+    "count": 0,
+    "capacityRemaining": 10,
+    "shortfall": 0,
+    "places": 0,
+    "countries": 0,
+    "providers": 0,
+    "inside": 0,
+    "daylight": 0,
+    "golden": 0,
+    "nightCities": 0,
+    "ids": [],
+    "staleOrExpiredCatalogSources": 330,
+    "note": "Watch Earth target is a ceiling, not a quota. If fewer than five verified live streams remain, report the shortfall instead of inserting still images, external-only sources or unverified feeds. This report uses the actual current clock and does not replace HUMAN_PLAYBACK or release evidence."
+  },
+  "reviewBatch": "9356e70e78187d60",
+  "newCameraAdmissions": 0,
+  "websiteMutation": false,
+  "sources": [
+    {
+      "camera": "sonnenbichl",
+      "sourceUrl": "https://www.foto-webcam.eu/webcam/sonnenbichl/infos/",
+      "imageUrl": "https://www.foto-webcam.eu/webcam/sonnenbichl/current/720.jpg",
+      "retrievedAt": "2026-11-10T14:07:20.929768+00:00",
+      "httpStatus": 200,
+      "lastModified": "Tue, 10 Nov 2026 14:00:08 GMT",
+      "sha256": "30e1e5cd8ba36cb7cecf448aca69ecaebf7d5637eb728d80af044bf2093662af",
+      "dimensions": [
+        720,
+        405
+      ],
+      "decision": "HOLD_DENSE_FOG_NO_USEFUL_PLACE_DETAIL",
+      "printedTime": "10.11.26 15:00",
+      "clockAccuracy": "UNVERIFIED",
+      "mediaReused": false
+    },
+    {
+      "camera": "karwendel",
+      "sourceUrl": "https://www.foto-webcam.eu/webcam/karwendel/infos/",
+      "imageUrl": "https://www.foto-webcam.eu/webcam/karwendel/current/720.jpg",
+      "retrievedAt": "2026-11-10T14:07:21.018738+00:00",
+      "httpStatus": 200,
+      "lastModified": "Sat, 25 Jan 2025 02:00:49 GMT",
+      "sha256": "b5633cb9e92d9e3c4d9b6bcf43c09bf1d22d4c6164377895c03b7f96f75c5da8",
+      "dimensions": [
+        720,
+        405
+      ],
+      "decision": "HOLD_OLD_IMAGE_25_JAN_2025",
+      "printedTime": "25.01.25 03:00",
+      "clockAccuracy": "UNVERIFIED",
+      "mediaReused": false
+    },
+    {
+      "camera": "jachenau",
+      "sourceUrl": "https://www.foto-webcam.eu/webcam/jachenau/infos/",
+      "imageUrl": "https://www.foto-webcam.eu/webcam/jachenau/current/720.jpg",
+      "retrievedAt": "2026-11-10T14:07:20.945642+00:00",
+      "httpStatus": 200,
+      "lastModified": "Tue, 10 Nov 2026 13:59:52 GMT",
+      "sha256": "106f34a8b59b72b3ff09d5845f33f530c13c7a8f81b14abb914b50e950cb5c94",
+      "dimensions": [
+        720,
+        405
+      ],
+      "decision": "HOLD_LIMITED_VISIBILITY_NO_ADMISSION",
+      "printedTime": "10.11.26 15:00",
+      "clockAccuracy": "UNVERIFIED",
+      "mediaReused": false
+    }
+  ]
+}
