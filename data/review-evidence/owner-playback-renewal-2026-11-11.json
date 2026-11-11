@@ -1,0 +1,119 @@
+{
+  "schemaVersion": 1,
+  "kind": "ERN_OPERATOR_REVIEW_EVIDENCE",
+  "generatedAt": "2026-11-11T05:01:43.996Z",
+  "reviewOrigin": "https://earthrightnow.app/review/inside-ern.html",
+  "reviewBatch": "9356e70e78187d60",
+  "catalogMutationAllowed": false,
+  "networkStatus": "UNKNOWN_NOT_RECORDED",
+  "items": [
+    {
+      "id": "auckland-viaduct-harbour",
+      "type": "restore",
+      "title": "Auckland Viaduct Harbour",
+      "provider": "Auckland Viaduct View",
+      "outcome": "HUMAN_PLAYBACK_CONFIRMED",
+      "observedAt": "2026-11-11T05:01:08.384Z",
+      "evidenceKind": "HUMAN_REVIEW",
+      "networkStatus": "UNKNOWN_NOT_RECORDED",
+      "sourceUrl": "https://www.viaduct.co.nz/",
+      "embedUrl": "https://www.youtube.com/embed/live_stream?channel=UCfNoVlW5-BHsoCKTGs_F0WQ"
+    },
+    {
+      "id": "kyoto-fushimi-inari-live",
+      "type": "restore",
+      "title": "Kyoto — Fushimi Inari",
+      "provider": "Kyoto City Tourism Association",
+      "outcome": "HUMAN_PLAYBACK_CONFIRMED",
+      "observedAt": "2026-11-11T05:01:26.796Z",
+      "evidenceKind": "HUMAN_REVIEW",
+      "networkStatus": "UNKNOWN_NOT_RECORDED",
+      "sourceUrl": "https://global.kyoto.travel/en/comfort/",
+      "embedUrl": "https://www.youtube-nocookie.com/embed/MMeBDRfRHyA"
+    },
+    {
+      "id": "kyoto-hanamikoji-live",
+      "type": "restore",
+      "title": "Kyoto — Hanamikoji Street",
+      "provider": "Kyoto City Tourism Association",
+      "outcome": "HUMAN_PLAYBACK_CONFIRMED",
+      "observedAt": "2026-11-11T05:01:13.580Z",
+      "evidenceKind": "HUMAN_REVIEW",
+      "networkStatus": "UNKNOWN_NOT_RECORDED",
+      "sourceUrl": "https://global.kyoto.travel/en/comfort/",
+      "embedUrl": "https://www.youtube-nocookie.com/embed/J3xHBUgWRqc"
+    },
+    {
+      "id": "kyoto-kifune-shrine-live",
+      "type": "restore",
+      "title": "Kyoto — Kifune Shrine",
+      "provider": "Kyoto City Tourism Association",
+      "outcome": "HUMAN_PLAYBACK_CONFIRMED",
+      "observedAt": "2026-11-11T05:01:16.929Z",
+      "evidenceKind": "HUMAN_REVIEW",
+      "networkStatus": "UNKNOWN_NOT_RECORDED",
+      "sourceUrl": "https://global.kyoto.travel/en/comfort/",
+      "embedUrl": "https://www.youtube-nocookie.com/embed/eJAqPCdS1cY"
+    },
+    {
+      "id": "kyoto-kiyomizuzaka-live",
+      "type": "restore",
+      "title": "Kyoto — Kiyomizu-zaka",
+      "provider": "Kyoto City Tourism Association",
+      "outcome": "HUMAN_PLAYBACK_CONFIRMED",
+      "observedAt": "2026-11-11T05:01:20.346Z",
+      "evidenceKind": "HUMAN_REVIEW",
+      "networkStatus": "UNKNOWN_NOT_RECORDED",
+      "sourceUrl": "https://global.kyoto.travel/en/comfort/",
+      "embedUrl": "https://www.youtube-nocookie.com/embed/cUnYPpK7ENk"
+    },
+    {
+      "id": "nyc-brooklyn-skyline-live",
+      "type": "restore",
+      "title": "New York — Manhattan Skyline from Brooklyn",
+      "provider": "Brooklyn Waterfront Cams",
+      "outcome": "HUMAN_PLAYBACK_CONFIRMED",
+      "observedAt": "2026-11-11T05:01:31.964Z",
+      "evidenceKind": "HUMAN_REVIEW",
+      "networkStatus": "UNKNOWN_NOT_RECORDED",
+      "sourceUrl": "https://brooklynwaterfront.cam/",
+      "embedUrl": "https://www.youtube-nocookie.com/embed/obqnslJKrxc"
+    },
+    {
+      "id": "rovaniemi-santa-claus-village-live",
+      "type": "restore",
+      "title": "Rovaniemi — Santa Claus Village",
+      "provider": "Santa Claus Village / City of Rovaniemi",
+      "outcome": "HUMAN_PLAYBACK_CONFIRMED",
+      "observedAt": "2026-11-11T05:01:00.231Z",
+      "evidenceKind": "HUMAN_REVIEW",
+      "networkStatus": "UNKNOWN_NOT_RECORDED",
+      "sourceUrl": "https://santaclausvillage.info/live-video-webcam/",
+      "embedUrl": "https://www.youtube-nocookie.com/embed/Cp4RRAEgpeU"
+    },
+    {
+      "id": "taitung-jinzun",
+      "type": "restore",
+      "title": "Taitung Jinzun — Pacific Coast",
+      "provider": "East Coast National Scenic Area",
+      "outcome": "HUMAN_PLAYBACK_CONFIRMED",
+      "observedAt": "2026-11-11T05:01:03.564Z",
+      "evidenceKind": "HUMAN_REVIEW",
+      "networkStatus": "UNKNOWN_NOT_RECORDED",
+      "sourceUrl": "https://www.eastcoast-nsa.gov.tw/en/service/live-camera/22/",
+      "embedUrl": "https://www.youtube-nocookie.com/embed/ZdqHgQwvZOw"
+    },
+    {
+      "id": "volcan-tajogaite",
+      "type": "restore",
+      "title": "Volcán Tajogaite",
+      "provider": "Webcam La Palma",
+      "outcome": "HUMAN_PLAYBACK_CONFIRMED",
+      "observedAt": "2026-11-11T05:01:39.930Z",
+      "evidenceKind": "HUMAN_REVIEW",
+      "networkStatus": "UNKNOWN_NOT_RECORDED",
+      "sourceUrl": "https://webcam-lapalma.de/webcam-vulkan-la-palma/",
+      "embedUrl": "https://webcam-lapalma.de/embed/vulkan/"
+    }
+  ]
+}
