@@ -5088,5 +5088,26 @@
     "placementReviewedAt": "2026-11-12T03:04:33.655181Z",
     "manualOpenVerified": false,
     "evidence": "12Nov2026 exact tracked Geraldton destination page rendered in browser, retaining existing ERN pidP00322254/mcid42383/mediumlink. Page identifies Geraldton and regional attractions; not marina admission, marina pickup or a promise of specific products/date availability. Existing owner/partner proof and expiry retained; no booking, commission attribution, earnings or copied supplier prose claimed."
+  },
+  {
+    "id": "viator-tegernsee-from-munich-selected",
+    "placeId": "germany-tegernsee-sonnenbichl",
+    "title": "Tegernsee trip options from Munich — selected result",
+    "destinationScope": "Selected Tegernsee day trip within broader Munich tour results; Munich departure, not Sonnenbichl pickup or ski admission",
+    "url": "https://www.viator.com/Munich/d487-ttd/p-265950P8?pid=P00322254&mcid=42383&medium=link",
+    "provider": "Viator",
+    "partnerId": "viator",
+    "intent": "activities",
+    "affiliate": true,
+    "sponsored": false,
+    "disclosure": "Affiliate link",
+    "verified": true,
+    "verifiedAt": "2026-11-12T09:17:28.999610Z",
+    "expiresAt": "2026-12-26T13:17:00Z",
+    "commissionClaimed": false,
+    "verificationMethod": "PRIMARY_PAGE_BROWSER_REVIEW_PLUS_EXISTING_OWNER_TRACKING_ID",
+    "placementReviewedAt": "2026-11-12T09:17:28.999610Z",
+    "manualOpenVerified": false,
+    "evidence": "12Nov2026 exact owner-tracked product URL redirected in browser to Munich/d487-ttd/p-265950P8 with ERN pidP00322254/mcid42383/mediumlink retained. Page renders the Tegernsee private excursion as You selected above broader Munich results. Clicking the selected card returned the same result view; no dedicated detail page or selected-date availability established. Label explicitly identifies selected result/Munich departure, not local camera-site pickup, ski admission or general guarantees about other results. Primary indexed itinerary describes seasonal spring/summer cruise component; public guidance asks visitors to verify itinerary, dates and cancellation terms. Existing owner/account/partner proofs and expiry retained. No supplier prose, price or review copied; no booking, earnings or commission attribution claimed."
   }
 ]

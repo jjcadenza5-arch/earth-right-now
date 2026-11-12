@@ -3779,6 +3779,25 @@
       ],
       "why": "Four distinct useful river settings with printed12Nov clocks, individually decoded and visually reviewed. Tokorima glare reduces contrast but river corridor remains visible, quality72 retained. Whanganui panorama heavy sun/lens glare; Hoihere road-dominant view without useful visible river detail held. No held scene counted. Zones/cadence not invented.",
       "next": "Keep external refreshed-still labels and feature/watch holds. No suitable current owner-tracked affiliate destination verified; do not force a regional match."
+    },
+    {
+      "id": "bavaria-clear-stills-batch78-nov12",
+      "priority": "P1",
+      "placeGroup": "Sonnenbichl/Tegernsee, Jachenau/Staffel and Samerberg/Toerwang",
+      "country": "Germany",
+      "candidateType": "FIRST_PARTY_CURRENT_STILL",
+      "state": "THREE_PLACES_ADMITTED_FOG_HOLDS_SUPERSEDED_BY_NEW_EVIDENCE",
+      "reviewedAt": "2026-11-12T09:17:28.999610Z",
+      "evidenceUrls": [
+        "https://www.foto-webcam.eu/webcam/sonnenbichl/",
+        "https://www.foto-webcam.eu/webcam/jachenau/",
+        "https://www.foto-webcam.eu/webcam/samerberg/",
+        "https://www.foto-webcam.eu/webcam/sonnenbichl/infos/",
+        "https://www.foto-webcam.eu/webcam/jachenau/infos/",
+        "https://www.foto-webcam.eu/webcam/samerberg/infos/"
+      ],
+      "why": "Actual12Nov10:10CET720x405 frames show useful lake/village/valley/ridge detail, materially improved from Batch73densefog for Sonnenbichl/Jachenau. Patches of low cloud retained, not claimed cloud-free. Samerberg municipality frame clear. Karwendel old-image hold and other prior holds unchanged.",
+      "next": "Keep external refreshed-still labels and feature/watch holds; no moving-video or image-reuse promotion. No ski/transport/hut availability inferred."
     }
   ],
   "guardrails": {
