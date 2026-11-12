@@ -3798,6 +3798,24 @@
       ],
       "why": "Actual12Nov10:10CET720x405 frames show useful lake/village/valley/ridge detail, materially improved from Batch73densefog for Sonnenbichl/Jachenau. Patches of low cloud retained, not claimed cloud-free. Samerberg municipality frame clear. Karwendel old-image hold and other prior holds unchanged.",
       "next": "Keep external refreshed-still labels and feature/watch holds; no moving-video or image-reuse promotion. No ski/transport/hut availability inferred."
+    },
+    {
+      "id": "us-nps-canyon-stills-batch79-nov12",
+      "priority": "P1",
+      "placeGroup": "Pine Springs, McKittrick Canyon and New River Gorge/CanyonRim; DogCanyon/PaintedDesert held",
+      "country": "United States",
+      "candidateType": "FIRST_PARTY_CURRENT_STILL",
+      "state": "THREE_PLACES_ADMITTED_TWO_CURRENTNESS_TECHNICAL_HOLDS",
+      "reviewedAt": "2026-11-12T15:54:38.810588Z",
+      "evidenceUrls": [
+        "https://www.nps.gov/media/webcam/view.htm?id=E73E3175-DF46-3AF2-28593FC1F83AE264",
+        "https://www.nps.gov/media/webcam/view.htm?id=422DD5D2-9580-4AA5-8140-B98006F693D3",
+        "https://www.nps.gov/neri/learn/photosmultimedia/webcams.htm",
+        "https://www.nps.gov/gumo/learn/photosmultimedia/gumo-webcams.htm",
+        "https://www.nps.gov/media/webcam/view.htm?id=81B46C72-1DD8-B71B-0BDC8D1824EBB9A7"
+      ],
+      "why": "Three actual useful12Nov dated stills inspected. PineSprings/McKittrick independent canyon destinations, not angles padded at same overlook. DogCanyon printed24Oct20:41:58 and HTTPmod25Oct:old nighttime image, not current. PaintedDesert page active label but image address unusable; no private/invalid-address request or replacement inferred. Carlsbad YouTube binding discovered but playback not reviewed, not admitted or counted.",
+      "next": "Keep external refreshed-still labels and feature/watch holds. No forced affiliate match or moving-stream promotion. Revisit held sources only on material fresh evidence."
     }
   ],
   "guardrails": {
