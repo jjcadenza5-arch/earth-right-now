@@ -5067,5 +5067,26 @@
     "placementReviewedAt": "2026-11-05T13:53:14Z",
     "manualOpenVerified": false,
     "evidence": "5 November2026 exact tracked page rendered in browser, retaining ERN pid=P00322254/mcid42383/medium=link. Independent tracked HTTP200 retained URL. Exact tracked regional category page rendered 11 results, including town walking/history activities. These are separate valley trip-planning options, not a Stöhrhaus tour, hut accommodation, pickup or included mountain transport. Hut operator says staffed season ended18October2026; check departure, season, route and inclusions independently. No selected-date availability request or checkout; no price, rating or supplier prose copied. Existing owner/account/partner proof and expiry retained; no new approval, owner click-through, booking, commission attribution or earnings claimed."
+  },
+  {
+    "id": "viator-geraldton-regional-activities",
+    "placeId": "au-geraldton-marina",
+    "title": "Explore Geraldton and Coral Coast activities",
+    "destinationScope": "Geraldton-region trip planning; departure points may be outside the marina",
+    "url": "https://www.viator.com/en-SG/Geraldton/d4753?pid=P00322254&mcid=42383&medium=link",
+    "provider": "Viator",
+    "partnerId": "viator",
+    "intent": "activities",
+    "affiliate": true,
+    "sponsored": false,
+    "disclosure": "Affiliate link",
+    "verified": true,
+    "verifiedAt": "2026-11-12T03:04:33.655181Z",
+    "expiresAt": "2026-12-26T13:17:00Z",
+    "commissionClaimed": false,
+    "verificationMethod": "PRIMARY_PAGE_BROWSER_REVIEW_PLUS_EXISTING_OWNER_TRACKING_ID",
+    "placementReviewedAt": "2026-11-12T03:04:33.655181Z",
+    "manualOpenVerified": false,
+    "evidence": "12Nov2026 exact tracked Geraldton destination page rendered in browser, retaining existing ERN pidP00322254/mcid42383/mediumlink. Page identifies Geraldton and regional attractions; not marina admission, marina pickup or a promise of specific products/date availability. Existing owner/partner proof and expiry retained; no booking, commission attribution, earnings or copied supplier prose claimed."
   }
 ]

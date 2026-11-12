@@ -3749,6 +3749,21 @@
       ],
       "why": "Ballina and Forster actual advancing daylight video inspected. Narooma showed intermittent buffering; Shoal Bay showed media load failure and paused time zero. Neither held place added or counted.",
       "next": "Keep external-only handoffs and feature/watch holds. No owner inside-playback confirmation, copied media or new affiliate offer inferred."
+    },
+    {
+      "id": "wa-nz-current-stills-batch76-nov12",
+      "priority": "P1",
+      "placeGroup": "Geraldton marina and Pohangina/Mais Reach; Rangitikei mouth and Pukeokahu held",
+      "country": "Australia / New Zealand",
+      "candidateType": "FIRST_PARTY_CURRENT_STILL",
+      "state": "TWO_PLACES_ADMITTED_TWO_VISUAL_HOLDS",
+      "reviewedAt": "2026-11-12T03:04:33.655181Z",
+      "evidenceUrls": [
+        "https://transport.wa.gov.au/marine/charts-warnings-current-conditions/coast-cams/geraldton",
+        "https://www.horizons.govt.nz/webcams"
+      ],
+      "why": "Geraldton dated10:00AWST clear frame approximately one hour old; MaisReach dated12Nov14:53 useful river/gravel/cliff scene with pole/cable. Rangitikei river mouth strong sun glare/low contrast; Pukeokahu major foliage obstruction and glare. Held scenes not counted. Camera-clock uncertainty and unmeasured cadence retained.",
+      "next": "Keep external refreshed-still labels, feature/watch holds and marine/river safety cautions. No still-image or commercial evidence promotes a moving Watch Earth source."
     }
   ],
   "guardrails": {
