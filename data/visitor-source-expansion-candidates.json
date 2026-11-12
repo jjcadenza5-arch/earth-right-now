@@ -3764,6 +3764,21 @@
       ],
       "why": "Geraldton dated10:00AWST clear frame approximately one hour old; MaisReach dated12Nov14:53 useful river/gravel/cliff scene with pole/cable. Rangitikei river mouth strong sun glare/low contrast; Pukeokahu major foliage obstruction and glare. Held scenes not counted. Camera-clock uncertainty and unmeasured cadence retained.",
       "next": "Keep external refreshed-still labels, feature/watch holds and marine/river safety cautions. No still-image or commercial evidence promotes a moving Watch Earth source."
+    },
+    {
+      "id": "horizons-river-batch77-nov12",
+      "priority": "P1",
+      "placeGroup": "Kauangaroa, Mangaroa/Ohura, Tokorima and Manawatu/TeachersCollege; Whanganui panorama/Hoihere held",
+      "country": "New Zealand",
+      "candidateType": "FIRST_PARTY_CURRENT_STILL",
+      "state": "FOUR_PLACES_ADMITTED_TWO_VISUAL_HOLDS",
+      "reviewedAt": "2026-11-12T04:42:03.251170Z",
+      "evidenceUrls": [
+        "https://www.horizons.govt.nz/webcams",
+        "https://www.horizons.govt.nz/terms-and-conditions"
+      ],
+      "why": "Four distinct useful river settings with printed12Nov clocks, individually decoded and visually reviewed. Tokorima glare reduces contrast but river corridor remains visible, quality72 retained. Whanganui panorama heavy sun/lens glare; Hoihere road-dominant view without useful visible river detail held. No held scene counted. Zones/cadence not invented.",
+      "next": "Keep external refreshed-still labels and feature/watch holds. No suitable current owner-tracked affiliate destination verified; do not force a regional match."
     }
   ],
   "guardrails": {
