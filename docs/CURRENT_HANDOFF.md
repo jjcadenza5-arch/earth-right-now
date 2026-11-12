@@ -1,3 +1,9 @@
+## 2026-11-12 — Batch75 prepared: two NSW coastal places
+
+Reconciled remote bd94165a24deba6bc35e82490a9c0121f12fa368 and Batch74 accepted handoff; preserved scheduled image-pilot changes. Added Ballina/Richmond River entrance and Forster/harbour entrance after actual browser advancing-video review. External official-page links only, LINK_ONLY/EXTERNAL_LIVE, feature/watch holds; no copied media or coordinates invented. Absolute capture clocks/latency unverified. Ballina technical-issues notice retained. Narooma buffering and Shoal Bay failed playback held, not counted.
+
+Coverage907/1,000 (93remaining); offers unchanged278 stored/267 source-eligible placements/251places/4programs. No affiliate URL constructed for an unverified destination. Watch Earth nine moving streams/five visible remains unchanged. Existing website/deployment/runtime/styles and core/startup budgets preserved. PaidtrafficHOLD. Tests/build/normal Pages/Operations and served acceptance pending.
+
 ## 2026-11-11 Bangkok — Batch74 ACCEPTED: nine moving streams restored
 
 Production8e3acef1e8a7b04bb73856abe4192c33c91cbfa7/tree3de87dfb815d78de5876dd6f3b5889160cb33229. Pages42963657339/job130335775982 SUCCESS; Operations42963657468/job130335776031 SUCCESS, packet valid=true/issueCount0. All122 release smoke tests passed locally and in Pages CI; build/performance/curation/commercial/module checks passed. Served acceptance05:12:13Z verified18 manifest hashes, all9exact owner timestamps, core/supplement/offer/partner semantic parity, unchanged runtime/styles and9fresh LIVE WINDOW destination labels. Raw/full owner packet excluded from public assets. Browser homepage visibly shows9in rotation/fivevisible cards. New review batche8250fc49a963903 replaces consumed9356e70e78187d60 and provides9evergreen renewals.
