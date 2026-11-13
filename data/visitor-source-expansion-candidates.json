@@ -3835,6 +3835,23 @@
       ],
       "why": "Three actual useful13Nov daylight river/infrastructure/basin scenes inspected. Infrastructure not presented as visitor access, flood safety or wildlife. New JMA Meakan/Tokachi/Nasu/Ontake page image targets13Nov08:02 return404 or178byte10x10PNG, not usable camera frames. One no-cache page recheck unchanged; no guessed filenames, alternate-route bypass or invented currentness. Existing JMA catalog records untouched.",
       "next": "Keep external-only labels and holds. Retry held new JMA candidates only with materially fresh valid media targets; do not infer provider-wide outage. No forced affiliate placement."
+    },
+    {
+      "id": "jma-batch81-nov13",
+      "priority": "P1",
+      "placeGroup": "Nasu, Meakan and Ontake; Tokachi remains held",
+      "country": "Japan",
+      "candidateType": "FIRST_PARTY_CURRENT_STILL",
+      "state": "THREE_PLACES_ADMITTED_TOKACHI_VISIBILITY_HOLD",
+      "reviewedAt": "2026-11-13T05:46:58Z",
+      "evidenceUrls": [
+        "https://www.data.jma.go.jp/vois/data/obs/volcam/volcam.php?VC=10501",
+        "https://www.data.jma.go.jp/vois/data/obs/volcam/volcam.php?VC=10801",
+        "https://www.data.jma.go.jp/vois/data/obs/volcam/volcam.php?VC=31201",
+        "https://www.data.jma.go.jp/vois/data/obs/volcam/volcam.php?VC=30101"
+      ],
+      "why": "Changed official default media targets now yield actual dated JPEG scenes. Nasu, Meakan and Ontake contours useful and inspected. Tokachi13:41:54 frame heavily obscured by cloud, so remains held despite restored media retrieval. Earlier Batch80 retrieval holds retained in history; no existing camera proof dates renewed.",
+      "next": "Keep external-only still labels and Watch/featured holds. Reconsider Tokachi only after useful visibility evidence. No forced affiliate match."
     }
   ],
   "guardrails": {

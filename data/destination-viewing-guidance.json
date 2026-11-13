@@ -134,6 +134,18 @@
     "nz-arawhata-wetland": [
       "Look across the wetland basins, planted rows, earthworks and service track toward the rural horizon. The managed landscape is distinct from the nearby Lake Horowhenua camera; no wildlife presence or restoration outcome is inferred.",
       "Open the council image and check its printed date. This is a refreshed still, not continuous video. Public access, road opening, water quality, flood risk and safe swimming or boating cannot be established from the view. Consult current official advice separately; monitoring infrastructure and service tracks are not visitor facilities."
+    ],
+    "japan-nasu": [
+      "Look toward Nasu’s broad mountain summit and adjoining ridges from the official Yumoto camera. Foreground trees frame the slope; light and cloud can change how clearly its contours appear.",
+      "Open the official JMA page and check the image date before using the view. This is a refreshed still and may lag or be interrupted. A camera image cannot establish volcanic conditions, trail opening or safe access. Check current JMA volcanic warnings and local access instructions separately before planning a visit."
+    ],
+    "japan-meakan": [
+      "See Meakan’s layered mountain ridges beyond forest and bare foreground trees. Snow traces the higher slopes, while haze can soften distant detail; the image does not establish the origin of any pale plume.",
+      "Open the official JMA page and check the image date before using the view. This is a refreshed still and may lag or be interrupted. A camera image cannot establish volcanic conditions, trail opening or safe access. Check current JMA volcanic warnings and local access instructions separately before planning a visit."
+    ],
+    "japan-mount-ontake": [
+      "Look across the foreground hillside to Mount Ontake’s summit and long ridges from Mitake Kurosawa. Patches of snow and passing clouds change the mountain’s appearance through the day.",
+      "Open the official JMA page and check the image date before using the view. This is a refreshed still and may lag or be interrupted. A camera image cannot establish volcanic conditions, trail opening or safe access. Check current JMA volcanic warnings and local access instructions separately before planning a visit."
     ]
   }
 }
