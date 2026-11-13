@@ -1,3 +1,11 @@
+## 2026-11-13 Bangkok — Batch80 prepared: three NZ monitoring places
+
+Reconciled remoteade11c63007d28fe695a848045beecfd2d2a0876 and Batch79accepted handoff. Added Manawatu/WeberRoad river, Moutoa floodgates and Arawhata wetland basins after actual13Nov dated frames decoded/visually inspected. UsefulEarth infrastructure/managed-basin truth explicit, not scenic/wildlife/public-access promises. Weber lens haze/cables disclosed; camera-zone differences retained. LINK_ONLY/LIVE_IMAGE/EXTERNAL with feature/watch holds; no copied media, coordinates or hydrology/flood-safety inference.
+
+Four new JMA candidates(Meakan10501/Tokachi10801/Nasu30101/Ontake31201) HELD: official13Nov08:02 media targets return404 or10x10PNG placeholders. Single no-cache page recheck unchanged; no filename guessing, clock renewal or provider-wide outage inferred. No candidate admitted/count added from failed imagery, existing JMA records unchanged. Rights/linking context reviewed separately.
+
+Coverage922/1,000 (78remaining);933source records/923catalog places including1reference. Business unchanged280stored offers/269source-eligible placements/253places/148URLs/4programs, no forced match. Nine moving WatchEarth streams/fivevisible remain under168hproof policy; owner11Nov timestamps not renewed and strictervisitor gates automatic. Website/runtime/styles/core/pilot/workflow/sourcehistory/all earlier holds preserved; paidtrafficHOLD. Tests/build/normalPages/Operations/served acceptance pending.
+
 ## 2026-11-12 Bangkok — Batch79 ACCEPTED: 919 camera-backed places
 
 Production c946b0ea046e8159dce45dc12f34619db6c205e0/tree 3a06acf86527067fe29629562063757e9f879559. Pages43253200642/job131304333637 SUCCESS; Operations43253200391/job131304332436 SUCCESS, packet valid=true/issueCount0. All122 local and Pages CI release tests passed; build/curation/performance/commercial/supplemental/module checks passed. Served acceptance verified11manifest hashes including3new destination pages, core/supplement/offer/partner semantic parity and unchanged runtime/styles. Published PineSprings page reviewed for refreshed-image handoff and full visitor guidance. Baseline 868ab1ce096dc6d3c6af7d697fc2a9f83af3bfa1 and Batch78accepted handoff reconciled before edits.

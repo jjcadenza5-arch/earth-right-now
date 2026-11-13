@@ -3816,6 +3816,25 @@
       ],
       "why": "Three actual useful12Nov dated stills inspected. PineSprings/McKittrick independent canyon destinations, not angles padded at same overlook. DogCanyon printed24Oct20:41:58 and HTTPmod25Oct:old nighttime image, not current. PaintedDesert page active label but image address unusable; no private/invalid-address request or replacement inferred. Carlsbad YouTube binding discovered but playback not reviewed, not admitted or counted.",
       "next": "Keep external refreshed-still labels and feature/watch holds. No forced affiliate match or moving-stream promotion. Revisit held sources only on material fresh evidence."
+    },
+    {
+      "id": "nz-river-infrastructure-batch80-nov13",
+      "priority": "P1",
+      "placeGroup": "WeberRoad, Moutoa floodgates and Arawhata wetland basins; four new JMA candidates held",
+      "country": "New Zealand / Japan research holds",
+      "candidateType": "FIRST_PARTY_CURRENT_STILL",
+      "state": "THREE_NZ_PLACES_ADMITTED_FOUR_JMA_RETRIEVAL_HOLDS",
+      "reviewedAt": "2026-11-13T00:12:23.757705Z",
+      "evidenceUrls": [
+        "https://www.horizons.govt.nz/webcams",
+        "https://www.horizons.govt.nz/terms-and-conditions",
+        "https://www.data.jma.go.jp/vois/data/obs/volcam/volcam.php?VC=10501",
+        "https://www.data.jma.go.jp/vois/data/obs/volcam/volcam.php?VC=10801",
+        "https://www.data.jma.go.jp/vois/data/obs/volcam/volcam.php?VC=30101",
+        "https://www.data.jma.go.jp/vois/data/obs/volcam/volcam.php?VC=31201"
+      ],
+      "why": "Three actual useful13Nov daylight river/infrastructure/basin scenes inspected. Infrastructure not presented as visitor access, flood safety or wildlife. New JMA Meakan/Tokachi/Nasu/Ontake page image targets13Nov08:02 return404 or178byte10x10PNG, not usable camera frames. One no-cache page recheck unchanged; no guessed filenames, alternate-route bypass or invented currentness. Existing JMA catalog records untouched.",
+      "next": "Keep external-only labels and holds. Retry held new JMA candidates only with materially fresh valid media targets; do not infer provider-wide outage. No forced affiliate placement."
     }
   ],
   "guardrails": {
