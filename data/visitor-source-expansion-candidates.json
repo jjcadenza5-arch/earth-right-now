@@ -3852,6 +3852,25 @@
       ],
       "why": "Changed official default media targets now yield actual dated JPEG scenes. Nasu, Meakan and Ontake contours useful and inspected. Tokachi13:41:54 frame heavily obscured by cloud, so remains held despite restored media retrieval. Earlier Batch80 retrieval holds retained in history; no existing camera proof dates renewed.",
       "next": "Keep external-only still labels and Watch/featured holds. Reconsider Tokachi only after useful visibility evidence. No forced affiliate match."
+    },
+    {
+      "id": "jma-mountain-batch82-nov13",
+      "priority": "P1",
+      "placeGroup": "Iwaki, Zao, Adatara, Bandai and Norikura; Iwate held",
+      "country": "Japan",
+      "candidateType": "FIRST_PARTY_CURRENT_STILL",
+      "state": "FIVE_PLACES_ADMITTED_IWATE_VISIBILITY_HOLD",
+      "reviewedAt": "2026-11-13T05:57:05Z",
+      "evidenceUrls": [
+        "https://www.data.jma.go.jp/vois/data/obs/volcam/volcam.php?VC=20201",
+        "https://www.data.jma.go.jp/vois/data/obs/volcam/volcam.php?VC=20701",
+        "https://www.data.jma.go.jp/vois/data/obs/volcam/volcam.php?VC=21201",
+        "https://www.data.jma.go.jp/vois/data/obs/volcam/volcam.php?VC=21401",
+        "https://www.data.jma.go.jp/vois/data/obs/volcam/volcam.php?VC=21501",
+        "https://www.data.jma.go.jp/vois/data/obs/volcam/volcam.php?VC=31101"
+      ],
+      "why": "Five actual dated13Nov default JPEG views decoded and visually inspected. Adatara overhead cables and Zao/Bandai haze disclosed. Iwate13:51:57 actual frame heavily cloud-obscured, so held and uncounted. Distinct places checked against all three source catalogs; no existing JMA proof renewed. Linking policy reviewed separately.",
+      "next": "Keep external still labels and Watch/featured holds. Reconsider Iwate only with useful mountain visibility. No forced affiliate match."
     }
   ],
   "guardrails": {

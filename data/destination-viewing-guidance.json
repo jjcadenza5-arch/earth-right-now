@@ -146,6 +146,26 @@
     "japan-mount-ontake": [
       "Look across the foreground hillside to Mount Ontake’s summit and long ridges from Mitake Kurosawa. Patches of snow and passing clouds change the mountain’s appearance through the day.",
       "Open the official JMA page and check the image date before using the view. This is a refreshed still and may lag or be interrupted. A camera image cannot establish volcanic conditions, trail opening or safe access. Check current JMA volcanic warnings and local access instructions separately before planning a visit."
+    ],
+    "japan-mount-iwaki": [
+      "Look toward Mount Iwaki’s broad mountain face from the Hyakuzawa East camera. Gullies and small patches of snow mark the slopes, with passing clouds changing the summit outline.",
+      "Open the official JMA page and check the printed image date. This refreshed still may lag or be interrupted. The view cannot establish volcanic conditions, trail opening, snow safety or visitor access. Consult current JMA volcanic warnings and local access instructions separately before planning a visit."
+    ],
+    "japan-mount-zao": [
+      "See Zao’s long mountain ridge beyond the foreground trees from Togatta Onsen. Snow traces the higher ground, while haze and cloud can reduce detail; this camera does not show every part of the mountain area.",
+      "Open the official JMA page and check the printed image date. This refreshed still may lag or be interrupted. The view cannot establish volcanic conditions, trail opening, snow safety or visitor access. Consult current JMA volcanic warnings and local access instructions separately before planning a visit."
+    ],
+    "japan-mount-adatara": [
+      "Look across wooded slopes toward Adatara’s pale ridges and gullies from Wakamiya. Several overhead cables cross the image, so this is a useful monitoring view rather than an unobstructed panorama.",
+      "Open the official JMA page and check the printed image date. This refreshed still may lag or be interrupted. The view cannot establish volcanic conditions, trail opening, snow safety or visitor access. Consult current JMA volcanic warnings and local access instructions separately before planning a visit."
+    ],
+    "japan-mount-bandai": [
+      "See Mount Bandai’s peak and long rugged ridge above forest from the Kengamine camera. The mountain outline is the main feature; haze can soften the surface details.",
+      "Open the official JMA page and check the printed image date. This refreshed still may lag or be interrupted. The view cannot establish volcanic conditions, trail opening, snow safety or visitor access. Consult current JMA volcanic warnings and local access instructions separately before planning a visit."
+    ],
+    "japan-mount-norikura": [
+      "Look toward Norikura’s pointed summit and adjoining snow-traced slopes from Norikura Kogen. Foreground ridges frame the mountain, while haze and changing light affect contrast.",
+      "Open the official JMA page and check the printed image date. This refreshed still may lag or be interrupted. The view cannot establish volcanic conditions, trail opening, snow safety or visitor access. Consult current JMA volcanic warnings and local access instructions separately before planning a visit."
     ]
   }
 }
