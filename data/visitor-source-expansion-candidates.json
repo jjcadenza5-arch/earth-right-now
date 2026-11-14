@@ -3890,6 +3890,25 @@
       ],
       "why": "Actual dated14Nov default640x360 JPEG scenes individually decoded and inspected. Esan/Hakkoda/Kurikoma have useful visible mountain outlines, with Esan haze disclosed. Daisetsu heavily cloud-obscured, Tarumae detail low-contrast/hazy and Hokkaido Komagatake near-invisible in haze: held and uncounted. No existing camera proof renewed. JMA official index and linking context checked.",
       "next": "Keep external-only refreshed-still labels and Watch/featured holds. Reconsider held places only with useful new visibility evidence; no forced affiliate match."
+    },
+    {
+      "id": "jma-mountain-batch84-nov14",
+      "priority": "P1",
+      "placeGroup": "Nikko-Shirane, Kusatsu-Shirane, Niigata-Yakeyama, Yakedake, Hakusan and Atosanupuri",
+      "country": "Japan",
+      "candidateType": "FIRST_PARTY_CURRENT_STILL",
+      "state": "SIX_DISTINCT_PLACES_ADMITTED",
+      "reviewedAt": "2026-11-14T04:56:50Z",
+      "evidenceUrls": [
+        "https://www.data.jma.go.jp/vois/data/obs/volcam/volcam.php?VC=30201",
+        "https://www.data.jma.go.jp/vois/data/obs/volcam/volcam.php?VC=30501",
+        "https://www.data.jma.go.jp/vois/data/obs/volcam/volcam.php?VC=30701",
+        "https://www.data.jma.go.jp/vois/data/obs/volcam/volcam.php?VC=31001",
+        "https://www.data.jma.go.jp/vois/data/obs/volcam/volcam.php?VC=31301",
+        "https://www.data.jma.go.jp/vois/data/obs/volcam/volcam.php?VC=10401"
+      ],
+      "why": "All six official default14Nov JPEGs decoded and individually inspected; visible useful mountain outlines. Kusatsu glare/reflections and Niigata low detail disclosed. Atosanupuri plume-like features do not establish origin, composition, eruption state or safety. Distinct places checked against all source catalogs. Existing rows/proofdates/holds unchanged.",
+      "next": "Keep external-only refreshed-still labels and Watch/featured holds. No automatic owner proof renewal or forced affiliate match."
     }
   ],
   "guardrails": {
