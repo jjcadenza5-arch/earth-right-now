@@ -3931,6 +3931,27 @@
       ],
       "why": "Five useful14Nov official default JPEG scenes individually inspected. Niijima Shikine camera is one Niijima place, not another count for Shikine; Tsurumi–Garan is one camera-backed place. Akita Yakeyama held for heavy chromatic noise, Azuma cloud/low contrast, Miyake deep shadow. Towada page explicitly no image in latest hour (noimg.png), confirmed from actual HTML after parser found no current target; no provider-wide outage inferred. Three-camera fallback bounded; all prior holds and proofdates retained.",
       "next": "Keep external still labels and Watch/featured holds. Reconsider held candidates with useful new imagery; no forced affiliate match."
+    },
+    {
+      "id": "nz-monitoring-batch86-nov15",
+      "priority": "P1",
+      "placeGroup": "Makino floodgates, Tangiwai river gauge and Rangitikei river mouth; two existing coasts renewed",
+      "country": "New Zealand",
+      "candidateType": "FIRST_PARTY_CURRENT_STILL",
+      "state": "THREE_PLACES_ADMITTED_TWO_EXISTING_SOURCE_REVIEWS_RENEWED",
+      "reviewedAt": "2026-11-14T23:41:28Z",
+      "evidenceUrls": [
+        "https://www.horizons.govt.nz/media/webcam/Opiki_latest_photo.jpg",
+        "https://www.horizons.govt.nz/media/webcam/MakinoGates_latest_photo.jpg",
+        "https://www.horizons.govt.nz/media/webcam/MangaoneFloodgates_latest_photo.jpg",
+        "https://www.horizons.govt.nz/media/webcam/TangiwaiFloodGauge_latest_photo.jpg",
+        "https://www.horizons.govt.nz/media/webcam/Tukino_latest_photo.jpg",
+        "https://www.horizons.govt.nz/media/webcam/Rangitikeicarpark_latest_photo.jpg",
+        "https://www.horizons.govt.nz/media/webcam/Foxton_latest_photo.jpg?ext=.jpg",
+        "https://www.horizons.govt.nz/media/webcam/Whanganui_latest_photo.jpg?v2"
+      ],
+      "why": "Actual15Nov frames individually inspected. Makino infrastructure, Tangiwai river/gauge and Rangitikei mouth useful. Existing Foxton/Whanganui dated coastal images inspected to renew actual source reviews, without removing holds. Two Swiss reviews remain expired. Opiki held for road-dominant view; Mangaone partial grey frame; Tukino target returns old2025-09-05 Whanganui Te Rewa scene and May2026 Last-Modified, stale/mismatched. Prior Rangitikei bar-camera glare hold remains; new car-park target independently useful, one river-mouth place counted.",
+      "next": "Keep holds, external still labels, access/safety limits and unverified fixedNZST/NZDT clock handling; no forced affiliate match."
     }
   ],
   "guardrails": {
