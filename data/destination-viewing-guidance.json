@@ -202,6 +202,26 @@
     "japan-atosanupuri": [
       "Look toward Atosanupuri’s ridges beyond the flat foreground and tree line. Pale plume-like features may be visible, but this camera does not establish their composition, volcanic conditions or whether the area is safe to approach.",
       "Open the official JMA page and check the printed image date. This refreshed still may lag or be interrupted. The image cannot establish volcanic conditions, air quality, snow safety, trail opening or visitor access. Consult current JMA volcanic warnings and local access instructions separately before planning a visit."
+    ],
+    "japan-mount-chokai": [
+      "Look toward Chokai’s snow-covered high peak and long mountain ridge above darker foreground slopes. Haze can soften detail, but the wider mountain outline is clearly framed.",
+      "Open the official JMA page and check the printed image date. This refreshed still may lag or be interrupted. A camera image cannot establish volcanic conditions, air quality, transport services, snow safety or visitor access. Consult current JMA volcanic warnings and local access instructions separately before planning a visit."
+    ],
+    "japan-tsurumi-garan": [
+      "See the Tsurumi–Garan mountain slopes from the Tsukahara monitoring camera. Pale exposed ground lies between darker ridges; the subdued view is useful for the landscape outline rather than fine detail.",
+      "Open the official JMA page and check the printed image date. This refreshed still may lag or be interrupted. A camera image cannot establish volcanic conditions, air quality, transport services, snow safety or visitor access. Consult current JMA volcanic warnings and local access instructions separately before planning a visit."
+    ],
+    "japan-niijima": [
+      "See a long pale-cliffed ridge beyond foreground vegetation in JMA’s Niijima view, labeled Shikine. This is a distant mountain profile rather than a beach or town panorama.",
+      "Open the official JMA page and check the printed image date. This refreshed still may lag or be interrupted. A camera image cannot establish volcanic conditions, air quality, transport services, snow safety or visitor access. Consult current JMA volcanic warnings and local access instructions separately before planning a visit."
+    ],
+    "japan-kozushima": [
+      "Look toward Kozushima’s rugged ridge and pale rock faces from the Maehama Southeast camera. The mountain is the focus of this monitoring view; it does not show beach facilities or establish swimming conditions.",
+      "Open the official JMA page and check the printed image date. This refreshed still may lag or be interrupted. A camera image cannot establish volcanic conditions, air quality, transport services, snow safety or visitor access. Consult current JMA volcanic warnings and local access instructions separately before planning a visit."
+    ],
+    "japan-satsuma-iojima": [
+      "Look toward Satsuma Iojima’s rugged mountain profile from the Iwanoue camera. Pale plume-like features may be visible, but their appearance cannot establish composition, volcanic conditions, air quality or safe access.",
+      "Open the official JMA page and check the printed image date. This refreshed still may lag or be interrupted. A camera image cannot establish volcanic conditions, air quality, transport services, snow safety or visitor access. Consult current JMA volcanic warnings and local access instructions separately before planning a visit."
     ]
   }
 }

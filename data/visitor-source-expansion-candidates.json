@@ -3909,6 +3909,28 @@
       ],
       "why": "All six official default14Nov JPEGs decoded and individually inspected; visible useful mountain outlines. Kusatsu glare/reflections and Niigata low detail disclosed. Atosanupuri plume-like features do not establish origin, composition, eruption state or safety. Distinct places checked against all source catalogs. Existing rows/proofdates/holds unchanged.",
       "next": "Keep external-only refreshed-still labels and Watch/featured holds. No automatic owner proof renewal or forced affiliate match."
+    },
+    {
+      "id": "jma-mountain-island-batch85-nov14",
+      "priority": "P1",
+      "placeGroup": "Chokai, Tsurumi–Garan, Niijima Shikine camera, Kozushima and Satsuma Iojima; four holds",
+      "country": "Japan",
+      "candidateType": "FIRST_PARTY_CURRENT_STILL",
+      "state": "FIVE_DISTINCT_PLACES_ADMITTED_FOUR_QUALITY_AVAILABILITY_HOLDS",
+      "reviewedAt": "2026-11-14T07:22:34Z",
+      "evidenceUrls": [
+        "https://www.data.jma.go.jp/vois/data/obs/volcam/volcam.php?VC=20501",
+        "https://www.data.jma.go.jp/vois/data/obs/volcam/volcam.php?VC=20401",
+        "https://www.data.jma.go.jp/vois/data/obs/volcam/volcam.php?VC=20901",
+        "https://www.data.jma.go.jp/vois/data/obs/volcam/volcam.php?VC=21301",
+        "https://www.data.jma.go.jp/vois/data/obs/volcam/volcam.php?VC=51301",
+        "https://www.data.jma.go.jp/vois/data/obs/volcam/volcam.php?VC=32001",
+        "https://www.data.jma.go.jp/vois/data/obs/volcam/volcam.php?VC=31801",
+        "https://www.data.jma.go.jp/vois/data/obs/volcam/volcam.php?VC=31901",
+        "https://www.data.jma.go.jp/vois/data/obs/volcam/volcam.php?VC=50801"
+      ],
+      "why": "Five useful14Nov official default JPEG scenes individually inspected. Niijima Shikine camera is one Niijima place, not another count for Shikine; Tsurumi–Garan is one camera-backed place. Akita Yakeyama held for heavy chromatic noise, Azuma cloud/low contrast, Miyake deep shadow. Towada page explicitly no image in latest hour (noimg.png), confirmed from actual HTML after parser found no current target; no provider-wide outage inferred. Three-camera fallback bounded; all prior holds and proofdates retained.",
+      "next": "Keep external still labels and Watch/featured holds. Reconsider held candidates with useful new imagery; no forced affiliate match."
     }
   ],
   "guardrails": {
