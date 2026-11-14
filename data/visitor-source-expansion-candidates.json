@@ -3871,6 +3871,25 @@
       ],
       "why": "Five actual dated13Nov default JPEG views decoded and visually inspected. Adatara overhead cables and Zao/Bandai haze disclosed. Iwate13:51:57 actual frame heavily cloud-obscured, so held and uncounted. Distinct places checked against all three source catalogs; no existing JMA proof renewed. Linking policy reviewed separately.",
       "next": "Keep external still labels and Watch/featured holds. Reconsider Iwate only with useful mountain visibility. No forced affiliate match."
+    },
+    {
+      "id": "jma-mountain-batch83-nov14",
+      "priority": "P1",
+      "placeGroup": "Esan, Hakkoda and Kurikoma; Daisetsu, Tarumae and Hokkaido Komagatake held",
+      "country": "Japan",
+      "candidateType": "FIRST_PARTY_CURRENT_STILL",
+      "state": "THREE_PLACES_ADMITTED_THREE_VISIBILITY_HOLDS",
+      "reviewedAt": "2026-11-14T04:11:38Z",
+      "evidenceUrls": [
+        "https://www.data.jma.go.jp/vois/data/obs/volcam/volcam.php?VC=10701",
+        "https://www.data.jma.go.jp/vois/data/obs/volcam/volcam.php?VC=10901",
+        "https://www.data.jma.go.jp/vois/data/obs/volcam/volcam.php?VC=11301",
+        "https://www.data.jma.go.jp/vois/data/obs/volcam/volcam.php?VC=11401",
+        "https://www.data.jma.go.jp/vois/data/obs/volcam/volcam.php?VC=20301",
+        "https://www.data.jma.go.jp/vois/data/obs/volcam/volcam.php?VC=21001"
+      ],
+      "why": "Actual dated14Nov default640x360 JPEG scenes individually decoded and inspected. Esan/Hakkoda/Kurikoma have useful visible mountain outlines, with Esan haze disclosed. Daisetsu heavily cloud-obscured, Tarumae detail low-contrast/hazy and Hokkaido Komagatake near-invisible in haze: held and uncounted. No existing camera proof renewed. JMA official index and linking context checked.",
+      "next": "Keep external-only refreshed-still labels and Watch/featured holds. Reconsider held places only with useful new visibility evidence; no forced affiliate match."
     }
   ],
   "guardrails": {
