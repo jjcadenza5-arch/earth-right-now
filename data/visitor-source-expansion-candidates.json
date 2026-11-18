@@ -3969,6 +3969,24 @@
       ],
       "why": "Great Basin official page links NevCAN Snake Range camera; latest target Last-Modified17Nov00:38:45GMT is old at18Nov13UTC, and site requests contacting data owners prior data use/publication. Bighorn official camera link uses older HTTP/IP address, target not requested in this batch. NZ exact published targets retrieved and visually inspected: Hoihere dark with lens water/glare, Ore Ore lens water/low contrast, Pukeokahu dark. No new source admitted. Timestamps and primary-page availability do not renew moving playback evidence.",
       "next": "Owner renewal required for existing nine expired moving streams. Retry landscape sources with materially useful daylight/current-image evidence."
+    },
+    {
+      "id": "alpine-batch89-nov18",
+      "priority": "P1",
+      "placeGroup": "Hochstaufen, Kampenwand and Söldenhütte; Rauris and Weissensee held",
+      "country": "Germany / Austria",
+      "candidateType": "FIRST_PARTY_CURRENT_STILL",
+      "state": "THREE_PLACES_ADMITTED_TWO_QUALITY_FRESHNESS_HOLDS",
+      "reviewedAt": "2026-11-18T13:35:33Z",
+      "evidenceUrls": [
+        "https://www.foto-webcam.eu/webcam/hochstaufen/",
+        "https://www.foto-webcam.eu/webcam/kampenwand/",
+        "https://www.foto-webcam.eu/webcam/weissensee/",
+        "https://www.foto-webcam.eu/webcam/rauris/",
+        "https://www.foto-webcam.eu/webcam/hackelhuette/"
+      ],
+      "why": "Three useful18Nov14:30 official default JPEG panoramas individually decoded and inspected with exact camera-specific linking permission. Clear town/lake/valley geography. Rauris fresh14:30 frame cloud-obscured and Weissensee default image dated17Jun2024: held and uncounted. New Chiemsee regional affiliate trip independently reviewed with selected-product and Munich-departure scope.",
+      "next": "Retain external refreshed-still labels, featured/watch holds and all prior source holds. Reconsider Rauris with useful visibility and Weissensee with genuinely updated imagery."
     }
   ],
   "guardrails": {

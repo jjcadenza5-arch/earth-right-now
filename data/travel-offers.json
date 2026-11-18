@@ -5151,5 +5151,26 @@
     "placementReviewedAt": "2026-11-18T13:13:11Z",
     "manualOpenVerified": false,
     "evidence": "18Nov2026 exact tracked product request returned HTTP200 after redirect to Beppu/d4659-ttd/p-419742P18 with pidP00322254/mcid42383/mediumlink retained. Returned primary HTML visibly labels You selected and Steam-filled Streets: A Scenic Stroll in Kannawa / Beppu Kannawa Onsen Area Walking Tour. Primary itinerary identifies Beppu Station meeting and Kannawa finish, with Umi Jigoku and Oniishibozu Jigoku. Destination scope identifies wider Beppu area. Date-specific availability, actual bookings and commission attribution untested. Existing account/partner proof and expiry retained. Owner playback renewal is applied in this release."
+  },
+  {
+    "id": "viator-chiemsee-islands-from-munich-selected",
+    "placeId": "germany-kampenwand-chiemsee",
+    "title": "Chiemsee palace and island rail trip from Munich — selected result",
+    "destinationScope": "Regional Lake Chiemsee and island trip departing Munich. Check selected dates, meeting point, boat fares and palace admission on the product page.",
+    "url": "https://www.viator.com/Munich/d487-ttd/p-2666HERR?pid=P00322254&mcid=42383&medium=link",
+    "provider": "Viator",
+    "partnerId": "viator",
+    "intent": "activities",
+    "affiliate": true,
+    "sponsored": false,
+    "disclosure": "Affiliate link",
+    "verified": true,
+    "verifiedAt": "2026-11-18T13:35:33Z",
+    "expiresAt": "2026-12-26T13:17:00Z",
+    "commissionClaimed": false,
+    "verificationMethod": "PRIMARY_PAGE_HTTP_REVIEW_PLUS_EXISTING_OWNER_TRACKING_ID",
+    "placementReviewedAt": "2026-11-18T13:35:33Z",
+    "manualOpenVerified": false,
+    "evidence": "18Nov2026 exact tracked product request returned HTTP200 after redirect to Munich/d487-ttd/p-2666HERR, retaining ERN pidP00322254/mcid42383/mediumlink. Returned primary HTML identifies You selected and Herrenchiemsee Palace and Fraueninsel Rail Trip from Munich. Primary itinerary lists Munich departure and Lake Chiemsee islands. Placement label describes a regional trip from Munich. Palace admission and boat fares require checking on the selected product. Date-specific availability, bookings and commission attribution untested. Existing account/partner proof and26Dec expiry retained."
   }
 ]
