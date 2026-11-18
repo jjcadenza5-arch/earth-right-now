@@ -1,3 +1,9 @@
+## 2026-11-18 Bangkok — Batch87 prepared
+
+Reconciled remote 278ae1c6c3edf4e338b1ed0559a5001d0e31701f and preserved three scheduled pilot renewals since Batch86. Added two council camera places after inspecting 18 November frames. Makino at Duke Street is a stream monitoring site distinct from the existing floodgates. Mangaone shows a complete image after the partial-frame hold. Herbertville and Rangitīkei remain single places already in the catalog. Whanganui Town Bridge stays held for soft, smeared imagery.
+
+Candidate totals are 949 camera-backed places and 51 remaining. Added one Viator placement at Nikko-Shirane for the selected Tokyo departure visiting Lake Chūzenji and Kegon Falls. Tracked HTTP redirect and page markup reviewed. Existing account proof and expiry retained. Candidate business inventory is 270 eligible placements at 254 places and 149 distinct tracked URLs across four programs. Existing deployment, Watch Earth proof dates and paid traffic settings preserved. Release verification pending.
+
 ## 2026-11-15 Bangkok — Batch86 ACCEPTED: 947 camera-backed places
 
 Production8d1bbe8adc1afb5a42609b2fbf6753e7ac4884c1/tree5005ad9fa7a60c1a8236670cd23b824cc607698e. Pages43654772109/job132630787909 SUCCESS; Operations43654772117/job132630787591 SUCCESS, packet valid=true/issueCount0. All122 local and CI release tests passed; build/curation/performance/commercial/supplemental/module checks passed. Live HTTP acceptance verified13manifest hashes, three new and two renewed destination pages with council attribution/refreshed-still handoff, source/offer/partner semantic parity and unchanged runtime/styles. No browser visual check claimed; existing templates preserved. Remote940e5f34ecf48dff132a191aa5e8c451c6cced4e and Batch85 accepted handoff reconciled before edits.

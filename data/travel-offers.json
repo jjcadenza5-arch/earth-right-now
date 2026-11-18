@@ -5109,5 +5109,26 @@
     "placementReviewedAt": "2026-11-12T09:17:28.999610Z",
     "manualOpenVerified": false,
     "evidence": "12Nov2026 exact owner-tracked product URL redirected in browser to Munich/d487-ttd/p-265950P8 with ERN pidP00322254/mcid42383/mediumlink retained. Page renders the Tegernsee private excursion as You selected above broader Munich results. Clicking the selected card returned the same result view; no dedicated detail page or selected-date availability established. Label explicitly identifies selected result/Munich departure, not local camera-site pickup, ski admission or general guarantees about other results. Primary indexed itinerary describes seasonal spring/summer cruise component; public guidance asks visitors to verify itinerary, dates and cancellation terms. Existing owner/account/partner proofs and expiry retained. No supplier prose, price or review copied; no booking, earnings or commission attribution claimed."
+  },
+  {
+    "id": "viator-nikko-chuzenji-kegon-selected",
+    "placeId": "japan-nikko-shirane",
+    "title": "Lake Chūzenji and Kegon Falls day trip from Tokyo",
+    "destinationScope": "Selected Nikko-area day trip from Tokyo. Check the operator’s itinerary for exact stops and meeting point.",
+    "url": "https://www.viator.com/Tokyo/d334-ttd/p-100913P14?pid=P00322254&mcid=42383&medium=link",
+    "provider": "Viator",
+    "partnerId": "viator",
+    "intent": "activities",
+    "affiliate": true,
+    "sponsored": false,
+    "disclosure": "Affiliate link",
+    "verified": true,
+    "verifiedAt": "2026-11-18T01:47:05Z",
+    "expiresAt": "2026-12-26T13:17:00Z",
+    "commissionClaimed": false,
+    "verificationMethod": "PRIMARY_PAGE_HTTP_REVIEW_PLUS_EXISTING_OWNER_TRACKING_ID",
+    "placementReviewedAt": "2026-11-18T01:47:05Z",
+    "manualOpenVerified": false,
+    "evidence": "18 Nov 2026 tracked HTTPS product URL redirected to HTTP 200 Tokyo/d334-ttd/p-100913P14, retaining pid, mcid and medium. Returned HTML contains a selected-result card for the Nikko Toshogu and Kegon tour. Viator’s product itinerary names Lake Chūzenji and Kegon Falls. The offer is for the wider Nikko area, with Tokyo departure. Date-specific availability and attribution outcomes were not tested. Existing partner expiry retained."
   }
 ]

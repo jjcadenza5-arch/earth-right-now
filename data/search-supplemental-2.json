@@ -6399,5 +6399,81 @@
       "Rangitīkei",
       "Rangitikei boat ramp"
     ]
+  },
+  {
+    "id": "nz-makino-duke-street-current",
+    "placeId": "nz-makino-duke-street",
+    "title": "Makino Stream — Duke Street",
+    "seoName": "Makino Stream — Duke Street",
+    "provider": "Horizons Regional Council",
+    "attribution": "Horizons Regional Council — official monitoring webcam",
+    "country": "New Zealand",
+    "region": "Manawatū-Whanganui / Duke Street",
+    "timeZone": "Pacific/Auckland",
+    "categories": [
+      "Useful Earth",
+      "Nature"
+    ],
+    "truth": "LIVE_IMAGE",
+    "permission": "LINK_ONLY",
+    "health": "HEALTHY",
+    "playback": "EXTERNAL",
+    "sourceUrl": "https://www.horizons.govt.nz/media/webcam/MakinoDuke_latest_photo.jpg",
+    "officialUrl": "https://www.horizons.govt.nz/webcams",
+    "checkedAt": "2026-11-18T01:47:06.171629+00:00",
+    "lastSuccessfulCheck": "2026-11-18T01:47:06.171629+00:00",
+    "featuredHold": true,
+    "watchHold": true,
+    "searchSupplemental": true,
+    "externalWindowRequired": true,
+    "quality": 76,
+    "freshness": 90,
+    "moment": 70,
+    "story": "See Makino Stream bend past a gravel bank and dense vegetation at Duke Street. The council camera also shows a gauge and retaining wall.",
+    "rightsSourceUrl": "https://www.horizons.govt.nz/terms-and-conditions",
+    "rightsBasis": "Horizons describes personal/business use of its public website but prohibits substantial copying without consent. Ordinary attributed exact-image external handoff only; no image copied into ERN, hotlinked, embedded or reused as a cover. No endorsement or media licence inferred.",
+    "freshnessEvidence": "18 Nov 2026 dated council JPEG decoded and visually inspected at 2026-11-18T01:47:06.171629+00:00. Overlay 13:40:52, zone unprinted. HTTP Last-Modified Wed, 18 Nov 2026 01:45:38 GMT. Dimensions [2560, 1440]. See Makino Stream bend past a gravel bank and dense vegetation at Duke Street. The council camera also shows a gauge and retaining wall. Camera clock basis and update cadence unverified. External refreshed still. No flood-risk or access inference.",
+    "aliases": [
+      "Duke Street",
+      "Makino Stream — Duke Street"
+    ]
+  },
+  {
+    "id": "nz-mangaone-floodgates-current",
+    "placeId": "nz-mangaone-floodgates",
+    "title": "Mangaone — Floodgates",
+    "seoName": "Mangaone — Floodgates",
+    "provider": "Horizons Regional Council",
+    "attribution": "Horizons Regional Council — official monitoring webcam",
+    "country": "New Zealand",
+    "region": "Manawatū-Whanganui / Mangaone",
+    "timeZone": "Pacific/Auckland",
+    "categories": [
+      "Useful Earth",
+      "Nature"
+    ],
+    "truth": "LIVE_IMAGE",
+    "permission": "LINK_ONLY",
+    "health": "HEALTHY",
+    "playback": "EXTERNAL",
+    "sourceUrl": "https://www.horizons.govt.nz/media/webcam/MangaoneFloodgates_latest_photo.jpg",
+    "officialUrl": "https://www.horizons.govt.nz/webcams",
+    "checkedAt": "2026-11-18T01:47:06.750684+00:00",
+    "lastSuccessfulCheck": "2026-11-18T01:47:06.750684+00:00",
+    "featuredHold": true,
+    "watchHold": true,
+    "searchSupplemental": true,
+    "externalWindowRequired": true,
+    "quality": 76,
+    "freshness": 90,
+    "moment": 70,
+    "story": "Look along a winding channel beside pasture, tall trees and flood-control structures from the Mangaone monitoring camera.",
+    "rightsSourceUrl": "https://www.horizons.govt.nz/terms-and-conditions",
+    "rightsBasis": "Horizons describes personal/business use of its public website but prohibits substantial copying without consent. Ordinary attributed exact-image external handoff only; no image copied into ERN, hotlinked, embedded or reused as a cover. No endorsement or media licence inferred.",
+    "freshnessEvidence": "18 Nov 2026 dated council JPEG decoded and visually inspected at 2026-11-18T01:47:06.750684+00:00. Overlay 13:30:32, zone unprinted. HTTP Last-Modified Wed, 18 Nov 2026 01:45:31 GMT. Dimensions [3840, 2160]. Look along a winding channel beside pasture, tall trees and flood-control structures from the Mangaone monitoring camera. Camera clock basis and update cadence unverified. External refreshed still. No flood-risk or access inference.",
+    "aliases": [
+      "Mangaone",
+      "Mangaone — Floodgates"
+    ]
   }
 ]
