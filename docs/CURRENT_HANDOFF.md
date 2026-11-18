@@ -1,3 +1,11 @@
+## 2026-11-18 Bangkok — Batch88 release prepared with owner playback renewal
+
+Remote14220bac69901efa10be0264a237875b0f5de8fa and saved draft631 reconciled, including the latest scheduled pilot renewal. Owner packet26a6b44a9c9c03f5 matches served review/current.json and all nine exact source/embed targets. Trusted-origin/24hour validation accepted9/rejected0; application plan9ready/0blocked. Independent exact-embed HTTP200 checks support transport. Owner network status UNKNOWN_NOT_RECORDED retained.
+
+Applied only playbackVerifiedAt/checkedAt/lastSuccessfulCheck at each owner's18Nov13:17:48.123–13:18:30.638Z observation, with nine atomic HUMAN_PLAYBACK ledger additions. Existing ledger prefix, all other source fields and pilot records preserved. Raw packet, validation, availability and application evidence stored under data/review-evidence and excluded from public assets. No inferred browser, scene, duration, camera clock or rights renewal. Current viewer evidence horizon24hours and WatchEarth horizon168hours retained.
+
+Prepared Beppu/Kannawa affiliate placement for Tsurumi–Garan from draft631. Exact HTTP200 selected-product redirect retained existing owner tracking identity and original26Dec expiry. Tour scope is wider Beppu area, with Beppu Station meeting and Kannawa finish. Availability on selected dates and commission attribution untested. Coverage949 camera-backed places and51remaining. Candidate business271eligible placements/255places/150trackedURLs/4programs,282stored offers. Camera research holds from the draft retained. Website runtime/styles/pilot/deployment workflow preserved; paidtrafficHOLD. Release tests/build/Pages/Operations/served verification pending.
+
 ## 2026-11-18 Bangkok — Batch88 saved as a release draft
 
 Prepared branch ern/batch88-prepared-growth from main3b75c1dcc04960c08fcfafe1dc7385f2f023718b. One verified Beppu/Kannawa affiliate placement prepared. Published camera coverage949 and business270placements/254places/149trackedURLs/4programs. Draft business271/255/150/4. Five new camera candidates remain research holds after availability, stale-image, darkness and lens-quality checks.

@@ -5130,5 +5130,26 @@
     "placementReviewedAt": "2026-11-18T01:47:05Z",
     "manualOpenVerified": false,
     "evidence": "18 Nov 2026 tracked HTTPS product URL redirected to HTTP 200 Tokyo/d334-ttd/p-100913P14, retaining pid, mcid and medium. Returned HTML contains a selected-result card for the Nikko Toshogu and Kegon tour. Viator’s product itinerary names Lake Chūzenji and Kegon Falls. The offer is for the wider Nikko area, with Tokyo departure. Date-specific availability and attribution outcomes were not tested. Existing partner expiry retained."
+  },
+  {
+    "id": "viator-beppu-kannawa-selected",
+    "placeId": "japan-tsurumi-garan",
+    "title": "Beppu Kannawa hot-spring walking tour — selected result",
+    "destinationScope": "Beppu-area guided walking tour from Beppu Station to Kannawa. Check meeting point and itinerary on the selected product.",
+    "url": "https://www.viator.com/Beppu/d4659-ttd/p-419742P18?pid=P00322254&mcid=42383&medium=link",
+    "provider": "Viator",
+    "partnerId": "viator",
+    "intent": "activities",
+    "affiliate": true,
+    "sponsored": false,
+    "disclosure": "Affiliate link",
+    "verified": true,
+    "verifiedAt": "2026-11-18T13:13:11Z",
+    "expiresAt": "2026-12-26T13:17:00Z",
+    "commissionClaimed": false,
+    "verificationMethod": "PRIMARY_PAGE_HTTP_REVIEW_PLUS_EXISTING_OWNER_TRACKING_ID",
+    "placementReviewedAt": "2026-11-18T13:13:11Z",
+    "manualOpenVerified": false,
+    "evidence": "18Nov2026 exact tracked product request returned HTTP200 after redirect to Beppu/d4659-ttd/p-419742P18 with pidP00322254/mcid42383/mediumlink retained. Returned primary HTML visibly labels You selected and Steam-filled Streets: A Scenic Stroll in Kannawa / Beppu Kannawa Onsen Area Walking Tour. Primary itinerary identifies Beppu Station meeting and Kannawa finish, with Umi Jigoku and Oniishibozu Jigoku. Destination scope identifies wider Beppu area. Date-specific availability, actual bookings and commission attribution untested. Existing account/partner proof and expiry retained. Owner playback renewal is applied in this release."
   }
 ]

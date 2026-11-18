@@ -1,0 +1,295 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-11-18T13:20:48.174Z",
+  "total": 9,
+  "ready": 9,
+  "blocked": 0,
+  "items": [
+    {
+      "id": "auckland-viaduct-harbour",
+      "ready": true,
+      "reasons": [],
+      "expectedCurrent": {
+        "playbackVerifiedAt": "2026-11-11T05:01:08.384Z",
+        "latestObservationObservedAt": "2026-11-11T05:01:08.384Z",
+        "latestObservationKind": "HUMAN_PLAYBACK"
+      },
+      "proposedAtomicUpdate": {
+        "catalog": {
+          "id": "auckland-viaduct-harbour",
+          "playbackVerifiedAt": "2026-11-18T13:18:16.788Z"
+        },
+        "observation": {
+          "id": "auckland-viaduct-harbour",
+          "httpStatus": 200,
+          "confirmation": "HUMAN_PLAYBACK",
+          "observedAt": "2026-11-18T13:18:16.788Z",
+          "reason": "Human playback confirmed in deployed ERN review lab; independent provider-page availability evidence was also current."
+        }
+      },
+      "preconditions": {
+        "playback": "EMBED",
+        "permission": "EMBED_ALLOWED",
+        "health": "HEALTHY",
+        "expectedPlaybackVerifiedAt": "2026-11-11T05:01:08.384Z",
+        "expectedLatestObservationObservedAt": "2026-11-11T05:01:08.384Z"
+      },
+      "automaticWriteAllowed": false
+    },
+    {
+      "id": "kyoto-fushimi-inari-live",
+      "ready": true,
+      "reasons": [],
+      "expectedCurrent": {
+        "playbackVerifiedAt": "2026-11-11T05:01:26.796Z",
+        "latestObservationObservedAt": "2026-11-11T05:01:26.796Z",
+        "latestObservationKind": "HUMAN_PLAYBACK"
+      },
+      "proposedAtomicUpdate": {
+        "catalog": {
+          "id": "kyoto-fushimi-inari-live",
+          "playbackVerifiedAt": "2026-11-18T13:17:56.904Z"
+        },
+        "observation": {
+          "id": "kyoto-fushimi-inari-live",
+          "httpStatus": 200,
+          "confirmation": "HUMAN_PLAYBACK",
+          "observedAt": "2026-11-18T13:17:56.904Z",
+          "reason": "Human playback confirmed in deployed ERN review lab; independent provider-page availability evidence was also current."
+        }
+      },
+      "preconditions": {
+        "playback": "EMBED",
+        "permission": "EMBED_ALLOWED",
+        "health": "HEALTHY",
+        "expectedPlaybackVerifiedAt": "2026-11-11T05:01:26.796Z",
+        "expectedLatestObservationObservedAt": "2026-11-11T05:01:26.796Z"
+      },
+      "automaticWriteAllowed": false
+    },
+    {
+      "id": "kyoto-hanamikoji-live",
+      "ready": true,
+      "reasons": [],
+      "expectedCurrent": {
+        "playbackVerifiedAt": "2026-11-11T05:01:13.580Z",
+        "latestObservationObservedAt": "2026-11-11T05:01:13.580Z",
+        "latestObservationKind": "HUMAN_PLAYBACK"
+      },
+      "proposedAtomicUpdate": {
+        "catalog": {
+          "id": "kyoto-hanamikoji-live",
+          "playbackVerifiedAt": "2026-11-18T13:18:01.604Z"
+        },
+        "observation": {
+          "id": "kyoto-hanamikoji-live",
+          "httpStatus": 200,
+          "confirmation": "HUMAN_PLAYBACK",
+          "observedAt": "2026-11-18T13:18:01.604Z",
+          "reason": "Human playback confirmed in deployed ERN review lab; independent provider-page availability evidence was also current."
+        }
+      },
+      "preconditions": {
+        "playback": "EMBED",
+        "permission": "EMBED_ALLOWED",
+        "health": "HEALTHY",
+        "expectedPlaybackVerifiedAt": "2026-11-11T05:01:13.580Z",
+        "expectedLatestObservationObservedAt": "2026-11-11T05:01:13.580Z"
+      },
+      "automaticWriteAllowed": false
+    },
+    {
+      "id": "kyoto-kifune-shrine-live",
+      "ready": true,
+      "reasons": [],
+      "expectedCurrent": {
+        "playbackVerifiedAt": "2026-11-11T05:01:16.929Z",
+        "latestObservationObservedAt": "2026-11-11T05:01:16.929Z",
+        "latestObservationKind": "HUMAN_PLAYBACK"
+      },
+      "proposedAtomicUpdate": {
+        "catalog": {
+          "id": "kyoto-kifune-shrine-live",
+          "playbackVerifiedAt": "2026-11-18T13:18:06.223Z"
+        },
+        "observation": {
+          "id": "kyoto-kifune-shrine-live",
+          "httpStatus": 200,
+          "confirmation": "HUMAN_PLAYBACK",
+          "observedAt": "2026-11-18T13:18:06.223Z",
+          "reason": "Human playback confirmed in deployed ERN review lab; independent provider-page availability evidence was also current."
+        }
+      },
+      "preconditions": {
+        "playback": "EMBED",
+        "permission": "EMBED_ALLOWED",
+        "health": "HEALTHY",
+        "expectedPlaybackVerifiedAt": "2026-11-11T05:01:16.929Z",
+        "expectedLatestObservationObservedAt": "2026-11-11T05:01:16.929Z"
+      },
+      "automaticWriteAllowed": false
+    },
+    {
+      "id": "kyoto-kiyomizuzaka-live",
+      "ready": true,
+      "reasons": [],
+      "expectedCurrent": {
+        "playbackVerifiedAt": "2026-11-11T05:01:20.346Z",
+        "latestObservationObservedAt": "2026-11-11T05:01:20.346Z",
+        "latestObservationKind": "HUMAN_PLAYBACK"
+      },
+      "proposedAtomicUpdate": {
+        "catalog": {
+          "id": "kyoto-kiyomizuzaka-live",
+          "playbackVerifiedAt": "2026-11-18T13:18:10.955Z"
+        },
+        "observation": {
+          "id": "kyoto-kiyomizuzaka-live",
+          "httpStatus": 200,
+          "confirmation": "HUMAN_PLAYBACK",
+          "observedAt": "2026-11-18T13:18:10.955Z",
+          "reason": "Human playback confirmed in deployed ERN review lab; independent provider-page availability evidence was also current."
+        }
+      },
+      "preconditions": {
+        "playback": "EMBED",
+        "permission": "EMBED_ALLOWED",
+        "health": "HEALTHY",
+        "expectedPlaybackVerifiedAt": "2026-11-11T05:01:20.346Z",
+        "expectedLatestObservationObservedAt": "2026-11-11T05:01:20.346Z"
+      },
+      "automaticWriteAllowed": false
+    },
+    {
+      "id": "nyc-brooklyn-skyline-live",
+      "ready": true,
+      "reasons": [],
+      "expectedCurrent": {
+        "playbackVerifiedAt": "2026-11-11T05:01:31.964Z",
+        "latestObservationObservedAt": "2026-11-11T05:01:31.964Z",
+        "latestObservationKind": "HUMAN_PLAYBACK"
+      },
+      "proposedAtomicUpdate": {
+        "catalog": {
+          "id": "nyc-brooklyn-skyline-live",
+          "playbackVerifiedAt": "2026-11-18T13:17:52.992Z"
+        },
+        "observation": {
+          "id": "nyc-brooklyn-skyline-live",
+          "httpStatus": 200,
+          "confirmation": "HUMAN_PLAYBACK",
+          "observedAt": "2026-11-18T13:17:52.992Z",
+          "reason": "Human playback confirmed in deployed ERN review lab; independent provider-page availability evidence was also current."
+        }
+      },
+      "preconditions": {
+        "playback": "EMBED",
+        "permission": "EMBED_ALLOWED",
+        "health": "HEALTHY",
+        "expectedPlaybackVerifiedAt": "2026-11-11T05:01:31.964Z",
+        "expectedLatestObservationObservedAt": "2026-11-11T05:01:31.964Z"
+      },
+      "automaticWriteAllowed": false
+    },
+    {
+      "id": "rovaniemi-santa-claus-village-live",
+      "ready": true,
+      "reasons": [],
+      "expectedCurrent": {
+        "playbackVerifiedAt": "2026-11-11T05:01:00.231Z",
+        "latestObservationObservedAt": "2026-11-11T05:01:00.231Z",
+        "latestObservationKind": "HUMAN_PLAYBACK"
+      },
+      "proposedAtomicUpdate": {
+        "catalog": {
+          "id": "rovaniemi-santa-claus-village-live",
+          "playbackVerifiedAt": "2026-11-18T13:18:30.638Z"
+        },
+        "observation": {
+          "id": "rovaniemi-santa-claus-village-live",
+          "httpStatus": 200,
+          "confirmation": "HUMAN_PLAYBACK",
+          "observedAt": "2026-11-18T13:18:30.638Z",
+          "reason": "Human playback confirmed in deployed ERN review lab; independent provider-page availability evidence was also current."
+        }
+      },
+      "preconditions": {
+        "playback": "EMBED",
+        "permission": "EMBED_ALLOWED",
+        "health": "HEALTHY",
+        "expectedPlaybackVerifiedAt": "2026-11-11T05:01:00.231Z",
+        "expectedLatestObservationObservedAt": "2026-11-11T05:01:00.231Z"
+      },
+      "automaticWriteAllowed": false
+    },
+    {
+      "id": "taitung-jinzun",
+      "ready": true,
+      "reasons": [],
+      "expectedCurrent": {
+        "playbackVerifiedAt": "2026-11-11T05:01:03.564Z",
+        "latestObservationObservedAt": "2026-11-11T05:01:03.564Z",
+        "latestObservationKind": "HUMAN_PLAYBACK"
+      },
+      "proposedAtomicUpdate": {
+        "catalog": {
+          "id": "taitung-jinzun",
+          "playbackVerifiedAt": "2026-11-18T13:18:21.271Z"
+        },
+        "observation": {
+          "id": "taitung-jinzun",
+          "httpStatus": 200,
+          "confirmation": "HUMAN_PLAYBACK",
+          "observedAt": "2026-11-18T13:18:21.271Z",
+          "reason": "Human playback confirmed in deployed ERN review lab; independent provider-page availability evidence was also current."
+        }
+      },
+      "preconditions": {
+        "playback": "EMBED",
+        "permission": "EMBED_ALLOWED",
+        "health": "HEALTHY",
+        "expectedPlaybackVerifiedAt": "2026-11-11T05:01:03.564Z",
+        "expectedLatestObservationObservedAt": "2026-11-11T05:01:03.564Z"
+      },
+      "automaticWriteAllowed": false
+    },
+    {
+      "id": "volcan-tajogaite",
+      "ready": true,
+      "reasons": [],
+      "expectedCurrent": {
+        "playbackVerifiedAt": "2026-11-11T05:01:39.930Z",
+        "latestObservationObservedAt": "2026-11-11T05:01:39.930Z",
+        "latestObservationKind": "HUMAN_PLAYBACK"
+      },
+      "proposedAtomicUpdate": {
+        "catalog": {
+          "id": "volcan-tajogaite",
+          "playbackVerifiedAt": "2026-11-18T13:17:48.123Z"
+        },
+        "observation": {
+          "id": "volcan-tajogaite",
+          "httpStatus": 200,
+          "confirmation": "HUMAN_PLAYBACK",
+          "observedAt": "2026-11-18T13:17:48.123Z",
+          "reason": "Human playback confirmed in deployed ERN review lab; independent provider-page availability evidence was also current."
+        }
+      },
+      "preconditions": {
+        "playback": "EMBED",
+        "permission": "EMBED_ALLOWED",
+        "health": "HEALTHY",
+        "expectedPlaybackVerifiedAt": "2026-11-11T05:01:39.930Z",
+        "expectedLatestObservationObservedAt": "2026-11-11T05:01:39.930Z"
+      },
+      "automaticWriteAllowed": false
+    }
+  ],
+  "safety": {
+    "automaticWriteAllowed": false,
+    "partialProofUpdateAllowed": false,
+    "staleOverwriteAllowed": false,
+    "sourceTruthMutationBeyondPlaybackMarkerAllowed": false
+  },
+  "note": "Manual application plan only. Apply catalog marker + HUMAN_PLAYBACK observation together after re-checking preconditions against current main; never apply one side alone or overwrite newer evidence."
+}
