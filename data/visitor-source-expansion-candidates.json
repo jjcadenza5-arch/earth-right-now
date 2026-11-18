@@ -3952,6 +3952,23 @@
       ],
       "why": "Actual15Nov frames individually inspected. Makino infrastructure, Tangiwai river/gauge and Rangitikei mouth useful. Existing Foxton/Whanganui dated coastal images inspected to renew actual source reviews, without removing holds. Two Swiss reviews remain expired. Opiki held for road-dominant view; Mangaone partial grey frame; Tukino target returns old2025-09-05 Whanganui Te Rewa scene and May2026 Last-Modified, stale/mismatched. Prior Rangitikei bar-camera glare hold remains; new car-park target independently useful, one river-mouth place counted.",
       "next": "Keep holds, external still labels, access/safety limits and unverified fixedNZST/NZDT clock handling; no forced affiliate match."
+    },
+    {
+      "id": "batch88-nov18-camera-research-holds",
+      "priority": "P1",
+      "placeGroup": "Great Basin Snake Range; Bighorn Horseshoe Bend; NZ Ore Ore, Hoihere and Pukeokahu",
+      "country": "United States / New Zealand",
+      "candidateType": "FIRST_PARTY_CURRENT_STILL",
+      "state": "HELD_NO_NEW_PLACE_ADMISSION",
+      "reviewedAt": "2026-11-18T13:13:11Z",
+      "evidenceUrls": [
+        "https://www.nps.gov/grba/planyourvisit/weather.htm",
+        "https://phenocam.nau.edu/webcam/sites/nevcansnk3a/",
+        "https://www.nps.gov/bica/learn/photosmultimedia/webcams.htm",
+        "https://www.horizons.govt.nz/webcams"
+      ],
+      "why": "Great Basin official page links NevCAN Snake Range camera; latest target Last-Modified17Nov00:38:45GMT is old at18Nov13UTC, and site requests contacting data owners prior data use/publication. Bighorn official camera link uses older HTTP/IP address, target not requested in this batch. NZ exact published targets retrieved and visually inspected: Hoihere dark with lens water/glare, Ore Ore lens water/low contrast, Pukeokahu dark. No new source admitted. Timestamps and primary-page availability do not renew moving playback evidence.",
+      "next": "Owner renewal required for existing nine expired moving streams. Retry landscape sources with materially useful daylight/current-image evidence."
     }
   ],
   "guardrails": {

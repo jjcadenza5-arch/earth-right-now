@@ -1,3 +1,19 @@
+## 2026-11-18 Bangkok — Batch88 saved as a release draft
+
+Prepared branch ern/batch88-prepared-growth from main3b75c1dcc04960c08fcfafe1dc7385f2f023718b. One verified Beppu/Kannawa affiliate placement prepared. Published camera coverage949 and business270placements/254places/149trackedURLs/4programs. Draft business271/255/150/4. Five new camera candidates remain research holds after availability, stale-image, darkness and lens-quality checks.
+
+Validation completed:121of122 existing release smoke tests passed. tests/watch-earth-five-live-video.smoke.js fails Current daylight sample needs several premium live cameras. Featured-curation guard also fails because inside verified moving count is0 after all nine11Nov proofs exceeded168hours. Commercial, performance, supplemental catalog, static build and public-module integrity pass. Built offer matches source metadata. Existing sources, proofdates, pilot, runtime and styles match the remote baseline. No production release requested from this draft.
+
+Human playback review is required by the existing repository handoff Human-only work section and proof gates. Live review/current.json confirms batch26a6b44a9c9c03f5 and nine primary cameras. Owner action: open https://earthrightnow.app/review/inside-ern.html, play each primary camera, record the observed outcome, then Copy JSON and provide the packet. After current evidence arrives, reconcile main/pilot changes, apply actual outcomes, rerun release validation and publish through the existing Pages workflow.
+
+## 2026-11-18 Bangkok — Batch88 DRAFT awaiting human playback renewal
+
+Reconciled remote3b75c1dcc04960c08fcfafe1dc7385f2f023718b, accepted Batch87 and scheduled pilot renewal. Published coverage949 camera-backed places. Prepared one Beppu/Kannawa Viator placement for Tsurumi–Garan after exact tracked HTTP200 redirect and selected-product HTML review. Existing partner/account proof and expiry retained. Draft counts271source-eligible placements/255places/150trackedURLs/4programs, pending publication. Production counts270/254/149/4. Date-specific availability, bookings and attribution untested.
+
+Camera research admitted zero new places. Great Basin Snake Range default image is old (Last-Modified17Nov00:38:45GMT at18Nov13UTC); PhenoCam text requests contacting data owners before data use/publication. Bighorn published camera link is older HTTP/IP, target not requested this batch. Actual published NZ Hoihere/Ore Ore/Pukeokahu images retrieved, decoded and inspected: lens water/glare/low contrast/darkness limit usefulness. All held, earlier source/owner proofdates preserved. No media copied or source truth upgraded.
+
+Release preflight fails because all nine existing moving playback proofs exceed168hours. Metrics20eligible/0inside/10countries/15providers. Human-only playback requirement comes from existing source-truth policy and docs/ERN_SHARED_HANDOFF_2026-09-28.md Human-only work. No expiry/policy/guard changes. Deployed review batch26a6b44a9c9c03f5 confirmed from /review/current.json. Owner should play the nine primary cameras at https://earthrightnow.app/review/inside-ern.html, record outcomes and provide Copy JSON evidence. Draft branch will be saved remotely. Local validation pending; production publishing waits for current evidence.
+
 ## 2026-11-18 Bangkok — Batch87 accepted
 
 Deployed 13e772290f73ba137c281832ea5e155a46816c0f through Pages run 44218754534. Operations run 44218754470 passed with zero issues. All 122 local release tests passed. Live HTTP verification matched nine release-manifest checksums, including the two new destination pages, the Nikko page and the published affiliate inventory.
