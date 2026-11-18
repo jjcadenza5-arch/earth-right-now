@@ -1,3 +1,9 @@
+## 2026-11-18 Bangkok — Batch87 accepted
+
+Deployed 13e772290f73ba137c281832ea5e155a46816c0f through Pages run 44218754534. Operations run 44218754470 passed with zero issues. All 122 local release tests passed. Live HTTP verification matched nine release-manifest checksums, including the two new destination pages, the Nikko page and the published affiliate inventory.
+
+ERN now covers 949 distinct camera-backed places, with 51 remaining. The Nikko addition brings the source-eligible affiliate inventory to 270 placements at 254 places and 149 distinct tracked URLs across four programs. The tracked product redirect and itinerary were verified through HTTP and Viator's product page. Date-specific availability, bookings and attribution outcomes were not tested.
+
 ## 2026-11-18 Bangkok — Batch87 prepared
 
 Reconciled remote 278ae1c6c3edf4e338b1ed0559a5001d0e31701f and preserved three scheduled pilot renewals since Batch86. Added two council camera places after inspecting 18 November frames. Makino at Duke Street is a stream monitoring site distinct from the existing floodgates. Mangaone shows a complete image after the partial-frame hold. Herbertville and Rangitīkei remain single places already in the catalog. Whanganui Town Bridge stays held for soft, smeared imagery.
