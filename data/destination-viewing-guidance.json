@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "reviewedAt": "2026-11-03",
+  "reviewedAt": "2026-11-19T04:39:59.477106Z",
   "purpose": "Original visitor guidance based on existing reviewed camera scope. Never verification evidence, opening-hour advice or permission to promote a source.",
   "places": {
     "mpala-watering-hole": [
@@ -254,6 +254,18 @@
     "austria-werfenweng-soeldenhuette": [
       "Look southwest from Söldenhütte toward Werfenweng’s valley and surrounding mountains. Golden larches and wooded slopes fill the foreground, with the village and fields below the distant ridgeline.",
       "Open the provider page and check its image date. This view is a refreshed still. For a visit, check current hut, trail and transport information with local operators and consult official mountain conditions."
+    ],
+    "japan-noboribetsu-jigokudani": [
+      "Look into Jigokudani’s pale, deeply cut valley at Noboribetsu. Branching gullies cross the bare ground beneath a wooded rim, with a walkway visible in the foreground.",
+      "Open the official JMA page and check the printed image date. This refreshed still can lag or be interrupted. Consult current JMA volcanic warnings and local access instructions before visiting; the picture cannot establish air quality, snow safety or whether trails and walkways are open."
+    ],
+    "japan-hokkaido-komagatake": [
+      "See Hokkaido Komagatake’s distinct summit profiles and snow-traced slopes from JMA’s Shikabe Park southeast camera. Cloud and changing light can soften the outline.",
+      "Open the official JMA page and check the printed image date. This refreshed still can lag or be interrupted. Consult current JMA volcanic warnings and local access instructions before visiting; the picture cannot establish air quality, snow safety or whether trails and walkways are open."
+    ],
+    "japan-mount-iwate": [
+      "Watch Mount Iwate’s broad ridges from the Kashiwadai camera. Thin traces of snow pick out the slopes beneath a changing cloud ceiling; the higher summit may disappear into cloud.",
+      "Open the official JMA page and check the printed image date. This refreshed still can lag or be interrupted. Consult current JMA volcanic warnings and local access instructions before visiting; the picture cannot establish air quality, snow safety or whether trails and walkways are open."
     ]
   }
 }

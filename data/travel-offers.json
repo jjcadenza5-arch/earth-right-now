@@ -5172,5 +5172,26 @@
     "placementReviewedAt": "2026-11-18T13:35:33Z",
     "manualOpenVerified": false,
     "evidence": "18Nov2026 exact tracked product request returned HTTP200 after redirect to Munich/d487-ttd/p-2666HERR, retaining ERN pidP00322254/mcid42383/mediumlink. Returned primary HTML identifies You selected and Herrenchiemsee Palace and Fraueninsel Rail Trip from Munich. Primary itinerary lists Munich departure and Lake Chiemsee islands. Placement label describes a regional trip from Munich. Palace admission and boat fares require checking on the selected product. Date-specific availability, bookings and commission attribution untested. Existing account/partner proof and26Dec expiry retained."
+  },
+  {
+    "id": "viator-aomori-hakkoda-custom-selected",
+    "placeId": "japan-hakkoda-mountains",
+    "title": "Aomori custom day tour — selected result",
+    "destinationScope": "Custom Aomori-area trip. Confirm Hakkoda routing, transport and meeting point with the operator before choosing dates.",
+    "url": "https://www.viator.com/Aomori/d50829-ttd/p-383992P60?pid=P00322254&mcid=42383&medium=link",
+    "provider": "Viator",
+    "partnerId": "viator",
+    "intent": "activities",
+    "affiliate": true,
+    "sponsored": false,
+    "disclosure": "Affiliate link",
+    "verified": true,
+    "verifiedAt": "2026-11-19T04:39:59.477106Z",
+    "expiresAt": "2026-12-26T13:17:00Z",
+    "commissionClaimed": false,
+    "verificationMethod": "PRIMARY_PAGE_HTTP_REVIEW_PLUS_EXISTING_OWNER_TRACKING_ID",
+    "placementReviewedAt": "2026-11-19T04:39:59.477106Z",
+    "manualOpenVerified": false,
+    "evidence": "19Nov2026 exact tracked product request returned HTTP200 after redirect to Aomori/d50829-ttd/p-383992P60, retaining ERN pidP00322254/mcid42383/mediumlink. Returned primary HTML identifies You selected and Aomori: Private Custom Tour with Local Guide. Primary indexed product itinerary lists Hakkoda Mountains among custom Aomori stops. Legacy request slug Shinagawa-Walking-Tour is not the selected current title. Current returned selected-result page does not expose the dedicated itinerary; confirm Hakkoda routing, transport, fees and meeting point directly before selecting dates. No fixed mountain stop, camera-site pickup, date-specific availability, booking or commission attribution confirmed. Existing account/partner proof and26Dec expiry retained."
   }
 ]

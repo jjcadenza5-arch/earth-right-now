@@ -3987,6 +3987,25 @@
       ],
       "why": "Three useful18Nov14:30 official default JPEG panoramas individually decoded and inspected with exact camera-specific linking permission. Clear town/lake/valley geography. Rauris fresh14:30 frame cloud-obscured and Weissensee default image dated17Jun2024: held and uncounted. New Chiemsee regional affiliate trip independently reviewed with selected-product and Munich-departure scope.",
       "next": "Retain external refreshed-still labels, featured/watch holds and all prior source holds. Reconsider Rauris with useful visibility and Weissensee with genuinely updated imagery."
+    },
+    {
+      "id": "jma-batch90-nov19",
+      "priority": "P1",
+      "placeGroup": "Noboribetsu Jigokudani, Hokkaido Komagatake and Mount Iwate; Asahidake, Tokachi and Tarumae held",
+      "country": "Japan",
+      "candidateType": "FIRST_PARTY_CURRENT_STILL",
+      "state": "THREE_PLACES_ADMITTED_THREE_VISIBILITY_HOLDS",
+      "reviewedAt": "2026-11-19T04:39:59.477106Z",
+      "evidenceUrls": [
+        "https://www.data.jma.go.jp/vois/data/obs/volcam/volcam.php?VC=10702",
+        "https://www.data.jma.go.jp/vois/data/obs/volcam/volcam.php?VC=10801",
+        "https://www.data.jma.go.jp/vois/data/obs/volcam/volcam.php?VC=10901",
+        "https://www.data.jma.go.jp/vois/data/obs/volcam/volcam.php?VC=11301",
+        "https://www.data.jma.go.jp/vois/data/obs/volcam/volcam.php?VC=20701",
+        "https://www.data.jma.go.jp/vois/data/obs/volcam/volcam.php?VC=11102"
+      ],
+      "why": "Six actual19Nov12:31–12:32 default JPEGs decoded and individually inspected. Useful valley, snowy summit profiles and broad mountain ridges admitted. Asahidake gray cloud; Tokachi overwhelmingly cloud-obscured; Tarumae low-contrast haze: held and uncounted. One Aomori custom tour added for existing Hakkoda with route/transport confirmation explicit.",
+      "next": "Keep external still labels and featured/watch holds. Reconsider obscured candidates only with genuinely useful updated imagery. All prior holds remain."
     }
   ],
   "guardrails": {
