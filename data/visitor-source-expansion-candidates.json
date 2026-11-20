@@ -4006,6 +4006,27 @@
       ],
       "why": "Six actual19Nov12:31–12:32 default JPEGs decoded and individually inspected. Useful valley, snowy summit profiles and broad mountain ridges admitted. Asahidake gray cloud; Tokachi overwhelmingly cloud-obscured; Tarumae low-contrast haze: held and uncounted. One Aomori custom tour added for existing Hakkoda with route/transport confirmation explicit.",
       "next": "Keep external still labels and featured/watch holds. Reconsider obscured candidates only with genuinely useful updated imagery. All prior holds remain."
+    },
+    {
+      "id": "jma-batch91-nov20",
+      "priority": "P1",
+      "placeGroup": "Tokachidake admitted; Hachijojima alternate; six visibility holds",
+      "country": "Japan",
+      "candidateType": "FIRST_PARTY_CURRENT_STILL",
+      "state": "ONE_NEW_PLACE_ONE_EXISTING_PLACE_ALTERNATE_SIX_VISIBILITY_HOLDS",
+      "reviewedAt": "2026-11-20T02:39:55Z",
+      "evidenceUrls": [
+        "https://www.data.jma.go.jp/vois/data/obs/volcam/volcam.php?VC=11201",
+        "https://www.data.jma.go.jp/vois/data/obs/volcam/volcam.php?VC=32101",
+        "https://www.data.jma.go.jp/vois/data/obs/volcam/volcam.php?VC=50201",
+        "https://www.data.jma.go.jp/vois/data/obs/volcam/volcam.php?VC=50401",
+        "https://www.data.jma.go.jp/vois/data/obs/volcam/volcam.php?VC=10702",
+        "https://www.data.jma.go.jp/vois/data/obs/volcam/volcam.php?VC=10801",
+        "https://www.data.jma.go.jp/vois/data/obs/volcam/volcam.php?VC=20501",
+        "https://www.data.jma.go.jp/vois/data/obs/volcam/volcam.php?VC=21301"
+      ],
+      "why": "Eight actual20Nov10:31–10:32 JPEGs decoded and individually inspected. Tokachidake ridge visibility improves from prior cloud hold. Hachijojima mountain source shares existing island place identity, not counted again. Usu, Kuju, Unzen, Asahidake, Akita-Yakeyama and Azuma held for obscured/poorly defined scenes. One relevant Noboribetsu/Sapporo-departing tour reviewed. Glacier collection independently rechecked with actual dated Apgar still.",
+      "next": "Keep attributed external still treatment, prior holds and count deduplication. Reconsider held views only with useful imagery. Glacier collection check is not proof of every camera, moving playback or visitor access."
     }
   ],
   "guardrails": {

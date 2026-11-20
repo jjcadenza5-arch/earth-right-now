@@ -5193,5 +5193,26 @@
     "placementReviewedAt": "2026-11-19T04:39:59.477106Z",
     "manualOpenVerified": false,
     "evidence": "19Nov2026 exact tracked product request returned HTTP200 after redirect to Aomori/d50829-ttd/p-383992P60, retaining ERN pidP00322254/mcid42383/mediumlink. Returned primary HTML identifies You selected and Aomori: Private Custom Tour with Local Guide. Primary indexed product itinerary lists Hakkoda Mountains among custom Aomori stops. Legacy request slug Shinagawa-Walking-Tour is not the selected current title. Current returned selected-result page does not expose the dedicated itinerary; confirm Hakkoda routing, transport, fees and meeting point directly before selecting dates. No fixed mountain stop, camera-site pickup, date-specific availability, booking or commission attribution confirmed. Existing account/partner proof and26Dec expiry retained."
+  },
+  {
+    "id": "viator-noboribetsu-toya-from-sapporo-selected",
+    "placeId": "japan-noboribetsu-jigokudani",
+    "title": "Lake Toya and Noboribetsu day tour from Sapporo — selected result",
+    "destinationScope": "Regional private day tour departing Sapporo. Confirm transport arrangements, pickup, fees and cancellation terms on the selected product before choosing dates.",
+    "url": "https://www.viator.com/Sapporo/d5559-ttd/p-92346P4?pid=P00322254&mcid=42383&medium=link",
+    "provider": "Viator",
+    "partnerId": "viator",
+    "intent": "activities",
+    "affiliate": true,
+    "sponsored": false,
+    "disclosure": "Affiliate link",
+    "verified": true,
+    "verifiedAt": "2026-11-20T02:37:41.538161+00:00",
+    "expiresAt": "2026-12-26T13:17:00Z",
+    "commissionClaimed": false,
+    "verificationMethod": "PRIMARY_PAGE_HTTP_REVIEW_PLUS_EXISTING_OWNER_TRACKING_ID",
+    "placementReviewedAt": "2026-11-20T02:37:41.538161+00:00",
+    "manualOpenVerified": false,
+    "evidence": "20Nov2026 exact tracked request HTTP200 redirects to Sapporo/d5559-ttd/p-92346P4 with ERN pidP00322254/mcid42383/mediumlink preserved. Returned primary HTML identifies You selected and Lake Toya and Noboribetsu Hell Valley Day Tour. Primary product description lists Sapporo hotel departure and Lake Toya/Mt Usu/Showashinzan/Jigokudani itinerary; taxi available on request and admissions require checking. Primary product cancellation text says non-refundable; current selected-result page does not expose dedicated terms, so visitor must check transport, fees, cancellation and dates directly. No camera-site pickup, date-specific availability, booking or commission attribution confirmed. Existing account/partner proof and26Dec expiry retained."
   }
 ]

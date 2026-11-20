@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "reviewedAt": "2026-11-19T04:39:59.477106Z",
+  "reviewedAt": "2026-11-20T02:39:55Z",
   "purpose": "Original visitor guidance based on existing reviewed camera scope. Never verification evidence, opening-hour advice or permission to promote a source.",
   "places": {
     "mpala-watering-hole": [
@@ -266,6 +266,10 @@
     "japan-mount-iwate": [
       "Watch Mount Iwate’s broad ridges from the Kashiwadai camera. Thin traces of snow pick out the slopes beneath a changing cloud ceiling; the higher summit may disappear into cloud.",
       "Open the official JMA page and check the printed image date. This refreshed still can lag or be interrupted. Consult current JMA volcanic warnings and local access instructions before visiting; the picture cannot establish air quality, snow safety or whether trails and walkways are open."
+    ],
+    "japan-mount-tokachi": [
+      "See Tokachidake’s snow-traced slopes from the Shirogane model-ranch camera. Sunlight reveals the broad ridges while cloud can hide the higher contours.",
+      "Open the official JMA page and check the printed image date. Cloud can hide the summit and this refreshed still may lag or be interrupted. Consult current JMA volcanic warnings and local access instructions before visiting; the picture cannot establish snow safety or whether trails and facilities are open."
     ]
   }
 }
