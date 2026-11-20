@@ -4027,6 +4027,22 @@
       ],
       "why": "Eight actual20Nov10:31–10:32 JPEGs decoded and individually inspected. Tokachidake ridge visibility improves from prior cloud hold. Hachijojima mountain source shares existing island place identity, not counted again. Usu, Kuju, Unzen, Asahidake, Akita-Yakeyama and Azuma held for obscured/poorly defined scenes. One relevant Noboribetsu/Sapporo-departing tour reviewed. Glacier collection independently rechecked with actual dated Apgar still.",
       "next": "Keep attributed external still treatment, prior holds and count deduplication. Reconsider held views only with useful imagery. Glacier collection check is not proof of every camera, moving playback or visitor access."
+    },
+    {
+      "id": "jma-batch92-nov20",
+      "priority": "P1",
+      "placeGroup": "Kuchinoerabujima and Tokara Nakanoshima; Suwanosejima held",
+      "country": "Japan",
+      "candidateType": "FIRST_PARTY_CURRENT_STILL",
+      "state": "TWO_NEW_PLACES_ONE_VISIBILITY_HOLD",
+      "reviewedAt": "2026-11-20T03:26:39.030881Z",
+      "evidenceUrls": [
+        "https://www.data.jma.go.jp/vois/data/obs/volcam/volcam.php?VC=50901",
+        "https://www.data.jma.go.jp/vois/data/obs/volcam/volcam.php?VC=51001",
+        "https://www.data.jma.go.jp/vois/data/obs/volcam/volcam.php?VC=51101"
+      ],
+      "why": "Three actual default JPEGs individually decoded and inspected. Kuchinoerabujima ridge and Tokara Nakanoshima cone clear enough for useful external stills. Suwanosejima hazy low-contrast silhouette, overlay11:07:55 despite later file time, held and uncounted. Relevant seasonal Biei-region offer reviewed separately; official upcoming road closure included in Tokachidake guidance.",
+      "next": "Keep external refreshed-still labels and featured/watch holds. No forced remote-island affiliate fit, ferry/access/eruption conclusions or image reuse. Reconsider Suwanosejima only with useful visibility; earlier holds preserved."
     }
   ],
   "guardrails": {

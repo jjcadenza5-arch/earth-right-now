@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "reviewedAt": "2026-11-20T02:39:55Z",
+  "reviewedAt": "2026-11-20T03:26:39.030881Z",
   "purpose": "Original visitor guidance based on existing reviewed camera scope. Never verification evidence, opening-hour advice or permission to promote a source.",
   "places": {
     "mpala-watering-hole": [
@@ -269,7 +269,15 @@
     ],
     "japan-mount-tokachi": [
       "See Tokachidake’s snow-traced slopes from the Shirogane model-ranch camera. Sunlight reveals the broad ridges while cloud can hide the higher contours.",
-      "Open the official JMA page and check the printed image date. Cloud can hide the summit and this refreshed still may lag or be interrupted. Consult current JMA volcanic warnings and local access instructions before visiting; the picture cannot establish snow safety or whether trails and facilities are open."
+      "Open the official JMA page and check the printed image date. Cloud can hide the summit and this refreshed still may lag or be interrupted. Consult current JMA volcanic warnings and local access instructions before visiting; the picture cannot establish snow safety or whether trails and facilities are open. Biei Tourism Association lists the Shirogane Onsen–Bogakudai road section as closed from 11:00 on 1 December 2026 to 11:00 on 23 April 2027. Check current road notices and the route for your travel date before setting out."
+    ],
+    "japan-kuchinoerabujima": [
+      "Look toward Kuchinoerabujima’s serrated mountain ridge from JMA’s Honmura West camera. Brown, deeply cut slopes rise above green woodland; cloud and occasional lens spots can soften the view.",
+      "Open the official JMA page and check the printed image date. This refreshed still can lag or be interrupted. Consult current JMA volcanic warnings and local access instructions before visiting. The picture cannot establish air quality, safe access, trail openings or ferry operation."
+    ],
+    "japan-tokara-nakanoshima": [
+      "See Nakanoshima’s broad mountain cone from the official Yoriki camera in the Tokara Islands. The wide view shows the ridgeline and green slopes beneath changing island cloud.",
+      "Open the official JMA page and check the printed image date. This refreshed still can lag or be interrupted. Consult current JMA volcanic warnings and local access instructions before visiting. The picture cannot establish air quality, safe access, trail openings or ferry operation."
     ]
   }
 }

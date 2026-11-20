@@ -5214,5 +5214,26 @@
     "placementReviewedAt": "2026-11-20T02:37:41.538161+00:00",
     "manualOpenVerified": false,
     "evidence": "20Nov2026 exact tracked request HTTP200 redirects to Sapporo/d5559-ttd/p-92346P4 with ERN pidP00322254/mcid42383/mediumlink preserved. Returned primary HTML identifies You selected and Lake Toya and Noboribetsu Hell Valley Day Tour. Primary product description lists Sapporo hotel departure and Lake Toya/Mt Usu/Showashinzan/Jigokudani itinerary; taxi available on request and admissions require checking. Primary product cancellation text says non-refundable; current selected-result page does not expose dedicated terms, so visitor must check transport, fees, cancellation and dates directly. No camera-site pickup, date-specific availability, booking or commission attribution confirmed. Existing account/partner proof and26Dec expiry retained."
+  },
+  {
+    "id": "viator-biei-seasonal-from-sapporo-selected",
+    "placeId": "japan-mount-tokachi",
+    "title": "Biei seasonal day trip from Sapporo — selected result",
+    "destinationScope": "Wider Biei-area sightseeing departing Sapporo. Seasonal stops vary; this is not a Tokachidake summit trip. Check selected dates, meeting point, route and fees.",
+    "url": "https://www.viator.com/en-GB/Sapporo/d5559-ttd/p-48881P233?pid=P00322254&mcid=42383&medium=link",
+    "provider": "Viator",
+    "partnerId": "viator",
+    "intent": "activities",
+    "affiliate": true,
+    "sponsored": false,
+    "disclosure": "Affiliate link",
+    "verified": true,
+    "verifiedAt": "2026-11-20T03:25:41.340516+00:00",
+    "expiresAt": "2026-12-26T13:17:00Z",
+    "commissionClaimed": false,
+    "verificationMethod": "PRIMARY_PAGE_HTTP_REVIEW_PLUS_EXISTING_OWNER_TRACKING_ID",
+    "placementReviewedAt": "2026-11-20T03:25:41.340516+00:00",
+    "manualOpenVerified": false,
+    "evidence": "20Nov2026 exact tracked HTTP200 redirect to en-GB/Sapporo/d5559-ttd/p-48881P233 retains ERN pidP00322254/mcid42383/mediumlink. Current primary HTML identifies You selected and Biei Seasonal Highlights Day Trip from Sapporo. Primary product itinerary describes Biei/Shirogane Blue Pond/Shirahige Waterfall and season-dependent stops, with weather/road changes and winter walking conditions. Clearly regional Biei-area placement, not Tokachidake summit transport, camera-site pickup or guaranteed viewpoint visit. Biei Tourism Association road notice https://www.biei-hokkaido.jp/en/27178 specifies Shirogane Onsen–Bogakudai closure1Dec2026 11:00–23Apr2027 11:00; public destination guidance records this separately. Date-specific availability, bookings and commission attribution untested. Existing account/partner proof and26Dec expiry retained."
   }
 ]
