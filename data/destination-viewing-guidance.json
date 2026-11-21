@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "reviewedAt": "2026-11-20T03:26:39.030881Z",
+  "reviewedAt": "2026-11-21T01:47:29Z",
   "purpose": "Original visitor guidance based on existing reviewed camera scope. Never verification evidence, opening-hour advice or permission to promote a source.",
   "places": {
     "mpala-watering-hole": [
@@ -40,8 +40,8 @@
       "The camera does not establish access to private land or predict mountain visibility later in the day. Regional activity links may depart elsewhere in Lofoten; check the meeting point and transfer arrangements before booking."
     ],
     "oeschinensee": [
-      "The Oeschinensee source is kept as a reference while current-image verification is due. The dated lake photograph illustrates the destination and must not be read as today's mountain visibility or lake conditions.",
-      "Open the official source for its latest camera and visitor notices before planning around the lake view. Confirm access, transport and operating information independently; an expired camera check does not establish whether a route is open."
+      "The official webcam collection includes a mountain-station panorama and a separate lake camera. The mountain-station view showed snowy ground, woodland and mountain slopes in its latest 20 November evening image at review.",
+      "The lake-side Berghotel camera explicitly reported offline and retained an 18 November image. Check each camera’s printed date rather than assuming all views are current. Confirm cable-car, trail and seasonal access separately with the operator before visiting."
     ],
     "switzerland-kuessnacht": [
       "The refreshed still shows Küssnacht rooftops, church tower and lakefront; haze may hide the far shore. The reviewed camera clock appeared about 15 minutes ahead of the review clock. Treat the capture time cautiously and check it at the provider; ERN has not calibrated the camera clock.",
@@ -278,6 +278,22 @@
     "japan-tokara-nakanoshima": [
       "See Nakanoshima’s broad mountain cone from the official Yoriki camera in the Tokara Islands. The wide view shows the ridgeline and green slopes beneath changing island cloud.",
       "Open the official JMA page and check the printed image date. This refreshed still can lag or be interrupted. Consult current JMA volcanic warnings and local access instructions before visiting. The picture cannot establish air quality, safe access, trail openings or ferry operation."
+    ],
+    "nz-gisborne-wainui-beach": [
+      "Look along Wainui Beach from Tuahine Point toward the Gisborne coast. A long sandy curve, nearby headlands and green hills frame the Pacific; the provider masks some foreground properties.",
+      "Open the provider’s camera page to inspect the latest view. These are refreshed still images and updates may pause; time-lapse controls show earlier pictures. Check local weather, access and water conditions separately before a visit. A clear-looking view cannot establish swimming, boating or road safety."
+    ],
+    "nz-gisborne-river-marina": [
+      "See Gisborne’s river, road bridge and marina from above Reads Quay. Palm trees and a waterfront park fill the foreground, with town buildings and wooded hills beyond.",
+      "Open the provider’s camera page to inspect the latest view. These are refreshed still images and updates may pause; time-lapse controls show earlier pictures. Check local weather, access and water conditions separately before a visit. A clear-looking view cannot establish swimming, boating or road safety."
+    ],
+    "nz-tolaga-bay-uawa": [
+      "Look across the green folds of the Ūawa Valley toward Tolaga Bay. Farmland and wooded gullies fill the wide elevated view, while the township and coast sit in the distance.",
+      "Open the provider’s camera page to inspect the latest view. These are refreshed still images and updates may pause; time-lapse controls show earlier pictures. Check local weather, access and water conditions separately before a visit. A clear-looking view cannot establish swimming, boating or road safety."
+    ],
+    "nz-ohiwa-harbour": [
+      "Watch Ōhiwa Harbour’s channels and sandbars from an elevated coastal view. Green slopes frame the foreground, with Ōhope’s coastal strip and the outline of Moutohorā farther away.",
+      "Open the provider’s camera page to inspect the latest view. These are refreshed still images and updates may pause; time-lapse controls show earlier pictures. Check local weather, access and water conditions separately before a visit. A clear-looking view cannot establish swimming, boating or road safety."
     ]
   }
 }
