@@ -4060,6 +4060,26 @@
       ],
       "why": "Four actual2688x1512 first-party JPEGs individually decoded/inspected. Two carry21Nov14:41–14:42 overlays. Wainui/Ōhiwa have no visible capture clock; two changed captures individually inspected with wave/cloud/wake changes and current HTTP modification evidence, clock uncertainty explicit. Exact public camera-page handoffs only; no imagery reuse. Three expired core checks refreshed after separate actual browser reviews, with Oeschinensee lake outage and mountain-station latest daylight image distinguished.",
       "next": "Keep external still labels, featured/watch holds, privacy masking and prior research holds. No forced commercial fit on the other three views. Maintain Oeschinensee lake-camera hold until actual recovery; current collection check is not all-camera availability or moving playback proof."
+    },
+    {
+      "id": "alpine-batch94-nov21",
+      "priority": "P1",
+      "placeGroup": "Lofer Saalach, Graz and Murnau; Rauris, Tegelberg, Walchensee and Pörtschach held",
+      "country": "Austria / Germany",
+      "candidateType": "FIRST_PARTY_CURRENT_STILL",
+      "state": "THREE_PLACES_ADMITTED_FOUR_VISIBILITY_HOLDS",
+      "reviewedAt": "2026-11-21T08:21:03.311909Z",
+      "evidenceUrls": [
+        "https://www.foto-webcam.eu/webcam/rauris/",
+        "https://www.foto-webcam.eu/webcam/lofer/",
+        "https://www.foto-webcam.eu/webcam/tegelberg/",
+        "https://www.foto-webcam.eu/webcam/herzogstand/",
+        "https://www.foto-webcam.eu/webcam/helmut-list-halle/",
+        "https://www.foto-webcam.eu/webcam/poertschach-a-w/",
+        "https://www.foto-webcam.eu/webcam/murnau/"
+      ],
+      "why": "Seven current720x405 JPEGs individually decoded/inspected. Useful river/autumn woodland, city/Schlossberg and field-plain scenes admitted with visibility limits. Rauris fog, Tegelberg fog/wet lens, Herzogstand/Walchensee fog and Pörtschach heavily cloud-obscured lake remain held/uncounted. Exact camera-specific linking permission reviewed. One geographically relevant selected Graz tour independently checked.",
+      "next": "Retain attributed external still labels, featured/watch holds, weather-overlay limitations and prior holds. Reconsider obscured Alpine views only after useful visibility returns. No forced Lofer or Murnau affiliate mapping."
     }
   ],
   "guardrails": {

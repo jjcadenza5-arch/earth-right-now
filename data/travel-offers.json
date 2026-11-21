@@ -5256,5 +5256,26 @@
     "placementReviewedAt": "2026-11-21T01:46:08.142762+00:00",
     "manualOpenVerified": false,
     "evidence": "21Nov2026 exact tracked HTTP200 redirect to North-Island/d128-ttd/p-5585306P2 retains ERN pidP00322254/mcid42383/mediumlink. Returned primary HTML identifies You selected and Rere Falls & Eastwoodhill Arboretum Tour with Refreshments. Dedicated primary product lists Experience Gisborne, meeting45Esplanade Kaiti Gisborne and pickup to confirm24hours ahead. Regional excursion label explicit, no camera-site pickup, marina activity or beach-safety claim. Current selected-result response does not expose full dedicated itinerary. Date availability, booking and commission attribution untested; historical partner/account proof and26Dec expiry retained."
+  },
+  {
+    "id": "viator-graz-schlossberg-selected",
+    "placeId": "austria-graz-schlossberg-view",
+    "title": "Graz Schlossberg guided tour — selected result",
+    "destinationScope": "Graz city and Schlossberg walking tour. Check selected option, meeting point, museum admission and return transport; this is not an event ticket or pickup at Helmut List Halle.",
+    "url": "https://www.viator.com/Graz/d452-ttd/p-265552P42?pid=P00322254&mcid=42383&medium=link",
+    "provider": "Viator",
+    "partnerId": "viator",
+    "intent": "activities",
+    "affiliate": true,
+    "sponsored": false,
+    "disclosure": "Affiliate link",
+    "verified": true,
+    "verifiedAt": "2026-11-21T08:19:58.210911+00:00",
+    "expiresAt": "2026-12-26T13:17:00Z",
+    "commissionClaimed": false,
+    "verificationMethod": "PRIMARY_PAGE_HTTP_REVIEW_PLUS_EXISTING_OWNER_TRACKING_ID",
+    "placementReviewedAt": "2026-11-21T08:19:58.210911+00:00",
+    "manualOpenVerified": false,
+    "evidence": "21Nov2026 exact tracked HTTP200 redirect to Graz/d452-ttd/p-265552P42 retains ERN pidP00322254/mcid42383/mediumlink. Returned primary HTML identifies You selected and Graz: Schlossberg Private Guided Tour with Schlossbergbahn. Dedicated primary product lists Schlossberg, museum/Old Town options, meetingSchlossbergpl1 and one-way Schlossbergbahn ticket; return transport not included and itinerary depends on selected option. Visitor label requires option, meeting point, admission and return-transport checks. No Helmut List Halle event admission or camera-site pickup claim. Date availability, bookings and commission attribution untested; original account/partner proof and26Dec expiry retained."
   }
 ]
