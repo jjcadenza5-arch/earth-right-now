@@ -112,3 +112,7 @@ Rauris camera partnership: Naturfreundehaus Kolm-Saigurn, Municipality of Rauris
 ```
 
 Primary product https://www.viator.com/en-HK/tours/Hong-Kong-SAR/Aqua-Luna-Evening-Cruise-At-Victoria-Harbour-Hong-Kong/d35959-30544P3 reviewed independently. Returned tracked page selected-product title confirmed. No price, guarantee, booking or earnings claim.
+
+## Served wording correction before acceptance
+
+Initial production8613da43e3e3bc1d9a8d6818061e62a9fecbe332 passed Pages and Operations, but live acceptance exposed that destinationScope metadata is not displayed by the preserved destination template. Added original Hong Kong viewing guidance with the cruise departure-pier, sailing-time, accessibility and cancellation checks on the actual public harbour page. Added separate Peak still-image/access guidance. No template/runtime/policy change. Final deployment and served acceptance required on the correction commit.
