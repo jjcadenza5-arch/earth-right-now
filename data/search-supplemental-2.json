@@ -7165,5 +7165,45 @@
     "rightsSourceUrl": "https://www.foto-webcam.eu/webcam/murnau/infos/",
     "rightsBasis": "Camera-specific information explicitly permits links to this exact webcam page. ERN uses only an attributed external handoff and original descriptive text. Conditional image-use permissions remain with the provider; no image, logo, thumbnail, crop, iframe or time-lapse copied or embedded.",
     "freshnessEvidence": "21Nov2026 exact provider camera page and camera-specific info retrieved; explicit permission for links to https://www.foto-webcam.eu/webcam/murnau/ confirmed. Actual default current720x405 JPEG individually decoded and visually inspected. Review 2026-11-21T08:19:18.380992+00:00; printed21.11.26 09:10. Scene: Nearby roofs and woodland overlook a broad open field plain; low cloud and haze obscure the distant mountain backdrop. Image https://www.foto-webcam.eu/webcam/murnau/current/720.jpg; 61718 bytes; HTTP Last-Modified Sat, 21 Nov 2026 08:10:10 GMT. Catalog timezone Europe/Berlin, CET inferred at minute precision; camera-clock accuracy and update cadence unmeasured. Refreshed still, not continuous video. Provider weather-overlay values are unverified and may be delayed or biased by the sensor. No trail, river activity, rail operation, opening, access or safety inference. No provider media copied into repository/site."
+  },
+  {
+    "id": "austria-rauris-gamskopf-current",
+    "placeId": "austria-rauris-gamskopf",
+    "title": "Rauris — Valley from Gamskopf",
+    "seoName": "Rauris — Valley from Gamskopf",
+    "provider": "Foto-Webcam.eu / Rauris camera partnership",
+    "attribution": "Foto-Webcam.eu / Naturfreundehaus Kolm-Saigurn / Municipality of Rauris / Wildbach- und Lawinenverbauung Pinzgau",
+    "country": "Austria",
+    "region": "Salzburg / Rauris",
+    "timeZone": "Europe/Vienna",
+    "categories": [
+      "Mountains",
+      "Nature",
+      "Useful Earth"
+    ],
+    "aliases": [
+      "Rauris",
+      "Gamskopf",
+      "Raurisertal"
+    ],
+    "truth": "LIVE_IMAGE",
+    "permission": "LINK_ONLY",
+    "health": "HEALTHY",
+    "playback": "EXTERNAL",
+    "sourceUrl": "https://www.foto-webcam.eu/webcam/rauris/",
+    "officialUrl": "https://www.foto-webcam.eu/webcam/rauris/",
+    "checkedAt": "2026-11-24T10:49:18.715153+00:00",
+    "lastSuccessfulCheck": "2026-11-24T10:49:18.715153+00:00",
+    "quality": 75,
+    "freshness": 90,
+    "moment": 75,
+    "story": "Look north from near Gamskopf over the Rauris valley, framed by steep mountain slopes. Cloud can hide the distant Steinernes Meer while the valley landscape remains visible.",
+    "featuredHold": true,
+    "watchHold": true,
+    "searchSupplemental": true,
+    "externalWindowRequired": true,
+    "rightsSourceUrl": "https://www.foto-webcam.eu/webcam/rauris/infos/",
+    "rightsBasis": "Camera-specific information explicitly permits links to this exact webcam page. ERN uses only an attributed external handoff and original descriptive text. Conditional image-use permissions remain with the provider; no image, logo, thumbnail, crop, iframe or time-lapse copied or embedded.",
+    "freshnessEvidence": "24Nov2026 exact camera and camera-specific information pages retrieved; explicit linking permission to https://www.foto-webcam.eu/webcam/rauris/ reviewed. Actual default720x405 JPEG decoded and visually inspected at 2026-11-24T10:49:18.715153+00:00; printed24.11.26 11:40. Snow-covered mountain slopes frame a long valley with fields, woodland and settlements below. A cloud bank partly hides the distant peaks. Image https://www.foto-webcam.eu/webcam/rauris/current/720.jpg; 184368 bytes; Last-Modified Tue, 24 Nov 2026 10:39:57 GMT. Europe/Vienna CET inferred at minute precision; camera-clock accuracy and update cadence unmeasured. Refreshed still, not continuous video. Provider says simple temperature sensor can overread in sunshine; weather values unverified. No avalanche, ski, trail, hut-opening, road-access or safety conclusion. No camera media copied into ERN."
   }
 ]

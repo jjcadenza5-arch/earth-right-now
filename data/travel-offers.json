@@ -5277,5 +5277,26 @@
     "placementReviewedAt": "2026-11-21T08:19:58.210911+00:00",
     "manualOpenVerified": false,
     "evidence": "21Nov2026 exact tracked HTTP200 redirect to Graz/d452-ttd/p-265552P42 retains ERN pidP00322254/mcid42383/mediumlink. Returned primary HTML identifies You selected and Graz: Schlossberg Private Guided Tour with Schlossbergbahn. Dedicated primary product lists Schlossberg, museum/Old Town options, meetingSchlossbergpl1 and one-way Schlossbergbahn ticket; return transport not included and itinerary depends on selected option. Visitor label requires option, meeting point, admission and return-transport checks. No Helmut List Halle event admission or camera-site pickup claim. Date availability, bookings and commission attribution untested; original account/partner proof and26Dec expiry retained."
+  },
+  {
+    "id": "viator-victoria-harbour-evening-cruise-selected",
+    "placeId": "hong-kong-victoria-harbour",
+    "title": "Victoria Harbour evening cruise — selected result",
+    "destinationScope": "Aqua Luna evening cruise on Victoria Harbour. Check departure pier, sailing time, accessibility and cancellation terms; this is not museum admission or pickup at the camera location.",
+    "url": "https://www.viator.com/en-HK/Hong-Kong-SAR/d35959-ttd/p-30544P3?pid=P00322254&mcid=42383&medium=link",
+    "provider": "Viator",
+    "partnerId": "viator",
+    "intent": "activities",
+    "affiliate": true,
+    "sponsored": false,
+    "disclosure": "Affiliate link",
+    "verified": true,
+    "verifiedAt": "2026-11-24T10:52:41.582274+00:00",
+    "expiresAt": "2026-12-26T13:17:00Z",
+    "commissionClaimed": false,
+    "verificationMethod": "PRIMARY_PAGE_HTTP_REVIEW_PLUS_EXISTING_OWNER_TRACKING_ID",
+    "placementReviewedAt": "2026-11-24T10:52:41.582274+00:00",
+    "manualOpenVerified": false,
+    "evidence": "24Nov2026 exact tracked HTTP200 redirect/current selected title confirms Aqua Luna evening cruise at Victoria Harbour, product30544P3, with ERN pidP00322254/mcid42383/mediumlink retained. Dedicated primary product reviewed for harbour scope and meeting-point selection. Public label requires departure-pier, sailing-time, accessibility and cancellation checks; no camera-site pickup or museum admission claim. Date-selected availability, booking and commission attribution untested. Existing historical partner/account proof and26Dec expiry retained."
   }
 ]

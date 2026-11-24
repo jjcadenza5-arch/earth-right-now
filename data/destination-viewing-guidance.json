@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "reviewedAt": "2026-11-21T08:21:03.311909Z",
+  "reviewedAt": "2026-11-24T10:53:43.921537Z",
   "purpose": "Original visitor guidance based on existing reviewed camera scope. Never verification evidence, opening-hour advice or permission to promote a source.",
   "places": {
     "mpala-watering-hole": [
@@ -306,6 +306,10 @@
     "germany-murnau-southern-fields": [
       "Look south from Murnau across nearby roofs, woodland and a broad open field plain. Low cloud can hide the distant mountain backdrop, leaving a quieter view of the foothill landscape.",
       "Open the camera page and check the printed image date. This is a refreshed still and updates may pause; visibility can change with cloud and light. Confirm local access and any planned activity with the relevant operator. The picture and its weather overlay cannot establish safe conditions."
+    ],
+    "austria-rauris-gamskopf": [
+      "Look north from near Gamskopf over the Rauris valley, framed by steep mountain slopes. Cloud can hide the distant Steinernes Meer while the valley landscape remains visible.",
+      "Open the provider page and check the printed image date. This is a refreshed still; cloud, snow and camera interruptions can change what is visible. Confirm routes, hut opening and mountain access with the relevant operator before travel. The picture and its temperature overlay do not establish avalanche or activity safety."
     ]
   }
 }
