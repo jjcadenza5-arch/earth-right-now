@@ -5319,5 +5319,26 @@
     "placementReviewedAt": "2026-11-25T03:03:27.279599+00:00",
     "manualOpenVerified": false,
     "evidence": "25Nov2026 exact tracked HTTP200 redirect/current selected-product title confirms Ultimate View Izu Car Tour with Hotel Pickup and Local Guide, product475596P10, preserving ERN pidP00322254/mcid42383/mediumlink. Primary product identifies Itō/east Izu regional stops and selected hotel/station pickup. Public viewing guidance explicitly requires pickup-area, itinerary, lift-admission and cancellation confirmation. Retrieved primary product and search cache differ on cancellation wording; no refundable-booking guarantee made. Not a harbour boat trip or camera-site pickup. Date-selected availability, bookings and commission attribution untested. Original partner/account proof and26Dec expiry retained."
+  },
+  {
+    "id": "viator-tegelberg-hohenschwangau-audio-selected",
+    "placeId": "germany-tegelberg",
+    "title": "Hohenschwangau to Neuschwanstein self-guided audio walk",
+    "destinationScope": "Schwangau / Hohenschwangau walking route. Castle tickets, transport and Tegelberg lift are separate.",
+    "url": "https://www.viator.com/Fuessen/d23184-ttd/p-110804P797?pid=P00322254&mcid=42383&medium=link",
+    "provider": "Viator",
+    "partnerId": "viator",
+    "intent": "activities",
+    "affiliate": true,
+    "sponsored": false,
+    "disclosure": "Affiliate link",
+    "verified": true,
+    "verifiedAt": "2026-11-25T15:49:28.497985Z",
+    "expiresAt": "2026-12-26T13:17:00Z",
+    "commissionClaimed": false,
+    "verificationMethod": "PRIMARY_PAGE_HTTP_REVIEW_PLUS_EXISTING_OWNER_TRACKING_ID",
+    "placementReviewedAt": "2026-11-25T15:49:28.497985Z",
+    "manualOpenVerified": false,
+    "evidence": "25 Nov 2026 tracked HTTP200 selected-product title matched 110804P797 and retained the existing ERN tracking identity. Provider lists a self-guided GPS audio walk beginning at Hohenschwangau tourist information and excludes attraction tickets. Date-specific availability, booking and commission attribution were not checked."
   }
 ]

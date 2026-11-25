@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "reviewedAt": "2026-11-25T10:48:56.231561Z",
+  "reviewedAt": "2026-11-25T15:49:28.497985Z",
   "purpose": "Original visitor guidance based on existing reviewed camera scope. Never verification evidence, opening-hour advice or permission to promote a source.",
   "places": {
     "mpala-watering-hole": [
@@ -330,6 +330,14 @@
     "rovaniemi-santa-claus-village": [
       "The Santa Claus Village camera did not play during the latest owner review. This view is awaiting a successful playback recheck.",
       "Plan any visit using current official opening, transport and activity information. Camera playback failure does not establish that the village or its attractions are closed."
+    ],
+    "germany-tegelberg": [
+      "The provider page refreshes this view from Tegelberg. Check its printed time and consult the operator for lift and trail conditions.",
+      "The optional audio walking tour starts in Hohenschwangau. Check the walking route and weather before setting out. Castle admission, transport and the Tegelberg lift are separate."
+    ],
+    "austria-poertschach-woerthersee": [
+      "Open the provider page and check the printed image time. Cloud and darkness can obscure the lake.",
+      "Check local transport, swimming and boating information separately before a visit."
     ]
   }
 }

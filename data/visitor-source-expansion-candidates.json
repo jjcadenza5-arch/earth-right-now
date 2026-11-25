@@ -4122,6 +4122,21 @@
       ],
       "why": "Twelve actual default JPEGs individually decoded and inspected. Itō coast/harbour and Miyakejima ridge are useful new distinct destinations. Usu, Unzen and alternate Kuju are already cataloged places, so no duplicate coverage added or old proof renewed. Asahidake, Akita-Yakeyama, Azuma and Tarumae are obscured; Midagahara shows only nearby treetops against cloud; Towada low-contrast distant shore and Suwanosejima hazy low-contrast cone remain held/uncounted. Default frames roughly an hour behind retrieval, not claimed instantaneous.",
       "next": "Keep attributed LINK_ONLY/LIVE_IMAGE external handoffs and featured/watch holds. Check printed dates and official access/transport advisories. No forced Miyakejima offer; retain prior visibility holds. Moving playback requires separate deployed human review."
+    },
+    {
+      "id": "alps-batch98-nov25",
+      "priority": "P1",
+      "placeGroup": "Tegelberg and Pörtschach",
+      "country": "Germany / Austria",
+      "candidateType": "FIRST_PARTY_CURRENT_STILL",
+      "state": "TWO_NEW_PLACES_ADMITTED",
+      "reviewedAt": "2026-11-25T15:49:28.497985Z",
+      "evidenceUrls": [
+        "https://www.foto-webcam.eu/webcam/tegelberg/",
+        "https://www.foto-webcam.eu/webcam/poertschach-a-w/"
+      ],
+      "why": "Two distinct 16:40 scenes passed visibility review. Herzogstand retained an older 10:10 frame and remains held. New Zealand candidates reviewed at night remain held.",
+      "next": "Keep attributed links and image labels. Recheck held night views in daylight."
     }
   ],
   "guardrails": {

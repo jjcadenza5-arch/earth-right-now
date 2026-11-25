@@ -1,3 +1,11 @@
+## 2026-11-25 Bangkok — Batch 98 adds Tegelberg and Pörtschach
+
+Reconciled remote ea3bff6 and the verified Verbier release. Added two distinct provider-linked current images to Explore. Tegelberg shows a snowy mountain foreground above valley cloud. Pörtschach shows the Wörthersee shoreline at dusk. Verified both printed 25 November 16:40 frames and the camera-specific linking terms. The older Herzogstand frame and dark New Zealand views remain under review.
+
+Added a tracked self-guided Hohenschwangau audio walk near Tegelberg. The selected product returned HTTP 200, retained the existing tracking identity and lists attraction tickets separately. The destination guidance explains the starting area and separate castle, lift and transport arrangements.
+
+Catalogued camera coverage reaches 970 of 1,000 places. The affiliate inventory reaches 278 source-eligible placements across 263 places and four programs.
+
 ## 2026-11-25 Bangkok — Verbier joins Watch Earth
 
 Deployed in e43acd97b188e521fded4791b5cd315e415b0522. Pages 45643319386 and Operations 45643319382 passed. All 122 local release tests passed. The live manifest and catalog hash match the release, and Verbier retains the exact owner playback time.
