@@ -12,8 +12,8 @@
     "country": "Switzerland",
     "intent": "stay",
     "url": "https://www.arvenbuel.ch/de/",
-    "evidence": "Official Hotel Restaurant Arvenbüel page reviewed: hotel/restaurant above Walensee at Arvenbüelstrasse47, Amden, with room/contact information. November/December restaurant opening is weather-dependent and operator asks visitors to call for precise hours. Reservation/detail links resolved to404 through the search fetcher; no successful online-booking flow or room availability inferred.",
-    "verifiedAt": "2026-10-25T22:02:39Z",
+    "evidence": "25Nov2026 exact official hotel/restaurant page HTTP200 and visible text reviewed. Arvenbüel above Walensee, Amden, with rooms/contact links. November/December restaurant hours remain weather-dependent; provider asks visitors to phone for exact opening and lists unrestricted service resuming19Dec2026. No reservation-link/booking flow, room availability, live opening or affiliate relationship verified. Previous25Oct reservation-link404 observation is historical and was not re-tested today. Research-only and public activation false.",
+    "verifiedAt": "2026-11-25T03:11:27.187184+00:00",
     "reviewSourceUrl": "https://www.arvenbuel.ch/de/"
   },
   {
@@ -29,8 +29,8 @@
     "country": "Switzerland",
     "intent": "tickets",
     "url": "https://www.gornergrat.ch/en/products/ticket",
-    "evidence": "Official Gornergrat ticket product page reviewed: rail tickets for full return journey or individual sections are offered. No fare, date availability, operating-service state, account transaction or affiliate attribution independently verified; exact public/commercial activation remains false.",
-    "verifiedAt": "2026-10-25T22:02:39Z",
+    "evidence": "25Nov2026 exact official Gornergrat ticket product page HTTP200 and visible description reviewed. Full return route and individual train sections are offered; route-dependent fare comparison and booking interface present. No fare, selected-date availability, current train operation, account transaction or affiliate attribution independently verified. Research-only, affiliate status NOT_REVIEWED and public activation false.",
+    "verifiedAt": "2026-11-25T03:11:28.285386+00:00",
     "reviewSourceUrl": "https://www.gornergrat.ch/en/products/ticket"
   }
 ]

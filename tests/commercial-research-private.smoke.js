@@ -4,7 +4,8 @@ const rows=JSON.parse(fs.readFileSync("data/commercial-research-candidates.json"
 const known=[...new Set(sources.map(s=>String(s.placeId||s.id||"")).filter(Boolean))];
 const archive=JSON.parse(fs.readFileSync("docs/research-archive/commercial-research-expired-2026-10-25.json","utf8"));
 const laterArchive=JSON.parse(fs.readFileSync("docs/research-archive/commercial-research-expired-2026-10-26.json","utf8"));
-const active=commercialResearchStatus(rows,{knownPlaceIds:known,now:Date.parse(laterArchive.archivedAt)});
+const reviewedAt=Math.max(...rows.map(x=>Date.parse(x.verifiedAt)));
+const active=commercialResearchStatus(rows,{knownPlaceIds:known,now:reviewedAt});
 assert.equal(active.total,2);assert.equal(active.invalid,0);assert.equal(archive.publicActivationAllowed,false);assert.equal(archive.entries.length,5);
 assert.equal(laterArchive.publicActivationAllowed,false);assert.equal(laterArchive.evidenceAgeLimitDays,30);assert.equal(laterArchive.entries.length,54);
 assert.ok(laterArchive.entries.every(x=>x.verifiedAt.startsWith("2026-09-25T")&&x.publicActivationAllowed===false));
@@ -12,7 +13,9 @@ const historicalActive=commercialResearchStatus(laterArchive.entries,{knownPlace
 assert.equal(historicalActive.valid,54);assert.equal(historicalActive.invalid,0);
 const laterExpired=commercialResearchStatus(laterArchive.entries,{knownPlaceIds:known,now:Date.parse(laterArchive.archivedAt)});
 assert.equal(laterExpired.invalid,54);assert.ok(laterExpired.issues.every(x=>x.reason==="RESEARCH_EVIDENCE_STALE"));
-const rechecksExpired=commercialResearchStatus(rows,{knownPlaceIds:known,now:Date.parse(rows[0].verifiedAt)+31*864e5});
+const rechecksExpired=commercialResearchStatus(rows,{knownPlaceIds:known,now:reviewedAt+31*864e5});
+const futureRechecks=commercialResearchStatus(rows,{knownPlaceIds:known,now:reviewedAt-864e5});
+assert.equal(futureRechecks.invalid,2);assert.ok(futureRechecks.issues.every(x=>x.reason==="FUTURE_VERIFIED_AT"));
 assert.equal(rechecksExpired.invalid,2);assert.ok(rechecksExpired.issues.every(x=>x.reason==="RESEARCH_EVIDENCE_STALE"));
 assert.ok(archive.entries.every(x=>x.verifiedAt==="2026-09-24T16:05:00Z"&&x.publicActivationAllowed===false));
 const expired=commercialResearchStatus(archive.entries,{knownPlaceIds:known,now:Date.parse("2026-10-25T04:10:00Z")});

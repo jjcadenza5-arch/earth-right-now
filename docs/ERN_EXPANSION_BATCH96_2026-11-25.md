@@ -184,3 +184,30 @@ Primary camera list and exact pages reviewed25Nov: https://www.data.jma.go.jp/vo
 ```
 
 Primary product https://www.viator.com/tours/Ito/Private-East-IZU-Adventure-Tour-hotel-pickup/d50143-475596P10 reviewed. Exact tracked selected result retains title/identity. Selected pickup options, regional itinerary, fees and cancellation terms require operator confirmation. Search snippet and fetched primary product differ on cancellation wording; no price, refund, date-availability or earnings claim. Historical partner/account proof and26Dec expiry untouched.
+
+## Operations expiry repair before acceptance
+
+Initial source release f57526a76c729e30161806bef3a236d18501bd72 passed Pages run45537712150/job138948305398 and10served manifest hashes. Operations45537712151/job138948306321 stopped at two private research records newly over the unchanged30day evidence horizon; downstream packet files were absent because that command failed. Exact official Hotel Arvenbüel and Gornergrat ticket pages were freshly retrieved and their visible text reviewed25Nov. Only those two private records’ evidence/verifiedAt fields renewed. Arvenbüel November/December weather-dependent opening and phone-confirmation requirement retained;19Dec2026 unrestricted service notice recorded. Gornergrat return/individual-section ticket scope confirmed, without fare, availability, operating service, booking or affiliate proof. Prior hotel reservation-link404 observation explicitly historical and not re-tested. Both remain RESEARCH_ONLY/NOT_REVIEWED/publicActivationAllowedfalse; no offer count, relationship, outreach, transaction or policy/workflow change.
+
+```json
+[
+  {
+    "id": "stay-amden-walensee-arvenbuel",
+    "url": "https://www.arvenbuel.ch/de/",
+    "final": "https://www.arvenbuel.ch/de/",
+    "status": 200,
+    "bytes": 20531,
+    "checkedAt": "2026-11-25T03:11:27.187184+00:00"
+  },
+  {
+    "id": "tickets-zermatt-gornergrat-bahn",
+    "url": "https://www.gornergrat.ch/en/products/ticket",
+    "final": "https://www.gornergrat.ch/en/products/ticket",
+    "status": 200,
+    "bytes": 1195051,
+    "checkedAt": "2026-11-25T03:11:28.285386+00:00"
+  }
+]
+```
+
+The historical private-research smoke test evaluated live records at the fixed26Oct archive clock and rejected legitimate25Nov rechecks as future-dated. Its active-record clock now uses the latest actual review timestamp; archive-specific dates/assertions remain fixed. Explicit future-dated and31day expiry rejection assertions retain the unchanged boundaries. No source/runtime/workflow or evidence-policy change. Both private-research smoke checks and current research-status validation pass.
