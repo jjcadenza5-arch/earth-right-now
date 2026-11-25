@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "reviewedAt": "2026-11-25T03:04:33.961586Z",
+  "reviewedAt": "2026-11-25T10:48:56.231561Z",
   "purpose": "Original visitor guidance based on existing reviewed camera scope. Never verification evidence, opening-hour advice or permission to promote a source.",
   "places": {
     "mpala-watering-hole": [
@@ -326,6 +326,10 @@
     "japan-miyakejima": [
       "Look toward Miyakejima’s broad mountain ridge from the official Tsubota camera, with green vegetation in the foreground. This is a refreshed still; inspect its printed date and time because displayed frames can lag or updates can pause.",
       "Check current island transport, local access instructions and official volcanic and air-quality information before travelling. A clear picture does not establish safe access, ferry operation or mountain opening."
+    ],
+    "rovaniemi-santa-claus-village": [
+      "The Santa Claus Village camera did not play during the latest owner review. This view is awaiting a successful playback recheck.",
+      "Plan any visit using current official opening, transport and activity information. Camera playback failure does not establish that the village or its attractions are closed."
     ]
   }
 }

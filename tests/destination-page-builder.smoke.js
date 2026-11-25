@@ -68,7 +68,8 @@ try{
   const realSources=JSON.parse(readFileSync(new URL('../data/sources.json',import.meta.url),'utf8'));
   const original=realSources.find(s=>s.placeId==='rovaniemi-santa-claus-village');
   assert.ok(original,'fixture destination must exist');
-  const current={...original,checkedAt:'2026-10-10T03:00:00Z',lastSuccessfulCheck:'2026-10-10T03:00:00Z',playbackVerifiedAt:'2026-10-10T03:01:00Z'};
+  // Keep the healthy fixture independent of the live catalog's latest owner outcome.
+  const current={...original,health:'HEALTHY',lastFailedCheck:undefined,failureReason:undefined,checkedAt:'2026-10-10T03:00:00Z',lastSuccessfulCheck:'2026-10-10T03:00:00Z',playbackVerifiedAt:'2026-10-10T03:01:00Z'};
   const lake={...realSources.find(s=>s.placeId==='oeschinensee'),checkedAt:current.checkedAt,lastSuccessfulCheck:current.lastSuccessfulCheck};
   const externalImage={...current,id:'fixture-current-image',placeId:'fixture-current-image',title:'Fixture Panorama',truth:'LIVE_IMAGE',playback:'EXTERNAL',permission:'LINK_ONLY',sourceUrl:'https://camera.example.test/panorama/',officialUrl:'https://operator.example.test/cameras/'};
   const externalVideo={...externalImage,id:'fixture-external-video',placeId:'fixture-external-video',truth:'EXTERNAL_LIVE'};

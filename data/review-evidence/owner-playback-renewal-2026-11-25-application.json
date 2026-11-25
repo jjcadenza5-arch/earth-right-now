@@ -1,0 +1,98 @@
+{
+  "reviewBatch": "0866cd9827a595f5",
+  "appliedAt": "2026-11-25T10:50:05.930099Z",
+  "manualApplication": true,
+  "automaticWriteAllowed": false,
+  "confirmed": 8,
+  "failed": 1,
+  "ownerNetworkStatus": "UNKNOWN_NOT_RECORDED",
+  "coreChanges": [
+    {
+      "id": "auckland-viaduct-harbour",
+      "fields": [
+        "lastSuccessfulCheck",
+        "playbackVerifiedAt",
+        "checkedAt"
+      ]
+    },
+    {
+      "id": "kyoto-fushimi-inari-live",
+      "fields": [
+        "lastSuccessfulCheck",
+        "playbackVerifiedAt",
+        "checkedAt"
+      ]
+    },
+    {
+      "id": "kyoto-hanamikoji-live",
+      "fields": [
+        "lastSuccessfulCheck",
+        "playbackVerifiedAt",
+        "checkedAt"
+      ]
+    },
+    {
+      "id": "kyoto-kifune-shrine-live",
+      "fields": [
+        "lastSuccessfulCheck",
+        "playbackVerifiedAt",
+        "checkedAt"
+      ]
+    },
+    {
+      "id": "kyoto-kiyomizuzaka-live",
+      "fields": [
+        "lastSuccessfulCheck",
+        "playbackVerifiedAt",
+        "checkedAt"
+      ]
+    },
+    {
+      "id": "nyc-brooklyn-skyline-live",
+      "fields": [
+        "lastSuccessfulCheck",
+        "playbackVerifiedAt",
+        "checkedAt"
+      ]
+    },
+    {
+      "id": "rovaniemi-santa-claus-village-live",
+      "fields": [
+        "lastFailedCheck",
+        "freshnessEvidence",
+        "health",
+        "checkedAt",
+        "failureReason",
+        "story"
+      ]
+    },
+    {
+      "id": "taitung-jinzun",
+      "fields": [
+        "lastSuccessfulCheck",
+        "freshnessEvidence",
+        "playbackVerifiedAt",
+        "checkedAt"
+      ]
+    },
+    {
+      "id": "volcan-tajogaite",
+      "fields": [
+        "lastSuccessfulCheck",
+        "playbackVerifiedAt",
+        "checkedAt"
+      ]
+    },
+    {
+      "id": "reykjavik-metoffice",
+      "fields": [
+        "lastSuccessfulCheck",
+        "freshnessEvidence",
+        "checkedAt",
+        "story"
+      ]
+    }
+  ],
+  "failureTreatment": "Santa Claus Village DEGRADED, checkedAt and lastFailedCheck reflect failure. Last successful check and playback marker remain historical18Nov values; newer HUMAN_PLAYBACK_FAILED supersedes that success. Original truth, permission and exact target preserved.",
+  "independentTransport": "All nine exact embeds HTTP200; this is not playback proof and does not override owner failure."
+}
