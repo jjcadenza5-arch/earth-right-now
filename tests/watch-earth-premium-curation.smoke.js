@@ -13,12 +13,12 @@ assert.equal(premiumVisualEligible({...base,featuredHold:true},{now}),false);
 const visible=buildWatchEarth(sources,{now,limit:5});
 assert.ok(visible.length<=5,"Five is a ceiling");
 assert.ok(visible.every(s=>watchEarthEligible(s,{now})&&premiumVisualEligible(s,{now})));
-for(const id of ["verbier","taiwan-heping-island-live"])
+for(const id of ["taiwan-heping-island-live"])
  assert.ok(!visible.some(s=>s.id===id),id+" must not feature while explicitly held");
 const verbier=sources.find(s=>s.id==="verbier");
 assert.equal(verbier.health,"HEALTHY","A merely gray live camera must not be falsely called broken");
-assert.equal(verbier.watchHold,true);
-assert.match(verbier.watchVisualReason,/featureless gray/);
+assert.equal(watchEarthEligible(verbier,{now:new Date(verbier.playbackVerifiedAt)}),true);
+assert.equal(watchEarthEligible({...verbier,watchHold:true},{now:new Date(verbier.playbackVerifiedAt)}),false);
 const app=fs.readFileSync(new URL("../src/app-lite.js",import.meta.url),"utf8");
 assert.match(app,/function premiumVisual\(s\)\{return!!\(s&&s\.watchHold!==true&&s\.featuredHold!==true&&\+s\.quality>=84&&\+s\.moment>=80\)\}/);
 assert.doesNotMatch(app,/premiumVisual\(s\).*h>=8&&h<17/);

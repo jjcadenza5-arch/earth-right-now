@@ -1,0 +1,83 @@
+{
+  "purpose": "Independent HTTP transport checks only",
+  "results": [
+    {
+      "id": "auckland-viaduct-harbour",
+      "url": "https://www.youtube.com/embed/live_stream?channel=UCfNoVlW5-BHsoCKTGs_F0WQ",
+      "httpStatus": 200,
+      "finalUrl": "https://www.youtube.com/embed/live_stream?channel=UCfNoVlW5-BHsoCKTGs_F0WQ"
+    },
+    {
+      "id": "kyoto-fushimi-inari-live",
+      "url": "https://www.youtube-nocookie.com/embed/MMeBDRfRHyA",
+      "httpStatus": 200,
+      "finalUrl": "https://www.youtube-nocookie.com/embed/MMeBDRfRHyA"
+    },
+    {
+      "id": "kyoto-hanamikoji-live",
+      "url": "https://www.youtube-nocookie.com/embed/J3xHBUgWRqc",
+      "httpStatus": 200,
+      "finalUrl": "https://www.youtube-nocookie.com/embed/J3xHBUgWRqc"
+    },
+    {
+      "id": "kyoto-kifune-shrine-live",
+      "url": "https://www.youtube-nocookie.com/embed/eJAqPCdS1cY",
+      "httpStatus": 200,
+      "finalUrl": "https://www.youtube-nocookie.com/embed/eJAqPCdS1cY"
+    },
+    {
+      "id": "kyoto-kiyomizuzaka-live",
+      "url": "https://www.youtube-nocookie.com/embed/cUnYPpK7ENk",
+      "httpStatus": 200,
+      "finalUrl": "https://www.youtube-nocookie.com/embed/cUnYPpK7ENk"
+    },
+    {
+      "id": "kyoto-nishiki-market-live",
+      "url": "https://www.youtube-nocookie.com/embed/qZ2ghbe3zc0",
+      "httpStatus": 200,
+      "finalUrl": "https://www.youtube-nocookie.com/embed/qZ2ghbe3zc0"
+    },
+    {
+      "id": "mpala-watering-hole",
+      "url": "https://www.youtube-nocookie.com/embed/oORXfTviuCs",
+      "httpStatus": 200,
+      "finalUrl": "https://www.youtube-nocookie.com/embed/oORXfTviuCs"
+    },
+    {
+      "id": "nyc-brooklyn-skyline-live",
+      "url": "https://www.youtube-nocookie.com/embed/obqnslJKrxc",
+      "httpStatus": 200,
+      "finalUrl": "https://www.youtube-nocookie.com/embed/obqnslJKrxc"
+    },
+    {
+      "id": "taitung-jinzun",
+      "url": "https://www.youtube-nocookie.com/embed/ZdqHgQwvZOw",
+      "httpStatus": 200,
+      "finalUrl": "https://www.youtube-nocookie.com/embed/ZdqHgQwvZOw"
+    },
+    {
+      "id": "taiwan-yehliu-live",
+      "url": "https://www.youtube-nocookie.com/embed/ZjuY4qKaj40",
+      "httpStatus": 200,
+      "finalUrl": "https://www.youtube-nocookie.com/embed/ZjuY4qKaj40"
+    },
+    {
+      "id": "takayama-miyagawa-stream",
+      "url": "https://www.youtube.com/embed/live_stream?channel=UC5MNHWRJRJ1buoVIg2sHmCw",
+      "httpStatus": 200,
+      "finalUrl": "https://www.youtube.com/embed/live_stream?channel=UC5MNHWRJRJ1buoVIg2sHmCw"
+    },
+    {
+      "id": "verbier",
+      "url": "https://www.youtube-nocookie.com/embed/9ljoXhTxjag",
+      "httpStatus": 200,
+      "finalUrl": "https://www.youtube-nocookie.com/embed/9ljoXhTxjag"
+    },
+    {
+      "id": "volcan-tajogaite",
+      "url": "https://webcam-lapalma.de/embed/vulkan/",
+      "httpStatus": 200,
+      "finalUrl": "https://webcam-lapalma.de/embed/vulkan/"
+    }
+  ]
+}

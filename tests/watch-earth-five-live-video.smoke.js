@@ -8,7 +8,7 @@ const sources=JSON.parse(fs.readFileSync(new URL("../data/sources.json",import.m
 const now=new Date(Math.max(...sources.map(s=>Date.parse(s.lastSuccessfulCheck||s.checkedAt||"" )).filter(Number.isFinite)));
 const eligible=sources.filter(s=>watchEarthEligible(s,{now}));
 assert.ok(eligible.length>=3,"Current daylight sample needs several premium live cameras");
-assert.ok(!eligible.some(s=>["verbier","taiwan-heping-island-live","takayama-miyagawa-stream"].includes(s.id)),"Human-rejected, failed or weak views stay outside Watch Earth");
+assert.ok(!eligible.some(s=>["taiwan-heping-island-live","takayama-miyagawa-stream"].includes(s.id)),"Human-rejected, failed or weak views stay outside Watch Earth");
 assert.equal(watchEarthEligible({...eligible[0],thumbnailUrl:undefined},{now}),true,"Do not depend on an optional thumbnail for live eligibility");
 const takayama=sources.find(s=>s.id==="takayama-miyagawa-stream");
 assert.equal(takayama.watchHold,true);

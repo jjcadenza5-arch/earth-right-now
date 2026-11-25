@@ -1,3 +1,9 @@
+## 2026-11-25 Bangkok — Verbier joins Watch Earth
+
+Owner review 89570ecd14b4f7f6 confirmed the exact Verbier player at 22:12 Bangkok. The provider thumbnail fetched at 22:13 showed a snow-covered foreground and a visible village under low cloud. This thumbnail is a visual spot check with no capture timestamp. Removed Verbier's October visual hold and renewed twelve eligible playback records. The packet also records Nishiki Market outside its published hours, so its proof was not renewed. Takayama retains its Watch Earth hold. Santa Claus Village remains degraded.
+
+Verbier joins the live-video rotation under the existing freshness and quality gates. The view varies with weather and light. See data/review-evidence/owner-verbier-2026-11-25.json for exact timestamps and targets.
+
 ## 2026-11-25 Bangkok — Batch97 ACCEPTED: eight playback renewals, Santa Claus Village paused
 
 Production6e579b6108a327e338c3df7e919e06444eb65fed/tree7338624fa944b2a64bd8d6efd0fb669fa746b1ba. Pages45599522542/job139154407144 SUCCESS. Operations45599522524/job139154406308 SUCCESS, packet valid=true/issueCount0. All122 release tests passed locally and in CI; build/curation/commercial/performance/Watch audit/module checks passed. Live HTTP acceptance verified11manifest hashes, exact eight proof timestamps and Rovaniemi failure state, both affected destination pages, Rovaniemi noindex/affiliate suppression, static source/ledger/offer/partner parity and unchanged player/styles. Generated review/current.json verified against served manifest, with build-specific generation metadata allowed to differ locally. No browser visual QA of ERN claimed. Remote0d3259b4cce3393e4bbecceb5e7f24ce195c5c53, accepted Batch96 and scheduled pilot renewal reconciled before edits.
