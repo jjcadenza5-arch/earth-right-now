@@ -4097,6 +4097,31 @@
       ],
       "why": "Four default720x405 JPEGs individually decoded and inspected. Rauris valley is now usefully visible below a partly cloud-obscured mountain skyline. Tegelberg has ice/condensation obscuring much of the lens and valley fog; Herzogstand south/Walchensee remains fog-obscured; Pörtschach has a dark low-contrast lake under heavy cloud and a lens mark. Only Rauris prior visibility hold superseded; three others remain uncounted.",
       "next": "Keep attributed LINK_ONLY/LIVE_IMAGE external handoff and featured/watch holds. Revisit other views only after useful visibility returns. No forced Rauris commercial match."
+    },
+    {
+      "id": "jma-batch96-nov25",
+      "priority": "P1",
+      "placeGroup": "Itō Ohara coast and Miyakejima Tsubota; cloudy northern cameras held",
+      "country": "Japan",
+      "candidateType": "FIRST_PARTY_CURRENT_STILL",
+      "state": "TWO_NEW_PLACES_ADMITTED_SEVEN_VISIBILITY_HOLDS",
+      "reviewedAt": "2026-11-25T03:04:33.961586Z",
+      "evidenceUrls": [
+        "https://www.data.jma.go.jp/vois/data/obs/volcam/volcam.php?VC=11201",
+        "https://www.data.jma.go.jp/vois/data/obs/volcam/volcam.php?VC=50201",
+        "https://www.data.jma.go.jp/vois/data/obs/volcam/volcam.php?VC=50401",
+        "https://www.data.jma.go.jp/vois/data/obs/volcam/volcam.php?VC=10702",
+        "https://www.data.jma.go.jp/vois/data/obs/volcam/volcam.php?VC=20501",
+        "https://www.data.jma.go.jp/vois/data/obs/volcam/volcam.php?VC=21301",
+        "https://www.data.jma.go.jp/vois/data/obs/volcam/volcam.php?VC=51101",
+        "https://www.data.jma.go.jp/vois/data/obs/volcam/volcam.php?VC=10901",
+        "https://www.data.jma.go.jp/vois/data/obs/volcam/volcam.php?VC=20401",
+        "https://www.data.jma.go.jp/vois/data/obs/volcam/volcam.php?VC=30901",
+        "https://www.data.jma.go.jp/vois/data/obs/volcam/volcam.php?VC=31601",
+        "https://www.data.jma.go.jp/vois/data/obs/volcam/volcam.php?VC=32001"
+      ],
+      "why": "Twelve actual default JPEGs individually decoded and inspected. Itō coast/harbour and Miyakejima ridge are useful new distinct destinations. Usu, Unzen and alternate Kuju are already cataloged places, so no duplicate coverage added or old proof renewed. Asahidake, Akita-Yakeyama, Azuma and Tarumae are obscured; Midagahara shows only nearby treetops against cloud; Towada low-contrast distant shore and Suwanosejima hazy low-contrast cone remain held/uncounted. Default frames roughly an hour behind retrieval, not claimed instantaneous.",
+      "next": "Keep attributed LINK_ONLY/LIVE_IMAGE external handoffs and featured/watch holds. Check printed dates and official access/transport advisories. No forced Miyakejima offer; retain prior visibility holds. Moving playback requires separate deployed human review."
     }
   ],
   "guardrails": {

@@ -5298,5 +5298,26 @@
     "placementReviewedAt": "2026-11-24T10:52:41.582274+00:00",
     "manualOpenVerified": false,
     "evidence": "24Nov2026 exact tracked HTTP200 redirect/current selected title confirms Aqua Luna evening cruise at Victoria Harbour, product30544P3, with ERN pidP00322254/mcid42383/mediumlink retained. Dedicated primary product reviewed for harbour scope and meeting-point selection. Public label requires departure-pier, sailing-time, accessibility and cancellation checks; no camera-site pickup or museum admission claim. Date-selected availability, booking and commission attribution untested. Existing historical partner/account proof and26Dec expiry retained."
+  },
+  {
+    "id": "viator-ito-east-izu-private-car-selected",
+    "placeId": "japan-ito-ohara-coast",
+    "title": "East Izu private car tour — selected result",
+    "destinationScope": "Regional East Izu land excursion from a selected hotel or station pickup. Confirm pickup area, itinerary, lift admission and cancellation terms; not a harbour boat trip or pickup at the camera.",
+    "url": "https://www.viator.com/Ito/d50143-ttd/p-475596P10?pid=P00322254&mcid=42383&medium=link",
+    "provider": "Viator",
+    "partnerId": "viator",
+    "intent": "activities",
+    "affiliate": true,
+    "sponsored": false,
+    "disclosure": "Affiliate link",
+    "verified": true,
+    "verifiedAt": "2026-11-25T03:03:27.279599+00:00",
+    "expiresAt": "2026-12-26T13:17:00Z",
+    "commissionClaimed": false,
+    "verificationMethod": "PRIMARY_PAGE_HTTP_REVIEW_PLUS_EXISTING_OWNER_TRACKING_ID",
+    "placementReviewedAt": "2026-11-25T03:03:27.279599+00:00",
+    "manualOpenVerified": false,
+    "evidence": "25Nov2026 exact tracked HTTP200 redirect/current selected-product title confirms Ultimate View Izu Car Tour with Hotel Pickup and Local Guide, product475596P10, preserving ERN pidP00322254/mcid42383/mediumlink. Primary product identifies Itō/east Izu regional stops and selected hotel/station pickup. Public viewing guidance explicitly requires pickup-area, itinerary, lift-admission and cancellation confirmation. Retrieved primary product and search cache differ on cancellation wording; no refundable-booking guarantee made. Not a harbour boat trip or camera-site pickup. Date-selected availability, bookings and commission attribution untested. Original partner/account proof and26Dec expiry retained."
   }
 ]

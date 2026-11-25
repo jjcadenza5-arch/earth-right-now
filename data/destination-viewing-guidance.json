@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "reviewedAt": "2026-11-24T10:53:43.921537Z",
+  "reviewedAt": "2026-11-25T03:04:33.961586Z",
   "purpose": "Original visitor guidance based on existing reviewed camera scope. Never verification evidence, opening-hour advice or permission to promote a source.",
   "places": {
     "mpala-watering-hole": [
@@ -318,6 +318,14 @@
     "hong-kong-victoria-peak": [
       "Look from Victoria Peak toward the harbour and dense city skyline. The Observatory publishes a refreshed still rather than continuous video; check its printed date and time before using the view.",
       "Cloud, haze and darkness can change visibility. Confirm current transport, opening times and local access separately before travelling to the Peak; the image does not establish attraction or transport availability."
+    ],
+    "japan-ito-ohara-coast": [
+      "Look across the harbour and coast from JMA’s Ohara camera in the eastern Izu volcanic region. Waterfront buildings and a wooded hillside frame the sea. This is a refreshed still; displayed frames can lag the current time, so inspect the printed capture date and time.",
+      "For the optional East Izu private car tour, confirm the selected hotel or station pickup, itinerary, lift admission and cancellation terms before booking. It is a regional land excursion, not a harbour boat trip or pickup at the camera. Confirm transport and local access separately and follow current official advisories."
+    ],
+    "japan-miyakejima": [
+      "Look toward Miyakejima’s broad mountain ridge from the official Tsubota camera, with green vegetation in the foreground. This is a refreshed still; inspect its printed date and time because displayed frames can lag or updates can pause.",
+      "Check current island transport, local access instructions and official volcanic and air-quality information before travelling. A clear picture does not establish safe access, ferry operation or mountain opening."
     ]
   }
 }
