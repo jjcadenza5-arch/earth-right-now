@@ -1,5 +1,7 @@
 ## 2026-11-25 Bangkok — Verbier joins Watch Earth
 
+Deployed in e43acd97b188e521fded4791b5cd315e415b0522. Pages 45643319386 and Operations 45643319382 passed. All 122 local release tests passed. The live manifest and catalog hash match the release, and Verbier retains the exact owner playback time.
+
 Owner review 89570ecd14b4f7f6 confirmed the exact Verbier player at 22:12 Bangkok. The provider thumbnail fetched at 22:13 showed a snow-covered foreground and a visible village under low cloud. This thumbnail is a visual spot check with no capture timestamp. Removed Verbier's October visual hold and renewed twelve eligible playback records. The packet also records Nishiki Market outside its published hours, so its proof was not renewed. Takayama retains its Watch Earth hold. Santa Claus Village remains degraded.
 
 Verbier joins the live-video rotation under the existing freshness and quality gates. The view varies with weather and light. See data/review-evidence/owner-verbier-2026-11-25.json for exact timestamps and targets.
