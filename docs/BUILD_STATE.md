@@ -1,3 +1,7 @@
+## 2026-11-26 Bangkok — Grand Targhee summit staged for Watch Earth review
+
+The resort links the exact See Jackson Hole summit player. The inspected thumbnail showed visible snow, conifers and slope detail at dusk. The camera is staged for deployed playback review. Davos remains held because its replacement player thumbnail showed an older dated frame. Snow King was too dark to assess.
+
 ## 2026-11-25 Bangkok — Batch 98 adds Tegelberg and Pörtschach
 
 Batch 98 is live as e032bfaaef69b6dff7580699332a3e4851d36117. Pages run 45728737196 passed. The public manifest and hashes matched both destination pages and the supplemental catalog. The Tegelberg page also served the tracked audio-walk link. Operations run 45728737333 passed on retry after an Earth Signals probe timeout.
