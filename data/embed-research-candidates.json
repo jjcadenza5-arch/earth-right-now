@@ -531,7 +531,7 @@
   {
     "id": "youtube-grand-targhee-summit",
     "title": "Grand Targhee — Summit",
-    "status": "RESEARCH_ONLY",
+    "status": "APPROVED",
     "provider": "Grand Targhee Resort / See Jackson Hole",
     "platform": "YouTube",
     "sourceUrl": "https://www.grandtarghee.com/mountain/reports-hours/webcams",
@@ -540,15 +540,21 @@
     "currentEvidence": "Provider thumbnail visually inspected 26 November UTC. A snowy slope and conifers are visible. Printed 2026-11-25 17:31:28, with Mountain time inferred. Confirm moving playback and visibility on the ERN review page.",
     "discoveredAt": "2026-11-26T00:37:05Z",
     "currentEvidenceReviewedAt": "2026-11-26T00:37:05Z",
-    "permissionReview": "PER_VIDEO_EMBED_PERMISSION_REQUIRES_DEPLOYED_TEST",
-    "playbackReview": "HUMAN_PLAYBACK_REQUIRED",
-    "promotion": "RESEARCH_ONLY",
+    "permissionReview": "PER_VIDEO_EMBED_CONFIRMED",
+    "playbackReview": "HUMAN_PLAYBACK_CONFIRMED",
+    "promotion": "APPROVED_FOR_CATALOG",
     "operationalResearchReason": "OWNER_REQUESTED_WATCH_EARTH_SNOW",
     "researchSources": [
       "https://www.grandtarghee.com/mountain/reports-hours/webcams",
       "https://streams.seejh.com/gtrsummit",
       "https://www.youtube.com/watch?v=a5jEZeNTAsE"
     ],
-    "platformEvidence": "Evaluate the original branded YouTube player on the deployed ERN review page. Use provider media through that player."
+    "platformEvidence": "Evaluate the original branded YouTube player on the deployed ERN review page. Use provider media through that player.",
+    "lastHumanReviewAt": "2026-11-26T02:19:44.690Z",
+    "lastHumanReviewOutcome": "HUMAN_PLAYBACK_CONFIRMED",
+    "reviewBatch": "4c321e8f1bfc1ac5",
+    "reviewedSourceUrl": "https://www.grandtarghee.com/mountain/reports-hours/webcams",
+    "reviewedEmbedUrl": "https://www.youtube-nocookie.com/embed/a5jEZeNTAsE",
+    "publishedSourceId": "grand-targhee-summit"
   }
 ]

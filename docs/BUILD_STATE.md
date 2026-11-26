@@ -1,3 +1,7 @@
+## 2026-11-26 Bangkok — Grand Targhee Summit joins Watch Earth
+
+Owner review 4c321e8f1bfc1ac5 confirmed live playback at 09:19:44 Bangkok on the exact official resort-linked See Jackson Hole YouTube player. Promoted the moving camera to Watch Earth with the original proof time and branded player. The earlier provider thumbnail showed snow and conifers. The map uses the resort place reference (feature ID 1600016, Geographic.org) for daylight ranking and discovery. Catalogued coverage rises to 971 of 1,000 camera-backed places.
+
 ## 2026-11-26 Bangkok — Grand Targhee summit staged for Watch Earth review
 
 The resort links the exact See Jackson Hole summit player. The inspected thumbnail showed visible snow, conifers and slope detail at dusk. The camera is staged for deployed playback review. Davos remains held because its replacement player thumbnail showed an older dated frame. Snow King was too dark to assess.

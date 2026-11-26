@@ -2597,5 +2597,21 @@
     "ownerPacketNetworkStatus": "UNKNOWN_NOT_RECORDED",
     "evidenceSource": "data/review-evidence/owner-verbier-2026-11-25.json",
     "availabilityEvidenceSource": "data/review-evidence/owner-verbier-2026-11-25-transport.json"
+  },
+  {
+    "id": "grand-targhee-summit",
+    "httpStatus": 200,
+    "confirmation": "HUMAN_PLAYBACK",
+    "observedAt": "2026-11-26T02:19:44.690Z",
+    "reason": "Owner confirmed exact deployed playback. Independent HTTP 200 records transport.",
+    "reviewer": "OWNER",
+    "evidenceKind": "HUMAN_REVIEW",
+    "reviewUrl": "https://earthrightnow.app/review/inside-ern.html",
+    "reviewBatch": "4c321e8f1bfc1ac5",
+    "sourceUrl": "https://www.grandtarghee.com/mountain/reports-hours/webcams",
+    "embedUrl": "https://www.youtube-nocookie.com/embed/a5jEZeNTAsE",
+    "ownerPacketType": "research",
+    "ownerPacketNetworkStatus": "UNKNOWN_NOT_RECORDED",
+    "evidenceSource": "data/review-evidence/owner-grand-targhee-2026-11-26.json"
   }
 ]

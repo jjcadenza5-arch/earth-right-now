@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "kind": "ERN_OPERATOR_REVIEW_EVIDENCE",
+  "generatedAt": "2026-11-26T02:19:47.890Z",
+  "reviewOrigin": "https://earthrightnow.app/review/inside-ern.html",
+  "reviewBatch": "4c321e8f1bfc1ac5",
+  "catalogMutationAllowed": false,
+  "networkStatus": "UNKNOWN_NOT_RECORDED",
+  "items": [
+    {
+      "id": "youtube-grand-targhee-summit",
+      "type": "research",
+      "title": "Grand Targhee — Summit",
+      "provider": "Grand Targhee Resort / See Jackson Hole",
+      "outcome": "HUMAN_PLAYBACK_CONFIRMED",
+      "observedAt": "2026-11-26T02:19:44.690Z",
+      "evidenceKind": "HUMAN_REVIEW",
+      "networkStatus": "UNKNOWN_NOT_RECORDED",
+      "sourceUrl": "https://www.grandtarghee.com/mountain/reports-hours/webcams",
+      "embedUrl": "https://www.youtube-nocookie.com/embed/a5jEZeNTAsE"
+    }
+  ]
+}
