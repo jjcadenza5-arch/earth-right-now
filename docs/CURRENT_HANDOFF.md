@@ -1,6 +1,6 @@
 ## 2026-11-25 Bangkok — Batch 98 adds Tegelberg and Pörtschach
 
-Batch 98 is live as e032bfaaef69b6dff7580699332a3e4851d36117. Pages run 45728737196 passed. The public manifest and hashes matched both destination pages and the supplemental catalog. The Tegelberg page also served the tracked audio-walk link. Operations passed on the original batch. The follow-up Operations run 45728737333 timed out probing Earth Signals and a retry was requested.
+Batch 98 is live as e032bfaaef69b6dff7580699332a3e4851d36117. Pages run 45728737196 passed. The public manifest and hashes matched both destination pages and the supplemental catalog. The Tegelberg page also served the tracked audio-walk link. Operations run 45728737333 passed on retry after an Earth Signals probe timeout.
 
 Reconciled remote ea3bff6 and the verified Verbier release. Added two distinct provider-linked current images to Explore. Tegelberg shows a snowy mountain foreground above valley cloud. Pörtschach shows the Wörthersee shoreline at dusk. Verified both printed 25 November 16:40 frames and the camera-specific linking terms. The older Herzogstand frame and dark New Zealand views remain under review.
 
