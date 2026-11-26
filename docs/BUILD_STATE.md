@@ -1,5 +1,7 @@
 ## 2026-11-25 Bangkok — Batch 98 adds Tegelberg and Pörtschach
 
+The first Pages run (45649184637) passed the build and returned HTTP 500 during publication. Operations passed. The 26 November job retry remained queued at the time of this update. This revision records the observed snapshot retrieval time and lets the existing push workflow retry publication. Verify the live manifest and both destination pages before marking Batch 98 deployed.
+
 Reconciled remote ea3bff6 and the verified Verbier release. Added two distinct provider-linked current images to Explore. Tegelberg shows a snowy mountain foreground above valley cloud. Pörtschach shows the Wörthersee shoreline at dusk. Verified both printed 25 November 16:40 frames and the camera-specific linking terms. The older Herzogstand frame and dark New Zealand views remain under review.
 
 Added a tracked self-guided Hohenschwangau audio walk near Tegelberg. The selected product returned HTTP 200, retained the existing tracking identity and lists attraction tickets separately. The destination guidance explains the starting area and separate castle, lift and transport arrangements.
