@@ -1,3 +1,7 @@
+## 2026-11-28 Bangkok — Four snowy Alpine views and one Greymouth placement
+
+Added Wendelstein, Pendling, Rosenheim and Tölzer Hütte as attributed external refreshed stills after exact camera and image review. Renewed the existing Jachenau still check. Added the tracked Greymouth West Coast day-tour product and meeting-point guidance. Coverage reaches 981 camera-backed places and 281 eligible affiliate placements.
+
 ## 2026-11-28 Bangkok — Greymouth, Awatere Valley, Omaka and Akaroa cruise
 
 Added three attributed external AOPA NZ stills after inspecting the actual frames. Revalidated the Environment Canterbury Akaroa Heads still and added the selected Akaroa Harbour Nature Cruise with township check-in guidance. Coverage reaches 977 camera-backed places and 280 eligible affiliate placements.

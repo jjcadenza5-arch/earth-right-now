@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "reviewedAt": "2026-11-28T02:54:03.899Z",
+  "reviewedAt": "2026-11-28T15:24:25.804Z",
   "purpose": "Original visitor guidance based on existing reviewed camera scope. Never verification evidence, opening-hour advice or permission to promote a source.",
   "places": {
     "mpala-watering-hole": [
@@ -346,6 +346,10 @@
     "nz-akaroa-heads": [
       "The Akaroa Heads camera looks toward the harbour entrance. Use the timestamp and visible headlands to judge how much of the view is clear.",
       "For the listed harbour cruise, confirm the Beach Road check-in, boarding wharf and sailing details with Black Cat Cruises before booking. The camera viewpoint and cruise departure point are separate."
+    ],
+    "nz-greymouth": [
+      "The aeroclub camera looks south over the airfield toward the coastal horizon. Check the frame time and the visibility of the coast.",
+      "For the listed regional tour, confirm your meeting point or pickup with the operator. The Greymouth visitor information centre is separate from the camera site."
     ]
   }
 }

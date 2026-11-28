@@ -5382,5 +5382,26 @@
     "placementReviewedAt": "2026-11-28T02:54:03.899Z",
     "manualOpenVerified": false,
     "evidence": "28 Nov exact tracked HTTP 200 retained ERN tracking parameters and selected Akaroa Harbour Nature Cruise 3661AHC. Black Cat Cruises confirms 61 Beach Road check-in and weather-dependent sailing. Date availability, bookings and commission attribution untested."
+  },
+  {
+    "id": "viator-greymouth-west-coast-full-day-selected",
+    "placeId": "nz-greymouth",
+    "title": "West Coast full-day tour from Greymouth",
+    "destinationScope": "Regional day trip. Confirm the Greymouth visitor-centre meeting point or selected pickup.",
+    "url": "https://www.viator.com/Greymouth/d34195-ttd/p-120581P6?pid=P00322254&mcid=42383&medium=link",
+    "provider": "Viator",
+    "partnerId": "viator",
+    "intent": "activities",
+    "affiliate": true,
+    "sponsored": false,
+    "disclosure": "Affiliate link",
+    "verified": true,
+    "verifiedAt": "2026-11-28T15:24:25.804Z",
+    "expiresAt": "2026-12-26T13:17:00Z",
+    "commissionClaimed": false,
+    "verificationMethod": "PRIMARY_PAGE_HTTP_REVIEW_PLUS_EXISTING_OWNER_TRACKING_ID",
+    "placementReviewedAt": "2026-11-28T15:24:25.804Z",
+    "manualOpenVerified": false,
+    "evidence": "28 Nov exact tracked HTTP 200 retained ERN tracking parameters and selected West Coast Full Day Tour 120581P6. Primary itinerary lists the Greymouth visitor information centre and selected pickup options. Dates, bookings and commission attribution untested."
   }
 ]
