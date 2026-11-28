@@ -564,21 +564,27 @@
     "sourceUrl": "https://www.levi.fi/en/ski/cameras/",
     "ownerEvidence": "The resort lists Levi Village view. YouTube oEmbed attributes the exact Village view player to the official Levi Ski Resort channel.",
     "currentEvidence": "A provider live thumbnail inspected 28 November showed snow across the village foreground and illuminated buildings. The overlay read 03:51 on 28 November, with Finnish local time inferred.",
-    "status": "RESEARCH_ONLY",
+    "status": "APPROVED",
     "platform": "YouTube",
     "candidateEmbedUrl": "https://www.youtube-nocookie.com/embed/X7tdyNFpp1g",
     "discoveredAt": "2026-11-28T01:51:00Z",
     "currentEvidenceReviewedAt": "2026-11-28T01:51:00Z",
-    "permissionReview": "PER_VIDEO_EMBED_PERMISSION_REQUIRES_DEPLOYED_TEST",
-    "playbackReview": "HUMAN_PLAYBACK_REQUIRED",
-    "promotion": "RESEARCH_ONLY",
+    "permissionReview": "PER_VIDEO_EMBED_CONFIRMED",
+    "playbackReview": "HUMAN_PLAYBACK_CONFIRMED",
+    "promotion": "APPROVED_FOR_CATALOG",
     "operationalResearchReason": "OWNER_REQUESTED_WATCH_EARTH_SNOW",
     "researchSources": [
       "https://www.levi.fi/en/ski/cameras/",
       "https://www.youtube.com/@LeviSkiResort",
       "https://www.youtube.com/watch?v=X7tdyNFpp1g"
     ],
-    "platformEvidence": "Exact branded YouTube player returned HTTP 200 during preflight. Review moving video from the deployed ERN page."
+    "platformEvidence": "Exact branded YouTube player returned HTTP 200 during preflight. Review moving video from the deployed ERN page.",
+    "lastHumanReviewAt": "2026-11-28T02:14:46.854Z",
+    "lastHumanReviewOutcome": "HUMAN_PLAYBACK_CONFIRMED",
+    "reviewBatch": "7d94711f002b9e65",
+    "reviewedSourceUrl": "https://www.levi.fi/en/ski/cameras/",
+    "reviewedEmbedUrl": "https://www.youtube-nocookie.com/embed/X7tdyNFpp1g",
+    "publishedSourceId": "levi-village-live"
   },
   {
     "id": "youtube-yllas-south-gondola",
@@ -587,20 +593,26 @@
     "sourceUrl": "https://ski.yllas.fi/en/about-us/webcams/",
     "ownerEvidence": "The resort page embeds this exact video and labels it Gondola Station, South (Live). YouTube oEmbed attributes it to Ylläs Ski Resort, Ylläsjärvi.",
     "currentEvidence": "A provider live thumbnail inspected 28 November showed an illuminated snow-covered slope and gondola station. Moving playback awaits deployed review.",
-    "status": "RESEARCH_ONLY",
+    "status": "APPROVED",
     "platform": "YouTube",
     "candidateEmbedUrl": "https://www.youtube-nocookie.com/embed/PeLTbbI2i6U",
     "discoveredAt": "2026-11-28T01:51:00Z",
     "currentEvidenceReviewedAt": "2026-11-28T01:51:00Z",
-    "permissionReview": "PER_VIDEO_EMBED_PERMISSION_REQUIRES_DEPLOYED_TEST",
-    "playbackReview": "HUMAN_PLAYBACK_REQUIRED",
-    "promotion": "RESEARCH_ONLY",
+    "permissionReview": "PER_VIDEO_EMBED_CONFIRMED",
+    "playbackReview": "HUMAN_PLAYBACK_CONFIRMED",
+    "promotion": "APPROVED_FOR_CATALOG",
     "operationalResearchReason": "OWNER_REQUESTED_WATCH_EARTH_SNOW",
     "researchSources": [
       "https://ski.yllas.fi/en/about-us/webcams/",
       "https://www.youtube.com/@yllasskisouth",
       "https://www.youtube.com/watch?v=PeLTbbI2i6U"
     ],
-    "platformEvidence": "Exact branded YouTube player returned HTTP 200 during preflight. Review moving video from the deployed ERN page."
+    "platformEvidence": "Exact branded YouTube player returned HTTP 200 during preflight. Review moving video from the deployed ERN page.",
+    "lastHumanReviewAt": "2026-11-28T02:14:41.071Z",
+    "lastHumanReviewOutcome": "HUMAN_PLAYBACK_CONFIRMED",
+    "reviewBatch": "7d94711f002b9e65",
+    "reviewedSourceUrl": "https://ski.yllas.fi/en/about-us/webcams/",
+    "reviewedEmbedUrl": "https://www.youtube-nocookie.com/embed/PeLTbbI2i6U",
+    "publishedSourceId": "yllas-south-gondola-live"
   }
 ]

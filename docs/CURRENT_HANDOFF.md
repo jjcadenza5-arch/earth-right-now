@@ -1,3 +1,7 @@
+## 2026-11-28 Bangkok — Levi Village and Ylläs South Gondola join Watch Earth
+
+Owner review 7d94711f002b9e65 confirmed the exact two Lapland players and renewed nine existing feeds. Exact timestamps and targets are recorded in the owner packet and ledger. The two videos share the existing Levi and Ylläs place IDs with their separate external stills, keeping coverage at 971 of 1,000 camera-backed places. Coordinates are place references from the existing Levi catalog and the Outdooractive Ylläsjärvi resort listing. Takayama retains its Watch Earth hold.
+
 ## 2026-11-28 Bangkok — Two Lapland snow cameras staged for Watch Earth review
 
 Levi Village and Ylläs South Gondola are staged as research candidates using their exact resort YouTube targets. Both provider thumbnails showed snow and useful detail in the illuminated scenes. The Levi and Ylläs summit views were obscured in the inspected frames. Deployed human playback evidence is required before promoting either candidate; existing external stills remain under their original source records.

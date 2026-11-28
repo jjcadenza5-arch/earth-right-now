@@ -1,0 +1,143 @@
+{
+  "schemaVersion": 1,
+  "kind": "ERN_OPERATOR_REVIEW_EVIDENCE",
+  "generatedAt": "2026-11-28T02:14:52.554Z",
+  "reviewOrigin": "https://earthrightnow.app/review/inside-ern.html",
+  "reviewBatch": "7d94711f002b9e65",
+  "catalogMutationAllowed": false,
+  "networkStatus": "UNKNOWN_NOT_RECORDED",
+  "items": [
+    {
+      "id": "grand-targhee-summit",
+      "type": "restore",
+      "title": "Grand Targhee — Summit",
+      "provider": "Grand Targhee Resort / See Jackson Hole",
+      "outcome": "HUMAN_PLAYBACK_CONFIRMED",
+      "observedAt": "2026-11-28T02:13:55.838Z",
+      "evidenceKind": "HUMAN_REVIEW",
+      "networkStatus": "UNKNOWN_NOT_RECORDED",
+      "sourceUrl": "https://www.grandtarghee.com/mountain/reports-hours/webcams",
+      "embedUrl": "https://www.youtube-nocookie.com/embed/a5jEZeNTAsE"
+    },
+    {
+      "id": "kyoto-fushimi-inari-live",
+      "type": "restore",
+      "title": "Kyoto — Fushimi Inari",
+      "provider": "Kyoto City Tourism Association",
+      "outcome": "HUMAN_PLAYBACK_CONFIRMED",
+      "observedAt": "2026-11-28T02:14:33.420Z",
+      "evidenceKind": "HUMAN_REVIEW",
+      "networkStatus": "UNKNOWN_NOT_RECORDED",
+      "sourceUrl": "https://global.kyoto.travel/en/comfort/",
+      "embedUrl": "https://www.youtube-nocookie.com/embed/MMeBDRfRHyA"
+    },
+    {
+      "id": "kyoto-kifune-shrine-live",
+      "type": "restore",
+      "title": "Kyoto — Kifune Shrine",
+      "provider": "Kyoto City Tourism Association",
+      "outcome": "HUMAN_PLAYBACK_CONFIRMED",
+      "observedAt": "2026-11-28T02:14:25.974Z",
+      "evidenceKind": "HUMAN_REVIEW",
+      "networkStatus": "UNKNOWN_NOT_RECORDED",
+      "sourceUrl": "https://global.kyoto.travel/en/comfort/",
+      "embedUrl": "https://www.youtube-nocookie.com/embed/eJAqPCdS1cY"
+    },
+    {
+      "id": "kyoto-kiyomizuzaka-live",
+      "type": "restore",
+      "title": "Kyoto — Kiyomizu-zaka",
+      "provider": "Kyoto City Tourism Association",
+      "outcome": "HUMAN_PLAYBACK_CONFIRMED",
+      "observedAt": "2026-11-28T02:14:28.987Z",
+      "evidenceKind": "HUMAN_REVIEW",
+      "networkStatus": "UNKNOWN_NOT_RECORDED",
+      "sourceUrl": "https://global.kyoto.travel/en/comfort/",
+      "embedUrl": "https://www.youtube-nocookie.com/embed/cUnYPpK7ENk"
+    },
+    {
+      "id": "mpala-watering-hole",
+      "type": "restore",
+      "title": "Mpala Watering Hole",
+      "provider": "Mpala Research Centre / Explore.org",
+      "outcome": "HUMAN_PLAYBACK_CONFIRMED",
+      "observedAt": "2026-11-28T02:14:01.069Z",
+      "evidenceKind": "HUMAN_REVIEW",
+      "networkStatus": "UNKNOWN_NOT_RECORDED",
+      "sourceUrl": "https://mpala.org/mpala-live/",
+      "embedUrl": "https://www.youtube-nocookie.com/embed/oORXfTviuCs"
+    },
+    {
+      "id": "nyc-brooklyn-skyline-live",
+      "type": "restore",
+      "title": "New York — Manhattan Skyline from Brooklyn",
+      "provider": "Brooklyn Waterfront Cams",
+      "outcome": "HUMAN_PLAYBACK_CONFIRMED",
+      "observedAt": "2026-11-28T02:14:11.687Z",
+      "evidenceKind": "HUMAN_REVIEW",
+      "networkStatus": "UNKNOWN_NOT_RECORDED",
+      "sourceUrl": "https://brooklynwaterfront.cam/",
+      "embedUrl": "https://www.youtube-nocookie.com/embed/obqnslJKrxc"
+    },
+    {
+      "id": "takayama-miyagawa-stream",
+      "type": "restore",
+      "title": "Takayama — Miyagawa & Kaji Bridge",
+      "provider": "Hida-Takayama Live Camera",
+      "outcome": "HUMAN_PLAYBACK_CONFIRMED",
+      "observedAt": "2026-11-28T02:14:05.403Z",
+      "evidenceKind": "HUMAN_REVIEW",
+      "networkStatus": "UNKNOWN_NOT_RECORDED",
+      "sourceUrl": "https://takayama-live.com/streaming",
+      "embedUrl": "https://www.youtube.com/embed/live_stream?channel=UC5MNHWRJRJ1buoVIg2sHmCw"
+    },
+    {
+      "id": "verbier",
+      "type": "restore",
+      "title": "Verbier",
+      "provider": "Verbier – Val de Bagnes Tourism",
+      "outcome": "HUMAN_PLAYBACK_CONFIRMED",
+      "observedAt": "2026-11-28T02:14:20.670Z",
+      "evidenceKind": "HUMAN_REVIEW",
+      "networkStatus": "UNKNOWN_NOT_RECORDED",
+      "sourceUrl": "https://www.verbier.ch/en/practice/live/webcams/",
+      "embedUrl": "https://www.youtube-nocookie.com/embed/9ljoXhTxjag"
+    },
+    {
+      "id": "volcan-tajogaite",
+      "type": "restore",
+      "title": "Volcán Tajogaite",
+      "provider": "Webcam La Palma",
+      "outcome": "HUMAN_PLAYBACK_CONFIRMED",
+      "observedAt": "2026-11-28T02:14:16.488Z",
+      "evidenceKind": "HUMAN_REVIEW",
+      "networkStatus": "UNKNOWN_NOT_RECORDED",
+      "sourceUrl": "https://webcam-lapalma.de/webcam-vulkan-la-palma/",
+      "embedUrl": "https://webcam-lapalma.de/embed/vulkan/"
+    },
+    {
+      "id": "youtube-levi-village",
+      "type": "research",
+      "title": "Levi — Village View",
+      "provider": "Levi Ski Resort",
+      "outcome": "HUMAN_PLAYBACK_CONFIRMED",
+      "observedAt": "2026-11-28T02:14:46.854Z",
+      "evidenceKind": "HUMAN_REVIEW",
+      "networkStatus": "UNKNOWN_NOT_RECORDED",
+      "sourceUrl": "https://www.levi.fi/en/ski/cameras/",
+      "embedUrl": "https://www.youtube-nocookie.com/embed/X7tdyNFpp1g"
+    },
+    {
+      "id": "youtube-yllas-south-gondola",
+      "type": "research",
+      "title": "Ylläs — South Gondola",
+      "provider": "Ylläs Ski Resort",
+      "outcome": "HUMAN_PLAYBACK_CONFIRMED",
+      "observedAt": "2026-11-28T02:14:41.071Z",
+      "evidenceKind": "HUMAN_REVIEW",
+      "networkStatus": "UNKNOWN_NOT_RECORDED",
+      "sourceUrl": "https://ski.yllas.fi/en/about-us/webcams/",
+      "embedUrl": "https://www.youtube-nocookie.com/embed/PeLTbbI2i6U"
+    }
+  ]
+}
