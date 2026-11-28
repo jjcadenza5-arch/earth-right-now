@@ -556,5 +556,51 @@
     "reviewedSourceUrl": "https://www.grandtarghee.com/mountain/reports-hours/webcams",
     "reviewedEmbedUrl": "https://www.youtube-nocookie.com/embed/a5jEZeNTAsE",
     "publishedSourceId": "grand-targhee-summit"
+  },
+  {
+    "id": "youtube-levi-village",
+    "title": "Levi — Village View",
+    "provider": "Levi Ski Resort",
+    "sourceUrl": "https://www.levi.fi/en/ski/cameras/",
+    "ownerEvidence": "The resort lists Levi Village view. YouTube oEmbed attributes the exact Village view player to the official Levi Ski Resort channel.",
+    "currentEvidence": "A provider live thumbnail inspected 28 November showed snow across the village foreground and illuminated buildings. The overlay read 03:51 on 28 November, with Finnish local time inferred.",
+    "status": "RESEARCH_ONLY",
+    "platform": "YouTube",
+    "candidateEmbedUrl": "https://www.youtube-nocookie.com/embed/X7tdyNFpp1g",
+    "discoveredAt": "2026-11-28T01:51:00Z",
+    "currentEvidenceReviewedAt": "2026-11-28T01:51:00Z",
+    "permissionReview": "PER_VIDEO_EMBED_PERMISSION_REQUIRES_DEPLOYED_TEST",
+    "playbackReview": "HUMAN_PLAYBACK_REQUIRED",
+    "promotion": "RESEARCH_ONLY",
+    "operationalResearchReason": "OWNER_REQUESTED_WATCH_EARTH_SNOW",
+    "researchSources": [
+      "https://www.levi.fi/en/ski/cameras/",
+      "https://www.youtube.com/@LeviSkiResort",
+      "https://www.youtube.com/watch?v=X7tdyNFpp1g"
+    ],
+    "platformEvidence": "Exact branded YouTube player returned HTTP 200 during preflight. Review moving video from the deployed ERN page."
+  },
+  {
+    "id": "youtube-yllas-south-gondola",
+    "title": "Ylläs — South Gondola",
+    "provider": "Ylläs Ski Resort",
+    "sourceUrl": "https://ski.yllas.fi/en/about-us/webcams/",
+    "ownerEvidence": "The resort page embeds this exact video and labels it Gondola Station, South (Live). YouTube oEmbed attributes it to Ylläs Ski Resort, Ylläsjärvi.",
+    "currentEvidence": "A provider live thumbnail inspected 28 November showed an illuminated snow-covered slope and gondola station. Moving playback awaits deployed review.",
+    "status": "RESEARCH_ONLY",
+    "platform": "YouTube",
+    "candidateEmbedUrl": "https://www.youtube-nocookie.com/embed/PeLTbbI2i6U",
+    "discoveredAt": "2026-11-28T01:51:00Z",
+    "currentEvidenceReviewedAt": "2026-11-28T01:51:00Z",
+    "permissionReview": "PER_VIDEO_EMBED_PERMISSION_REQUIRES_DEPLOYED_TEST",
+    "playbackReview": "HUMAN_PLAYBACK_REQUIRED",
+    "promotion": "RESEARCH_ONLY",
+    "operationalResearchReason": "OWNER_REQUESTED_WATCH_EARTH_SNOW",
+    "researchSources": [
+      "https://ski.yllas.fi/en/about-us/webcams/",
+      "https://www.youtube.com/@yllasskisouth",
+      "https://www.youtube.com/watch?v=PeLTbbI2i6U"
+    ],
+    "platformEvidence": "Exact branded YouTube player returned HTTP 200 during preflight. Review moving video from the deployed ERN page."
   }
 ]

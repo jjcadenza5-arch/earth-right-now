@@ -1,3 +1,7 @@
+## 2026-11-28 Bangkok — Two Lapland snow cameras staged for Watch Earth review
+
+Levi Village and Ylläs South Gondola are staged as research candidates using their exact resort YouTube targets. Both provider thumbnails showed snow and useful detail in the illuminated scenes. The Levi and Ylläs summit views were obscured in the inspected frames. Deployed human playback evidence is required before promoting either candidate; existing external stills remain under their original source records.
+
 ## 2026-11-26 Bangkok — Grand Targhee Summit joins Watch Earth
 
 Owner review 4c321e8f1bfc1ac5 confirmed live playback at 09:19:44 Bangkok on the exact official resort-linked See Jackson Hole YouTube player. Promoted the moving camera to Watch Earth with the original proof time and branded player. The earlier provider thumbnail showed snow and conifers. The map uses the resort place reference (feature ID 1600016, Geographic.org) for daylight ranking and discovery. Catalogued coverage rises to 971 of 1,000 camera-backed places.
