@@ -5340,5 +5340,26 @@
     "placementReviewedAt": "2026-11-25T15:49:28.497985Z",
     "manualOpenVerified": false,
     "evidence": "25 Nov 2026 tracked HTTP200 selected-product title matched 110804P797 and retained the existing ERN tracking identity. Provider lists a self-guided GPS audio walk beginning at Hohenschwangau tourist information and excludes attraction tickets. Date-specific availability, booking and commission attribution were not checked."
+  },
+  {
+    "id": "viator-tekapo-mount-john-observatory-selected",
+    "placeId": "nz-lake-tekapo",
+    "title": "Mount John Observatory guided stargazing",
+    "destinationScope": "Meet at Dark Sky Project in Lake Tekapo township. The selected tour lists return transport from the township and may offer an indoor alternative in poor weather.",
+    "url": "https://www.viator.com/Lake-Tekapo/d51201-ttd/p-105977P1?pid=P00322254&mcid=42383&medium=link",
+    "provider": "Viator",
+    "partnerId": "viator",
+    "intent": "activities",
+    "affiliate": true,
+    "sponsored": false,
+    "disclosure": "Affiliate link",
+    "verified": true,
+    "verifiedAt": "2026-11-28T02:33:09.082Z",
+    "expiresAt": "2026-12-26T13:17:00Z",
+    "commissionClaimed": false,
+    "verificationMethod": "PRIMARY_PAGE_HTTP_REVIEW_PLUS_EXISTING_OWNER_TRACKING_ID",
+    "placementReviewedAt": "2026-11-28T02:33:09.082Z",
+    "manualOpenVerified": false,
+    "evidence": "28 Nov 2026 exact tracked HTTP 200 retained the existing ERN Viator tracking parameters and selected Mount John Observatory guided stargazing product 105977P1. Dedicated product details establish the 1 Motuariki Lane township meeting point, return transport and possible weather alternative. Date availability, bookings and commission attribution untested."
   }
 ]

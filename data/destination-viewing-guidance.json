@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "reviewedAt": "2026-11-25T15:49:28.497985Z",
+  "reviewedAt": "2026-11-28T02:33:09.082Z",
   "purpose": "Original visitor guidance based on existing reviewed camera scope. Never verification evidence, opening-hour advice or permission to promote a source.",
   "places": {
     "mpala-watering-hole": [
@@ -338,6 +338,10 @@
     "austria-poertschach-woerthersee": [
       "Open the provider page and check the printed image time. Cloud and darkness can obscure the lake.",
       "Check local transport, swimming and boating information separately before a visit."
+    ],
+    "nz-lake-tekapo": [
+      "The north-facing Mount John camera shows Lake Tekapo, shoreline and distant ranges when visibility allows. Check the frame time if you are using it to judge the view.",
+      "For the listed observatory tour, meet at Dark Sky Project in Lake Tekapo township. Confirm the date, meeting time and the tour’s weather alternative before booking."
     ]
   }
 }

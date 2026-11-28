@@ -1,3 +1,7 @@
+## 2026-11-28 Bangkok — Three New Zealand views and a Lake Tekapo stargazing offer
+
+Added attributed external refreshed stills for Te Karaka, Whakapunake and Ōpōtiki after inspecting the actual provider images. Whakapunake is a high ridge view distinct from the Wairoa River source. Revalidated the existing Tekapo North panorama and added the tracked Mount John Observatory guided stargazing product (105977P1), with township meeting-point and weather guidance. ERN now covers 974 camera-backed places.
+
 ## 2026-11-28 Bangkok — Levi Village and Ylläs South Gondola join Watch Earth
 
 Owner review 7d94711f002b9e65 confirmed the exact two Lapland players and renewed nine existing feeds. Exact timestamps and targets are recorded in the owner packet and ledger. The two videos share the existing Levi and Ylläs place IDs with their separate external stills, keeping coverage at 971 of 1,000 camera-backed places. Coordinates are place references from the existing Levi catalog and the Outdooractive Ylläsjärvi resort listing. Takayama retains its Watch Earth hold.

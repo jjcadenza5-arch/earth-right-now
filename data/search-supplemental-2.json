@@ -1381,8 +1381,8 @@
     "permission": "LINK_ONLY",
     "health": "HEALTHY",
     "playback": "EXTERNAL",
-    "checkedAt": "2026-10-25T06:41:40Z",
-    "lastSuccessfulCheck": "2026-10-25T06:41:40Z",
+    "checkedAt": "2026-11-28T02:33:09.082Z",
+    "lastSuccessfulCheck": "2026-11-28T02:33:09.082Z",
     "quality": 85,
     "freshness": 90,
     "moment": 80,
@@ -1416,7 +1416,7 @@
     "story": "Look across Lake Tekapo and the surrounding ranges from the Mt John camera. This is a refreshed still image, not continuous video. Check local access, weather and operator arrangements before planning a lake or mountain visit. Multiple camera directions from this network count as one Lake Tekapo panorama destination.",
     "rightsBasis": "First-party camera page and parent webcam page reviewed; copyright Tekapo Tourism Ltd, all rights reserved. Parent identifies camera technology and Air Safaris sponsorship; about-us page identifies the independent publisher. Attributed LINK_ONLY handoff with original ERN description only, no media, logo, provider prose, iframe or thumbnail reuse. No link restriction observed; no embedding/reuse permission inferred.",
     "rightsSourceUrl": "https://tekapotourism.nz/about_us.html",
-    "freshnessEvidence": "Interactive browser review completed 2026-10-25T06:41:40Z. Full-size actual North-view image decoded1920x1080, burned-in2026-10-25 18:30:48. Visually inspected blue lake, shoreline grassland, winding road, layered ranges and snow-tipped peaks under mixed cloud. Capture is roughly one hour before review, not the page-retrieval time. Pacific/Auckland inferred from place, not printed beside image clock. Parent describes15/30-minute refreshed views, but cadence was not measured or guaranteed. Sponsor slideshow, page banner, timelapses and the separate unverified Ranginui stream were not counted."
+    "freshnessEvidence": "Reviewed the decoded 1920×1080 North image on 28 Nov 2026. Printed local clock 15:29:31, NZDT inferred. HTTP Last-Modified 02:29:32 UTC. Clear lake, shoreline, winding road and distant snowy peaks under scattered clouds. Clock accuracy and cadence unmeasured. This check covers the refreshed North still."
   },
   {
     "country": "New Zealand",
@@ -7373,5 +7373,117 @@
     "rightsSourceUrl": "https://www.foto-webcam.eu/webcam/poertschach-a-w/infos/",
     "rightsBasis": "The camera-specific information expressly permits links to the exact camera page. ERN links with attribution.",
     "freshnessEvidence": "25 Nov 2026 provider JPEG decoded and visually inspected. Printed 25.11.26 16:40. Lake surface and shore lights visible below dark hills and cloud at dusk. Exact image https://www.foto-webcam.eu/webcam/poertschach-a-w/current/720.jpg, 720x405, 67182 bytes, HTTP Last-Modified 25 Nov 15:40:58 GMT. Local time zone inferred and cadence unmeasured. Refreshed still."
+  },
+  {
+    "id": "nz-te-karaka-evolution-current",
+    "placeId": "nz-te-karaka",
+    "title": "Te Karaka — Waipaoa Valley",
+    "region": "Te Karaka / Tairāwhiti",
+    "aliases": [
+      "Te Karaka",
+      "Waipaoa Valley"
+    ],
+    "story": "Look across green farmland, wooded gullies and layered hills from the ridge above Te Karaka.",
+    "provider": "Evolution Wireless",
+    "attribution": "Evolution Wireless",
+    "country": "New Zealand",
+    "timeZone": "Pacific/Auckland",
+    "categories": [
+      "Nature",
+      "Beautiful Earth"
+    ],
+    "truth": "LIVE_IMAGE",
+    "permission": "LINK_ONLY",
+    "health": "HEALTHY",
+    "playback": "EXTERNAL",
+    "sourceUrl": "https://www.ew.net.nz/webcams/te_karaka/",
+    "officialUrl": "https://www.ew.net.nz/webcams/te_karaka/",
+    "checkedAt": "2026-11-28T02:33:09.082Z",
+    "lastSuccessfulCheck": "2026-11-28T02:33:09.082Z",
+    "quality": 86,
+    "freshness": 90,
+    "moment": 80,
+    "featuredHold": true,
+    "watchHold": true,
+    "searchSupplemental": true,
+    "externalWindowRequired": true,
+    "rightsSourceUrl": "https://www.ew.net.nz/terms.html",
+    "rightsBasis": "Attributed external link to the exact first-party Evolution Wireless camera page. No camera media reused.",
+    "freshnessEvidence": "Actual 2688×1512 JPEG retrieved and visually inspected on 28 Nov. Overlay 28 Nov 2026 15:31:39. HTTP Last-Modified 02:31:40 UTC. The foreground slopes, farms and distant hills were clear. NZDT inferred where a local clock is printed. Camera clock accuracy and refresh cadence unmeasured. JPEG: https://www.ew.net.nz/webcams/snapshot_te_karaka.jpg"
+  },
+  {
+    "id": "nz-whakapunake-evolution-current",
+    "placeId": "nz-whakapunake",
+    "title": "Whakapunake — Northern Hawke’s Bay",
+    "region": "Whakapunake / Northern Hawke’s Bay",
+    "aliases": [
+      "Whakapunake",
+      "Northern Hawkes Bay"
+    ],
+    "story": "The grassy ridge at Whakapunake looks out toward the distant Wairoa lowlands below.",
+    "provider": "Evolution Wireless",
+    "attribution": "Evolution Wireless",
+    "country": "New Zealand",
+    "timeZone": "Pacific/Auckland",
+    "categories": [
+      "Nature",
+      "Beautiful Earth"
+    ],
+    "truth": "LIVE_IMAGE",
+    "permission": "LINK_ONLY",
+    "health": "HEALTHY",
+    "playback": "EXTERNAL",
+    "sourceUrl": "https://www.ew.net.nz/webcams/whakapunake/",
+    "officialUrl": "https://www.ew.net.nz/webcams/whakapunake/",
+    "checkedAt": "2026-11-28T02:33:09.082Z",
+    "lastSuccessfulCheck": "2026-11-28T02:33:09.082Z",
+    "quality": 86,
+    "freshness": 90,
+    "moment": 80,
+    "featuredHold": true,
+    "watchHold": true,
+    "searchSupplemental": true,
+    "externalWindowRequired": true,
+    "rightsSourceUrl": "https://www.ew.net.nz/terms.html",
+    "rightsBasis": "Attributed external link to the exact first-party Evolution Wireless camera page. No camera media reused.",
+    "freshnessEvidence": "Actual 2688×1512 JPEG retrieved and visually inspected on 28 Nov. Overlay 28 Nov 2026 15:31:40. HTTP Last-Modified 02:31:42 UTC. A grassy ridge and distant lowlands were visible, with haze limiting detail. This ridge viewpoint is distinct from the existing Wairoa River camera. NZDT inferred where a local clock is printed. Camera clock accuracy and refresh cadence unmeasured. JPEG: https://www.ew.net.nz/webcams/snapshot_whakapunake.jpg"
+  },
+  {
+    "id": "nz-opotiki-evolution-current",
+    "placeId": "nz-opotiki",
+    "title": "Ōpōtiki — Hills and Coastal Plain",
+    "region": "Ōpōtiki / Eastern Bay of Plenty",
+    "aliases": [
+      "Ōpōtiki",
+      "Opotiki",
+      "Waiputatawa"
+    ],
+    "story": "Look down past forested slopes and winding tracks toward the Ōpōtiki plain. Low cloud can hide the distant coast.",
+    "provider": "Evolution Wireless",
+    "attribution": "Evolution Wireless",
+    "country": "New Zealand",
+    "timeZone": "Pacific/Auckland",
+    "categories": [
+      "Nature",
+      "Beautiful Earth"
+    ],
+    "truth": "LIVE_IMAGE",
+    "permission": "LINK_ONLY",
+    "health": "HEALTHY",
+    "playback": "EXTERNAL",
+    "sourceUrl": "https://www.ew.net.nz/webcams/opotiki_south/",
+    "officialUrl": "https://www.ew.net.nz/webcams/opotiki_south/",
+    "checkedAt": "2026-11-28T02:33:09.082Z",
+    "lastSuccessfulCheck": "2026-11-28T02:33:09.082Z",
+    "quality": 86,
+    "freshness": 90,
+    "moment": 80,
+    "featuredHold": true,
+    "watchHold": true,
+    "searchSupplemental": true,
+    "externalWindowRequired": true,
+    "rightsSourceUrl": "https://www.ew.net.nz/terms.html",
+    "rightsBasis": "Attributed external link to the exact first-party Evolution Wireless camera page. No camera media reused.",
+    "freshnessEvidence": "Actual 2688×1512 JPEG retrieved and visually inspected on 28 Nov. No overlaid clock. Two different decoded 2688×1512 images showed a changing cloud edge and valley light. HTTP Last-Modified 02:31:44 and 02:32:07 UTC on 28 Nov 2026. The plain and nearby hills were visible beneath cloud. NZDT inferred where a local clock is printed. Camera clock accuracy and refresh cadence unmeasured. JPEG: https://www.ew.net.nz/webcams/snapshot_opotiki_south.jpg"
   }
 ]
