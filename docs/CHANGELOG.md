@@ -1,3 +1,7 @@
+## 2026-11-28 Bangkok — Greymouth, Awatere Valley, Omaka and Akaroa cruise
+
+Added three attributed external AOPA NZ stills after inspecting the actual frames. Revalidated the Environment Canterbury Akaroa Heads still and added the selected Akaroa Harbour Nature Cruise with township check-in guidance. Coverage reaches 977 camera-backed places and 280 eligible affiliate placements.
+
 ## 2026-11-28 Bangkok — Three New Zealand views and a Lake Tekapo stargazing offer
 
 Added attributed external refreshed stills for Te Karaka, Whakapunake and Ōpōtiki after inspecting the actual provider images. Whakapunake is a high ridge view distinct from the Wairoa River source. Revalidated the existing Tekapo North panorama and added the tracked Mount John Observatory guided stargazing product (105977P1), with township meeting-point and weather guidance. ERN now covers 974 camera-backed places.
